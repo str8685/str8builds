@@ -1,0 +1,8 @@
+{
+  "name": "str8-build-app",
+  "type": "node",
+  "start": "node server.js",
+  "env": {
+    "NODE_ENV": "production"
+  }
+}

@@ -1,0 +1,494 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Global styles to prevent white screen flashes */
+html {
+  background-color: #0f172a; /* Dark blue background */
+}
+
+body {
+  background-color: #0f172a; /* Dark blue background */
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  color: #f8fafc;
+  overflow-x: hidden;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #0f172a; /* Dark blue background */
+}
+
+/* Construction Site Loader Animation Keyframes */
+@keyframes swing {
+  0%, 100% { transform: translateX(-50%) rotate(-5deg); }
+  50% { transform: translateX(-50%) rotate(5deg); }
+}
+
+@keyframes lower {
+  0%, 100% { transform: translate(100%, 0); }
+  50% { transform: translate(100%, 100%); }
+}
+
+@keyframes build {
+  0% { height: 0; }
+  50% { height: 100%; }
+  100% { height: 100%; }
+}
+
+@keyframes walk {
+  0% { transform: translateX(100%); }
+  50% { transform: translateX(-100%); }
+  50.1% { transform: translateX(-100%) scaleX(-1); }
+  100% { transform: translateX(100%) scaleX(-1); }
+}
+
+/* Custom animations for tab switcher */
+@keyframes pulse-subtle {
+  0%, 100% { opacity: 0.3; }
+  50% { opacity: 0.7; }
+}
+
+@keyframes bounce-subtle {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-2px); }
+}
+
+.animate-pulse-subtle {
+  animation: pulse-subtle 3s ease-in-out infinite;
+}
+
+.animate-bounce-subtle {
+  animation: bounce-subtle 2s ease-in-out infinite;
+}
+
+@keyframes legMove {
+  0%, 100% { transform: rotate(-15deg); }
+  50% { transform: rotate(15deg); }
+}
+
+@keyframes ellipsis {
+  to {
+    width: 0;
+  }
+}
+
+/* Custom colors */
+:root {
+  --space-900: #0c0e1a;
+  --space-800: #141629;
+  --space-950: #070816;
+  --cyan: #00e6ff;
+  --purple-900: #2b124a;
+  --teal: #00f0c8;
+  --electric: #00d0ff;
+}
+
+/* Theme colors */
+.bg-space-900 {
+  background-color: var(--space-900);
+}
+
+.bg-space-800 {
+  background-color: var(--space-800);
+}
+
+.bg-space-950 {
+  background-color: var(--space-950);
+}
+
+.bg-purple-900 {
+  background-color: var(--purple-900);
+}
+
+.text-cyan {
+  color: var(--cyan);
+}
+
+.border-cyan-900\/30 {
+  border-color: rgba(0, 200, 230, 0.3);
+}
+
+/* Glow effects */
+.btn-glow {
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-glow-cyan::after {
+  content: '';
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  right: -10px;
+  bottom: -10px;
+  background: radial-gradient(rgba(0, 230, 255, 0.3), transparent 60%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.btn-glow-cyan:hover::after {
+  opacity: 1;
+}
+
+/* Glass card effect */
+.glass-card {
+  backdrop-filter: blur(12px);
+  background-color: rgba(20, 22, 41, 0.7);
+  border: 1px solid rgba(0, 230, 255, 0.1);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1), 
+              0 0 10px rgba(0, 200, 255, 0.05);
+}
+
+/* Active job card with neon glow */
+.active-job-card {
+  position: relative;
+  border: 1px solid rgba(0, 255, 128, 0.3) !important;
+  box-shadow: 0 0 15px rgba(0, 255, 128, 0.2), 
+              inset 0 0 8px rgba(0, 255, 128, 0.1) !important;
+  transition: all 0.3s ease;
+}
+
+.active-job-card::before {
+  content: '';
+  position: absolute;
+  top: -1px;
+  left: -1px;
+  right: -1px;
+  height: 3px;
+  background: linear-gradient(90deg, transparent, #00ff80, transparent);
+  animation: active-job-pulse 3s infinite;
+}
+
+@keyframes active-job-pulse {
+  0%, 100% { opacity: 0.5; }
+  50% { opacity: 1; }
+}
+
+/* Bottom Nav animations */
+@keyframes ping-slow {
+  0% {
+    transform: scale(1);
+    opacity: 0.8;
+  }
+  75%, 100% {
+    transform: scale(1.8);
+    opacity: 0;
+  }
+}
+
+.animate-ping-slow {
+  animation: ping-slow 2.5s cubic-bezier(0, 0, 0.2, 1) infinite;
+}
+
+@keyframes hover-glow {
+  0%, 100% {
+    box-shadow: 0 0 4px 1px rgba(0, 230, 255, 0.2);
+  }
+  50% {
+    box-shadow: 0 0 8px 2px rgba(0, 230, 255, 0.3);
+  }
+}
+
+/* Glass card effect for tutorial */
+.glass-card {
+  background-color: rgba(20, 22, 41, 0.7);
+  backdrop-filter: blur(15px);
+  border: 1px solid rgba(0, 230, 255, 0.1);
+}
+
+/* Custom pulse animation for tutorial highlight */
+@keyframes pulse-custom {
+  0%, 100% { opacity: 0.7; }
+  50% { opacity: 1; }
+}
+
+.animate-pulse-custom {
+  animation: pulse-custom 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+/* Tutorial transition effects */
+.tutorial-fade-in {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.tutorial-fade-out {
+  animation: fadeOut 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes fadeOut {
+  from { opacity: 1; }
+  to { opacity: 0; }
+}
+
+@layer base {
+  :root {
+    /* Original shadcn colors */
+    --background: 240 10% 3.9%;
+    --foreground: 0 0% 98%;
+    --card: 240 10% 3.9%;
+    --card-foreground: 0 0% 98%;
+    --popover: 240 10% 3.9%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 207 90% 54%;
+    --primary-foreground: 211 100% 99%;
+    --secondary: 240 3.7% 15.9%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 240 3.7% 15.9%;
+    --muted-foreground: 240 5% 64.9%;
+    --accent: 240 3.7% 15.9%;
+    --accent-foreground: 0 0% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 240 3.7% 15.9%;
+    --input: 240 3.7% 15.9%;
+    --ring: 240 4.9% 83.9%;
+    --radius: 0.5rem;
+    
+    /* STR8 BUILD custom colors */
+    --space-blue-900: 222 47% 11%;
+    --space-blue-800: 217 33% 17%;
+    --space-blue-700: 220 37% 13%;
+    
+    --space-purple-900: 261 59% 26%;
+    --space-purple-800: 258 58% 30%;
+    
+    --electric-blue: 204 100% 50%;
+    --vibrant-cyan: 180 95% 50%;
+    --energy-teal: 165 97% 45%;
+    
+    --chart-1: var(--electric-blue);
+    --chart-2: var(--vibrant-cyan);
+    --chart-3: var(--energy-teal);
+    --chart-4: 280 100% 65%;
+    --chart-5: 325 90% 65%;
+    
+    /* Sidebar (unchanged as we're using app-wide dark theme) */
+    --sidebar-background: var(--background);
+    --sidebar-foreground: var(--foreground);
+    --sidebar-primary: var(--primary);
+    --sidebar-primary-foreground: var(--primary-foreground);
+    --sidebar-accent: var(--accent);
+    --sidebar-accent-foreground: var(--accent-foreground);
+    --sidebar-border: var(--border);
+    --sidebar-ring: var(--ring);
+  }
+  
+  .dark {
+    /* We're using dark theme by default for this app */
+    --background: 222 47% 11%;
+    --foreground: 0 0% 98%;
+    --card: 217 33% 17%;
+    --card-foreground: 0 0% 98%;
+    --popover: 222 47% 11%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 204 100% 50%;
+    --primary-foreground: 211 100% 99%;
+    --secondary: 217 33% 17%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 217 33% 17%;
+    --muted-foreground: 240 5% 64.9%;
+    --accent: 261 59% 26%;
+    --accent-foreground: 0 0% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 240 3.7% 15.9%;
+    --input: 240 3.7% 15.9%;
+    --ring: 204 100% 50%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply font-sans antialiased bg-[#0f172a] text-foreground;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Space Grotesk', sans-serif;
+  }
+}
+
+@layer components {
+  /* Glass card effects */
+  .glass-card {
+    @apply bg-opacity-70 border border-cyan-900/20 backdrop-blur-md rounded-xl transition-all duration-300;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3), inset 0 1px 1px rgba(255, 255, 255, 0.05);
+  }
+  
+  .glass-card-dark {
+    @apply bg-opacity-80 border border-cyan-900/10 backdrop-blur-md rounded-xl transition-all duration-300;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4), inset 0 1px 1px rgba(255, 255, 255, 0.03);
+  }
+  
+  .glass-card:hover, .glass-card-dark:hover {
+    @apply border-cyan-800/30;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4), inset 0 1px 2px rgba(255, 255, 255, 0.1);
+    transform: translateY(-2px);
+  }
+  
+  /* Neon border effects */
+  .neon-border-blue {
+    box-shadow: 0 0 5px theme('colors.electric.DEFAULT'), inset 0 0 5px rgba(0, 180, 255, 0.3);
+    @apply border border-electric/70;
+  }
+  
+  .neon-border-cyan {
+    box-shadow: 0 0 5px theme('colors.cyan.DEFAULT'), inset 0 0 5px rgba(6, 247, 247, 0.3);
+    @apply border border-cyan/70;
+  }
+  
+  .neon-border-teal {
+    box-shadow: 0 0 5px theme('colors.teal.DEFAULT'), inset 0 0 5px rgba(2, 226, 185, 0.3);
+    @apply border border-teal/70;
+  }
+  
+  /* Custom color classes for theming */
+  .text-electric {
+    color: #00b4ff;
+  }
+  
+  .text-cyan {
+    color: #06f7f7;
+  }
+  
+  .text-teal {
+    color: #02e2b9;
+  }
+  
+  /* Shadow effects */
+  .shadow-glow-sm {
+    box-shadow: 0 0 8px rgba(6, 247, 247, 0.3);
+  }
+  
+  .shadow-glow-md {
+    box-shadow: 0 0 15px rgba(6, 247, 247, 0.4);
+  }
+  
+  .shadow-glow-lg {
+    box-shadow: 0 0 25px rgba(6, 247, 247, 0.5);
+  }
+  
+  .filter.drop-shadow-cyan {
+    filter: drop-shadow(0 0 5px rgba(6, 247, 247, 0.5));
+  }
+  
+  .filter.drop-shadow-electric {
+    filter: drop-shadow(0 0 5px rgba(0, 180, 255, 0.5));
+  }
+  
+  /* Background patterns */
+  .dash-pattern {
+    background-image: 
+      radial-gradient(rgba(0, 180, 255, 0.1) 1px, transparent 1px),
+      radial-gradient(rgba(6, 247, 247, 0.1) 1px, transparent 1px);
+    background-size: 30px 30px, 90px 90px;
+    background-position: 0 0, 15px 15px;
+  }
+  
+  .grid-pattern {
+    background-size: 50px 50px;
+    background-image: 
+      linear-gradient(to right, rgba(6, 247, 247, 0.05) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(6, 247, 247, 0.05) 1px, transparent 1px);
+  }
+  
+  /* Button effects */
+  .btn-glow {
+    @apply transition-all duration-300;
+  }
+  
+  .btn-glow:hover {
+    transform: translateY(-3px);
+  }
+  
+  .btn-glow-blue:hover {
+    box-shadow: 0 0 10px theme('colors.electric.DEFAULT'), 0 0 20px rgba(0, 180, 255, 0.4);
+  }
+  
+  .btn-glow-cyan:hover {
+    box-shadow: 0 0 10px theme('colors.cyan.DEFAULT'), 0 0 20px rgba(6, 247, 247, 0.4);
+  }
+  
+  .btn-glow-teal:hover {
+    box-shadow: 0 0 10px theme('colors.teal.DEFAULT'), 0 0 20px rgba(2, 226, 185, 0.4);
+  }
+  
+  /* Animations */
+  @keyframes pulse-subtle {
+    0%, 100% { opacity: 0.8; }
+    50% { opacity: 1; }
+  }
+  
+  .pulse-animation {
+    animation: pulse-subtle 3s infinite ease-in-out;
+  }
+  
+  @keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+  }
+  
+  .float-animation {
+    animation: float 6s infinite ease-in-out;
+  }
+  
+  .animate-float {
+    animation: float 6s infinite ease-in-out;
+  }
+  
+  @keyframes glow {
+    0%, 100% { box-shadow: 0 0 5px rgba(6, 247, 247, 0.3); }
+    50% { box-shadow: 0 0 20px rgba(6, 247, 247, 0.7); }
+  }
+  
+  .glow-animation {
+    animation: glow 4s infinite ease-in-out;
+  }
+  
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  .typing-animation {
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typing 3.5s steps(40, end);
+  }
+  
+  /* Cyberpunk inspired line decoration */
+  .cyber-line {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .cyber-line::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(to right, transparent, #06f7f7, transparent);
+    animation: cyber-line-flow 4s infinite linear;
+  }
+  
+  @keyframes cyber-line-flow {
+    0% { transform: translateX(-100%); }
+    100% { transform: translateX(100%); }
+  }
+}

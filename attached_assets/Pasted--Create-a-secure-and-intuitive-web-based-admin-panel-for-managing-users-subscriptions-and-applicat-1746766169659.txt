@@ -1,0 +1,133 @@
+ Create a secure and intuitive web-based admin panel for managing users, subscriptions, and application maintenance tasks.
+
+I. Core Functionality & Target Users:
+
+Primary Users: Application administrators.
+
+Goal: To provide administrators with centralized control over user accounts, subscription plans, and essential application health/maintenance operations.
+
+II. Key Sections & Features:
+
+A. Dashboard / Overview:
+* Purpose: Provide a quick snapshot of key metrics and system status.
+* Widgets/Information to Display:
+* Total number of registered users.
+* Number of active subscriptions (broken down by plan, if applicable).
+* Recent user activity (new sign-ups, recent logins).
+* System health indicators (e.g., server status, database connection, error logs summary).
+* Quick links to frequently used sections.
+
+B. User Management:
+* Purpose: Allow administrators to view, search, create, edit, and manage user accounts.
+* Features:
+* User List View:
+* Display key user information in a sortable, paginated table (e.g., User ID, Username, Email, Registration Date, Last Login, Subscription Status, Role).
+* Search functionality (by username, email, ID).
+* Filtering options (by status, role, subscription plan).
+* User Detail View/Edit:
+* View all user profile information.
+* Edit user details (e.g., name, email, password reset trigger).
+* Assign/change user roles and permissions.
+* Activate/deactivate/suspend/delete user accounts.
+* View user activity logs (logins, key actions).
+* Manually manage subscription status (see section C).
+* Create New User: Form to add new users manually.
+
+C. Subscription Management (if applicable):
+* Purpose: Manage subscription plans and user subscriptions.
+* Features:
+* Subscription Plan Management (if plans are dynamic):
+* List, create, edit, and delete subscription plans (e.g., Basic, Premium, Pro).
+* Define plan features, pricing, and billing cycles.
+* User Subscription Management (linked from User Detail View or a separate section):
+* View a user's current subscription plan and history.
+* Manually assign or change a user's subscription plan.
+* Extend or cancel a user's subscription.
+* View payment history for a user (if integrated).
+* Handle refund requests or issue credits (if applicable).
+* Overall Subscription Metrics:
+* Track active subscriptions per plan.
+* Monitor subscription revenue (if applicable).
+* Churn rate.
+
+D. Application Maintenance & Monitoring:
+* Purpose: Provide tools for monitoring application health and performing routine maintenance and configuration.
+* Features:
+* System Health Dashboard:
+* Real-time monitoring of server resources (CPU, memory, disk space).
+* Database status and performance metrics.
+* Status of critical background jobs or services.
+* Settings:
+* System Logs:
+* Access to application logs (e.g., error logs, access logs).
+* Search and filter logs by date, type, severity.
+* Option to download logs.
+* Configuration Settings:
+* Interface to manage key application settings (e.g., API keys, feature flags, email templates).
+* Audit trail for configuration changes.
+* Backup & Restore (Optional but Recommended):
+* Interface to trigger manual backups.
+* View status of automated backups.
+* Option to initiate a restore process (with appropriate warnings and confirmations).
+* Cache Management:
+* Option to clear application cache(s).
+* Announcements/Notifications Management:
+* Ability to create and send system-wide announcements or notifications to users.
+
+III. Design & User Experience (UX) Considerations:
+
+Interface: Clean, modern, and intuitive. Prioritize ease of use for administrators.
+
+Responsiveness: Fully responsive design, accessible on desktop, tablet, and mobile devices.
+
+Navigation: Clear and consistent navigation menu (e.g., sidebar or top navigation bar).
+
+Data Visualization: Use charts and graphs on the dashboard for easy understanding of metrics.
+
+Feedback & Notifications: Provide clear feedback for actions (e.g., "User updated successfully," "Error saving settings"). Use non-intrusive notifications.
+
+Security:
+
+Role-based access control (RBAC) for different admin levels (e.g., super-admin, content moderator).
+
+Secure login mechanism (e.g., two-factor authentication option).
+
+Protection against common web vulnerabilities (XSS, CSRF, SQL Injection).
+
+Audit logs for all administrative actions.
+
+Search & Filtering: Robust search and filtering capabilities in all list views.
+
+Bulk Actions: Allow for bulk actions where appropriate (e.g., bulk deactivating users).
+
+IV. Technology Stack (Specify if you have preferences):
+
+Frontend: (e.g., React, Vue, Angular, HTML/CSS/JavaScript with a framework like Bootstrap/Tailwind CSS)
+
+Backend: (e.g., Node.js/Express, Python/Django/Flask, Ruby on Rails, PHP/Laravel)
+
+Database: (e.g., PostgreSQL, MySQL, MongoDB)
+
+Authentication: (e.g., JWT, OAuth2)
+
+V. Deliverables (if for a developer):
+
+Source code.
+
+Deployment scripts/instructions.
+
+Documentation for setup and usage.
+
+VI. Specific Exclusions (if any):
+
+(e.g., "No direct payment processing integration needed in this phase," "User-facing profile editing is out of scope for the admin panel.")
+
+Self-Correction/Refinement during generation:
+
+Ensure actions that modify data (delete, suspend, change plan) have confirmation dialogs to prevent accidental changes.
+
+Prioritize clarity and avoid clutter in the UI.
+
+Ensure error messages are user-friendly and provide guidance.
+
+Consider performance for large datasets (e.g., pagination, efficient database queries).

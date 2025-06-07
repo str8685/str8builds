@@ -1,0 +1,10 @@
+{
+  "name": "STR8 BUILD",
+  "description": "Construction Project Management Platform",
+  "spa": true,
+  "entry": "index.html",
+  "error": "404.html",
+  "rewrites": [
+    { "source": "/*", "destination": "/index.html" }
+  ]
+} 

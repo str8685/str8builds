@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    #fixed-jobs-link {
+      position: fixed;
+      bottom: 170px; /* Position it above the bottom nav */
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 99999;
+      background: linear-gradient(135deg, #0891b2, #0e7490);
+      color: white;
+      padding: 8px 20px;
+      border-radius: 20px;
+      text-decoration: none;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      font-weight: bold;
+      font-size: 14px;
+      box-shadow: 0 0 15px rgba(6, 182, 212, 0.5);
+      border: 1px solid rgba(6, 182, 212, 0.3);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      backdrop-filter: blur(5px);
+    }
+    
+    #fixed-jobs-link:hover {
+      background: linear-gradient(135deg, #0e7490, #155e75);
+      box-shadow: 0 0 20px rgba(6, 182, 212, 0.7);
+    }
+  </style>
+</head>
+<body>
+  <a href="/jobs" id="fixed-jobs-link">
+    <i class="fas fa-briefcase"></i> Go to Jobs
+  </a>
+  
+  <script>
+    // This script runs after the page has loaded
+    document.addEventListener('DOMContentLoaded', function() {
+      // Inject the link element directly into the body
+      const jobsLink = document.createElement('a');
+      jobsLink.id = 'fixed-jobs-link';
+      jobsLink.href = '/jobs';
+      jobsLink.innerHTML = '<i class="fas fa-briefcase"></i> Go to Jobs';
+      
+      document.body.appendChild(jobsLink);
+      
+      // Directly attach a click handler that bypasses React
+      jobsLink.addEventListener('click', function(e) {
+        e.preventDefault();
+        window.location.href = '/jobs';
+      });
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Direct API Login</title>
+  <style>
+    body {
+      font-family: system-ui, sans-serif;
+      background-color: #0a0a14;
+      color: #fff;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    
+    .form-container {
+      background-color: #111128;
+      border-radius: 8px;
+      padding: 20px;
+      margin-bottom: 20px;
+      box-shadow: 0 0 20px rgba(0, 255, 255, 0.2);
+    }
+    
+    h1, h2 {
+      color: #00ffff;
+    }
+    
+    input, button {
+      padding: 10px;
+      margin: 5px 0;
+      width: 100%;
+      box-sizing: border-box;
+    }
+    
+    button {
+      background-color: #00ffff;
+      color: #000;
+      border: none;
+      cursor: pointer;
+      font-weight: bold;
+    }
+    
+    button:hover {
+      background-color: #00cccc;
+    }
+    
+    pre {
+      background-color: #111;
+      padding: 10px;
+      border-radius: 4px;
+      overflow-x: auto;
+      white-space: pre-wrap;
+    }
+    
+    .success { color: #4caf50; }
+    .error { color: #f44336; }
+    
+    #testResults div {
+      margin-bottom: 20px;
+      border-bottom: 1px solid #333;
+      padding-bottom: 10px;
+    }
+    
+    #testResults h3 {
+      margin-bottom: 5px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Direct API Login Test</h1>
+  
+  <div class="form-container">
+    <h2>Login Credentials</h2>
+    <input type="text" id="identifier" placeholder="Username or Email" value="admin@str8build.com">
+    <input type="password" id="password" placeholder="Password" value="test123">
+    <button onclick="runAllTests()">Run All Tests</button>
+  </div>
+  
+  <div id="testResults"></div>
+  
+  <script>
+    const resultsContainer = document.getElementById('testResults');
+    
+    function appendResult(title, request, response, success) {
+      const resultDiv = document.createElement('div');
+      const resultClass = success ? 'success' : 'error';
+      
+      resultDiv.innerHTML = `
+        <h3 class="${resultClass}">${title}</h3>
+        <h4>Request:</h4>
+        <pre>${JSON.stringify(request, null, 2)}</pre>
+        <h4>Response:</h4>
+        <pre>${JSON.stringify(response, null, 2)}</pre>
+      `;
+      
+      resultsContainer.appendChild(resultDiv);
+    }
+    
+    async function testLogin(requestBody, title) {
+      try {
+        const response = await fetch('/api/auth/login', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify(requestBody),
+          credentials: 'include'
+        });
+        
+        const responseData = await response.json();
+        const success = response.ok;
+        
+        appendResult(
+          `${title} - ${success ? 'SUCCESS' : 'FAILED'}`, 
+          requestBody, 
+          responseData, 
+          success
+        );
+        
+        return { success, data: responseData };
+      } catch (error) {
+        appendResult(
+          `${title} - ERROR`, 
+          requestBody, 
+          { error: error.message }, 
+          false
+        );
+        return { success: false, error };
+      }
+    }
+    
+    async function runAllTests() {
+      // Clear previous results
+      resultsContainer.innerHTML = '';
+      
+      const identifier = document.getElementById('identifier').value;
+      const password = document.getElementById('password').value;
+      
+      // Test 1: Username field with email value
+      await testLogin(
+        { username: identifier, password }, 
+        'Test 1: Using email in username field'
+      );
+      
+      // Test 2: Email field with email value
+      await testLogin(
+        { email: identifier, password }, 
+        'Test 2: Using email in email field'
+      );
+      
+      // Test 3: Both fields
+      await testLogin(
+        { username: identifier, email: identifier, password }, 
+        'Test 3: Using both username and email fields'
+      );
+      
+      // Test 4: Email as username and original admin username in email field
+      await testLogin(
+        { username: identifier, email: 'str8', password }, 
+        'Test 4: Email as username, original username as email'
+      );
+      
+      // Test 5: Original username in username field
+      await testLogin(
+        { username: 'str8', password }, 
+        'Test 5: Using original username (str8)'
+      );
+    }
+  </script>
+</body>
+</html>

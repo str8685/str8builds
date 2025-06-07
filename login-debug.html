@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Str8 Build Debug Login</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #0a0a14;
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+    
+    .login-container {
+      background-color: #111128;
+      border-radius: 8px;
+      padding: 30px;
+      width: 350px;
+      box-shadow: 0 0 20px rgba(0, 255, 255, 0.2);
+      border: 1px solid rgba(0, 255, 255, 0.1);
+    }
+    
+    h1 {
+      text-align: center;
+      color: #00ffff;
+      margin-bottom: 30px;
+    }
+    
+    .input-group {
+      margin-bottom: 20px;
+    }
+    
+    label {
+      display: block;
+      margin-bottom: 5px;
+      color: rgba(255, 255, 255, 0.8);
+    }
+    
+    input {
+      width: 100%;
+      padding: 10px;
+      border-radius: 4px;
+      border: 1px solid #2a2a3d;
+      background-color: rgba(255, 255, 255, 0.05);
+      color: white;
+      box-sizing: border-box;
+    }
+    
+    button {
+      width: 100%;
+      padding: 12px;
+      background: linear-gradient(to right, #0088ff, #00ffff);
+      border: none;
+      border-radius: 4px;
+      color: #000;
+      font-weight: bold;
+      cursor: pointer;
+      transition: all 0.3s;
+      margin-top: 10px;
+    }
+    
+    button:hover {
+      box-shadow: 0 0 15px rgba(0, 255, 255, 0.5);
+    }
+    
+    .response {
+      margin-top: 20px;
+      padding: 15px;
+      border-radius: 4px;
+      background-color: rgba(0, 0, 0, 0.3);
+      word-break: break-all;
+      max-height: 200px;
+      overflow-y: auto;
+    }
+    
+    .success {
+      border-left: 4px solid #00ff00;
+    }
+    
+    .error {
+      border-left: 4px solid #ff0000;
+    }
+  </style>
+</head>
+<body>
+  <div class="login-container">
+    <h1>Str8 Build Debug Login</h1>
+    <div class="input-group">
+      <label for="email">Email:</label>
+      <input type="email" id="email" value="admin@str8build.com">
+    </div>
+    <div class="input-group">
+      <label for="password">Password:</label>
+      <input type="password" id="password" value="admin">
+    </div>
+    <button onclick="login()">Login</button>
+    
+    <div id="response" class="response" style="display: none;"></div>
+  </div>
+  
+  <script>
+    async function login() {
+      const email = document.getElementById('email').value;
+      const password = document.getElementById('password').value;
+      const responseEl = document.getElementById('response');
+      
+      responseEl.innerHTML = 'Logging in...';
+      responseEl.className = 'response';
+      responseEl.style.display = 'block';
+      
+      try {
+        // First try with the email in the email field
+        const emailResponse = await fetch('/api/auth/login', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({ email, password }),
+          credentials: 'include'
+        });
+        
+        const emailData = await emailResponse.json();
+        console.log('Email login response:', emailData);
+        
+        if (emailResponse.ok) {
+          responseEl.innerHTML = `<strong>Login successful!</strong><br>User: ${JSON.stringify(emailData.user, null, 2)}`;
+          responseEl.className = 'response success';
+          
+          // Redirect to dashboard after successful login
+          setTimeout(() => {
+            window.location.href = '/';
+          }, 1500);
+          return;
+        }
+        
+        // If email field didn't work, try with username field
+        const usernameResponse = await fetch('/api/auth/login', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({ username: email, password }),
+          credentials: 'include'
+        });
+        
+        const usernameData = await usernameResponse.json();
+        console.log('Username login response:', usernameData);
+        
+        if (usernameResponse.ok) {
+          responseEl.innerHTML = `<strong>Login successful!</strong><br>User: ${JSON.stringify(usernameData.user, null, 2)}`;
+          responseEl.className = 'response success';
+          
+          // Redirect to dashboard after successful login
+          setTimeout(() => {
+            window.location.href = '/';
+          }, 1500);
+        } else {
+          responseEl.innerHTML = `<strong>Login failed!</strong><br>Error: ${JSON.stringify(usernameData, null, 2)}`;
+          responseEl.className = 'response error';
+        }
+      } catch (error) {
+        console.error('Login error:', error);
+        responseEl.innerHTML = `<strong>Error:</strong> ${error.message}`;
+        responseEl.className = 'response error';
+      }
+    }
+  </script>
+</body>
+</html>

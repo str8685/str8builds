@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Help Icon Click Test</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #0f1729;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            background-color: #161e33;
+            border-radius: 10px;
+            padding: 30px;
+            max-width: 500px;
+            width: 100%;
+        }
+        h1 {
+            color: #4FEBFF;
+            margin-top: 0;
+        }
+        .test-section {
+            margin: 20px 0;
+            padding: 15px;
+            background-color: rgba(79, 235, 255, 0.1);
+            border-radius: 8px;
+            border: 1px solid rgba(79, 235, 255, 0.2);
+        }
+        .btn {
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+            padding: 0;
+            margin: 10px 10px 10px 0;
+        }
+        .btn:hover svg {
+            stroke: #4FEBFF;
+        }
+        .click-counter {
+            display: flex;
+            align-items: center;
+            margin-top: 20px;
+        }
+        .counter {
+            margin-left: 10px;
+            font-size: 18px;
+            color: #4FEBFF;
+            font-weight: bold;
+        }
+        .regular-button {
+            background-color: rgba(79, 235, 255, 0.2);
+            border: none;
+            padding: 8px 15px;
+            border-radius: 5px;
+            color: white;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+        .regular-button:hover {
+            background-color: rgba(79, 235, 255, 0.3);
+        }
+        .desc {
+            font-size: 14px;
+            color: #aaa;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Help Icon Click Test</h1>
+        
+        <div class="test-section">
+            <h3>Test 1: Simple Inline SVG</h3>
+            <p>Click the icon below to trigger an alert:</p>
+            
+            <svg id="svg1" xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#4FEBFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="cursor: pointer;">
+                <circle cx="12" cy="12" r="10"></circle>
+                <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path>
+                <path d="M12 17h.01"></path>
+            </svg>
+            
+            <p class="desc">This is a direct SVG with onclick handler.</p>
+        </div>
+        
+        <div class="test-section">
+            <h3>Test 2: Button with SVG</h3>
+            <p>Click the button below:</p>
+            
+            <button class="btn" id="btn1">
+                <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#4FEBFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path>
+                    <path d="M12 17h.01"></path>
+                </svg>
+            </button>
+            
+            <p class="desc">This is an SVG wrapped in a button element.</p>
+        </div>
+        
+        <div class="test-section">
+            <h3>Test 3: Click Counter</h3>
+            <div class="click-counter">
+                <button class="btn" id="btn2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#F471B5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path>
+                        <path d="M12 17h.01"></path>
+                    </svg>
+                </button>
+                <span>Clicks: <span id="counter" class="counter">0</span></span>
+            </div>
+            <p class="desc">Click the pink help icon to increment the counter.</p>
+        </div>
+        
+        <div class="test-section">
+            <h3>Test 4: Regular Button</h3>
+            <button class="regular-button" id="regularBtn">
+                This is a regular button
+            </button>
+            <p class="desc">A standard button for comparison.</p>
+        </div>
+    </div>
+
+    <script>
+        // Test 1: Simple SVG click
+        document.getElementById('svg1').addEventListener('click', function() {
+            alert('SVG clicked!');
+            console.log('SVG clicked!');
+        });
+        
+        // Test 2: Button with SVG
+        document.getElementById('btn1').addEventListener('click', function() {
+            alert('Button with SVG clicked!');
+            console.log('Button with SVG clicked!');
+        });
+        
+        // Test 3: Click counter
+        let count = 0;
+        document.getElementById('btn2').addEventListener('click', function() {
+            count++;
+            document.getElementById('counter').textContent = count;
+            console.log('Counter incremented to:', count);
+        });
+        
+        // Test 4: Regular button
+        document.getElementById('regularBtn').addEventListener('click', function() {
+            alert('Regular button clicked!');
+            console.log('Regular button clicked!');
+        });
+    </script>
+</body>
+</html>

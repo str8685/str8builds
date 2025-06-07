@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Button Icon Test</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #0f1729;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            background-color: #161e33;
+            border-radius: 10px;
+            padding: 30px;
+            max-width: 500px;
+            width: 100%;
+        }
+        h1 {
+            color: #4FEBFF;
+            margin-top: 0;
+        }
+        p {
+            margin-bottom: 20px;
+        }
+        .test-group {
+            margin: 30px 0;
+            padding: 20px;
+            background-color: rgba(79, 235, 255, 0.1);
+            border-radius: 8px;
+            border: 1px solid rgba(79, 235, 255, 0.2);
+        }
+        
+        /* Basic icon button */
+        .icon-button {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: transparent;
+            border: 2px solid #4FEBFF;
+            color: #4FEBFF;
+            font-size: 20px;
+            font-weight: bold;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+            margin: 10px 10px 10px 0;
+            padding: 0;
+        }
+        
+        .icon-button:hover {
+            background-color: rgba(79, 235, 255, 0.1);
+            transform: scale(1.1);
+        }
+        
+        /* Count display */
+        .count-display {
+            font-size: 18px;
+            margin-left: 15px;
+            color: #4FEBFF;
+        }
+        
+        .flex-row {
+            display: flex;
+            align-items: center;
+        }
+        
+        .description {
+            color: #aaa;
+            font-size: 14px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Simple Button Icon Test</h1>
+        <p>This page tests basic HTML buttons styled as help icons to ensure click functionality works.</p>
+        
+        <div class="test-group">
+            <h3>Test 1: Simple Button</h3>
+            <button class="icon-button" id="button1">?</button>
+            <p class="description">This is a basic HTML button styled to look like a help icon. Click it to trigger an alert.</p>
+        </div>
+        
+        <div class="test-group">
+            <h3>Test 2: Click Counter</h3>
+            <div class="flex-row">
+                <button class="icon-button" id="button2">?</button>
+                <span class="count-display">Clicks: <span id="counter">0</span></span>
+            </div>
+            <p class="description">This button increments a counter when clicked.</p>
+        </div>
+        
+        <div class="test-group">
+            <h3>Test 3: Multiple Buttons</h3>
+            <div class="flex-row">
+                <button class="icon-button" id="button3" style="border-color: #4FEBFF; color: #4FEBFF;">?</button>
+                <button class="icon-button" id="button4" style="border-color: #F471B5; color: #F471B5;">?</button>
+                <button class="icon-button" id="button5" style="border-color: #6366f1; color: #6366f1;">?</button>
+            </div>
+            <p class="description">Multiple buttons with different colors. Each one triggers a different alert.</p>
+        </div>
+    </div>
+    
+    <script>
+        // Test 1: Simple button click
+        document.getElementById('button1').addEventListener('click', function() {
+            alert('Help icon clicked!');
+            console.log('Help icon clicked!');
+        });
+        
+        // Test 2: Counter button
+        let count = 0;
+        document.getElementById('button2').addEventListener('click', function() {
+            count++;
+            document.getElementById('counter').textContent = count;
+            console.log('Counter incremented to: ' + count);
+        });
+        
+        // Test 3: Multiple buttons
+        document.getElementById('button3').addEventListener('click', function() {
+            alert('Cyan button clicked!');
+            console.log('Cyan button clicked!');
+        });
+        
+        document.getElementById('button4').addEventListener('click', function() {
+            alert('Pink button clicked!');
+            console.log('Pink button clicked!');
+        });
+        
+        document.getElementById('button5').addEventListener('click', function() {
+            alert('Indigo button clicked!');
+            console.log('Indigo button clicked!');
+        });
+    </script>
+</body>
+</html>

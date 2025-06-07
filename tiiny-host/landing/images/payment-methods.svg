@@ -1,0 +1,152 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="320" height="64" viewBox="0 0 320 64">
+  <defs>
+    <linearGradient id="visa-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00579f" />
+      <stop offset="100%" stop-color="#0077d7" />
+    </linearGradient>
+    <linearGradient id="mastercard-gradient-1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ff5f00" />
+      <stop offset="100%" stop-color="#f79e1b" />
+    </linearGradient>
+    <linearGradient id="mastercard-gradient-2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#eb001b" />
+      <stop offset="100%" stop-color="#f79e1b" />
+    </linearGradient>
+    <linearGradient id="paypal-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#003087" />
+      <stop offset="100%" stop-color="#009cde" />
+    </linearGradient>
+    <linearGradient id="amex-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#2557d6" />
+      <stop offset="100%" stop-color="#016fd0" />
+    </linearGradient>
+  </defs>
+
+  <!-- Visa Card -->
+  <g transform="translate(10, 10)">
+    <rect x="0" y="0" width="60" height="40" rx="4" fill="#ffffff" />
+    <path d="M28 20 
+             L25 10 
+             L21 10 
+             L16 25 
+             L20 25 
+             L21 22 
+             L26 22 
+             L27 25 
+             L31 25z
+             M22 19 
+             L24 14 
+             L25 19z" 
+          fill="url(#visa-gradient)" />
+    <path d="M37 10 
+             C35 10, 33 12, 33 15 
+             C33 18, 35 20, 38 20 
+             C39 20, 40 20, 41 19 
+             L41 19 
+             L40 22 
+             C39 22, 39 23, 37 23 
+             C36 23, 35 22, 34 22 
+             L34 25 
+             C35 25, 36 26, 37 26 
+             C41 26, 44 24, 45 19 
+             L47 10 
+             L43 10 
+             L42 14 
+             L42 13 
+             C42 11, 40 10, 39 10 
+             z
+             M40 13
+             C41 13, 42 14, 42 15 
+             C42 16, 41 17, 40 17 
+             C39 17, 38 16, 38 15 
+             C38 14, 39 13, 40 13z" 
+          fill="url(#visa-gradient)" />
+  </g>
+
+  <!-- Mastercard -->
+  <g transform="translate(90, 10)">
+    <rect x="0" y="0" width="60" height="40" rx="4" fill="#ffffff" />
+    <circle cx="24" cy="20" r="10" fill="#eb001b" />
+    <circle cx="36" cy="20" r="10" fill="#f79e1b" />
+    <path d="M30 13 
+             C28 15, 26 17, 26 20 
+             C26 23, 28 25, 30 27 
+             C32 25, 34 23, 34 20 
+             C34 17, 32 15, 30 13z" 
+          fill="#ff5f00" />
+  </g>
+
+  <!-- PayPal -->
+  <g transform="translate(170, 10)">
+    <rect x="0" y="0" width="60" height="40" rx="4" fill="#ffffff" />
+    <path d="M20 10 
+             C17 10, 15 12, 15 15 
+             C15 19, 17 22, 21 22 
+             L22 22 
+             L21 26 
+             L25 26 
+             L28 10 
+             z
+             M21 19 
+             C19 19, 18 17, 19 16 
+             C19 15, 20 14, 21 14 
+             L24 14 
+             L23 19 
+             z" 
+          fill="url(#paypal-gradient)" />
+    <path d="M30 10 
+             C27 10, 25 12, 25 15 
+             C25 19, 27 22, 31 22 
+             L32 22 
+             L31 26 
+             L35 26 
+             L38 10 
+             z
+             M31 19 
+             C29 19, 28 17, 29 16 
+             C29 15, 30 14, 31 14 
+             L34 14 
+             L33 19 
+             z" 
+          fill="#009cde" opacity="0.7" />
+  </g>
+
+  <!-- American Express -->
+  <g transform="translate(250, 10)">
+    <rect x="0" y="0" width="60" height="40" rx="4" fill="#ffffff" />
+    <path d="M18 25 
+             L20 20 
+             L26 20 
+             L24 25 
+             z
+             M27 10 
+             L30 10 
+             L33 18 
+             L36 10 
+             L39 10 
+             L34 24 
+             L30 24 
+             z
+             M21 10 
+             L17 19 
+             L16 10 
+             L13 10 
+             L10 24 
+             L13 24 
+             L14 20 
+             L15 24 
+             L20 24 
+             L21 20 
+             L22 24 
+             L25 24 
+             L30 10 
+             z" 
+          fill="url(#amex-gradient)" />
+  </g>
+  
+  <!-- Labels -->
+  <text x="40" y="60" font-family="Arial, sans-serif" font-size="10" fill="#ffffff" text-anchor="middle">Visa</text>
+  <text x="120" y="60" font-family="Arial, sans-serif" font-size="10" fill="#ffffff" text-anchor="middle">Mastercard</text>
+  <text x="200" y="60" font-family="Arial, sans-serif" font-size="10" fill="#ffffff" text-anchor="middle">PayPal</text>
+  <text x="280" y="60" font-family="Arial, sans-serif" font-size="10" fill="#ffffff" text-anchor="middle">Amex</text>
+</svg>

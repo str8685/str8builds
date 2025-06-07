@@ -1,0 +1,137 @@
+name: STR8 BUILD CI/CD
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+  workflow_dispatch:
+    inputs:
+      environment:
+        description: 'Environment to deploy to'
+        required: true
+        default: 'staging'
+        type: choice
+        options:
+        - staging
+        - production
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - uses: actions/checkout@v3
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '20'
+          cache: 'npm'
+      
+      - name: Install dependencies
+        run: npm ci
+      
+      - name: Type check
+        run: npm run check
+        
+      - name: Build application
+        run: npm run build:prod
+      
+      - name: Generate sitemap
+        run: npm run generate:sitemap
+      
+      - name: Archive build artifacts
+        uses: actions/upload-artifact@v3
+        with:
+          name: build-output
+          path: |
+            dist/
+            !dist/node_modules
+  
+  deploy-staging:
+    needs: build-and-test
+    runs-on: ubuntu-latest
+    if: github.event_name == 'push' || (github.event_name == 'workflow_dispatch' && github.event.inputs.environment == 'staging')
+    
+    steps:
+      - name: Download build artifacts
+        uses: actions/download-artifact@v3
+        with:
+          name: build-output
+          path: dist
+      
+      - name: Deploy to Staging
+        uses: netlify/actions/cli@master
+        env:
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_STAGING_SITE_ID }}
+        with:
+          args: deploy --dir=dist/public --prod
+          
+      - name: Create deployment status comment
+        uses: actions/github-script@v6
+        if: github.event_name == 'pull_request'
+        with:
+          script: |
+            const { issue: { number: issue_number }, repo: { owner, repo } } = context;
+            github.rest.issues.createComment({
+              issue_number,
+              owner,
+              repo,
+              body: `✅ Staging deployment successful! Visit the preview at ${process.env.DEPLOY_URL}`
+            });
+        env:
+          DEPLOY_URL: ${{ steps.deploy.outputs.deploy-url }}
+  
+  deploy-production:
+    needs: build-and-test
+    runs-on: ubuntu-latest
+    if: github.event_name == 'workflow_dispatch' && github.event.inputs.environment == 'production'
+    environment: production
+    
+    steps:
+      - name: Download build artifacts
+        uses: actions/download-artifact@v3
+        with:
+          name: build-output
+          path: dist
+      
+      - name: Deploy to Production
+        uses: netlify/actions/cli@master
+        env:
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_PRODUCTION_SITE_ID }}
+        with:
+          args: deploy --dir=dist/public --prod
+      
+      - name: Create release tag
+        uses: actions/github-script@v6
+        with:
+          script: |
+            const { sha } = context;
+            const tagName = `release-${new Date().toISOString().split('T')[0]}-${sha.slice(0, 7)}`;
+            github.rest.git.createRef({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              ref: `refs/tags/${tagName}`,
+              sha
+            });
+            
+            return tagName;
+        id: create-tag
+      
+      - name: Create Release
+        uses: actions/github-script@v6
+        with:
+          script: |
+            const tagName = "${{ steps.create-tag.outputs.result }}";
+            github.rest.repos.createRelease({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              tag_name: tagName,
+              name: `Production Release ${tagName}`,
+              body: `Production deployment on ${new Date().toISOString().split('T')[0]}`,
+              draft: false,
+              prerelease: false
+            });

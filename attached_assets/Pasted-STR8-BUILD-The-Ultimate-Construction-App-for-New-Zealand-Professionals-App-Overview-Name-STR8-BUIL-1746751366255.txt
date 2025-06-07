@@ -1,0 +1,109 @@
+STR8 BUILD: The Ultimate Construction App for New Zealand Professionals
+App Overview
+Name: STR8 BUILD
+Owner: C.SAMU
+Version: 3.4 (as of May 9, 2025)
+Target Market: New Zealand construction professionals
+Primary Locations: Throughout New Zealand (e.g., Papamoa, Bay of Plenty)
+App Vision
+STR8 BUILD serves as the ultimate digital toolkit and job management assistant for New Zealand construction professionals. It enhances efficiency, accuracy, compliance, and business administration on every job site through a comprehensive suite of NZ-specific resources, powerful calculators, mobile sensor-based tools, supplier locator functionality, intelligent weather analysis, AI-powered assistance, and integrated timesheet/invoicing capabilities.
+
+UI/UX Design
+The app features a cutting-edge futuristic UI with:
+
+Color Scheme: Deep space blues, dark purples, and near-blacks for backgrounds with electric blues, vibrant cyans, and energetic teals as accent colors
+Visual Elements: Minimalist, sharp, geometric icons with neon/holographic styling
+UI Components: Clean lines, smooth transitions, translucent/frosted glass effects, geometric patterns, and HUD-like overlays
+Typography: Modern sans-serif fonts with stylized geometric/condensed fonts for headers and key readouts
+Dynamic Elements: Subtle animated backgrounds on key screens
+Interactive Widgets: Sleek modules with translucent backgrounds, glowing borders, and animated data displays
+Core Features
+1. Dashboard (Primary Home Screen)
+A central hub providing at-a-glance information and quick actions:
+
+Job Timer: Visual time tracking integrated into the dashboard
+Quick Summaries: Customizable widgets displaying key information
+Customizable Layout: User-configurable dashboard arrangement
+2. Timesheet Management
+Comprehensive time tracking and reporting system:
+
+Automatic Logging & Manual Entry: Multiple input methods
+Hourly Rate Tracking & Calculations: Accurate financial tracking
+Reporting & Export: Formatted reports for accounting purposes
+3. Invoicing & Quoting
+Professional financial document creation and management:
+
+Invoice & Quote Creation: Templates with editable fields
+Automatic Calculations: NZD currency with GST integration
+Management & Tracking: Status monitoring for all documents
+Client Management: Organized client database
+Customizable Company Details: Branding and contact information
+4. NZ Building Resources
+Digital library of construction reference materials:
+
+Specialized Categories: Resources for stairs, roofing, decking, carpentry, GIB®, geometry, concrete, and fencing
+Interactive Elements: Modern presentation of diagrams and compliance checklists
+5. Mobile Tools Suite
+Sensor-based utilities for on-site use:
+
+Measurement Tools: Digital measuring capabilities
+Level and Angle Tools: Precision alignment utilities
+Sound Measurement: Noise level monitoring
+Project Camera & Site Notes: Visual documentation system
+Additional Tools: Various sensor-based utilities
+6. NZ Suppliers Directory & Locator
+Comprehensive building materials supplier database:
+
+Location-Based Map View: GPS-centered supplier mapping
+Nearby Suppliers List: Dynamic, sortable supplier information
+Search & Filtering: Category-based supplier filtering
+Detailed Supplier Profiles: Complete vendor information
+Offline Access: Available for favorited suppliers
+User Contributions: Community updates (Phase 2)
+7. Weather Impact Calculator
+Job site weather analysis:
+
+Weather Data Visualization: Futuristic charts and graphs
+Impact Analysis: Construction-specific weather interpretation
+8. AI Integration (Gemini)
+Intelligent assistant functionality:
+
+Voice Commands: Hands-free operation
+Smart Recommendations: Contextual suggestions
+Seamless Interface: Fully integrated into the app's design language
+9. Blocklayer.com Calculator Integration
+Construction calculation tools:
+
+Reskinned Interface: Maintaining consistent design
+3D Visualizations: Interactive building component models
+Navigation and Layout
+Bottom Navigation Bar: 5 primary tabs (Dashboard, Tools, Calculators, Resources, Jobs & Admin)
+Quick Access Features: Persistent AI search bar, floating action button, swipe gestures
+Responsive Design: Optimized for both phones and tablets
+Accessibility and Usability
+Job Site Adaptations: Glove-friendly targets, high-contrast mode, voice commands, offline functionality
+User Customization: Favorite tools, quick access settings, project-based configurations
+PWA Installation: "Add to Home Screen" functionality
+Development Priorities
+MVP 1: Foundation & Core Toolkit
+
+Basic Dashboard
+Core Calculators
+Essential NZ Building Resources
+Basic Mobile Tools
+Initial Project structure
+MVP 2: Timesheet & Basic Invoicing
+
+Timesheet functionality
+Invoicing functionality
+Basic Client Management
+Editable company/user profile
+"Add to Home Screen" pop-up
+MVP 3: Data Persistence & Sync
+
+Ongoing Development:
+
+Expanding Tools & Resources
+Weather Integration & AI
+Advanced Features & Refinements
+UI/UX Polish & Performance Optimization

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+    <meta name="description" content="STR8 BUILD - Professional construction management platform for contractors and builders" />
+    <meta name="theme-color" content="#0e1729" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta property="og:title" content="STR8 BUILD" />
+    <meta property="og:description" content="Professional construction management platform" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    
+    <title>STR8 BUILD | Professional Construction Management</title>
+    
+    <!-- Favicon and App Icons -->
+    <link rel="icon" type="image/svg+xml" href="icons/icon.svg" />
+    <link rel="apple-touch-icon" href="icons/apple-touch-icon.png" />
+    <link rel="manifest" href="manifest.json" />
+    
+    <!-- Preload critical assets -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    
+    <!-- Custom preload styling to avoid FOUC -->
+    <style>
+      :root {
+        --color-bg: #0e1729;
+        --color-text: #f8fafc;
+        --color-primary: #06b6d4;
+        --color-accent: #0ea5e9;
+      }
+      
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      
+      html, body {
+        height: 100%;
+        background-color: var(--color-bg);
+        color: var(--color-text);
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+      }
+      
+      #root {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+      }
+      
+      /* Loader styles */
+      .app-loader {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background: linear-gradient(to bottom right, #0f172a, #1e293b);
+        z-index: 9999;
+      }
+      
+      .loader-logo {
+        width: 120px;
+        height: 120px;
+        margin-bottom: 2rem;
+        filter: drop-shadow(0 0 12px rgba(6, 182, 212, 0.6));
+        animation: pulse 2s infinite ease-in-out;
+      }
+      
+      .loader-bar {
+        width: 200px;
+        height: 4px;
+        background: rgba(6, 182, 212, 0.2);
+        border-radius: 4px;
+        overflow: hidden;
+        position: relative;
+      }
+      
+      .loader-progress {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 0;
+        background: linear-gradient(to right, #06b6d4, #0ea5e9);
+        animation: loading 3s infinite ease-in-out;
+        border-radius: 4px;
+      }
+      
+      @keyframes pulse {
+        0%, 100% { opacity: 1; transform: scale(1); }
+        50% { opacity: 0.8; transform: scale(0.95); }
+      }
+      
+      @keyframes loading {
+        0% { width: 0; }
+        50% { width: 70%; }
+        100% { width: 100%; }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Initial loader that shows before React loads -->
+    <div class="app-loader" id="app-loader">
+      <img src="src/assets/str8-build-logo.png" alt="STR8 BUILD" class="loader-logo" />
+      <div class="loader-bar">
+        <div class="loader-progress"></div>
+      </div>
+    </div>
+    
+    <div id="root"></div>
+    
+    <!-- Remove loader once the app is loaded -->
+    <script>
+      window.addEventListener('load', function() {
+        setTimeout(function() {
+          const loader = document.getElementById('app-loader');
+          if (loader) {
+            loader.style.opacity = '0';
+            loader.style.transition = 'opacity 0.5s ease';
+            setTimeout(function() {
+              loader.style.display = 'none';
+            }, 500);
+          }
+        }, 800); // Short delay to ensure app has time to initialize
+      });
+    </script>
+    
+    <script type="module" src="/src/main.tsx"></script>
+    <script src="/register-sw.js"></script>
+  </body>
+</html>

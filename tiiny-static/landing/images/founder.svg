@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200">
+  <defs>
+    <linearGradient id="grad-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00b4ff" />
+      <stop offset="100%" stop-color="#00e6ff" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background circle -->
+  <circle cx="100" cy="100" r="100" fill="#141629" />
+  
+  <!-- Head and shoulders silhouette -->
+  <path d="M100 55 
+           C85 55, 75 65, 75 80
+           C75 95, 85 110, 100 110
+           C115 110, 125 95, 125 80
+           C125 65, 115 55, 100 55
+           
+           M65 140
+           C65 120, 80 110, 100 110
+           C120 110, 135 120, 135 140
+           L135 160
+           C135 180, 120 200, 100 200
+           C80 200, 65 180, 65 160
+           Z" 
+        fill="#2b3955" />
+  
+  <!-- Face outline -->
+  <circle cx="100" cy="80" r="30" fill="#3a4d75" />
+  
+  <!-- Eyes -->
+  <circle cx="90" cy="75" r="3" fill="#ffffff" />
+  <circle cx="110" cy="75" r="3" fill="#ffffff" />
+  
+  <!-- Mouth -->
+  <path d="M90 90 C95 95, 105 95, 110 90" fill="none" stroke="#ffffff" stroke-width="2" />
+  
+  <!-- Hard hat -->
+  <path d="M70 60
+           C70 45, 85 35, 100 35
+           C115 35, 130 45, 130 60
+           C130 65, 125 65, 125 65
+           L75 65
+           C75 65, 70 65, 70 60
+           Z" 
+        fill="url(#grad-bg)" />
+  <path d="M75 65 L125 65" stroke="#141629" stroke-width="2" />
+  
+  <!-- Border to separate hard hat -->
+  <path d="M75 65 
+           C75 65, 85 60, 100 60
+           C115 60, 125 65, 125 65" 
+        fill="none" stroke="#141629" stroke-width="2" />
+  
+  <!-- Safety vest detail -->
+  <path d="M85 110
+           L80 140
+           L100 130
+           L120 140
+           L115 110" 
+        fill="none" stroke="url(#grad-bg)" stroke-width="3" />
+</svg>

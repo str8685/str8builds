@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STR8 Build - Professional Construction Tools</title>
+    <style>
+        :root {
+            --primary: #00B2FF;
+            --primary-dark: #0090CC;
+            --background: #051D3B;
+            --background-light: #102C4C;
+            --text: #E6F4FF;
+            --text-secondary: #B3D9FF;
+            --accent: #00FFB2;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: var(--background);
+            color: var(--text);
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        header {
+            background: linear-gradient(to right, var(--background), var(--background-light));
+            padding: 20px 0;
+            border-bottom: 2px solid var(--primary);
+            box-shadow: 0 4px 15px rgba(0, 178, 255, 0.3);
+        }
+        
+        .logo {
+            font-size: 28px;
+            font-weight: bold;
+            color: var(--primary);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        .logo span {
+            color: var(--accent);
+        }
+        
+        .hero {
+            height: 80vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            background-image: radial-gradient(circle at center, var(--background-light) 0%, var(--background) 70%);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .hero::before {
+            content: '';
+            position: absolute;
+            width: 200%;
+            height: 200%;
+            background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><rect fill="none" stroke="%2300B2FF" stroke-width="0.25" x="0" y="0" width="100" height="100"/></svg>');
+            opacity: 0.1;
+            animation: backgroundMove 60s linear infinite;
+        }
+        
+        @keyframes backgroundMove {
+            0% { transform: translate(0, 0); }
+            100% { transform: translate(-50%, -50%); }
+        }
+        
+        .hero-content {
+            max-width: 800px;
+            z-index: 1;
+        }
+        
+        h1 {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+            background: linear-gradient(to right, var(--primary), var(--accent));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-fill-color: transparent;
+        }
+        
+        p.subtitle {
+            font-size: 1.5rem;
+            margin-bottom: 30px;
+            color: var(--text-secondary);
+        }
+        
+        .btn {
+            display: inline-block;
+            background: linear-gradient(to right, var(--primary), var(--primary-dark));
+            color: var(--text);
+            padding: 12px 30px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: all 0.3s ease;
+            margin: 10px;
+            border: none;
+            cursor: pointer;
+            box-shadow: 0 4px 15px rgba(0, 178, 255, 0.3);
+        }
+        
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(0, 178, 255, 0.5);
+        }
+        
+        .btn-accent {
+            background: linear-gradient(to right, var(--accent), #00CC8E);
+        }
+        
+        .tools {
+            padding: 80px 0;
+        }
+        
+        h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 50px;
+            color: var(--primary);
+        }
+        
+        .tools-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        
+        .tool-card {
+            background: linear-gradient(145deg, var(--background-light), var(--background));
+            border-radius: 15px;
+            padding: 30px;
+            text-align: center;
+            transition: all 0.3s ease;
+            border: 1px solid rgba(0, 178, 255, 0.1);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+        
+        .tool-card:hover {
+            transform: translateY(-10px);
+            border-color: var(--primary);
+            box-shadow: 0 15px 30px rgba(0, 178, 255, 0.2);
+        }
+        
+        .tool-icon {
+            font-size: 50px;
+            margin-bottom: 20px;
+            color: var(--primary);
+        }
+        
+        .tool-card h3 {
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+            color: var(--primary);
+        }
+        
+        .tool-card p {
+            color: var(--text-secondary);
+            margin-bottom: 20px;
+        }
+        
+        footer {
+            background: var(--background-light);
+            text-align: center;
+            padding: 30px 0;
+            border-top: 2px solid var(--primary);
+        }
+        
+        .glow {
+            position: relative;
+        }
+        
+        .glow::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            border-radius: inherit;
+            box-shadow: 0 0 30px 5px rgba(0, 178, 255, 0.5);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            z-index: -1;
+        }
+        
+        .glow:hover::after {
+            opacity: 1;
+        }
+        
+        .bottom-nav {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(to right, var(--background), var(--background-light));
+            display: flex;
+            justify-content: space-around;
+            padding: 15px 0;
+            border-top: 2px solid var(--primary);
+            box-shadow: 0 -4px 15px rgba(0, 178, 255, 0.3);
+        }
+        
+        .nav-item {
+            color: var(--text-secondary);
+            text-decoration: none;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            transition: all 0.3s ease;
+            padding: 8px 15px;
+            border-radius: 10px;
+        }
+        
+        .nav-item.active {
+            color: var(--primary);
+            background: rgba(0, 178, 255, 0.1);
+            box-shadow: 0 0 15px rgba(0, 178, 255, 0.3);
+        }
+        
+        .nav-item:hover {
+            color: var(--primary);
+            transform: translateY(-5px);
+        }
+        
+        .nav-icon {
+            font-size: 24px;
+            margin-bottom: 5px;
+        }
+        
+        .nav-text {
+            font-size: 12px;
+            font-weight: bold;
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.5rem;
+            }
+            
+            p.subtitle {
+                font-size: 1.2rem;
+            }
+            
+            .tools-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">STR8<span>Build</span></div>
+        </div>
+    </header>
+    
+    <section class="hero">
+        <div class="hero-content container">
+            <h1>Professional Construction Tools</h1>
+            <p class="subtitle">All the tools you need in one place, designed for construction professionals</p>
+            <a href="#tools" class="btn glow">Explore Tools</a>
+            <a href="#" class="btn btn-accent glow">Get Started</a>
+        </div>
+    </section>
+    
+    <section id="tools" class="tools container">
+        <h2>Our Professional Tool Suite</h2>
+        <div class="tools-grid">
+            <div class="tool-card glow">
+                <div class="tool-icon">📏</div>
+                <h3>Measure Tool</h3>
+                <p>Take precise measurements with our calibrated digital measuring tool. Perfect for planning and verification.</p>
+                <a href="#" class="btn">Try Now</a>
+            </div>
+            
+            <div class="tool-card glow">
+                <div class="tool-icon">📐</div>
+                <h3>Level Tool</h3>
+                <p>Digital bubble level that uses device motion sensors for perfect leveling on any surface.</p>
+                <a href="#" class="btn">Try Now</a>
+            </div>
+            
+            <div class="tool-card glow">
+                <div class="tool-icon">⚙️</div>
+                <h3>Angle Tool</h3>
+                <p>Measure angles with visual feedback for carpentry, tiling, and other precision work.</p>
+                <a href="#" class="btn">Try Now</a>
+            </div>
+            
+            <div class="tool-card glow">
+                <div class="tool-icon">🧮</div>
+                <h3>Calculator Tool</h3>
+                <p>Construction-specific calculator with both standard functions and specialized building calculations.</p>
+                <a href="#" class="btn">Try Now</a>
+            </div>
+            
+            <div class="tool-card glow">
+                <div class="tool-icon">📸</div>
+                <h3>Project Cam</h3>
+                <p>Enhanced camera tool to document progress and save photos directly to your projects.</p>
+                <a href="#" class="btn">Try Now</a>
+            </div>
+            
+            <div class="tool-card glow">
+                <div class="tool-icon">🔊</div>
+                <h3>Sound Meter</h3>
+                <p>Measure sound levels in decibels with safety guidelines for construction environments.</p>
+                <a href="#" class="btn">Try Now</a>
+            </div>
+        </div>
+    </section>
+    
+    <div class="bottom-nav">
+        <a href="#" class="nav-item active">
+            <div class="nav-icon">🏠</div>
+            <div class="nav-text">Home</div>
+        </a>
+        <a href="#" class="nav-item">
+            <div class="nav-icon">🧰</div>
+            <div class="nav-text">Tools</div>
+        </a>
+        <a href="#" class="nav-item">
+            <div class="nav-icon">📊</div>
+            <div class="nav-text">Projects</div>
+        </a>
+        <a href="#" class="nav-item">
+            <div class="nav-icon">⏱️</div>
+            <div class="nav-text">Timer</div>
+        </a>
+        <a href="#" class="nav-item">
+            <div class="nav-icon">👤</div>
+            <div class="nav-text">Profile</div>
+        </a>
+    </div>
+    
+    <footer>
+        <div class="container">
+            <p>© 2025 STR8 Build. All rights reserved.</p>
+        </div>
+    </footer>
+    
+    <script>
+        // Simple script to handle navigation
+        document.querySelectorAll('.nav-item').forEach(item => {
+            item.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelectorAll('.nav-item').forEach(navItem => {
+                    navItem.classList.remove('active');
+                });
+                this.classList.add('active');
+            });
+        });
+        
+        // Smooth scroll for anchors
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                if(this.getAttribute('href') !== '#') {
+                    e.preventDefault();
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>

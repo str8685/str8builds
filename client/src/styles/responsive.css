@@ -1,0 +1,178 @@
+/* Global responsive styles for the construction app */
+
+/* Base responsive container adjustments */
+.container {
+  width: 100%;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* Small screens (mobile phones) */
+@media (max-width: 640px) {
+  .container {
+    max-width: 100%;
+    padding-right: 0.75rem;
+    padding-left: 0.75rem;
+  }
+  
+  /* Adjust font sizes for mobile */
+  h1, .h1 {
+    font-size: 1.5rem !important;
+  }
+  
+  h2, .h2 {
+    font-size: 1.25rem !important;
+  }
+  
+  p, .p {
+    font-size: 0.875rem !important;
+  }
+  
+  /* Adjust spacing for mobile */
+  .card, .glass-card {
+    padding: 0.75rem !important;
+    margin-bottom: 0.75rem !important;
+  }
+  
+  /* Improved scrolling for tables on mobile */
+  .table-container {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  
+  /* Ensure form elements are properly sized on mobile */
+  input, select, textarea, button {
+    font-size: 16px !important; /* Prevents iOS zoom on focus */
+  }
+  
+  /* Adjust grid layouts for mobile */
+  .grid {
+    grid-template-columns: 1fr !important;
+  }
+  
+  /* Better touch targets for mobile */
+  button, 
+  .button,
+  [role="button"],
+  a {
+    min-height: 44px;
+    min-width: 44px;
+  }
+  
+  /* Ensure bottom nav doesn't cover content */
+  main, .content-area {
+    padding-bottom: 5rem !important;
+  }
+}
+
+/* Medium screens (tablets) */
+@media (min-width: 641px) and (max-width: 1024px) {
+  .container {
+    max-width: 100%;
+  }
+  
+  /* Adjust grid layouts for tablets */
+  .grid-cols-3 {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+  
+  .grid-cols-4 {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+  
+  /* Ensure bottom nav doesn't cover content */
+  main, .content-area {
+    padding-bottom: 4.5rem !important;
+  }
+  
+  /* Improved scrolling for tables on tablets */
+  .table-container {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+}
+
+/* Large screens (desktops) */
+@media (min-width: 1025px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+
+/* Touch-specific optimizations */
+@media (hover: none) {
+  /* Improve tap targets for touch devices */
+  .nav-item, 
+  .clickable {
+    padding: 0.5rem !important;
+  }
+  
+  /* Remove hover effects that don't work well on touch devices */
+  .hover-only {
+    display: none !important;
+  }
+}
+
+/* Construction tools optimizations for mobile */
+@media (max-width: 640px) {
+  .tools-container {
+    flex-wrap: nowrap !important;
+    overflow-x: auto !important;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE and Edge */
+    padding-bottom: 0.5rem;
+  }
+  
+  .tools-container::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera */
+  }
+  
+  .tool-item {
+    flex: 0 0 auto !important;
+    width: auto !important;
+    min-width: 80px !important;
+  }
+}
+
+/* Improve modal and dialog sizing on mobile */
+@media (max-width: 640px) {
+  .modal-content, 
+  .dialog-content {
+    width: 90% !important;
+    max-width: 90% !important;
+    margin: 0.5rem auto !important;
+    max-height: 80vh !important;
+  }
+}
+
+/* Responsive images */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Fix for iOS input shadows */
+input,
+textarea {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+/* Fix for viewport height issues on mobile browsers */
+.min-h-screen {
+  min-height: 100vh;
+  min-height: -webkit-fill-available;
+}
+
+html {
+  height: -webkit-fill-available;
+}
+
+body {
+  min-height: 100vh;
+  min-height: -webkit-fill-available;
+}

@@ -1,0 +1,1091 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>STR8 BUILD - Your Journey Starts Here</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    :root {
+      --space-black: #0f1729;
+      --space-dark: #121c36;
+      --space-blue: #1e293b;
+      --space-cyan: #38bdf8;
+      --space-electric: #5eead4;
+      --text-primary: #f8fafc;
+      --text-secondary: #cbd5e1;
+      --gradient-primary: linear-gradient(135deg, #0ea5e9, #2563eb);
+      --gradient-hover: linear-gradient(135deg, #0284c7, #1d4ed8);
+      --transition: all 0.3s ease;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background: linear-gradient(135deg, var(--space-black), var(--space-dark));
+      color: var(--text-primary);
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1000;
+      background: rgba(15, 23, 41, 0.9);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid rgba(56, 189, 248, 0.1);
+      transition: var(--transition);
+    }
+
+    header.scrolled {
+      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    .header-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 0;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+    }
+
+    .logo img {
+      height: 40px;
+      margin-right: 10px;
+      filter: drop-shadow(0 0 10px rgba(94, 234, 212, 0.5));
+      animation: pulsate 3s infinite alternate;
+    }
+
+    .logo span {
+      font-family: 'Space Grotesk', sans-serif;
+      font-weight: 700;
+      font-size: 24px;
+      background: linear-gradient(to right, var(--space-cyan), var(--space-electric));
+      -webkit-background-clip: text;
+      color: transparent;
+      letter-spacing: 1px;
+    }
+
+    nav ul {
+      display: flex;
+      list-style: none;
+    }
+
+    nav li {
+      margin-left: 30px;
+    }
+
+    nav a {
+      color: var(--text-primary);
+      text-decoration: none;
+      font-size: 16px;
+      font-weight: 500;
+      transition: var(--transition);
+      position: relative;
+    }
+
+    nav a:hover {
+      color: var(--space-cyan);
+    }
+
+    nav a::after {
+      content: '';
+      position: absolute;
+      bottom: -5px;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background: var(--gradient-primary);
+      transition: var(--transition);
+    }
+
+    nav a:hover::after {
+      width: 100%;
+    }
+
+    .mobile-menu-btn {
+      display: none;
+      background: none;
+      border: none;
+      color: var(--text-primary);
+      font-size: 24px;
+      cursor: pointer;
+    }
+
+    .hero {
+      padding: 180px 0 100px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: url('grid.svg');
+      opacity: 0.05;
+      pointer-events: none;
+    }
+
+    .hero-content {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .hero-text {
+      width: 50%;
+    }
+
+    .hero-text h1 {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 3.5rem;
+      font-weight: 800;
+      line-height: 1.2;
+      margin-bottom: 20px;
+      background: linear-gradient(to right, var(--space-cyan), var(--space-electric));
+      -webkit-background-clip: text;
+      color: transparent;
+      animation: fadeInUp 1s ease;
+    }
+
+    .hero-text p {
+      font-size: 1.1rem;
+      color: var(--text-secondary);
+      margin-bottom: 30px;
+      max-width: 90%;
+      animation: fadeInUp 1s ease 0.2s both;
+    }
+
+    .hero-image {
+      width: 45%;
+      position: relative;
+      animation: floatPhone 6s ease-in-out infinite;
+    }
+
+    .phone-outline {
+      width: 100%;
+      max-width: 300px;
+      margin: 0 auto;
+      position: relative;
+      border-radius: 40px;
+      overflow: hidden;
+      box-shadow: 0 40px 80px rgba(0, 0, 0, 0.5),
+                  0 0 20px rgba(56, 189, 248, 0.3),
+                  0 0 40px rgba(94, 234, 212, 0.2);
+      border: 8px solid var(--space-blue);
+    }
+    
+    .phone-screen {
+      width: 100%;
+      padding-bottom: 200%; /* Create aspect ratio */
+      background: linear-gradient(135deg, var(--space-black), var(--space-dark));
+      position: relative;
+      overflow: hidden;
+    }
+
+    .app-screenshot {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: url('/icons/dashboard.png');
+      background-size: cover;
+      background-position: top center;
+      animation: scrollApp 20s linear infinite;
+    }
+
+    .phone-notch {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 60%;
+      height: 25px;
+      background: var(--space-blue);
+      border-bottom-left-radius: 15px;
+      border-bottom-right-radius: 15px;
+      z-index: 10;
+    }
+
+    .glowing-circles {
+      position: absolute;
+      width: 400px;
+      height: 400px;
+      border-radius: 50%;
+      filter: blur(60px);
+      opacity: 0.3;
+      z-index: -1;
+    }
+    
+    .circle1 {
+      bottom: -200px;
+      right: -200px;
+      background: var(--space-cyan);
+      animation: pulseGlow 8s ease-in-out infinite;
+    }
+    
+    .circle2 {
+      top: -150px;
+      left: -150px;
+      background: #3b82f6;
+      animation: pulseGlow 8s ease-in-out 4s infinite;
+    }
+
+    .cta-btn {
+      display: inline-block;
+      background: var(--gradient-primary);
+      color: white;
+      font-weight: 600;
+      padding: 15px 30px;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: var(--transition);
+      position: relative;
+      overflow: hidden;
+      box-shadow: 0 10px 20px rgba(14, 165, 233, 0.3);
+      animation: fadeInUp 1s ease 0.4s both;
+    }
+
+    .cta-btn:hover {
+      background: var(--gradient-hover);
+      transform: translateY(-3px);
+      box-shadow: 0 15px 25px rgba(14, 165, 233, 0.4);
+    }
+
+    .cta-btn::before {
+      content: '';
+      position: absolute;
+      top: -10px;
+      left: -10px;
+      width: 10px;
+      height: 10px;
+      background: white;
+      border-radius: 50%;
+      opacity: 0.3;
+      transform: scale(0);
+      transition: transform 0.8s ease;
+    }
+
+    .cta-btn:hover::before {
+      transform: scale(30);
+    }
+
+    .cta-btn span {
+      position: relative;
+      z-index: 1;
+    }
+
+    .features {
+      padding: 100px 0;
+      background: linear-gradient(to bottom, var(--space-black), rgba(18, 28, 54, 0.9));
+      position: relative;
+      overflow: hidden;
+    }
+
+    .section-title {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 2.5rem;
+      text-align: center;
+      margin-bottom: 60px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .section-title::after {
+      content: '';
+      position: absolute;
+      bottom: -15px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 100px;
+      height: 3px;
+      background: var(--gradient-primary);
+    }
+
+    .feature-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+    }
+
+    .feature-card {
+      background: rgba(30, 41, 59, 0.6);
+      backdrop-filter: blur(10px);
+      border-radius: 15px;
+      overflow: hidden;
+      transition: var(--transition);
+      border: 1px solid rgba(56, 189, 248, 0.1);
+      transform: translateY(50px);
+      opacity: 0;
+    }
+
+    .feature-card.visible {
+      transform: translateY(0);
+      opacity: 1;
+    }
+
+    .feature-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3),
+                  0 0 20px rgba(56, 189, 248, 0.1);
+    }
+
+    .feature-icon {
+      width: 60px;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 20px;
+      background: rgba(56, 189, 248, 0.1);
+      border-radius: 12px;
+      font-size: 24px;
+      color: var(--space-cyan);
+    }
+
+    .feature-content {
+      padding: 30px;
+    }
+
+    .feature-title {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 1.5rem;
+      margin-bottom: 15px;
+      color: var(--space-cyan);
+    }
+
+    .feature-text {
+      color: var(--text-secondary);
+      margin-bottom: 15px;
+    }
+
+    .testimonials {
+      padding: 100px 0;
+      background: linear-gradient(to top, var(--space-black), rgba(18, 28, 54, 0.9));
+      position: relative;
+    }
+
+    .testimonial-slider {
+      max-width: 800px;
+      margin: 0 auto;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .testimonial-track {
+      display: flex;
+      transition: transform 0.5s ease;
+    }
+
+    .testimonial-slide {
+      min-width: 100%;
+      padding: 30px;
+    }
+
+    .testimonial-card {
+      background: rgba(30, 41, 59, 0.6);
+      backdrop-filter: blur(10px);
+      border-radius: 15px;
+      padding: 30px;
+      border: 1px solid rgba(56, 189, 248, 0.1);
+      text-align: center;
+    }
+
+    .testimonial-text {
+      font-size: 1.1rem;
+      color: var(--text-secondary);
+      margin-bottom: 20px;
+      font-style: italic;
+      position: relative;
+    }
+
+    .testimonial-text::before,
+    .testimonial-text::after {
+      content: '"';
+      font-size: 40px;
+      color: var(--space-cyan);
+      opacity: 0.3;
+      position: absolute;
+    }
+
+    .testimonial-text::before {
+      top: -20px;
+      left: -10px;
+    }
+
+    .testimonial-text::after {
+      bottom: -40px;
+      right: -10px;
+    }
+
+    .testimonial-author {
+      font-weight: 600;
+      color: var(--space-cyan);
+      margin-bottom: 5px;
+    }
+
+    .testimonial-role {
+      font-size: 0.9rem;
+      color: var(--text-secondary);
+      opacity: 0.7;
+    }
+
+    .slider-nav {
+      display: flex;
+      justify-content: center;
+      margin-top: 30px;
+    }
+
+    .slider-dot {
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background: rgba(56, 189, 248, 0.3);
+      margin: 0 8px;
+      cursor: pointer;
+      transition: var(--transition);
+    }
+
+    .slider-dot.active {
+      background: var(--space-cyan);
+      transform: scale(1.2);
+    }
+
+    .cta-section {
+      padding: 100px 0;
+      text-align: center;
+      background: linear-gradient(to top, rgba(15, 23, 41, 0.9), rgba(18, 28, 54, 0.8));
+      position: relative;
+      overflow: hidden;
+    }
+
+    .cta-content {
+      max-width: 800px;
+      margin: 0 auto;
+      position: relative;
+      z-index: 1;
+    }
+
+    .cta-title {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+      background: linear-gradient(to right, var(--space-cyan), var(--space-electric));
+      -webkit-background-clip: text;
+      color: transparent;
+    }
+
+    .cta-text {
+      font-size: 1.1rem;
+      color: var(--text-secondary);
+      margin-bottom: 40px;
+    }
+
+    .app-badges {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 40px;
+    }
+
+    .app-badge {
+      padding: 12px 25px;
+      border-radius: 12px;
+      border: 1px solid rgba(56, 189, 248, 0.3);
+      background: rgba(30, 41, 59, 0.6);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      transition: var(--transition);
+      cursor: pointer;
+    }
+
+    .app-badge:hover {
+      background: rgba(56, 189, 248, 0.1);
+      transform: translateY(-3px);
+    }
+
+    .app-badge i {
+      font-size: 28px;
+      color: var(--space-cyan);
+    }
+
+    .badge-text {
+      text-align: left;
+    }
+
+    .badge-text small {
+      display: block;
+      font-size: 0.7rem;
+      color: var(--text-secondary);
+    }
+
+    .badge-text span {
+      display: block;
+      font-size: 1rem;
+      font-weight: 600;
+      color: var(--text-primary);
+    }
+
+    footer {
+      background: var(--space-black);
+      padding: 60px 0 30px;
+      border-top: 1px solid rgba(56, 189, 248, 0.1);
+    }
+
+    .footer-content {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 40px;
+      margin-bottom: 60px;
+    }
+
+    .footer-column h3 {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 1.2rem;
+      margin-bottom: 20px;
+      color: var(--space-cyan);
+    }
+
+    .footer-column p, 
+    .footer-column a {
+      color: var(--text-secondary);
+      margin-bottom: 10px;
+      display: block;
+      text-decoration: none;
+      transition: var(--transition);
+    }
+
+    .footer-column a:hover {
+      color: var(--space-cyan);
+      transform: translateX(5px);
+    }
+
+    .contact-info {
+      display: flex;
+      align-items: center;
+      margin-bottom: 15px;
+    }
+
+    .contact-info i {
+      color: var(--space-cyan);
+      margin-right: 15px;
+      font-size: 18px;
+    }
+
+    .social-links {
+      display: flex;
+      gap: 15px;
+      margin-top: 20px;
+    }
+
+    .social-links a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: rgba(56, 189, 248, 0.1);
+      color: var(--space-cyan);
+      transition: var(--transition);
+    }
+
+    .social-links a:hover {
+      background: var(--space-cyan);
+      color: var(--space-black);
+      transform: translateY(-3px);
+    }
+
+    .copyright {
+      text-align: center;
+      padding-top: 30px;
+      border-top: 1px solid rgba(56, 189, 248, 0.1);
+      color: var(--text-secondary);
+      font-size: 0.9rem;
+      opacity: 0.7;
+    }
+
+    /* Animations */
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes floatPhone {
+      0%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-20px);
+      }
+    }
+
+    @keyframes scrollApp {
+      0% {
+        background-position: 0 0;
+      }
+      100% {
+        background-position: 0 -100%;
+      }
+    }
+
+    @keyframes pulsate {
+      0% {
+        filter: drop-shadow(0 0 5px rgba(94, 234, 212, 0.3));
+      }
+      100% {
+        filter: drop-shadow(0 0 15px rgba(94, 234, 212, 0.7));
+      }
+    }
+
+    @keyframes pulseGlow {
+      0%, 100% {
+        opacity: 0.3;
+        transform: scale(1);
+      }
+      50% {
+        opacity: 0.5;
+        transform: scale(1.1);
+      }
+    }
+
+    /* Media Queries */
+    @media (max-width: 992px) {
+      .hero-content {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .hero-text, .hero-image {
+        width: 100%;
+        margin-bottom: 50px;
+      }
+
+      .hero-text p {
+        max-width: 100%;
+      }
+
+      .phone-outline {
+        max-width: 250px;
+      }
+
+      .section-title {
+        font-size: 2rem;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .header-container {
+        padding: 15px;
+      }
+
+      nav ul {
+        display: none;
+      }
+
+      .mobile-menu-btn {
+        display: block;
+      }
+
+      .mobile-menu-open nav ul {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background: rgba(15, 23, 41, 0.95);
+        backdrop-filter: blur(10px);
+        padding: 20px;
+        border-bottom: 1px solid rgba(56, 189, 248, 0.1);
+      }
+
+      .mobile-menu-open nav li {
+        margin: 15px 0;
+      }
+
+      .hero {
+        padding: 150px 0 80px;
+      }
+
+      .hero-text h1 {
+        font-size: 2.5rem;
+      }
+
+      .feature-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .app-badges {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .hero-text h1 {
+        font-size: 2rem;
+      }
+
+      .cta-title {
+        font-size: 1.8rem;
+      }
+
+      .section-title {
+        font-size: 1.8rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header id="header">
+    <div class="container header-container">
+      <a href="#" class="logo">
+        <img src="/icons/str8-build-logo.png" alt="STR8 BUILD">
+        <span>STR8 BUILD</span>
+      </a>
+      <nav>
+        <ul>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
+          <li><a href="#download">Download</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <button class="mobile-menu-btn" id="mobile-menu-toggle">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="glowing-circles circle1"></div>
+    <div class="glowing-circles circle2"></div>
+    <div class="container hero-content">
+      <div class="hero-text">
+        <h1>STR8 BUILD – Your Journey Starts Here</h1>
+        <p>The ultimate construction app for New Zealand professionals. Streamline your projects, manage jobs, and access powerful building calculators in one place.</p>
+        <a href="#download" class="cta-btn"><span>Download Now</span></a>
+      </div>
+      <div class="hero-image">
+        <div class="phone-outline">
+          <div class="phone-notch"></div>
+          <div class="phone-screen">
+            <div class="app-screenshot"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="features" id="features">
+    <div class="container">
+      <h2 class="section-title">Powerful Features</h2>
+      <div class="feature-grid">
+        <div class="feature-card">
+          <div class="feature-content">
+            <div class="feature-icon">
+              <i class="fas fa-calculator"></i>
+            </div>
+            <h3 class="feature-title">Smart Calculators</h3>
+            <p class="feature-text">Access a wide range of construction-specific calculators including timber, concrete, roofing, and more.</p>
+          </div>
+        </div>
+        <div class="feature-card">
+          <div class="feature-content">
+            <div class="feature-icon">
+              <i class="fas fa-project-diagram"></i>
+            </div>
+            <h3 class="feature-title">Project Management</h3>
+            <p class="feature-text">Track and manage all your construction projects in one place with intuitive dashboards.</p>
+          </div>
+        </div>
+        <div class="feature-card">
+          <div class="feature-content">
+            <div class="feature-icon">
+              <i class="fas fa-file-invoice"></i>
+            </div>
+            <h3 class="feature-title">Invoice Generation</h3>
+            <p class="feature-text">Create professional invoices directly from your job details and time tracking.</p>
+          </div>
+        </div>
+        <div class="feature-card">
+          <div class="feature-content">
+            <div class="feature-icon">
+              <i class="fas fa-clock"></i>
+            </div>
+            <h3 class="feature-title">Time Tracking</h3>
+            <p class="feature-text">Track work hours accurately with built-in job timers specifically designed for construction workflows.</p>
+          </div>
+        </div>
+        <div class="feature-card">
+          <div class="feature-content">
+            <div class="feature-icon">
+              <i class="fas fa-map-marked-alt"></i>
+            </div>
+            <h3 class="feature-title">Supplier Locator</h3>
+            <p class="feature-text">Find nearby suppliers with real-time mapping and location services.</p>
+          </div>
+        </div>
+        <div class="feature-card">
+          <div class="feature-content">
+            <div class="feature-icon">
+              <i class="fas fa-cloud-sun-rain"></i>
+            </div>
+            <h3 class="feature-title">Weather Analysis</h3>
+            <p class="feature-text">Get detailed weather impact analysis for your construction projects.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="testimonials" id="testimonials">
+    <div class="container">
+      <h2 class="section-title">What Our Users Say</h2>
+      <div class="testimonial-slider">
+        <div class="testimonial-track">
+          <div class="testimonial-slide">
+            <div class="testimonial-card">
+              <p class="testimonial-text">STR8 BUILD has completely transformed how I manage my construction projects. The calculators alone have saved me hours of work each week.</p>
+              <h4 class="testimonial-author">Michael Johnson</h4>
+              <p class="testimonial-role">Contractor, Auckland</p>
+            </div>
+          </div>
+          <div class="testimonial-slide">
+            <div class="testimonial-card">
+              <p class="testimonial-text">The app's intuitive interface makes even complex calculations simple. I can't imagine going back to my old methods now.</p>
+              <h4 class="testimonial-author">Sarah Williams</h4>
+              <p class="testimonial-role">Project Manager, Wellington</p>
+            </div>
+          </div>
+          <div class="testimonial-slide">
+            <div class="testimonial-card">
+              <p class="testimonial-text">The time tracking and invoice generation features have made billing clients so much easier. Highly recommended for all construction professionals.</p>
+              <h4 class="testimonial-author">David Thompson</h4>
+              <p class="testimonial-role">Builder, Christchurch</p>
+            </div>
+          </div>
+        </div>
+        <div class="slider-nav">
+          <div class="slider-dot active" data-slide="0"></div>
+          <div class="slider-dot" data-slide="1"></div>
+          <div class="slider-dot" data-slide="2"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-section" id="download">
+    <div class="container cta-content">
+      <h2 class="cta-title">Ready to Transform Your Workflow?</h2>
+      <p class="cta-text">Download STR8 BUILD today and start experiencing the future of construction management.</p>
+      <a href="#" class="cta-btn"><span>Get Started</span></a>
+      <div class="app-badges">
+        <div class="app-badge">
+          <i class="fab fa-apple"></i>
+          <div class="badge-text">
+            <small>Download on the</small>
+            <span>App Store</span>
+          </div>
+        </div>
+        <div class="app-badge">
+          <i class="fab fa-google-play"></i>
+          <div class="badge-text">
+            <small>GET IT ON</small>
+            <span>Google Play</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer id="contact">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-column">
+          <h3>STR8 BUILD</h3>
+          <p>The ultimate construction app for New Zealand professionals. Streamline your projects, manage jobs, and access powerful building calculators in one place.</p>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+        <div class="footer-column">
+          <h3>Navigation</h3>
+          <a href="#">Home</a>
+          <a href="#features">Features</a>
+          <a href="#testimonials">Testimonials</a>
+          <a href="#download">Download</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <div class="footer-column">
+          <h3>Contact Information</h3>
+          <div class="contact-info">
+            <i class="fas fa-user"></i>
+            <p>Challis Samu</p>
+          </div>
+          <div class="contact-info">
+            <i class="fas fa-phone"></i>
+            <p>+1 (555) 123-4567</p>
+          </div>
+          <div class="contact-info">
+            <i class="fas fa-envelope"></i>
+            <p>str8build@hotmail.com</p>
+          </div>
+          <div class="contact-info">
+            <i class="fas fa-map-marker-alt"></i>
+            <p>New Zealand</p>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>&copy; 2025 STR8 BUILD. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Header scroll effect
+    window.addEventListener('scroll', function() {
+      const header = document.getElementById('header');
+      if (window.scrollY > 50) {
+        header.classList.add('scrolled');
+      } else {
+        header.classList.remove('scrolled');
+      }
+    });
+
+    // Mobile menu toggle
+    const mobileMenuToggle = document.getElementById('mobile-menu-toggle');
+    const headerContainer = document.querySelector('.header-container');
+
+    mobileMenuToggle.addEventListener('click', function() {
+      headerContainer.classList.toggle('mobile-menu-open');
+      
+      const icon = mobileMenuToggle.querySelector('i');
+      if (icon.classList.contains('fa-bars')) {
+        icon.classList.remove('fa-bars');
+        icon.classList.add('fa-times');
+      } else {
+        icon.classList.remove('fa-times');
+        icon.classList.add('fa-bars');
+      }
+    });
+
+    // Feature cards animation on scroll
+    const featureCards = document.querySelectorAll('.feature-card');
+    
+    const observerOptions = {
+      threshold: 0.1
+    };
+    
+    const observer = new IntersectionObserver(function(entries) {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, observerOptions);
+    
+    featureCards.forEach(card => {
+      observer.observe(card);
+    });
+
+    // Testimonial slider
+    const testimonialTrack = document.querySelector('.testimonial-track');
+    const testimonialSlides = document.querySelectorAll('.testimonial-slide');
+    const sliderDots = document.querySelectorAll('.slider-dot');
+    
+    let currentSlide = 0;
+    const slideWidth = 100; // 100%
+    
+    function goToSlide(slideIndex) {
+      testimonialTrack.style.transform = `translateX(-${slideIndex * slideWidth}%)`;
+      
+      // Update active dot
+      sliderDots.forEach(dot => dot.classList.remove('active'));
+      sliderDots[slideIndex].classList.add('active');
+      
+      currentSlide = slideIndex;
+    }
+    
+    // Click event for slider dots
+    sliderDots.forEach(dot => {
+      dot.addEventListener('click', function() {
+        const slideIndex = parseInt(this.getAttribute('data-slide'));
+        goToSlide(slideIndex);
+      });
+    });
+    
+    // Auto slide every 5 seconds
+    setInterval(function() {
+      const nextSlide = (currentSlide + 1) % testimonialSlides.length;
+      goToSlide(nextSlide);
+    }, 5000);
+
+    // Smooth scroll for navigation links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        
+        const targetId = this.getAttribute('href');
+        if (targetId === '#') return;
+        
+        const targetElement = document.querySelector(targetId);
+        if (targetElement) {
+          window.scrollTo({
+            top: targetElement.offsetTop - 80,
+            behavior: 'smooth'
+          });
+          
+          // Close mobile menu if open
+          if (headerContainer.classList.contains('mobile-menu-open')) {
+            headerContainer.classList.remove('mobile-menu-open');
+            const icon = mobileMenuToggle.querySelector('i');
+            icon.classList.remove('fa-times');
+            icon.classList.add('fa-bars');
+          }
+        }
+      });
+    });
+  </script>
+</body>
+</html>

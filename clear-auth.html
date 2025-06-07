@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#0f172a">
+    <title>Clear Authentication</title>
+    <link rel="manifest" href="/manifest.json">
+    <link rel="apple-touch-icon" href="/icons/icon-192x192.png">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+        
+        body {
+            background: linear-gradient(135deg, #0f1420 0%, #131a2a 100%);
+            color: #e0e6ff;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        body::before {
+            content: '';
+            position: absolute;
+            width: 200%;
+            height: 200%;
+            top: -50%;
+            left: -50%;
+            z-index: -1;
+            background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200"><rect width="1" height="1" fill="%23ffffff10" x="40" y="30"/><rect width="1" height="1" fill="%23ffffff10" x="100" y="70"/><rect width="1" height="1" fill="%23ffffff10" x="150" y="120"/><rect width="1" height="1" fill="%23ffffff10" x="80" y="160"/><rect width="1" height="1" fill="%23ffffff10" x="180" y="40"/><rect width="0.5" height="0.5" fill="%23ffffff08" x="10" y="10"/><rect width="0.5" height="0.5" fill="%23ffffff08" x="60" y="90"/><rect width="0.5" height="0.5" fill="%23ffffff08" x="120" y="50"/><rect width="0.5" height="0.5" fill="%23ffffff08" x="170" y="110"/><rect width="0.5" height="0.5" fill="%23ffffff08" x="30" y="180"/></svg>') repeat;
+            opacity: 0.3;
+            animation: drift 60s linear infinite;
+        }
+        
+        @keyframes drift {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+        
+        .container {
+            background: rgba(16, 23, 41, 0.7);
+            backdrop-filter: blur(8px);
+            border-radius: 16px;
+            padding: 40px;
+            max-width: 500px;
+            width: 90%;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+            border: 1px solid rgba(79, 235, 255, 0.2);
+            text-align: center;
+            animation: appear 0.5s ease-out;
+        }
+        
+        h1 {
+            color: #4FEBFF;
+            margin-bottom: 30px;
+            font-weight: 500;
+            letter-spacing: 0.5px;
+            text-shadow: 0 0 10px rgba(79, 235, 255, 0.5);
+        }
+        
+        .loader {
+            display: inline-block;
+            width: 60px;
+            height: 60px;
+            margin: 20px 0;
+            position: relative;
+        }
+        
+        .loader::after {
+            content: '';
+            display: block;
+            border-radius: 50%;
+            width: 100%;
+            height: 100%;
+            border: 3px solid rgba(79, 235, 255, 0.2);
+            border-top-color: #4FEBFF;
+            animation: spin 1s linear infinite;
+            box-shadow: 0 0 10px rgba(79, 235, 255, 0.5);
+        }
+        
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        
+        @keyframes appear {
+            0% { transform: translateY(20px); opacity: 0; }
+            100% { transform: translateY(0); opacity: 1; }
+        }
+        
+        p {
+            margin: 10px 0;
+            font-size: 16px;
+            opacity: 0.8;
+        }
+        
+        .progress {
+            width: 100%;
+            height: 6px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 3px;
+            margin: 20px 0;
+            overflow: hidden;
+        }
+        
+        .progress-bar {
+            height: 100%;
+            width: 0%;
+            background: linear-gradient(90deg, #4FEBFF, #2b81ff);
+            animation: progress 1s ease-out forwards;
+            box-shadow: 0 0 8px rgba(79, 235, 255, 0.7);
+        }
+        
+        @keyframes progress {
+            0% { width: 0; }
+            100% { width: 100%; }
+        }
+        
+        .error {
+            color: #ff4e4f;
+            border: 1px solid rgba(255, 78, 79, 0.3);
+            background: rgba(255, 78, 79, 0.1);
+            padding: 10px;
+            border-radius: 8px;
+            margin: 15px 0;
+            display: none;
+        }
+        
+        .success {
+            color: #4fff8e;
+            border: 1px solid rgba(79, 255, 142, 0.3);
+            background: rgba(79, 255, 142, 0.1);
+            padding: 10px;
+            border-radius: 8px;
+            margin: 15px 0;
+            display: none;
+        }
+        
+        /* Help button styles */
+        .help-button {
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            background-color: transparent;
+            border: 2px solid #4FEBFF;
+            color: #4FEBFF;
+            font-size: 14px;
+            font-weight: bold;
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+            padding: 0;
+            margin-left: 10px;
+        }
+        
+        .help-button:hover {
+            background-color: rgba(79, 235, 255, 0.1);
+            transform: scale(1.1);
+        }
+        
+        .btn {
+            background: linear-gradient(90deg, #4fd0ff, #2b81ff);
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 30px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            margin-top: 20px;
+            box-shadow: 0 0 15px rgba(79, 235, 255, 0.4);
+            display: none;
+        }
+        
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 20px rgba(79, 235, 255, 0.6);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Clearing Authentication Data</h1>
+        <div class="help-container" style="position: relative;">
+            <button id="helpBtn" class="help-button" type="button">?</button>
+        </div>
+        <div class="loader"></div>
+        <div class="progress">
+            <div class="progress-bar"></div>
+        </div>
+        <p id="status">Removing authentication data from your device...</p>
+        <div id="error" class="error"></div>
+        <div id="success" class="success">
+            <p>Authentication data successfully cleared.</p>
+            <p>You will now be redirected to the login screen.</p>
+        </div>
+        <button id="loginBtn" class="btn">Go to Login</button>
+    </div>
+
+    <!-- Import the auth helper utility -->
+    <script src="/js/auth-helper.js"></script>
+    
+    <script>
+        // DOM elements
+        const statusElement = document.getElementById('status');
+        const errorElement = document.getElementById('error');
+        const successElement = document.getElementById('success');
+        const loginBtn = document.getElementById('loginBtn');
+        const helpBtn = document.getElementById('helpBtn');
+        
+        // Register service worker for PWA installation
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/service-worker.js')
+                    .then(registration => {
+                        console.log('ServiceWorker registration successful with scope: ', registration.scope);
+                    })
+                    .catch(error => {
+                        console.error('ServiceWorker registration failed: ', error);
+                    });
+            });
+        }
+        
+        // Update status messages
+        const updateStatus = (message) => {
+            statusElement.textContent = message;
+        };
+        
+        // Show error message
+        const showError = (message) => {
+            errorElement.textContent = message;
+            errorElement.style.display = 'block';
+            loginBtn.style.display = 'inline-block';
+            document.querySelector('.loader').style.display = 'none';
+            document.querySelector('.progress').style.display = 'none';
+        };
+        
+        // Show success message
+        const showSuccess = () => {
+            successElement.style.display = 'block';
+            loginBtn.style.display = 'inline-block';
+            document.querySelector('.loader').style.display = 'none';
+        };
+        
+        // Handle redirect to login
+        loginBtn.addEventListener('click', () => {
+            window.location.href = 'login.html';
+        });
+        
+        // Clear authentication data using the helper
+        const clearAuthData = async () => {
+            try {
+                updateStatus('Clearing local storage...');
+                setTimeout(() => {
+                    updateStatus('Clearing session storage...');
+                    setTimeout(() => {
+                        updateStatus('Clearing cookies...');
+                        setTimeout(() => {
+                            updateStatus('Clearing caches...');
+                            setTimeout(async () => {
+                                try {
+                                    // Use the auth helper to clear authentication data
+                                    AuthHelper.clearAuth();
+                                    
+                                    // Show success message
+                                    updateStatus('Authentication data cleared!');
+                                    showSuccess();
+                                } catch (error) {
+                                    console.error('Error clearing authentication data:', error);
+                                    showError('An error occurred while clearing authentication data.');
+                                }
+                            }, 200);
+                        }, 200);
+                    }, 200);
+                }, 200);
+            } catch (error) {
+                console.error('Error in clear auth process:', error);
+                showError('Failed to clear authentication data. Please try again.');
+            }
+        };
+        
+        // Start the process when the page loads
+        window.addEventListener('DOMContentLoaded', function() {
+            clearAuthData();
+            
+            // Add click handler for help button
+            document.getElementById('helpBtn').addEventListener('click', function() {
+                alert('This page is clearing your authentication data to log you out securely.');
+                console.log('Help button clicked!');
+            });
+        });
+    </script>
+</body>
+</html>

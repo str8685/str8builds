@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en" style="background-color: #0f172a !important;">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+    <meta name="theme-color" content="#0f172a" />
+    <meta name="description" content="STR8 BUILD - The ultimate construction app for New Zealand professionals. Manage jobs, access NZ-specific building resources, and use digital tools on the go." />
+    <meta name="application-name" content="STR8 BUILD" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="STR8 BUILD" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta property="og:title" content="STR8 BUILD - NZ Construction App" />
+    <meta property="og:description" content="The ultimate construction app for New Zealand professionals." />
+    <meta property="og:type" content="website" />
+    <title>STR8 BUILD - NZ Construction App</title>
+    
+    <!-- New direct approach that positions a link precisely over the Jobs span -->
+    <script src="/jobs-direct-link.js"></script>
+    
+    <!-- Fix for Jobs buttons with data-component-name="Jobs" -->
+    <script src="/fix-jobs-button.js"></script>
+    
+    <!-- Previous solutions (kept commented out) -->
+    <!-- ULTIMATE Jobs navigation fix - highest priority -->
+    <!-- <script src="/ultimate-jobs-fix.js"></script> -->
+    <!-- Absolute Jobs navigation fix -->
+    <!-- <script src="/absolute-jobs-fix.js"></script> -->
+    <!-- Global click interceptor to catch all Jobs-related clicks -->
+    <!-- <script src="/global-click-intercept.js"></script> -->
+    <!-- Force Jobs navigation - comprehensive solution -->
+    <!-- <script src="/force-jobs-navigation.js"></script> -->
+    
+    <!-- Critical CSS to prevent white flash - loaded inline for immediate effect -->
+    <style>
+      html, body, #root {
+        background-color: #0f172a !important;
+        color: #f8fafc;
+        margin: 0;
+        padding: 0;
+        min-height: 100vh;
+        overflow-x: hidden;
+        font-family: sans-serif;
+      }
+      
+      /* Force dark background */
+      *, *::before, *::after {
+        transition: none !important;
+      }
+      
+      /* Ensure no flash effect during transitions */
+      .dark {
+        background-color: #0f172a !important;
+        color: #f8fafc !important;
+      }
+      
+      /* Add loading spinner animation ahead of time */
+      @keyframes spin {
+        to { transform: rotate(360deg); }
+      }
+      
+      /* Initial body style to prevent white flash */
+      body {
+        background-color: #0f172a !important;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+      }
+    </style>
+    
+    <!-- Preload important resources -->
+    <link rel="preload" href="/grid.svg" as="image" />
+    
+    <!-- Fonts with display=swap for better performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+    
+    <!-- App manifest and icons -->
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="icon" type="image/svg+xml" href="/icons/icon.svg" />
+    
+    <!-- Fix for Jobs navigation click issue -->
+    <script src="/jobs-nav-fix.js"></script>
+    <script src="/direct-jobs-injector.js"></script>
+    <script src="/jobs-button-fix.js"></script>
+    <script src="/jobs-patch.js"></script>
+    
+    <!-- iOS PWA icons - using PNG versions instead of SVG for better compatibility -->
+    <link rel="apple-touch-icon" href="/icons/icon-192x192.png" />
+    <link rel="apple-touch-icon" sizes="152x152" href="/icons/icon-152x152.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="/icons/icon-144x144.png" />
+    <link rel="apple-touch-icon" sizes="128x128" href="/icons/icon-128x128.png" />
+    
+    <!-- iOS splash screens -->
+    <link rel="apple-touch-startup-image" href="/icons/icon-512x512.png" />
+    <script type="module" crossorigin src="/assets/index-CfPK1eRg.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-DFrKDRQW.css">
+  </head>
+  <body>
+    <!-- Ultra-optimized loader with minimal transitions and instant appearance -->
+    <div id="initial-loader" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; background-color: #0f172a; flex-direction: column; z-index: 9999; will-change: opacity;">
+      <!-- Static grid background (preloaded) -->
+      <div style="position: absolute; inset: 0; background-image: url('/grid.svg'); background-position: center; opacity: 0.25; z-index: -1;"></div>
+      
+      <!-- Fixed dark overlay -->
+      <div style="position: absolute; inset: 0; background-color: #0f172a; z-index: -1;"></div>
+      
+      <!-- Logo container -->
+      <div style="position: relative; width: 160px; height: 160px; margin-bottom: 20px;">
+        <!-- Fixed glow -->
+        <div style="position: absolute; inset: -20px; background: radial-gradient(circle, rgba(59,130,246,0.2) 0%, rgba(15,23,42,0) 70%); z-index: -1;"></div>
+        
+        <!-- STR8 BUILD text - no text-shadow for better performance -->
+        <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; display: flex; align-items: center; justify-content: center;">
+          <div style="color: #3b82f6; font-family: sans-serif; font-size: 36px; font-weight: bold; letter-spacing: 1px;">
+            STR8 BUILD
+          </div>
+        </div>
+        
+        <!-- Simple spinner for better performance -->
+        <div style="position: absolute; top: -5px; left: -5px; right: -5px; bottom: -5px; border: 3px solid transparent; border-top-color: #3b82f6; border-radius: 50%; animation: spin 1s linear infinite;"></div>
+      </div>
+      
+      <!-- Static loading text without animations -->
+      <div style="color: #60a5fa; font-family: sans-serif; font-size: 16px; font-weight: 500;">
+        Loading...
+      </div>
+    </div>
+    
+    <!-- Critical styles for performance -->
+    <style>
+      @keyframes spin {
+        to { transform: rotate(360deg); }
+      }
+      
+      html, body, #root {
+        background-color: #0f172a !important;
+      }
+      
+      /* Force apply dark theme immediately */
+      :root {
+        color-scheme: dark;
+      }
+      
+      /* Apply dark colors to all elements */
+      *, *::before, *::after {
+        background-color: transparent !important;
+      }
+      
+      /* Ensure app containers are dark */
+      .bg-white, .bg-gray-50, .bg-gray-100, .bg-gray-200 {
+        background-color: #0f172a !important;
+      }
+      
+      /* Prevent layout shifts during load */
+      html, body {
+        overflow-x: hidden;
+        overflow-y: auto;
+        height: 100%;
+      }
+    </style>
+    
+    <!-- Root element for React -->
+    <div id="root"></div>
+    
+    <!-- Optimized loader removal script - improved for instant app display -->
+    <script>
+      (function() {
+        // We'll use custom events from React to remove the loader
+        // This ensures the loader is only removed when the app is truly ready
+
+        // Flag to track if root has content
+        let rootHasContent = false;
+        
+        // Function to remove the loader
+        function removeLoader() {
+          const loader = document.getElementById('initial-loader');
+          if (loader) {
+            // Quick fade out
+            loader.style.opacity = '0';
+            loader.style.transition = 'opacity 0.15s ease-out';
+            
+            // Remove after transition
+            setTimeout(function() {
+              if (loader && loader.parentNode) {
+                loader.parentNode.removeChild(loader);
+              }
+            }, 150);
+          }
+        }
+
+        // Set up an observer to watch for content in the root element
+        const observer = new MutationObserver(function(mutations) {
+          if (!rootHasContent && document.getElementById('root').children.length > 0) {
+            rootHasContent = true;
+            removeLoader();
+            observer.disconnect();
+          }
+        });
+        
+        // Start observing when document is ready
+        document.addEventListener('DOMContentLoaded', function() {
+          const root = document.getElementById('root');
+          observer.observe(root, { childList: true });
+        });
+
+        // Fallback removal methods (for safety)
+        window.addEventListener('load', function() {
+          setTimeout(function() {
+            if (!rootHasContent) {
+              console.log("Fallback: Removing loader after window load");
+              removeLoader();
+            }
+          }, 500);
+        });
+        
+        // Final failsafe - remove after max time
+        setTimeout(function() {
+          removeLoader();
+        }, 2000);
+      })();
+    </script>
+    
+    <!-- Unregister any active service workers to fix flashing screen issue -->
+    <script>
+      // Unregister service workers directly in HTML instead of external file
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.getRegistrations().then(function(registrations) {
+          for (const registration of registrations) {
+            registration.unregister();
+            console.log('Service worker unregistered:', registration);
+          }
+          
+          // Also clear any caches
+          if ('caches' in window) {
+            caches.keys().then(function(cacheNames) {
+              cacheNames.forEach(function(cacheName) {
+                caches.delete(cacheName);
+                console.log('Cache deleted:', cacheName);
+              });
+            });
+          }
+        });
+      }
+    </script>
+    
+    <!-- 
+    Service Worker Registration - temporarily disabled to fix flashing screen issue
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', function() {
+          setTimeout(() => {
+            navigator.serviceWorker.register('/service-worker.js')
+              .then(function(registration) {
+                console.log('ServiceWorker registration successful with scope: ', registration.scope);
+              })
+              .catch(function(error) {
+                console.log('ServiceWorker registration failed: ', error);
+              });
+          }, 1000);
+        });
+      }
+    </script>
+    -->
+    <!-- Vite entry script -->
+  </body>
+</html>

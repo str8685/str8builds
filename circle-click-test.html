@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Circle Element Click Test</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #0f1729;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            background-color: #161e33;
+            border-radius: 10px;
+            padding: 30px;
+            max-width: 500px;
+            width: 100%;
+        }
+        h1 {
+            color: #4FEBFF;
+            margin-top: 0;
+        }
+        .test-section {
+            margin: 20px 0;
+            padding: 15px;
+            background-color: rgba(79, 235, 255, 0.1);
+            border-radius: 8px;
+            border: 1px solid rgba(79, 235, 255, 0.2);
+        }
+        .desc {
+            font-size: 14px;
+            color: #aaa;
+            margin-top: 10px;
+        }
+        
+        /* Special styles for circles */
+        circle {
+            cursor: pointer;
+            transition: fill 0.3s;
+        }
+        circle:hover {
+            fill: rgba(79, 235, 255, 0.2);
+        }
+        
+        .counter {
+            margin-left: 10px;
+            font-size: 18px;
+            color: #4FEBFF;
+            font-weight: bold;
+        }
+        
+        .click-counter {
+            display: flex;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Circle Element Click Test</h1>
+        
+        <div class="test-section">
+            <h3>Test 1: Click on the Circle</h3>
+            <p>Click directly on the blue circle below (not the question mark):</p>
+            
+            <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 24 24">
+                <circle id="clickableCircle1" cx="12" cy="12" r="10" stroke="#4FEBFF" stroke-width="2" fill="transparent"></circle>
+                <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3" stroke="#4FEBFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M12 17h.01" stroke="#4FEBFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+            </svg>
+            
+            <p class="desc">This circle has a direct click handler attached to it.</p>
+        </div>
+        
+        <div class="test-section">
+            <h3>Test 2: Separate Click Regions</h3>
+            <p>Two separate clickable elements - click the circle or the question mark:</p>
+            
+            <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 24 24">
+                <!-- Background circle - clicks trigger one action -->
+                <circle id="clickableCircle2" cx="12" cy="12" r="10" stroke="#4FEBFF" stroke-width="2" fill="transparent"></circle>
+                
+                <!-- Question mark group - clicks trigger a different action -->
+                <g id="questionMark">
+                    <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3" stroke="#F471B5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M12 17h.01" stroke="#F471B5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                </g>
+            </svg>
+            
+            <p class="desc">The circle (blue) and question mark (pink) have different click handlers.</p>
+        </div>
+        
+        <div class="test-section">
+            <h3>Test 3: Circle Click Counter</h3>
+            <div class="click-counter">
+                <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 24 24">
+                    <circle id="counterCircle" cx="12" cy="12" r="10" stroke="#4FEBFF" stroke-width="2" fill="transparent"></circle>
+                    <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3" stroke="#4FEBFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M12 17h.01" stroke="#4FEBFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+                <span>Circle clicks: <span id="circleCounter" class="counter">0</span></span>
+            </div>
+            <p class="desc">Click the circle to increment the counter.</p>
+        </div>
+        
+        <div class="test-section">
+            <h3>Test 4: Transparent Overlay</h3>
+            <p>This version has a transparent overlay that captures all clicks:</p>
+            
+            <div style="position: relative; width: 100px; height: 100px;">
+                <!-- SVG with circle and question mark -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 24 24">
+                    <circle cx="12" cy="12" r="10" stroke="#4FEBFF" stroke-width="2" fill="transparent"></circle>
+                    <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3" stroke="#4FEBFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M12 17h.01" stroke="#4FEBFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+                
+                <!-- Transparent overlay div for capturing clicks -->
+                <div id="clickOverlay" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; cursor: pointer;"></div>
+            </div>
+            
+            <p class="desc">This approach uses a transparent div overlay to capture clicks anywhere on the icon.</p>
+        </div>
+    </div>
+
+    <script>
+        // Test 1: Direct circle click handler
+        document.getElementById('clickableCircle1').addEventListener('click', function() {
+            alert('Circle clicked!');
+            console.log('Circle clicked!');
+        });
+        
+        // Test 2: Separate click handlers
+        document.getElementById('clickableCircle2').addEventListener('click', function() {
+            alert('Blue circle clicked!');
+            console.log('Blue circle clicked!');
+        });
+        
+        document.getElementById('questionMark').addEventListener('click', function() {
+            alert('Pink question mark clicked!');
+            console.log('Pink question mark clicked!');
+        });
+        
+        // Test 3: Circle click counter
+        let circleCount = 0;
+        document.getElementById('counterCircle').addEventListener('click', function() {
+            circleCount++;
+            document.getElementById('circleCounter').textContent = circleCount;
+            console.log('Circle counter incremented to:', circleCount);
+        });
+        
+        // Test 4: Transparent overlay click
+        document.getElementById('clickOverlay').addEventListener('click', function() {
+            alert('Overlay clicked! This captures all clicks on the icon.');
+            console.log('Overlay clicked!');
+        });
+    </script>
+</body>
+</html>

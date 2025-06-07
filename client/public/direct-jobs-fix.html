@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Jobs Navigation Fix</title>
+  <style>
+    /* Style the overlay to make it clearly visible */
+    #jobs-direct-link {
+      position: fixed;
+      bottom: 88px; /* Position above the bottom navigation */
+      left: 50%;
+      transform: translateX(-50%);
+      width: 100px;
+      height: 40px;
+      background-color: rgba(6, 182, 212, 0.2);
+      border: 1px solid rgba(6, 182, 212, 0.3);
+      border-radius: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-weight: bold;
+      text-decoration: none;
+      z-index: 9999;
+      box-shadow: 0 0 10px rgba(6, 182, 212, 0.5);
+      pointer-events: auto;
+      cursor: pointer;
+      font-family: sans-serif;
+    }
+
+    #jobs-direct-link:hover {
+      background-color: rgba(6, 182, 212, 0.4);
+      box-shadow: 0 0 15px rgba(6, 182, 212, 0.7);
+    }
+
+    /* Button to remove this overlay if needed */
+    #close-jobs-fix {
+      position: absolute;
+      top: -8px;
+      right: -8px;
+      width: 18px;
+      height: 18px;
+      background-color: rgba(0, 0, 0, 0.7);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 10px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div id="jobs-direct-link">
+    Jobs
+    <div id="close-jobs-fix">×</div>
+  </div>
+
+  <script>
+    // Add event listener to the Jobs direct link
+    document.getElementById('jobs-direct-link').addEventListener('click', function(e) {
+      if (e.target !== document.getElementById('close-jobs-fix')) {
+        window.location.href = '/jobs';
+      }
+    });
+
+    // Add event listener to the close button
+    document.getElementById('close-jobs-fix').addEventListener('click', function() {
+      document.getElementById('jobs-direct-link').style.display = 'none';
+      // Save to localStorage so it doesn't show again
+      localStorage.setItem('jobs-fix-closed', 'true');
+    });
+
+    // Check if it was previously closed
+    if (localStorage.getItem('jobs-fix-closed') === 'true') {
+      document.getElementById('jobs-direct-link').style.display = 'none';
+    }
+  </script>
+</body>
+</html>
