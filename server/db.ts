@@ -1,11 +1,11 @@
-import { Pool, neonConfig } from '@neondatabase/serverless';
-import { drizzle } from 'drizzle-orm/neon-serverless';
-import { drizzle as drizzleSqlite } from 'drizzle-orm/better-sqlite3';
-import Database from 'better-sqlite3';
+import { Pool, neonConfig } from "@neondatabase/serverless";
+import { drizzle } from "drizzle-orm/neon-serverless";
+import { drizzle as drizzleSqlite } from "drizzle-orm/better-sqlite3";
+import Database from "better-sqlite3";
 import ws from "ws";
 import * as schema from "@shared/schema";
-import { migrate } from 'drizzle-orm/better-sqlite3/migrator';
-import path from 'path';
+import { migrate } from "drizzle-orm/better-sqlite3/migrator";
+import path from "path";
 
 neonConfig.webSocketConstructor = ws;
 
@@ -13,14 +13,18 @@ neonConfig.webSocketConstructor = ws;
 const databaseUrl = process.env.DATABASE_URL;
 
 // Better production detection logic
-const isProduction = process.env.NODE_ENV === 'production';
+const isProduction = process.env.NODE_ENV === "production";
 
 // Log database connection details (without exposing credentials)
-console.log(`Database mode: ${isProduction ? 'Production (PostgreSQL)' : 'Development (SQLite)'}`);
+console.log(
+  `Database mode: ${isProduction ? "Production (PostgreSQL)" : "Development (SQLite)"}`,
+);
 if (databaseUrl) {
-  console.log('Database URL provided: Using connection string from environment');
+  console.log(
+    "Database URL provided: Using connection string from environment",
+  );
 } else {
-  console.log('No Database URL found in environment');
+  console.log("No Database URL found in environment");
 }
 
 let db: any;
@@ -28,19 +32,19 @@ let pool: any;
 
 if (isProduction && databaseUrl) {
   // Use PostgreSQL for production
-  console.log('Connecting to PostgreSQL database');
+  console.log("Connecting to PostgreSQL database");
   pool = new Pool({ connectionString: databaseUrl });
   db = drizzle(pool, { schema });
 } else {
   // Use SQLite for development
-  console.log('Using SQLite database for development');
-  const sqlite = new Database('str8build.db');
-  
+  console.log("Using SQLite database for development");
+  const sqlite = new Database("str8build.db");
+
   // Enable WAL mode for better performance
-  sqlite.pragma('journal_mode = WAL');
-  
+  sqlite.pragma("journal_mode = WAL");
+
   db = drizzleSqlite(sqlite, { schema });
-  
+
   // Run migrations if needed
   try {
     // Create tables if they don't exist
@@ -59,6 +63,35 @@ if (isProduction && databaseUrl) {
         profileImageUrl TEXT,
         createdAt TEXT DEFAULT CURRENT_TIMESTAMP
       );
+      
+      -- Add missing columns to existing users table if they don't exist
+      PRAGMA table_info(users);
+    `);
+
+    // Check if role column exists and add it if it doesn't
+    const tableInfo = sqlite.prepare("PRAGMA table_info(users)").all();
+    const hasRoleColumn = tableInfo.some((col: any) => col.name === "role");
+    const hasStatusColumn = tableInfo.some((col: any) => col.name === "status");
+    const hasProfileImageUrlColumn = tableInfo.some(
+      (col: any) => col.name === "profileImageUrl",
+    );
+
+    if (!hasRoleColumn) {
+      sqlite.exec("ALTER TABLE users ADD COLUMN role TEXT DEFAULT 'user'");
+      console.log("Added role column to users table");
+    }
+
+    if (!hasStatusColumn) {
+      sqlite.exec("ALTER TABLE users ADD COLUMN status TEXT DEFAULT 'active'");
+      console.log("Added status column to users table");
+    }
+
+    if (!hasProfileImageUrlColumn) {
+      sqlite.exec("ALTER TABLE users ADD COLUMN profileImageUrl TEXT");
+      console.log("Added profileImageUrl column to users table");
+    }
+
+    sqlite.exec(`
       
       CREATE TABLE IF NOT EXISTS clients (
         id INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -173,10 +206,10 @@ if (isProduction && databaseUrl) {
         FOREIGN KEY (user_id) REFERENCES users(id)
       );
     `);
-    
-    console.log('SQLite database initialized successfully');
+
+    console.log("SQLite database initialized successfully");
   } catch (error) {
-    console.error('Error initializing SQLite database:', error);
+    console.error("Error initializing SQLite database:", error);
   }
 }
 

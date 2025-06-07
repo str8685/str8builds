@@ -1,4 +1,4 @@
-import dotenv from 'dotenv';
+import dotenv from "dotenv";
 
 // Load environment variables from .env file
 dotenv.config();
@@ -7,9 +7,9 @@ import express, { type Request, Response, NextFunction } from "express";
 import { registerRoutes } from "./routes";
 import { setupVite, serveStatic, log } from "./vite";
 import cookieParser from "cookie-parser";
-import { storage } from './storage';
-import { hashPassword } from './auth';
-import { setupAdminUser } from './utils/setupAdmin';
+import { storage } from "./storage";
+import { hashPassword } from "./auth";
+import { setupAdminUser } from "./utils/setupAdmin";
 
 const app = express();
 app.use(express.json());
@@ -17,8 +17,8 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 
 // Serve static files from the public directory
-app.use(express.static('server/public'));
-console.log('Serving static files from server/public');
+app.use(express.static("server/public"));
+console.log("Serving static files from server/public");
 
 app.use((req, res, next) => {
   const start = Date.now();
@@ -55,11 +55,13 @@ async function checkDefaultUserExists() {
   try {
     // Just check if the user exists, don't create one automatically
     const existingUser = await storage.getUserByUsername("str8");
-    
+
     if (existingUser) {
       console.log("Default STR8 user exists");
     } else {
-      console.log("No default user found - first time users will need to register");
+      console.log(
+        "No default user found - first time users will need to register",
+      );
     }
   } catch (error) {
     console.error("Error checking if default user exists:", error);
@@ -70,10 +72,10 @@ async function checkDefaultUserExists() {
   console.log("Starting server initialization...");
   // Check if default user exists (changed from ensuring it exists)
   await checkDefaultUserExists();
-  
+
   // Ensure an admin user exists
   await setupAdminUser();
-  
+
   const server = await registerRoutes(app);
 
   app.use((err: any, _req: Request, res: Response, _next: NextFunction) => {
@@ -86,7 +88,7 @@ async function checkDefaultUserExists() {
 
   // Add a special logging middleware to debug route handling
   app.use((req, res, next) => {
-    if (req.originalUrl.startsWith('/api/')) {
+    if (req.originalUrl.startsWith("/api/")) {
       console.log(`DEBUG: API request to ${req.method} ${req.originalUrl}`);
     }
     next();
