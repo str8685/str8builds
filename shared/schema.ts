@@ -210,7 +210,7 @@ export const insertInvoiceItemSchema = createInsertSchema(invoiceItems).omit({
 });
 
 // Building Resources
-export const buildingResources = pgTable("building_resources", {
+export const buildingResources = createTable("building_resources", {
   id: serial("id").primaryKey(),
   category: text("category").notNull(),
   title: text("title").notNull(),
@@ -230,7 +230,7 @@ export const insertBuildingResourceSchema = createInsertSchema(
 });
 
 // Suppliers
-export const suppliers = pgTable("suppliers", {
+export const suppliers = createTable("suppliers", {
   id: serial("id").primaryKey(),
   name: text("name").notNull(),
   category: text("category"),
