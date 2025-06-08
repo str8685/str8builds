@@ -65,9 +65,9 @@ const MaintenanceTab: FC<TabProps> = ({ name, icon, active, onClick }) => (
     className={`flex items-center p-3 rounded-lg transition-colors ${
       active ? "bg-purple-900/50 text-cyan" : "hover:bg-space-800 text-gray-300"
     }`}
-    data-oid="-yq52c-"
+    data-oid="pmkok1a"
   >
-    <span className="mr-3" data-oid="519iffy">
+    <span className="mr-3" data-oid="u_.a.7m">
       {icon}
     </span>
     {name}
@@ -116,19 +116,19 @@ const SystemMaintenance: FC = () => {
     switch (status) {
       case "up":
         return (
-          <CheckCircle className="h-4 w-4 text-green-400" data-oid="rpsqudz" />
+          <CheckCircle className="h-4 w-4 text-green-400" data-oid="aakr_de" />
         );
 
       case "down":
         return (
-          <AlertTriangle className="h-4 w-4 text-red-400" data-oid="rs2rh-c" />
+          <AlertTriangle className="h-4 w-4 text-red-400" data-oid="rdxv1jm" />
         );
 
       case "warning":
         return (
           <AlertTriangle
             className="h-4 w-4 text-orange-400"
-            data-oid="k.pba37"
+            data-oid="qy4nuh2"
           />
         );
 
@@ -167,19 +167,19 @@ const SystemMaintenance: FC = () => {
     switch (status) {
       case "completed":
         return (
-          <CheckCircle className="h-4 w-4 text-green-400" data-oid="qk9egyj" />
+          <CheckCircle className="h-4 w-4 text-green-400" data-oid="yhrkz0v" />
         );
 
       case "failed":
         return (
-          <AlertTriangle className="h-4 w-4 text-red-400" data-oid="06vaxoj" />
+          <AlertTriangle className="h-4 w-4 text-red-400" data-oid="2vj85r." />
         );
 
       case "in_progress":
         return (
           <RefreshCw
             className="h-4 w-4 text-blue-400 animate-spin"
-            data-oid="a6:9_gs"
+            data-oid="evtqyq1"
           />
         );
 
@@ -201,24 +201,24 @@ const SystemMaintenance: FC = () => {
     }
 
     return (
-      <div className="w-full bg-gray-700 rounded-full h-2" data-oid="v.mvq4h">
+      <div className="w-full bg-gray-700 rounded-full h-2" data-oid="z5ia0-:">
         <div
           className={`${barColor} h-2 rounded-full`}
           style={{ width: `${percentage}%` }}
-          data-oid="kilixs5"
+          data-oid=":w--ih1"
         ></div>
       </div>
     );
   };
 
   return (
-    <div className="space-y-6" data-oid="d9vvuih">
-      <div className="flex justify-between items-center" data-oid="1vs6yd6">
+    <div className="space-y-6" data-oid="41uhwcd">
+      <div className="flex justify-between items-center" data-oid="n-b_for">
         <h2
           className="text-xl font-bold text-white flex items-center"
-          data-oid="y3pqact"
+          data-oid="swna9xa"
         >
-          <Server className="h-5 w-5 mr-2 text-cyan" data-oid="7o2-r_-" />
+          <Server className="h-5 w-5 mr-2 text-cyan" data-oid="akq3ffs" />
           System Maintenance
         </h2>
 
@@ -226,29 +226,29 @@ const SystemMaintenance: FC = () => {
           className="flex items-center text-sm text-cyan bg-space-800 px-3 py-1.5 rounded-md hover:bg-space-700 transition-colors"
           onClick={handleRefresh}
           disabled={isRefreshing}
-          data-oid="itbfple"
+          data-oid="veb.ukb"
         >
           <RefreshCw
             className={`h-3.5 w-3.5 mr-1.5 ${isRefreshing ? "animate-spin" : ""}`}
-            data-oid="huhh41k"
+            data-oid="g_x97xl"
           />
 
           {isRefreshing ? "Refreshing..." : "Refresh Data"}
         </button>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-4 gap-6" data-oid="y9x2qlo">
+      <div className="grid grid-cols-1 md:grid-cols-4 gap-6" data-oid="zh:2xqz">
         {/* Sidebar */}
         <div
           className="bg-space-900 rounded-xl glass-card p-3 space-y-2"
-          data-oid="9ggs2p:"
+          data-oid="zdaf-dv"
         >
           <MaintenanceTab
             name="Servers & Resources"
-            icon={<Server className="h-4 w-4 text-cyan" data-oid="8:oda3a" />}
+            icon={<Server className="h-4 w-4 text-cyan" data-oid="g6:kzux" />}
             active={activeTab === "servers"}
             onClick={() => setActiveTab("servers")}
-            data-oid=".5gzvtc"
+            data-oid="qb7awkx"
           />
 
           <MaintenanceTab
@@ -256,77 +256,77 @@ const SystemMaintenance: FC = () => {
             icon={
               <Database
                 className="h-4 w-4 text-purple-400"
-                data-oid="q:h4.rn"
+                data-oid="lr.-i89"
               />
             }
             active={activeTab === "backups"}
             onClick={() => setActiveTab("backups")}
-            data-oid="ka6tuo4"
+            data-oid="fkxoo-1"
           />
 
           <MaintenanceTab
             name="Security & Logs"
             icon={
-              <Lock className="h-4 w-4 text-orange-400" data-oid="qmryh16" />
+              <Lock className="h-4 w-4 text-orange-400" data-oid="18altjj" />
             }
             active={activeTab === "security"}
             onClick={() => setActiveTab("security")}
-            data-oid="lj-0wgg"
+            data-oid="9r2-ajo"
           />
         </div>
 
         {/* Main content */}
         <div
           className="md:col-span-3 bg-space-900 rounded-xl glass-card p-4"
-          data-oid=".ns:udl"
+          data-oid="mm7yx16"
         >
           {activeTab === "servers" && (
-            <div data-oid="94o_-1c">
+            <div data-oid="rfpdjb7">
               <h3
                 className="text-lg font-medium text-white mb-4"
-                data-oid="gx-:6kt"
+                data-oid="m7hk_yg"
               >
                 Server Status & Resources
               </h3>
 
-              <div className="space-y-4" data-oid=":ryykub">
+              <div className="space-y-4" data-oid="skuelhu">
                 {serverData.map((server, index) => (
                   <div
                     key={index}
                     className="bg-space-800/60 rounded-lg p-4"
-                    data-oid="05xajlp"
+                    data-oid="f4g_j09"
                   >
                     <div
                       className="flex justify-between items-start mb-3"
-                      data-oid="zawb93o"
+                      data-oid="i:697fs"
                     >
-                      <div data-oid="jta-g:d">
-                        <div className="flex items-center" data-oid="837jvg6">
+                      <div data-oid="6k0rylj">
+                        <div className="flex items-center" data-oid="jv13jdo">
                           <HardDrive
                             className="h-4 w-4 text-cyan mr-2"
-                            data-oid="yw_ti74"
+                            data-oid="6ou08sy"
                           />
 
                           <h4
                             className="text-white font-medium"
-                            data-oid="x.axq.."
+                            data-oid="l-vz2dy"
                           >
                             {server.name}
                           </h4>
                         </div>
                         <p
                           className="text-sm text-gray-400 mt-1"
-                          data-oid="t5wxld:"
+                          data-oid="0am77-y"
                         >
                           {server.role}
                         </p>
                       </div>
 
-                      <div className="flex items-center" data-oid="5:bu885">
+                      <div className="flex items-center" data-oid="a_touzh">
                         {getStatusIcon(server.status)}
                         <span
                           className={`ml-1.5 text-sm ${getStatusColor(server.status)}`}
-                          data-oid="u9f8g9f"
+                          data-oid=":svz56:"
                         >
                           {server.status === "up"
                             ? "Online"
@@ -339,68 +339,68 @@ const SystemMaintenance: FC = () => {
 
                     <div
                       className="grid grid-cols-4 gap-4 mb-3"
-                      data-oid="jnbabp7"
+                      data-oid="ant:b7f"
                     >
-                      <div data-oid="gm1fa3v">
+                      <div data-oid=".hkfyq9">
                         <p
                           className="text-xs text-gray-400 mb-1"
-                          data-oid="gw6ehtf"
+                          data-oid="ecwryc-"
                         >
                           Uptime
                         </p>
-                        <p className="text-sm text-white" data-oid="_al2d_h">
+                        <p className="text-sm text-white" data-oid="sgvmxr:">
                           {server.uptime}
                         </p>
                       </div>
 
-                      <div data-oid="8g5v0d-">
+                      <div data-oid="qla0dl5">
                         <div
                           className="flex items-center justify-between mb-1"
-                          data-oid="tt4a6um"
+                          data-oid="c1_sj10"
                         >
                           <p
                             className="text-xs text-gray-400"
-                            data-oid="fag9-hi"
+                            data-oid="wxrvsz-"
                           >
                             CPU
                           </p>
-                          <p className="text-xs text-white" data-oid="6-duvks">
+                          <p className="text-xs text-white" data-oid="_qp6o7q">
                             {server.cpu}%
                           </p>
                         </div>
                         {generateResourceBar(server.cpu)}
                       </div>
 
-                      <div data-oid="p-tbb8_">
+                      <div data-oid="pz6.-28">
                         <div
                           className="flex items-center justify-between mb-1"
-                          data-oid="su6bn76"
+                          data-oid="9hxyr0-"
                         >
                           <p
                             className="text-xs text-gray-400"
-                            data-oid="sb8vkyl"
+                            data-oid="xd1w8oa"
                           >
                             Memory
                           </p>
-                          <p className="text-xs text-white" data-oid="j:gs:g:">
+                          <p className="text-xs text-white" data-oid="d4o-7uu">
                             {server.memory}%
                           </p>
                         </div>
                         {generateResourceBar(server.memory)}
                       </div>
 
-                      <div data-oid="p-fx9ww">
+                      <div data-oid="q6krq87">
                         <div
                           className="flex items-center justify-between mb-1"
-                          data-oid="yot:92_"
+                          data-oid="1_8g2d-"
                         >
                           <p
                             className="text-xs text-gray-400"
-                            data-oid="c2irczt"
+                            data-oid="5.qrxuw"
                           >
                             Disk
                           </p>
-                          <p className="text-xs text-white" data-oid="c354dx9">
+                          <p className="text-xs text-white" data-oid="_-pn_y9">
                             {server.disk}%
                           </p>
                         </div>
@@ -410,25 +410,25 @@ const SystemMaintenance: FC = () => {
 
                     <div
                       className="flex justify-end space-x-2"
-                      data-oid="7f_gjac"
+                      data-oid="sx2l0-a"
                     >
                       <button
                         className="text-xs text-cyan hover:text-cyan-200 transition-colors flex items-center"
-                        data-oid="bitu7n5"
+                        data-oid="gupua0z"
                       >
                         <Activity
                           className="h-3.5 w-3.5 mr-1"
-                          data-oid="6c5hd_k"
+                          data-oid="h1e-5.a"
                         />
                         View Details
                       </button>
                       <button
                         className="text-xs text-cyan hover:text-cyan-200 transition-colors flex items-center"
-                        data-oid="g98_-xy"
+                        data-oid="kmm:1bf"
                       >
                         <ArrowUpRight
                           className="h-3.5 w-3.5 mr-1"
-                          data-oid="hcux-9t"
+                          data-oid="nojjo8z"
                         />
                         Access Console
                       </button>
@@ -440,14 +440,14 @@ const SystemMaintenance: FC = () => {
           )}
 
           {activeTab === "backups" && (
-            <div data-oid="brayo56">
+            <div data-oid="_8zc7-e">
               <div
                 className="flex justify-between items-center mb-4"
-                data-oid="4ft-bu0"
+                data-oid="j44k2.o"
               >
                 <h3
                   className="text-lg font-medium text-white"
-                  data-oid="7uut6hs"
+                  data-oid="f3h2pfw"
                 >
                   Database Backups
                 </h3>
@@ -456,13 +456,13 @@ const SystemMaintenance: FC = () => {
                   className="btn-glow btn-glow-cyan bg-purple-900 text-cyan px-3 py-1.5 rounded-lg flex items-center text-sm"
                   onClick={handleCreateBackup}
                   disabled={isCreatingBackup}
-                  data-oid="nel0j4u"
+                  data-oid="a6f-cdy"
                 >
                   {isCreatingBackup ? (
                     <>
                       <RefreshCw
                         className="h-3.5 w-3.5 mr-1.5 animate-spin"
-                        data-oid="bckukev"
+                        data-oid="gh-hlx3"
                       />
                       Creating Backup...
                     </>
@@ -470,7 +470,7 @@ const SystemMaintenance: FC = () => {
                     <>
                       <Database
                         className="h-3.5 w-3.5 mr-1.5"
-                        data-oid="9nq8_x6"
+                        data-oid=":g2qd.0"
                       />
                       Create Backup Now
                     </>
@@ -480,42 +480,42 @@ const SystemMaintenance: FC = () => {
 
               <div
                 className="bg-space-900 rounded-xl overflow-hidden glass-card"
-                data-oid="xpg24xq"
+                data-oid="akg:6uf"
               >
-                <div className="overflow-x-auto" data-oid="kyt14fw">
-                  <table className="w-full" data-oid="jgnji4c">
-                    <thead data-oid="dzm5131">
+                <div className="overflow-x-auto" data-oid="i0:hln5">
+                  <table className="w-full" data-oid="gv9bj:l">
+                    <thead data-oid="8cysiuv">
                       <tr
                         className="bg-space-800 border-b border-gray-700"
-                        data-oid="6pl9tlp"
+                        data-oid="h8.lg85"
                       >
                         <th
                           className="px-4 py-3 text-left text-xs font-medium text-gray-400 uppercase tracking-wider"
-                          data-oid=".ungup0"
+                          data-oid="xdmpz98"
                         >
                           Date & Time
                         </th>
                         <th
                           className="px-4 py-3 text-left text-xs font-medium text-gray-400 uppercase tracking-wider"
-                          data-oid="9m_tmqf"
+                          data-oid="wbl5mx6"
                         >
                           Type
                         </th>
                         <th
                           className="px-4 py-3 text-left text-xs font-medium text-gray-400 uppercase tracking-wider"
-                          data-oid="1.g8l5l"
+                          data-oid="t-vu9y5"
                         >
                           Size
                         </th>
                         <th
                           className="px-4 py-3 text-left text-xs font-medium text-gray-400 uppercase tracking-wider"
-                          data-oid="y:1x:qe"
+                          data-oid="u.4ebx8"
                         >
                           Status
                         </th>
                         <th
                           className="px-4 py-3 text-right text-xs font-medium text-gray-400 uppercase tracking-wider"
-                          data-oid="x.:hga8"
+                          data-oid="vavpmmx"
                         >
                           Actions
                         </th>
@@ -523,25 +523,25 @@ const SystemMaintenance: FC = () => {
                     </thead>
                     <tbody
                       className="divide-y divide-gray-800"
-                      data-oid="lyt.fn2"
+                      data-oid="um333e1"
                     >
                       {backupData.map((backup) => (
                         <tr
                           key={backup.id}
                           className="hover:bg-space-800/50"
-                          data-oid="b7x3jcx"
+                          data-oid="yugne-6"
                         >
                           <td
                             className="px-4 py-3 whitespace-nowrap"
-                            data-oid="-nf.hej"
+                            data-oid="ytbi0ep"
                           >
                             <div
                               className="flex items-center text-sm text-white"
-                              data-oid="r13p:9o"
+                              data-oid="c8kdnwt"
                             >
                               <Calendar
                                 className="h-4 w-4 mr-2 text-gray-400"
-                                data-oid="pta.s0l"
+                                data-oid="dbd:wtu"
                               />
 
                               {backup.date}
@@ -549,7 +549,7 @@ const SystemMaintenance: FC = () => {
                           </td>
                           <td
                             className="px-4 py-3 whitespace-nowrap"
-                            data-oid="1gstnix"
+                            data-oid="3j3lhz8"
                           >
                             <span
                               className={`text-xs px-2 py-1 rounded-full font-medium ${
@@ -557,27 +557,27 @@ const SystemMaintenance: FC = () => {
                                   ? "bg-blue-900/20 text-blue-300"
                                   : "bg-purple-900/20 text-purple-300"
                               }`}
-                              data-oid="0zaatoz"
+                              data-oid="ch4x6ab"
                             >
                               {backup.type === "auto" ? "Automated" : "Manual"}
                             </span>
                           </td>
                           <td
                             className="px-4 py-3 whitespace-nowrap text-sm text-gray-300"
-                            data-oid="6gblb4i"
+                            data-oid="y5y7_02"
                           >
                             {backup.size}
                           </td>
                           <td
                             className="px-4 py-3 whitespace-nowrap"
-                            data-oid="ud:fq79"
+                            data-oid="9k--noa"
                           >
                             <span
                               className={`flex items-center text-sm ${getBackupStatusColor(backup.status)}`}
-                              data-oid="rypp3t."
+                              data-oid="fygs0qz"
                             >
                               {getBackupStatusIcon(backup.status)}
-                              <span className="ml-1.5" data-oid="wrum0ta">
+                              <span className="ml-1.5" data-oid="z-ikmrh">
                                 {backup.status === "completed"
                                   ? "Complete"
                                   : backup.status === "in_progress"
@@ -588,32 +588,32 @@ const SystemMaintenance: FC = () => {
                           </td>
                           <td
                             className="px-4 py-3 whitespace-nowrap text-right text-sm font-medium"
-                            data-oid="c9:f:::"
+                            data-oid="xtoe0iv"
                           >
                             <div
                               className="flex justify-end space-x-2"
-                              data-oid="vi5:ji0"
+                              data-oid="_wj_hz7"
                             >
                               <button
                                 className="p-1.5 rounded-md bg-space-800 text-blue-400 hover:bg-space-700 transition-colors"
-                                data-oid="-:r3zj."
+                                data-oid="k0r4h_-"
                               >
                                 <Download
                                   className="h-4 w-4"
-                                  data-oid="bom79gs"
+                                  data-oid="bb6lhrg"
                                 />
                               </button>
                               <button
                                 className="p-1.5 rounded-md bg-space-800 text-cyan hover:bg-space-700 transition-colors"
-                                data-oid="3iqn_tx"
+                                data-oid="858b.44"
                               >
-                                <Eye className="h-4 w-4" data-oid="2kedt-0" />
+                                <Eye className="h-4 w-4" data-oid="qployry" />
                               </button>
                               <button
                                 className="p-1.5 rounded-md bg-space-800 text-red-400 hover:bg-space-700 transition-colors"
-                                data-oid="4n9ab.k"
+                                data-oid="s89wc5q"
                               >
-                                <Trash className="h-4 w-4" data-oid="r7-upym" />
+                                <Trash className="h-4 w-4" data-oid="p_hom.g" />
                               </button>
                             </div>
                           </td>
@@ -626,25 +626,25 @@ const SystemMaintenance: FC = () => {
 
               <div
                 className="mt-6 p-4 bg-blue-900/10 border border-blue-900/30 rounded-lg"
-                data-oid="4az5:z."
+                data-oid="gdw38ka"
               >
-                <div className="flex" data-oid="do.4p5j">
-                  <div className="flex-shrink-0" data-oid="uythzsy">
+                <div className="flex" data-oid="mwcecjb">
+                  <div className="flex-shrink-0" data-oid="30uj:7f">
                     <Database
                       className="h-5 w-5 text-blue-400"
-                      data-oid="lmespq_"
+                      data-oid="qw3.u:w"
                     />
                   </div>
-                  <div className="ml-3" data-oid="98p.pt4">
+                  <div className="ml-3" data-oid="4c9vx19">
                     <h3
                       className="text-sm font-medium text-white"
-                      data-oid="vzgm7jr"
+                      data-oid="df.fiaa"
                     >
                       Backup Configuration
                     </h3>
                     <p
                       className="mt-1 text-sm text-gray-400"
-                      data-oid="cmyz9a:"
+                      data-oid="y:rpjku"
                     >
                       Automatic backups are currently configured to run daily at
                       midnight. Backups are encrypted and stored in multiple
@@ -658,35 +658,35 @@ const SystemMaintenance: FC = () => {
           )}
 
           {activeTab === "security" && (
-            <div data-oid="enhwnb-">
+            <div data-oid="uvl.qgw">
               <h3
                 className="text-lg font-medium text-white mb-4"
-                data-oid="tgda9ve"
+                data-oid="cgnkr4e"
               >
                 Security Logs
               </h3>
 
-              <div className="relative mb-4" data-oid="3g1.dha">
+              <div className="relative mb-4" data-oid="rk2s8e9">
                 <input
                   type="text"
                   placeholder="Search security logs..."
                   className="w-full pl-9 pr-4 py-2 bg-space-800 border border-gray-700 rounded-lg text-white"
                   value={searchTerm}
                   onChange={(e) => setSearchTerm(e.target.value)}
-                  data-oid="vx6ojqa"
+                  data-oid="h.o5vo2"
                 />
 
                 <Search
                   className="absolute top-2.5 left-3 h-4 w-4 text-gray-400"
-                  data-oid="dazrc3_"
+                  data-oid="nae0fgh"
                 />
               </div>
 
-              <div className="space-y-3" data-oid="n7y01dp">
+              <div className="space-y-3" data-oid="3ig301_">
                 {filteredLogs.length === 0 ? (
                   <div
                     className="text-center py-8 text-gray-400"
-                    data-oid="4lfjl8m"
+                    data-oid="nbxd:bc"
                   >
                     No logs found matching your search criteria
                   </div>
@@ -695,29 +695,29 @@ const SystemMaintenance: FC = () => {
                     <div
                       key={log.id}
                       className="bg-space-800/50 rounded-lg p-3 flex items-start"
-                      data-oid="cw1vy7c"
+                      data-oid="nms9dn5"
                     >
                       <div
                         className={`px-2 py-1 rounded border text-xs font-medium ${getSeverityColor(log.severity)} mr-3`}
-                        data-oid="hhu6tmx"
+                        data-oid="bddwgos"
                       >
                         {log.severity.toUpperCase()}
                       </div>
 
-                      <div className="flex-1" data-oid="5.d2gtk">
+                      <div className="flex-1" data-oid="y2q_0sq">
                         <div
                           className="flex justify-between"
-                          data-oid="hi5slzw"
+                          data-oid="di8miwu"
                         >
                           <span
                             className="text-sm font-medium text-white"
-                            data-oid="56-wjtw"
+                            data-oid="m:_gihx"
                           >
                             {log.event}
                           </span>
                           <span
                             className="text-xs text-gray-400"
-                            data-oid="sighr-y"
+                            data-oid="zb0g4e7"
                           >
                             {log.timestamp}
                           </span>
@@ -725,13 +725,13 @@ const SystemMaintenance: FC = () => {
 
                         <div
                           className="mt-1 flex items-center text-xs text-gray-400"
-                          data-oid="afealb9"
+                          data-oid="0k..-sz"
                         >
-                          <span className="mr-3" data-oid="ork_brp">
+                          <span className="mr-3" data-oid="kdcz8lo">
                             IP: {log.ip}
                           </span>
                           {log.user && (
-                            <span data-oid="3usrp8w">User: {log.user}</span>
+                            <span data-oid="ixivmeu">User: {log.user}</span>
                           )}
                         </div>
                       </div>
@@ -742,25 +742,25 @@ const SystemMaintenance: FC = () => {
 
               <div
                 className="mt-6 p-4 bg-purple-900/10 border border-purple-900/30 rounded-lg"
-                data-oid="r9918p4"
+                data-oid="jdye84:"
               >
-                <div className="flex" data-oid="2axwpsy">
-                  <div className="flex-shrink-0" data-oid="t5qz48x">
+                <div className="flex" data-oid="1iy60n9">
+                  <div className="flex-shrink-0" data-oid="p6x9oub">
                     <Lock
                       className="h-5 w-5 text-purple-400"
-                      data-oid="h3oy.e1"
+                      data-oid="s6t3:jw"
                     />
                   </div>
-                  <div className="ml-3" data-oid=":l1f1ds">
+                  <div className="ml-3" data-oid="u1ila:x">
                     <h3
                       className="text-sm font-medium text-white"
-                      data-oid="xwkdql6"
+                      data-oid="pku.-28"
                     >
                       Security Status
                     </h3>
                     <p
                       className="mt-1 text-sm text-gray-400"
-                      data-oid="0d5yuws"
+                      data-oid="inr7a6a"
                     >
                       System security is currently active and monitoring for
                       unusual activity. Automatic blocking is enabled for

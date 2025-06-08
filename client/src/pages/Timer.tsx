@@ -66,27 +66,27 @@ const Timer: React.FC = () => {
   return (
     <div
       className="min-h-screen bg-gradient-to-br from-slate-900 to-slate-800 text-white p-4"
-      data-oid="d2-iuql"
+      data-oid="l7mipv."
     >
       {/* Animated starfield background */}
       <div
         className="fixed inset-0 -z-10 overflow-hidden opacity-20"
-        data-oid="thb9i6m"
+        data-oid="8rqqp_m"
       >
-        <div className="star-small" data-oid="xcmxfd9"></div>
-        <div className="star-medium" data-oid="vjzn4p5"></div>
-        <div className="star-large" data-oid="nsgu905"></div>
+        <div className="star-small" data-oid="3bxpla_"></div>
+        <div className="star-medium" data-oid="ud32nn_"></div>
+        <div className="star-large" data-oid="vnq_3sc"></div>
       </div>
 
-      <div className="max-w-4xl mx-auto" data-oid="d3kq.hv">
-        <header className="mb-8" data-oid="6:ifqo1">
+      <div className="max-w-4xl mx-auto" data-oid="-glapmd">
+        <header className="mb-8" data-oid="cc0q.p0">
           <h1
             className="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500"
-            data-oid="iaagn9a"
+            data-oid="c.o0ipv"
           >
             Job Timer
           </h1>
-          <p className="text-slate-300 mt-2" data-oid="32b9s.4">
+          <p className="text-slate-300 mt-2" data-oid="_lkt8sz">
             Track your time on construction projects
           </p>
         </header>
@@ -94,7 +94,7 @@ const Timer: React.FC = () => {
         {/* Horizontal construction tools toolbar */}
         <div
           className="bg-slate-800/70 backdrop-blur-md border border-slate-700/50 rounded-xl p-3 mb-6 flex items-center space-x-2 overflow-x-auto"
-          data-oid="hgguo6c"
+          data-oid="m49vj9u"
         >
           {[
             "Measure",
@@ -107,11 +107,11 @@ const Timer: React.FC = () => {
             <button
               key={tool}
               className="flex flex-col items-center justify-center py-2 px-4 rounded-lg bg-slate-900/50 hover:bg-cyan-900/30 border border-slate-700/50 hover:border-cyan-500/40 transition-colors"
-              data-oid="zf2zvnu"
+              data-oid="iiqm5ac"
             >
               <div
                 className="w-10 h-10 rounded-full bg-slate-800 border border-slate-700 flex items-center justify-center mb-1"
-                data-oid="t4v6h17"
+                data-oid="u3a8k9u"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -119,18 +119,18 @@ const Timer: React.FC = () => {
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
-                  data-oid="rzlbq51"
+                  data-oid="rea_cdv"
                 >
                   <path
                     strokeLinecap="round"
                     strokeLinejoin="round"
                     strokeWidth={1.5}
                     d="M12 6v6m0 0v6m0-6h6m-6 0H6"
-                    data-oid=":39ejlv"
+                    data-oid="sjsyw9p"
                   />
                 </svg>
               </div>
-              <span className="text-xs text-slate-300" data-oid="178w:7-">
+              <span className="text-xs text-slate-300" data-oid="6-2_asa">
                 {tool}
               </span>
             </button>
@@ -140,11 +140,11 @@ const Timer: React.FC = () => {
         {/* Timer Card */}
         <div
           className="bg-slate-800/70 backdrop-blur-md border border-slate-700/50 rounded-xl p-8 mb-6 shadow-lg"
-          data-oid="ly3bs7p"
+          data-oid="ty81mbr"
         >
           {/* Project Selection */}
-          <div className="mb-6" data-oid="8.l3i.q">
-            <label className="block text-slate-300 mb-2" data-oid="uwg9sfv">
+          <div className="mb-6" data-oid="sibyb-j">
+            <label className="block text-slate-300 mb-2" data-oid="0g76klt">
               Project
             </label>
             <select
@@ -152,24 +152,24 @@ const Timer: React.FC = () => {
               value={selectedProject || ""}
               onChange={(e) => setSelectedProject(e.target.value)}
               disabled={isRunning}
-              data-oid="i6gme5i"
+              data-oid="e4kgrm."
             >
-              <option value="" data-oid="bw9r826">
+              <option value="" data-oid="wozw:tn">
                 Select a project
               </option>
               {projects?.map((project: any) => (
-                <option key={project.id} value={project.id} data-oid="gqo8rdd">
+                <option key={project.id} value={project.id} data-oid="odjry7j">
                   {project.name}
                 </option>
               )) || (
                 <>
-                  <option value="1" data-oid="0tv7h4c">
+                  <option value="1" data-oid="6a7th.g">
                     Project 1
                   </option>
-                  <option value="2" data-oid="qxzz0pv">
+                  <option value="2" data-oid="52a:-nx">
                     Project 2
                   </option>
-                  <option value="3" data-oid="lnw_:cu">
+                  <option value="3" data-oid="yassuwr">
                     Project 3
                   </option>
                 </>
@@ -180,19 +180,19 @@ const Timer: React.FC = () => {
           {/* Timer Display */}
           <div
             className="bg-slate-900 border border-slate-700 rounded-xl p-8 mb-6 text-center relative overflow-hidden"
-            data-oid="c6yu6z5"
+            data-oid="6gml7-x"
           >
             {/* Glow effect */}
             <div
               className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full bg-gradient-to-r from-cyan-500/5 via-blue-500/5 to-cyan-500/5 rounded-full blur-2xl"
-              data-oid="1tpf2sk"
+              data-oid="gc9y2ij"
             ></div>
 
             {/* Clock design with space/cyan theme */}
-            <div className="relative" data-oid="w8.slnq">
+            <div className="relative" data-oid="tu69xt6">
               <div
                 className="text-7xl font-mono font-bold tracking-wider text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-white to-blue-400"
-                data-oid="2o_54k-"
+                data-oid="-7c0-e2"
               >
                 {formatTime(time.hours)}:{formatTime(time.minutes)}:
                 {formatTime(time.seconds)}
@@ -201,7 +201,7 @@ const Timer: React.FC = () => {
               {/* Decorative orbital ring */}
               <div
                 className="absolute -inset-6 rounded-full border border-cyan-500/20 animate-spin-slow opacity-70"
-                data-oid="gguijn3"
+                data-oid="mie7026"
               ></div>
             </div>
           </div>
@@ -209,7 +209,7 @@ const Timer: React.FC = () => {
           {/* Timer Controls */}
           <div
             className="flex justify-center space-x-4 mb-6"
-            data-oid="6p6zxrw"
+            data-oid="g5o3lbb"
           >
             <button
               onClick={toggleTimer}
@@ -219,7 +219,7 @@ const Timer: React.FC = () => {
                     ? "bg-red-600/80 hover:bg-red-700 shadow-red-500/20"
                     : "bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-600 hover:to-blue-700 shadow-cyan-500/30"
                 }`}
-              data-oid="rc5i6s4"
+              data-oid=":t1:8qc"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -227,7 +227,7 @@ const Timer: React.FC = () => {
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
-                data-oid="u.3wt_k"
+                data-oid="ia--vyr"
               >
                 {isRunning ? (
                   <path
@@ -235,7 +235,7 @@ const Timer: React.FC = () => {
                     strokeLinejoin="round"
                     strokeWidth={2}
                     d="M10 9v6m4-6v6m7-3a9 9 0 11-18 0 9 9 0 0118 0z"
-                    data-oid="45q3hv."
+                    data-oid="lzs6t-9"
                   />
                 ) : (
                   <path
@@ -243,18 +243,18 @@ const Timer: React.FC = () => {
                     strokeLinejoin="round"
                     strokeWidth={2}
                     d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"
-                    data-oid="aohlejn"
+                    data-oid="bb9xze:"
                   />
                 )}
               </svg>
-              <span data-oid="h621ss9">{isRunning ? "Pause" : "Start"}</span>
+              <span data-oid="p:9e8qn">{isRunning ? "Pause" : "Start"}</span>
             </button>
 
             <button
               onClick={resetTimer}
               className="px-6 py-3 rounded-lg bg-slate-700/80 hover:bg-slate-600 flex items-center justify-center space-x-2 shadow-lg shadow-slate-800/30 transition-all"
               disabled={!time.seconds && !time.minutes && !time.hours}
-              data-oid="x5-__i9"
+              data-oid="ich3c01"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -262,23 +262,23 @@ const Timer: React.FC = () => {
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
-                data-oid="j6g2xm4"
+                data-oid="u9quo2d"
               >
                 <path
                   strokeLinecap="round"
                   strokeLinejoin="round"
                   strokeWidth={2}
                   d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"
-                  data-oid="wue7h0h"
+                  data-oid="icc8ny9"
                 />
               </svg>
-              <span data-oid="xg.8fw.">Reset</span>
+              <span data-oid="cw03oip">Reset</span>
             </button>
           </div>
 
           {/* Notes Section */}
-          <div data-oid="j2x34b4">
-            <label className="block text-slate-300 mb-2" data-oid="ryp8ymo">
+          <div data-oid="mjsy90j">
+            <label className="block text-slate-300 mb-2" data-oid="ee0m0-v">
               Notes
             </label>
             <textarea
@@ -286,7 +286,7 @@ const Timer: React.FC = () => {
               placeholder="Add details about this time entry..."
               value={note}
               onChange={(e) => setNote(e.target.value)}
-              data-oid="6gbbim5"
+              data-oid="i9q08va"
             ></textarea>
           </div>
         </div>
@@ -294,35 +294,35 @@ const Timer: React.FC = () => {
         {/* Recent Time Entries */}
         <div
           className="bg-slate-800/70 backdrop-blur-md border border-slate-700/50 rounded-xl p-6 shadow-lg"
-          data-oid="j5458ms"
+          data-oid="sog8-.g"
         >
           <h2
             className="text-xl font-medium text-white mb-4"
-            data-oid="31tnctw"
+            data-oid="d_.iw:m"
           >
             Recent Time Entries
           </h2>
 
-          <div className="space-y-3" data-oid="r8jewew">
+          <div className="space-y-3" data-oid="0b5.bji">
             {[1, 2, 3].map((id) => (
               <div
                 key={id}
                 className="bg-slate-900/80 border border-slate-700/50 rounded-lg p-4 flex justify-between items-center"
-                data-oid=".br20bv"
+                data-oid="ofrne8m"
               >
-                <div data-oid="24a5t-i">
-                  <h3 className="font-medium text-white" data-oid="a6a:xvv">
+                <div data-oid=".jp:vfr">
+                  <h3 className="font-medium text-white" data-oid="b7gtblr">
                     Project {id}
                   </h3>
-                  <p className="text-sm text-slate-400" data-oid="51s8086">
+                  <p className="text-sm text-slate-400" data-oid="a.7o5:x">
                     Task: Site preparation
                   </p>
                 </div>
-                <div className="text-right" data-oid="_fw_y6z">
-                  <p className="text-cyan-400 font-mono" data-oid="3er_3r4">
+                <div className="text-right" data-oid="lfzu-qk">
+                  <p className="text-cyan-400 font-mono" data-oid="fcmi302">
                     0{id}:45:00
                   </p>
-                  <p className="text-xs text-slate-500" data-oid="55p-f1:">
+                  <p className="text-xs text-slate-500" data-oid="e67pl_y">
                     Today
                   </p>
                 </div>

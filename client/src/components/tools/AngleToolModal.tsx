@@ -235,50 +235,50 @@ const AngleToolModal: FC<AngleToolModalProps> = ({ open, onOpenChange }) => {
   };
 
   return (
-    <Dialog open={open} onOpenChange={onOpenChange} data-oid=".voij9z">
+    <Dialog open={open} onOpenChange={onOpenChange} data-oid="2q2w-lw">
       <DialogContent
         className="bg-gradient-to-br from-space-900 via-space-950 to-space-900 border border-space-700/50 text-white max-w-4xl h-[80vh] flex flex-col p-0"
-        data-oid="b7bcm7f"
+        data-oid="jd5c11i"
       >
-        <div className="absolute inset-0 overflow-hidden" data-oid="lj1w.__">
+        <div className="absolute inset-0 overflow-hidden" data-oid="yc2lzm2">
           <div
             className="absolute -inset-[100px] bg-cyan-800/5 blur-3xl rounded-full top-0 right-0 z-0"
-            data-oid="3qilek5"
+            data-oid="mzj4wm."
           ></div>
           <div
             className="absolute -inset-[100px] bg-blue-800/5 blur-3xl rounded-full bottom-0 left-0 z-0"
-            data-oid="zw2:p3-"
+            data-oid="cfy.-5m"
           ></div>
           <div
             className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-cyan-500/20 to-transparent"
-            data-oid="m39_kgr"
+            data-oid="apqdhyr"
           ></div>
           <div
             className="absolute bottom-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-cyan-500/20 to-transparent"
-            data-oid="4mo0rqt"
+            data-oid="gfvjo.k"
           ></div>
         </div>
 
         <div
           className="relative z-10 flex flex-col h-full p-6"
-          data-oid="fty15-q"
+          data-oid="x_raimt"
         >
-          <DialogHeader className="mb-4 flex-shrink-0" data-oid=":2:55a1">
+          <DialogHeader className="mb-4 flex-shrink-0" data-oid="n43l4fw">
             <DialogTitle
               className="flex items-center text-xl font-space text-cyan-400 tracking-wide"
-              data-oid="_2x7udt"
+              data-oid="gnrfgkl"
             >
-              <i className="fas fa-compass mr-3" data-oid="t2b:bv2"></i>
-              <span data-oid="j:6dj_y">Angle Measurement Tool</span>
+              <i className="fas fa-compass mr-3" data-oid="plrebii"></i>
+              <span data-oid="gy8he3k">Angle Measurement Tool</span>
             </DialogTitle>
           </DialogHeader>
 
-          <div className="flex-grow flex flex-col mb-4" data-oid="k7w_qcm">
+          <div className="flex-grow flex flex-col mb-4" data-oid="h478f-l">
             <div
               className="bg-space-900/70 p-4 rounded-lg mb-4 text-sm text-gray-300"
-              data-oid="1wv2qwq"
+              data-oid="xlft22e"
             >
-              <p data-oid="8:pwkxx">
+              <p data-oid="yf78m-q">
                 {stage === "center" &&
                   "Click to place the center point of your angle."}
                 {stage === "start" &&
@@ -289,10 +289,10 @@ const AngleToolModal: FC<AngleToolModalProps> = ({ open, onOpenChange }) => {
               {angle !== null && (
                 <div
                   className="mt-2 text-lg text-white font-medium"
-                  data-oid="62g-w8h"
+                  data-oid="ppbiof-"
                 >
-                  <span data-oid=":d7.q8v">Measured Angle: </span>
-                  <span className="text-cyan-400" data-oid="q3o26xz">
+                  <span data-oid="3kko9.f">Measured Angle: </span>
+                  <span className="text-cyan-400" data-oid="fdk6la.">
                     {angle.toFixed(1)}°
                   </span>
                 </div>
@@ -302,40 +302,40 @@ const AngleToolModal: FC<AngleToolModalProps> = ({ open, onOpenChange }) => {
             <div
               className="flex-grow relative rounded-lg overflow-hidden border border-space-700/50"
               ref={containerRef}
-              data-oid="e35z_g3"
+              data-oid="lg2h:t8"
             >
               {/* Background grid pattern */}
               <div
                 className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PHBhdHRlcm4gaWQ9ImdyaWQiIHdpZHRoPSI0MCIgaGVpZ2h0PSI0MCIgcGF0dGVyblVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+PHBhdGggZD0iTSAwIDEwIEwgNDAgMTAgTSAxMCAwIEwgMTAgNDAgTSAwIDIwIEwgNDAgMjAgTSAyMCAwIEwgMjAgNDAgTSAwIDMwIEwgNDAgMzAgTSAzMCAwIEwgMzAgNDAiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzFmMmE0NCIgc3Ryb2tlLXdpZHRoPSIxIi8+PC9wYXR0ZXJuPjwvZGVmcz48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2dyaWQpIiAvPjwvc3ZnPg==')]"
-                data-oid="lo-7_7:"
+                data-oid="cdlj6k_"
               ></div>
 
               <canvas
                 ref={canvasRef}
                 className="absolute inset-0 cursor-crosshair"
                 onClick={handleCanvasClick}
-                data-oid="qhyn-79"
+                data-oid="-x9ga7n"
               />
             </div>
           </div>
 
           <DialogFooter
             className="flex-shrink-0 flex justify-between items-center"
-            data-oid=".fers.8"
+            data-oid="h6cxhmc"
           >
             <Button
               variant="outline"
               className="bg-space-800 border-space-700 hover:bg-space-700 text-white"
               onClick={resetTool}
-              data-oid="ejjbnn2"
+              data-oid="7kxzh_6"
             >
-              <i className="fas fa-redo mr-2" data-oid="p7gigdm"></i> Reset
+              <i className="fas fa-redo mr-2" data-oid="lx-.3r5"></i> Reset
             </Button>
 
             <Button
               onClick={() => onOpenChange(false)}
               className="bg-gradient-to-r from-cyan-600 to-cyan-700 hover:from-cyan-500 hover:to-cyan-600 text-white"
-              data-oid="xyt0sg7"
+              data-oid="txsblov"
             >
               Close
             </Button>

@@ -64,9 +64,9 @@ const JobTimer: FC = () => {
     return (
       <div
         className="flex items-baseline justify-center space-x-0.5"
-        data-oid="jmumycb"
+        data-oid="axuwl.j"
       >
-        <AnimatePresence mode="wait" data-oid="fwc4u_e">
+        <AnimatePresence mode="wait" data-oid="vr.qxq3">
           <motion.span
             key={`hours-${hours}`}
             initial={{ y: -10, opacity: 0 }}
@@ -74,18 +74,18 @@ const JobTimer: FC = () => {
             exit={{ y: 10, opacity: 0 }}
             transition={{ type: "spring", stiffness: 500, damping: 30 }}
             className="tabular-nums inline-block min-w-[36px] text-center text-3xl font-bold bg-gradient-to-b from-white to-gray-300 bg-clip-text text-transparent"
-            data-oid="dnzvgqh"
+            data-oid="_ga34h8"
           >
             {hours}
           </motion.span>
         </AnimatePresence>
         <span
           className="inline-block w-2 text-center text-2xl font-bold text-cyan-400/90"
-          data-oid="xdz..c9"
+          data-oid="y-7b-zm"
         >
           :
         </span>
-        <AnimatePresence mode="wait" data-oid="tj.tm7c">
+        <AnimatePresence mode="wait" data-oid="9fa:51o">
           <motion.span
             key={`minutes-${minutes}`}
             initial={{ y: -10, opacity: 0 }}
@@ -98,18 +98,18 @@ const JobTimer: FC = () => {
               delay: 0.05,
             }}
             className="tabular-nums inline-block min-w-[36px] text-center text-3xl font-bold bg-gradient-to-b from-white to-gray-300 bg-clip-text text-transparent"
-            data-oid="o::iaj:"
+            data-oid="05md.1u"
           >
             {minutes}
           </motion.span>
         </AnimatePresence>
         <span
           className="inline-block w-2 text-center text-2xl font-bold text-cyan-400/90"
-          data-oid="wt.au9o"
+          data-oid="8cr3.1t"
         >
           :
         </span>
-        <AnimatePresence mode="wait" data-oid="h45dr5d">
+        <AnimatePresence mode="wait" data-oid="3my_lvl">
           <motion.span
             key={`seconds-${seconds}`}
             initial={{ y: -10, opacity: 0 }}
@@ -122,7 +122,7 @@ const JobTimer: FC = () => {
               delay: 0.1,
             }}
             className="tabular-nums inline-block min-w-[36px] text-center text-3xl font-bold bg-gradient-to-b from-white to-gray-300 bg-clip-text text-transparent"
-            data-oid="2omgiox"
+            data-oid="3kjf0gy"
           >
             {seconds}
           </motion.span>
@@ -165,30 +165,30 @@ const JobTimer: FC = () => {
         repeat: isRunning ? Infinity : 0,
         ease: "easeInOut",
       }}
-      data-oid="rs.nnbk"
+      data-oid=":msoxcv"
     >
       {status === "RUNNING" ? (
         <>
-          <span className="relative flex h-2 w-2 mr-2" data-oid="8gyp_d0">
+          <span className="relative flex h-2 w-2 mr-2" data-oid="o09k_j2">
             <span
               className="animate-ping absolute inline-flex h-full w-full rounded-full bg-teal-400 opacity-75"
-              data-oid="y.twwky"
+              data-oid="3izil_4"
             ></span>
             <span
               className="relative inline-flex rounded-full h-2 w-2 bg-teal-500"
-              data-oid="j4vn:pt"
+              data-oid="4:lxhf_"
             ></span>
           </span>
           TRACKING
         </>
       ) : status === "PAUSED" ? (
         <>
-          <Pause className="h-3 w-3 mr-1.5" data-oid="w1a4uq_" />
+          <Pause className="h-3 w-3 mr-1.5" data-oid="i5mz_g." />
           PAUSED
         </>
       ) : (
         <>
-          <StopCircle className="h-3 w-3 mr-1.5" data-oid="v31i2ki" />
+          <StopCircle className="h-3 w-3 mr-1.5" data-oid="rmtyy_f" />
           STOPPED
         </>
       )}
@@ -197,29 +197,29 @@ const JobTimer: FC = () => {
 
   return (
     <>
-      <Toaster data-oid="5axn1kg" />
+      <Toaster data-oid="f4jtkfs" />
       <motion.div
         initial={{ opacity: 0, y: 10 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.3, ease: "easeOut" }}
         className="relative group"
-        data-oid="gwgk4w4"
+        data-oid="53pq16v"
       >
         {/* Animated background gradient */}
         <div
           className="absolute inset-0 bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 rounded-2xl opacity-90 backdrop-blur-sm"
-          data-oid="nhlt39r"
+          data-oid="m.lp5x:"
         >
           <div
             className="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-cyan-500/5 via-transparent to-transparent opacity-50"
-            data-oid="1p7a8zw"
+            data-oid="5k_5:ez"
           ></div>
         </div>
 
         {/* Glow effect */}
         <div
           className="absolute -inset-0.5 bg-gradient-to-r from-cyan-500/30 to-teal-500/30 rounded-2xl opacity-0 group-hover:opacity-100 blur transition-all duration-500"
-          data-oid="_3prmw5"
+          data-oid="wjw.m32"
         ></div>
 
         <GlassCard
@@ -227,14 +227,14 @@ const JobTimer: FC = () => {
           variant="teal"
           glow={true}
           data-component-name="JobTimer"
-          data-oid="7q-a9k."
+          data-oid="j_aovee"
         >
           {/* Header */}
           <div
             className="px-6 py-4 border-b border-white/5 flex justify-between items-center bg-gradient-to-r from-space-900/70 to-space-900/30"
-            data-oid="5787u0w"
+            data-oid="_u4i2by"
           >
-            <div className="flex items-center" data-oid="bwfh6ks">
+            <div className="flex items-center" data-oid="jq7cbiq">
               <motion.div
                 className="w-10 h-10 rounded-xl bg-gradient-to-br from-teal-500/20 to-teal-600/20 flex items-center justify-center mr-3 shadow-lg shadow-teal-500/10"
                 animate={{
@@ -245,35 +245,35 @@ const JobTimer: FC = () => {
                   ease: "linear",
                   repeat: isRunning ? Infinity : 0,
                 }}
-                data-oid="759vzsw"
+                data-oid="_d2jryh"
               >
-                <Timer className="h-5 w-5 text-teal-400" data-oid="_m:1kxm" />
+                <Timer className="h-5 w-5 text-teal-400" data-oid="ar:xt-_" />
               </motion.div>
-              <div data-oid="43fh97f">
+              <div data-oid="awofxai">
                 <h3
                   className="text-lg font-space font-semibold bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent"
-                  data-oid="viz9b6g"
+                  data-oid="hvgk7-:"
                 >
                   Active Job Timer
                 </h3>
-                <p className="text-xs text-gray-400" data-oid="626qks4">
+                <p className="text-xs text-gray-400" data-oid="4ojc6re">
                   Tracking time for billable hours
                 </p>
               </div>
             </div>
-            <div className="flex items-center space-x-2" data-oid="olzpen7">
-              <StatusBadge data-oid="7dj3ytk" />
+            <div className="flex items-center space-x-2" data-oid="kmaqk.m">
+              <StatusBadge data-oid="ou7nvpv" />
 
-              <AnimatePresence data-oid="77bs.:-">
+              <AnimatePresence data-oid="tonkxe7">
                 {timesheetSaved && (
                   <motion.span
                     className="bg-green-500/10 text-green-400 px-3 py-1 rounded-full text-xs flex items-center border border-green-500/20"
                     initial={{ opacity: 0, x: 10 }}
                     animate={{ opacity: 1, x: 0 }}
                     exit={{ opacity: 0, x: 10 }}
-                    data-oid="_yews7k"
+                    data-oid=":::f7e4"
                   >
-                    <Check className="h-3 w-3 mr-1.5" data-oid="-_0ivx9" />
+                    <Check className="h-3 w-3 mr-1.5" data-oid="uq--jj." />
                     Saved
                   </motion.span>
                 )}
@@ -282,75 +282,75 @@ const JobTimer: FC = () => {
           </div>
 
           {/* Main content */}
-          <div className="p-6" data-oid="ord:z:1">
+          <div className="p-6" data-oid="vvh_52k">
             <div
               className="grid grid-cols-1 lg:grid-cols-3 gap-6"
-              data-oid="tyi96f."
+              data-oid="0:d._w2"
             >
               {/* Left column - job info */}
-              <div className="lg:col-span-2" data-oid="15mykd5">
+              <div className="lg:col-span-2" data-oid="a_o0rxc">
                 <div
                   className="bg-space-900/40 rounded-xl p-5 h-full border border-white/5 backdrop-blur-sm"
-                  data-oid="xmx2a:x"
+                  data-oid="m2q8:6e"
                 >
-                  <div className="flex flex-col" data-oid="697sov0">
+                  <div className="flex flex-col" data-oid="z98a:gz">
                     <div
                       className="flex items-center justify-between mb-4"
-                      data-oid="mhxvn3n"
+                      data-oid="h.ns_89"
                     >
                       <h4
                         className="text-xl font-semibold text-white"
-                        data-oid="jo5vs9l"
+                        data-oid="ub7.c-:"
                       >
                         {currentJob.name}
                       </h4>
                       <span
                         className="px-2.5 py-1 text-xs font-medium bg-teal-500/10 text-teal-400 rounded-full"
-                        data-oid="vlkddzq"
+                        data-oid="plna0_i"
                       >
                         Current Job
                       </span>
                     </div>
                     <div
                       className="flex items-center text-sm text-gray-400 mb-5"
-                      data-oid="9oquzv9"
+                      data-oid="3xc9yp3"
                     >
                       <Building2
                         className="h-4 w-4 mr-2 text-teal-400/80"
-                        data-oid="og73ldp"
+                        data-oid=":s5ynsu"
                       />
 
-                      <span data-oid="g2ish33">{currentJob.client}</span>
+                      <span data-oid="p08traf">{currentJob.client}</span>
                     </div>
 
                     <div
                       className="bg-space-800/40 rounded-xl p-5 border border-white/5"
-                      data-oid="t.ggcb8"
+                      data-oid="etc.qx8"
                     >
-                      <div className="space-y-4" data-oid="qysyqcf">
+                      <div className="space-y-4" data-oid="1rpi-8-">
                         <div
                           className="flex justify-between items-center py-2 border-b border-white/5"
-                          data-oid="2.nn5z8"
+                          data-oid="7uqpybq"
                         >
                           <div
                             className="flex items-center text-gray-400"
-                            data-oid="5qavb4_"
+                            data-oid="i-ufg70"
                           >
                             <Clock
                               className="h-4 w-4 mr-2 text-teal-400/80"
-                              data-oid="x28d9k9"
+                              data-oid="xmgjomn"
                             />
 
                             <span
                               className="text-sm font-medium"
-                              data-oid="me3.vgf"
+                              data-oid="4zegdig"
                             >
                               Started
                             </span>
                           </div>
                           <span
                             className="text-white font-medium"
-                            data-oid="cikuw1k"
+                            data-oid="u2qkbh."
                           >
                             {startTime}
                           </span>
@@ -358,29 +358,29 @@ const JobTimer: FC = () => {
 
                         <div
                           className="flex justify-between items-center py-2 border-b border-white/5"
-                          data-oid="hdw-ry5"
+                          data-oid="tcivpll"
                         >
                           <div
                             className="flex items-center text-gray-400"
-                            data-oid="woqa0uc"
+                            data-oid="ogj:gni"
                           >
                             <DollarSign
                               className="h-4 w-4 mr-2 text-teal-400/80"
-                              data-oid="mtgeiqx"
+                              data-oid="8xddy3w"
                             />
 
                             <span
                               className="text-sm font-medium"
-                              data-oid="-moz8_v"
+                              data-oid="sxd5wf3"
                             >
                               Hourly Rate
                             </span>
                           </div>
-                          <div className="flex items-center" data-oid="5ht2c53">
+                          <div className="flex items-center" data-oid="vy.mbvv">
                             {isEditingRate ? (
                               <div
                                 className="flex items-center space-x-2"
-                                data-oid="doxkn55"
+                                data-oid=".vx01p6"
                               >
                                 <input
                                   type="number"
@@ -389,7 +389,7 @@ const JobTimer: FC = () => {
                                   className="w-24 px-2 py-1 text-sm bg-space-700/50 border border-white/10 rounded text-white"
                                   min="0"
                                   step="0.01"
-                                  data-oid="k_1w0tg"
+                                  data-oid="80rm:66"
                                 />
 
                                 <button
@@ -401,11 +401,11 @@ const JobTimer: FC = () => {
                                     }
                                   }}
                                   className="text-teal-400 hover:text-teal-300 transition-colors"
-                                  data-oid=".:8:_ws"
+                                  data-oid="4p8pdu7"
                                 >
                                   <Check
                                     className="h-4 w-4"
-                                    data-oid="x-.4nxt"
+                                    data-oid="nssyz2s"
                                   />
                                 </button>
                                 <button
@@ -414,30 +414,30 @@ const JobTimer: FC = () => {
                                     setIsEditingRate(false);
                                   }}
                                   className="text-gray-400 hover:text-gray-300 transition-colors"
-                                  data-oid="ns3meo_"
+                                  data-oid="xymk4i6"
                                 >
-                                  <X className="h-4 w-4" data-oid="fr6ftwk" />
+                                  <X className="h-4 w-4" data-oid="-r7br28" />
                                 </button>
                               </div>
                             ) : (
                               <div
                                 className="flex items-center space-x-2"
-                                data-oid="5pen5ns"
+                                data-oid="bj.ohi5"
                               >
                                 <span
                                   className="text-white font-medium"
-                                  data-oid="ee88r5x"
+                                  data-oid="mddllw9"
                                 >
                                   ${hourlyRate.toFixed(2)}/hr
                                 </span>
                                 <button
                                   onClick={() => setIsEditingRate(true)}
                                   className="text-gray-400 hover:text-teal-400 transition-colors"
-                                  data-oid="0jwtpfs"
+                                  data-oid="e3a7m5-"
                                 >
                                   <Edit2
                                     className="h-3.5 w-3.5"
-                                    data-oid="kc3uz03"
+                                    data-oid="no6opkw"
                                   />
                                 </button>
                               </div>
@@ -447,27 +447,27 @@ const JobTimer: FC = () => {
 
                         <div
                           className="flex justify-between items-center py-2"
-                          data-oid="sbg0fnw"
+                          data-oid="kgxhjrt"
                         >
                           <div
                             className="flex items-center text-gray-400"
-                            data-oid=".ief6or"
+                            data-oid="fby9eyy"
                           >
                             <Calculator
                               className="h-4 w-4 mr-2 text-teal-400/80"
-                              data-oid="gcprjdk"
+                              data-oid="umnyla4"
                             />
 
                             <span
                               className="text-sm font-medium"
-                              data-oid="qlg--m0"
+                              data-oid="gtriwst"
                             >
                               Estimated Total
                             </span>
                           </div>
                           <span
                             className="text-white font-medium"
-                            data-oid="s2.9-m2"
+                            data-oid="k_r5k3t"
                           >
                             ${(Number(estimatedTotal) || 0).toFixed(2)}
                           </span>
@@ -481,36 +481,36 @@ const JobTimer: FC = () => {
               {/* Timer Controls */}
               <div
                 className="bg-space-900/40 rounded-xl p-6 border border-white/5 backdrop-blur-sm"
-                data-oid="e.h.4g_"
+                data-oid="ypk4tav"
               >
-                <div className="text-center mb-6" data-oid="1lf6.1d">
+                <div className="text-center mb-6" data-oid="ibx2yu-">
                   <div
                     className="text-5xl font-bold text-white mb-2"
-                    data-oid="leh5q1_"
+                    data-oid="afyf1.."
                   >
                     {formattedTime()}
                   </div>
                   <div
                     className="h-1.5 bg-space-800/50 rounded-full overflow-hidden mb-2"
-                    data-oid=":et3rl5"
+                    data-oid="oqaexnz"
                   >
                     <motion.div
                       className="h-full bg-gradient-to-r from-cyan-400 to-teal-400"
                       initial={{ width: "0%" }}
                       animate={{ width: `${calculateProgress()}%` }}
                       transition={{ duration: 0.5, ease: "easeInOut" }}
-                      data-oid="wo0bvcy"
+                      data-oid="9c23.o3"
                     />
                   </div>
-                  <p className="text-xs text-gray-400" data-oid="sooo.cj">
+                  <p className="text-xs text-gray-400" data-oid="o3z5tsg">
                     {Math.round(calculateProgress())}% of 8-hour workday
                   </p>
                 </div>
 
-                <div className="space-y-3" data-oid="ig4f7v0">
+                <div className="space-y-3" data-oid="pw2jbhb">
                   <div
                     className="flex items-center justify-between space-x-3"
-                    data-oid="l-1l:.i"
+                    data-oid="w0b2urj"
                   >
                     <motion.button
                       whileHover={{ scale: 1.03 }}
@@ -526,11 +526,11 @@ const JobTimer: FC = () => {
                           "opacity-70 cursor-not-allowed hover:shadow-none",
                         "group/button",
                       )}
-                      data-oid="9n63.:a"
+                      data-oid="g6w_13z"
                     >
                       <span
                         className="relative flex items-center"
-                        data-oid="qz1xzma"
+                        data-oid="qvll1y5"
                       >
                         <span
                           className={cn(
@@ -543,21 +543,21 @@ const JobTimer: FC = () => {
                               ? "group-hover/button:bg-rose-500/30"
                               : "group-hover/button:bg-teal-500/30",
                           )}
-                          data-oid="ub2qip9"
+                          data-oid="_8f3ol5"
                         >
                           {isRunning && !isPaused ? (
                             <Pause
                               className="w-3 h-3 text-white"
-                              data-oid="0efuztk"
+                              data-oid="ak0u019"
                             />
                           ) : (
                             <Play
                               className="w-3 h-3 text-white -ml-px"
-                              data-oid="6c.-.zn"
+                              data-oid="ikuoiz-"
                             />
                           )}
                         </span>
-                        <span className="ml-2" data-oid="fv5vc:x">
+                        <span className="ml-2" data-oid="mmx0b0u">
                           {isRunning && !isPaused
                             ? "Pause Timer"
                             : "Start Timer"}
@@ -566,7 +566,7 @@ const JobTimer: FC = () => {
                     </motion.button>
                   </div>
 
-                  <div className="grid grid-cols-2 gap-3" data-oid="ylgsjbp">
+                  <div className="grid grid-cols-2 gap-3" data-oid="._etu1-">
                     <motion.button
                       whileHover={{ scale: 1.03 }}
                       whileTap={{ scale: 0.98 }}
@@ -580,10 +580,10 @@ const JobTimer: FC = () => {
                           : "hover:bg-red-500/15",
                         isSubmitting && "opacity-50 cursor-not-allowed",
                       )}
-                      data-oid="09gtebk"
+                      data-oid="q7n_zof"
                     >
-                      <StopCircle className="h-4 w-4" data-oid="d_0_ok4" />
-                      <span data-oid="df4b8sn">Reset</span>
+                      <StopCircle className="h-4 w-4" data-oid="iuvcpr6" />
+                      <span data-oid="pgmgg2n">Reset</span>
                     </motion.button>
 
                     <motion.button
@@ -601,10 +601,10 @@ const JobTimer: FC = () => {
                           : "hover:bg-blue-500/15",
                         isSubmitting && "opacity-50 cursor-not-allowed",
                       )}
-                      data-oid="2sr894z"
+                      data-oid=":fby65p"
                     >
-                      <Check className="h-4 w-4" data-oid="aa8f8u:" />
-                      <span data-component-name="JobTimer" data-oid="8z1_oak">
+                      <Check className="h-4 w-4" data-oid="ctujn4z" />
+                      <span data-component-name="JobTimer" data-oid="ehhz0dx">
                         Save Entry
                       </span>
                     </motion.button>

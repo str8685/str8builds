@@ -28,25 +28,25 @@ const AISearchBar: FC = () => {
   };
 
   return (
-    <div className="container mx-auto px-4 py-4" data-oid="ywmgbuy">
+    <div className="container mx-auto px-4 py-4" data-oid="7emujy.">
       <div
         className="glass-card rounded-xl bg-gradient-to-r from-gray-900 via-blue-950 to-gray-900 shadow-lg p-2 flex items-center relative overflow-hidden"
-        data-oid="7hl2cst"
+        data-oid="p799z1x"
       >
         {/* Progress bar */}
         <div
           className="absolute bottom-0 left-0 h-[2px] bg-gradient-to-r from-cyan-400 to-blue-500 transition-all duration-300"
           style={{ width: `${progress}%` }}
-          data-oid="u73dafy"
+          data-oid="6n0-ikb"
         />
 
         <div
           className="flex-shrink-0 w-8 h-8 flex items-center justify-center cursor-pointer text-cyan-400 hover:text-cyan-300 transition-colors"
           onClick={handleVoiceCommand}
-          data-oid="xsn5-vs"
+          data-oid="2t0q3-:"
         >
-          <span className="pulse-animation" data-oid="j.61x8c">
-            <i className="fas fa-robot" data-oid=".fsw_9l"></i>
+          <span className="pulse-animation" data-oid="x6iea.p">
+            <i className="fas fa-robot" data-oid="3srz1o9"></i>
           </span>
         </div>
         <input
@@ -56,25 +56,25 @@ const AISearchBar: FC = () => {
           placeholder="AI Construction Coming Soon..."
           className="bg-transparent border-none w-full text-sm text-cyan-100 focus:outline-none focus:ring-0 placeholder:text-cyan-300/70"
           disabled
-          data-oid="nc6mgl0"
+          data-oid="b8fhsrv"
         />
 
         <div
           className="flex-shrink-0 flex items-center space-x-2"
-          data-oid="dn17an-"
+          data-oid="snsvp6v"
         >
           <span
             className="text-xs text-cyan-400 hidden sm:inline-block"
-            data-oid="czblc:d"
+            data-oid="lhl8pwl"
           >
             Development: 70%
           </span>
           <button
             className="text-cyan-400 hover:text-cyan-300 transition p-2"
             onClick={handleSearch}
-            data-oid="n5-nfz5"
+            data-oid="ohq7j.3"
           >
-            <i className="fas fa-rocket" data-oid="h3nh93a"></i>
+            <i className="fas fa-rocket" data-oid="e0x1cne"></i>
           </button>
         </div>
       </div>

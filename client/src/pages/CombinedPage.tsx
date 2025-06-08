@@ -315,20 +315,20 @@ const CombinedPage: FC = () => {
   return (
     <div
       className="container mx-auto max-w-6xl px-4 pb-24 pt-8"
-      data-oid="jtz1e7l"
+      data-oid="3xu_xmj"
     >
       <PageTitle
         title="Financial Management"
         subtitle="Manage your invoices and time entries in one place"
         icon="fa-money-bill-wave"
-        data-oid="gs3zgtk"
+        data-oid="l_16gf5"
       />
 
       {/* Main section toggle */}
-      <div className="flex justify-center mb-8" data-oid="fn64pae">
+      <div className="flex justify-center mb-8" data-oid="1sxvae5">
         <div
           className="bg-gradient-to-r from-space-900/80 to-space-800/80 backdrop-blur-lg p-1.5 rounded-full inline-flex border border-space-700/50 shadow-glow-lg"
-          data-oid="6ep:a8u"
+          data-oid="-2h::ro"
         >
           <button
             onClick={() => setActiveSection("invoices")}
@@ -337,13 +337,13 @@ const CombinedPage: FC = () => {
                 ? "bg-gradient-to-r from-electric to-cyan text-white shadow-glow-md"
                 : "text-gray-300 hover:text-white hover:bg-space-800/50"
             }`}
-            data-oid=":feeaao"
+            data-oid="gn6y90i"
           >
             <i
               className={`fas fa-file-invoice-dollar mr-2 ${activeSection === "invoices" ? "text-white" : ""}`}
-              data-oid="8bgbky:"
+              data-oid="4x:q5rv"
             ></i>
-            <span className="font-semibold" data-oid="tqu4rh6">
+            <span className="font-semibold" data-oid="dd2w-ix">
               Invoices
             </span>
           </button>
@@ -354,13 +354,13 @@ const CombinedPage: FC = () => {
                 ? "bg-gradient-to-r from-electric to-cyan text-white shadow-glow-md"
                 : "text-gray-300 hover:text-white hover:bg-space-800/50"
             }`}
-            data-oid="d47x7dm"
+            data-oid="zjw3drd"
           >
             <i
               className={`fas fa-clock mr-2 ${activeSection === "timesheet" ? "text-white" : ""}`}
-              data-oid="v6x15ag"
+              data-oid="4rj1631"
             ></i>
-            <span className="font-semibold" data-oid="rijv76r">
+            <span className="font-semibold" data-oid="klxi37d">
               Timesheets
             </span>
           </button>
@@ -373,40 +373,40 @@ const CombinedPage: FC = () => {
           {/* Invoice Statistics Cards */}
           <div
             className="grid grid-cols-1 md:grid-cols-4 gap-6 mb-8"
-            data-oid="r_c2ppx"
+            data-oid="5eymm82"
           >
-            <GlassCard className="p-6" data-oid="f31g:ol">
+            <GlassCard className="p-6" data-oid=".vj0840">
               <div
                 className="text-sm uppercase tracking-wider text-gray-400 mb-2 font-medium"
-                data-oid="5sbv62r"
+                data-oid="l_vbfs6"
               >
                 Total Value
               </div>
               <div
                 className="text-3xl font-bold text-white mb-1"
-                data-oid="3:5cj2w"
+                data-oid="so:ckze"
               >
                 ${invoiceStats.total.toFixed(2)}
               </div>
-              <div className="text-sm text-gray-400" data-oid="g39h.qs">
+              <div className="text-sm text-gray-400" data-oid="y:.e.ga">
                 {filteredInvoices.length} invoices
               </div>
             </GlassCard>
 
-            <GlassCard className="p-6" data-oid="_:7lnyw">
+            <GlassCard className="p-6" data-oid="xwvakqf">
               <div
                 className="text-sm uppercase tracking-wider text-gray-400 mb-2 font-medium"
-                data-oid="14t62h."
+                data-oid="vz56yac"
               >
                 Paid
               </div>
               <div
                 className="text-3xl font-bold text-green-400 mb-1"
-                data-oid=":pxah2o"
+                data-oid="g5ngm0y"
               >
                 ${invoiceStats.paid.toFixed(2)}
               </div>
-              <div className="text-sm text-gray-400" data-oid="_k41nhy">
+              <div className="text-sm text-gray-400" data-oid="7pn7tlg">
                 {
                   filteredInvoices.filter(
                     (inv: Invoice) => inv.status === "paid",
@@ -416,20 +416,20 @@ const CombinedPage: FC = () => {
               </div>
             </GlassCard>
 
-            <GlassCard className="p-6" data-oid="7533hqc">
+            <GlassCard className="p-6" data-oid="3klm7t:">
               <div
                 className="text-sm uppercase tracking-wider text-gray-400 mb-2 font-medium"
-                data-oid="45--yfm"
+                data-oid="3hpdtsq"
               >
                 Pending
               </div>
               <div
                 className="text-3xl font-bold text-blue-400 mb-1"
-                data-oid=".2wmoos"
+                data-oid="05e3bhl"
               >
                 ${invoiceStats.pending.toFixed(2)}
               </div>
-              <div className="text-sm text-gray-400" data-oid="--b-.v4">
+              <div className="text-sm text-gray-400" data-oid="06j0hc_">
                 {
                   filteredInvoices.filter(
                     (inv: Invoice) => inv.status === "pending",
@@ -439,20 +439,20 @@ const CombinedPage: FC = () => {
               </div>
             </GlassCard>
 
-            <GlassCard className="p-6" data-oid="5uhl6-h">
+            <GlassCard className="p-6" data-oid=":s-_k4m">
               <div
                 className="text-sm uppercase tracking-wider text-gray-400 mb-2 font-medium"
-                data-oid="8a7occa"
+                data-oid="y69yuwx"
               >
                 Overdue
               </div>
               <div
                 className="text-3xl font-bold text-red-400 mb-1"
-                data-oid="xtn-7m-"
+                data-oid="fsq7oh5"
               >
                 ${invoiceStats.overdue.toFixed(2)}
               </div>
-              <div className="text-sm text-gray-400" data-oid="916p1sa">
+              <div className="text-sm text-gray-400" data-oid="ut:z6em">
                 {
                   filteredInvoices.filter(
                     (inv: Invoice) =>
@@ -466,14 +466,14 @@ const CombinedPage: FC = () => {
           </div>
 
           {/* Invoice Content */}
-          <GlassCard className="p-5" data-oid="g2yxl5b">
+          <GlassCard className="p-5" data-oid="3ylo5u.">
             <div
               className="flex flex-wrap justify-between items-center mb-6 gap-4"
-              data-oid="c30znd1"
+              data-oid=".-ddf92"
             >
               <div
                 className="flex space-x-1 bg-space-800/50 rounded-lg p-1 shadow-inner"
-                data-oid="kg64ruu"
+                data-oid="k1ymgu:"
               >
                 <button
                   onClick={() => setInvoiceTab("all")}
@@ -482,7 +482,7 @@ const CombinedPage: FC = () => {
                       ? "bg-electric text-white shadow-md"
                       : "text-gray-300 hover:bg-space-700/70 hover:text-white"
                   }`}
-                  data-oid="r5ldsng"
+                  data-oid="2y2u4kk"
                 >
                   All
                 </button>
@@ -493,7 +493,7 @@ const CombinedPage: FC = () => {
                       ? "bg-gray-500/30 text-gray-300 shadow-md"
                       : "text-gray-300 hover:bg-space-700/70 hover:text-white"
                   }`}
-                  data-oid="l5u289i"
+                  data-oid="ly7-fag"
                 >
                   Draft
                 </button>
@@ -504,7 +504,7 @@ const CombinedPage: FC = () => {
                       ? "bg-blue-500/30 text-blue-400 shadow-md"
                       : "text-gray-300 hover:bg-space-700/70 hover:text-white"
                   }`}
-                  data-oid="mnx7257"
+                  data-oid="lz8_-:t"
                 >
                   Pending
                 </button>
@@ -515,20 +515,20 @@ const CombinedPage: FC = () => {
                       ? "bg-green-500/30 text-green-400 shadow-md"
                       : "text-gray-300 hover:bg-space-700/70 hover:text-white"
                   }`}
-                  data-oid="sm:pzoq"
+                  data-oid="u1k.6:b"
                 >
                   Paid
                 </button>
               </div>
 
-              <div className="flex space-x-3" data-oid="6k:2ldz">
+              <div className="flex space-x-3" data-oid="zg2:w64">
                 <input
                   type="text"
                   placeholder="Search invoices..."
                   value={invoiceSearchTerm}
                   onChange={(e) => setInvoiceSearchTerm(e.target.value)}
                   className="bg-space-800/80 backdrop-blur-sm border border-space-700 px-4 py-2.5 rounded-lg text-sm text-white w-72 focus:outline-none focus:border-electric"
-                  data-oid="1urg26e"
+                  data-oid="-l-wgej"
                 />
 
                 <button
@@ -542,9 +542,9 @@ const CombinedPage: FC = () => {
                     });
                   }}
                   className="bg-gradient-to-r from-electric to-cyan text-white px-6 py-2.5 text-sm rounded-lg font-medium"
-                  data-oid="43.hjio"
+                  data-oid="bd-sdw-"
                 >
-                  <i className="fas fa-plus mr-2" data-oid="m8wgb.q"></i>
+                  <i className="fas fa-plus mr-2" data-oid="zar0087"></i>
                   New Invoice
                 </button>
               </div>
@@ -552,71 +552,71 @@ const CombinedPage: FC = () => {
 
             {/* Invoice List */}
             {invoicesLoading ? (
-              <div className="flex justify-center p-10" data-oid="8engmhv">
+              <div className="flex justify-center p-10" data-oid="9e:8wh7">
                 <div
                   className="animate-spin rounded-full h-12 w-12 border-t-2 border-r-2 border-electric"
-                  data-oid="dhk7lej"
+                  data-oid="3bc2gvq"
                 ></div>
               </div>
             ) : filteredInvoices.length === 0 ? (
-              <div className="py-12 px-6 text-center" data-oid="9zbmi4j">
+              <div className="py-12 px-6 text-center" data-oid="twxnrt8">
                 <h3
                   className="text-lg font-medium text-white mb-2"
-                  data-oid="gczeg4f"
+                  data-oid="msy-95:"
                 >
                   No invoices found
                 </h3>
-                <p className="text-gray-400" data-oid="wz7ovkc">
+                <p className="text-gray-400" data-oid="_0cd0h4">
                   No invoices match your current filters or search criteria.
                 </p>
               </div>
             ) : (
-              <div className="overflow-x-auto rounded-lg" data-oid="e7mxty4">
-                <table className="w-full" data-oid="d5z1bw3">
+              <div className="overflow-x-auto rounded-lg" data-oid="rb6dhdj">
+                <table className="w-full" data-oid="1sfdm2j">
                   <thead
                     className="text-left bg-space-800/70"
-                    data-oid="beovu-q"
+                    data-oid="-46ykpl"
                   >
-                    <tr data-oid="g:u:aqo">
+                    <tr data-oid="2ij.rw:">
                       <th
                         className="px-4 py-3 text-xs text-gray-300 font-medium tracking-wider uppercase"
-                        data-oid="du0.-9v"
+                        data-oid="lilmat:"
                       >
                         Invoice #
                       </th>
                       <th
                         className="px-4 py-3 text-xs text-gray-300 font-medium tracking-wider uppercase"
-                        data-oid="51or4d6"
+                        data-oid="e3m9d8o"
                       >
                         Client
                       </th>
                       <th
                         className="px-4 py-3 text-xs text-gray-300 font-medium tracking-wider uppercase"
-                        data-oid="b79vksg"
+                        data-oid="8pofy53"
                       >
                         Issue Date
                       </th>
                       <th
                         className="px-4 py-3 text-xs text-gray-300 font-medium tracking-wider uppercase"
-                        data-oid="y8:fq-b"
+                        data-oid="vqykl:c"
                       >
                         Due Date
                       </th>
                       <th
                         className="px-4 py-3 text-xs text-gray-300 font-medium tracking-wider uppercase"
-                        data-oid="iw1oeu4"
+                        data-oid="y39tq-k"
                       >
                         Status
                       </th>
                       <th
                         className="px-4 py-3 text-xs text-gray-300 font-medium tracking-wider uppercase text-right"
-                        data-oid="y:tiabk"
+                        data-oid="v42vohb"
                       >
                         Amount
                       </th>
                       <th
                         className="px-4 py-3 text-xs text-gray-300 font-medium tracking-wider uppercase text-center"
-                        data-oid="hofsul5"
+                        data-oid="ommi5vd"
                       >
                         Actions
                       </th>
@@ -624,69 +624,69 @@ const CombinedPage: FC = () => {
                   </thead>
                   <tbody
                     className="divide-y divide-gray-700/30"
-                    data-oid="g9lvr.7"
+                    data-oid="nxb-6g5"
                   >
                     {filteredInvoices.map((invoice: Invoice) => (
                       <tr
                         key={invoice.id}
                         className="hover:bg-space-800/50 transition-all duration-150 group"
-                        data-oid="b8yv6t4"
+                        data-oid="12wqth5"
                       >
                         <td
                           className="px-4 py-4 text-sm text-white font-medium"
-                          data-oid="3u4pjyd"
+                          data-oid="ram5sku"
                         >
                           {invoice.invoiceNumber}
                         </td>
-                        <td className="px-4 py-4 text-sm" data-oid="5:jmf3m">
+                        <td className="px-4 py-4 text-sm" data-oid="w0dwfel">
                           <div
                             className="font-medium text-white"
-                            data-oid="p21i1-s"
+                            data-oid="99do4iw"
                           >
                             {getClientName(invoice.clientId)}
                           </div>
                         </td>
                         <td
                           className="px-4 py-4 text-sm text-gray-300"
-                          data-oid="d5pc5f-"
+                          data-oid="j.0513q"
                         >
                           {new Date(invoice.issueDate).toLocaleDateString()}
                         </td>
                         <td
                           className="px-4 py-4 text-sm text-gray-300"
-                          data-oid="rb4a8w8"
+                          data-oid="otplj2o"
                         >
                           {new Date(invoice.dueDate).toLocaleDateString()}
                         </td>
-                        <td className="px-4 py-4" data-oid="rb87jh1">
+                        <td className="px-4 py-4" data-oid="o.y:hlp">
                           <span
                             className={`inline-block px-3 py-1 text-xs rounded-full ${getStatusClass(
                               invoice.status || "pending",
                               invoice.dueDate.toString(),
                             )}`}
-                            data-oid="3ie1co2"
+                            data-oid="6jbz94_"
                           >
                             {getStatusText(invoice.status || "pending")}
                           </span>
                         </td>
                         <td
                           className="px-4 py-4 text-sm text-white text-right font-medium"
-                          data-oid="ysar..1"
+                          data-oid="b:_.uh:"
                         >
                           ${parseFloat(invoice.total.toString()).toFixed(2)}
                         </td>
-                        <td className="px-4 py-4" data-oid="mziy8e4">
+                        <td className="px-4 py-4" data-oid="---xdc:">
                           <div
                             className="flex space-x-2 justify-center"
-                            data-oid="71ct09s"
+                            data-oid="1a932f_"
                           >
                             <button
                               className="w-8 h-8 rounded-full bg-space-800/80 hover:bg-space-700 flex items-center justify-center text-electric hover:text-cyan"
                               onClick={() => openDetailModal(invoice)}
                               title="View"
-                              data-oid="mfnp3t7"
+                              data-oid="u1sto4s"
                             >
-                              <i className="fas fa-eye" data-oid="rd..yo0"></i>
+                              <i className="fas fa-eye" data-oid="x535_ov"></i>
                             </button>
                           </div>
                         </td>
@@ -706,70 +706,70 @@ const CombinedPage: FC = () => {
           {/* Timesheet Statistics Cards */}
           <div
             className="grid grid-cols-1 md:grid-cols-4 gap-6 mb-6"
-            data-oid="gzndiud"
+            data-oid="e50wqxh"
           >
-            <GlassCard className="p-5" data-oid="pnp7fkw">
-              <div className="text-xs text-gray-400 mb-1" data-oid="vxdeok0">
+            <GlassCard className="p-5" data-oid="x:6-pkd">
+              <div className="text-xs text-gray-400 mb-1" data-oid="xzr149l">
                 Total Hours
               </div>
-              <div className="text-2xl font-bold text-white" data-oid="3yqt:4h">
+              <div className="text-2xl font-bold text-white" data-oid="ub73e4.">
                 {timeStats.totalHours.toFixed(1)} hrs
               </div>
-              <div className="text-xs text-gray-400 mt-2" data-oid=":haftir">
+              <div className="text-xs text-gray-400 mt-2" data-oid="_o4:qxt">
                 {(timeEntries as TimeEntry[]).length} time entries
               </div>
             </GlassCard>
 
-            <GlassCard className="p-5" data-oid="wclto-0">
-              <div className="text-xs text-gray-400 mb-1" data-oid="dphrb2:">
+            <GlassCard className="p-5" data-oid="aq2u5d3">
+              <div className="text-xs text-gray-400 mb-1" data-oid="nypgv91">
                 Total Earnings
               </div>
               <div
                 className="text-2xl font-bold text-green-400"
-                data-oid="cke2.gp"
+                data-oid="w:jhtu9"
               >
                 ${timeStats.totalEarnings.toFixed(2)}
               </div>
-              <div className="text-xs text-gray-400 mt-2" data-oid="1f2o09q">
+              <div className="text-xs text-gray-400 mt-2" data-oid="15s.qcu">
                 Based on hourly rates
               </div>
             </GlassCard>
 
-            <GlassCard className="p-5" data-oid="710pu-m">
-              <div className="text-xs text-gray-400 mb-1" data-oid="35p38zx">
+            <GlassCard className="p-5" data-oid="mxlp71r">
+              <div className="text-xs text-gray-400 mb-1" data-oid="wbg3_.2">
                 This Week
               </div>
-              <div className="text-2xl font-bold text-cyan" data-oid="slbfq8l">
+              <div className="text-2xl font-bold text-cyan" data-oid="1q7.hlf">
                 {timeStats.thisWeekHours.toFixed(1)} hrs
               </div>
-              <div className="text-xs text-gray-400 mt-2" data-oid="0pei44z">
+              <div className="text-xs text-gray-400 mt-2" data-oid="uxuenwm">
                 Since Sunday
               </div>
             </GlassCard>
 
-            <GlassCard className="p-5" data-oid="01:_4:6">
-              <div className="text-xs text-gray-400 mb-1" data-oid="60z_utc">
+            <GlassCard className="p-5" data-oid="bw2z-3j">
+              <div className="text-xs text-gray-400 mb-1" data-oid="p065e-x">
                 This Month
               </div>
               <div
                 className="text-2xl font-bold text-purple-400"
-                data-oid="wg7t1yg"
+                data-oid="21tuws."
               >
                 {timeStats.thisMonthHours.toFixed(1)} hrs
               </div>
-              <div className="text-xs text-gray-400 mt-2" data-oid=":l730vo">
+              <div className="text-xs text-gray-400 mt-2" data-oid="y_gem.e">
                 {new Date().toLocaleString("default", { month: "long" })}
               </div>
             </GlassCard>
           </div>
 
           {/* Timesheet Content */}
-          <GlassCard className="p-5" data-oid="m0:074f">
+          <GlassCard className="p-5" data-oid="j.at1bm">
             <div
               className="flex flex-wrap justify-between items-center mb-6 gap-4"
-              data-oid="nh5tvt-"
+              data-oid="jhh_hjx"
             >
-              <div className="flex space-x-1" data-oid="5lyjjcq">
+              <div className="flex space-x-1" data-oid="0kyfmb7">
                 <button
                   onClick={() => setTimeView("list")}
                   className={`px-4 py-2 text-sm rounded-md ${
@@ -777,29 +777,29 @@ const CombinedPage: FC = () => {
                       ? "bg-electric/20 text-electric"
                       : "text-gray-400 hover:bg-space-800/50"
                   }`}
-                  data-oid="9_9t:g0"
+                  data-oid="so2ns.z"
                 >
-                  <i className="fas fa-list-ul mr-2" data-oid="xtugsz8"></i>
+                  <i className="fas fa-list-ul mr-2" data-oid="vns:khm"></i>
                   List View
                 </button>
               </div>
 
-              <div className="flex space-x-2" data-oid="tltt0wy">
+              <div className="flex space-x-2" data-oid="fjvuoa:">
                 <input
                   type="text"
                   placeholder="Search time entries..."
                   value={timeSearchTerm}
                   onChange={(e) => setTimeSearchTerm(e.target.value)}
                   className="bg-space-800/50 border border-space-700 px-3 py-2 rounded-md text-sm text-white w-60 focus:outline-none focus:border-electric"
-                  data-oid="3f:gj3:"
+                  data-oid="kir1ovf"
                 />
 
                 <button
                   onClick={() => toggleForm()}
                   className="bg-electric/80 hover:bg-electric text-white px-4 py-2 text-sm rounded-md font-medium"
-                  data-oid="18l1m0y"
+                  data-oid="jajgoi8"
                 >
-                  <i className="fas fa-plus mr-1" data-oid="yc75_ds"></i> Add
+                  <i className="fas fa-plus mr-1" data-oid="wsukn9:"></i> Add
                   Time
                 </button>
               </div>
@@ -810,16 +810,16 @@ const CombinedPage: FC = () => {
               <form
                 onSubmit={handleSubmit}
                 className="bg-space-800/50 rounded-lg p-4 mb-4"
-                data-oid="gggymcc"
+                data-oid="hs1s8mq"
               >
                 <div
                   className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-4"
-                  data-oid="wufsi.y"
+                  data-oid="74enlmd"
                 >
-                  <div data-oid="z9ukkn8">
+                  <div data-oid="7obwpiq">
                     <label
                       className="block text-xs text-gray-400 mb-1"
-                      data-oid="yv9_zjf"
+                      data-oid="njvq-ag"
                     >
                       Project
                     </label>
@@ -828,29 +828,29 @@ const CombinedPage: FC = () => {
                       value={formData.projectId}
                       onChange={handleChange}
                       className="w-full bg-space-800 border border-gray-700 rounded p-2 text-sm text-white"
-                      data-oid="lm_m.13"
+                      data-oid="wteuo-l"
                     >
                       {Array.isArray(projects) && projects.length > 0 ? (
                         projects.map((project: Project) => (
                           <option
                             key={project.id}
                             value={project.id}
-                            data-oid="gh5pyy."
+                            data-oid=".39n6dq"
                           >
                             {project.name}
                           </option>
                         ))
                       ) : (
-                        <option value="1" data-oid="dnokv6v">
+                        <option value="1" data-oid="t96t848">
                           Default Project
                         </option>
                       )}
                     </select>
                   </div>
-                  <div data-oid="mxx5:.r">
+                  <div data-oid=".0hcg0m">
                     <label
                       className="block text-xs text-gray-400 mb-1"
-                      data-oid="1o54k5y"
+                      data-oid="0gskhc3"
                     >
                       Date
                     </label>
@@ -860,13 +860,13 @@ const CombinedPage: FC = () => {
                       value={formData.date}
                       onChange={handleChange}
                       className="w-full bg-space-800 border border-gray-700 rounded p-2 text-sm text-white"
-                      data-oid="3nrwwd3"
+                      data-oid="ywwf.jk"
                     />
                   </div>
-                  <div data-oid="0dmn5kg">
+                  <div data-oid="azz0-i3">
                     <label
                       className="block text-xs text-gray-400 mb-1"
-                      data-oid="54fo2b3"
+                      data-oid="rf6w2jz"
                     >
                       Duration (HH:MM)
                     </label>
@@ -877,7 +877,7 @@ const CombinedPage: FC = () => {
                       onChange={handleChange}
                       placeholder="e.g. 02:30"
                       className="w-full bg-space-800 border border-gray-700 rounded p-2 text-sm text-white"
-                      data-oid="0oblpsz"
+                      data-oid="1m-lz6p"
                     />
                   </div>
                 </div>
@@ -889,22 +889,22 @@ const CombinedPage: FC = () => {
                   className="w-full bg-space-800 border border-gray-700 rounded p-2 text-sm text-white mb-4"
                   placeholder="Notes about work completed"
                   rows={3}
-                  data-oid=".g3i-wp"
+                  data-oid="_g4zcr-"
                 ></textarea>
 
-                <div className="flex space-x-2 justify-end" data-oid="5gcup1_">
+                <div className="flex space-x-2 justify-end" data-oid="3y83g2b">
                   <button
                     type="button"
                     onClick={() => toggleForm()}
                     className="bg-space-800 text-white px-4 py-2 rounded hover:bg-space-700"
-                    data-oid="w9i9bgl"
+                    data-oid="doh42e4"
                   >
                     Cancel
                   </button>
                   <button
                     type="submit"
                     className="bg-electric text-white px-4 py-2 rounded hover:bg-electric/80"
-                    data-oid="b6938me"
+                    data-oid="_6l82ph"
                   >
                     Add Time Entry
                   </button>
@@ -914,62 +914,62 @@ const CombinedPage: FC = () => {
 
             {/* Time Entries List View */}
             {timeEntriesLoading ? (
-              <div className="flex justify-center p-10" data-oid="ql03q8e">
+              <div className="flex justify-center p-10" data-oid="u3zfjnz">
                 <div
                   className="animate-spin rounded-full h-8 w-8 border-t-2 border-b-2 border-cyan"
-                  data-oid="g74-jz8"
+                  data-oid="i_9.fow"
                 ></div>
               </div>
             ) : filteredEntries.length === 0 ? (
-              <div className="p-6 text-center" data-oid=":k:w1q7">
-                <p className="text-gray-400" data-oid="z4mt1of">
+              <div className="p-6 text-center" data-oid="j07i02z">
+                <p className="text-gray-400" data-oid="du2.has">
                   No time entries found matching your criteria.
                 </p>
-                <p className="text-xs text-gray-500 mt-1" data-oid="37xbtqq">
+                <p className="text-xs text-gray-500 mt-1" data-oid="0md8v.l">
                   Try changing your search or add a new time entry.
                 </p>
               </div>
             ) : (
-              <div className="overflow-x-auto" data-oid="ufkcyjr">
-                <table className="w-full" data-oid="3e5173z">
-                  <thead className="text-left" data-oid="9z8gb1h">
+              <div className="overflow-x-auto" data-oid="49.2fwf">
+                <table className="w-full" data-oid="uo67-:8">
+                  <thead className="text-left" data-oid="thooybq">
                     <tr
                       className="border-b border-gray-700/50"
-                      data-oid=":ln77qx"
+                      data-oid="a0icu7l"
                     >
                       <th
                         className="px-4 py-2 text-xs text-gray-400 font-medium"
-                        data-oid="wozeqh4"
+                        data-oid="xt_cbr."
                       >
                         DATE
                       </th>
                       <th
                         className="px-4 py-2 text-xs text-gray-400 font-medium"
-                        data-oid="gxmzck4"
+                        data-oid="aboyg9u"
                       >
                         PROJECT
                       </th>
                       <th
                         className="px-4 py-2 text-xs text-gray-400 font-medium"
-                        data-oid="gkuuvmc"
+                        data-oid=".rq0-zx"
                       >
                         DESCRIPTION
                       </th>
                       <th
                         className="px-4 py-2 text-xs text-gray-400 font-medium"
-                        data-oid="tsam.dt"
+                        data-oid="l026_.3"
                       >
                         DURATION
                       </th>
                       <th
                         className="px-4 py-2 text-xs text-gray-400 font-medium"
-                        data-oid="oks8m8j"
+                        data-oid="zyy4it."
                       >
                         RATE
                       </th>
                       <th
                         className="px-4 py-2 text-xs text-gray-400 font-medium text-right"
-                        data-oid="th6zbg4"
+                        data-oid="u-on58q"
                       >
                         COST
                       </th>
@@ -977,39 +977,39 @@ const CombinedPage: FC = () => {
                   </thead>
                   <tbody
                     className="divide-y divide-gray-700/30"
-                    data-oid="63.ha::"
+                    data-oid="c:6soed"
                   >
                     {filteredEntries.map((entry: TimeEntry) => (
                       <tr
                         key={entry.id}
                         className="hover:bg-space-800/50 transition-colors"
-                        data-oid="c3wfy5t"
+                        data-oid="qfqyot2"
                       >
                         <td
                           className="px-4 py-3 text-sm text-gray-300"
-                          data-oid="m:3mx_g"
+                          data-oid="k64kc6_"
                         >
                           {formatDate
                             ? formatDate(entry.startTime.toISOString())
                             : new Date(entry.startTime).toLocaleDateString()}
                         </td>
-                        <td className="px-4 py-3 text-sm" data-oid="1ko4xkg">
+                        <td className="px-4 py-3 text-sm" data-oid="g3q:9s8">
                           <div
                             className="font-medium text-white"
-                            data-oid="8jq0i.i"
+                            data-oid="iz3l1l1"
                           >
                             {getProjectName(entry.projectId)}
                           </div>
                         </td>
                         <td
                           className="px-4 py-3 text-sm text-gray-300"
-                          data-oid="k:4k.u0"
+                          data-oid=".yc_9.4"
                         >
                           {entry.notes || "No description"}
                         </td>
                         <td
                           className="px-4 py-3 text-sm text-white"
-                          data-oid="yoq.ref"
+                          data-oid="a2itiro"
                         >
                           {formatDuration
                             ? formatDuration(entry.duration || 0)
@@ -1017,7 +1017,7 @@ const CombinedPage: FC = () => {
                         </td>
                         <td
                           className="px-4 py-3 text-sm text-gray-300"
-                          data-oid="-r6e:6n"
+                          data-oid="761c6.0"
                         >
                           $
                           {entry.hourlyRate
@@ -1027,7 +1027,7 @@ const CombinedPage: FC = () => {
                         </td>
                         <td
                           className="px-4 py-3 text-sm text-white text-right font-medium"
-                          data-oid="4:87wq3"
+                          data-oid="fw1cuc8"
                         >
                           $
                           {calculateCost(

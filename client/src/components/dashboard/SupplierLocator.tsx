@@ -172,16 +172,16 @@ const SupplierLocator: FC = () => {
   return (
     <GlassCard
       className={`p-4 mb-6 overflow-hidden ${fullMapView ? "h-[500px]" : ""}`}
-      data-oid="n13hcy0"
+      data-oid="tpj021t"
     >
-      <div className="flex justify-between items-start mb-4" data-oid="0y48ckj">
-        <h3 className="text-md font-space text-white" data-oid="f9ynxxs">
+      <div className="flex justify-between items-start mb-4" data-oid="6g:c.f5">
+        <h3 className="text-md font-space text-white" data-oid="a8.0o1q">
           NZ Suppliers Near You
         </h3>
         <button
           className="text-xs text-electric hover:text-cyan"
           onClick={() => setFullMapView(!fullMapView)}
-          data-oid="rhnl7tl"
+          data-oid="0ruio0c"
         >
           {fullMapView ? "Minimize Map" : "Expand Map"}
         </button>
@@ -192,19 +192,19 @@ const SupplierLocator: FC = () => {
         onReady={handleMapReady}
         suppliers={suppliers}
         showLabels={fullMapView}
-        data-oid="wl89c7k"
+        data-oid="b6payns"
       />
 
       {/* Overlay text */}
       <div
         className="mt-1 mb-3 flex justify-between items-center"
-        data-oid="d.j:a4c"
+        data-oid="t-tx2o0"
       >
-        <div data-oid="6puc-5s">
-          <div className="text-sm text-white font-medium" data-oid="_9-suh4">
+        <div data-oid="u_l6-ys">
+          <div className="text-sm text-white font-medium" data-oid="z0-ooju">
             {suppliers.length} suppliers near your location
           </div>
-          <div className="text-xs text-gray-400" data-oid="re6ohsb">
+          <div className="text-xs text-gray-400" data-oid="bdstk.y">
             {locationReady ? locationName : "Loading location..."}
           </div>
         </div>
@@ -259,47 +259,47 @@ const SupplierLocator: FC = () => {
 
             setSuppliers(allSuppliersWithDistance);
           }}
-          data-oid="0t9asgy"
+          data-oid="ptp1cpp"
         >
-          <i className="fas fa-search-location mr-1" data-oid="21y05-2"></i>{" "}
+          <i className="fas fa-search-location mr-1" data-oid="ubuvg66"></i>{" "}
           Show All ({nzSuppliers.length})
         </button>
       </div>
 
       {/* Only show supplier list when not in full map view */}
       {!fullMapView && (
-        <div className="space-y-2" data-oid="phxqh1o">
+        <div className="space-y-2" data-oid="a7:-kma">
           {suppliers.map((supplier) => (
             <div
               key={supplier.id}
               className="flex justify-between items-center p-2 hover:bg-space-800/50 rounded-lg transition"
-              data-oid="7gzggv."
+              data-oid="v_bcj_j"
             >
-              <div className="flex items-center" data-oid="b1x64.s">
+              <div className="flex items-center" data-oid="alinxny">
                 <div
                   className={`w-8 h-8 rounded-md bg-purple-900 flex items-center justify-center text-${supplier.color} mr-3`}
-                  data-oid="820o7sm"
+                  data-oid="2lgjxlc"
                 >
-                  <i className={supplier.icon} data-oid="1g0kie."></i>
+                  <i className={supplier.icon} data-oid="rysvguu"></i>
                 </div>
-                <div data-oid="fd:x..k">
+                <div data-oid="-w41p.8">
                   <div
                     className="text-sm font-medium text-white"
-                    data-oid="f2u8t:."
+                    data-oid="og_alk3"
                   >
                     {supplier.name}
                   </div>
-                  <div className="text-xs text-gray-400" data-oid="yihqzer">
+                  <div className="text-xs text-gray-400" data-oid=":5bfn43">
                     {supplier.hours} • {supplier.distance}
                   </div>
                 </div>
               </div>
-              <div data-oid="d0mdrz.">
+              <div data-oid="5u3la8j">
                 <button
                   className="text-electric hover:text-cyan"
-                  data-oid="fsxjocr"
+                  data-oid="qw5pyk8"
                 >
-                  <i className="fas fa-directions" data-oid="1er:d3q"></i>
+                  <i className="fas fa-directions" data-oid="3s.lwou"></i>
                 </button>
               </div>
             </div>

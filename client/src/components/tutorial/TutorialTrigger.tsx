@@ -46,7 +46,7 @@ const TutorialTrigger: React.FC<TutorialTriggerProps> = ({
       <div
         className={className}
         onClick={handleStartTutorial}
-        data-oid=".97kgam"
+        data-oid="-2lo8ag"
       >
         {children}
       </div>
@@ -59,7 +59,7 @@ const TutorialTrigger: React.FC<TutorialTriggerProps> = ({
       onClick={handleStartTutorial}
       className={`bg-cyan hover:bg-cyan/90 text-space-950 ${className}`}
       variant="outline"
-      data-oid="us2r_nw"
+      data-oid="ov1uq.w"
     >
       <svg
         className="w-4 h-4 mr-2"
@@ -67,14 +67,14 @@ const TutorialTrigger: React.FC<TutorialTriggerProps> = ({
         stroke="currentColor"
         viewBox="0 0 24 24"
         xmlns="http://www.w3.org/2000/svg"
-        data-oid="zokyirt"
+        data-oid="9_.7_fw"
       >
         <path
           strokeLinecap="round"
           strokeLinejoin="round"
           strokeWidth="2"
           d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-          data-oid=".h6b8t6"
+          data-oid="j3c4qi3"
         />
       </svg>
       App Tour

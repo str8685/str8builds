@@ -50,15 +50,15 @@ const MapComponent: FC<MapComponentProps> = ({
       <div
         className={`relative overflow-hidden rounded-lg ${className}`}
         style={{ height }}
-        data-oid="latm3e:"
+        data-oid="e8ku4rj"
       >
         <div
           className="absolute inset-0 bg-space-800/50 flex items-center justify-center"
-          data-oid="-6xm9h7"
+          data-oid="1z5_zc0"
         >
           <div
             className="animate-spin rounded-full h-8 w-8 border-t-2 border-b-2 border-cyan"
-            data-oid="77p0czg"
+            data-oid=".6cyxxr"
           ></div>
         </div>
       </div>
@@ -69,19 +69,19 @@ const MapComponent: FC<MapComponentProps> = ({
     <div
       className={`relative overflow-hidden rounded-lg ${className}`}
       style={{ height }}
-      data-oid="u3wbftu"
+      data-oid="yb-5nf8"
     >
-      <div className="absolute inset-0 bg-space-800/30" data-oid="jiajshm">
+      <div className="absolute inset-0 bg-space-800/30" data-oid="ll24wd9">
         {/* Map grid */}
         <div
           className="h-full w-full grid grid-cols-5 grid-rows-5"
-          data-oid="n03gw_y"
+          data-oid="ip7uogq"
         >
           {Array.from({ length: 25 }).map((_, i) => (
             <div
               key={i}
               className="border-[0.5px] border-gray-700/20"
-              data-oid="z_3v1fq"
+              data-oid="z5skdvx"
             ></div>
           ))}
         </div>
@@ -89,20 +89,20 @@ const MapComponent: FC<MapComponentProps> = ({
         {/* User location */}
         <div
           className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
-          data-oid="h16:i4u"
+          data-oid=":qd4cmq"
         >
-          <div className="relative" data-oid="glol5ha">
+          <div className="relative" data-oid="5x3e.7m">
             <div
               className="h-4 w-4 rounded-full bg-electric animate-pulse"
-              data-oid="z905vtl"
+              data-oid="u1ac2ik"
             ></div>
             <div
               className="absolute top-0 left-0 h-4 w-4 rounded-full bg-electric animate-ping opacity-50"
-              data-oid="gfueo3y"
+              data-oid="ikokezl"
             ></div>
             <div
               className="absolute -top-8 left-1/2 transform -translate-x-1/2 bg-space-900/90 px-2 py-1 rounded text-xs text-white whitespace-nowrap"
-              data-oid="up1-s2u"
+              data-oid="5.ka815"
             >
               Your Location
             </div>
@@ -125,11 +125,11 @@ const MapComponent: FC<MapComponentProps> = ({
                 left: `calc(50% + ${offsetX}%)`,
                 transform: "translate(-50%, -50%)",
               }}
-              data-oid="ggv__r."
+              data-oid="27_rnl3"
             >
               <div
                 className={`h-3 w-3 rounded-full bg-${color} animate-pulse`}
-                data-oid="4q8bdld"
+                data-oid="b9o29w6"
               ></div>
             </div>
           );
@@ -139,15 +139,15 @@ const MapComponent: FC<MapComponentProps> = ({
       {/* Compass indicator */}
       <div
         className="absolute top-3 right-3 bg-space-900/80 rounded-full h-8 w-8 flex items-center justify-center text-gray-400"
-        data-oid="7k6_a4z"
+        data-oid="vpejxi1"
       >
-        <i className="fas fa-compass" data-oid=":u.ixjs"></i>
+        <i className="fas fa-compass" data-oid="qumi94s"></i>
       </div>
 
       {/* Map attribution */}
       <div
         className="absolute bottom-0 right-0 p-1 bg-space-900/80 text-[10px] text-gray-500"
-        data-oid="5v:a97v"
+        data-oid="1rjoprg"
       >
         NZ GIS Data
       </div>

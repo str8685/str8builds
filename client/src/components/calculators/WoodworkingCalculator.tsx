@@ -57,28 +57,28 @@ const WoodworkingCalculator: FC = () => {
   ];
 
   return (
-    <div className="space-y-6" data-oid="788l5ct">
+    <div className="space-y-6" data-oid="4bs_88h">
       <BaseCalculator
         title="Woodworking Calculators"
         description="Professional calculators for precision woodworking, joinery, and furniture making."
         variant="teal"
-        data-oid="nggcdu2"
+        data-oid="fj2fy3-"
       >
         <Tabs
           defaultValue="kerf-spacing"
           onValueChange={setActiveTab}
-          data-oid="prkl2sb"
+          data-oid="rskq81b"
         >
           <TabsList
             className="grid grid-cols-4 bg-space-800/60 p-1 rounded-xl mb-6"
-            data-oid="d1e5_al"
+            data-oid="yu47ubi"
           >
             {calculators.map((calc) => (
               <TabsTrigger
                 key={calc.id}
                 value={calc.id}
                 className="data-[state=active]:bg-teal data-[state=active]:text-black"
-                data-oid="dvxwno6"
+                data-oid="87y-mh_"
               >
                 {calc.name}
               </TabsTrigger>
@@ -90,19 +90,19 @@ const WoodworkingCalculator: FC = () => {
               key={calc.id}
               value={calc.id}
               className="border-0"
-              data-oid="li1jneb"
+              data-oid="sj5kf-t"
             >
               <div
                 className="bg-space-800/30 p-4 rounded-lg mb-6"
-                data-oid="nw10tas"
+                data-oid="1fi64ip"
               >
                 <h3
                   className="text-lg font-medium text-white mb-1"
-                  data-oid="f_9n1:4"
+                  data-oid="crmnzrs"
                 >
                   {calc.name}
                 </h3>
-                <p className="text-sm text-gray-300" data-oid="6s93yr_">
+                <p className="text-sm text-gray-300" data-oid="gfh:exb">
                   {calc.description}
                 </p>
               </div>
@@ -111,7 +111,7 @@ const WoodworkingCalculator: FC = () => {
                 src={calc.url}
                 className="w-full border-0 rounded-lg min-h-[600px]"
                 title={calc.name}
-                data-oid="z2a6wlg"
+                data-oid="gqj1r1l"
               />
             </TabsContent>
           ))}
@@ -119,13 +119,13 @@ const WoodworkingCalculator: FC = () => {
       </BaseCalculator>
 
       {/* Related Tools */}
-      <GlassCard className="p-6" variant="teal" blur="sm" data-oid="iqsoi5r">
-        <h3 className="text-lg font-medium text-teal mb-4" data-oid="lxbsu3u">
+      <GlassCard className="p-6" variant="teal" blur="sm" data-oid="3q7k0u8">
+        <h3 className="text-lg font-medium text-teal mb-4" data-oid="bitjpec">
           Related Woodworking Tools
         </h3>
         <div
           className="grid grid-cols-1 sm:grid-cols-2 gap-4"
-          data-oid="zmbcpa-"
+          data-oid="3ynw4o4"
         >
           {relatedTools.map((tool, index) => (
             <a
@@ -134,15 +134,15 @@ const WoodworkingCalculator: FC = () => {
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center justify-between p-4 bg-space-800/40 rounded-lg hover:bg-space-800/60 transition-all group"
-              data-oid="ihles9j"
+              data-oid="vvfwbqi"
             >
-              <span className="text-white" data-oid="ua_:adm">
+              <span className="text-white" data-oid="2-sltwp">
                 {tool.name}
               </span>
               <ArrowRight
                 size={18}
                 className="text-teal opacity-0 group-hover:opacity-100 transform group-hover:translate-x-1 transition-all"
-                data-oid="pjxia3m"
+                data-oid="91u9fyv"
               />
             </a>
           ))}

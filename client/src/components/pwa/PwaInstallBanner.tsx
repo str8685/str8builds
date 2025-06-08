@@ -93,18 +93,18 @@ const PwaInstallBanner: FC = () => {
   return (
     <div
       className="fixed bottom-0 inset-x-0 z-50 p-4 md:p-6"
-      data-oid="b3pi8bj"
+      data-oid=":satl06"
     >
-      <div className="relative mx-auto max-w-md" data-oid="jj-.m3d">
+      <div className="relative mx-auto max-w-md" data-oid="rx03ha5">
         <div
           className="bg-gradient-to-r from-gray-900 to-blue-900 border border-blue-500/30 rounded-lg shadow-xl overflow-hidden backdrop-blur-xl"
-          data-oid="wzk.a:a"
+          data-oid="mqr5-r7"
         >
           <div
             className="flex items-center justify-between p-4 border-b border-blue-500/20"
-            data-oid="zf:3jaa"
+            data-oid="9rvy9_l"
           >
-            <h3 className="text-lg font-medium text-white" data-oid="jggztmy">
+            <h3 className="text-lg font-medium text-white" data-oid="wsuapyu">
               Install App
             </h3>
             <Button
@@ -112,22 +112,22 @@ const PwaInstallBanner: FC = () => {
               size="icon"
               onClick={handleDismiss}
               className="text-gray-400 hover:text-white hover:bg-blue-800/30"
-              data-oid="xtznnmv"
+              data-oid="8ip1_ea"
             >
-              <X className="h-5 w-5" data-oid="2b41h97" />
+              <X className="h-5 w-5" data-oid="1qk7m2y" />
             </Button>
           </div>
-          <div className="p-4" data-oid="881rh88">
-            <p className="text-gray-300 mb-4" data-oid="joo-x7i">
+          <div className="p-4" data-oid="abtogd2">
+            <p className="text-gray-300 mb-4" data-oid="k-rbyx0">
               Add {APP_NAME} to your home screen for quick access to all tools
               and features while working in the field.
             </p>
             <Button
               onClick={handleInstall}
               className="w-full bg-gradient-to-r from-blue-500 to-cyan-400 hover:from-blue-600 hover:to-cyan-500 text-white"
-              data-oid="jqxmjvt"
+              data-oid="xs8e5yw"
             >
-              <Download className="mr-2 h-4 w-4" data-oid=":ijuug." />
+              <Download className="mr-2 h-4 w-4" data-oid="kqj5ywf" />
               Install App
             </Button>
           </div>

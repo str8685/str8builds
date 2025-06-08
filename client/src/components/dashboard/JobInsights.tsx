@@ -169,90 +169,90 @@ const JobInsights: FC = () => {
       variant="teal"
       glow={true}
       blur="lg"
-      data-oid="jvebdkn"
+      data-oid="fq1:hxz"
     >
       {/* Header with tabs */}
       <div
         className="flex justify-between items-center px-5 py-4 border-b border-teal/20"
-        data-oid="l3iptr9"
+        data-oid="jeibrij"
       >
-        <div className="flex items-center space-x-1.5" data-oid="hyh2bl1">
-          <h3 className="text-lg font-space text-teal mr-2" data-oid="6qysv.b">
+        <div className="flex items-center space-x-1.5" data-oid="z64q-bk">
+          <h3 className="text-lg font-space text-teal mr-2" data-oid="0p718wk">
             Job Insights
           </h3>
           <div
             className="flex bg-space-900/70 rounded-lg p-0.5"
-            data-oid="w4hjphm"
+            data-oid="a_t585_"
           >
             <button
               className={`px-3 py-1 text-xs rounded-md transition-all duration-200 ${activeTab === "analytics" ? "bg-teal/30 text-white shadow-inner" : "text-gray-300 hover:text-white"}`}
               onClick={() => setActiveTab("analytics")}
-              data-oid="hpq06:8"
+              data-oid="96r3_w_"
             >
-              <i className="fas fa-chart-bar mr-1.5" data-oid="zdppwm2"></i>
+              <i className="fas fa-chart-bar mr-1.5" data-oid="_bp7ugy"></i>
               Analytics
             </button>
             <button
               className={`px-3 py-1 text-xs rounded-md transition-all duration-200 ${activeTab === "tasks" ? "bg-teal/30 text-white shadow-inner" : "text-gray-300 hover:text-white"}`}
               onClick={() => setActiveTab("tasks")}
-              data-oid="0-xgy6q"
+              data-oid="1ljqj5x"
             >
-              <i className="fas fa-tasks mr-1.5" data-oid="f1q5wkc"></i>Tasks
+              <i className="fas fa-tasks mr-1.5" data-oid="v4e02i0"></i>Tasks
             </button>
             <button
               className={`px-3 py-1 text-xs rounded-md transition-all duration-200 ${activeTab === "recommendations" ? "bg-teal/30 text-white shadow-inner" : "text-gray-300 hover:text-white"}`}
               onClick={() => setActiveTab("recommendations")}
-              data-oid="xfwilse"
+              data-oid="07ykn_4"
             >
-              <i className="fas fa-magic mr-1.5" data-oid="srruxbp"></i>Insights
+              <i className="fas fa-magic mr-1.5" data-oid="t8ot7hk"></i>Insights
             </button>
           </div>
         </div>
-        <div data-oid="cj4xexf">
+        <div data-oid="2ii30rw">
           <button
             className="text-teal hover:text-cyan transition-colors"
-            data-oid="qw:w:kx"
+            data-oid="gwj-4-3"
           >
-            <i className="fas fa-expand-alt" data-oid="xr6:azo"></i>
+            <i className="fas fa-expand-alt" data-oid="p0scliy"></i>
           </button>
         </div>
       </div>
 
       {/* Content area */}
-      <div className="p-5" data-oid=".wkdy4q">
+      <div className="p-5" data-oid="_qpgdd0">
         {activeTab === "analytics" && (
-          <div data-oid="ysn8u_g">
+          <div data-oid="0g_or0p">
             {/* Key metrics */}
             <div
               className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-5"
-              data-oid="_q.m1.8"
+              data-oid="64__b2t"
             >
               {metrics.map((metric, index) => (
                 <div
                   key={index}
                   className="bg-space-900/40 rounded-lg p-3 backdrop-blur-sm"
-                  data-oid="4g8dp7-"
+                  data-oid="lkibzqx"
                 >
                   <div
                     className="flex items-center space-x-3"
-                    data-oid="0m8ebka"
+                    data-oid="tvp20tj"
                   >
                     <div
                       className={`${metric.color} bg-space-800 h-10 w-10 rounded-full flex items-center justify-center`}
-                      data-oid="tovk_xm"
+                      data-oid="-gl:czt"
                     >
                       <i
                         className={`fas ${metric.icon}`}
-                        data-oid="wsrmmb4"
+                        data-oid="4s:w1sh"
                       ></i>
                     </div>
-                    <div data-oid="z7qk:mr">
-                      <div className="text-sm text-gray-400" data-oid="9sm8otp">
+                    <div data-oid="ugi0yj0">
+                      <div className="text-sm text-gray-400" data-oid="6ashkgs">
                         {metric.title}
                       </div>
                       <div
                         className="text-white font-medium text-lg"
-                        data-oid="9yc6fwq"
+                        data-oid="gt23eyw"
                       >
                         {metric.value}
                       </div>
@@ -265,19 +265,19 @@ const JobInsights: FC = () => {
             {/* Chart */}
             <div
               className="bg-space-900/40 rounded-lg p-4 backdrop-blur-sm"
-              data-oid="wwwc545"
+              data-oid="axnek97"
             >
               <h4
                 className="text-sm font-medium text-white mb-2"
-                data-oid=":fb7bqw"
+                data-oid="8rkl8gs"
               >
                 Time Tracking
               </h4>
-              <div className="h-48 overflow-hidden" data-oid="-2o2vtr">
+              <div className="h-48 overflow-hidden" data-oid="g1f6:_8">
                 <Bar
                   data={chartData}
                   options={chartOptions}
-                  data-oid="o2z9..k"
+                  data-oid="05w3qp5"
                 />
               </div>
             </div>
@@ -287,53 +287,53 @@ const JobInsights: FC = () => {
         {activeTab === "tasks" && (
           <div
             className="bg-space-900/40 rounded-lg p-4 backdrop-blur-sm"
-            data-oid="bi5tnic"
+            data-oid="yi2tn80"
           >
             <div
               className="flex justify-between items-center mb-3"
-              data-oid="rtu1uru"
+              data-oid="wveya:t"
             >
-              <h4 className="text-sm font-medium text-white" data-oid=":_dezsu">
+              <h4 className="text-sm font-medium text-white" data-oid="cgq.2o4">
                 Project Tasks
               </h4>
               <div
                 className="text-xs bg-teal/20 text-teal px-2 py-1 rounded-full"
-                data-oid="0j.52lx"
+                data-oid="bgnx.s9"
               >
                 {tasks.filter((t) => t.complete).length}/{tasks.length} Complete
               </div>
             </div>
 
-            <div className="space-y-2" data-oid="qhml2bq">
+            <div className="space-y-2" data-oid="w-ih1rq">
               {tasks.map((task, index) => (
                 <div
                   key={index}
                   className="flex items-center py-2 border-b border-space-700/30"
-                  data-oid="lldbr:u"
+                  data-oid="tgfaq9d"
                 >
                   <div
                     className={`h-5 w-5 rounded-full border ${task.complete ? "bg-teal border-teal" : "border-gray-500"} mr-3 flex items-center justify-center text-xs`}
-                    data-oid="mz:4lob"
+                    data-oid="4de9p8p"
                   >
                     {task.complete && (
                       <i
                         className="fas fa-check text-black"
-                        data-oid="n3.i72_"
+                        data-oid="jl1ey6s"
                       ></i>
                     )}
                   </div>
                   <span
                     className={`${task.complete ? "text-white line-through opacity-70" : "text-white"}`}
-                    data-oid="8lbvl-k"
+                    data-oid="u31n--4"
                   >
                     {task.name}
                   </span>
                   {!task.complete && (
                     <button
                       className="ml-auto text-teal hover:text-cyan-300 transition-colors"
-                      data-oid="8qmayd9"
+                      data-oid="_p2mlql"
                     >
-                      <i className="fas fa-play-circle" data-oid="koe92ir"></i>
+                      <i className="fas fa-play-circle" data-oid="r5nbv-k"></i>
                     </button>
                   )}
                 </div>
@@ -342,41 +342,41 @@ const JobInsights: FC = () => {
 
             <button
               className="mt-4 bg-teal/20 hover:bg-teal/30 text-teal px-3 py-1.5 rounded-md text-sm transition-colors w-full"
-              data-oid="9tyyv9x"
+              data-oid="n8-yj_4"
             >
-              <i className="fas fa-plus mr-1.5" data-oid="1v_08ok"></i>Add New
+              <i className="fas fa-plus mr-1.5" data-oid="nbaa26r"></i>Add New
               Task
             </button>
           </div>
         )}
 
         {activeTab === "recommendations" && (
-          <div data-oid="hmcho3:">
+          <div data-oid="j0t3_sf">
             <div
               className="bg-space-900/40 rounded-lg p-4 backdrop-blur-sm mb-4"
-              data-oid="xg7o134"
+              data-oid="f5y8ple"
             >
               <h4
                 className="text-sm font-medium text-white mb-3"
-                data-oid=":zk04yf"
+                data-oid="syve-nh"
               >
                 AI Recommendations
               </h4>
 
-              <div className="space-y-3" data-oid="w6j2upo">
+              <div className="space-y-3" data-oid="cy7q3bp">
                 {recommendations.map((rec, index) => (
                   <div
                     key={index}
                     className="flex space-x-3 items-start p-3 bg-space-800/50 rounded-lg border-l-2 border-teal/50"
-                    data-oid="q0uuvz."
+                    data-oid="6bc4dmc"
                   >
-                    <div className={`${rec.color} mt-0.5`} data-oid="427yroq">
+                    <div className={`${rec.color} mt-0.5`} data-oid="9ms0c5n">
                       <i
                         className={`fas ${rec.icon} text-lg`}
-                        data-oid="51xd7dk"
+                        data-oid=".b9casf"
                       ></i>
                     </div>
-                    <p className="text-white text-sm" data-oid="yd8s56v">
+                    <p className="text-white text-sm" data-oid="r8jzv0b">
                       {rec.text}
                     </p>
                   </div>
@@ -386,32 +386,32 @@ const JobInsights: FC = () => {
 
             <div
               className="bg-space-900/40 rounded-lg p-4 backdrop-blur-sm"
-              data-oid="tx2tuyv"
+              data-oid="..7qfec"
             >
               <h4
                 className="text-sm font-medium text-white mb-3"
-                data-oid="0x393g7"
+                data-oid="o8_4k33"
               >
                 Job Performance
               </h4>
 
-              <div className="relative pt-1" data-oid="v2nwqzo">
+              <div className="relative pt-1" data-oid="zm73kgl">
                 <div
                   className="flex items-center justify-between mb-2"
-                  data-oid="jg:rnwe"
+                  data-oid="1pqwzb7"
                 >
-                  <div data-oid="saqbh8c">
+                  <div data-oid="241om55">
                     <span
                       className="text-xs font-medium text-gray-400"
-                      data-oid="8804.5p"
+                      data-oid="co.h02b"
                     >
                       Overall Completion
                     </span>
                   </div>
-                  <div className="text-right" data-oid="yz4s0nh">
+                  <div className="text-right" data-oid="f_5st5h">
                     <span
                       className="text-xs font-medium text-teal"
-                      data-oid="1gjue.z"
+                      data-oid=":3ukzku"
                     >
                       48%
                     </span>
@@ -419,31 +419,31 @@ const JobInsights: FC = () => {
                 </div>
                 <div
                   className="overflow-hidden h-2 text-xs flex rounded-full bg-space-800"
-                  data-oid="geba7rk"
+                  data-oid="de_4991"
                 >
                   <div
                     style={{ width: "48%" }}
                     className="shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-gradient-to-r from-teal/80 to-teal"
-                    data-oid="7qx2k4m"
+                    data-oid="4:2zkou"
                   ></div>
                 </div>
 
                 <div
                   className="flex items-center justify-between mt-4 mb-2"
-                  data-oid="gjaxe5g"
+                  data-oid="n3nljy4"
                 >
-                  <div data-oid="l33-qdo">
+                  <div data-oid="7n4x016">
                     <span
                       className="text-xs font-medium text-gray-400"
-                      data-oid="c2-g7-y"
+                      data-oid="b6kn0be"
                     >
                       Budget Used
                     </span>
                   </div>
-                  <div className="text-right" data-oid="j1czxlw">
+                  <div className="text-right" data-oid="0q7bj.4">
                     <span
                       className="text-xs font-medium text-blue-400"
-                      data-oid="qoz_0qu"
+                      data-oid="0rjqd1l"
                     >
                       32%
                     </span>
@@ -451,65 +451,65 @@ const JobInsights: FC = () => {
                 </div>
                 <div
                   className="overflow-hidden h-2 text-xs flex rounded-full bg-space-800"
-                  data-oid="qprs065"
+                  data-oid="qteh.7a"
                 >
                   <div
                     style={{ width: "32%" }}
                     className="shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-gradient-to-r from-blue-500/80 to-blue-400"
-                    data-oid="4wps3kb"
+                    data-oid="2e9a0-."
                   ></div>
                 </div>
               </div>
 
-              <div className="mt-6 flex justify-between" data-oid="lmfgtx9">
-                <div className="text-center" data-oid="879ngeo">
+              <div className="mt-6 flex justify-between" data-oid="ckm:wj9">
+                <div className="text-center" data-oid="ytcew97">
                   <div
                     className="text-xs text-gray-400 mb-1"
-                    data-oid="-6s38x3"
+                    data-oid="64g21pk"
                   >
                     ESTIMATED
                   </div>
                   <div
                     className="text-lg font-medium text-white"
-                    data-oid="qygf2bn"
+                    data-oid="40ukewy"
                   >
                     $5,280
                   </div>
-                  <div className="text-xs text-gray-400" data-oid="t3wvd3e">
+                  <div className="text-xs text-gray-400" data-oid="s6rvbei">
                     TOTAL
                   </div>
                 </div>
-                <div className="text-center" data-oid="hcyn-ht">
+                <div className="text-center" data-oid="265.r63">
                   <div
                     className="text-xs text-gray-400 mb-1"
-                    data-oid="tootp5b"
+                    data-oid="30exwxc"
                   >
                     ACTUAL
                   </div>
                   <div
                     className="text-lg font-medium text-white"
-                    data-oid="amqkoui"
+                    data-oid="g21n4pn"
                   >
                     $1,692
                   </div>
-                  <div className="text-xs text-teal" data-oid="ahu1t3z">
+                  <div className="text-xs text-teal" data-oid="ljv8jfe">
                     UNDER BUDGET
                   </div>
                 </div>
-                <div className="text-center" data-oid="6u-6200">
+                <div className="text-center" data-oid="a0i_hx.">
                   <div
                     className="text-xs text-gray-400 mb-1"
-                    data-oid="23j3fz6"
+                    data-oid="7:2auou"
                   >
                     ESTIMATED
                   </div>
                   <div
                     className="text-lg font-medium text-white"
-                    data-oid="31v0mh6"
+                    data-oid="jt2jk6i"
                   >
                     May 30
                   </div>
-                  <div className="text-xs text-teal" data-oid="5wd5mhr">
+                  <div className="text-xs text-teal" data-oid="mqnsqr3">
                     ON SCHEDULE
                   </div>
                 </div>
@@ -522,20 +522,20 @@ const JobInsights: FC = () => {
       {/* Footer */}
       <div
         className="bg-space-900/60 p-3 border-t border-teal/10 flex justify-between items-center"
-        data-oid="ozl:0bt"
+        data-oid="_mandx3"
       >
-        <div className="text-xs text-gray-400" data-oid="9acp0h9">
-          <span className="text-teal mr-1" data-oid="wt9w7fi">
-            <i className="fas fa-sync-alt fa-spin-pulse" data-oid="cmbwfwk"></i>
+        <div className="text-xs text-gray-400" data-oid="o8rq9-8">
+          <span className="text-teal mr-1" data-oid="06hzc.8">
+            <i className="fas fa-sync-alt fa-spin-pulse" data-oid="itj2k0w"></i>
           </span>
           Updated just now
         </div>
-        <div data-oid="kua1fro">
+        <div data-oid="so6fqg3">
           <button
             className="bg-teal/20 hover:bg-teal/30 text-teal px-3 py-1 rounded-md text-xs transition-colors"
-            data-oid="32m.id3"
+            data-oid="lm66u04"
           >
-            <i className="fas fa-chart-line mr-1.5" data-oid="dy.fa3h"></i>
+            <i className="fas fa-chart-line mr-1.5" data-oid="bjb6axz"></i>
             Detailed Report
           </button>
         </div>

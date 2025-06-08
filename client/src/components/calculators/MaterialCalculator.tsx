@@ -420,42 +420,42 @@ const MaterialCalculator: FC = () => {
   };
 
   return (
-    <div className="w-full" data-oid="9x.5qel">
+    <div className="w-full" data-oid="x.xee_c">
       {/* Header with project title and supplier selection */}
       <div
         className="flex flex-col md:flex-row justify-between items-start md:items-center mb-6 pb-4 border-b border-space-700"
-        data-oid="a_csazp"
+        data-oid="rt.c9kf"
       >
-        <div className="mb-4 md:mb-0" data-oid="zu-tznm">
-          <div className="flex items-center" data-oid="-.y68an">
+        <div className="mb-4 md:mb-0" data-oid="7ue0e8q">
+          <div className="flex items-center" data-oid="9oemyil">
             <div
               className="flex items-center justify-center h-10 w-10 rounded-full mr-3 bg-gradient-to-br from-cyan/20 to-transparent border border-cyan/30"
-              data-oid="fc6xy14"
+              data-oid="jzje6h_"
             >
-              <i className="fas fa-calculator text-cyan" data-oid="0ts0ef0"></i>
+              <i className="fas fa-calculator text-cyan" data-oid="cewox-e"></i>
             </div>
             <input
               type="text"
               value={projectName}
               onChange={(e) => setProjectName(e.target.value)}
               className="text-xl font-medium text-white bg-transparent border-0 border-b border-transparent hover:border-space-600 focus:border-cyan focus:ring-0 focus:outline-none transition-colors px-1"
-              data-oid="r65-m.9"
+              data-oid="ygsgsy8"
             />
           </div>
         </div>
 
-        <div className="flex items-center" data-oid="e8_-hld">
-          <span className="text-gray-400 mr-2" data-oid="_:qiuqh">
+        <div className="flex items-center" data-oid="z_aebmv">
+          <span className="text-gray-400 mr-2" data-oid="n5l65x9">
             Supplier:
           </span>
           <select
             value={selectedSupplier}
             onChange={(e) => setSelectedSupplier(e.target.value)}
             className="bg-space-800 border border-space-700 rounded-lg px-3 py-2 text-white focus:outline-none focus:ring-1 focus:ring-cyan focus:border-cyan"
-            data-oid="0refvjq"
+            data-oid="5znqcn."
           >
             {SUPPLIERS.map((supplier) => (
-              <option key={supplier.id} value={supplier.id} data-oid=".x1qm0a">
+              <option key={supplier.id} value={supplier.id} data-oid="i69aog3">
                 {supplier.name}
               </option>
             ))}
@@ -464,30 +464,30 @@ const MaterialCalculator: FC = () => {
       </div>
 
       {/* Main Tabs */}
-      <div className="flex border-b border-space-700 mb-6" data-oid="547ef_4">
+      <div className="flex border-b border-space-700 mb-6" data-oid="h8h.eex">
         <button
           className={`px-4 py-2 font-medium relative ${activeTab === "materials" ? "text-cyan" : "text-gray-400 hover:text-white"}`}
           onClick={() => setActiveTab("materials")}
-          data-oid="bd23kjl"
+          data-oid="z.j01tq"
         >
-          <span data-oid="pb704un">Materials Selection</span>
+          <span data-oid="mipw7xm">Materials Selection</span>
           {activeTab === "materials" && (
             <span
               className="absolute bottom-0 left-0 w-full h-0.5 bg-gradient-to-r from-transparent via-cyan to-transparent"
-              data-oid="etb8:jg"
+              data-oid="m6_x0hj"
             ></span>
           )}
         </button>
         <button
           className={`px-4 py-2 font-medium relative ${activeTab === "summary" ? "text-cyan" : "text-gray-400 hover:text-white"}`}
           onClick={() => setActiveTab("summary")}
-          data-oid="yn72rjo"
+          data-oid="2_6hgbp"
         >
-          <span data-oid="v.tk:q5">Estimate Summary</span>
+          <span data-oid="9fhc4tg">Estimate Summary</span>
           {activeTab === "summary" && (
             <span
               className="absolute bottom-0 left-0 w-full h-0.5 bg-gradient-to-r from-transparent via-cyan to-transparent"
-              data-oid="qr58qz."
+              data-oid=".9euy.g"
             ></span>
           )}
         </button>
@@ -496,8 +496,8 @@ const MaterialCalculator: FC = () => {
       {activeTab === "materials" ? (
         <>
           {/* Category Selection */}
-          <div className="mb-6 overflow-x-auto" data-oid="o:dl6ws">
-            <div className="flex space-x-2 pb-3" data-oid="lgc6m8m">
+          <div className="mb-6 overflow-x-auto" data-oid="vs:.ik2">
+            <div className="flex space-x-2 pb-3" data-oid="tt1h142">
               {CATEGORIES.map((category) => (
                 <button
                   key={category.id}
@@ -507,7 +507,7 @@ const MaterialCalculator: FC = () => {
                       : "bg-space-800/60 text-gray-300 hover:text-white hover:bg-space-700/60 border border-space-700"
                   }`}
                   onClick={() => setSelectedCategory(category.id)}
-                  data-oid="q5s_09a"
+                  data-oid="h9:hkhg"
                 >
                   {category.name}
                 </button>
@@ -518,7 +518,7 @@ const MaterialCalculator: FC = () => {
           {/* Materials List */}
           <div
             className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-6"
-            data-oid="xyypf5y"
+            data-oid="6:-o_cq"
           >
             {filteredMaterials.map((material) => {
               const selectedMaterial = selectedMaterials.find(
@@ -534,56 +534,56 @@ const MaterialCalculator: FC = () => {
                       ? "bg-space-800/80 border-cyan/40 shadow-lg shadow-cyan/5"
                       : "bg-space-900/70 border-space-700 hover:border-space-600"
                   }`}
-                  data-oid="r4jb5r6"
+                  data-oid="uh0zql5"
                 >
                   {quantity > 0 && (
                     <div
                       className="absolute top-0 left-0 w-full h-0.5 bg-gradient-to-r from-transparent via-cyan to-transparent"
-                      data-oid="1ctaefz"
+                      data-oid="cv:_.16"
                     ></div>
                   )}
 
-                  <div className="flex justify-between mb-3" data-oid="zgh56ji">
-                    <h3 className="font-medium text-white" data-oid="2vtav1.">
+                  <div className="flex justify-between mb-3" data-oid="go8g-a1">
+                    <h3 className="font-medium text-white" data-oid="xuz-g5.">
                       {material.name}
                     </h3>
-                    <div className="text-sm text-gray-400" data-oid="ei74gyb">
+                    <div className="text-sm text-gray-400" data-oid="y4.g.vx">
                       {material.unit}
                     </div>
                   </div>
 
                   <div
                     className="flex justify-between items-center mb-3"
-                    data-oid="tl9vdhp"
+                    data-oid="b9w1k7-"
                   >
-                    <div className="text-lg text-cyan" data-oid="8h0cu0.">
+                    <div className="text-lg text-cyan" data-oid="rr_1mjh">
                       $
                       {(
                         material.basePrice * currentSupplier.priceMultiplier
                       ).toFixed(2)}
                     </div>
-                    <div className="text-xs text-gray-400" data-oid="kg:7sn:">
+                    <div className="text-xs text-gray-400" data-oid="j27zh_d">
                       per {material.unit_type}
                     </div>
                   </div>
 
                   <div
                     className="flex justify-between items-center"
-                    data-oid="76ah7jf"
+                    data-oid="vtjosyg"
                   >
                     {quantity > 0 ? (
                       <div
                         className="flex items-center border border-space-600 rounded-lg overflow-hidden"
-                        data-oid="noanrm9"
+                        data-oid="7sfk9hh"
                       >
                         <button
                           className="bg-space-700 hover:bg-space-600 text-white px-3 py-1 transition-colors"
                           onClick={() =>
                             updateQuantity(material.id, quantity - 1)
                           }
-                          data-oid="s7p1ebj"
+                          data-oid="3bvypac"
                         >
-                          <i className="fas fa-minus" data-oid="wpab0st"></i>
+                          <i className="fas fa-minus" data-oid="gf-g9fp"></i>
                         </button>
                         <input
                           type="number"
@@ -596,7 +596,7 @@ const MaterialCalculator: FC = () => {
                             )
                           }
                           className="w-16 bg-space-800 border-0 text-center text-white focus:ring-0"
-                          data-oid="bonhazn"
+                          data-oid="izyrrqc"
                         />
 
                         <button
@@ -604,18 +604,18 @@ const MaterialCalculator: FC = () => {
                           onClick={() =>
                             updateQuantity(material.id, quantity + 1)
                           }
-                          data-oid="qg1rhol"
+                          data-oid="-lda6vv"
                         >
-                          <i className="fas fa-plus" data-oid="dfdplgc"></i>
+                          <i className="fas fa-plus" data-oid="9e:6f.1"></i>
                         </button>
                       </div>
                     ) : (
                       <button
                         className="px-3 py-1.5 rounded-lg bg-space-800 hover:bg-cyan/20 text-gray-300 hover:text-cyan border border-space-700 hover:border-cyan/30 transition-all duration-300 text-sm"
                         onClick={() => addMaterial(material.id)}
-                        data-oid="fys1tnr"
+                        data-oid="5ng4r2y"
                       >
-                        <i className="fas fa-plus mr-1" data-oid="dmexz_c"></i>{" "}
+                        <i className="fas fa-plus mr-1" data-oid="j-6vmv:"></i>{" "}
                         Add
                       </button>
                     )}
@@ -623,7 +623,7 @@ const MaterialCalculator: FC = () => {
                     {quantity > 0 && (
                       <div
                         className="text-white font-medium"
-                        data-oid="lx3akxb"
+                        data-oid="y4faybx"
                       >
                         $
                         {calculateMaterialPrice(material.id, quantity).toFixed(
@@ -639,27 +639,27 @@ const MaterialCalculator: FC = () => {
 
           {/* Selected Materials Summary */}
           {selectedMaterials.length > 0 && (
-            <GlassCard className="p-5 border-cyan/20 mt-6" data-oid="piog_-d">
+            <GlassCard className="p-5 border-cyan/20 mt-6" data-oid="f:mlmo-">
               <div
                 className="flex justify-between items-center mb-4"
-                data-oid="71_07d5"
+                data-oid="3msli9o"
               >
                 <h3
                   className="text-lg font-medium text-white"
-                  data-oid="lyd3wrg"
+                  data-oid="uqabq89"
                 >
                   Selected Materials
                 </h3>
                 <div
                   className="px-3 py-1 rounded-full bg-cyan/10 border border-cyan/20 text-cyan text-sm"
-                  data-oid="m95_3os"
+                  data-oid="3f8ktub"
                 >
                   {selectedMaterials.length} item
                   {selectedMaterials.length !== 1 ? "s" : ""}
                 </div>
               </div>
 
-              <div className="mb-4 max-h-60 overflow-y-auto" data-oid="w_6wm22">
+              <div className="mb-4 max-h-60 overflow-y-auto" data-oid="0.l2nm-">
                 {selectedMaterials.map((item) => {
                   const material = MATERIALS.find(
                     (m) => m.id === item.materialId,
@@ -670,18 +670,18 @@ const MaterialCalculator: FC = () => {
                     <div
                       key={item.materialId}
                       className="flex justify-between items-center py-2 border-b border-space-700 last:border-b-0"
-                      data-oid="cq3siwh"
+                      data-oid="3s2inck"
                     >
-                      <div className="flex-1" data-oid="y3n::oz">
+                      <div className="flex-1" data-oid="n9kmeqd">
                         <div
                           className="font-medium text-white"
-                          data-oid="5ylv:rq"
+                          data-oid="imxk9c0"
                         >
                           {material.name}
                         </div>
                         <div
                           className="text-sm text-gray-400"
-                          data-oid="sfwmy-k"
+                          data-oid="-yjlbkl"
                         >
                           {item.quantity} × $
                           {(
@@ -691,7 +691,7 @@ const MaterialCalculator: FC = () => {
                       </div>
                       <div
                         className="text-right font-medium text-white"
-                        data-oid="pi5b6ie"
+                        data-oid="ev12eyo"
                       >
                         $
                         {calculateMaterialPrice(
@@ -706,28 +706,28 @@ const MaterialCalculator: FC = () => {
 
               <div
                 className="flex justify-between items-center pt-3 border-t border-space-700"
-                data-oid="azt-gza"
+                data-oid="w2e:z-q"
               >
                 <div
                   className="text-lg font-medium text-white"
-                  data-oid="y3j.ztl"
+                  data-oid="q8-j:_2"
                 >
                   Total Estimate:
                 </div>
-                <div className="text-xl font-bold text-cyan" data-oid="tqz:n.h">
+                <div className="text-xl font-bold text-cyan" data-oid="jpl.7yx">
                   ${calculateTotal().toFixed(2)}
                 </div>
               </div>
 
-              <div className="mt-4 text-right" data-oid="h_6y5y2">
+              <div className="mt-4 text-right" data-oid="b6e-lz9">
                 <button
                   className="px-4 py-2 rounded-lg bg-cyan/20 text-cyan border border-cyan/30 hover:bg-cyan/30 transition-colors"
                   onClick={() => setActiveTab("summary")}
-                  data-oid=".528odn"
+                  data-oid="ycmg3:j"
                 >
                   <i
                     className="fas fa-clipboard-check mr-2"
-                    data-oid="93zpnk4"
+                    data-oid="s-f2c-6"
                   ></i>{" "}
                   View Complete Summary
                 </button>
@@ -740,35 +740,35 @@ const MaterialCalculator: FC = () => {
           {/* Estimate Summary */}
           <GlassCard
             className="p-6 border-cyan/20 mb-6 backdrop-blur-lg"
-            data-oid="eggk9p:"
+            data-oid="nmarbyv"
           >
             <div
               className="flex justify-between items-start mb-6"
-              data-oid="mqapqg9"
+              data-oid="d615mk0"
             >
-              <div data-oid="xamd22s">
+              <div data-oid="d-fc.7r">
                 <h2
                   className="text-2xl font-bold text-white mb-1"
-                  data-oid=":_z8z76"
+                  data-oid="sy3sq3l"
                 >
                   {projectName}
                 </h2>
-                <p className="text-gray-400" data-oid="le3-9ry">
+                <p className="text-gray-400" data-oid="ufav7kl">
                   Material Estimate Summary
                 </p>
               </div>
-              <div className="flex space-x-2" data-oid="96k7hyd">
+              <div className="flex space-x-2" data-oid="pyjhuey">
                 <button
                   className="p-2 rounded-lg bg-space-800 text-gray-300 hover:text-white hover:bg-space-700 transition-colors"
-                  data-oid="6yjzf:n"
+                  data-oid="ifj1jmu"
                 >
-                  <i className="fas fa-print" data-oid="qczvj:b"></i>
+                  <i className="fas fa-print" data-oid="94d8m7x"></i>
                 </button>
                 <button
                   className="p-2 rounded-lg bg-space-800 text-gray-300 hover:text-white hover:bg-space-700 transition-colors"
-                  data-oid="x_e:eo6"
+                  data-oid="bld:n9t"
                 >
-                  <i className="fas fa-share-alt" data-oid="_4l89t3"></i>
+                  <i className="fas fa-share-alt" data-oid="td-t.ni"></i>
                 </button>
               </div>
             </div>
@@ -777,55 +777,55 @@ const MaterialCalculator: FC = () => {
               <>
                 <div
                   className="bg-space-900/60 rounded-lg p-5 mb-6"
-                  data-oid="puq7xm6"
+                  data-oid="a8:.yl5"
                 >
                   <h3
                     className="text-lg font-medium text-white mb-4"
-                    data-oid="ker1qg3"
+                    data-oid="lfifkr7"
                   >
                     Material List
                   </h3>
 
-                  <div className="overflow-x-auto" data-oid="84kahk3">
-                    <table className="w-full" data-oid="tkhp71x">
-                      <thead data-oid="pgkgi58">
+                  <div className="overflow-x-auto" data-oid="-iv:3th">
+                    <table className="w-full" data-oid="c7lhy6j">
+                      <thead data-oid="92fydve">
                         <tr
                           className="border-b border-space-700 text-left"
-                          data-oid="s2sl0o5"
+                          data-oid="4rq8.qg"
                         >
                           <th
                             className="pb-2 font-medium text-gray-300"
-                            data-oid="u-0ii8k"
+                            data-oid="ydnwi1a"
                           >
                             Material
                           </th>
                           <th
                             className="pb-2 font-medium text-gray-300"
-                            data-oid="l5xdgnb"
+                            data-oid="dqkeqdu"
                           >
                             Quantity
                           </th>
                           <th
                             className="pb-2 font-medium text-gray-300"
-                            data-oid="q5vxhvj"
+                            data-oid="1cf:2n5"
                           >
                             Unit
                           </th>
                           <th
                             className="pb-2 font-medium text-gray-300 text-right"
-                            data-oid="q010st_"
+                            data-oid="ih5z2vp"
                           >
                             Unit Price
                           </th>
                           <th
                             className="pb-2 font-medium text-gray-300 text-right"
-                            data-oid="epu_lch"
+                            data-oid=":ea17kz"
                           >
                             Total
                           </th>
                         </tr>
                       </thead>
-                      <tbody data-oid="4_s1le8">
+                      <tbody data-oid="tl04q:p">
                         {selectedMaterials.map((item) => {
                           const material = MATERIALS.find(
                             (m) => m.id === item.materialId,
@@ -836,29 +836,29 @@ const MaterialCalculator: FC = () => {
                             <tr
                               key={item.materialId}
                               className="border-b border-space-800/60"
-                              data-oid="27q-z2d"
+                              data-oid="a8xewdw"
                             >
                               <td
                                 className="py-3 text-white"
-                                data-oid="ma9lcbv"
+                                data-oid="ly8utd8"
                               >
                                 {material.name}
                               </td>
                               <td
                                 className="py-3 text-white"
-                                data-oid="kcvpfj9"
+                                data-oid="v8c3upr"
                               >
                                 {item.quantity}
                               </td>
                               <td
                                 className="py-3 text-gray-400"
-                                data-oid="kc2z-4k"
+                                data-oid="wbwnw60"
                               >
                                 {material.unit}
                               </td>
                               <td
                                 className="py-3 text-white text-right"
-                                data-oid="xn7lsi_"
+                                data-oid="salzrwf"
                               >
                                 $
                                 {(
@@ -868,7 +868,7 @@ const MaterialCalculator: FC = () => {
                               </td>
                               <td
                                 className="py-3 text-white text-right font-medium"
-                                data-oid="lvg:7dj"
+                                data-oid=".lgodm-"
                               >
                                 $
                                 {calculateMaterialPrice(
@@ -880,18 +880,18 @@ const MaterialCalculator: FC = () => {
                           );
                         })}
                       </tbody>
-                      <tfoot data-oid="p7go70o">
-                        <tr data-oid=".mm-6f.">
+                      <tfoot data-oid="31w4fmp">
+                        <tr data-oid="osboyk1">
                           <td
                             colSpan={4}
                             className="pt-4 text-right text-white font-medium"
-                            data-oid="rl.z1al"
+                            data-oid="oy2r-s-"
                           >
                             Total:
                           </td>
                           <td
                             className="pt-4 text-right text-cyan font-bold"
-                            data-oid="5csgvac"
+                            data-oid="1sqk9a4"
                           >
                             ${calculateTotal().toFixed(2)}
                           </td>
@@ -902,17 +902,17 @@ const MaterialCalculator: FC = () => {
                 </div>
 
                 {/* Supplier Price Comparison */}
-                <div data-oid="tgetdeu">
+                <div data-oid=".w0:0a9">
                   <h3
                     className="text-lg font-medium text-white mb-4"
-                    data-oid="ig-789w"
+                    data-oid=".bsfa.7"
                   >
                     Supplier Price Comparison
                   </h3>
 
                   <div
                     className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4"
-                    data-oid="4q1d3t3"
+                    data-oid="-e-kwr-"
                   >
                     {getPriceComparison().map((supplier) => {
                       const isSelected = supplier.id === selectedSupplier;
@@ -921,22 +921,22 @@ const MaterialCalculator: FC = () => {
                         <div
                           key={supplier.id}
                           className={`rounded-xl p-4 transition-all duration-300 ${isSelected ? "bg-cyan/10 border border-cyan/30" : "bg-space-800/60 border border-space-700"}`}
-                          data-oid="q2n:wht"
+                          data-oid="7otd:eu"
                         >
                           <div
                             className="flex justify-between items-start mb-3"
-                            data-oid="i014qmj"
+                            data-oid="gmyv433"
                           >
                             <div
                               className="font-medium text-white"
-                              data-oid="fq2bsd_"
+                              data-oid="kg5nwv0"
                             >
                               {supplier.name}
                             </div>
                             {isSelected && (
                               <div
                                 className="px-2 py-0.5 rounded-full bg-cyan/20 text-cyan text-xs"
-                                data-oid="xrf:5ge"
+                                data-oid="a1iaji6"
                               >
                                 Selected
                               </div>
@@ -945,14 +945,14 @@ const MaterialCalculator: FC = () => {
 
                           <div
                             className={`text-2xl font-bold mb-2 ${isSelected ? "text-cyan" : "text-white"}`}
-                            data-oid="u7rhx-c"
+                            data-oid="clcz4gz"
                           >
                             ${supplier.totalPrice.toFixed(2)}
                           </div>
 
                           <div
                             className="text-sm text-gray-400 mb-3"
-                            data-oid="h8ox49b"
+                            data-oid="8gko_7:"
                           >
                             Price multiplier:{" "}
                             {supplier.priceMultiplier.toFixed(2)}x
@@ -962,7 +962,7 @@ const MaterialCalculator: FC = () => {
                             <button
                               className="w-full py-1.5 text-sm font-medium rounded-lg bg-space-700/60 text-gray-300 hover:bg-cyan/20 hover:text-cyan border border-space-600 hover:border-cyan/30 transition-all duration-300"
                               onClick={() => setSelectedSupplier(supplier.id)}
-                              data-oid="jnlb6kt"
+                              data-oid="k1ued40"
                             >
                               Select Supplier
                             </button>
@@ -976,21 +976,21 @@ const MaterialCalculator: FC = () => {
             ) : (
               <div
                 className="text-center py-10 text-gray-400"
-                data-oid="sceov:_"
+                data-oid="pnhctdf"
               >
                 <i
                   className="fas fa-clipboard-list text-5xl mb-3"
-                  data-oid="ic32ak6"
+                  data-oid="i0qbte9"
                 ></i>
-                <p data-oid="oq57l.h">
+                <p data-oid="ozylty1">
                   No materials added to your estimate yet.
                 </p>
                 <button
                   className="mt-4 px-4 py-2 rounded-lg bg-space-800 text-gray-300 hover:text-white hover:bg-space-700 transition-colors"
                   onClick={() => setActiveTab("materials")}
-                  data-oid="bz1hn-a"
+                  data-oid="y_4d4q5"
                 >
-                  <i className="fas fa-plus mr-2" data-oid="cq6jqiy"></i> Add
+                  <i className="fas fa-plus mr-2" data-oid="oakjp3d"></i> Add
                   Materials
                 </button>
               </div>

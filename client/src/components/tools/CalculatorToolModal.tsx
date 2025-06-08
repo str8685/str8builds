@@ -242,38 +242,38 @@ const CalculatorToolModal: FC<CalculatorToolModalProps> = ({
   };
 
   return (
-    <Dialog open={open} onOpenChange={onOpenChange} data-oid="77vqln5">
+    <Dialog open={open} onOpenChange={onOpenChange} data-oid="4r9pt9z">
       <DialogContent
         className="bg-gradient-to-br from-space-900 via-space-950 to-space-900 border border-space-700/50 text-white max-w-md p-0"
-        data-oid="p:f87_."
+        data-oid="1ptrcxq"
       >
-        <div className="absolute inset-0 overflow-hidden" data-oid="oc_oa9t">
+        <div className="absolute inset-0 overflow-hidden" data-oid="j0oq64m">
           <div
             className="absolute -inset-[100px] bg-cyan-800/5 blur-3xl rounded-full top-0 right-0 z-0"
-            data-oid="f2l994f"
+            data-oid="ppxxyeg"
           ></div>
           <div
             className="absolute -inset-[100px] bg-blue-800/5 blur-3xl rounded-full bottom-0 left-0 z-0"
-            data-oid="c1-:xja"
+            data-oid="bzuv9ds"
           ></div>
           <div
             className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-cyan-500/20 to-transparent"
-            data-oid="oqqym04"
+            data-oid="fjkm1n5"
           ></div>
           <div
             className="absolute bottom-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-cyan-500/20 to-transparent"
-            data-oid="cz1tq7d"
+            data-oid="jf78hm5"
           ></div>
         </div>
 
-        <div className="relative z-10 p-6" data-oid="59a77cp">
-          <DialogHeader className="mb-4" data-oid="w3h3jqo">
+        <div className="relative z-10 p-6" data-oid="hc_gge4">
+          <DialogHeader className="mb-4" data-oid="u02wrki">
             <DialogTitle
               className="flex items-center text-xl font-space text-cyan-400 tracking-wide"
-              data-oid="ufx:jdm"
+              data-oid="ykyx_ou"
             >
-              <i className="fas fa-calculator mr-3" data-oid="vt4qu-v"></i>
-              <span data-oid="wlvflqn">Construction Calculator</span>
+              <i className="fas fa-calculator mr-3" data-oid="yzfzlli"></i>
+              <span data-oid=".7a1a-.">Construction Calculator</span>
             </DialogTitle>
           </DialogHeader>
 
@@ -282,54 +282,54 @@ const CalculatorToolModal: FC<CalculatorToolModalProps> = ({
             value={activeTab}
             onValueChange={setActiveTab}
             className="w-full"
-            data-oid="sl_ommo"
+            data-oid="dv6m_j5"
           >
             <TabsList
               className="grid w-full grid-cols-2 bg-space-800"
-              data-oid="0_cqa4i"
+              data-oid="vp8no2d"
             >
               <TabsTrigger
                 value="standard"
                 className="data-[state=active]:bg-space-700"
-                data-oid=":uox:-l"
+                data-oid="wuljzpd"
               >
                 Standard
               </TabsTrigger>
               <TabsTrigger
                 value="construction"
                 className="data-[state=active]:bg-space-700"
-                data-oid="rkfuoz0"
+                data-oid="kzhcaaq"
               >
                 Construction
               </TabsTrigger>
             </TabsList>
 
-            <TabsContent value="standard" className="mt-4" data-oid="6x355nl">
+            <TabsContent value="standard" className="mt-4" data-oid="d3njix9">
               <div
                 className="bg-space-800 p-4 rounded-lg mb-4"
-                data-oid="1.zvu0u"
+                data-oid="ckhdplh"
               >
                 <div
                   className="text-right text-sm text-gray-400 h-5"
-                  data-oid="lf5qhtw"
+                  data-oid="1qkmp_8"
                 >
                   {secondaryDisplay}
                 </div>
                 <div
                   className="text-right text-3xl font-medium h-10 overflow-hidden"
-                  data-oid="w4okspi"
+                  data-oid="i7ryzx:"
                 >
                   {display}
                 </div>
               </div>
 
-              <div className="grid grid-cols-4 gap-2" data-oid=".k7_.r-">
+              <div className="grid grid-cols-4 gap-2" data-oid="vc234t5">
                 {/* Memory Row */}
                 <Button
                   variant="outline"
                   className={`bg-space-800 hover:bg-space-700 text-sm ${memory === null ? "text-gray-500" : "text-cyan-400"}`}
                   onClick={memoryClear}
-                  data-oid="86wc2pn"
+                  data-oid="qi6jpsa"
                 >
                   MC
                 </Button>
@@ -337,7 +337,7 @@ const CalculatorToolModal: FC<CalculatorToolModalProps> = ({
                   variant="outline"
                   className={`bg-space-800 hover:bg-space-700 text-sm ${memory === null ? "text-gray-500" : "text-cyan-400"}`}
                   onClick={memoryRecall}
-                  data-oid="my8io.y"
+                  data-oid="820s9:q"
                 >
                   MR
                 </Button>
@@ -345,7 +345,7 @@ const CalculatorToolModal: FC<CalculatorToolModalProps> = ({
                   variant="outline"
                   className="bg-space-800 hover:bg-space-700 text-sm"
                   onClick={memoryPlus}
-                  data-oid="zuy9--8"
+                  data-oid="irr.dbx"
                 >
                   M+
                 </Button>
@@ -353,7 +353,7 @@ const CalculatorToolModal: FC<CalculatorToolModalProps> = ({
                   variant="outline"
                   className="bg-space-800 hover:bg-space-700 text-sm"
                   onClick={memoryMinus}
-                  data-oid="4r89ztl"
+                  data-oid="4x5aql4"
                 >
                   M-
                 </Button>
@@ -363,7 +363,7 @@ const CalculatorToolModal: FC<CalculatorToolModalProps> = ({
                   variant="outline"
                   className="bg-space-800 hover:bg-space-700 text-red-400"
                   onClick={clearAll}
-                  data-oid="j6wr6s1"
+                  data-oid="260kq-x"
                 >
                   C
                 </Button>
@@ -371,7 +371,7 @@ const CalculatorToolModal: FC<CalculatorToolModalProps> = ({
                   variant="outline"
                   className="bg-space-800 hover:bg-space-700 text-red-400"
                   onClick={clearEntry}
-                  data-oid="rxg1pom"
+                  data-oid="6w1odzt"
                 >
                   CE
                 </Button>
@@ -379,15 +379,15 @@ const CalculatorToolModal: FC<CalculatorToolModalProps> = ({
                   variant="outline"
                   className="bg-space-800 hover:bg-space-700 text-cyan-400"
                   onClick={backspace}
-                  data-oid="qf.l50c"
+                  data-oid="f-f82wx"
                 >
-                  <i className="fas fa-backspace" data-oid="3.2pptp"></i>
+                  <i className="fas fa-backspace" data-oid="pwfyscu"></i>
                 </Button>
                 <Button
                   variant="outline"
                   className="bg-space-800 hover:bg-space-700 text-cyan-400"
                   onClick={() => binaryOperatorPressed("/")}
-                  data-oid="l04pogo"
+                  data-oid="neh4wq:"
                 >
                   ÷
                 </Button>
@@ -397,7 +397,7 @@ const CalculatorToolModal: FC<CalculatorToolModalProps> = ({
                   variant="outline"
                   className="bg-space-900 hover:bg-space-800"
                   onClick={() => digitPressed("7")}
-                  data-oid="jkpkjng"
+                  data-oid="tvghw:d"
                 >
                   7
                 </Button>
@@ -405,7 +405,7 @@ const CalculatorToolModal: FC<CalculatorToolModalProps> = ({
                   variant="outline"
                   className="bg-space-900 hover:bg-space-800"
                   onClick={() => digitPressed("8")}
-                  data-oid="ft1ujb8"
+                  data-oid="qk4l2r1"
                 >
                   8
                 </Button>
@@ -413,7 +413,7 @@ const CalculatorToolModal: FC<CalculatorToolModalProps> = ({
                   variant="outline"
                   className="bg-space-900 hover:bg-space-800"
                   onClick={() => digitPressed("9")}
-                  data-oid="3l84emq"
+                  data-oid="e5mf8ev"
                 >
                   9
                 </Button>
@@ -421,7 +421,7 @@ const CalculatorToolModal: FC<CalculatorToolModalProps> = ({
                   variant="outline"
                   className="bg-space-800 hover:bg-space-700 text-cyan-400"
                   onClick={() => binaryOperatorPressed("*")}
-                  data-oid="i:h3lh0"
+                  data-oid="t:nv40b"
                 >
                   ×
                 </Button>
@@ -431,7 +431,7 @@ const CalculatorToolModal: FC<CalculatorToolModalProps> = ({
                   variant="outline"
                   className="bg-space-900 hover:bg-space-800"
                   onClick={() => digitPressed("4")}
-                  data-oid="gh6-357"
+                  data-oid="j86_0pd"
                 >
                   4
                 </Button>
@@ -439,7 +439,7 @@ const CalculatorToolModal: FC<CalculatorToolModalProps> = ({
                   variant="outline"
                   className="bg-space-900 hover:bg-space-800"
                   onClick={() => digitPressed("5")}
-                  data-oid="y3sd5uj"
+                  data-oid="mk3.xnd"
                 >
                   5
                 </Button>
@@ -447,7 +447,7 @@ const CalculatorToolModal: FC<CalculatorToolModalProps> = ({
                   variant="outline"
                   className="bg-space-900 hover:bg-space-800"
                   onClick={() => digitPressed("6")}
-                  data-oid="bzficrt"
+                  data-oid="8e4j_2b"
                 >
                   6
                 </Button>
@@ -455,7 +455,7 @@ const CalculatorToolModal: FC<CalculatorToolModalProps> = ({
                   variant="outline"
                   className="bg-space-800 hover:bg-space-700 text-cyan-400"
                   onClick={() => binaryOperatorPressed("-")}
-                  data-oid="08kb5iw"
+                  data-oid=":7p677w"
                 >
                   −
                 </Button>
@@ -465,7 +465,7 @@ const CalculatorToolModal: FC<CalculatorToolModalProps> = ({
                   variant="outline"
                   className="bg-space-900 hover:bg-space-800"
                   onClick={() => digitPressed("1")}
-                  data-oid="q4l--iu"
+                  data-oid="6wh8rpu"
                 >
                   1
                 </Button>
@@ -473,7 +473,7 @@ const CalculatorToolModal: FC<CalculatorToolModalProps> = ({
                   variant="outline"
                   className="bg-space-900 hover:bg-space-800"
                   onClick={() => digitPressed("2")}
-                  data-oid="k3rj_a4"
+                  data-oid=":hb1efx"
                 >
                   2
                 </Button>
@@ -481,7 +481,7 @@ const CalculatorToolModal: FC<CalculatorToolModalProps> = ({
                   variant="outline"
                   className="bg-space-900 hover:bg-space-800"
                   onClick={() => digitPressed("3")}
-                  data-oid="wic0r5k"
+                  data-oid="_n48656"
                 >
                   3
                 </Button>
@@ -489,7 +489,7 @@ const CalculatorToolModal: FC<CalculatorToolModalProps> = ({
                   variant="outline"
                   className="bg-space-800 hover:bg-space-700 text-cyan-400"
                   onClick={() => binaryOperatorPressed("+")}
-                  data-oid="4v2c0sd"
+                  data-oid="k2_h:8:"
                 >
                   +
                 </Button>
@@ -499,7 +499,7 @@ const CalculatorToolModal: FC<CalculatorToolModalProps> = ({
                   variant="outline"
                   className="bg-space-800 hover:bg-space-700 text-cyan-400"
                   onClick={() => unaryOperatorPressed("+/-")}
-                  data-oid=":hdhi-1"
+                  data-oid="wxn0e5j"
                 >
                   ±
                 </Button>
@@ -507,7 +507,7 @@ const CalculatorToolModal: FC<CalculatorToolModalProps> = ({
                   variant="outline"
                   className="bg-space-900 hover:bg-space-800"
                   onClick={() => digitPressed("0")}
-                  data-oid="9dq-qhb"
+                  data-oid="c.blai7"
                 >
                   0
                 </Button>
@@ -515,7 +515,7 @@ const CalculatorToolModal: FC<CalculatorToolModalProps> = ({
                   variant="outline"
                   className="bg-space-900 hover:bg-space-800"
                   onClick={decimalPressed}
-                  data-oid="e.i_jix"
+                  data-oid="fwa.efm"
                 >
                   .
                 </Button>
@@ -523,7 +523,7 @@ const CalculatorToolModal: FC<CalculatorToolModalProps> = ({
                   variant="outline"
                   className="bg-cyan-700 hover:bg-cyan-600 text-white"
                   onClick={equalsPressed}
-                  data-oid="yl-iqn8"
+                  data-oid="eg1_tna"
                 >
                   =
                 </Button>
@@ -533,7 +533,7 @@ const CalculatorToolModal: FC<CalculatorToolModalProps> = ({
                   variant="outline"
                   className="bg-space-800 hover:bg-space-700 text-cyan-400"
                   onClick={() => unaryOperatorPressed("sqrt")}
-                  data-oid="m9.31tc"
+                  data-oid="q_hki91"
                 >
                   √
                 </Button>
@@ -541,15 +541,15 @@ const CalculatorToolModal: FC<CalculatorToolModalProps> = ({
                   variant="outline"
                   className="bg-space-800 hover:bg-space-700 text-cyan-400"
                   onClick={() => binaryOperatorPressed("^")}
-                  data-oid="1f:mlkc"
+                  data-oid="27h8oxv"
                 >
-                  x<sup data-oid="pwlt8af">y</sup>
+                  x<sup data-oid="w.aj77o">y</sup>
                 </Button>
                 <Button
                   variant="outline"
                   className="bg-space-800 hover:bg-space-700 text-cyan-400"
                   onClick={() => unaryOperatorPressed("%")}
-                  data-oid="2bp85qw"
+                  data-oid="vuigl34"
                 >
                   %
                 </Button>
@@ -557,7 +557,7 @@ const CalculatorToolModal: FC<CalculatorToolModalProps> = ({
                   variant="outline"
                   className="bg-space-800 hover:bg-space-700 text-cyan-400"
                   onClick={() => unaryOperatorPressed("1/x")}
-                  data-oid="tlfbj_e"
+                  data-oid="rpuym11"
                 >
                   1/x
                 </Button>
@@ -567,15 +567,15 @@ const CalculatorToolModal: FC<CalculatorToolModalProps> = ({
             <TabsContent
               value="construction"
               className="mt-4"
-              data-oid="4ehkhex"
+              data-oid="yivmu-5"
             >
               <div
                 className="bg-space-800 p-4 rounded-lg mb-4 space-y-3"
-                data-oid="eourc0f"
+                data-oid="bme3rmg"
               >
-                <div className="grid grid-cols-2 gap-4" data-oid=".2z4pvk">
-                  <div data-oid="9yk94e8">
-                    <label className="text-sm text-gray-400" data-oid="vh7k.d6">
+                <div className="grid grid-cols-2 gap-4" data-oid="7_ojio7">
+                  <div data-oid="bujrb-j">
+                    <label className="text-sm text-gray-400" data-oid="isf:sb7">
                       Length (m)
                     </label>
                     <input
@@ -583,11 +583,11 @@ const CalculatorToolModal: FC<CalculatorToolModalProps> = ({
                       className="w-full bg-space-900 border border-space-700 rounded px-3 py-2 text-white mt-1"
                       value={length}
                       onChange={(e) => setLength(e.target.value)}
-                      data-oid="0ase0ip"
+                      data-oid="lwod.ua"
                     />
                   </div>
-                  <div data-oid="csylq.l">
-                    <label className="text-sm text-gray-400" data-oid="a8y1x9t">
+                  <div data-oid="x2:.bw0">
+                    <label className="text-sm text-gray-400" data-oid="97mmfqo">
                       Width (m)
                     </label>
                     <input
@@ -595,14 +595,14 @@ const CalculatorToolModal: FC<CalculatorToolModalProps> = ({
                       className="w-full bg-space-900 border border-space-700 rounded px-3 py-2 text-white mt-1"
                       value={width}
                       onChange={(e) => setWidth(e.target.value)}
-                      data-oid="lu4.z_7"
+                      data-oid="26hkh2:"
                     />
                   </div>
                 </div>
 
-                <div className="grid grid-cols-2 gap-4" data-oid=":iubvok">
-                  <div data-oid="dv7f85l">
-                    <label className="text-sm text-gray-400" data-oid="h8tp75.">
+                <div className="grid grid-cols-2 gap-4" data-oid=".4k11tc">
+                  <div data-oid="bhvpjly">
+                    <label className="text-sm text-gray-400" data-oid="v4aemjo">
                       Height (m)
                     </label>
                     <input
@@ -610,11 +610,11 @@ const CalculatorToolModal: FC<CalculatorToolModalProps> = ({
                       className="w-full bg-space-900 border border-space-700 rounded px-3 py-2 text-white mt-1"
                       value={height}
                       onChange={(e) => setHeight(e.target.value)}
-                      data-oid="2y1yzd0"
+                      data-oid="woid_vq"
                     />
                   </div>
-                  <div data-oid="47aofdh">
-                    <label className="text-sm text-gray-400" data-oid=".8634_0">
+                  <div data-oid="wkwmzaa">
+                    <label className="text-sm text-gray-400" data-oid="ujuvv9k">
                       Price per unit ($)
                     </label>
                     <input
@@ -622,13 +622,13 @@ const CalculatorToolModal: FC<CalculatorToolModalProps> = ({
                       className="w-full bg-space-900 border border-space-700 rounded px-3 py-2 text-white mt-1"
                       value={pricePerUnit}
                       onChange={(e) => setPricePerUnit(e.target.value)}
-                      data-oid="6pn-nh5"
+                      data-oid="ara9j2w"
                     />
                   </div>
                 </div>
 
-                <div data-oid="u-en.n1">
-                  <label className="text-sm text-gray-400" data-oid="j.8b9zp">
+                <div data-oid="omlqrlg">
+                  <label className="text-sm text-gray-400" data-oid="zwrwros">
                     Waste factor (%)
                   </label>
                   <input
@@ -638,67 +638,67 @@ const CalculatorToolModal: FC<CalculatorToolModalProps> = ({
                     onChange={(e) => setWasteFactor(e.target.value)}
                     min="0"
                     max="100"
-                    data-oid="g49fm28"
+                    data-oid="o_4hmc0"
                   />
                 </div>
               </div>
 
               <div
                 className="bg-space-900/70 p-4 rounded-lg space-y-3"
-                data-oid="ni8.tu5"
+                data-oid="bzl5dwl"
               >
                 <h3
                   className="text-sm font-medium text-cyan-400 mb-2"
-                  data-oid="jaihlvg"
+                  data-oid="0itu3kx"
                 >
                   Results
                 </h3>
 
-                <div className="grid grid-cols-2 gap-2" data-oid="fdomoqx">
-                  <div className="bg-space-800 p-3 rounded" data-oid="kjhqw29">
-                    <div className="text-xs text-gray-400" data-oid="adocl.7">
+                <div className="grid grid-cols-2 gap-2" data-oid="768d19v">
+                  <div className="bg-space-800 p-3 rounded" data-oid="jy_a.5l">
+                    <div className="text-xs text-gray-400" data-oid="34ctirs">
                       Area
                     </div>
-                    <div className="text-lg font-medium" data-oid="kpya3if">
+                    <div className="text-lg font-medium" data-oid="kycg.2b">
                       {formatNumber(calculateArea())} m²
                     </div>
                   </div>
 
-                  <div className="bg-space-800 p-3 rounded" data-oid="vsz:hfe">
-                    <div className="text-xs text-gray-400" data-oid="aepwec3">
+                  <div className="bg-space-800 p-3 rounded" data-oid="2q1.852">
+                    <div className="text-xs text-gray-400" data-oid="k.ei_sj">
                       Volume
                     </div>
-                    <div className="text-lg font-medium" data-oid="wkmka8x">
+                    <div className="text-lg font-medium" data-oid="0y43mij">
                       {formatNumber(calculateVolume())} m³
                     </div>
                   </div>
 
-                  <div className="bg-space-800 p-3 rounded" data-oid="uik6bz-">
-                    <div className="text-xs text-gray-400" data-oid="7958_ct">
+                  <div className="bg-space-800 p-3 rounded" data-oid="o6zfj5b">
+                    <div className="text-xs text-gray-400" data-oid="v5lntuf">
                       Area Cost
                     </div>
                     <div
                       className="text-lg font-medium text-cyan-400"
-                      data-oid="wnw_prk"
+                      data-oid="48_2geb"
                     >
                       ${formatNumber(calculateCost(calculateArea()))}
                     </div>
                   </div>
 
-                  <div className="bg-space-800 p-3 rounded" data-oid="4b_a0z2">
-                    <div className="text-xs text-gray-400" data-oid="lwtik3z">
+                  <div className="bg-space-800 p-3 rounded" data-oid="qh122vp">
+                    <div className="text-xs text-gray-400" data-oid="ojuo0cu">
                       Volume Cost
                     </div>
                     <div
                       className="text-lg font-medium text-cyan-400"
-                      data-oid="pxzso76"
+                      data-oid="a8cn9x0"
                     >
                       ${formatNumber(calculateCost(calculateVolume()))}
                     </div>
                   </div>
                 </div>
 
-                <div className="text-xs text-gray-500 mt-2" data-oid="k.cvtks">
+                <div className="text-xs text-gray-500 mt-2" data-oid="y9s5:fe">
                   Includes {wasteFactor}% waste factor
                 </div>
               </div>

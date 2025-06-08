@@ -31,7 +31,7 @@ export const AnimatedIcon: React.FC<AnimatedIconProps> = ({ animationKey }) => {
         <WelcomeAnimation
           size={size}
           frame={animationFrame}
-          data-oid="h8mauq2"
+          data-oid="slb5hhe"
         />
       );
 
@@ -40,7 +40,7 @@ export const AnimatedIcon: React.FC<AnimatedIconProps> = ({ animationKey }) => {
         <DashboardAnimation
           size={size}
           frame={animationFrame}
-          data-oid="flp1usb"
+          data-oid="yu5hgzl"
         />
       );
 
@@ -49,7 +49,7 @@ export const AnimatedIcon: React.FC<AnimatedIconProps> = ({ animationKey }) => {
         <CalculatorsAnimation
           size={size}
           frame={animationFrame}
-          data-oid="-3g1umg"
+          data-oid="xpy4oyf"
         />
       );
 
@@ -58,13 +58,13 @@ export const AnimatedIcon: React.FC<AnimatedIconProps> = ({ animationKey }) => {
         <WeatherAnimation
           size={size}
           frame={animationFrame}
-          data-oid="749el.o"
+          data-oid="4dhw39o"
         />
       );
 
     case "timer":
       return (
-        <TimerAnimation size={size} frame={animationFrame} data-oid="s3p11dg" />
+        <TimerAnimation size={size} frame={animationFrame} data-oid="9_w0--o" />
       );
 
     case "models":
@@ -72,7 +72,7 @@ export const AnimatedIcon: React.FC<AnimatedIconProps> = ({ animationKey }) => {
         <ModelsAnimation
           size={size}
           frame={animationFrame}
-          data-oid="z_c_446"
+          data-oid="uiamokp"
         />
       );
 
@@ -81,7 +81,7 @@ export const AnimatedIcon: React.FC<AnimatedIconProps> = ({ animationKey }) => {
         <CompletedAnimation
           size={size}
           frame={animationFrame}
-          data-oid="sl6s:5q"
+          data-oid="shtgq87"
         />
       );
 
@@ -90,7 +90,7 @@ export const AnimatedIcon: React.FC<AnimatedIconProps> = ({ animationKey }) => {
         <DefaultAnimation
           size={size}
           frame={animationFrame}
-          data-oid="o1xhqs6"
+          data-oid="_t1qiav"
         />
       );
   }
@@ -113,7 +113,7 @@ const WelcomeAnimation: React.FC<{ size: number; frame: number }> = ({
       height={size}
       viewBox={`0 0 ${size} ${size}`}
       xmlns="http://www.w3.org/2000/svg"
-      data-oid="mxp9le5"
+      data-oid="1:c8v.4"
     >
       {/* Base */}
       <rect
@@ -122,7 +122,7 @@ const WelcomeAnimation: React.FC<{ size: number; frame: number }> = ({
         width={size * 0.6}
         height={size * 0.1}
         fill="#333"
-        data-oid="mol34cp"
+        data-oid="r7xmt4n"
       />
 
       {/* Building */}
@@ -135,7 +135,7 @@ const WelcomeAnimation: React.FC<{ size: number; frame: number }> = ({
         fillOpacity="0.3"
         stroke="#00e6ff"
         strokeWidth="2"
-        data-oid=".4wxfcq"
+        data-oid="x:g7:m0"
       />
 
       {/* Windows (appear as building grows) */}
@@ -148,7 +148,7 @@ const WelcomeAnimation: React.FC<{ size: number; frame: number }> = ({
             height={size * 0.08}
             fill="#ffffff"
             fillOpacity="0.8"
-            data-oid="lt4ene."
+            data-oid="18-_29w"
           />
 
           <rect
@@ -158,7 +158,7 @@ const WelcomeAnimation: React.FC<{ size: number; frame: number }> = ({
             height={size * 0.08}
             fill="#ffffff"
             fillOpacity="0.8"
-            data-oid="y2zjfaj"
+            data-oid="l_g4bq2"
           />
         </>
       )}
@@ -172,7 +172,7 @@ const WelcomeAnimation: React.FC<{ size: number; frame: number }> = ({
             height={size * 0.08}
             fill="#ffffff"
             fillOpacity="0.8"
-            data-oid="3par70n"
+            data-oid="jk1g4__"
           />
 
           <rect
@@ -182,7 +182,7 @@ const WelcomeAnimation: React.FC<{ size: number; frame: number }> = ({
             height={size * 0.08}
             fill="#ffffff"
             fillOpacity="0.8"
-            data-oid="_zg8.lm"
+            data-oid="9h1_lsa"
           />
         </>
       )}
@@ -190,7 +190,7 @@ const WelcomeAnimation: React.FC<{ size: number; frame: number }> = ({
       {/* Construction crane (rotates) */}
       <g
         transform={`translate(${size * 0.7}, ${size * 0.3}) rotate(${10 * Math.sin(frame * 0.1)})`}
-        data-oid="zsrulaq"
+        data-oid="-zadnur"
       >
         <rect
           x={-2}
@@ -198,7 +198,7 @@ const WelcomeAnimation: React.FC<{ size: number; frame: number }> = ({
           width={4}
           height={size * 0.4}
           fill="#FFA500"
-          data-oid="24nc5od"
+          data-oid="3j-49q9"
         />
 
         <rect
@@ -207,10 +207,10 @@ const WelcomeAnimation: React.FC<{ size: number; frame: number }> = ({
           width={size * 0.3}
           height={4}
           fill="#FFA500"
-          data-oid="d5dcmko"
+          data-oid="0xccb_2"
         />
 
-        <circle cx={0} cy={0} r={4} fill="#FF0000" data-oid="61l:8_h" />
+        <circle cx={0} cy={0} r={4} fill="#FF0000" data-oid="xb-j7y_" />
 
         {/* Crane cable */}
         <line
@@ -220,7 +220,7 @@ const WelcomeAnimation: React.FC<{ size: number; frame: number }> = ({
           y2={size * 0.2 + 5 * Math.sin(frame * 0.2)}
           stroke="#444"
           strokeWidth="1"
-          data-oid="3hk7wv8"
+          data-oid="wa:rb4a"
         />
 
         {/* Crane hook */}
@@ -229,7 +229,7 @@ const WelcomeAnimation: React.FC<{ size: number; frame: number }> = ({
           cy={size * 0.2 + 5 * Math.sin(frame * 0.2)}
           r={3}
           fill="#999"
-          data-oid="_a3ksf5"
+          data-oid="nsdl-y5"
         />
       </g>
     </svg>
@@ -250,7 +250,7 @@ const DashboardAnimation: React.FC<{ size: number; frame: number }> = ({
       height={size}
       viewBox={`0 0 ${size} ${size}`}
       xmlns="http://www.w3.org/2000/svg"
-      data-oid="up4b5t2"
+      data-oid="4u9mpqb"
     >
       {/* Dashboard frame */}
       <rect
@@ -263,7 +263,7 @@ const DashboardAnimation: React.FC<{ size: number; frame: number }> = ({
         stroke="#00e6ff"
         strokeWidth="2"
         strokeOpacity={progress}
-        data-oid="y7q7ant"
+        data-oid="whbgr1u"
       />
 
       {/* Header bar */}
@@ -275,13 +275,13 @@ const DashboardAnimation: React.FC<{ size: number; frame: number }> = ({
           height={size * 0.15}
           rx={size * 0.05}
           fill="#0c0e1a"
-          data-oid="2hph_-5"
+          data-oid="lk.2wo4"
         />
       )}
 
       {/* Chart */}
       {progress > 0.4 && (
-        <g data-oid="-j_m..4">
+        <g data-oid="qwkw8oc">
           <rect
             x={size * 0.2}
             y={size * 0.35}
@@ -289,7 +289,7 @@ const DashboardAnimation: React.FC<{ size: number; frame: number }> = ({
             height={size * 0.4}
             rx={3}
             fill="#0c0e1a"
-            data-oid="soow9_h"
+            data-oid="b-0iqbq"
           />
 
           {/* Chart bars */}
@@ -300,7 +300,7 @@ const DashboardAnimation: React.FC<{ size: number; frame: number }> = ({
             height={size * 0.2}
             fill="#00e6ff"
             fillOpacity="0.7"
-            data-oid="3.e4jz0"
+            data-oid="v0mn55d"
           />
 
           <rect
@@ -310,7 +310,7 @@ const DashboardAnimation: React.FC<{ size: number; frame: number }> = ({
             height={size * 0.25}
             fill="#00f0c8"
             fillOpacity="0.7"
-            data-oid="zk17qo4"
+            data-oid="n74f0h5"
           />
 
           <rect
@@ -320,14 +320,14 @@ const DashboardAnimation: React.FC<{ size: number; frame: number }> = ({
             height={size * 0.15}
             fill="#00b4ff"
             fillOpacity="0.7"
-            data-oid="5:xj-yy"
+            data-oid=".2zucru"
           />
         </g>
       )}
 
       {/* Weather widget */}
       {progress > 0.6 && (
-        <g data-oid="0hd:9:j">
+        <g data-oid="i6upwf4">
           <rect
             x={size * 0.55}
             y={size * 0.35}
@@ -335,7 +335,7 @@ const DashboardAnimation: React.FC<{ size: number; frame: number }> = ({
             height={size * 0.25}
             rx={3}
             fill="#0c0e1a"
-            data-oid="hv0h_xs"
+            data-oid="oypawz5"
           />
 
           {/* Sun icon */}
@@ -344,7 +344,7 @@ const DashboardAnimation: React.FC<{ size: number; frame: number }> = ({
             cy={size * 0.45}
             r={size * 0.06}
             fill="#FFD700"
-            data-oid="1jzp9wh"
+            data-oid="5421wwm"
           />
 
           {/* Animated cloud */}
@@ -355,14 +355,14 @@ const DashboardAnimation: React.FC<{ size: number; frame: number }> = ({
             ry={size * 0.04}
             fill="#FFFFFF"
             fillOpacity="0.7"
-            data-oid="wq-2_gm"
+            data-oid="p7jki2f"
           />
         </g>
       )}
 
       {/* Stats cards */}
       {progress > 0.8 && (
-        <g data-oid="3phwimd">
+        <g data-oid="1vor36k">
           <rect
             x={size * 0.55}
             y={size * 0.65}
@@ -370,7 +370,7 @@ const DashboardAnimation: React.FC<{ size: number; frame: number }> = ({
             height={size * 0.1}
             rx={3}
             fill="#0c0e1a"
-            data-oid="0x:.cqr"
+            data-oid="5-yteo3"
           />
 
           <rect
@@ -380,7 +380,7 @@ const DashboardAnimation: React.FC<{ size: number; frame: number }> = ({
             height={size * 0.1}
             rx={3}
             fill="#0c0e1a"
-            data-oid="_qf82e:"
+            data-oid="8hhzjf9"
           />
         </g>
       )}
@@ -404,7 +404,7 @@ const CalculatorsAnimation: React.FC<{ size: number; frame: number }> = ({
       height={size}
       viewBox={`0 0 ${size} ${size}`}
       xmlns="http://www.w3.org/2000/svg"
-      data-oid="sxha6px"
+      data-oid="23jwup."
     >
       {/* Calculator body */}
       <rect
@@ -416,7 +416,7 @@ const CalculatorsAnimation: React.FC<{ size: number; frame: number }> = ({
         fill="#0c0e1a"
         stroke="#00e6ff"
         strokeWidth="2"
-        data-oid="umn9rhp"
+        data-oid="6oexnga"
       />
 
       {/* Calculator screen */}
@@ -427,7 +427,7 @@ const CalculatorsAnimation: React.FC<{ size: number; frame: number }> = ({
         height={size * 0.15}
         rx={3}
         fill="#141629"
-        data-oid="h16oyxd"
+        data-oid="fspoxp1"
       />
 
       {/* Screen text (animated to show calculation) */}
@@ -438,13 +438,13 @@ const CalculatorsAnimation: React.FC<{ size: number; frame: number }> = ({
         fontSize={size * 0.1}
         textAnchor="end"
         fill="#00e6ff"
-        data-oid="57cd0wt"
+        data-oid="fw.9iki"
       >
         {(123 + (Math.floor(frame / 10) % 10)).toString()}
       </text>
 
       {/* Calculator buttons */}
-      <g data-oid="qws7jwe">
+      <g data-oid="12f4-_:">
         {/* Row 1 */}
         <rect
           x={size * 0.25}
@@ -456,7 +456,7 @@ const CalculatorsAnimation: React.FC<{ size: number; frame: number }> = ({
           strokeWidth="1"
           stroke="#333"
           transform={`translate(0,${buttonPress(0)})`}
-          data-oid="qwwkc_5"
+          data-oid="wka_pqj"
         />
 
         <rect
@@ -469,7 +469,7 @@ const CalculatorsAnimation: React.FC<{ size: number; frame: number }> = ({
           strokeWidth="1"
           stroke="#333"
           transform={`translate(0,${buttonPress(1)})`}
-          data-oid="-:awk2n"
+          data-oid="7lb9kgf"
         />
 
         <rect
@@ -482,7 +482,7 @@ const CalculatorsAnimation: React.FC<{ size: number; frame: number }> = ({
           strokeWidth="1"
           stroke="#333"
           transform={`translate(0,${buttonPress(2)})`}
-          data-oid="09-04j-"
+          data-oid="w2ulugh"
         />
 
         <rect
@@ -495,7 +495,7 @@ const CalculatorsAnimation: React.FC<{ size: number; frame: number }> = ({
           strokeWidth="1"
           stroke="#333"
           transform={`translate(0,${buttonPress(3)})`}
-          data-oid="hgdtt13"
+          data-oid="xzg0tel"
         />
 
         {/* Row 2 */}
@@ -509,7 +509,7 @@ const CalculatorsAnimation: React.FC<{ size: number; frame: number }> = ({
           strokeWidth="1"
           stroke="#333"
           transform={`translate(0,${buttonPress(4)})`}
-          data-oid="mecjne3"
+          data-oid="nw5g4w2"
         />
 
         <rect
@@ -522,7 +522,7 @@ const CalculatorsAnimation: React.FC<{ size: number; frame: number }> = ({
           strokeWidth="1"
           stroke="#333"
           transform={`translate(0,${buttonPress(5)})`}
-          data-oid="--v6txr"
+          data-oid="-3ykohn"
         />
 
         <rect
@@ -535,7 +535,7 @@ const CalculatorsAnimation: React.FC<{ size: number; frame: number }> = ({
           strokeWidth="1"
           stroke="#333"
           transform={`translate(0,${buttonPress(6)})`}
-          data-oid="ltlhgi5"
+          data-oid="e6nt2uy"
         />
 
         <rect
@@ -548,7 +548,7 @@ const CalculatorsAnimation: React.FC<{ size: number; frame: number }> = ({
           strokeWidth="1"
           stroke="#333"
           transform={`translate(0,${buttonPress(7)})`}
-          data-oid="8o_tra3"
+          data-oid="dxoqj3m"
         />
 
         {/* Row 3 */}
@@ -562,7 +562,7 @@ const CalculatorsAnimation: React.FC<{ size: number; frame: number }> = ({
           strokeWidth="1"
           stroke="#333"
           transform={`translate(0,${buttonPress(8)})`}
-          data-oid="578-waq"
+          data-oid="djwrgot"
         />
 
         <rect
@@ -575,7 +575,7 @@ const CalculatorsAnimation: React.FC<{ size: number; frame: number }> = ({
           strokeWidth="1"
           stroke="#333"
           transform={`translate(0,${buttonPress(9)})`}
-          data-oid="w5ynuhr"
+          data-oid="xsfx-h9"
         />
 
         <rect
@@ -588,7 +588,7 @@ const CalculatorsAnimation: React.FC<{ size: number; frame: number }> = ({
           strokeWidth="1"
           stroke="#333"
           transform={`translate(0,${buttonPress(10)})`}
-          data-oid="xtc:n96"
+          data-oid="epcrzy_"
         />
 
         <rect
@@ -601,7 +601,7 @@ const CalculatorsAnimation: React.FC<{ size: number; frame: number }> = ({
           strokeWidth="1"
           stroke="#333"
           transform={`translate(0,${buttonPress(11)})`}
-          data-oid="00gouoh"
+          data-oid="au120_t"
         />
 
         {/* Row 4 - Equal button */}
@@ -615,7 +615,7 @@ const CalculatorsAnimation: React.FC<{ size: number; frame: number }> = ({
           strokeWidth="1"
           stroke="#333"
           transform={`translate(0,${buttonPress(12)})`}
-          data-oid="kkq8c_f"
+          data-oid="k0xemv_"
         />
       </g>
     </svg>
@@ -633,7 +633,7 @@ const WeatherAnimation: React.FC<{ size: number; frame: number }> = ({
       height={size}
       viewBox={`0 0 ${size} ${size}`}
       xmlns="http://www.w3.org/2000/svg"
-      data-oid="jo4suoe"
+      data-oid="_-4l6hk"
     >
       {/* Sky background */}
       <rect
@@ -643,13 +643,13 @@ const WeatherAnimation: React.FC<{ size: number; frame: number }> = ({
         height={size}
         rx={10}
         fill="#0c0e1a"
-        data-oid="w5jpa6y"
+        data-oid=":wzszwm"
       />
 
       {/* Sun with rays */}
       <g
         transform={`translate(${size * 0.3}, ${size * 0.35})`}
-        data-oid="5ss7bp4"
+        data-oid="rt6z5.h"
       >
         <circle
           cx={0}
@@ -657,7 +657,7 @@ const WeatherAnimation: React.FC<{ size: number; frame: number }> = ({
           r={size * 0.12}
           fill="#FFD700"
           filter="drop-shadow(0 0 5px #FFD700)"
-          data-oid="vi-00o2"
+          data-oid="_8y-wao"
         />
 
         {/* Sun rays (animated) */}
@@ -677,7 +677,7 @@ const WeatherAnimation: React.FC<{ size: number; frame: number }> = ({
             stroke="#FFD700"
             strokeWidth="2"
             strokeOpacity={0.6 + 0.4 * Math.sin(frame * 0.1 + i)}
-            data-oid="8zmumnc"
+            data-oid=".4ni-6y"
           />
         ))}
       </g>
@@ -685,7 +685,7 @@ const WeatherAnimation: React.FC<{ size: number; frame: number }> = ({
       {/* Cloud (animated) */}
       <g
         transform={`translate(${size * 0.6 + 3 * Math.sin(frame * 0.05)}, ${size * 0.4})`}
-        data-oid="4vd2qn8"
+        data-oid="wzl.zuv"
       >
         <ellipse
           cx={0}
@@ -694,7 +694,7 @@ const WeatherAnimation: React.FC<{ size: number; frame: number }> = ({
           ry={size * 0.08}
           fill="white"
           fillOpacity="0.8"
-          data-oid="id5.w.v"
+          data-oid="::agm8y"
         />
 
         <ellipse
@@ -704,7 +704,7 @@ const WeatherAnimation: React.FC<{ size: number; frame: number }> = ({
           ry={size * 0.06}
           fill="white"
           fillOpacity="0.8"
-          data-oid="6fifsm_"
+          data-oid="jnz6x9_"
         />
 
         <ellipse
@@ -714,7 +714,7 @@ const WeatherAnimation: React.FC<{ size: number; frame: number }> = ({
           ry={size * 0.05}
           fill="white"
           fillOpacity="0.8"
-          data-oid="2ep0tja"
+          data-oid="o36y64q"
         />
       </g>
 
@@ -733,7 +733,7 @@ const WeatherAnimation: React.FC<{ size: number; frame: number }> = ({
             stroke="#00e6ff"
             strokeWidth="2"
             strokeOpacity={offset > 25 ? 0 : 1}
-            data-oid="b..qlbs"
+            data-oid="hlpcpac"
           />
         );
       })}
@@ -741,7 +741,7 @@ const WeatherAnimation: React.FC<{ size: number; frame: number }> = ({
       {/* Construction element */}
       <g
         transform={`translate(${size * 0.25}, ${size * 0.7})`}
-        data-oid="-e9mtt2"
+        data-oid="dofre0a"
       >
         <rect
           x={0}
@@ -749,7 +749,7 @@ const WeatherAnimation: React.FC<{ size: number; frame: number }> = ({
           width={size * 0.5}
           height={size * 0.1}
           fill="#8B4513"
-          data-oid="7mdot.1"
+          data-oid="q18scmm"
         />
 
         <rect
@@ -758,7 +758,7 @@ const WeatherAnimation: React.FC<{ size: number; frame: number }> = ({
           width={size * 0.05}
           height={size * 0.2}
           fill="#A0522D"
-          data-oid="p.milzk"
+          data-oid="_nkoff4"
         />
 
         <rect
@@ -767,7 +767,7 @@ const WeatherAnimation: React.FC<{ size: number; frame: number }> = ({
           width={size * 0.05}
           height={size * 0.15}
           fill="#A0522D"
-          data-oid="_65-1.t"
+          data-oid="2v5tylx"
         />
 
         <rect
@@ -776,15 +776,15 @@ const WeatherAnimation: React.FC<{ size: number; frame: number }> = ({
           width={size * 0.3}
           height={size * 0.05}
           fill="#A0522D"
-          data-oid="il7eh6s"
+          data-oid="ifbnahn"
         />
 
         {/* Construction warning sign (blinking) */}
-        <g opacity={0.5 + 0.5 * Math.sin(frame * 0.2)} data-oid="zet7xjx">
+        <g opacity={0.5 + 0.5 * Math.sin(frame * 0.2)} data-oid="iubq.vf">
           <polygon
             points={`${size * 0.25},${-size * 0.3} ${size * 0.2},${-size * 0.25} ${size * 0.3},${-size * 0.25}`}
             fill="yellow"
-            data-oid="mracfxu"
+            data-oid="i_st.b1"
           />
 
           <text
@@ -793,7 +793,7 @@ const WeatherAnimation: React.FC<{ size: number; frame: number }> = ({
             fontSize="8"
             textAnchor="middle"
             fill="black"
-            data-oid="no5jepv"
+            data-oid="bvlblfj"
           >
             !
           </text>
@@ -809,7 +809,7 @@ const WeatherAnimation: React.FC<{ size: number; frame: number }> = ({
         textAnchor="middle"
         fill="#00e6ff"
         opacity={0.5 + 0.5 * Math.sin(frame * 0.1)}
-        data-oid="d8dgn6p"
+        data-oid="pq:3e46"
       >
         IMPACT
       </text>
@@ -838,7 +838,7 @@ const TimerAnimation: React.FC<{ size: number; frame: number }> = ({
       height={size}
       viewBox={`0 0 ${size} ${size}`}
       xmlns="http://www.w3.org/2000/svg"
-      data-oid="xk0me8m"
+      data-oid="gob7:w9"
     >
       {/* Timer outer circle */}
       <circle
@@ -848,7 +848,7 @@ const TimerAnimation: React.FC<{ size: number; frame: number }> = ({
         fill="none"
         stroke="#00e6ff"
         strokeWidth="3"
-        data-oid="bcsaba2"
+        data-oid="nj:xas6"
       />
 
       {/* Timer face */}
@@ -857,7 +857,7 @@ const TimerAnimation: React.FC<{ size: number; frame: number }> = ({
         cy={size / 2}
         r={size * 0.35}
         fill="#0c0e1a"
-        data-oid=":lkx9gq"
+        data-oid="6bcc-xa"
       />
 
       {/* Timer digital display */}
@@ -868,7 +868,7 @@ const TimerAnimation: React.FC<{ size: number; frame: number }> = ({
         height={size * 0.2}
         rx={3}
         fill="#141629"
-        data-oid="v-4nk5n"
+        data-oid="d-cmp5q"
       />
 
       {/* Digital time */}
@@ -879,7 +879,7 @@ const TimerAnimation: React.FC<{ size: number; frame: number }> = ({
         fontSize={size * 0.13}
         textAnchor="middle"
         fill="#00e6ff"
-        data-oid="baj0fno"
+        data-oid="r:a7sq-"
       >
         {timeDisplay()}
       </text>
@@ -891,7 +891,7 @@ const TimerAnimation: React.FC<{ size: number; frame: number }> = ({
         r={size * 0.08}
         fill={frame % 120 < 60 ? "#00e6ff" : "#ff3464"}
         opacity={indicatorOpacity}
-        data-oid="bed9ikp"
+        data-oid="gel256j"
       />
 
       {/* Play/stop icon */}
@@ -899,7 +899,7 @@ const TimerAnimation: React.FC<{ size: number; frame: number }> = ({
         <polygon
           points={`${size * 0.46},${size * 0.72} ${size * 0.46},${size * 0.78} ${size * 0.54},${size * 0.75}`}
           fill="#0c0e1a"
-          data-oid="ae_ub37"
+          data-oid="8mibd7t"
         />
       ) : (
         <rect
@@ -908,7 +908,7 @@ const TimerAnimation: React.FC<{ size: number; frame: number }> = ({
           width={size * 0.1}
           height={size * 0.06}
           fill="#0c0e1a"
-          data-oid="r_haj1d"
+          data-oid="j3x2b0f"
         />
       )}
 
@@ -919,7 +919,7 @@ const TimerAnimation: React.FC<{ size: number; frame: number }> = ({
         r={size * 0.04}
         fill="#ff3464"
         opacity={indicatorOpacity}
-        data-oid="98i6_iw"
+        data-oid="w7kwptm"
       />
 
       {/* Timer label */}
@@ -930,7 +930,7 @@ const TimerAnimation: React.FC<{ size: number; frame: number }> = ({
         fontSize={size * 0.06}
         textAnchor="middle"
         fill="white"
-        data-oid="30--yo4"
+        data-oid="nwx_6qf"
       >
         JOB TIMER
       </text>
@@ -956,7 +956,7 @@ const ModelsAnimation: React.FC<{ size: number; frame: number }> = ({
       height={size}
       viewBox={`0 0 ${size} ${size}`}
       xmlns="http://www.w3.org/2000/svg"
-      data-oid="bw.exry"
+      data-oid="cno_ty:"
     >
       {/* Background */}
       <rect
@@ -966,13 +966,13 @@ const ModelsAnimation: React.FC<{ size: number; frame: number }> = ({
         height={size}
         rx={10}
         fill="#0c0e1a"
-        data-oid="k2anzed"
+        data-oid="20oa7lo"
       />
 
       {/* 3D Cube */}
       <g
         transform={`translate(${size / 2}, ${size / 2}) rotateX(${rotateX}deg) rotateY(${rotateY}deg)`}
-        data-oid="esck.eh"
+        data-oid="5q8wamw"
       >
         {/* Front face */}
         <polygon
@@ -981,7 +981,7 @@ const ModelsAnimation: React.FC<{ size: number; frame: number }> = ({
           fillOpacity="0.3"
           stroke="#00e6ff"
           strokeWidth="2"
-          data-oid="zm8k228"
+          data-oid="a:fx_jr"
         />
 
         {/* Top face */}
@@ -991,7 +991,7 @@ const ModelsAnimation: React.FC<{ size: number; frame: number }> = ({
           fillOpacity="0.3"
           stroke="#00b4ff"
           strokeWidth="2"
-          data-oid="yzxezkc"
+          data-oid="r726y2."
         />
 
         {/* Right face */}
@@ -1001,15 +1001,15 @@ const ModelsAnimation: React.FC<{ size: number; frame: number }> = ({
           fillOpacity="0.3"
           stroke="#00f0c8"
           strokeWidth="2"
-          data-oid="891uh:8"
+          data-oid="t5h0uxx"
         />
       </g>
 
       {/* 3D wireframe grid */}
-      <g transform={`translate(${size / 2}, ${size / 2})`} data-oid="1grt:dk">
+      <g transform={`translate(${size / 2}, ${size / 2})`} data-oid="3-hu7z_">
         {/* Grid lines */}
         {[...Array(5)].map((_, i) => (
-          <g key={i} data-oid="s4gd:l4">
+          <g key={i} data-oid="-d3mhi9">
             <line
               x1={-size * 0.3 + i * size * 0.15}
               y1={-size * 0.3}
@@ -1018,7 +1018,7 @@ const ModelsAnimation: React.FC<{ size: number; frame: number }> = ({
               stroke="#00e6ff"
               strokeOpacity="0.2"
               strokeWidth="1"
-              data-oid="j84n:9z"
+              data-oid="vbhpk6:"
             />
 
             <line
@@ -1029,14 +1029,14 @@ const ModelsAnimation: React.FC<{ size: number; frame: number }> = ({
               stroke="#00e6ff"
               strokeOpacity="0.2"
               strokeWidth="1"
-              data-oid="ro17vd4"
+              data-oid="._54-:n"
             />
           </g>
         ))}
       </g>
 
       {/* Measurement dimension lines */}
-      <g data-oid="k8rs0xr">
+      <g data-oid="h6g0vmp">
         <line
           x1={size * 0.2}
           y1={size * 0.8}
@@ -1045,7 +1045,7 @@ const ModelsAnimation: React.FC<{ size: number; frame: number }> = ({
           stroke="#00f0c8"
           strokeWidth="1"
           strokeDasharray="4,2"
-          data-oid="1yyzkoi"
+          data-oid="7s817it"
         />
 
         <line
@@ -1055,7 +1055,7 @@ const ModelsAnimation: React.FC<{ size: number; frame: number }> = ({
           y2={size * 0.82}
           stroke="#00f0c8"
           strokeWidth="1"
-          data-oid="eqg373a"
+          data-oid="b-rfkgr"
         />
 
         <line
@@ -1065,7 +1065,7 @@ const ModelsAnimation: React.FC<{ size: number; frame: number }> = ({
           y2={size * 0.82}
           stroke="#00f0c8"
           strokeWidth="1"
-          data-oid="b1782tk"
+          data-oid="d.bo7h."
         />
 
         <text
@@ -1075,7 +1075,7 @@ const ModelsAnimation: React.FC<{ size: number; frame: number }> = ({
           fontSize={size * 0.04}
           textAnchor="middle"
           fill="#00f0c8"
-          data-oid="p1q7y4a"
+          data-oid="uu8ps-j"
         >
           600mm
         </text>
@@ -1090,7 +1090,7 @@ const ModelsAnimation: React.FC<{ size: number; frame: number }> = ({
         textAnchor="middle"
         fill="white"
         fontWeight="bold"
-        data-oid="r0uliwt"
+        data-oid="qpo1mxd"
       >
         3D MODEL
       </text>
@@ -1113,7 +1113,7 @@ const CompletedAnimation: React.FC<{ size: number; frame: number }> = ({
       height={size}
       viewBox={`0 0 ${size} ${size}`}
       xmlns="http://www.w3.org/2000/svg"
-      data-oid="5rutbu."
+      data-oid=".uzuixx"
     >
       {/* Circle background */}
       <circle
@@ -1125,7 +1125,7 @@ const CompletedAnimation: React.FC<{ size: number; frame: number }> = ({
         strokeWidth="3"
         strokeDasharray={`${2 * Math.PI * size * 0.35}`}
         strokeDashoffset={`${2 * Math.PI * size * 0.35 * (1 - Math.min(1, frame / 30))}`}
-        data-oid="axy9.pr"
+        data-oid="a7thhod"
       />
 
       {/* Checkmark */}
@@ -1138,7 +1138,7 @@ const CompletedAnimation: React.FC<{ size: number; frame: number }> = ({
         strokeLinejoin="round"
         strokeDasharray={`${checkmarkLength}`}
         strokeDashoffset={`${checkmarkLength - drawLength}`}
-        data-oid="rlde1la"
+        data-oid="8_ytaql"
       />
 
       {/* Particles effect */}
@@ -1154,7 +1154,7 @@ const CompletedAnimation: React.FC<{ size: number; frame: number }> = ({
               r={size * 0.02}
               fill="#00e6ff"
               opacity={(60 - frame) / 30}
-              data-oid="27qk4_q"
+              data-oid="mx1mxub"
             />
           );
         })}
@@ -1168,7 +1168,7 @@ const CompletedAnimation: React.FC<{ size: number; frame: number }> = ({
         textAnchor="middle"
         fill="white"
         opacity={Math.min(1, Math.max(0, (frame - 40) / 10))}
-        data-oid="v7_ps:w"
+        data-oid="-kfhoe2"
       >
         COMPLETE!
       </text>
@@ -1187,7 +1187,7 @@ const DefaultAnimation: React.FC<{ size: number; frame: number }> = ({
       height={size}
       viewBox={`0 0 ${size} ${size}`}
       xmlns="http://www.w3.org/2000/svg"
-      data-oid="w.nccf2"
+      data-oid=".am681l"
     >
       <circle
         cx={size / 2}
@@ -1196,7 +1196,7 @@ const DefaultAnimation: React.FC<{ size: number; frame: number }> = ({
         fill="none"
         stroke="#00e6ff"
         strokeWidth="3"
-        data-oid="8hfwjzp"
+        data-oid="ylsxgu-"
       />
 
       <text
@@ -1206,7 +1206,7 @@ const DefaultAnimation: React.FC<{ size: number; frame: number }> = ({
         textAnchor="middle"
         fill="#00e6ff"
         fontSize={size * 0.2}
-        data-oid="lzr4bpc"
+        data-oid="lvthllf"
       >
         STR8
       </text>
@@ -1217,7 +1217,7 @@ const DefaultAnimation: React.FC<{ size: number; frame: number }> = ({
         textAnchor="middle"
         fill="#00f0c8"
         fontSize={size * 0.1}
-        data-oid="whwja0h"
+        data-oid="r3tp_d6"
       >
         BUILD
       </text>

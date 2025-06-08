@@ -187,21 +187,21 @@ const AdminDashboard: FC = () => {
       <div
         key={index}
         className="flex flex-col items-center"
-        data-oid="gdf2joj"
+        data-oid="3gaqm43"
       >
-        <div className="h-32 flex items-end space-x-1 mb-1" data-oid=":44pktz">
+        <div className="h-32 flex items-end space-x-1 mb-1" data-oid="9pugemc">
           <div
             className="w-5 rounded-t bg-purple-600 transition-all duration-500"
             style={{ height: `${(data.users / maxSessions) * 100}%` }}
-            data-oid="llj5gy8"
+            data-oid="q_jg.si"
           ></div>
           <div
             className="w-5 rounded-t bg-cyan"
             style={{ height: `${(data.sessions / maxSessions) * 100}%` }}
-            data-oid="yz8.b0-"
+            data-oid="qxw3a5a"
           ></div>
         </div>
-        <span className="text-xs text-gray-400" data-oid="a4pv7q2">
+        <span className="text-xs text-gray-400" data-oid="uuw7pj:">
           {data.month}
         </span>
       </div>
@@ -213,8 +213,8 @@ const AdminDashboard: FC = () => {
     const dashOffset = dashArray - (dashArray * percentage) / 100;
 
     return (
-      <div className="relative w-20 h-20" data-oid="vc721qa">
-        <svg className="w-full h-full" viewBox="0 0 36 36" data-oid="p4z12:5">
+      <div className="relative w-20 h-20" data-oid=":vw652b">
+        <svg className="w-full h-full" viewBox="0 0 36 36" data-oid=".m9ramg">
           <circle
             cx="18"
             cy="18"
@@ -222,7 +222,7 @@ const AdminDashboard: FC = () => {
             fill="none"
             className="stroke-gray-700"
             strokeWidth="3"
-            data-oid="gl_zwk9"
+            data-oid="zu5k2l8"
           />
 
           <circle
@@ -236,14 +236,14 @@ const AdminDashboard: FC = () => {
             strokeDashoffset={dashOffset}
             strokeLinecap="round"
             transform="rotate(-90 18 18)"
-            data-oid="zvev4:8"
+            data-oid="397t4vi"
           />
         </svg>
         <div
           className="absolute inset-0 flex items-center justify-center"
-          data-oid="xtbtfzn"
+          data-oid="99ckqjc"
         >
-          <span className="text-sm font-medium text-cyan" data-oid="a9dmryo">
+          <span className="text-sm font-medium text-cyan" data-oid="2vjnx1u">
             {percentage}%
           </span>
         </div>
@@ -252,28 +252,28 @@ const AdminDashboard: FC = () => {
   };
 
   return (
-    <div className="space-y-6" data-oid="l-u072z">
-      <div className="flex justify-between items-center" data-oid="9giq_22">
-        <h2 className="text-xl font-bold text-white" data-oid="h8l._-8">
+    <div className="space-y-6" data-oid="-orbrvf">
+      <div className="flex justify-between items-center" data-oid="-rjq23d">
+        <h2 className="text-xl font-bold text-white" data-oid="2hscj5r">
           Analytics Dashboard
         </h2>
         <button
           className="flex items-center text-sm text-cyan bg-space-800 px-3 py-1.5 rounded-md hover:bg-space-700 transition-colors"
           onClick={handleRefresh}
           disabled={isLoading}
-          data-oid="607a4qy"
+          data-oid="hzp-9a1"
         >
           {isLoading ? (
             <>
               <RefreshCcw
                 className="h-3.5 w-3.5 mr-1.5 animate-spin"
-                data-oid="4fj9c9o"
+                data-oid="r4vo76a"
               />
               Refreshing...
             </>
           ) : (
             <>
-              <RefreshCcw className="h-3.5 w-3.5 mr-1.5" data-oid="ecbssng" />
+              <RefreshCcw className="h-3.5 w-3.5 mr-1.5" data-oid="jdwj9y3" />
               Refresh
             </>
           )}
@@ -284,14 +284,14 @@ const AdminDashboard: FC = () => {
       {error && (
         <div
           className="bg-red-900/20 border border-red-800 rounded-xl p-4 flex items-center"
-          data-oid="c61:6i."
+          data-oid="2e59i7f"
         >
           <AlertTriangle
             className="h-5 w-5 text-red-400 mr-3"
-            data-oid="uvwkb9t"
+            data-oid="zjk3ou2"
           />
 
-          <p className="text-red-300" data-oid=".:jw__m">
+          <p className="text-red-300" data-oid="xd0b_x9">
             {error}
           </p>
         </div>
@@ -300,48 +300,48 @@ const AdminDashboard: FC = () => {
       {/* Stats Grid */}
       <div
         className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4"
-        data-oid="owgfkx1"
+        data-oid="6-d5pn-"
       >
         {/* Active Users */}
         <div
           className="bg-space-900 rounded-xl p-4 glass-card"
-          data-oid="_n:tkn1"
+          data-oid="_tr1.q_"
         >
-          <div className="flex justify-between items-start" data-oid="h:_73-8">
-            <div data-oid="rcqm20b">
-              <p className="text-sm text-gray-400 mb-1" data-oid="kqy.9g6">
+          <div className="flex justify-between items-start" data-oid="i91:r1k">
+            <div data-oid="q2sg.zw">
+              <p className="text-sm text-gray-400 mb-1" data-oid="k-g5qwi">
                 Active Users
               </p>
-              <h3 className="text-xl font-bold text-white" data-oid="x-sepr_">
+              <h3 className="text-xl font-bold text-white" data-oid="ekm9-h2">
                 {stats.activeUsers.toLocaleString()}
               </h3>
             </div>
-            <span className="p-2 rounded-lg bg-space-800" data-oid="owpktak">
-              <Users className="h-4 w-4 text-green-400" data-oid="l:c6ur6" />
+            <span className="p-2 rounded-lg bg-space-800" data-oid=":wo9cft">
+              <Users className="h-4 w-4 text-green-400" data-oid="37-yndq" />
             </span>
           </div>
-          <div className="mt-3 flex items-center" data-oid="-e5vz:5">
+          <div className="mt-3 flex items-center" data-oid="xn.7:ot">
             <span
               className={`text-xs font-medium ${
                 stats.userGrowth >= 0 ? "text-green-400" : "text-red-400"
               }`}
-              data-oid="cvty-v7"
+              data-oid="scn.zxo"
             >
               {stats.userGrowth >= 0 ? "+" : ""}
               {stats.userGrowth}%
             </span>
-            <span className="text-xs text-gray-500 ml-1" data-oid="a043l1:">
+            <span className="text-xs text-gray-500 ml-1" data-oid="3hjg9e2">
               from last month
             </span>
             {stats.userGrowth >= 0 ? (
               <TrendingUp
                 className="h-3 w-3 text-green-400 ml-1"
-                data-oid="9o5isr9"
+                data-oid="w4g2a98"
               />
             ) : (
               <TrendingUp
                 className="h-3 w-3 text-red-400 ml-1 transform rotate-180"
-                data-oid="j5-5th2"
+                data-oid="dqm8ang"
               />
             )}
           </div>
@@ -350,43 +350,43 @@ const AdminDashboard: FC = () => {
         {/* Daily Sessions */}
         <div
           className="bg-space-900 rounded-xl p-4 glass-card"
-          data-oid="y0ihi5l"
+          data-oid="tzijmtv"
         >
-          <div className="flex justify-between items-start" data-oid="2ex_8dv">
-            <div data-oid="t039hp:">
-              <p className="text-sm text-gray-400 mb-1" data-oid="d:g2tlt">
+          <div className="flex justify-between items-start" data-oid="5q37agm">
+            <div data-oid="nwn7wmr">
+              <p className="text-sm text-gray-400 mb-1" data-oid="fdaiydm">
                 Daily Sessions
               </p>
-              <h3 className="text-xl font-bold text-white" data-oid="f.6n3dn">
+              <h3 className="text-xl font-bold text-white" data-oid="fthmls1">
                 {stats.dailySessions.toLocaleString()}
               </h3>
             </div>
-            <span className="p-2 rounded-lg bg-space-800" data-oid="5_9i92e">
-              <Activity className="h-4 w-4 text-cyan" data-oid="lpi.oq6" />
+            <span className="p-2 rounded-lg bg-space-800" data-oid="p6bqbf3">
+              <Activity className="h-4 w-4 text-cyan" data-oid="u7msmt:" />
             </span>
           </div>
-          <div className="mt-3 flex items-center" data-oid="mlc32pw">
+          <div className="mt-3 flex items-center" data-oid="jlbbv3x">
             <span
               className={`text-xs font-medium ${
                 stats.sessionGrowth >= 0 ? "text-green-400" : "text-red-400"
               }`}
-              data-oid="r0mzm2u"
+              data-oid="7vykoie"
             >
               {stats.sessionGrowth >= 0 ? "+" : ""}
               {stats.sessionGrowth}%
             </span>
-            <span className="text-xs text-gray-500 ml-1" data-oid="gp7doaw">
+            <span className="text-xs text-gray-500 ml-1" data-oid="bsqphf8">
               from last month
             </span>
             {stats.sessionGrowth >= 0 ? (
               <TrendingUp
                 className="h-3 w-3 text-green-400 ml-1"
-                data-oid="dbf_bf6"
+                data-oid="7_9nfx3"
               />
             ) : (
               <TrendingUp
                 className="h-3 w-3 text-red-400 ml-1 transform rotate-180"
-                data-oid="js:oo:x"
+                data-oid="b965a:a"
               />
             )}
           </div>
@@ -395,43 +395,43 @@ const AdminDashboard: FC = () => {
         {/* Average Usage Time */}
         <div
           className="bg-space-900 rounded-xl p-4 glass-card"
-          data-oid="5jj1_r-"
+          data-oid="p.r7azd"
         >
-          <div className="flex justify-between items-start" data-oid="nlq8s08">
-            <div data-oid=":0b6yz_">
-              <p className="text-sm text-gray-400 mb-1" data-oid="wufv8.z">
+          <div className="flex justify-between items-start" data-oid="4t4wuze">
+            <div data-oid="f9xwtqf">
+              <p className="text-sm text-gray-400 mb-1" data-oid="e21iwrk">
                 Avg Usage Time
               </p>
-              <h3 className="text-xl font-bold text-white" data-oid="ya0u-in">
+              <h3 className="text-xl font-bold text-white" data-oid="f05g:ai">
                 {stats.avgUsageTime}
               </h3>
             </div>
-            <span className="p-2 rounded-lg bg-space-800" data-oid="9o4mooi">
-              <Clock className="h-4 w-4 text-purple-400" data-oid="w5cyjfw" />
+            <span className="p-2 rounded-lg bg-space-800" data-oid="bzx6oiu">
+              <Clock className="h-4 w-4 text-purple-400" data-oid="j58ovg6" />
             </span>
           </div>
-          <div className="mt-3 flex items-center" data-oid="iph6l9z">
+          <div className="mt-3 flex items-center" data-oid=".x5_u5f">
             <span
               className={`text-xs font-medium ${
                 stats.timeGrowth >= 0 ? "text-green-400" : "text-red-400"
               }`}
-              data-oid="6h3d3sq"
+              data-oid=":lrftfn"
             >
               {stats.timeGrowth >= 0 ? "+" : ""}
               {stats.timeGrowth}%
             </span>
-            <span className="text-xs text-gray-500 ml-1" data-oid="lqws5w7">
+            <span className="text-xs text-gray-500 ml-1" data-oid="algr3zy">
               from last month
             </span>
             {stats.timeGrowth >= 0 ? (
               <TrendingUp
                 className="h-3 w-3 text-green-400 ml-1"
-                data-oid="2rmj2jf"
+                data-oid="n8bky:."
               />
             ) : (
               <TrendingUp
                 className="h-3 w-3 text-red-400 ml-1 transform rotate-180"
-                data-oid="menvd5n"
+                data-oid="ao3hsav"
               />
             )}
           </div>
@@ -440,43 +440,43 @@ const AdminDashboard: FC = () => {
         {/* Total Projects */}
         <div
           className="bg-space-900 rounded-xl p-4 glass-card"
-          data-oid="_nd5_d-"
+          data-oid="t4of.ev"
         >
-          <div className="flex justify-between items-start" data-oid="v6m_uwz">
-            <div data-oid="ed3yhex">
-              <p className="text-sm text-gray-400 mb-1" data-oid="qdu9xqj">
+          <div className="flex justify-between items-start" data-oid="5p3e_w9">
+            <div data-oid="migd6zm">
+              <p className="text-sm text-gray-400 mb-1" data-oid="17e4jkp">
                 Total Projects
               </p>
-              <h3 className="text-xl font-bold text-white" data-oid="fvq94kf">
+              <h3 className="text-xl font-bold text-white" data-oid="rxfip9i">
                 {stats.totalProjects.toLocaleString()}
               </h3>
             </div>
-            <span className="p-2 rounded-lg bg-space-800" data-oid="6cegjo-">
-              <FileText className="h-4 w-4 text-blue-400" data-oid="6m4:hzu" />
+            <span className="p-2 rounded-lg bg-space-800" data-oid="g1s5.qa">
+              <FileText className="h-4 w-4 text-blue-400" data-oid="n-9:lqz" />
             </span>
           </div>
-          <div className="mt-3 flex items-center" data-oid="of3yj6v">
+          <div className="mt-3 flex items-center" data-oid="qo44rpn">
             <span
               className={`text-xs font-medium ${
                 stats.projectGrowth >= 0 ? "text-green-400" : "text-red-400"
               }`}
-              data-oid="bz424mz"
+              data-oid="0vc7dzb"
             >
               {stats.projectGrowth >= 0 ? "+" : ""}
               {stats.projectGrowth}%
             </span>
-            <span className="text-xs text-gray-500 ml-1" data-oid="db_zuyk">
+            <span className="text-xs text-gray-500 ml-1" data-oid="f07pcq8">
               from last month
             </span>
             {stats.projectGrowth >= 0 ? (
               <TrendingUp
                 className="h-3 w-3 text-green-400 ml-1"
-                data-oid="9edf28."
+                data-oid="fdv527y"
               />
             ) : (
               <TrendingUp
                 className="h-3 w-3 text-red-400 ml-1 transform rotate-180"
-                data-oid="3x8ascu"
+                data-oid="mtcmzwb"
               />
             )}
           </div>
@@ -484,51 +484,51 @@ const AdminDashboard: FC = () => {
       </div>
 
       {/* Charts and Data */}
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-6" data-oid="9mzh0ri">
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-6" data-oid="sin-wmo">
         <div
           className="lg:col-span-2 bg-space-900 rounded-xl p-4 glass-card"
-          data-oid="miwmzk."
+          data-oid="ziece1m"
         >
           <div
             className="flex justify-between items-center mb-4"
-            data-oid="i-71.ah"
+            data-oid="wrz7ka2"
           >
             <h3
               className="text-lg font-medium text-white flex items-center"
-              data-oid="eesryq0"
+              data-oid="3of.i48"
             >
               <BarChart2
                 className="h-4 w-4 mr-2 text-cyan"
-                data-oid="f8y.or-"
+                data-oid="svd-lg7"
               />
               Users & Sessions
             </h3>
-            <div className="flex space-x-4" data-oid="53e_ofn">
-              <div className="flex items-center" data-oid="ga5suxl">
+            <div className="flex space-x-4" data-oid="7ces-__">
+              <div className="flex items-center" data-oid="xl0v6i5">
                 <span
                   className="w-3 h-3 bg-purple-600 rounded-full mr-1"
-                  data-oid="fa7r2bi"
+                  data-oid="v2xlr.6"
                 ></span>
-                <span className="text-xs text-gray-400" data-oid=".j5aaki">
+                <span className="text-xs text-gray-400" data-oid="azm-jbf">
                   Users
                 </span>
               </div>
-              <div className="flex items-center" data-oid="4i9w72t">
+              <div className="flex items-center" data-oid="q3emy.6">
                 <span
                   className="w-3 h-3 bg-cyan rounded-full mr-1"
-                  data-oid="v6xdj3-"
+                  data-oid="tb1vlot"
                 ></span>
-                <span className="text-xs text-gray-400" data-oid="eo8tj:4">
+                <span className="text-xs text-gray-400" data-oid="k3t04-n">
                   Sessions
                 </span>
               </div>
             </div>
           </div>
 
-          <div className="w-full overflow-x-auto" data-oid="lal73zv">
+          <div className="w-full overflow-x-auto" data-oid="_o1:7l_">
             <div
               className="min-w-[600px] h-[200px] flex justify-between items-end pt-4 px-2"
-              data-oid="i2fe3-m"
+              data-oid="nwi_nzs"
             >
               {generateChartBars()}
             </div>
@@ -537,38 +537,38 @@ const AdminDashboard: FC = () => {
 
         <div
           className="bg-space-900 rounded-xl p-4 glass-card"
-          data-oid="l95i8y_"
+          data-oid="0zzxco0"
         >
           <h3
             className="text-lg font-medium text-white flex items-center mb-4"
-            data-oid="k4xz:9l"
+            data-oid="hyl44dr"
           >
-            <PieChart className="h-4 w-4 mr-2 text-cyan" data-oid="de6ur9n" />
+            <PieChart className="h-4 w-4 mr-2 text-cyan" data-oid="j.s_:l-" />
             System Usage
           </h3>
 
-          <div className="grid grid-cols-2 gap-4" data-oid="u7hz9y2">
-            <div className="flex flex-col items-center" data-oid="1bg.hsb">
+          <div className="grid grid-cols-2 gap-4" data-oid="5lx19f.">
+            <div className="flex flex-col items-center" data-oid="9vp3hu8">
               {generateUsageDonut(systemUsage.cpu)}
-              <span className="text-sm text-white mt-2" data-oid="ugvsu3_">
+              <span className="text-sm text-white mt-2" data-oid="vyh_jut">
                 CPU
               </span>
             </div>
-            <div className="flex flex-col items-center" data-oid="1j1isyz">
+            <div className="flex flex-col items-center" data-oid="-jh3_qq">
               {generateUsageDonut(systemUsage.memory)}
-              <span className="text-sm text-white mt-2" data-oid="1.61bw.">
+              <span className="text-sm text-white mt-2" data-oid="4j9_39n">
                 Memory
               </span>
             </div>
-            <div className="flex flex-col items-center" data-oid="t_9d-8r">
+            <div className="flex flex-col items-center" data-oid="g15hi5_">
               {generateUsageDonut(systemUsage.storage)}
-              <span className="text-sm text-white mt-2" data-oid="1rxf6.j">
+              <span className="text-sm text-white mt-2" data-oid="rht0wmk">
                 Storage
               </span>
             </div>
-            <div className="flex flex-col items-center" data-oid="h7cvdox">
+            <div className="flex flex-col items-center" data-oid="349z7ec">
               {generateUsageDonut(systemUsage.network)}
-              <span className="text-sm text-white mt-2" data-oid="fz.zais">
+              <span className="text-sm text-white mt-2" data-oid="q_1vxf-">
                 Network
               </span>
             </div>
@@ -579,29 +579,29 @@ const AdminDashboard: FC = () => {
       {/* Recent Activity */}
       <div
         className="bg-space-900 rounded-xl p-4 glass-card"
-        data-oid="sp1v4ch"
+        data-oid="4pq9gt_"
       >
-        <h3 className="text-lg font-medium text-white mb-4" data-oid="w0q1kfv">
+        <h3 className="text-lg font-medium text-white mb-4" data-oid="dgv_yf3">
           Recent Activity
         </h3>
 
-        <div className="space-y-3" data-oid="yd5c1:0">
+        <div className="space-y-3" data-oid="zp0dodj">
           {[1, 2, 3, 4, 5].map((_, i) => (
             <div
               key={i}
               className="flex items-start py-2 border-b border-gray-800"
-              data-oid="vj_78nj"
+              data-oid="v3ezjt2"
             >
               <div
                 className="flex-shrink-0 p-2 rounded-md bg-space-800 mr-3"
-                data-oid=":qibfok"
+                data-oid="6tdjqi_"
               >
-                <Activity className="h-4 w-4 text-cyan" data-oid="98_oisk" />
+                <Activity className="h-4 w-4 text-cyan" data-oid="6_8uib." />
               </div>
-              <div data-oid="1.c96mr">
+              <div data-oid="iz46xal">
                 <p
                   className="text-sm text-white font-medium"
-                  data-oid="-60_enx"
+                  data-oid="x5z6z1p"
                 >
                   {
                     [
@@ -613,7 +613,7 @@ const AdminDashboard: FC = () => {
                     ][i % 5]
                   }
                 </p>
-                <p className="text-xs text-gray-400 mt-1" data-oid="rg-5e5n">
+                <p className="text-xs text-gray-400 mt-1" data-oid="67dyo6y">
                   {Math.floor(Math.random() * 60)} minutes ago
                 </p>
               </div>

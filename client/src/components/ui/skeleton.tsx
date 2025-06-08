@@ -8,7 +8,7 @@ function Skeleton({
     <div
       className={cn("animate-pulse rounded-md bg-muted", className)}
       {...props}
-      data-oid="u9yy8gu"
+      data-oid="96uvekh"
     />
   );
 }

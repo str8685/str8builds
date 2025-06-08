@@ -63,14 +63,14 @@ const GlitchText: FC<GlitchTextProps> = ({
       className={`relative inline-block ${className}`}
       style={{ fontSize }}
       onMouseEnter={triggerGlitch}
-      data-oid="hd64j9y"
+      data-oid="xap.lsk"
     >
       <span
         className={`
           relative inline-block font-bold z-10
           ${isGlitching ? "animate-glitch" : ""}
         `}
-        data-oid="7vpti11"
+        data-oid="-b50wm."
       >
         {text}
       </span>
@@ -89,7 +89,7 @@ const GlitchText: FC<GlitchTextProps> = ({
           ${isGlitching ? intensityClasses[intensity] : ""}
         `}
         data-text={text}
-        data-oid="2_vdm9b"
+        data-oid="rc9kcmw"
       />
 
       {/* Blue-channel clone */}
@@ -106,7 +106,7 @@ const GlitchText: FC<GlitchTextProps> = ({
           ${isGlitching ? intensityClasses[intensity] : ""}
         `}
         data-text={text}
-        data-oid="7o5r0qp"
+        data-oid="3m-8hbj"
       />
     </div>
   );

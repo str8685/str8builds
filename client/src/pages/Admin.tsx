@@ -31,22 +31,22 @@ const Admin: FC = () => {
   }, [isAdmin, setLocation]);
 
   return (
-    <main className="container mx-auto px-4 py-4" data-oid="q94e_og">
+    <main className="container mx-auto px-4 py-4" data-oid="zohy9o-">
       <div
         className="flex justify-between items-center mb-6"
-        data-oid="caxt..m"
+        data-oid="pfk347v"
       >
-        <div className="flex items-center gap-2" data-oid="8rd420t">
-          <Shield className="h-6 w-6 text-cyan" data-oid="8vmkyou" />
-          <h2 className="text-2xl font-bold text-white" data-oid="s-6f64.">
+        <div className="flex items-center gap-2" data-oid="l_fvvdq">
+          <Shield className="h-6 w-6 text-cyan" data-oid="a.2n8qd" />
+          <h2 className="text-2xl font-bold text-white" data-oid="9o05b21">
             Admin Panel
           </h2>
         </div>
 
-        <div className="flex items-center gap-2" data-oid="5i6sb-e">
+        <div className="flex items-center gap-2" data-oid="i89citx">
           <span
             className="text-sm text-cyan bg-space-800 px-3 py-1 rounded-full"
-            data-oid="o3wi8vp"
+            data-oid="jvqa:xp"
           >
             v3.4 Admin
           </span>
@@ -56,7 +56,7 @@ const Admin: FC = () => {
       {/* Admin Navigation */}
       <div
         className="mb-6 bg-space-900 rounded-xl p-1 inline-flex flex-wrap"
-        data-oid=".-tzmq4"
+        data-oid="21ewtow"
       >
         <button
           onClick={() => setActiveTab("dashboard")}
@@ -65,9 +65,9 @@ const Admin: FC = () => {
               ? "bg-purple-900 text-cyan"
               : "text-gray-300 hover:bg-space-800"
           }`}
-          data-oid="8qku8ze"
+          data-oid="5:zp3gc"
         >
-          <BarChart2 className="h-4 w-4 mr-2" data-oid="-:t2t9c" />
+          <BarChart2 className="h-4 w-4 mr-2" data-oid="u6.vyqh" />
           Dashboard
         </button>
 
@@ -78,9 +78,9 @@ const Admin: FC = () => {
               ? "bg-purple-900 text-cyan"
               : "text-gray-300 hover:bg-space-800"
           }`}
-          data-oid="yzfsdc6"
+          data-oid="vezf88s"
         >
-          <Users className="h-4 w-4 mr-2" data-oid="l2i.p2w" />
+          <Users className="h-4 w-4 mr-2" data-oid="bykegxv" />
           Users
         </button>
 
@@ -91,9 +91,9 @@ const Admin: FC = () => {
               ? "bg-purple-900 text-cyan"
               : "text-gray-300 hover:bg-space-800"
           }`}
-          data-oid="nx:n:xx"
+          data-oid="af3hw8n"
         >
-          <CreditCard className="h-4 w-4 mr-2" data-oid="4j9g0ab" />
+          <CreditCard className="h-4 w-4 mr-2" data-oid="cmzwmhg" />
           Subscriptions
         </button>
 
@@ -104,9 +104,9 @@ const Admin: FC = () => {
               ? "bg-purple-900 text-cyan"
               : "text-gray-300 hover:bg-space-800"
           }`}
-          data-oid="82xxue_"
+          data-oid=":0f:5:5"
         >
-          <Server className="h-4 w-4 mr-2" data-oid="0dwwk6c" />
+          <Server className="h-4 w-4 mr-2" data-oid="iwuqbir" />
           Maintenance
         </button>
 
@@ -117,9 +117,9 @@ const Admin: FC = () => {
               ? "bg-purple-900 text-cyan"
               : "text-gray-300 hover:bg-space-800"
           }`}
-          data-oid="dfmjf1o"
+          data-oid="t.9em3e"
         >
-          <Settings className="h-4 w-4 mr-2" data-oid="qneva2y" />
+          <Settings className="h-4 w-4 mr-2" data-oid="v:w6.k:" />
           Settings
         </button>
       </div>
@@ -127,18 +127,18 @@ const Admin: FC = () => {
       {/* Tab Content */}
       <div
         className="p-6 rounded-xl glass-card bg-space-900"
-        data-oid=".1wez3:"
+        data-oid="szrzwkx"
       >
-        {activeTab === "dashboard" && <AdminDashboard data-oid="7r5rwx." />}
-        {activeTab === "users" && <UserManagement data-oid="v4uv9:d" />}
+        {activeTab === "dashboard" && <AdminDashboard data-oid="f8hjh1w" />}
+        {activeTab === "users" && <UserManagement data-oid="j9180qb" />}
         {activeTab === "subscriptions" && (
-          <SubscriptionManagement data-oid="s.pt3.a" />
+          <SubscriptionManagement data-oid="vy5hbpu" />
         )}
         {activeTab === "maintenance" && (
-          <SystemMaintenance data-oid="jb:z2he" />
+          <SystemMaintenance data-oid="ddl67rv" />
         )}
         {activeTab === "settings" && (
-          <SimpleSystemSettings data-oid="fw1bri2" />
+          <SimpleSystemSettings data-oid="h:ojhmb" />
         )}
       </div>
     </main>

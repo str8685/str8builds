@@ -19,26 +19,26 @@ const Settings = lazy(() => import("@/pages/Settings"));
 const PageLoader: FC = () => (
   <div
     className="flex items-center justify-center min-h-screen bg-gradient-to-br from-slate-900 to-slate-800"
-    data-oid="x:5ghgf"
+    data-oid="uobg:jk"
   >
-    <div className="relative" data-oid="99tn_cv">
+    <div className="relative" data-oid="06sgk0w">
       {/* Animated background elements - matches space theme */}
       <div
         className="absolute inset-0 -z-10 overflow-hidden opacity-30"
-        data-oid="rq8zq3z"
+        data-oid="3xs.:56"
       >
-        <div className="star-small" data-oid="xng5pie"></div>
-        <div className="star-medium" data-oid="ec0lrz6"></div>
-        <div className="star-large" data-oid="l1imcso"></div>
+        <div className="star-small" data-oid="i817cwn"></div>
+        <div className="star-medium" data-oid="i6l1k0j"></div>
+        <div className="star-large" data-oid="tzng_m6"></div>
       </div>
 
       {/* Glow effect with pulse animation */}
       <div
         className="absolute -inset-10 bg-cyan-500/20 rounded-full blur-3xl opacity-70 animate-pulse"
-        data-oid="fjx:td9"
+        data-oid="nss4gtv"
       ></div>
 
-      <LogoLoader data-oid="yxkmxsx" />
+      <LogoLoader data-oid="oobx.7v" />
     </div>
   </div>
 );
@@ -56,16 +56,16 @@ const ProtectedRoute: FC<ProtectedRouteProps> = ({
   const { user, isLoading } = useAuth();
 
   if (isLoading) {
-    return <PageLoader data-oid="4ztje0s" />;
+    return <PageLoader data-oid="umjs0ln" />;
   }
 
   return (
     <Route
       path={path}
       component={() =>
-        user ? <Component data-oid="lyh534f" /> : <Login data-oid="v9d-s6o" />
+        user ? <Component data-oid="p-o0z09" /> : <Login data-oid="a5bsl60" />
       }
-      data-oid="g4ryq0w"
+      data-oid="zpwtef."
     />
   );
 };
@@ -91,38 +91,38 @@ const AppRoutes: FC = () => {
   });
 
   return (
-    <Suspense fallback={<PageLoader data-oid="f7m.wr:" />} data-oid="o-r9xmc">
-      <Switch data-oid="p9508s_">
-        <Route path="/login" component={Login} data-oid="qffc_5u" />
-        <Route path="/register" component={Register} data-oid="_1x89g." />
+    <Suspense fallback={<PageLoader data-oid="825a_zw" />} data-oid="yuno-yy">
+      <Switch data-oid="817d.74">
+        <Route path="/login" component={Login} data-oid="htbz:sp" />
+        <Route path="/register" component={Register} data-oid="hsptbcw" />
 
-        <ProtectedRoute path="/" component={Dashboard} data-oid="w7:-jxp" />
+        <ProtectedRoute path="/" component={Dashboard} data-oid="ed8acar" />
         <ProtectedRoute
           path="/dashboard"
           component={Dashboard}
-          data-oid="4mg.da3"
+          data-oid="6bubkdi"
         />
 
         <ProtectedRoute
           path="/projects"
           component={Projects}
-          data-oid="4eps_8n"
+          data-oid="6q2jnl9"
         />
 
         <ProtectedRoute
           path="/clients"
           component={Clients}
-          data-oid="e601xl0"
+          data-oid="coz7zm4"
         />
 
-        <ProtectedRoute path="/timer" component={Timer} data-oid="o9hctwj" />
+        <ProtectedRoute path="/timer" component={Timer} data-oid="l5bgyhn" />
         <ProtectedRoute
           path="/settings"
           component={Settings}
-          data-oid="2wtekgx"
+          data-oid="igf.kwq"
         />
 
-        <Route component={NotFound} data-oid="1k6axpw" />
+        <Route component={NotFound} data-oid="q-kf--a" />
       </Switch>
     </Suspense>
   );

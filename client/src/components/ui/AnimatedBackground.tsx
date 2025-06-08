@@ -228,20 +228,20 @@ const AnimatedBackground: FC<AnimatedBackgroundProps> = ({
     <>
       <div
         className="fixed top-0 left-0 right-0 bottom-0 bg-space-950 z-[-1]"
-        data-oid="jsn6n_-"
+        data-oid="rge-7me"
       >
         <canvas
           ref={canvasRef}
           className={`absolute top-0 left-0 w-full h-full ${className}`}
           style={{ zIndex: 0 }}
-          data-oid="y3v01un"
+          data-oid="r-1rq3j"
         />
 
         {/* Overlay gradient for better visibility */}
         <div
           className="absolute inset-0 bg-gradient-to-b from-space-950/50 to-space-950/80"
           style={{ zIndex: 1 }}
-          data-oid="tkzvx:m"
+          data-oid="wu2ketc"
         ></div>
       </div>
 
@@ -270,7 +270,7 @@ const AnimatedBackground: FC<AnimatedBackgroundProps> = ({
             : "Switch to power saving mode"
         }
         data-component-name="AnimatedBackground"
-        data-oid="d7ydu_5"
+        data-oid="r-8x:rb"
       >
         {/* Glow effect for button */}
         {isButtonHovered && (
@@ -279,7 +279,7 @@ const AnimatedBackground: FC<AnimatedBackgroundProps> = ({
             absolute inset-0 -z-10 rounded-lg blur-md opacity-30
             ${isLowPowerMode ? "bg-green-500/20" : "bg-cyan-500/20"}
           `}
-            data-oid="pensy:6"
+            data-oid="-1h.wtu"
           ></div>
         )}
 
@@ -290,7 +290,7 @@ const AnimatedBackground: FC<AnimatedBackgroundProps> = ({
           ${isButtonHovered ? "scale-110" : ""}
           transition-transform duration-300
         `}
-          data-oid="stjouko"
+          data-oid="8sklpoa"
         >
           <i
             className={`
@@ -303,12 +303,12 @@ const AnimatedBackground: FC<AnimatedBackgroundProps> = ({
             text-base
             ${isButtonHovered ? "animate-pulse" : ""}
           `}
-            data-oid="22hcvas"
+            data-oid="3z-.5s3"
           ></i>
         </div>
 
         {/* Mode Label */}
-        <span data-oid="qf4h14s">
+        <span data-oid="c29yrrk">
           {isLowPowerMode ? "Eco Mode" : "Full Graphics"}
         </span>
 
@@ -322,7 +322,7 @@ const AnimatedBackground: FC<AnimatedBackgroundProps> = ({
               : "bg-cyan-400 animate-pulse"
           }
         `}
-          data-oid="rmt2ap7"
+          data-oid=":cj8bdb"
         ></span>
       </button>
     </>

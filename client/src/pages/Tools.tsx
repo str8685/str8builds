@@ -221,16 +221,16 @@ const Tools: FC = () => {
         return (
           <div
             className="flex items-center justify-center p-12 bg-space-900/50 rounded-lg border border-space-700/50"
-            data-oid="5.v:xq0"
+            data-oid="fr32ujx"
           >
-            <div className="text-center" data-oid="uzdn2wi">
-              <div className="text-3xl text-cyan-400 mb-4" data-oid=".d455zm">
-                <i className="fas fa-tools" data-oid="fv9ddc0"></i>
+            <div className="text-center" data-oid="i5a-ilb">
+              <div className="text-3xl text-cyan-400 mb-4" data-oid="b3osnz2">
+                <i className="fas fa-tools" data-oid="muixd5p"></i>
               </div>
-              <h3 className="text-xl text-white mb-2" data-oid="hwoj15.">
+              <h3 className="text-xl text-white mb-2" data-oid="azfog1r">
                 Tool Coming Soon
               </h3>
-              <p className="text-gray-400" data-oid="kvjze-3">
+              <p className="text-gray-400" data-oid="x6apik9">
                 This tool is currently under development.
               </p>
             </div>
@@ -242,57 +242,57 @@ const Tools: FC = () => {
   return (
     <main
       className={`container mx-auto px-4 py-4 ${highContrast ? "bg-black text-white" : ""}`}
-      data-oid="q.8bicu"
+      data-oid="-539u81"
     >
       {/* Tool Modals */}
       <MeasureToolModal
         open={showMeasureToolModal}
         onOpenChange={setShowMeasureToolModal}
-        data-oid="ot3n_j_"
+        data-oid="w76l.li"
       />
 
       <LevelToolModal
         open={showLevelToolModal}
         onOpenChange={setShowLevelToolModal}
-        data-oid="mqsx26k"
+        data-oid="k-k:t3j"
       />
 
       <AngleToolModal
         open={showAngleToolModal}
         onOpenChange={setShowAngleToolModal}
-        data-oid="g.yrpo-"
+        data-oid="4z2q6cv"
       />
 
       <CalculatorToolModal
         open={showCalculatorModal}
         onOpenChange={setShowCalculatorModal}
-        data-oid="upjpl_o"
+        data-oid="-tl-0po"
       />
 
       <ProjectCamModal
         open={showCameraModal}
         onOpenChange={setShowCameraModal}
-        data-oid="6_7mv.l"
+        data-oid="1t.u6x8"
       />
 
       <SoundMeterModal
         open={showSoundMeterModal}
         onOpenChange={setShowSoundMeterModal}
-        data-oid="4x9:hcs"
+        data-oid="wx_f4vj"
       />
 
       <div
         className="flex justify-between items-center mb-6"
-        data-oid="m1n_6fs"
+        data-oid="dgcdol."
       >
-        <div data-oid=":kyfk37">
+        <div data-oid="cnje7sg">
           <h2
             className="text-2xl font-space font-bold text-white"
-            data-oid="3pd8:kh"
+            data-oid="62gdrnt"
           >
             STR8 Tools & Models
           </h2>
-          <p className="text-gray-400 text-sm" data-oid="xznsjjk">
+          <p className="text-gray-400 text-sm" data-oid="rtzeius">
             Digital tools, calculators, and 3D models for your projects
           </p>
         </div>
@@ -300,9 +300,9 @@ const Tools: FC = () => {
           <button
             onClick={() => setSelectedTool(null)}
             className="text-sm bg-space-800 text-cyan px-4 py-1.5 rounded-full hover:bg-space-700"
-            data-oid="15fw6lm"
+            data-oid="uan.y3."
           >
-            <i className="fas fa-arrow-left mr-1" data-oid="6rb-jxw"></i> Back
+            <i className="fas fa-arrow-left mr-1" data-oid="-dg12c4"></i> Back
             to Tools
           </button>
         )}
@@ -312,8 +312,8 @@ const Tools: FC = () => {
         renderSelectedTool()
       ) : (
         <>
-          <GlassCard className="p-4 mb-6" data-oid=":rz4x6e">
-            <p className="text-gray-300 mb-4" data-oid="lnddkc5">
+          <GlassCard className="p-4 mb-6" data-oid="x0h.bas">
+            <p className="text-gray-300 mb-4" data-oid="mg.zmo8">
               Use your device's sensors to assist with construction tasks. These
               tools work offline and are designed to be used on the job site.
             </p>
@@ -322,46 +322,46 @@ const Tools: FC = () => {
               <div
                 key={category.title}
                 className={`${index > 0 ? "mt-8" : ""}`}
-                data-oid="ugyqyxq"
+                data-oid="405kpwc"
               >
                 <h3
                   className="text-lg font-space font-bold text-white mb-3 flex items-center"
-                  data-oid="v2vzfhi"
+                  data-oid="04jp9:7"
                 >
                   <div
                     className={`w-1.5 h-5 bg-${category.tools[0].color} rounded-full mr-2`}
-                    data-oid="cr3abw."
+                    data-oid="sqmqmfw"
                   ></div>
                   {category.title}
                 </h3>
                 <div
                   className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4"
-                  data-oid="l362cf:"
+                  data-oid="bbxmyyn"
                 >
                   {category.tools.map((tool) => (
                     <div
                       key={tool.id}
                       className={`aspect-square flex flex-col items-center justify-center p-4 rounded-xl bg-space-800/50 hover:bg-space-700 transition cursor-pointer relative group ${tool.border || ""}`}
                       onClick={() => handleToolSelect(tool.id)}
-                      data-oid=".hxmh3l"
+                      data-oid="4dh8p-a"
                     >
                       <div
                         className={`absolute inset-0 bg-${tool.color}/5 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300`}
-                        data-oid="6xogpl:"
+                        data-oid="z3b-i.n"
                       ></div>
                       <div
                         className={`absolute -inset-0.5 bg-${tool.color}/20 rounded-xl opacity-0 group-hover:opacity-100 blur-sm transition-opacity duration-300`}
-                        data-oid="vg:9xeo"
+                        data-oid="w-ncv9i"
                       ></div>
                       <div
                         className={`text-3xl text-${tool.color} mb-3 group-hover:scale-110 transform transition duration-300`}
-                        data-oid="r61m6ff"
+                        data-oid="7l__tbt"
                       >
-                        <i className={tool.icon} data-oid="0xfhb-d"></i>
+                        <i className={tool.icon} data-oid="n9afnai"></i>
                       </div>
                       <div
                         className="text-sm font-medium text-center text-white"
-                        data-oid=":pcvkxm"
+                        data-oid="ie27ubs"
                       >
                         {tool.name}
                       </div>
@@ -372,37 +372,37 @@ const Tools: FC = () => {
             ))}
           </GlassCard>
 
-          <GlassCard className="p-4 mb-6" data-oid="909:zb7">
+          <GlassCard className="p-4 mb-6" data-oid="-7vljoz">
             <div
               className="flex justify-between items-start mb-4"
-              data-oid="r4g9aco"
+              data-oid="-soa4a:"
             >
-              <h3 className="text-lg font-space text-white" data-oid="yq10n0x">
+              <h3 className="text-lg font-space text-white" data-oid="1u02o_7">
                 High Contrast Mode
               </h3>
               <div
                 className="relative inline-flex items-center cursor-pointer"
-                data-oid="w57izw3"
+                data-oid="wzuydsx"
               >
                 <input
                   type="checkbox"
                   checked={highContrast}
                   onChange={() => setHighContrast((prev) => !prev)}
                   className="sr-only peer"
-                  data-oid="mf0yy.4"
+                  data-oid="3vw0j0q"
                 />
 
                 <div
                   className="w-11 h-6 bg-gray-700 rounded-full peer peer-checked:bg-electric"
-                  data-oid="xw8tqds"
+                  data-oid="wu.cwew"
                 ></div>
                 <span
                   className="absolute left-1 top-1 w-4 h-4 bg-white rounded-full transition-all peer-checked:translate-x-5"
-                  data-oid="avwpb3q"
+                  data-oid="uj63m00"
                 ></span>
               </div>
             </div>
-            <p className="text-gray-300 text-sm" data-oid="60:b9f0">
+            <p className="text-gray-300 text-sm" data-oid="c:d4cii">
               Enable high contrast mode for better visibility in bright outdoor
               conditions.
             </p>

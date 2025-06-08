@@ -50,7 +50,7 @@ const systemSettings: SettingCategory[] = [
   {
     id: "general",
     name: "General Settings",
-    icon: <Settings className="h-5 w-5 text-cyan" data-oid="6.:h4qj" />,
+    icon: <Settings className="h-5 w-5 text-cyan" data-oid="yyols.b" />,
     settings: [
       {
         id: "app_name",
@@ -88,7 +88,7 @@ const systemSettings: SettingCategory[] = [
   {
     id: "notifications",
     name: "Notification Settings",
-    icon: <Bell className="h-5 w-5 text-electric" data-oid="xyho--n" />,
+    icon: <Bell className="h-5 w-5 text-electric" data-oid="3gu0.4z" />,
     settings: [
       {
         id: "email_notifications",
@@ -120,7 +120,7 @@ const systemSettings: SettingCategory[] = [
   {
     id: "database",
     name: "Database Settings",
-    icon: <Database className="h-5 w-5 text-teal" data-oid="jgr4vlg" />,
+    icon: <Database className="h-5 w-5 text-teal" data-oid="8t2bj17" />,
     settings: [
       {
         id: "db_backup_frequency",
@@ -146,7 +146,7 @@ const systemSettings: SettingCategory[] = [
   {
     id: "api",
     name: "API Settings",
-    icon: <Server className="h-5 w-5 text-purple-300" data-oid="07.g4hk" />,
+    icon: <Server className="h-5 w-5 text-purple-300" data-oid="hp.9pn-" />,
     settings: [
       {
         id: "api_rate_limit",
@@ -237,28 +237,28 @@ const SimpleSystemSettings: FC = () => {
   const currentCategory = settings.find((cat) => cat.id === selectedCategory);
 
   return (
-    <div className="space-y-6" data-oid="gwab2-r">
-      <div className="flex justify-between items-center" data-oid="mxuncra">
-        <h2 className="text-xl font-bold text-white" data-oid="7k9h1zt">
+    <div className="space-y-6" data-oid="p5_5jkw">
+      <div className="flex justify-between items-center" data-oid="ukdroe2">
+        <h2 className="text-xl font-bold text-white" data-oid="yt..h8i">
           System Settings
         </h2>
         <button
           onClick={handleSave}
           disabled={isSaving}
           className="px-4 py-2 rounded-lg bg-purple-900 text-cyan hover:bg-purple-800 transition-colors duration-200 flex items-center btn-glow btn-glow-cyan disabled:opacity-50"
-          data-oid="d--alr9"
+          data-oid="6.1n3kr"
         >
           {isSaving ? (
             <>
               <RefreshCw
                 className="h-4 w-4 mr-2 animate-spin"
-                data-oid="-x-th3p"
+                data-oid="f5u55_m"
               />
               Saving...
             </>
           ) : (
             <>
-              <Save className="h-4 w-4 mr-2" data-oid="zgdxv_4" />
+              <Save className="h-4 w-4 mr-2" data-oid="qwjfrjq" />
               Save Changes
             </>
           )}
@@ -268,9 +268,9 @@ const SimpleSystemSettings: FC = () => {
       {saveStatus === "success" && (
         <div
           className="p-3 bg-green-900/20 border border-green-800 rounded-lg flex items-center text-green-400"
-          data-oid=":-h4jut"
+          data-oid="v1ge0j6"
         >
-          <Check className="h-5 w-5 mr-2" data-oid="ont-kp-" />
+          <Check className="h-5 w-5 mr-2" data-oid="ip50934" />
           Settings saved successfully!
         </div>
       )}
@@ -278,28 +278,28 @@ const SimpleSystemSettings: FC = () => {
       {saveStatus === "error" && (
         <div
           className="p-3 bg-red-900/20 border border-red-800 rounded-lg flex items-center text-red-400"
-          data-oid="on_1.5e"
+          data-oid="gyuj4j3"
         >
-          <AlertCircle className="h-5 w-5 mr-2" data-oid="huzkcu1" />
+          <AlertCircle className="h-5 w-5 mr-2" data-oid="eoc1u0w" />
           Error saving settings. Please try again.
         </div>
       )}
 
-      <div className="grid grid-cols-1 lg:grid-cols-4 gap-6" data-oid="lluvk.y">
+      <div className="grid grid-cols-1 lg:grid-cols-4 gap-6" data-oid="k3kp.67">
         {/* Settings Categories */}
         <div
           className="bg-space-900 rounded-xl overflow-hidden"
-          data-oid="cum0veu"
+          data-oid="2_bshvi"
         >
           <div
             className="p-3 bg-space-800 border-b border-gray-700"
-            data-oid="5z6rx9x"
+            data-oid="xs1m4gi"
           >
-            <h3 className="text-white font-medium" data-oid="fjxi8qg">
+            <h3 className="text-white font-medium" data-oid="wi41k:r">
               Categories
             </h3>
           </div>
-          <div className="p-2" data-oid="4zw.oa2">
+          <div className="p-2" data-oid="u1fl7uc">
             {settings.map((category) => (
               <button
                 key={category.id}
@@ -309,9 +309,9 @@ const SimpleSystemSettings: FC = () => {
                     ? "bg-purple-900/50 text-cyan"
                     : "hover:bg-space-800 text-gray-300"
                 }`}
-                data-oid="1308.bk"
+                data-oid="-aucame"
               >
-                <span className="mr-3" data-oid="2jbfcfj">
+                <span className="mr-3" data-oid="9k92:z4">
                   {category.icon}
                 </span>
                 {category.name}
@@ -323,41 +323,41 @@ const SimpleSystemSettings: FC = () => {
         {/* Settings Form */}
         <div
           className="lg:col-span-3 bg-space-900 rounded-xl overflow-hidden"
-          data-oid="b-_8vci"
+          data-oid="kwzozk7"
         >
           <div
             className="p-3 bg-space-800 border-b border-gray-700 flex items-center"
-            data-oid="4mov7qc"
+            data-oid="m1t:nun"
           >
-            <span className="mr-2" data-oid="7k7dzq:">
+            <span className="mr-2" data-oid="e.ceueb">
               {currentCategory?.icon}
             </span>
-            <h3 className="text-white font-medium" data-oid="e093.9-">
+            <h3 className="text-white font-medium" data-oid="bz5wkp5">
               {currentCategory?.name}
             </h3>
           </div>
 
-          <div className="p-4 space-y-4" data-oid="8ew8tzg">
+          <div className="p-4 space-y-4" data-oid="3dwliko">
             {currentCategory?.settings.map((setting) => (
               <div
                 key={setting.id}
                 className="border-b border-gray-800 pb-4"
-                data-oid="ip:kzus"
+                data-oid="khr:gzg"
               >
                 <div
                   className="flex flex-col md:flex-row md:items-center justify-between mb-2"
-                  data-oid="a68o0q_"
+                  data-oid="8b1o8w6"
                 >
                   <label
                     htmlFor={setting.id}
                     className="text-white font-medium mb-1 md:mb-0"
-                    data-oid="kltmv-v"
+                    data-oid="tfn67ig"
                   >
                     {setting.name}
                   </label>
 
                   {setting.type === "toggle" ? (
-                    <div className="flex items-center" data-oid="bhcobjl">
+                    <div className="flex items-center" data-oid="kx.ywrh">
                       <button
                         onClick={() => {
                           const toggleSetting = setting as ToggleSetting;
@@ -372,7 +372,7 @@ const SimpleSystemSettings: FC = () => {
                             ? "bg-cyan"
                             : "bg-gray-700"
                         }`}
-                        data-oid="di063zd"
+                        data-oid="xmt7dbw"
                       >
                         <span
                           className={`inline-block h-4 w-4 transform rounded-full bg-white transition-transform ${
@@ -380,12 +380,12 @@ const SimpleSystemSettings: FC = () => {
                               ? "translate-x-6"
                               : "translate-x-1"
                           }`}
-                          data-oid="qsolz2e"
+                          data-oid="ypju_z1"
                         />
                       </button>
                       <span
                         className="ml-2 text-sm text-gray-400"
-                        data-oid="xtxi4.e"
+                        data-oid="r.bp.s3"
                       >
                         {(setting as ToggleSetting).value
                           ? "Enabled"
@@ -393,7 +393,7 @@ const SimpleSystemSettings: FC = () => {
                       </span>
                     </div>
                   ) : setting.type === "select" ? (
-                    <div className="w-full md:w-64" data-oid="fqpax1z">
+                    <div className="w-full md:w-64" data-oid="tp2mwmp">
                       <select
                         id={setting.id}
                         value={(setting as SelectSetting).value}
@@ -405,14 +405,14 @@ const SimpleSystemSettings: FC = () => {
                           )
                         }
                         className="w-full bg-space-800 border border-gray-700 rounded-lg p-2 text-white"
-                        data-oid="7811y4o"
+                        data-oid="8dk-vgh"
                       >
                         {(setting as SelectSetting).options.map(
                           (option: string) => (
                             <option
                               key={option}
                               value={option}
-                              data-oid="5xw.cic"
+                              data-oid="w8:_isx"
                             >
                               {option.charAt(0).toUpperCase() + option.slice(1)}
                             </option>
@@ -421,7 +421,7 @@ const SimpleSystemSettings: FC = () => {
                       </select>
                     </div>
                   ) : (
-                    <div className="w-full md:w-64" data-oid="p__hxgl">
+                    <div className="w-full md:w-64" data-oid="5vkkkw2">
                       <input
                         id={setting.id}
                         type={setting.type}
@@ -439,12 +439,12 @@ const SimpleSystemSettings: FC = () => {
                             ? "opacity-70 cursor-not-allowed"
                             : ""
                         }`}
-                        data-oid="8zgkt:b"
+                        data-oid=":67fzxz"
                       />
                     </div>
                   )}
                 </div>
-                <p className="text-xs text-gray-400" data-oid="c8b0hi_">
+                <p className="text-xs text-gray-400" data-oid="pylaadx">
                   {getSettingDescription(setting.id)}
                 </p>
               </div>

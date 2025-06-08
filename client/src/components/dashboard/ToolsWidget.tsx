@@ -277,37 +277,37 @@ const ToolsWidget: FC<ToolsWidgetProps> = ({ className }) => {
       <MeasureToolModal
         open={showMeasureToolModal}
         onOpenChange={setShowMeasureToolModal}
-        data-oid="rk-tk_2"
+        data-oid="2ed4_f_"
       />
 
       <LevelToolModal
         open={showLevelToolModal}
         onOpenChange={setShowLevelToolModal}
-        data-oid="mm.qo:b"
+        data-oid="68lc._c"
       />
 
       <AngleToolModal
         open={showAngleToolModal}
         onOpenChange={setShowAngleToolModal}
-        data-oid="7w-4qql"
+        data-oid="_rens:6"
       />
 
       <CalculatorToolModal
         open={showCalculatorModal}
         onOpenChange={setShowCalculatorModal}
-        data-oid="pch-w_7"
+        data-oid="006il2l"
       />
 
       <ProjectCamModal
         open={showCameraModal}
         onOpenChange={setShowCameraModal}
-        data-oid="lbimrf9"
+        data-oid="n_grm7:"
       />
 
       <SoundMeterModal
         open={showSoundMeterModal}
         onOpenChange={setShowSoundMeterModal}
-        data-oid="q14ay9p"
+        data-oid="8h80tzw"
       />
 
       <div
@@ -318,38 +318,38 @@ const ToolsWidget: FC<ToolsWidgetProps> = ({ className }) => {
           className,
         )}
         data-component-name="ToolsWidget"
-        data-oid="aau:dyv"
+        data-oid="h6ckff-"
       >
         {/* Subtle gradient background with animation */}
         <div
           className="absolute inset-0 bg-gradient-to-r from-cyan-900/20 via-blue-900/10 to-cyan-900/20 z-0 animate-gradient-x"
-          data-oid="_rv8wey"
+          data-oid="k2r_fz5"
         ></div>
         <div
           className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-cyan-500/50 to-transparent"
-          data-oid="4f:fo7l"
+          data-oid="60vcku_"
         ></div>
         <div
           className="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-cyan-500/40 to-transparent"
-          data-oid="aeij6dj"
+          data-oid="23bf4j5"
         ></div>
 
         <div
           className="relative z-10 py-2 sm:py-3 px-3 sm:px-4"
-          data-oid="ugnurl."
+          data-oid="u:ylk1n"
         >
           <div
             className="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-2 sm:gap-0"
-            data-oid="-3izwki"
+            data-oid="wku2v8p"
           >
             <div
               className="flex items-center gap-2 justify-between sm:justify-start"
-              data-oid="zj.sw7n"
+              data-oid="m:4i550"
             >
               {/* Professional Tools label */}
               <div
                 className="flex-shrink-0 flex items-center"
-                data-oid=":zxzt_3"
+                data-oid="9zt1020"
               >
                 <motion.div
                   initial={{ rotateZ: 0 }}
@@ -361,25 +361,25 @@ const ToolsWidget: FC<ToolsWidgetProps> = ({ className }) => {
                     repeatDelay: 5,
                   }}
                   className="mr-2"
-                  data-oid="l0x58u."
+                  data-oid="_lkk1a8"
                 >
                   <i
                     className="fas fa-tools text-cyan-400"
-                    data-oid="ypq89nn"
+                    data-oid="p6nbjs8"
                   ></i>
                 </motion.div>
                 <span
                   className="text-sm font-medium text-gray-300"
-                  data-oid="jenzo5-"
+                  data-oid="q1yngdc"
                 >
                   Professional
                 </span>
               </div>
 
               {/* Voice command button */}
-              <TooltipProvider data-oid="i0olcw3">
-                <Tooltip delayDuration={300} data-oid="lo:ps2_">
-                  <TooltipTrigger asChild data-oid="guao0vc">
+              <TooltipProvider data-oid="f8mmp8z">
+                <Tooltip delayDuration={300} data-oid="_alzpmg">
+                  <TooltipTrigger asChild data-oid="_ws-sar">
                     <motion.button
                       className={cn(
                         "h-8 w-8 rounded-full flex items-center justify-center",
@@ -397,37 +397,37 @@ const ToolsWidget: FC<ToolsWidgetProps> = ({ className }) => {
                       transition={
                         isListening ? { repeat: Infinity, duration: 1.5 } : {}
                       }
-                      data-oid="t1m89mi"
+                      data-oid="qrz3jqz"
                     >
                       <i
                         className={`fas ${isListening ? "fa-microphone-alt" : "fa-microphone"}`}
-                        data-oid="wsz2t3d"
+                        data-oid="cxp4t:e"
                       ></i>
                     </motion.button>
                   </TooltipTrigger>
                   <TooltipContent
                     side="bottom"
                     className="bg-space-900/95 border border-space-700 text-white p-2"
-                    data-oid="51nw-_b"
+                    data-oid="r__zg:z"
                   >
-                    <p data-oid="0gymkjz">{voiceCommandTooltip}</p>
+                    <p data-oid="5g9e57f">{voiceCommandTooltip}</p>
                   </TooltipContent>
                 </Tooltip>
               </TooltipProvider>
 
               {/* Mobile "All Tools" link */}
-              <div className="block sm:hidden" data-oid="q6.kuad">
+              <div className="block sm:hidden" data-oid="rs2dq23">
                 <Link
                   href="/tools"
                   className="flex items-center bg-blue-600/20 border border-blue-500/40 px-2 py-1 rounded-md text-xs font-medium text-white group transition-all duration-300"
-                  data-oid="efll2kg"
+                  data-oid="761_0kb"
                 >
-                  <span className="mr-1" data-oid="ws9xi5f">
+                  <span className="mr-1" data-oid="ob8cvuv">
                     All
                   </span>
                   <i
                     className="fas fa-arrow-right text-xs transform group-hover:translate-x-1 transition-transform"
-                    data-oid="u:8:er8"
+                    data-oid="1q:m7qw"
                   ></i>
                 </Link>
               </div>
@@ -436,21 +436,21 @@ const ToolsWidget: FC<ToolsWidgetProps> = ({ className }) => {
             {/* Horizontal tools list - scrollable on mobile */}
             <div
               className="flex-grow overflow-x-auto pb-1 -mx-3 px-3 sm:mx-0 sm:px-0 sm:overflow-hidden"
-              data-oid="az9j6sg"
+              data-oid="i9mwo38"
             >
               <div
                 className="flex space-x-2 justify-start sm:justify-end min-w-max"
-                data-oid="a504sl2"
+                data-oid="br6sd46"
               >
                 {tools.map((tool) => (
                   <div
                     key={tool.id}
                     className="relative flex-shrink-0"
-                    data-oid="9dj2p4v"
+                    data-oid="efy-g0:"
                   >
-                    <TooltipProvider data-oid="90vzmp5">
-                      <Tooltip delayDuration={300} data-oid="oo1tmw7">
-                        <TooltipTrigger asChild data-oid="c4c7utg">
+                    <TooltipProvider data-oid="1j_g_yz">
+                      <Tooltip delayDuration={300} data-oid="ab18:z5">
+                        <TooltipTrigger asChild data-oid="qel3p80">
                           <motion.div
                             className={cn(
                               "relative flex flex-col items-center justify-center px-3 sm:px-4 py-2 sm:py-3 rounded-lg",
@@ -480,7 +480,7 @@ const ToolsWidget: FC<ToolsWidgetProps> = ({ className }) => {
                             }}
                             whileTap={{ scale: 0.95 }}
                             onClick={() => handleToolClick(tool.id)}
-                            data-oid="a-lc-:3"
+                            data-oid="qoal_5w"
                           >
                             {/* Background glow effect */}
                             <motion.div
@@ -494,22 +494,22 @@ const ToolsWidget: FC<ToolsWidgetProps> = ({ className }) => {
                                 repeat: activeToolId === tool.id ? Infinity : 0,
                                 repeatType: "loop",
                               }}
-                              data-oid="_5824rr"
+                              data-oid="96d:ryl"
                             />
 
                             {/* Animated border glow */}
                             <div
                               className="absolute inset-0 rounded-lg overflow-hidden"
-                              data-oid="4cqh7r3"
+                              data-oid="v3y4_qv"
                             >
                               <div
                                 className={`absolute inset-0 ${activeToolId === tool.id ? tool.border || "" : ""}`}
-                                data-oid=":-80z_u"
+                                data-oid="9lhl-uu"
                               ></div>
                             </div>
 
                             {/* Icon with pulse effect for active tools */}
-                            <div className="relative" data-oid="_7:h6x1">
+                            <div className="relative" data-oid="m-vkx4m">
                               <motion.div
                                 className={`text-xl sm:text-2xl text-${tool.color}-400 z-10 relative`}
                                 whileHover={{
@@ -521,9 +521,9 @@ const ToolsWidget: FC<ToolsWidgetProps> = ({ className }) => {
                                   stiffness: 400,
                                   damping: 10,
                                 }}
-                                data-oid="0ekx:gu"
+                                data-oid="gsxp4zi"
                               >
-                                <i className={tool.icon} data-oid="23f4sd5"></i>
+                                <i className={tool.icon} data-oid="oqhc7pw"></i>
                               </motion.div>
 
                               {/* Active tool indicator */}
@@ -542,14 +542,14 @@ const ToolsWidget: FC<ToolsWidgetProps> = ({ className }) => {
                                     repeat: Infinity,
                                     repeatType: "loop",
                                   }}
-                                  data-oid="2dcq-:a"
+                                  data-oid="4etuqej"
                                 />
                               )}
                             </div>
 
                             <div
                               className="text-[10px] sm:text-xs font-bold text-center text-white mt-1 sm:mt-2 bg-gradient-to-r from-transparent via-cyan-500/20 to-transparent py-0.5 sm:py-1 px-2 sm:px-3 rounded-full"
-                              data-oid="lzs.br3"
+                              data-oid="l12qa:0"
                             >
                               {tool.name}
                             </div>
@@ -558,7 +558,7 @@ const ToolsWidget: FC<ToolsWidgetProps> = ({ className }) => {
                             {tool.id === 5 && (
                               <div
                                 className="absolute top-1 right-1 h-2 w-2 rounded-full bg-green-500 animate-pulse"
-                                data-oid="r_egup0"
+                                data-oid="600z272"
                               ></div>
                             )}
                           </motion.div>
@@ -566,9 +566,9 @@ const ToolsWidget: FC<ToolsWidgetProps> = ({ className }) => {
                         <TooltipContent
                           side="bottom"
                           className="bg-space-900/95 border border-space-700 text-white"
-                          data-oid="aa4d14h"
+                          data-oid="4wi..vc"
                         >
-                          <p data-oid="jxouvs3">{tool.description}</p>
+                          <p data-oid="2dzg1v8">{tool.description}</p>
                         </TooltipContent>
                       </Tooltip>
                     </TooltipProvider>
@@ -580,19 +580,19 @@ const ToolsWidget: FC<ToolsWidgetProps> = ({ className }) => {
             {/* Desktop "All Tools" link */}
             <div
               className="flex-shrink-0 ml-3 hidden sm:block"
-              data-oid="xo5nqx5"
+              data-oid="1qjyns2"
             >
               <Link
                 href="/tools"
                 className="flex items-center bg-blue-600/20 border-2 border-blue-500/40 px-3 py-1.5 rounded-md hover:bg-blue-600/30 text-xs font-bold text-white group transition-all duration-300 shadow-md shadow-blue-500/10"
-                data-oid="5qhuzh:"
+                data-oid="em413wy"
               >
-                <span className="mr-2" data-oid="hk.1bwi">
+                <span className="mr-2" data-oid="ds9-ygm">
                   All Tools
                 </span>
                 <i
                   className="fas fa-arrow-right transform group-hover:translate-x-2 transition-transform"
-                  data-oid="qgo0.55"
+                  data-oid="4o-kizp"
                 ></i>
               </Link>
             </div>

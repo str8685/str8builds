@@ -39,24 +39,24 @@ const ExternalCalculator: FC<ExternalCalculatorProps> = ({
       title={title}
       description={description}
       variant={variant}
-      data-oid=":6ac1c2"
+      data-oid="y4svzyv"
     >
       <div
         className="relative w-full min-h-[600px] bg-space-900/50 rounded-lg"
-        data-oid="z4z3_qp"
+        data-oid=":-0-hjz"
       >
         {isLoading && (
           <div
             className="absolute inset-0 flex items-center justify-center bg-space-900/50 backdrop-blur-sm z-10 rounded-lg"
-            data-oid="h6ce568"
+            data-oid="y9a0zy-"
           >
-            <div className="flex flex-col items-center" data-oid="5ifzgob">
+            <div className="flex flex-col items-center" data-oid="swhmpfp">
               <Loader2
                 className={`w-12 h-12 text-${variant} animate-spin`}
-                data-oid="wl303v9"
+                data-oid="eju8wm4"
               />
 
-              <p className={`mt-3 text-${variant}`} data-oid="byi3uop">
+              <p className={`mt-3 text-${variant}`} data-oid="sbr84zy">
                 Loading calculator...
               </p>
             </div>
@@ -66,27 +66,27 @@ const ExternalCalculator: FC<ExternalCalculatorProps> = ({
         {hasError ? (
           <div
             className="absolute inset-0 flex items-center justify-center bg-space-900/90 backdrop-blur-sm z-10 rounded-lg"
-            data-oid="fhrb0-4"
+            data-oid="3d4iqjl"
           >
             <div
               className="flex flex-col items-center text-center p-6"
-              data-oid="o.yyksa"
+              data-oid="-odh:np"
             >
-              <div className="text-red-500 text-4xl mb-3" data-oid="ajo-_hd">
+              <div className="text-red-500 text-4xl mb-3" data-oid="eh70aeh">
                 ⚠️
               </div>
-              <h3 className="text-xl text-red-400 mb-2" data-oid="cbze8x.">
+              <h3 className="text-xl text-red-400 mb-2" data-oid="7:32cvx">
                 Failed to load calculator
               </h3>
-              <p className="text-gray-400 mb-4" data-oid="_uxjs::">
+              <p className="text-gray-400 mb-4" data-oid="t_vxk.5">
                 The external calculator could not be loaded from {url}
               </p>
               <button
                 onClick={handleRetry}
                 className={`px-4 py-2 bg-${variant} text-black rounded-lg hover:bg-${variant}/80 flex items-center gap-2`}
-                data-oid="4l-03of"
+                data-oid="3rdzg11"
               >
-                <RefreshCw size={16} data-oid="3b9eb4z" />
+                <RefreshCw size={16} data-oid="nsdoec9" />
                 Try Again
               </button>
             </div>
@@ -104,7 +104,7 @@ const ExternalCalculator: FC<ExternalCalculatorProps> = ({
             }}
             sandbox="allow-scripts allow-same-origin allow-forms"
             title={title}
-            data-oid="_ei8au6"
+            data-oid="sa342np"
           />
         )}
       </div>

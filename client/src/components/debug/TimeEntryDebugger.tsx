@@ -60,39 +60,39 @@ const TimeEntryDebugger: React.FC = () => {
   return (
     <div
       className="bg-red-500/10 p-3 mb-4 rounded-md border border-red-500/20"
-      data-oid="adelmgj"
+      data-oid="9-dk76."
     >
       <div
         className="flex flex-col sm:flex-row sm:items-center sm:justify-between"
-        data-oid="7o-.k1e"
+        data-oid="rfy3r2o"
       >
-        <div className="mb-3 sm:mb-0" data-oid="9el1qv_">
-          <h3 className="text-sm font-bold text-red-400" data-oid="bbttdcm">
+        <div className="mb-3 sm:mb-0" data-oid="xel:22_">
+          <h3 className="text-sm font-bold text-red-400" data-oid=":h_kqks">
             Timesheet Debug
           </h3>
-          <p className="text-xs text-gray-400 mt-1" data-oid=":so1cno">
+          <p className="text-xs text-gray-400 mt-1" data-oid="cfpceq7">
             This section will help diagnose why entries aren't showing up
           </p>
         </div>
-        <div className="flex flex-wrap gap-2" data-oid=".xxowt5">
+        <div className="flex flex-wrap gap-2" data-oid=".tlkz.e">
           <button
             onClick={handleCheckEntries}
             className="bg-red-500/20 hover:bg-red-500/30 text-red-300 text-xs px-3 py-1 rounded"
-            data-oid="l:o6:3o"
+            data-oid="hf36miz"
           >
             Check Entries
           </button>
           <button
             onClick={handleCreateTestEntry}
             className="bg-green-500/20 hover:bg-green-500/30 text-green-300 text-xs px-3 py-1 rounded"
-            data-oid="2bntoq7"
+            data-oid="31._7r-"
           >
             Create Test Entry
           </button>
           <button
             onClick={handleClearEntries}
             className="bg-red-900/20 hover:bg-red-900/30 text-red-300 text-xs px-3 py-1 rounded"
-            data-oid="o:jno0x"
+            data-oid="7re0mg-"
           >
             Clear Entries
           </button>

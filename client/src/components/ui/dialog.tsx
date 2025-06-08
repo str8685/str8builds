@@ -23,7 +23,7 @@ const DialogOverlay = React.forwardRef<
       className,
     )}
     {...props}
-    data-oid="g-t6v8k"
+    data-oid="avqlrwo"
   />
 ));
 DialogOverlay.displayName = DialogPrimitive.Overlay.displayName;
@@ -32,8 +32,8 @@ const DialogContent = React.forwardRef<
   React.ElementRef<typeof DialogPrimitive.Content>,
   React.ComponentPropsWithoutRef<typeof DialogPrimitive.Content>
 >(({ className, children, ...props }, ref) => (
-  <DialogPortal data-oid="0v8qc32">
-    <DialogOverlay data-oid="lg4n_ba" />
+  <DialogPortal data-oid="__k3zsh">
+    <DialogOverlay data-oid="tcyxldu" />
     <DialogPrimitive.Content
       ref={ref}
       className={cn(
@@ -41,15 +41,15 @@ const DialogContent = React.forwardRef<
         className,
       )}
       {...props}
-      data-oid="4841pol"
+      data-oid="qub74:w"
     >
       {children}
       <DialogPrimitive.Close
         className="absolute right-4 top-4 rounded-sm opacity-70 ring-offset-background transition-opacity hover:opacity-100 focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 disabled:pointer-events-none data-[state=open]:bg-accent data-[state=open]:text-muted-foreground"
-        data-oid="jhip7ic"
+        data-oid="hx3b26l"
       >
-        <X className="h-4 w-4 text-gray-400" data-oid="1i0g.7h" />
-        <span className="sr-only" data-oid=":.pnfzw">
+        <X className="h-4 w-4 text-gray-400" data-oid="6sd.i04" />
+        <span className="sr-only" data-oid="9eqpo2t">
           Close
         </span>
       </DialogPrimitive.Close>
@@ -68,7 +68,7 @@ const DialogHeader = ({
       className,
     )}
     {...props}
-    data-oid="w3.ybqz"
+    data-oid="tq9o8op"
   />
 );
 
@@ -84,7 +84,7 @@ const DialogFooter = ({
       className,
     )}
     {...props}
-    data-oid="ln4x.xx"
+    data-oid="3v022c-"
   />
 );
 
@@ -101,7 +101,7 @@ const DialogTitle = React.forwardRef<
       className,
     )}
     {...props}
-    data-oid="c413eyg"
+    data-oid="4ksn86p"
   />
 ));
 DialogTitle.displayName = DialogPrimitive.Title.displayName;
@@ -114,7 +114,7 @@ const DialogDescription = React.forwardRef<
     ref={ref}
     className={cn("text-sm text-muted-foreground", className)}
     {...props}
-    data-oid="530vmy."
+    data-oid="d1ljnem"
   />
 ));
 DialogDescription.displayName = DialogPrimitive.Description.displayName;

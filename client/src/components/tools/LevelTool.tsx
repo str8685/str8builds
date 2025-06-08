@@ -65,22 +65,22 @@ const LevelTool: FC = () => {
   const isLevel = Math.abs(angle.x) <= 1 && Math.abs(angle.y) <= 1;
 
   return (
-    <GlassCard className="p-6" data-oid="w6q2bgt">
+    <GlassCard className="p-6" data-oid="g:.357k">
       <div
         className="flex justify-between items-center mb-6"
-        data-oid="_.n3d2x"
+        data-oid="9qybrn5"
       >
         <h2
           className="text-xl font-space font-bold text-white"
-          data-oid="m-qjmbf"
+          data-oid="f9fcwev"
         >
           Digital Level
         </h2>
-        <div className="flex space-x-2" data-oid="s6t5.ao">
+        <div className="flex space-x-2" data-oid="wn:r-j.">
           <button
             className="text-xs bg-space-800 text-white px-3 py-1.5 rounded hover:bg-space-700"
             onClick={isCalibrated ? resetCalibration : calibrate}
-            data-oid="p:y1zcn"
+            data-oid="g7_buyh"
           >
             {isCalibrated ? "Reset Calibration" : "Calibrate"}
           </button>
@@ -88,17 +88,17 @@ const LevelTool: FC = () => {
       </div>
 
       {!isSupported ? (
-        <div className="text-center p-8" data-oid="q1qa9b5">
-          <div className="text-red-400 text-lg mb-2" data-oid="w1rjvqh">
-            <i className="fas fa-exclamation-triangle" data-oid="t0n03pe"></i>
+        <div className="text-center p-8" data-oid=".vj6bgs">
+          <div className="text-red-400 text-lg mb-2" data-oid="sfozao.">
+            <i className="fas fa-exclamation-triangle" data-oid="cevx46x"></i>
           </div>
           <h3
             className="text-lg font-medium text-white mb-2"
-            data-oid="pkpxo2j"
+            data-oid="k8j6vpq"
           >
             Device Sensors Not Available
           </h3>
-          <p className="text-gray-300 text-sm mb-4" data-oid="55t62:m">
+          <p className="text-gray-300 text-sm mb-4" data-oid="czm.4yk">
             This tool requires device orientation sensors which are not
             available on your device or browser. Try using a mobile device or
             enabling sensors in your browser settings.
@@ -107,54 +107,54 @@ const LevelTool: FC = () => {
       ) : (
         <>
           {/* Horizontal level */}
-          <div className="mb-6" data-oid="rb5ygjn">
+          <div className="mb-6" data-oid="o2ztol4">
             <div
               className="relative h-16 bg-space-900 rounded-full overflow-hidden mb-2 border border-space-800"
-              data-oid="gewb1rq"
+              data-oid="ol3edz8"
             >
               <div
                 className="absolute top-0 bottom-0 left-1/2 w-0.5 bg-gray-600"
-                data-oid="0m5ke-z"
+                data-oid=":w10:nm"
               ></div>
               <div
                 className={`absolute top-1/2 left-1/2 w-8 h-8 -ml-4 -mt-4 rounded-full ${isLevel ? "bg-teal" : "bg-cyan"} transition-all duration-100`}
                 style={getBubbleStyle()}
-                data-oid="0t:f4cy"
+                data-oid="36tvtoo"
               ></div>
             </div>
             <div
               className="flex justify-between px-2 text-xs text-gray-400"
-              data-oid="p2h72g_"
+              data-oid="myliwtw"
             >
-              <span data-oid="2pssr6b">-5°</span>
-              <span data-oid=":hs:ygn">Level</span>
-              <span data-oid="ke8auoc">+5°</span>
+              <span data-oid="zgvfb-8">-5°</span>
+              <span data-oid="--hv:a:">Level</span>
+              <span data-oid="moh0xe4">+5°</span>
             </div>
           </div>
 
           {/* Angle readings */}
           <div
             className="grid grid-cols-2 gap-4 text-center"
-            data-oid="oj3xi5h"
+            data-oid="4u-m21z"
           >
-            <div className="bg-space-900 rounded-lg p-4" data-oid="or.k::b">
-              <div className="text-xs text-gray-400 mb-1" data-oid="a42t44p">
+            <div className="bg-space-900 rounded-lg p-4" data-oid="uskbekm">
+              <div className="text-xs text-gray-400 mb-1" data-oid="5o7u_7-">
                 X-Axis
               </div>
               <div
                 className={`text-2xl font-space font-bold ${isLevel ? "text-teal" : "text-white"}`}
-                data-oid="knj1.1m"
+                data-oid="u6ih9f8"
               >
                 {angle.x}°
               </div>
             </div>
-            <div className="bg-space-900 rounded-lg p-4" data-oid="wjfoj3i">
-              <div className="text-xs text-gray-400 mb-1" data-oid="zcu84lo">
+            <div className="bg-space-900 rounded-lg p-4" data-oid="1ueicf-">
+              <div className="text-xs text-gray-400 mb-1" data-oid="ohq7y95">
                 Y-Axis
               </div>
               <div
                 className={`text-2xl font-space font-bold ${isLevel ? "text-teal" : "text-white"}`}
-                data-oid="pxlz1bj"
+                data-oid="drlwq94"
               >
                 {angle.y}°
               </div>

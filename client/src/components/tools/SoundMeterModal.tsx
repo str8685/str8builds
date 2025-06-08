@@ -200,83 +200,83 @@ const SoundMeterModal: FC<SoundMeterModalProps> = ({ open, onOpenChange }) => {
   };
 
   return (
-    <Dialog open={open} onOpenChange={onOpenChange} data-oid="0anxytj">
+    <Dialog open={open} onOpenChange={onOpenChange} data-oid="ks920m8">
       <DialogContent
         className="bg-gradient-to-br from-space-900 via-space-950 to-space-900 border border-space-700/50 text-white max-w-md"
-        data-oid=":kj45k6"
+        data-oid="mo6ida-"
       >
-        <div className="absolute inset-0 overflow-hidden" data-oid="4u8em9d">
+        <div className="absolute inset-0 overflow-hidden" data-oid=":xi838g">
           <div
             className="absolute -inset-[100px] bg-cyan-800/5 blur-3xl rounded-full top-0 right-0 z-0"
-            data-oid="djrnavo"
+            data-oid="jx773ui"
           ></div>
           <div
             className="absolute -inset-[100px] bg-blue-800/5 blur-3xl rounded-full bottom-0 left-0 z-0"
-            data-oid="whas2z4"
+            data-oid="y0avicl"
           ></div>
           <div
             className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-cyan-500/20 to-transparent"
-            data-oid="b7qcxlj"
+            data-oid="jncy31k"
           ></div>
           <div
             className="absolute bottom-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-cyan-500/20 to-transparent"
-            data-oid="ufbuhzd"
+            data-oid="qp0y4p8"
           ></div>
         </div>
 
-        <div className="relative z-10" data-oid="l835dm9">
-          <DialogHeader className="mb-6" data-oid="5794vu6">
+        <div className="relative z-10" data-oid="9r2qfrh">
+          <DialogHeader className="mb-6" data-oid="rqkrlz0">
             <DialogTitle
               className="flex items-center text-xl font-space text-cyan-400 tracking-wide"
-              data-oid="agh-awa"
+              data-oid="4zp--.e"
             >
-              <i className="fas fa-volume-up mr-3" data-oid="_iav--d"></i>
-              <span data-oid="0tkm_uc">Sound Meter</span>
+              <i className="fas fa-volume-up mr-3" data-oid="nzeewvl"></i>
+              <span data-oid="qldp0pr">Sound Meter</span>
             </DialogTitle>
           </DialogHeader>
 
           {!permissionGranted && permissionError ? (
-            <div className="p-6 text-center" data-oid="hf_d.u2">
-              <div className="text-3xl text-amber-500 mb-4" data-oid="-:e2ltl">
+            <div className="p-6 text-center" data-oid="j9guz65">
+              <div className="text-3xl text-amber-500 mb-4" data-oid="5jins7_">
                 <i
                   className="fas fa-exclamation-triangle"
-                  data-oid="pwtxw1c"
+                  data-oid="9g4h0qf"
                 ></i>
               </div>
-              <p className="text-gray-300 mb-4" data-oid="o_nq6qi">
+              <p className="text-gray-300 mb-4" data-oid="_6his9-">
                 {permissionError}
               </p>
               <Button
                 onClick={requestPermission}
                 className="bg-cyan-700 hover:bg-cyan-600 text-white"
-                data-oid="9:5rzn5"
+                data-oid="sr-0.ps"
               >
                 Grant Microphone Access
               </Button>
             </div>
           ) : (
-            <div className="space-y-6" data-oid="97ahw98">
+            <div className="space-y-6" data-oid="1:8nare">
               {/* Current reading */}
-              <div className="flex flex-col items-center" data-oid="z-r32tt">
-                <div className="text-sm text-gray-400 mb-2" data-oid="at-og_p">
+              <div className="flex flex-col items-center" data-oid="8h:aq48">
+                <div className="text-sm text-gray-400 mb-2" data-oid=":rv5m3h">
                   Current Level
                 </div>
-                <div className="text-5xl font-bold mb-3" data-oid="yms2tiw">
+                <div className="text-5xl font-bold mb-3" data-oid="vbp6aqq">
                   {decibels !== null ? (
                     <span
                       className={`text-${getDecibelColor(decibels).replace("bg-", "")}`}
-                      data-oid="92yq.hb"
+                      data-oid="dimcxu5"
                     >
                       {roundDecibel(decibels)}
                     </span>
                   ) : (
-                    <span className="text-gray-500" data-oid="9z05a-r">
+                    <span className="text-gray-500" data-oid="y3t4tc3">
                       --
                     </span>
                   )}
                   <span
                     className="text-xl text-gray-400 ml-1"
-                    data-oid="19j4gne"
+                    data-oid="uyytc-l"
                   >
                     dB
                   </span>
@@ -285,7 +285,7 @@ const SoundMeterModal: FC<SoundMeterModalProps> = ({ open, onOpenChange }) => {
                 {decibels !== null && (
                   <div
                     className={`text-sm font-medium px-3 py-1 rounded-full ${getDecibelColor(decibels)} text-white`}
-                    data-oid="68e68n6"
+                    data-oid="l:xss.j"
                   >
                     {getDecibelLabel(decibels)}
                   </div>
@@ -293,30 +293,30 @@ const SoundMeterModal: FC<SoundMeterModalProps> = ({ open, onOpenChange }) => {
               </div>
 
               {/* Meter visualization */}
-              <div className="bg-space-800 rounded-xl p-4" data-oid="9irxaii">
+              <div className="bg-space-800 rounded-xl p-4" data-oid="il4gy6c">
                 <div
                   className="h-8 bg-space-900 rounded-lg overflow-hidden relative"
-                  data-oid="f0ztjr8"
+                  data-oid="bkmr27f"
                 >
                   <div
                     className="absolute inset-0 flex items-center"
-                    data-oid="wsp6bi3"
+                    data-oid="ud32o8q"
                   >
                     <div
                       className="h-full w-1 bg-gray-800 absolute left-1/5"
-                      data-oid="y2i9791"
+                      data-oid="n-f.k.x"
                     ></div>
                     <div
                       className="h-full w-1 bg-gray-800 absolute left-2/5"
-                      data-oid="u_rgo65"
+                      data-oid="g8f6k27"
                     ></div>
                     <div
                       className="h-full w-1 bg-gray-800 absolute left-3/5"
-                      data-oid="ras_95-"
+                      data-oid=":jcl82l"
                     ></div>
                     <div
                       className="h-full w-1 bg-gray-800 absolute left-4/5"
-                      data-oid="zr.1n2p"
+                      data-oid="w6t.k8z"
                     ></div>
                   </div>
 
@@ -330,7 +330,7 @@ const SoundMeterModal: FC<SoundMeterModalProps> = ({ open, onOpenChange }) => {
                           : "0%",
                     }}
                     transition={{ type: "spring", stiffness: 300, damping: 30 }}
-                    data-oid="t6l9sv:"
+                    data-oid="2491njb"
                   />
 
                   {/* Peak marker */}
@@ -338,84 +338,84 @@ const SoundMeterModal: FC<SoundMeterModalProps> = ({ open, onOpenChange }) => {
                     <div
                       className="absolute top-0 bottom-0 w-1 bg-white"
                       style={{ left: `${Math.min(100, peak)}%` }}
-                      data-oid=":_5uugy"
+                      data-oid="imei2qu"
                     ></div>
                   )}
                 </div>
 
                 <div
                   className="flex justify-between text-xs text-gray-400 mt-1"
-                  data-oid="xrso51m"
+                  data-oid="vpplr3o"
                 >
-                  <span data-oid="clmywsc">30</span>
-                  <span data-oid="hmqns3j">50</span>
-                  <span data-oid="y6wygt-">70</span>
-                  <span data-oid="0eup8_4">85</span>
-                  <span data-oid="wblfcsi">100 dB</span>
+                  <span data-oid="r3ir140">30</span>
+                  <span data-oid="g60uw6.">50</span>
+                  <span data-oid="713fiz:">70</span>
+                  <span data-oid="o0wy9rc">85</span>
+                  <span data-oid="7yqtbjm">100 dB</span>
                 </div>
               </div>
 
               {/* Color scale */}
               <div
                 className="flex rounded-lg overflow-hidden h-2"
-                data-oid="6y9q4_h"
+                data-oid="ah0qnh4"
               >
-                <div className="flex-1 bg-green-500" data-oid="-4.i8ak"></div>
-                <div className="flex-1 bg-yellow-500" data-oid="31reomp"></div>
-                <div className="flex-1 bg-orange-500" data-oid="7xd4w:y"></div>
-                <div className="flex-1 bg-red-500" data-oid="oi2sy0a"></div>
-                <div className="flex-1 bg-purple-500" data-oid="d3_pugh"></div>
+                <div className="flex-1 bg-green-500" data-oid="srdl8:-"></div>
+                <div className="flex-1 bg-yellow-500" data-oid="osf-mus"></div>
+                <div className="flex-1 bg-orange-500" data-oid="24g:uz_"></div>
+                <div className="flex-1 bg-red-500" data-oid="_4n8fzi"></div>
+                <div className="flex-1 bg-purple-500" data-oid="jky_fva"></div>
               </div>
 
               {/* Safety levels */}
               <div
                 className="bg-space-800/70 rounded-lg p-4"
-                data-oid="xezljr-"
+                data-oid="pe03la1"
               >
                 <h3
                   className="text-sm font-medium text-gray-300 mb-3"
-                  data-oid="kf9u.w8"
+                  data-oid="u4._0o4"
                 >
                   Safety Guidelines
                 </h3>
-                <div className="space-y-2 text-sm" data-oid="g:rxix2">
-                  <div className="flex justify-between" data-oid="1zh:du2">
-                    <span className="text-green-500" data-oid="h0:iu5a">
+                <div className="space-y-2 text-sm" data-oid="0q_z-e4">
+                  <div className="flex justify-between" data-oid="ga-58cd">
+                    <span className="text-green-500" data-oid="ifd2sf2">
                       Below 50 dB
                     </span>
-                    <span className="text-gray-400" data-oid="x6v7a2.">
+                    <span className="text-gray-400" data-oid="u1arj2a">
                       Safe
                     </span>
                   </div>
-                  <div className="flex justify-between" data-oid="fnqc-4f">
-                    <span className="text-yellow-500" data-oid="s47mcoq">
+                  <div className="flex justify-between" data-oid="495doky">
+                    <span className="text-yellow-500" data-oid="-w10dua">
                       50-70 dB
                     </span>
-                    <span className="text-gray-400" data-oid="g1hm6k8">
+                    <span className="text-gray-400" data-oid="76e0w61">
                       Moderate
                     </span>
                   </div>
-                  <div className="flex justify-between" data-oid="qccqclt">
-                    <span className="text-orange-500" data-oid="z_kk81u">
+                  <div className="flex justify-between" data-oid="lkrp6kk">
+                    <span className="text-orange-500" data-oid="uonni0j">
                       70-85 dB
                     </span>
-                    <span className="text-gray-400" data-oid="my.j96h">
+                    <span className="text-gray-400" data-oid="ymi-u77">
                       High
                     </span>
                   </div>
-                  <div className="flex justify-between" data-oid=":zasi6z">
-                    <span className="text-red-500" data-oid="me68j7b">
+                  <div className="flex justify-between" data-oid="leyfpa2">
+                    <span className="text-red-500" data-oid="x-zp:8z">
                       85-95 dB
                     </span>
-                    <span className="text-gray-400" data-oid="6nk42h8">
+                    <span className="text-gray-400" data-oid="o_lo08e">
                       Very High
                     </span>
                   </div>
-                  <div className="flex justify-between" data-oid="pzn6mw2">
-                    <span className="text-purple-500" data-oid="-773_ae">
+                  <div className="flex justify-between" data-oid="0r4kgt6">
+                    <span className="text-purple-500" data-oid=".6j_1-q">
                       Above 95 dB
                     </span>
-                    <span className="text-gray-400" data-oid="vp:1p7y">
+                    <span className="text-gray-400" data-oid="n0-a4ix">
                       Dangerous
                     </span>
                   </div>
@@ -425,28 +425,28 @@ const SoundMeterModal: FC<SoundMeterModalProps> = ({ open, onOpenChange }) => {
               {/* Peak reading */}
               <div
                 className="flex justify-between items-center bg-space-800/70 rounded-lg p-4"
-                data-oid="3mo61kr"
+                data-oid="yg4_o_k"
               >
-                <div data-oid="yy:dhhr">
-                  <div className="text-sm text-gray-400" data-oid="yenukqp">
+                <div data-oid="070_459">
+                  <div className="text-sm text-gray-400" data-oid="uemh.ty">
                     Peak Level
                   </div>
-                  <div className="text-2xl font-bold" data-oid="6p-g3_n">
+                  <div className="text-2xl font-bold" data-oid="ls2k74j">
                     {peak > 0 ? (
                       <span
                         className={`text-${getDecibelColor(peak).replace("bg-", "")}`}
-                        data-oid="2a.jina"
+                        data-oid="nszwdkn"
                       >
                         {roundDecibel(peak)}
                       </span>
                     ) : (
-                      <span className="text-gray-500" data-oid="_w3:nzx">
+                      <span className="text-gray-500" data-oid=":d1.wjs">
                         --
                       </span>
                     )}
                     <span
                       className="text-sm text-gray-400 ml-1"
-                      data-oid="755vz-i"
+                      data-oid="5z829oz"
                     >
                       dB
                     </span>
@@ -458,13 +458,13 @@ const SoundMeterModal: FC<SoundMeterModalProps> = ({ open, onOpenChange }) => {
                   size="sm"
                   className="bg-space-800 border-space-700 hover:bg-space-700 text-white"
                   onClick={resetPeak}
-                  data-oid="afjst1g"
+                  data-oid="5yloccd"
                 >
                   Reset Peak
                 </Button>
               </div>
 
-              <div className="flex justify-between" data-oid="a6g4hvv">
+              <div className="flex justify-between" data-oid="9xa7iz0">
                 <Button
                   variant={isListening ? "default" : "outline"}
                   className={
@@ -473,11 +473,11 @@ const SoundMeterModal: FC<SoundMeterModalProps> = ({ open, onOpenChange }) => {
                       : "bg-space-800 border-space-700 hover:bg-space-700 text-white"
                   }
                   onClick={toggleMonitoring}
-                  data-oid="8f.uy2m"
+                  data-oid="j:bowqx"
                 >
                   <i
                     className={`fas fa-${isListening ? "pause" : "play"} mr-2`}
-                    data-oid="zy8f-7o"
+                    data-oid="fe9:81t"
                   ></i>
                   {isListening ? "Pause" : "Resume"}
                 </Button>
@@ -486,7 +486,7 @@ const SoundMeterModal: FC<SoundMeterModalProps> = ({ open, onOpenChange }) => {
                   variant="outline"
                   className="bg-space-800 border-space-700 hover:bg-space-700 text-white"
                   onClick={() => onOpenChange(false)}
-                  data-oid="ljlrl76"
+                  data-oid="g9s78m5"
                 >
                   Close
                 </Button>

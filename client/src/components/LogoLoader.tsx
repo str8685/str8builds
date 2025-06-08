@@ -49,30 +49,30 @@ const LogoLoader: FC<LogoLoaderProps> = memo(
       return (
         <div
           className="fixed inset-0 z-50 flex flex-col items-center justify-center bg-space-950/90 backdrop-blur-sm animate-fadeIn"
-          data-oid="zkei3g1"
+          data-oid="mapb6oa"
         >
           {/* Grid background */}
           <div
             className="absolute inset-0 bg-grid-white/[0.03] bg-[size:20px_20px] opacity-30"
-            data-oid=":6jqh15"
+            data-oid="h.6hpa2"
           ></div>
 
           {/* Decorative elements */}
           <div
             className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[400px] h-[400px] bg-gradient-to-r from-cyan-500/10 via-blue-500/5 to-purple-500/10 rounded-full blur-3xl opacity-50"
-            data-oid="j7-.pvl"
+            data-oid="jt4yzce"
           ></div>
 
           <div
             className="flex flex-col items-center relative z-10"
-            data-oid="gw.vra4"
+            data-oid="lbz5hzt"
           >
             {/* Logo with enhanced effects */}
-            <div className="relative" data-oid="7xf41pt">
+            <div className="relative" data-oid="h9i8z93">
               {/* Pulsing background glow */}
               <div
                 className="absolute inset-0 bg-gradient-to-r from-cyan-500/30 to-blue-600/30 rounded-full blur-xl opacity-70 animate-pulse-slow"
-                data-oid="wcn-yf9"
+                data-oid="zzcpmuk"
               ></div>
 
               {/* Logo image */}
@@ -80,19 +80,19 @@ const LogoLoader: FC<LogoLoaderProps> = memo(
                 src={str8BuildLogo}
                 alt="STR8 BUILD Logo"
                 className={`${logoSize} relative z-10 drop-shadow-[0_0_15px_rgba(59,130,246,0.6)] animate-float-slow`}
-                data-oid="8sz4_5w"
+                data-oid="mlw6s02"
               />
 
               {/* Spinning outer ring */}
               <div
                 className="absolute -inset-4 rounded-full border-2 border-t-transparent border-cyan-400/40 animate-spin-slow"
-                data-oid="v3rznwp"
+                data-oid="okhij5."
               ></div>
 
               {/* Second spinning ring (opposite direction) */}
               <div
                 className="absolute -inset-8 rounded-full border border-b-transparent border-blue-500/30 animate-reverse-spin"
-                data-oid="a2kp87t"
+                data-oid="wh.ky3n"
               ></div>
 
               {/* Particle effects */}
@@ -106,7 +106,7 @@ const LogoLoader: FC<LogoLoaderProps> = memo(
                     opacity: 0.7,
                     animation: `particle-orbit 3s linear infinite, pulse-fade 2s ease-in-out infinite ${i * 0.3}s`,
                   }}
-                  data-oid="e9fvz7r"
+                  data-oid="iihnn7o"
                 />
               ))}
             </div>
@@ -114,14 +114,14 @@ const LogoLoader: FC<LogoLoaderProps> = memo(
             {/* Loading text with gradient */}
             <p
               className="mt-6 text-xl font-space font-medium bg-gradient-to-r from-cyan-300 via-white to-blue-300 bg-clip-text text-transparent"
-              data-oid="aj6gd5f"
+              data-oid="f0yu05n"
             >
               {text}
             </p>
           </div>
 
           {/* Custom animation keyframes */}
-          <style jsx data-oid="wncn22h">{`
+          <style jsx data-oid="knz0u:6">{`
             @keyframes particle-orbit {
               0% {
                 transform: rotate(0deg) translateX(60px) rotate(0deg);
@@ -189,13 +189,13 @@ const LogoLoader: FC<LogoLoaderProps> = memo(
     return (
       <div
         className="flex flex-col items-center justify-center p-4"
-        data-oid="a41x5-z"
+        data-oid="hl_u.e2"
       >
-        <div className="relative" data-oid="hiqw4b8">
+        <div className="relative" data-oid="t1k28_4">
           {/* Subtle background glow */}
           <div
             className="absolute inset-0 bg-gradient-to-r from-cyan-500/20 to-blue-600/20 rounded-full blur-lg opacity-50 animate-pulse-slow"
-            data-oid="6v781bw"
+            data-oid="g0:901:"
           ></div>
 
           {/* Logo image */}
@@ -203,20 +203,20 @@ const LogoLoader: FC<LogoLoaderProps> = memo(
             src={str8BuildLogo}
             alt="STR8 BUILD Logo"
             className={`${logoSize} relative z-10 drop-shadow-[0_0_10px_rgba(59,130,246,0.5)]`}
-            data-oid="570ryry"
+            data-oid=".6c44r:"
           />
 
           {/* Spinning ring */}
           <div
             className="absolute -inset-2 rounded-full border border-t-transparent border-cyan-400/50 animate-spin-slow"
-            data-oid="6i0asqm"
+            data-oid="l2igl6a"
           ></div>
         </div>
 
         {/* Loading text with gradient */}
         <p
           className="mt-3 text-sm font-space font-medium bg-gradient-to-r from-cyan-300 to-blue-300 bg-clip-text text-transparent"
-          data-oid="69ib-8p"
+          data-oid="0:qso9i"
         >
           {text}
         </p>

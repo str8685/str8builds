@@ -152,21 +152,21 @@ const AngleTool: FC = () => {
   }, []);
 
   return (
-    <GlassCard className="p-6" data-oid="wqb5q_c">
+    <GlassCard className="p-6" data-oid="m1.b9mn">
       <div
         className="flex justify-between items-center mb-6"
-        data-oid="ug:gu7:"
+        data-oid="ezlf1ri"
       >
         <h2
           className="text-xl font-space font-bold text-white"
-          data-oid="pg61abx"
+          data-oid="qp1k0vw"
         >
           Angle Tool
         </h2>
         <button
           className="text-xs bg-space-800 text-white px-3 py-1.5 rounded hover:bg-space-700"
           onClick={resetMeasurement}
-          data-oid="ban8cvi"
+          data-oid="o4nxy7_"
         >
           Reset
         </button>
@@ -174,7 +174,7 @@ const AngleTool: FC = () => {
 
       <div
         className="text-center mb-4 text-gray-300 text-sm"
-        data-oid="chmwuqy"
+        data-oid="0pqr7ee"
       >
         {points.length === 0
           ? "Tap to set point A"
@@ -188,19 +188,19 @@ const AngleTool: FC = () => {
       <div
         ref={containerRef}
         className="relative h-64 bg-space-900 rounded-lg border border-space-800 overflow-hidden"
-        data-oid=":ahv52-"
+        data-oid="ihd6von"
       >
         <canvas
           ref={canvasRef}
           onClick={handleCanvasClick}
           className="absolute inset-0 cursor-crosshair"
-          data-oid=".2:sx_0"
+          data-oid="sd0-s20"
         />
       </div>
 
       <div
         className="mt-4 text-xs text-gray-400 text-center"
-        data-oid="sjzv0fk"
+        data-oid="5pk6925"
       >
         Set three points to measure the angle between two lines.
       </div>

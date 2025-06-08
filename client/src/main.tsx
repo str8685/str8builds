@@ -23,14 +23,14 @@ const AppWithTracking = () => {
     }
   }, [location]);
 
-  return <App data-oid="h9kvj0x" />;
+  return <App data-oid="czi_cqo" />;
 };
 
 createRoot(document.getElementById("root")!).render(
-  <StrictMode data-oid="bjwyj01">
-    <ErrorBoundary data-oid="6y5s95y">
-      <Router data-oid=":kmeeg2">
-        <AppWithTracking data-oid="bn4slq4" />
+  <StrictMode data-oid="4fo6t4p">
+    <ErrorBoundary data-oid="uvf6izd">
+      <Router data-oid="bj37hal">
+        <AppWithTracking data-oid="dgrx.c:" />
       </Router>
     </ErrorBoundary>
   </StrictMode>,

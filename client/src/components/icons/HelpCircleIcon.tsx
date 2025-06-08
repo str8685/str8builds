@@ -41,7 +41,7 @@ const HelpCircleIcon: React.FC<HelpCircleIconProps> = ({
         height: size,
       }}
       aria-label="Help"
-      data-oid="p:6gb_u"
+      data-oid="q7j33du"
     >
       {/* Simple SVG icon */}
       <svg
@@ -54,14 +54,14 @@ const HelpCircleIcon: React.FC<HelpCircleIconProps> = ({
         strokeWidth="2"
         strokeLinecap="round"
         strokeLinejoin="round"
-        data-oid=":th2rhi"
+        data-oid="ze1usno"
       >
-        <circle cx="12" cy="12" r="10" data-oid="iuckyzi"></circle>
+        <circle cx="12" cy="12" r="10" data-oid="xskjkf2"></circle>
         <path
           d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"
-          data-oid=".kefa0r"
+          data-oid=".7ex1u4"
         ></path>
-        <path d="M12 17h.01" data-oid="mv90kd3"></path>
+        <path d="M12 17h.01" data-oid="yhfxudu"></path>
       </svg>
     </button>
   );

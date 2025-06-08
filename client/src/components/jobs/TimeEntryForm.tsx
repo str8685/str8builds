@@ -68,16 +68,16 @@ const TimeEntryForm: FC<TimeEntryFormProps> = ({ onClose }) => {
     <form
       onSubmit={handleSubmit}
       className="bg-space-900 rounded-lg p-4 mb-4"
-      data-oid="mwv_ua-"
+      data-oid="7r7jkrc"
     >
       <div
         className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-4"
-        data-oid="bcscukx"
+        data-oid="abqy-w2"
       >
-        <div data-oid="l13:7v_">
+        <div data-oid="7gke5w.">
           <label
             className="block text-xs text-gray-400 mb-1"
-            data-oid="uez8grp"
+            data-oid="6sofr10"
           >
             Project
           </label>
@@ -87,27 +87,27 @@ const TimeEntryForm: FC<TimeEntryFormProps> = ({ onClose }) => {
             onChange={handleChange}
             className="w-full bg-space-800 border border-gray-700 rounded p-2 text-sm text-white"
             disabled={isLoadingProjects}
-            data-oid="b82_5dy"
+            data-oid="eynx_a-"
           >
             {isLoadingProjects ? (
-              <option data-oid=":nux3jw">Loading projects...</option>
+              <option data-oid="n_32iq1">Loading projects...</option>
             ) : typedProjects.length > 0 ? (
               typedProjects.map((project: Project) => (
-                <option key={project.id} value={project.id} data-oid="3_0l0e2">
+                <option key={project.id} value={project.id} data-oid="ee6mctq">
                   {project.name}
                 </option>
               ))
             ) : (
-              <option disabled data-oid="un1y83q">
+              <option disabled data-oid="jv:3x0k">
                 No projects available
               </option>
             )}
           </select>
         </div>
-        <div data-oid="uvaelm5">
+        <div data-oid="welzttx">
           <label
             className="block text-xs text-gray-400 mb-1"
-            data-oid="7bxnoug"
+            data-oid="_hp584h"
           >
             Date
           </label>
@@ -117,13 +117,13 @@ const TimeEntryForm: FC<TimeEntryFormProps> = ({ onClose }) => {
             value={formData.date}
             onChange={handleChange}
             className="w-full bg-space-800 border border-gray-700 rounded p-2 text-sm text-white"
-            data-oid="10hh6v3"
+            data-oid="yiadeq5"
           />
         </div>
-        <div data-oid="lu:oqyy">
+        <div data-oid="ozb5rwb">
           <label
             className="block text-xs text-gray-400 mb-1"
-            data-oid="2th3ljm"
+            data-oid="bk4kx:h"
           >
             Duration (HH:MM or HH:MM:SS)
           </label>
@@ -134,7 +134,7 @@ const TimeEntryForm: FC<TimeEntryFormProps> = ({ onClose }) => {
             onChange={handleChange}
             placeholder="HH:MM"
             className="w-full bg-space-800 border border-gray-700 rounded p-2 text-sm text-white"
-            data-oid="edunfk."
+            data-oid="cy7wze2"
           />
         </div>
       </div>
@@ -146,15 +146,15 @@ const TimeEntryForm: FC<TimeEntryFormProps> = ({ onClose }) => {
         className="w-full bg-space-800 border border-gray-700 rounded p-2 text-sm text-white mb-4"
         placeholder="Notes about work completed"
         rows={3}
-        data-oid="sdv_z9z"
+        data-oid="w6n31ev"
       ></textarea>
 
-      <div className="flex space-x-2 justify-end" data-oid="ev:zfo2">
+      <div className="flex space-x-2 justify-end" data-oid="dsk5ds_">
         <button
           type="button"
           onClick={onClose}
           className="bg-space-800 text-white px-4 py-2 rounded hover:bg-space-700"
-          data-oid="5bbjjil"
+          data-oid="2efdt4g"
         >
           Cancel
         </button>
@@ -162,7 +162,7 @@ const TimeEntryForm: FC<TimeEntryFormProps> = ({ onClose }) => {
           type="submit"
           disabled={isCreating}
           className="bg-purple-900 text-cyan px-4 py-2 rounded hover:bg-purple-800 btn-glow btn-glow-cyan"
-          data-oid="ko2n95p"
+          data-oid=".9bxqmo"
         >
           {isCreating ? "Saving..." : "Add Time Entry"}
         </button>

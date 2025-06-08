@@ -85,95 +85,95 @@ function App() {
     // Pages that don't require the app layout (login, register)
     if (isAuthPage) {
       return (
-        <Switch data-oid="kavbzrw">
-          <Route path="/login" component={Login} data-oid="7zms2vp" />
-          <Route path="/register" component={Register} data-oid="hu8p694" />
+        <Switch data-oid="y4f83c-">
+          <Route path="/login" component={Login} data-oid="_q61a27" />
+          <Route path="/register" component={Register} data-oid="m9dwmm7" />
         </Switch>
       );
     }
 
     // Main app with protected routes
     return (
-      <AppLayout data-oid="00ywz6o">
-        <Switch data-oid="9ypn4vd">
-          <Route path="/" data-oid="yyy3jzl">
-            <ProtectedRoute data-oid="6vk3c-0">
-              <Dashboard data-oid="_w7k8jt" />
+      <AppLayout data-oid="i5rpa4x">
+        <Switch data-oid="yrszumj">
+          <Route path="/" data-oid="kmkr:9d">
+            <ProtectedRoute data-oid="nefm7pw">
+              <Dashboard data-oid="axrx0o8" />
             </ProtectedRoute>
           </Route>
-          <Route path="/tools" data-oid="lcrgzhg">
-            <ProtectedRoute data-oid="mscvqu:">
-              <Tools data-oid="h-ngebp" />
+          <Route path="/tools" data-oid=":vyp661">
+            <ProtectedRoute data-oid="t3-:_zc">
+              <Tools data-oid="pm0yhi5" />
             </ProtectedRoute>
           </Route>
-          <Route path="/calculators" data-oid="ci4bl4_">
-            <ProtectedRoute data-oid="t09tigy">
-              <Calculators data-oid="ztc_4wp" />
+          <Route path="/calculators" data-oid="sg0pctj">
+            <ProtectedRoute data-oid="3alphnk">
+              <Calculators data-oid=":5gco._" />
             </ProtectedRoute>
           </Route>
-          <Route path="/resources" data-oid="qe2oi44">
-            <ProtectedRoute data-oid="nnwujs8">
-              <Resources data-oid="42ooe:k" />
+          <Route path="/resources" data-oid="vhdbcu5">
+            <ProtectedRoute data-oid=":sxsy4.">
+              <Resources data-oid="tpnz-wa" />
             </ProtectedRoute>
           </Route>
-          <Route path="/jobs" data-oid="97b-0k0">
-            <ProtectedRoute data-oid="25k-al5">
-              <Jobs data-oid="5ie-9mp" />
+          <Route path="/jobs" data-oid="_ymsqkc">
+            <ProtectedRoute data-oid="672vamg">
+              <Jobs data-oid="3u61z07" />
             </ProtectedRoute>
           </Route>
-          <Route path="/invoices" data-oid="vz3xp5m">
-            <ProtectedRoute data-oid="2ulc:72">
-              <InvoicesPage data-oid="m9l9yop" />
+          <Route path="/invoices" data-oid="tcibfkm">
+            <ProtectedRoute data-oid="x_vlj:6">
+              <InvoicesPage data-oid="to2lsy2" />
             </ProtectedRoute>
           </Route>
-          <Route path="/timesheet" data-oid="wbhv38y">
-            <ProtectedRoute data-oid="cq2uv7r">
-              <TimesheetPage data-oid="smh:hh-" />
+          <Route path="/timesheet" data-oid="_88d.xx">
+            <ProtectedRoute data-oid="trhx8ko">
+              <TimesheetPage data-oid="x37hkiy" />
             </ProtectedRoute>
           </Route>
-          <Route path="/test-timesheet" data-oid="avrj.aa">
-            <ProtectedRoute data-oid="agcd3x1">
-              <TestTimesheetEntry data-oid="2u5wkv-" />
+          <Route path="/test-timesheet" data-oid="19m0qo2">
+            <ProtectedRoute data-oid="co1svi1">
+              <TestTimesheetEntry data-oid="-6_egre" />
             </ProtectedRoute>
           </Route>
-          <Route path="/combined" data-oid="567duud">
-            <ProtectedRoute data-oid="6x:1zra">
-              <CombinedPage data-oid="lnldrjo" />
+          <Route path="/combined" data-oid="ntq_48d">
+            <ProtectedRoute data-oid="6f.ui6s">
+              <CombinedPage data-oid="1v6s-_c" />
             </ProtectedRoute>
           </Route>
-          <Route path="/admin" data-oid="246o.zx">
-            <ProtectedRoute data-oid="d756jo2">
-              <Admin data-oid="ym38xm." />
+          <Route path="/admin" data-oid="6zh79r0">
+            <ProtectedRoute data-oid="hxh54-4">
+              <Admin data-oid="5.cy722" />
             </ProtectedRoute>
           </Route>
-          <Route path="/help" data-oid="m4fe725">
-            <ProtectedRoute data-oid="3htgmfh">
-              <Help data-oid="900kmy-" />
+          <Route path="/help" data-oid="-gei-rj">
+            <ProtectedRoute data-oid="fy4jo0v">
+              <Help data-oid="7ds9muj" />
             </ProtectedRoute>
           </Route>
-          <Route path="/loader-demo" data-oid="4r3.eox">
-            <ProtectedRoute data-oid="6wi64_x">
-              <LoaderDemo data-oid="6.mnul." />
+          <Route path="/loader-demo" data-oid="fvx3yyb">
+            <ProtectedRoute data-oid="ef8ktai">
+              <LoaderDemo data-oid="jtcwb_v" />
             </ProtectedRoute>
           </Route>
-          <Route path="/icon-example" data-oid="zsh_9o9">
-            <ProtectedRoute data-oid="q2qa34.">
-              <IconExample data-oid="h7:-sks" />
+          <Route path="/icon-example" data-oid="asqbhzk">
+            <ProtectedRoute data-oid="8cwv.c5">
+              <IconExample data-oid="w7u9_3b" />
             </ProtectedRoute>
           </Route>
-          <Route path="/font-icon-example" data-oid="u:9n4gf">
-            <ProtectedRoute data-oid="qb:7fcz">
-              <FontIconExample data-oid="w2qw.p9" />
+          <Route path="/font-icon-example" data-oid="lohkupp">
+            <ProtectedRoute data-oid="vus3j2k">
+              <FontIconExample data-oid="7vs.a-k" />
             </ProtectedRoute>
           </Route>
-          <Route path="/glass-card-example" data-oid="uq944xp">
-            <ProtectedRoute data-oid="4gl6swn">
-              <GlassCardExample data-oid="0nkhq6h" />
+          <Route path="/glass-card-example" data-oid="tia683_">
+            <ProtectedRoute data-oid="ahvv:0c">
+              <GlassCardExample data-oid="o5gj.mi" />
             </ProtectedRoute>
           </Route>
-          <Route data-oid="4si9o75">
-            <ProtectedRoute data-oid="4pny:rn">
-              <NotFound data-oid=":vd9_wl" />
+          <Route data-oid="cqr5hp4">
+            <ProtectedRoute data-oid="mbsmqqr">
+              <NotFound data-oid=".6rn2wg" />
             </ProtectedRoute>
           </Route>
         </Switch>
@@ -182,11 +182,11 @@ function App() {
   };
 
   return (
-    <QueryClientProvider client={queryClient} data-oid="jkqpjwb">
-      <AuthProvider data-oid=":m:foz9">
-        <TooltipProvider data-oid="r0ur39e">
-          <Toaster data-oid="bors19_" />
-          <Router data-oid="shpi2kh" />
+    <QueryClientProvider client={queryClient} data-oid="ma4_9mn">
+      <AuthProvider data-oid="w-v.xb.">
+        <TooltipProvider data-oid="r3d6j83">
+          <Toaster data-oid="7djkaa." />
+          <Router data-oid="gm4gof3" />
         </TooltipProvider>
       </AuthProvider>
     </QueryClientProvider>

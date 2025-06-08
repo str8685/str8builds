@@ -320,15 +320,15 @@ const ARFloorPlan = () => {
   }, [walls, furniture]);
 
   return (
-    <div className="space-y-6" data-oid="t-yp2gs">
-      <Card className="bg-space-900/50 border-cyan/20" data-oid="i_7q3zp">
-        <CardHeader data-oid="k2:o172">
-          <div className="flex items-center justify-between" data-oid="7a7h7h2">
+    <div className="space-y-6" data-oid="xrj2rn:">
+      <Card className="bg-space-900/50 border-cyan/20" data-oid="laojybb">
+        <CardHeader data-oid="bj-s5b5">
+          <div className="flex items-center justify-between" data-oid="zq8z1q9">
             <CardTitle
               className="text-white flex items-center gap-2"
-              data-oid="mcshk_c"
+              data-oid="fonj0gq"
             >
-              <Square className="w-5 h-5 text-cyan-400" data-oid="vdoy.0e" />
+              <Square className="w-5 h-5 text-cyan-400" data-oid="9vn9j__" />
               AR Floor Plan
             </CardTitle>
             <Button
@@ -336,24 +336,24 @@ const ARFloorPlan = () => {
               size="sm"
               onClick={toggleCamera}
               className="gap-2"
-              data-oid="9o9p:z0"
+              data-oid="2pv7r3r"
             >
-              <Camera className="w-4 h-4" data-oid="t0pyzjv" />
+              <Camera className="w-4 h-4" data-oid="sgxn82r" />
               {isCameraActive ? "Stop Camera" : "Start Camera"}
             </Button>
           </div>
-          <CardDescription className="text-gray-400" data-oid="8byzcjt">
+          <CardDescription className="text-gray-400" data-oid="8ut7zrx">
             Design and measure floor plans with augmented reality
           </CardDescription>
         </CardHeader>
 
-        <CardContent data-oid="3hvy7b0">
-          <div className="flex flex-col lg:flex-row gap-6" data-oid="pw9688c">
+        <CardContent data-oid="5wpvgdc">
+          <div className="flex flex-col lg:flex-row gap-6" data-oid="4u3kubk">
             {/* Main canvas */}
             <div
               ref={containerRef}
               className="relative w-full h-[500px] bg-space-950/50 rounded-lg border border-cyan/20 overflow-hidden"
-              data-oid="bopkyuh"
+              data-oid="2nz5:dk"
             >
               <canvas
                 ref={canvasRef}
@@ -361,7 +361,7 @@ const ARFloorPlan = () => {
                 onMouseDown={handleMouseDown}
                 onMouseMove={handleMouseMove}
                 onMouseUp={handleMouseUp}
-                data-oid="fti:f0d"
+                data-oid="owmol7u"
               />
 
               {isCameraActive && (
@@ -371,20 +371,20 @@ const ARFloorPlan = () => {
                   playsInline
                   muted
                   className="absolute inset-0 w-full h-full object-cover opacity-30"
-                  data-oid="cy3v:p7"
+                  data-oid=".4:3q9:"
                 />
               )}
             </div>
 
             {/* Controls */}
-            <div className="w-full lg:w-64 space-y-4" data-oid="bu051mu">
-              <div className="space-y-2" data-oid="-y8erf.">
-                <Label className="text-gray-300" data-oid="_.bo:2g">
+            <div className="w-full lg:w-64 space-y-4" data-oid="pygau1c">
+              <div className="space-y-2" data-oid="vec5umr">
+                <Label className="text-gray-300" data-oid="ujfh2ei">
                   Room Dimensions
                 </Label>
-                <div className="grid grid-cols-2 gap-2" data-oid="8a7az-m">
-                  <div data-oid="78f__qc">
-                    <Label className="text-xs" data-oid=":.hyf09">
+                <div className="grid grid-cols-2 gap-2" data-oid=".lbalrh">
+                  <div data-oid="d1h1le9">
+                    <Label className="text-xs" data-oid="-3itpt.">
                       Width ({unit})
                     </Label>
                     <Input
@@ -392,11 +392,11 @@ const ARFloorPlan = () => {
                       value={roomWidth}
                       onChange={(e) => setRoomWidth(Number(e.target.value))}
                       className="bg-space-800 border-space-700"
-                      data-oid="95-q6yr"
+                      data-oid="02egoru"
                     />
                   </div>
-                  <div data-oid="v6fm1:2">
-                    <Label className="text-xs" data-oid="x13akk4">
+                  <div data-oid="nl-pmox">
+                    <Label className="text-xs" data-oid="ozu6kg5">
                       Length ({unit})
                     </Label>
                     <Input
@@ -404,85 +404,85 @@ const ARFloorPlan = () => {
                       value={roomLength}
                       onChange={(e) => setRoomLength(Number(e.target.value))}
                       className="bg-space-800 border-space-700"
-                      data-oid="54mg.ez"
+                      data-oid="n0ezaa5"
                     />
                   </div>
                 </div>
                 <Select
                   value={unit}
                   onValueChange={(value: "m" | "ft") => setUnit(value)}
-                  data-oid="8vgqtcg"
+                  data-oid="-l.a1tj"
                 >
                   <SelectTrigger
                     className="bg-space-800 border-space-700"
-                    data-oid="ssm-pfe"
+                    data-oid="i50kw6l"
                   >
-                    <SelectValue placeholder="Unit" data-oid="0c6j8yj" />
+                    <SelectValue placeholder="Unit" data-oid="xo55ma0" />
                   </SelectTrigger>
                   <SelectContent
                     className="bg-space-900 border-space-700"
-                    data-oid="js:a1z:"
+                    data-oid="-t8t3.3"
                   >
-                    <SelectItem value="m" data-oid="aafc0xv">
+                    <SelectItem value="m" data-oid="zvpeq.k">
                       Meters
                     </SelectItem>
-                    <SelectItem value="ft" data-oid="h:lhg.v">
+                    <SelectItem value="ft" data-oid="2mlqk8t">
                       Feet
                     </SelectItem>
                   </SelectContent>
                 </Select>
               </div>
 
-              <div className="space-y-2" data-oid="qil9677">
-                <Label className="text-gray-300" data-oid="pl7qarg">
+              <div className="space-y-2" data-oid="1p6afjg">
+                <Label className="text-gray-300" data-oid="9d7w996">
                   Tools
                 </Label>
-                <div className="flex flex-wrap gap-2" data-oid="y0ga83e">
+                <div className="flex flex-wrap gap-2" data-oid="dh6zb1h">
                   <Button
                     variant={mode === "select" ? "secondary" : "outline"}
                     size="sm"
                     onClick={() => setMode("select")}
-                    data-oid="p.9p.1n"
+                    data-oid="6hy0_zr"
                   >
-                    <Move className="w-4 h-4 mr-2" data-oid="0qlxguo" />
+                    <Move className="w-4 h-4 mr-2" data-oid="6inrrvh" />
                     Select
                   </Button>
                   <Button
                     variant={mode === "wall" ? "secondary" : "outline"}
                     size="sm"
                     onClick={() => setMode("wall")}
-                    data-oid="z7c2v.-"
+                    data-oid="-kw54g."
                   >
-                    <Ruler className="w-4 h-4 mr-2" data-oid="ymnb4s5" />
+                    <Ruler className="w-4 h-4 mr-2" data-oid="krd73lp" />
                     Wall
                   </Button>
                   <Button
                     variant={mode === "furniture" ? "secondary" : "outline"}
                     size="sm"
                     onClick={() => setMode("furniture")}
-                    data-oid="7p6m6rf"
+                    data-oid="qlkj81u"
                   >
-                    <Box className="w-4 h-4 mr-2" data-oid="-0nbhvq" />
+                    <Box className="w-4 h-4 mr-2" data-oid="s3dw:3n" />
                     Furniture
                   </Button>
                 </div>
               </div>
 
               {mode === "furniture" && (
-                <div className="space-y-2" data-oid="fz-kye0">
-                  <Label className="text-gray-300" data-oid="mf_9kf_">
+                <div className="space-y-2" data-oid="eikzjlv">
+                  <Label className="text-gray-300" data-oid=":ibk2_e">
                     Furniture Type
                   </Label>
-                  <div className="grid grid-cols-3 gap-2" data-oid="m:3viva">
+                  <div className="grid grid-cols-3 gap-2" data-oid="vgpnf0f">
                     <Button
                       variant={
                         furnitureType === "table" ? "secondary" : "outline"
                       }
                       size="sm"
                       onClick={() => setFurnitureType("table")}
-                      data-oid="vg-hq:-"
+                      data-oid="1f41i.g"
                     >
-                      <Table className="w-4 h-4" data-oid="t_9kg-i" />
+                      <Table className="w-4 h-4" data-oid="kki4dt_" />
                     </Button>
                     <Button
                       variant={
@@ -490,9 +490,9 @@ const ARFloorPlan = () => {
                       }
                       size="sm"
                       onClick={() => setFurnitureType("armchair")}
-                      data-oid="-yx5kd7"
+                      data-oid="u.zwoup"
                     >
-                      <Armchair className="w-4 h-4" data-oid="bjb67_j" />
+                      <Armchair className="w-4 h-4" data-oid="sm40j5-" />
                     </Button>
                     <Button
                       variant={
@@ -500,9 +500,9 @@ const ARFloorPlan = () => {
                       }
                       size="sm"
                       onClick={() => setFurnitureType("sofa")}
-                      data-oid="drfgl2c"
+                      data-oid="pr7setr"
                     >
-                      <Sofa className="w-4 h-4" data-oid="pmds8ck" />
+                      <Sofa className="w-4 h-4" data-oid="90ourii" />
                     </Button>
                     <Button
                       variant={
@@ -510,9 +510,9 @@ const ARFloorPlan = () => {
                       }
                       size="sm"
                       onClick={() => setFurnitureType("bed")}
-                      data-oid="4n:ht7z"
+                      data-oid="toaoydz"
                     >
-                      <Bed className="w-4 h-4" data-oid=".i3ko.5" />
+                      <Bed className="w-4 h-4" data-oid="eg6cqvp" />
                     </Button>
                     <Button
                       variant={
@@ -520,26 +520,26 @@ const ARFloorPlan = () => {
                       }
                       size="sm"
                       onClick={() => setFurnitureType("door")}
-                      data-oid="lpydhyo"
+                      data-oid="a5q0k7f"
                     >
-                      <DoorOpen className="w-4 h-4" data-oid="h.rjtqn" />
+                      <DoorOpen className="w-4 h-4" data-oid="mqjl78p" />
                     </Button>
                   </div>
                 </div>
               )}
 
-              <div className="space-y-2" data-oid="dxapi0z">
-                <Label className="text-gray-300" data-oid="hx0w._c">
+              <div className="space-y-2" data-oid="83z686e">
+                <Label className="text-gray-300" data-oid="i:7f71:">
                   Actions
                 </Label>
-                <div className="flex flex-wrap gap-2" data-oid="2q4zmmm">
+                <div className="flex flex-wrap gap-2" data-oid="kqc..nw">
                   <Button
                     variant="outline"
                     size="sm"
                     className="gap-2"
-                    data-oid="5-a72pk"
+                    data-oid="3zd2lzn"
                   >
-                    <Save className="w-4 h-4" data-oid="2o7qece" />
+                    <Save className="w-4 h-4" data-oid="ynectt6" />
                     Save
                   </Button>
                   <Button
@@ -552,9 +552,9 @@ const ARFloorPlan = () => {
                       setSelectedItem(null);
                       drawFloorPlan();
                     }}
-                    data-oid="j1uki2:"
+                    data-oid="hxvxur-"
                   >
-                    <RotateCcw className="w-4 h-4" data-oid="nf53wjo" />
+                    <RotateCcw className="w-4 h-4" data-oid="y2y9rta" />
                     Reset
                   </Button>
                 </div>

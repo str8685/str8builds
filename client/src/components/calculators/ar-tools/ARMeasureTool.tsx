@@ -294,33 +294,33 @@ const ARMeasureTool: FC = () => {
   };
 
   return (
-    <div className="space-y-6" data-oid="4.pnik6">
+    <div className="space-y-6" data-oid="iu-9gkq">
       <div
         className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4"
-        data-oid=".kh2fvp"
+        data-oid="vyj-342"
       >
-        <div data-oid="gn45.l:">
-          <h2 className="text-2xl font-bold text-white" data-oid="piysrts">
+        <div data-oid="utd_:lg">
+          <h2 className="text-2xl font-bold text-white" data-oid="nbtwltz">
             AR Measure Tool
           </h2>
-          <p className="text-gray-400" data-oid="1dxtbum">
+          <p className="text-gray-400" data-oid="-13zuoe">
             Measure objects in your space using augmented reality
           </p>
         </div>
-        <div className="flex gap-2" data-oid="6lg51wc">
+        <div className="flex gap-2" data-oid="vn2lyx9">
           <select
             value={unit}
             onChange={(e) => setUnit(e.target.value as "cm" | "in" | "m")}
             className="bg-space-800 border border-space-600 text-white rounded-lg px-3 py-2 text-sm focus:ring-2 focus:ring-cyan-500 focus:border-transparent"
-            data-oid="plxiigs"
+            data-oid="b1t:1k0"
           >
-            <option value="cm" data-oid="0-frhi4">
+            <option value="cm" data-oid="b29nw.s">
               Centimeters (cm)
             </option>
-            <option value="in" data-oid="4gj8gle">
+            <option value="in" data-oid="u7e6lt-">
               Inches (in)
             </option>
-            <option value="m" data-oid="qdtp4b3">
+            <option value="m" data-oid="e4.w7_q">
               Meters (m)
             </option>
           </select>
@@ -332,31 +332,31 @@ const ARMeasureTool: FC = () => {
                 ? "bg-red-600 hover:bg-red-700 text-white"
                 : "bg-cyan-600 hover:bg-cyan-700 text-white"
             }`}
-            data-oid="lyz966h"
+            data-oid="dq1gss_"
           >
-            <Camera className="h-4 w-4" data-oid="q444bzj" />
+            <Camera className="h-4 w-4" data-oid="1u9w.v9" />
             {showCamera ? "Close Camera" : "Open Camera"}
           </button>
         </div>
       </div>
 
       {showCamera && (
-        <GlassCard className="p-4 mb-6" data-oid="pm7pwm4">
+        <GlassCard className="p-4 mb-6" data-oid="w4d6l72">
           <div
             className="relative w-full h-96 bg-black rounded-lg overflow-hidden"
-            data-oid="3znyppi"
+            data-oid="w2q6vh5"
           >
             <video
               ref={videoRef}
               autoPlay
               playsInline
               className="w-full h-full object-contain"
-              data-oid="xdbxt5:"
+              data-oid="rxtvihf"
             />
 
             <div
               className="absolute bottom-4 left-0 right-0 flex justify-center gap-4"
-              data-oid="z:-bea4"
+              data-oid="e5-zxhn"
             >
               <button
                 onClick={isCameraActive ? stopCamera : startCamera}
@@ -365,7 +365,7 @@ const ARMeasureTool: FC = () => {
                     ? "bg-red-600 hover:bg-red-700 text-white"
                     : "bg-green-600 hover:bg-green-700 text-white"
                 }`}
-                data-oid="go41oru"
+                data-oid="5:u35_q"
               >
                 {isCameraActive ? "Stop Camera" : "Start Camera"}
               </button>
@@ -377,7 +377,7 @@ const ARMeasureTool: FC = () => {
                     ? "bg-blue-600 hover:bg-blue-700 text-white"
                     : "bg-gray-500 text-gray-300 cursor-not-allowed"
                 }`}
-                data-oid="pzzy:jj"
+                data-oid="-3a__05"
               >
                 Capture Image
               </button>
@@ -387,47 +387,47 @@ const ARMeasureTool: FC = () => {
       )}
 
       {image ? (
-        <div className="relative" data-oid=".cn2dzt">
+        <div className="relative" data-oid=".52m6iu">
           <div
             ref={containerRef}
             className="relative w-full h-[500px] bg-black rounded-xl overflow-hidden"
-            data-oid=":th.r4."
+            data-oid="p2ym7s0"
           >
             <canvas
               ref={canvasRef}
               onClick={handleCanvasClick}
               className="absolute inset-0 w-full h-full cursor-crosshair"
-              data-oid="ry4omja"
+              data-oid="94be1.4"
             />
 
             {!isMeasuring ? (
               <div
                 className="absolute inset-0 flex items-center justify-center bg-black/50"
-                data-oid="6fq0pxc"
+                data-oid="v3m2hby"
               >
                 <div
                   className="text-center p-6 bg-space-900/90 rounded-xl"
-                  data-oid="5e:6m22"
+                  data-oid="ygp0tmy"
                 >
                   <Ruler
                     className="h-12 w-12 mx-auto mb-4 text-cyan-400"
-                    data-oid=".e6mmjg"
+                    data-oid="jvmuj82"
                   />
 
                   <h3
                     className="text-xl font-bold text-white mb-2"
-                    data-oid=":1.0idg"
+                    data-oid="o6_w3um"
                   >
                     Ready to Measure
                   </h3>
-                  <p className="text-gray-300 mb-4" data-oid="3qgs15q">
+                  <p className="text-gray-300 mb-4" data-oid="-_7xdwv">
                     Click the "Start Measuring" button to begin taking
                     measurements
                   </p>
                   <button
                     onClick={() => setIsMeasuring(true)}
                     className="px-6 py-2 bg-gradient-to-r from-cyan-600 to-blue-600 text-white rounded-lg font-medium hover:opacity-90 transition-opacity"
-                    data-oid="r_-:l:f"
+                    data-oid="ed52e0b"
                   >
                     Start Measuring
                   </button>
@@ -436,12 +436,12 @@ const ARMeasureTool: FC = () => {
             ) : (
               <div
                 className="absolute top-4 left-4 bg-space-900/80 text-white px-4 py-2 rounded-lg"
-                data-oid="afi7gym"
+                data-oid="dwjnni_"
               >
-                <p className="text-sm" data-oid=".9ohbe9">
+                <p className="text-sm" data-oid="8.ap:.-">
                   Click to set start and end points
                 </p>
-                <p className="text-xs text-gray-400" data-oid="4y6nxgf">
+                <p className="text-xs text-gray-400" data-oid="8.dkdeg">
                   Click again to complete the measurement
                 </p>
               </div>
@@ -450,25 +450,25 @@ const ARMeasureTool: FC = () => {
 
           <div
             className="mt-4 flex justify-between items-center"
-            data-oid="wd0u-j2"
+            data-oid="r9tzhp:"
           >
-            <div className="flex gap-2" data-oid="0he_ewn">
+            <div className="flex gap-2" data-oid="qd:wym7">
               {isMeasuring ? (
                 <button
                   onClick={() => setIsMeasuring(false)}
                   className="px-4 py-2 bg-red-600 hover:bg-red-700 text-white rounded-lg font-medium flex items-center gap-2"
-                  data-oid="_x3k_r3"
+                  data-oid="cb6bdiu"
                 >
-                  <RotateCcw className="h-4 w-4" data-oid="j5k80eu" />
+                  <RotateCcw className="h-4 w-4" data-oid="o83ljib" />
                   Cancel Measurement
                 </button>
               ) : (
                 <button
                   onClick={() => setIsMeasuring(true)}
                   className="px-4 py-2 bg-cyan-600 hover:bg-cyan-700 text-white rounded-lg font-medium flex items-center gap-2"
-                  data-oid="zeuw-ha"
+                  data-oid="dd9ip24"
                 >
-                  <Ruler className="h-4 w-4" data-oid="px2ly5c" />
+                  <Ruler className="h-4 w-4" data-oid="thnl125" />
                   New Measurement
                 </button>
               )}
@@ -476,9 +476,9 @@ const ARMeasureTool: FC = () => {
               <button
                 onClick={resetMeasurements}
                 className="px-4 py-2 bg-gray-600 hover:bg-gray-700 text-white rounded-lg font-medium flex items-center gap-2"
-                data-oid="wq.0jfe"
+                data-oid="hmrn34j"
               >
-                <RotateCcw className="h-4 w-4" data-oid="s.vzy3." />
+                <RotateCcw className="h-4 w-4" data-oid="elm.65s" />
                 Reset All
               </button>
             </div>
@@ -486,41 +486,41 @@ const ARMeasureTool: FC = () => {
             <button
               onClick={saveMeasurements}
               className="px-4 py-2 bg-green-600 hover:bg-green-700 text-white rounded-lg font-medium flex items-center gap-2"
-              data-oid="d9vbo8w"
+              data-oid="whk0-jx"
             >
-              <Save className="h-4 w-4" data-oid="c24vc3e" />
+              <Save className="h-4 w-4" data-oid="egibybz" />
               Save Measurements
             </button>
           </div>
 
           {measurements.length > 0 && (
-            <div className="mt-6" data-oid="2pwdvgs">
+            <div className="mt-6" data-oid="j:g4mdk">
               <h3
                 className="text-lg font-semibold text-white mb-2"
-                data-oid="smuez9x"
+                data-oid="kij.u.2"
               >
                 Measurements
               </h3>
               <div
                 className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4"
-                data-oid="2:3._39"
+                data-oid="1u4dkwn"
               >
                 {measurements.map((measurement, index) => (
                   <div
                     key={measurement.id}
                     className="bg-space-800/50 p-4 rounded-lg border border-space-700"
-                    data-oid="2j5ykkx"
+                    data-oid="tzcwh70"
                   >
                     <div
                       className="flex justify-between items-center"
-                      data-oid="oku-jc3"
+                      data-oid="oalhh.f"
                     >
-                      <span className="text-gray-400" data-oid="j4qzew7">
+                      <span className="text-gray-400" data-oid="dwhgrwc">
                         Measurement {index + 1}
                       </span>
                       <span
                         className="text-2xl font-bold text-cyan-400"
-                        data-oid="ekvo:ao"
+                        data-oid="f9gr06l"
                       >
                         {measurement.length} {measurement.unit}
                       </span>
@@ -533,30 +533,30 @@ const ARMeasureTool: FC = () => {
         </div>
       ) : (
         !showCamera && (
-          <GlassCard className="p-8 text-center" data-oid="8mb5-oh">
-            <div className="max-w-md mx-auto" data-oid="kx35kzh">
+          <GlassCard className="p-8 text-center" data-oid="cypwict">
+            <div className="max-w-md mx-auto" data-oid="a8ey5kf">
               <div
                 className="w-16 h-16 bg-cyan-500/10 rounded-full flex items-center justify-center mx-auto mb-4"
-                data-oid="55hl93."
+                data-oid="qdnoy5w"
               >
-                <Camera className="h-8 w-8 text-cyan-400" data-oid="fdftso8" />
+                <Camera className="h-8 w-8 text-cyan-400" data-oid="b3z24zn" />
               </div>
               <h3
                 className="text-xl font-bold text-white mb-2"
-                data-oid="ablon.0"
+                data-oid=":69b0c_"
               >
                 No Image Captured
               </h3>
-              <p className="text-gray-400 mb-6" data-oid="a1pyoax">
+              <p className="text-gray-400 mb-6" data-oid="0:o8d8-">
                 Use the camera to capture an image of the area you want to
                 measure.
               </p>
               <button
                 onClick={() => setShowCamera(true)}
                 className="px-6 py-3 bg-gradient-to-r from-cyan-600 to-blue-600 text-white rounded-lg font-medium hover:opacity-90 transition-opacity flex items-center gap-2 mx-auto"
-                data-oid="_zvqaq0"
+                data-oid="umygodq"
               >
-                <Camera className="h-5 w-5" data-oid="mcua2th" />
+                <Camera className="h-5 w-5" data-oid="cs20f:s" />
                 Open Camera
               </button>
             </div>
@@ -566,58 +566,58 @@ const ARMeasureTool: FC = () => {
 
       <div
         className="mt-8 bg-space-900/50 p-6 rounded-xl border border-space-700"
-        data-oid=".c3y4ji"
+        data-oid="15g796y"
       >
         <h3
           className="text-lg font-semibold text-white mb-3"
-          data-oid="zrspu_b"
+          data-oid="_dgli4t"
         >
           How to Use
         </h3>
-        <ol className="space-y-3 text-gray-300" data-oid="vqvjrw8">
-          <li className="flex items-start" data-oid="x9qus-y">
+        <ol className="space-y-3 text-gray-300" data-oid="1jvgvf:">
+          <li className="flex items-start" data-oid="-ylukts">
             <span
               className="bg-cyan-500/20 text-cyan-400 rounded-full w-6 h-6 flex items-center justify-center text-sm font-medium mr-3 mt-0.5 flex-shrink-0"
-              data-oid="zvj50fh"
+              data-oid="o_fjlfg"
             >
               1
             </span>
-            <span data-oid="2ktihoq">
+            <span data-oid="hh5eah9">
               Click "Open Camera" and position your device to capture the area
               you want to measure.
             </span>
           </li>
-          <li className="flex items-start" data-oid="uu0pimk">
+          <li className="flex items-start" data-oid="iotmuw7">
             <span
               className="bg-cyan-500/20 text-cyan-400 rounded-full w-6 h-6 flex items-center justify-center text-sm font-medium mr-3 mt-0.5 flex-shrink-0"
-              data-oid="dns6l3i"
+              data-oid="mlopok0"
             >
               2
             </span>
-            <span data-oid="fo8-uj7">
+            <span data-oid="6k2quit">
               Tap "Capture Image" when you have a clear view of the area.
             </span>
           </li>
-          <li className="flex items-start" data-oid="12rdz6g">
+          <li className="flex items-start" data-oid="ok6vx:f">
             <span
               className="bg-cyan-500/20 text-cyan-400 rounded-full w-6 h-6 flex items-center justify-center text-sm font-medium mr-3 mt-0.5 flex-shrink-0"
-              data-oid="rlurclv"
+              data-oid="f:-mfgv"
             >
               3
             </span>
-            <span data-oid="_qp4n4h">
+            <span data-oid="r4culkg">
               Click "Start Measuring" and tap on two points to measure the
               distance between them.
             </span>
           </li>
-          <li className="flex items-start" data-oid="tcumgrd">
+          <li className="flex items-start" data-oid="jmf:v4j">
             <span
               className="bg-cyan-500/20 text-cyan-400 rounded-full w-6 h-6 flex items-center justify-center text-sm font-medium mr-3 mt-0.5 flex-shrink-0"
-              data-oid="4bzmlky"
+              data-oid="2fwldfs"
             >
               4
             </span>
-            <span data-oid="xikb_hj">
+            <span data-oid="ac:rb.g">
               Save your measurements when you're done.
             </span>
           </li>

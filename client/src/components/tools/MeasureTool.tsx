@@ -143,29 +143,29 @@ const MeasureTool: FC = () => {
   }, []);
 
   return (
-    <GlassCard className="p-6" data-oid="jq-1osv">
+    <GlassCard className="p-6" data-oid="d9y-in:">
       <div
         className="flex justify-between items-center mb-6"
-        data-oid="mxtwf7j"
+        data-oid="9pjk8vf"
       >
         <h2
           className="text-xl font-space font-bold text-white"
-          data-oid="vbh52jx"
+          data-oid="b.br74e"
         >
           Measurement Tool
         </h2>
-        <div className="flex space-x-2" data-oid="3u0_yuy">
+        <div className="flex space-x-2" data-oid="35m_uyc">
           <button
             className="text-xs bg-space-800 text-white px-3 py-1.5 rounded hover:bg-space-700"
             onClick={toggleUnit}
-            data-oid="5_beep0"
+            data-oid="a899ox."
           >
             {unit.toUpperCase()}
           </button>
           <button
             className="text-xs bg-space-800 text-white px-3 py-1.5 rounded hover:bg-space-700"
             onClick={resetMeasurement}
-            data-oid="8y2cy5w"
+            data-oid="_ywad:j"
           >
             Reset
           </button>
@@ -174,7 +174,7 @@ const MeasureTool: FC = () => {
 
       <div
         className="text-center mb-4 text-gray-300 text-sm"
-        data-oid="qh4glvg"
+        data-oid="i5mlmtb"
       >
         {!startPoint
           ? "Tap to set the start point"
@@ -186,19 +186,19 @@ const MeasureTool: FC = () => {
       <div
         ref={containerRef}
         className="relative h-64 bg-space-900 rounded-lg border border-space-800 overflow-hidden"
-        data-oid="9bjbpza"
+        data-oid="a4crf9i"
       >
         <canvas
           ref={canvasRef}
           onClick={handleCanvasClick}
           className="absolute inset-0 cursor-crosshair"
-          data-oid="x0p0azj"
+          data-oid="hss78yl"
         />
       </div>
 
       <div
         className="mt-4 text-xs text-gray-400 text-center"
-        data-oid="3e83wqp"
+        data-oid="3gy2l3."
       >
         Note: For accurate measurements, you may need to calibrate the tool
         against a known reference.

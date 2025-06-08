@@ -200,15 +200,15 @@ const ARFurniturePlanner = () => {
   }, [furniture, selectedItem, roomDimensions]);
 
   return (
-    <div className="space-y-6" data-oid="lziib4n">
-      <Card className="bg-space-900/50 border-cyan/20" data-oid="6x3qhui">
-        <CardHeader data-oid="py51ofa">
-          <div className="flex items-center justify-between" data-oid="p0b6_52">
+    <div className="space-y-6" data-oid="6e_lxuf">
+      <Card className="bg-space-900/50 border-cyan/20" data-oid="3sy2h8q">
+        <CardHeader data-oid="4x-lyis">
+          <div className="flex items-center justify-between" data-oid="g5e-qd6">
             <CardTitle
               className="text-white flex items-center gap-2"
-              data-oid="ij3dsdd"
+              data-oid="lx4054l"
             >
-              <Sofa className="w-5 h-5 text-cyan-400" data-oid="-v2ekdx" />
+              <Sofa className="w-5 h-5 text-cyan-400" data-oid="jmcf-c-" />
               AR Furniture Planner
             </CardTitle>
             <Button
@@ -216,30 +216,30 @@ const ARFurniturePlanner = () => {
               size="sm"
               onClick={toggleCamera}
               className="gap-2"
-              data-oid="bpz4yz3"
+              data-oid="hys86sz"
             >
-              <Camera className="w-4 h-4" data-oid="vjnbqjm" />
+              <Camera className="w-4 h-4" data-oid="ecnw690" />
               {isCameraActive ? "Stop Camera" : "Start Camera"}
             </Button>
           </div>
-          <CardDescription className="text-gray-400" data-oid="xhwl.iu">
+          <CardDescription className="text-gray-400" data-oid="zkq3e7u">
             Arrange furniture in your space using augmented reality
           </CardDescription>
         </CardHeader>
 
-        <CardContent data-oid="juvh4xd">
-          <div className="flex flex-col lg:flex-row gap-6" data-oid="bdgio:z">
+        <CardContent data-oid=":niu55f">
+          <div className="flex flex-col lg:flex-row gap-6" data-oid="ceh1056">
             {/* Main AR View */}
             <div
               ref={containerRef}
               className="relative w-full h-[500px] bg-space-950/50 rounded-lg border border-cyan/20 overflow-hidden"
-              data-oid="2j2foya"
+              data-oid="jyh7:.p"
             >
               <canvas
                 ref={canvasRef}
                 className="absolute inset-0 w-full h-full"
                 onClick={handleCanvasClick}
-                data-oid="9qva297"
+                data-oid=".bvt9z8"
               />
 
               {isCameraActive && (
@@ -249,20 +249,20 @@ const ARFurniturePlanner = () => {
                   playsInline
                   muted
                   className="absolute inset-0 w-full h-full object-cover opacity-30"
-                  data-oid="v.f:md9"
+                  data-oid="o:tzhq5"
                 />
               )}
             </div>
 
             {/* Controls */}
-            <div className="w-full lg:w-64 space-y-4" data-oid="f851zos">
-              <div className="space-y-2" data-oid="r--rbej">
-                <Label className="text-gray-300" data-oid="1n__qas">
+            <div className="w-full lg:w-64 space-y-4" data-oid="p-0rjn6">
+              <div className="space-y-2" data-oid="wya_zc:">
+                <Label className="text-gray-300" data-oid="qxo2boj">
                   Room Dimensions (m)
                 </Label>
-                <div className="grid grid-cols-2 gap-2" data-oid="v.nk-rg">
-                  <div data-oid="z1arxst">
-                    <Label className="text-xs" data-oid="s8u_qx3">
+                <div className="grid grid-cols-2 gap-2" data-oid="e-t.98x">
+                  <div data-oid=".xf59r4">
+                    <Label className="text-xs" data-oid="u-2mr.5">
                       Width
                     </Label>
                     <Input
@@ -275,11 +275,11 @@ const ARFurniturePlanner = () => {
                         })
                       }
                       className="bg-space-800 border-space-700"
-                      data-oid="36und3l"
+                      data-oid="3g-56an"
                     />
                   </div>
-                  <div data-oid="v637fw:">
-                    <Label className="text-xs" data-oid="6dt3.26">
+                  <div data-oid="zzgr0pw">
+                    <Label className="text-xs" data-oid="2hxalx4">
                       Length
                     </Label>
                     <Input
@@ -292,17 +292,17 @@ const ARFurniturePlanner = () => {
                         })
                       }
                       className="bg-space-800 border-space-700"
-                      data-oid="6y5zsmy"
+                      data-oid="y191.dd"
                     />
                   </div>
                 </div>
               </div>
 
-              <div className="space-y-2" data-oid="35ha:-d">
-                <Label className="text-gray-300" data-oid="roh.44g">
+              <div className="space-y-2" data-oid="3:nn1se">
+                <Label className="text-gray-300" data-oid="dkbqwab">
                   Furniture
                 </Label>
-                <div className="grid grid-cols-3 gap-2" data-oid="4uwxake">
+                <div className="grid grid-cols-3 gap-2" data-oid="pudwehv">
                   <Button
                     variant={
                       furnitureType === "table" ? "secondary" : "outline"
@@ -312,9 +312,9 @@ const ARFurniturePlanner = () => {
                       setFurnitureType("table");
                       setMode("place");
                     }}
-                    data-oid="2wmxh7b"
+                    data-oid="hr.l0dk"
                   >
-                    <Table className="w-4 h-4" data-oid="h4-doyy" />
+                    <Table className="w-4 h-4" data-oid="pouuruo" />
                   </Button>
                   <Button
                     variant={
@@ -325,9 +325,9 @@ const ARFurniturePlanner = () => {
                       setFurnitureType("armchair");
                       setMode("place");
                     }}
-                    data-oid="9tx_e:a"
+                    data-oid="phaeg_l"
                   >
-                    <Armchair className="w-4 h-4" data-oid="vov352t" />
+                    <Armchair className="w-4 h-4" data-oid="ix:6hhd" />
                   </Button>
                   <Button
                     variant={furnitureType === "sofa" ? "secondary" : "outline"}
@@ -336,9 +336,9 @@ const ARFurniturePlanner = () => {
                       setFurnitureType("sofa");
                       setMode("place");
                     }}
-                    data-oid="v5vzofy"
+                    data-oid="h_vvcn-"
                   >
-                    <Sofa className="w-4 h-4" data-oid="x61rpw8" />
+                    <Sofa className="w-4 h-4" data-oid="a:tgaow" />
                   </Button>
                   <Button
                     variant={furnitureType === "bed" ? "secondary" : "outline"}
@@ -347,9 +347,9 @@ const ARFurniturePlanner = () => {
                       setFurnitureType("bed");
                       setMode("place");
                     }}
-                    data-oid="ak7hs2w"
+                    data-oid="k4f26cz"
                   >
-                    <Bed className="w-4 h-4" data-oid="hh_1j:." />
+                    <Bed className="w-4 h-4" data-oid="d:1m7gn" />
                   </Button>
                   <Button
                     variant={furnitureType === "door" ? "secondary" : "outline"}
@@ -358,25 +358,25 @@ const ARFurniturePlanner = () => {
                       setFurnitureType("door");
                       setMode("place");
                     }}
-                    data-oid="0.qetoa"
+                    data-oid="wk37h0a"
                   >
-                    <DoorOpen className="w-4 h-4" data-oid="q29m74f" />
+                    <DoorOpen className="w-4 h-4" data-oid="k4m7s0g" />
                   </Button>
                 </div>
               </div>
 
-              <div className="space-y-2" data-oid="o7rz3fm">
-                <Label className="text-gray-300" data-oid="ycixx0i">
+              <div className="space-y-2" data-oid="yoty25:">
+                <Label className="text-gray-300" data-oid="yjn5ocj">
                   Actions
                 </Label>
-                <div className="flex flex-wrap gap-2" data-oid=":cf5fnd">
+                <div className="flex flex-wrap gap-2" data-oid="1mdo5zo">
                   <Button
                     variant="outline"
                     size="sm"
                     className="gap-2"
-                    data-oid="syap8iv"
+                    data-oid="r7fi:jd"
                   >
-                    <Save className="w-4 h-4" data-oid="rcv2_pl" />
+                    <Save className="w-4 h-4" data-oid="8oprqzx" />
                     Save
                   </Button>
                   <Button
@@ -387,9 +387,9 @@ const ARFurniturePlanner = () => {
                       setFurniture([]);
                       setSelectedItem(null);
                     }}
-                    data-oid="ectmjn9"
+                    data-oid="iap2ca1"
                   >
-                    <RotateCcw className="w-4 h-4" data-oid="s3zrzts" />
+                    <RotateCcw className="w-4 h-4" data-oid="da798-y" />
                     Reset
                   </Button>
                 </div>

@@ -46,50 +46,50 @@ const Jobs: FC = () => {
   return (
     <main
       className="container mx-auto px-4 py-8 max-w-7xl relative"
-      data-oid="_01te4z"
+      data-oid=".f6cc7i"
     >
-      <Toaster data-oid="jii-s0t" />
+      <Toaster data-oid="qk:cfyk" />
 
       {/* Professional animated background */}
       <div
         className="absolute inset-0 -z-10 overflow-hidden"
-        data-oid="uk665mw"
+        data-oid="aj8h4cr"
       >
         <div
           className="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-space-950 via-space-900 to-space-950 opacity-50"
-          data-oid="bqr_:pp"
+          data-oid="v.awhs7"
         ></div>
         <div
           className="absolute top-0 left-0 w-2/3 h-1/3 bg-cyan/5 blur-[120px] rounded-full -translate-y-1/2"
-          data-oid="0943vin"
+          data-oid="dnmalj5"
         ></div>
         <div
           className="absolute bottom-0 right-0 w-1/2 h-1/3 bg-purple-500/5 blur-[100px] rounded-full translate-y-1/3"
-          data-oid="ie168f7"
+          data-oid="ba2ay91"
         ></div>
       </div>
 
       {/* Enhanced Header with Stats Overview */}
-      <div className="mb-8 animate-fadeIn" data-oid="muz5i5l">
+      <div className="mb-8 animate-fadeIn" data-oid="eufk74o">
         <div
           className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 mb-6"
-          data-oid="kkc4gd:"
+          data-oid="f130jrv"
         >
-          <div className="relative group" data-oid="sfcbn9p">
+          <div className="relative group" data-oid="2eslrgu">
             <div
               className="absolute -inset-0.5 bg-gradient-to-r from-cyan to-purple-500 opacity-0 group-hover:opacity-30 rounded-lg blur transition duration-500"
-              data-oid=":_mml7o"
+              data-oid="wru:33g"
             ></div>
-            <div className="relative" data-oid="7y8qj7m">
+            <div className="relative" data-oid="caj8-mj">
               <h2
                 className="text-3xl font-space font-bold bg-gradient-to-r from-white via-cyan/80 to-electric bg-clip-text text-transparent transition-all duration-300 group-hover:from-cyan group-hover:to-white"
-                data-oid="l3jb006"
+                data-oid="-_j44nq"
               >
                 Jobs & Admin
               </h2>
               <p
                 className="text-gray-400 mt-1 group-hover:text-cyan/80 transition-colors duration-300"
-                data-oid="amaz2b4"
+                data-oid="s5opi:b"
               >
                 Manage your projects, time tracking, invoices and clients
               </p>
@@ -98,28 +98,28 @@ const Jobs: FC = () => {
 
           <div
             className="flex space-x-3 animate-fadeIn animation-delay-100"
-            data-oid="6oax431"
+            data-oid="44nj4xt"
           >
-            <div className="relative group" data-oid="cwjtdrk">
+            <div className="relative group" data-oid="_kh2lm:">
               <div
                 className="absolute -inset-0.5 bg-gradient-to-r from-cyan/50 to-electric/50 opacity-0 group-hover:opacity-100 rounded-lg blur-sm transition duration-300"
-                data-oid="0j1exuh"
+                data-oid="f85_i3w"
               ></div>
-              <div className="relative" data-oid="1w7b_2y">
+              <div className="relative" data-oid="0tagens">
                 <input
                   type="text"
                   placeholder="Search projects, clients..."
                   value={searchQuery}
                   onChange={handleSearch}
                   className="bg-space-900/90 border border-space-700/50 px-4 py-2 pl-10 rounded-lg text-sm text-white w-64 focus:outline-none focus:border-cyan focus:bg-space-800/90 shadow-inner transition-all duration-300 backdrop-blur-sm"
-                  data-oid="f5n.kmf"
+                  data-oid="jmzczi8"
                 />
 
                 <div
                   className="absolute left-3 top-2.5 text-gray-400 group-hover:text-cyan transition-colors duration-300"
-                  data-oid="fk3:4q-"
+                  data-oid="or9--.6"
                 >
-                  <i className="fas fa-search" data-oid="4g6v:y6"></i>
+                  <i className="fas fa-search" data-oid="98kz0r3"></i>
                 </div>
               </div>
             </div>
@@ -171,21 +171,21 @@ const Jobs: FC = () => {
                   }
                 });
               }}
-              data-oid="7ghgmrb"
+              data-oid="44a0kq8"
             >
               <span
                 className="absolute inset-0 w-full h-full bg-gradient-to-r from-cyan/20 to-electric/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
-                data-oid="299o0jc"
+                data-oid="o_ni7gf"
               ></span>
               <span
                 className="absolute top-0 left-0 w-full h-full bg-cyan/10 transform -skew-x-12 -translate-x-full group-hover:translate-x-full transition-transform duration-700 ease-in-out"
-                data-oid="nlk1ir5"
+                data-oid="fkou38o"
               ></span>
               <i
                 className="fas fa-plus mr-2 text-cyan relative z-10 group-hover:text-white transition-colors duration-300"
-                data-oid="wgykfmp"
+                data-oid="un-3eqw"
               ></i>
-              <span className="relative z-10" data-oid="3ma_ver">
+              <span className="relative z-10" data-oid="18l-9fu">
                 New Project
               </span>
             </button>
@@ -193,21 +193,21 @@ const Jobs: FC = () => {
             <button
               className="relative text-sm overflow-hidden bg-gradient-to-r from-space-800 to-space-900 text-white px-4 py-2 rounded-lg hover:from-space-700 hover:to-space-800 shadow-glow-sm hover:shadow-glow-md transition-all duration-300 flex items-center group"
               onClick={() => setIsAddInvoiceModalOpen(true)}
-              data-oid="r8b89iv"
+              data-oid="1gsybwc"
             >
               <span
                 className="absolute inset-0 w-full h-full bg-gradient-to-r from-electric/10 to-cyan/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
-                data-oid="lp6x5wy"
+                data-oid="prn4tw0"
               ></span>
               <span
                 className="absolute top-0 left-0 w-full h-full bg-electric/10 transform -skew-x-12 -translate-x-full group-hover:translate-x-full transition-transform duration-700 ease-in-out"
-                data-oid="f-9tku."
+                data-oid="xi0xszx"
               ></span>
               <i
                 className="fas fa-file-invoice-dollar mr-2 text-electric relative z-10 group-hover:text-white transition-colors duration-300"
-                data-oid="luibjac"
+                data-oid="l2znouf"
               ></i>
-              <span className="relative z-10" data-oid="cd7bi_v">
+              <span className="relative z-10" data-oid="2jsdqu5">
                 New Invoice
               </span>
             </button>
@@ -217,178 +217,178 @@ const Jobs: FC = () => {
         {/* Stats Dashboard */}
         <div
           className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 mb-6 animate-fadeIn animation-delay-200"
-          data-oid="0y4qoxh"
+          data-oid="2q.0nb2"
         >
           <div
             className="bg-gradient-to-br from-space-800/70 to-space-900/70 backdrop-blur-md p-4 rounded-lg border border-space-700/50 shadow-glow-sm hover:shadow-glow-cyan hover:-translate-y-1 transition-all duration-300 group relative overflow-hidden"
-            data-oid="i3ftyuq"
+            data-oid="oabg6x6"
           >
             <div
               className="absolute inset-0 bg-cyan/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
-              data-oid="j7p82_b"
+              data-oid="pgprr-b"
             ></div>
             <div
               className="absolute -bottom-6 -right-6 w-16 h-16 rounded-full bg-cyan/10 group-hover:bg-cyan/20 transition-colors duration-300"
-              data-oid="u447cjy"
+              data-oid="pqp.e.r"
             ></div>
             <div
               className="text-xs text-gray-400 mb-1 group-hover:text-gray-300 transition-colors duration-300"
-              data-oid="9aw_gyf"
+              data-oid="n17w8v."
             >
               Active Jobs
             </div>
             <div
               className="text-2xl font-bold text-white group-hover:text-cyan transition-colors duration-300 relative z-10"
-              data-oid="zfuzowr"
+              data-oid="xc4a07k"
             >
               {stats.activeJobs}
             </div>
-            <div className="text-xs text-cyan mt-2" data-oid="nk8f:d2">
+            <div className="text-xs text-cyan mt-2" data-oid="5m9kei4">
               Projects in progress
             </div>
           </div>
 
           <div
             className="bg-gradient-to-br from-space-800/70 to-space-900/70 backdrop-blur-md p-4 rounded-lg border border-space-700/50 shadow-glow-sm hover:shadow-glow-green hover:-translate-y-1 transition-all duration-300 group relative overflow-hidden"
-            data-oid="xvb_vdq"
+            data-oid="80uldh4"
           >
             <div
               className="absolute inset-0 bg-green-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
-              data-oid="l6bcemc"
+              data-oid="f-gxjf9"
             ></div>
             <div
               className="absolute -bottom-6 -right-6 w-16 h-16 rounded-full bg-green-500/10 group-hover:bg-green-500/20 transition-colors duration-300"
-              data-oid="of.pzbq"
+              data-oid="ev625m7"
             ></div>
             <div
               className="text-xs text-gray-400 mb-1 group-hover:text-gray-300 transition-colors duration-300"
-              data-oid="hstsl24"
+              data-oid="vun3n1z"
             >
               Completed
             </div>
             <div
               className="text-2xl font-bold text-white group-hover:text-green-400 transition-colors duration-300 relative z-10"
-              data-oid="d2rh-p2"
+              data-oid="80b2kof"
             >
               {stats.completedJobs}
             </div>
-            <div className="text-xs text-green-400 mt-2" data-oid="-fze071">
+            <div className="text-xs text-green-400 mt-2" data-oid="qqj82s7">
               Finished projects
             </div>
           </div>
 
           <div
             className="bg-gradient-to-br from-space-800/70 to-space-900/70 backdrop-blur-md p-4 rounded-lg border border-space-700/50 shadow-glow-sm hover:shadow-glow-purple hover:-translate-y-1 transition-all duration-300 group relative overflow-hidden"
-            data-oid="98478tr"
+            data-oid="wr:5wan"
           >
             <div
               className="absolute inset-0 bg-purple-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
-              data-oid="bu7b.:3"
+              data-oid="8wegard"
             ></div>
             <div
               className="absolute -bottom-6 -right-6 w-16 h-16 rounded-full bg-purple-500/10 group-hover:bg-purple-500/20 transition-colors duration-300"
-              data-oid="4y0kd-:"
+              data-oid="rw.a_:b"
             ></div>
             <div
               className="text-xs text-gray-400 mb-1 group-hover:text-gray-300 transition-colors duration-300"
-              data-oid="8hm5aog"
+              data-oid=":6kixqb"
             >
               Hours This Month
             </div>
             <div
               className="text-2xl font-bold text-white group-hover:text-purple-400 transition-colors duration-300 relative z-10"
-              data-oid="xt_j2a9"
+              data-oid="8:5sdk1"
             >
               {stats.totalHoursThisMonth}
             </div>
-            <div className="text-xs text-purple-400 mt-2" data-oid="zh2z-fl">
+            <div className="text-xs text-purple-400 mt-2" data-oid="b38:td6">
               Logged time
             </div>
           </div>
 
           <div
             className="bg-gradient-to-br from-space-800/70 to-space-900/70 backdrop-blur-md p-4 rounded-lg border border-space-700/50 shadow-glow-sm hover:shadow-glow-green hover:-translate-y-1 transition-all duration-300 group relative overflow-hidden"
-            data-oid="ljd748a"
+            data-oid="m_hg-s8"
           >
             <div
               className="absolute inset-0 bg-green-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
-              data-oid="op:jk1q"
+              data-oid="ev2vtyk"
             ></div>
             <div
               className="absolute -bottom-6 -right-6 w-16 h-16 rounded-full bg-green-500/10 group-hover:bg-green-500/20 transition-colors duration-300"
-              data-oid="ujly-dj"
+              data-oid="ram:b5g"
             ></div>
             <div
               className="text-xs text-gray-400 mb-1 group-hover:text-gray-300 transition-colors duration-300"
-              data-oid="kv5:p-s"
+              data-oid="vhomvcx"
             >
               Total Earnings
             </div>
             <div
               className="text-2xl font-bold text-white group-hover:text-green-400 transition-colors duration-300 relative z-10"
-              data-oid="5-ek28h"
+              data-oid="1dhyg6f"
             >
               ${stats.totalEarnings.toLocaleString()}
             </div>
-            <div className="text-xs text-green-400 mt-2" data-oid=".:c1-lz">
+            <div className="text-xs text-green-400 mt-2" data-oid="wq44kc7">
               All projects
             </div>
           </div>
 
           <div
             className="bg-gradient-to-br from-space-800/70 to-space-900/70 backdrop-blur-md p-4 rounded-lg border border-space-700/50 shadow-glow-sm hover:shadow-glow-yellow hover:-translate-y-1 transition-all duration-300 group relative overflow-hidden"
-            data-oid="p8esetz"
+            data-oid="q7zag9."
           >
             <div
               className="absolute inset-0 bg-yellow-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
-              data-oid="duh-vn:"
+              data-oid="se1v4-1"
             ></div>
             <div
               className="absolute -bottom-6 -right-6 w-16 h-16 rounded-full bg-yellow-500/10 group-hover:bg-yellow-500/20 transition-colors duration-300"
-              data-oid="m6b4bhc"
+              data-oid="17:7hep"
             ></div>
             <div
               className="text-xs text-gray-400 mb-1 group-hover:text-gray-300 transition-colors duration-300"
-              data-oid="eaiy0mp"
+              data-oid="gk_i6_p"
             >
               Pending Invoices
             </div>
             <div
               className="text-2xl font-bold text-white group-hover:text-yellow-400 transition-colors duration-300 relative z-10"
-              data-oid="xzxfpl_"
+              data-oid="fmt38pu"
             >
               {stats.pendingInvoices}
             </div>
-            <div className="text-xs text-yellow-400 mt-2" data-oid="sni50:z">
+            <div className="text-xs text-yellow-400 mt-2" data-oid="ji0lx8f">
               Awaiting payment
             </div>
           </div>
 
           <div
             className="bg-gradient-to-br from-space-800/70 to-space-900/70 backdrop-blur-md p-4 rounded-lg border border-space-700/50 shadow-glow-sm hover:shadow-glow-red hover:-translate-y-1 transition-all duration-300 group relative overflow-hidden"
-            data-oid="iv7alil"
+            data-oid="y8xwnbu"
           >
             <div
               className="absolute inset-0 bg-red-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
-              data-oid="6d-v4ad"
+              data-oid="8xmp9:v"
             ></div>
             <div
               className="absolute -bottom-6 -right-6 w-16 h-16 rounded-full bg-red-500/10 group-hover:bg-red-500/20 transition-colors duration-300"
-              data-oid="tfw99vz"
+              data-oid="qubvc8i"
             ></div>
             <div
               className="text-xs text-gray-400 mb-1 group-hover:text-gray-300 transition-colors duration-300"
-              data-oid="953nw.m"
+              data-oid="gve7ols"
             >
               Unpaid Amount
             </div>
             <div
               className="text-2xl font-bold text-white group-hover:text-red-400 transition-colors duration-300 relative z-10"
-              data-oid="czu1c9_"
+              data-oid="ey-jel:"
             >
               ${stats.totalUnpaid.toLocaleString()}
             </div>
-            <div className="text-xs text-red-400 mt-2" data-oid="1pu1ex-">
+            <div className="text-xs text-red-400 mt-2" data-oid="623cj-_">
               Outstanding
             </div>
           </div>
@@ -400,28 +400,28 @@ const Jobs: FC = () => {
         defaultValue="jobs"
         className="mb-6"
         onValueChange={setActiveTab}
-        data-oid="755lrde"
+        data-oid="cx3-vg0"
       >
         <div
           className="bg-space-900/60 backdrop-blur-xl p-2 rounded-xl inline-flex border border-space-700/50 shadow-glow-lg mb-6 overflow-hidden relative animate-fadeIn animation-delay-300 group"
-          data-oid=".q3:0un"
+          data-oid="0sh4:u_"
         >
           <div
             className="absolute inset-0 bg-gradient-to-r from-cyan/5 to-purple-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"
-            data-oid="q77p4j."
+            data-oid="6u9sk_-"
           ></div>
           <div
             className="absolute -bottom-8 -right-8 w-32 h-32 rounded-full bg-cyan/5 opacity-30 blur-xl"
-            data-oid="nbo47ib"
+            data-oid="mayfn0o"
           ></div>
           <div
             className="absolute -top-8 -left-8 w-24 h-24 rounded-full bg-purple-500/5 opacity-30 blur-xl"
-            data-oid="q::-.o4"
+            data-oid="e7pi_1:"
           ></div>
 
           <TabsList
             className="bg-transparent border-0 shadow-none relative z-10"
-            data-oid="u3qw_p4"
+            data-oid="v618fmr"
           >
             <TabsTrigger
               value="jobs"
@@ -429,22 +429,22 @@ const Jobs: FC = () => {
                          data-[state=active]:border-cyan/30 data-[state=active]:shadow-glow-sm 
                          rounded-lg px-5 py-2.5 transition-all duration-300 
                          hover:bg-space-800/50 hover:text-cyan group relative overflow-hidden"
-              data-oid="l:z_q6s"
+              data-oid="-:lr4f9"
             >
               <span
                 className="absolute inset-0 bg-gradient-to-r from-cyan/10 to-electric/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300 data-[state=active]:opacity-0"
-                data-oid="dihoq_8"
+                data-oid="usf-jmz"
               ></span>
               <i
                 className="fas fa-briefcase mr-2 text-cyan relative z-10"
-                data-oid="r::le38"
+                data-oid="b22r-7r"
               ></i>
-              <span className="relative z-10" data-oid="ylph6fi">
+              <span className="relative z-10" data-oid="5gvp0x.">
                 Jobs
               </span>
               <span
                 className="ml-2 bg-cyan/20 text-cyan text-xs px-1.5 py-0.5 rounded-full shadow-glow-sm relative z-10 animate-pulse"
-                data-oid="t92f4jl"
+                data-oid="xtsot5q"
               >
                 {stats.activeJobs}
               </span>
@@ -456,17 +456,17 @@ const Jobs: FC = () => {
                          data-[state=active]:border-purple-500/30 data-[state=active]:shadow-glow-sm 
                          rounded-lg px-5 py-2.5 transition-all duration-300 
                          hover:bg-space-800/50 hover:text-purple-400 group relative overflow-hidden"
-              data-oid="ofso6_p"
+              data-oid="13nh5lt"
             >
               <span
                 className="absolute inset-0 bg-gradient-to-r from-purple-500/10 to-purple-800/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300 data-[state=active]:opacity-0"
-                data-oid="9v2i6sk"
+                data-oid="5l20zw9"
               ></span>
               <i
                 className="fas fa-clock mr-2 text-purple-400 relative z-10"
-                data-oid="uy_pefj"
+                data-oid="d34wq32"
               ></i>
-              <span className="relative z-10" data-oid="s3dn359">
+              <span className="relative z-10" data-oid="w7ka420">
                 Timesheet
               </span>
             </TabsTrigger>
@@ -477,23 +477,23 @@ const Jobs: FC = () => {
                          data-[state=active]:border-green-500/30 data-[state=active]:shadow-glow-sm 
                          rounded-lg px-5 py-2.5 transition-all duration-300 
                          hover:bg-space-800/50 hover:text-green-400 group relative overflow-hidden"
-              data-oid="zq8_wu6"
+              data-oid="l-j2wco"
             >
               <span
                 className="absolute inset-0 bg-gradient-to-r from-green-500/10 to-green-800/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300 data-[state=active]:opacity-0"
-                data-oid="vgqq7uq"
+                data-oid="xgtflsi"
               ></span>
               <i
                 className="fas fa-file-invoice-dollar mr-2 text-green-400 relative z-10"
-                data-oid="im2qyg1"
+                data-oid="vllecoc"
               ></i>
-              <span className="relative z-10" data-oid="4owlpa-">
+              <span className="relative z-10" data-oid="ueb2-88">
                 Invoices
               </span>
               {stats.pendingInvoices > 0 && (
                 <span
                   className="ml-2 bg-yellow-400/20 text-yellow-400 text-xs px-1.5 py-0.5 rounded-full shadow-glow-sm relative z-10 animate-pulse"
-                  data-oid="8j5:x-w"
+                  data-oid="3ags6o8"
                 >
                   {stats.pendingInvoices}
                 </span>
@@ -506,17 +506,17 @@ const Jobs: FC = () => {
                          data-[state=active]:border-blue-500/30 data-[state=active]:shadow-glow-sm 
                          rounded-lg px-5 py-2.5 transition-all duration-300 
                          hover:bg-space-800/50 hover:text-blue-400 group relative overflow-hidden"
-              data-oid="ctlrxw:"
+              data-oid="4rmc5zu"
             >
               <span
                 className="absolute inset-0 bg-gradient-to-r from-blue-500/10 to-blue-800/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300 data-[state=active]:opacity-0"
-                data-oid="6v3t-3k"
+                data-oid=":e54edp"
               ></span>
               <i
                 className="fas fa-users mr-2 text-blue-400 relative z-10"
-                data-oid="6ou8mtz"
+                data-oid="n6s59xg"
               ></i>
-              <span className="relative z-10" data-oid="2wahzsf">
+              <span className="relative z-10" data-oid="xqp9ul1">
                 Clients
               </span>
             </TabsTrigger>
@@ -524,23 +524,23 @@ const Jobs: FC = () => {
         </div>
 
         {/* Jobs Tab */}
-        <TabsContent value="jobs" data-oid="7xwstzv">
+        <TabsContent value="jobs" data-oid="00:_xti">
           {/* Jobs Filter Bar */}
           <div
             className="flex flex-wrap justify-between items-center mb-4 gap-4 animate-fadeIn animation-delay-500"
-            data-oid="ma0mevx"
+            data-oid=".f6qp.y"
           >
             <div
               className="flex space-x-2 bg-space-900/60 backdrop-blur-xl p-1 rounded-lg inline-flex border border-space-700/50 shadow-glow-sm relative overflow-hidden group"
-              data-oid="35w9:xr"
+              data-oid="cad7s-0"
             >
               <div
                 className="absolute inset-0 bg-gradient-to-r from-cyan/5 to-purple-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"
-                data-oid="6bfmpn_"
+                data-oid="obt3c:q"
               ></div>
               <div
                 className="absolute -bottom-6 -right-6 w-16 h-16 rounded-full bg-cyan/5 opacity-30 blur-xl"
-                data-oid="4czgs75"
+                data-oid="q350woc"
               ></div>
 
               <button
@@ -550,17 +550,17 @@ const Jobs: FC = () => {
                     ? "bg-gradient-to-r from-cyan/20 to-electric/10 text-cyan shadow-glow-cyan"
                     : "text-gray-400 hover:text-cyan"
                 }`}
-                data-oid="584raxw"
+                data-oid="tjem9mh"
               >
                 <span
                   className="absolute inset-0 w-full h-full bg-cyan/10 opacity-0 group-hover/btn:opacity-100 transition-opacity duration-300"
-                  data-oid="9irj7ah"
+                  data-oid="rsdpn0a"
                 ></span>
                 <i
                   className="fas fa-play-circle mr-1 relative z-10"
-                  data-oid="0blhacz"
+                  data-oid="pp.n27."
                 ></i>
-                <span className="relative z-10" data-oid="_-48rb2">
+                <span className="relative z-10" data-oid="au3uqn3">
                   Active
                 </span>
               </button>
@@ -572,17 +572,17 @@ const Jobs: FC = () => {
                     ? "bg-gradient-to-r from-green-500/20 to-green-700/10 text-green-400 shadow-glow-green"
                     : "text-gray-400 hover:text-green-400"
                 }`}
-                data-oid="2ektb.5"
+                data-oid="vit24rh"
               >
                 <span
                   className="absolute inset-0 w-full h-full bg-green-500/10 opacity-0 group-hover/btn:opacity-100 transition-opacity duration-300"
-                  data-oid="lle-ria"
+                  data-oid="1jbvvq9"
                 ></span>
                 <i
                   className="fas fa-check-circle mr-1 relative z-10"
-                  data-oid="88v9i4."
+                  data-oid="9.zvjyo"
                 ></i>
-                <span className="relative z-10" data-oid="8nlmp1y">
+                <span className="relative z-10" data-oid="4_95g9t">
                   Completed
                 </span>
               </button>
@@ -594,17 +594,17 @@ const Jobs: FC = () => {
                     ? "bg-gradient-to-r from-purple-500/20 to-purple-700/10 text-purple-400 shadow-glow-purple"
                     : "text-gray-400 hover:text-purple-400"
                 }`}
-                data-oid="6o8dls8"
+                data-oid="zeg-ypd"
               >
                 <span
                   className="absolute inset-0 w-full h-full bg-purple-500/10 opacity-0 group-hover/btn:opacity-100 transition-opacity duration-300"
-                  data-oid="qgs-bcw"
+                  data-oid="2i:7r9:"
                 ></span>
                 <i
                   className="fas fa-layer-group mr-1 relative z-10"
-                  data-oid="zltnp4k"
+                  data-oid="5ne2nnf"
                 ></i>
-                <span className="relative z-10" data-oid="lrm5ic-">
+                <span className="relative z-10" data-oid="bpce8d9">
                   All Projects
                 </span>
               </button>
@@ -612,56 +612,56 @@ const Jobs: FC = () => {
 
             <div
               className="flex space-x-2 animate-fadeIn animation-delay-600"
-              data-oid="gcxjuu7"
+              data-oid=".zu.52a"
             >
               <button
                 className="text-sm bg-space-800/90 text-white px-3 py-1.5 rounded-lg hover:bg-space-700 flex items-center group relative overflow-hidden backdrop-blur-sm border border-space-700/30"
-                data-oid="00os-ax"
+                data-oid="m9pns.q"
               >
                 <span
                   className="absolute inset-0 w-full h-full bg-cyan/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
-                  data-oid="sr:e-sd"
+                  data-oid="1nm-e1a"
                 ></span>
                 <i
                   className="fas fa-filter mr-1.5 text-cyan group-hover:text-white transition-colors duration-300 relative z-10"
-                  data-oid="d_fe_pb"
+                  data-oid="obl:dg3"
                 ></i>
-                <span className="relative z-10" data-oid="1szorsg">
+                <span className="relative z-10" data-oid="sxoa9xe">
                   Filter
                 </span>
               </button>
 
               <button
                 className="text-sm bg-space-800/90 text-white px-3 py-1.5 rounded-lg hover:bg-space-700 flex items-center group relative overflow-hidden backdrop-blur-sm border border-space-700/30"
-                data-oid="t554whp"
+                data-oid="prolcz1"
               >
                 <span
                   className="absolute inset-0 w-full h-full bg-electric/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
-                  data-oid="2rxvovn"
+                  data-oid="ykx_9o_"
                 ></span>
                 <i
                   className="fas fa-sort mr-1.5 text-electric group-hover:text-white transition-colors duration-300 relative z-10"
-                  data-oid="7ca9mc1"
+                  data-oid="4x7dt2t"
                 ></i>
-                <span className="relative z-10" data-oid="17k2y1p">
+                <span className="relative z-10" data-oid="wt5iffq">
                   Sort
                 </span>
               </button>
 
-              <div className="relative" data-oid=":1qjvad">
+              <div className="relative" data-oid="bbfmatw">
                 <button
                   className="text-sm bg-space-800/90 text-white px-3 py-1.5 rounded-lg hover:bg-space-700 flex items-center group relative overflow-hidden backdrop-blur-sm border border-space-700/30"
-                  data-oid="_y5w24r"
+                  data-oid="1ii:ayy"
                 >
                   <span
                     className="absolute inset-0 w-full h-full bg-purple-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
-                    data-oid="cs0cs85"
+                    data-oid="0t56.bx"
                   ></span>
                   <i
                     className="fas fa-download mr-1.5 text-purple-400 group-hover:text-white transition-colors duration-300 relative z-10"
-                    data-oid="utn.gwu"
+                    data-oid="q2pdbaq"
                   ></i>
-                  <span className="relative z-10" data-oid="0qvt870">
+                  <span className="relative z-10" data-oid="lmx028h">
                     Export
                   </span>
                 </button>
@@ -671,34 +671,34 @@ const Jobs: FC = () => {
 
           <GlassCard
             className="p-6 mb-6 animate-fadeIn animation-delay-400 relative overflow-hidden"
-            data-oid="zv9-fx4"
+            data-oid="l4h69w_"
           >
             <div
               className="absolute top-0 right-0 w-full h-1 bg-gradient-to-r from-transparent via-cyan/30 to-transparent opacity-50"
-              data-oid="efmbebj"
+              data-oid="ezui_27"
             ></div>
             <div
               className="absolute -top-10 -right-10 w-40 h-40 bg-cyan/5 rounded-full blur-xl"
-              data-oid="ej31ic9"
+              data-oid="o-._e5s"
             ></div>
 
             <div
               className="flex justify-between items-center mb-6"
-              data-oid=":s0bruc"
+              data-oid="4f0:el:"
             >
               <h3
                 className="text-xl font-space font-bold text-white flex items-center group"
-                data-oid="-_2gkkf"
+                data-oid="yvayd62"
               >
                 <span
                   className="w-10 h-10 rounded-lg bg-gradient-to-br from-cyan/30 to-electric/20 flex items-center justify-center text-cyan mr-3 shadow-glow-sm group-hover:shadow-glow-cyan transition-all duration-300"
-                  data-oid="xb1m8ff"
+                  data-oid="1dp4.19"
                 >
-                  <i className="fas fa-briefcase" data-oid="9cu2h8o"></i>
+                  <i className="fas fa-briefcase" data-oid="q5nwnkg"></i>
                 </span>
                 <span
                   className="bg-gradient-to-r from-white to-cyan/80 bg-clip-text text-transparent"
-                  data-oid="d37r:8s"
+                  data-oid="vmv:jpk"
                 >
                   {jobsFilter === "active" && "Active Projects"}
                   {jobsFilter === "completed" && "Completed Projects"}
@@ -706,7 +706,7 @@ const Jobs: FC = () => {
                 </span>
                 <span
                   className="ml-3 bg-cyan/10 text-cyan text-xs px-2 py-0.5 rounded-full shadow-glow-sm group-hover:shadow-glow-cyan group-hover:bg-cyan/20 transition-all duration-300"
-                  data-oid="v6d:9xa"
+                  data-oid="fhf-6j:"
                 >
                   {stats.activeJobs}
                 </span>
@@ -715,21 +715,21 @@ const Jobs: FC = () => {
               <button
                 className="relative text-sm overflow-hidden bg-gradient-to-r from-cyan to-electric text-white px-4 py-2 rounded-lg shadow-glow-md hover:shadow-glow-lg transition-all duration-300 flex items-center group"
                 onClick={() => setIsAddProjectModalOpen(true)}
-                data-oid="_z:koqi"
+                data-oid="jwcb8hz"
               >
                 <span
                   className="absolute inset-0 w-full h-full bg-white/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
-                  data-oid="ok1lcja"
+                  data-oid="rye6hii"
                 ></span>
                 <span
                   className="absolute top-0 left-0 w-full h-full bg-white/10 transform -skew-x-12 -translate-x-full group-hover:translate-x-full transition-transform duration-700 ease-in-out"
-                  data-oid="kao4y-s"
+                  data-oid="ecl:xcr"
                 ></span>
                 <i
                   className="fas fa-plus mr-2 relative z-10"
-                  data-oid="8f_srqh"
+                  data-oid="qk721:4"
                 ></i>
-                <span className="relative z-10" data-oid="qv99:sa">
+                <span className="relative z-10" data-oid="rdxkija">
                   Add New Project
                 </span>
               </button>
@@ -737,60 +737,60 @@ const Jobs: FC = () => {
 
             <div
               className="bg-space-900/40 rounded-lg p-4 backdrop-blur-sm border border-space-700/30 shadow-inner"
-              data-oid="fy:9.4n"
+              data-oid="93jt5vj"
             >
-              <ProjectsList data-oid="kjny1rv" />
+              <ProjectsList data-oid="s2vjt5m" />
             </div>
 
             {/* Pagination Control */}
             <div
               className="flex justify-between items-center mt-6 text-sm"
-              data-oid="ihx_esg"
+              data-oid="k9f6cux"
             >
-              <div className="text-gray-400 group" data-oid="41w_6u9">
+              <div className="text-gray-400 group" data-oid="g4udulb">
                 Showing{" "}
                 <span
                   className="text-white font-medium bg-cyan/10 px-2 py-0.5 rounded group-hover:bg-cyan/20 transition-colors duration-300"
-                  data-oid=":lhn-7c"
+                  data-oid="j5hseyl"
                 >
                   {stats.activeJobs}
                 </span>{" "}
                 of{" "}
                 <span
                   className="text-white font-medium bg-cyan/5 px-2 py-0.5 rounded group-hover:bg-cyan/10 transition-colors duration-300"
-                  data-oid="3tjppff"
+                  data-oid="2993vl2"
                 >
                   {stats.activeJobs + stats.completedJobs}
                 </span>{" "}
                 projects
               </div>
 
-              <div className="flex space-x-1" data-oid="11-y_oy">
+              <div className="flex space-x-1" data-oid="zregwhr">
                 <button
                   className="px-3 py-1 rounded-lg bg-space-800 text-gray-400 hover:bg-space-700 hover:text-white disabled:opacity-50 shadow-inner transition-all duration-300 border border-space-700/30"
                   disabled
-                  data-oid="i2ke.do"
+                  data-oid="8.b4fk5"
                 >
-                  <i className="fas fa-chevron-left" data-oid="r.6_44a"></i>
+                  <i className="fas fa-chevron-left" data-oid="1b7z09m"></i>
                 </button>
                 <button
                   className="px-3 py-1 rounded-lg bg-gradient-to-r from-cyan/20 to-electric/10 text-cyan border border-cyan/20 shadow-glow-sm"
-                  data-oid="gzg-wfy"
+                  data-oid="qbakbs2"
                 >
                   1
                 </button>
                 <button
                   className="px-3 py-1 rounded-lg bg-space-800 text-gray-400 hover:bg-space-700 hover:text-white transition-all duration-300 hover:shadow-glow-sm border border-space-700/30"
-                  data-oid="773gms7"
+                  data-oid="rdmhheo"
                 >
                   2
                 </button>
                 <button
                   className="px-3 py-1 rounded-lg bg-space-800 text-gray-400 hover:bg-space-700 hover:text-white disabled:opacity-50 shadow-inner transition-all duration-300 border border-space-700/30"
                   disabled
-                  data-oid="chm3n51"
+                  data-oid="a7dpu.e"
                 >
-                  <i className="fas fa-chevron-right" data-oid="zc6.2sy"></i>
+                  <i className="fas fa-chevron-right" data-oid="c_n7d1:"></i>
                 </button>
               </div>
             </div>
@@ -798,15 +798,15 @@ const Jobs: FC = () => {
         </TabsContent>
 
         {/* Timesheet Tab */}
-        <TabsContent value="timesheet" data-oid=".nzbo_3">
+        <TabsContent value="timesheet" data-oid="7n7ncxp">
           {/* Timesheet Controls */}
           <div
             className="flex flex-wrap justify-between items-center mb-4 gap-4"
-            data-oid="_3dyrba"
+            data-oid="w:a5khj"
           >
             <div
               className="flex space-x-2 bg-space-900/50 backdrop-blur-lg p-1 rounded-lg inline-flex border border-space-700/50"
-              data-oid="notrebs"
+              data-oid="9_-at6_"
             >
               <button
                 onClick={() => setTimesheetView("calendar")}
@@ -815,9 +815,9 @@ const Jobs: FC = () => {
                     ? "bg-gradient-to-r from-purple-500/20 to-purple-700/10 text-purple-400 shadow-glow-sm"
                     : "text-gray-400 hover:text-white"
                 }`}
-                data-oid="jsovqci"
+                data-oid="glz.r9b"
               >
-                <i className="fas fa-calendar-alt mr-1" data-oid="rx_wg_9"></i>{" "}
+                <i className="fas fa-calendar-alt mr-1" data-oid="995a:dq"></i>{" "}
                 Calendar View
               </button>
               <button
@@ -827,62 +827,62 @@ const Jobs: FC = () => {
                     ? "bg-gradient-to-r from-electric/20 to-cyan/10 text-cyan shadow-glow-sm"
                     : "text-gray-400 hover:text-white"
                 }`}
-                data-oid="zramhvc"
+                data-oid="hxhcmqn"
               >
-                <i className="fas fa-list-ul mr-1" data-oid="1e04zyx"></i> List
+                <i className="fas fa-list-ul mr-1" data-oid="tq7g30z"></i> List
                 View
               </button>
             </div>
 
-            <div className="flex space-x-2" data-oid="z9z329h">
-              <div className="relative" data-oid="f0ml741">
+            <div className="flex space-x-2" data-oid="izix0s6">
+              <div className="relative" data-oid="lcpmutf">
                 <input
                   type="date"
                   value={selectedDate.toISOString().split("T")[0]}
                   onChange={(e) => setSelectedDate(new Date(e.target.value))}
                   className="bg-space-800/80 border border-space-700/50 px-3 py-1.5 rounded text-sm text-white focus:outline-none focus:border-purple-500"
-                  data-oid="pkbl.8b"
+                  data-oid="3hp74cw"
                 />
               </div>
 
               <button
                 className="text-sm bg-gradient-to-r from-purple-700 to-purple-900 text-white px-3 py-1.5 rounded shadow-glow-sm hover:shadow-glow-md transition-all duration-300 flex items-center"
                 onClick={toggleForm}
-                data-oid="xbfqrdc"
+                data-oid="d38wcwi"
               >
-                <i className="fas fa-plus mr-1.5" data-oid="xkz.da2"></i>{" "}
+                <i className="fas fa-plus mr-1.5" data-oid="r:ec7as"></i>{" "}
                 {isFormOpen ? "Cancel" : "Log Time"}
               </button>
 
-              <div className="relative" data-oid="z8eeyi6">
+              <div className="relative" data-oid="0_oexf2">
                 <button
                   className="text-sm bg-space-800 text-white px-3 py-1.5 rounded hover:bg-space-700 flex items-center"
-                  data-oid="::-4z_6"
+                  data-oid="1vw9:xe"
                 >
-                  <i className="fas fa-ellipsis-v" data-oid=".2dbngl"></i>
+                  <i className="fas fa-ellipsis-v" data-oid="pt7qxum"></i>
                 </button>
                 {/* Menu would go here */}
               </div>
             </div>
           </div>
 
-          <GlassCard className="p-6 mb-6" data-oid="hd_._y1">
+          <GlassCard className="p-6 mb-6" data-oid="1yt6q4r">
             <div
               className="flex justify-between items-center mb-6"
-              data-oid="reounl2"
+              data-oid="o:0ui-_"
             >
               <h3
                 className="text-xl font-space text-white flex items-center"
-                data-oid="cpytlof"
+                data-oid="lw-.tmt"
               >
                 <span
                   className="w-8 h-8 rounded-lg bg-purple-500/20 flex items-center justify-center text-purple-400 mr-3"
-                  data-oid="x845eit"
+                  data-oid="t3ozgu."
                 >
-                  <i className="fas fa-clock" data-oid="o-_p3w_"></i>
+                  <i className="fas fa-clock" data-oid="s9hwkvh"></i>
                 </span>
                 Time Entries
-                <span className="ml-3 text-xs text-gray-400" data-oid="pq86-35">
+                <span className="ml-3 text-xs text-gray-400" data-oid="c9cyce2">
                   {selectedDate.toLocaleDateString("en-NZ", {
                     weekday: "long",
                     year: "numeric",
@@ -892,24 +892,24 @@ const Jobs: FC = () => {
                 </span>
               </h3>
 
-              <div className="flex space-x-3" data-oid="0mjjubz">
+              <div className="flex space-x-3" data-oid="bx7m.jo">
                 <button
                   className="text-sm bg-space-800 text-white px-3 py-1.5 rounded hover:bg-space-700 flex items-center"
-                  data-oid="ipjds_t"
+                  data-oid="-ebvskz"
                 >
                   <i
                     className="fas fa-print mr-1.5 text-purple-400"
-                    data-oid="8c2xdg5"
+                    data-oid="-07ofcd"
                   ></i>{" "}
                   Print
                 </button>
                 <button
                   className="text-sm bg-space-800 text-white px-3 py-1.5 rounded hover:bg-space-700 flex items-center"
-                  data-oid="u_qqk_0"
+                  data-oid="cxdq3.v"
                 >
                   <i
                     className="fas fa-file-export mr-1.5 text-cyan"
-                    data-oid="j94-:v:"
+                    data-oid="lnw_yyn"
                   ></i>{" "}
                   Export
                 </button>
@@ -920,41 +920,41 @@ const Jobs: FC = () => {
             {isFormOpen && (
               <div
                 className="mb-6 bg-space-800/30 rounded-lg p-4 border border-purple-500/20 shadow-glow-sm"
-                data-oid="84t7hd6"
+                data-oid="zs26ub7"
               >
-                <TimeEntryForm onClose={toggleForm} data-oid="vabyklb" />
+                <TimeEntryForm onClose={toggleForm} data-oid="r.ol795" />
               </div>
             )}
 
             {/* Time Entries List with enhanced styling */}
             <div
               className="bg-space-800/30 rounded-lg border border-space-700/30 overflow-hidden"
-              data-oid="vje3l:f"
+              data-oid="b0.r.h_"
             >
-              <TimeEntriesList data-oid="4nl2p5g" />
+              <TimeEntriesList data-oid="jao-df-" />
             </div>
 
             {/* Weekly Summary */}
             <div
               className="mt-6 grid grid-cols-1 md:grid-cols-4 gap-4"
-              data-oid="5gs_2s2"
+              data-oid="559i7mz"
             >
               <div
                 className="bg-space-800/50 rounded-lg p-4 border border-space-700/30"
-                data-oid="_58jjdg"
+                data-oid="ubobdk2"
               >
-                <div className="text-xs text-gray-400 mb-1" data-oid="-281v95">
+                <div className="text-xs text-gray-400 mb-1" data-oid="qsql7ur">
                   Today
                 </div>
                 <div
                   className="text-xl font-bold text-white"
-                  data-oid="sa4k.:0"
+                  data-oid="nj1jc9g"
                 >
                   2.5 hrs
                 </div>
                 <div
                   className="text-xs text-purple-400 mt-1"
-                  data-oid="g39.d2i"
+                  data-oid="35560cu"
                 >
                   $162.50
                 </div>
@@ -962,20 +962,20 @@ const Jobs: FC = () => {
 
               <div
                 className="bg-space-800/50 rounded-lg p-4 border border-space-700/30"
-                data-oid="04lj-0g"
+                data-oid="vfrc-m3"
               >
-                <div className="text-xs text-gray-400 mb-1" data-oid="pykb52i">
+                <div className="text-xs text-gray-400 mb-1" data-oid="w:.ihl.">
                   This Week
                 </div>
                 <div
                   className="text-xl font-bold text-white"
-                  data-oid="s0ctb09"
+                  data-oid="raxp-gh"
                 >
                   18.5 hrs
                 </div>
                 <div
                   className="text-xs text-purple-400 mt-1"
-                  data-oid="dy_oas."
+                  data-oid="0.w0-e_"
                 >
                   $1,202.50
                 </div>
@@ -983,20 +983,20 @@ const Jobs: FC = () => {
 
               <div
                 className="bg-space-800/50 rounded-lg p-4 border border-space-700/30"
-                data-oid="79pbli-"
+                data-oid="8dqtto1"
               >
-                <div className="text-xs text-gray-400 mb-1" data-oid=".nia-yt">
+                <div className="text-xs text-gray-400 mb-1" data-oid="6_r49_-">
                   This Month
                 </div>
                 <div
                   className="text-xl font-bold text-white"
-                  data-oid="p2jo1x9"
+                  data-oid="9df8io-"
                 >
                   76.0 hrs
                 </div>
                 <div
                   className="text-xs text-purple-400 mt-1"
-                  data-oid="ef94bve"
+                  data-oid="dez0sy4"
                 >
                   $4,940.00
                 </div>
@@ -1004,20 +1004,20 @@ const Jobs: FC = () => {
 
               <div
                 className="bg-space-800/50 rounded-lg p-4 border border-space-700/30"
-                data-oid="j3z1ueu"
+                data-oid="-75d52."
               >
-                <div className="text-xs text-gray-400 mb-1" data-oid="2-dkyvt">
+                <div className="text-xs text-gray-400 mb-1" data-oid="uqltoqz">
                   Unbilled Time
                 </div>
                 <div
                   className="text-xl font-bold text-white"
-                  data-oid="uj8rv7m"
+                  data-oid="ae:loh1"
                 >
                   12.5 hrs
                 </div>
                 <div
                   className="text-xs text-yellow-400 mt-1"
-                  data-oid="sbm24.2"
+                  data-oid="p6koor1"
                 >
                   $812.50
                 </div>
@@ -1027,121 +1027,121 @@ const Jobs: FC = () => {
         </TabsContent>
 
         {/* Invoices Tab */}
-        <TabsContent value="invoices" data-oid="gkn_uy7">
+        <TabsContent value="invoices" data-oid="99a:e2n">
           {/* Invoice Status Filter */}
           <div
             className="flex flex-wrap justify-between items-center mb-4 gap-4"
-            data-oid="p0rqrxl"
+            data-oid="397vf.0"
           >
             <div
               className="flex space-x-2 bg-space-900/50 backdrop-blur-lg p-1 rounded-lg inline-flex border border-space-700/50"
-              data-oid="4atkbvi"
+              data-oid=".wvvht3"
             >
               <button
                 className="px-3 py-1.5 text-sm rounded-md transition-all bg-gradient-to-r from-yellow-500/20 to-yellow-700/10 text-yellow-400 shadow-glow-sm"
-                data-oid="1h51i02"
+                data-oid="1hy:65k"
               >
                 <i
                   className="fas fa-hourglass-half mr-1"
-                  data-oid="hux7v8-"
+                  data-oid="gpoq7e5"
                 ></i>{" "}
                 Pending
               </button>
               <button
                 className="px-3 py-1.5 text-sm rounded-md transition-all text-gray-400 hover:text-white"
-                data-oid="..4svy6"
+                data-oid="g:ce0k5"
               >
-                <i className="fas fa-check-circle mr-1" data-oid="uar7bk3"></i>{" "}
+                <i className="fas fa-check-circle mr-1" data-oid="mfxen5e"></i>{" "}
                 Paid
               </button>
               <button
                 className="px-3 py-1.5 text-sm rounded-md transition-all text-gray-400 hover:text-white"
-                data-oid=".nxnxqz"
+                data-oid=".1xqqv_"
               >
                 <i
                   className="fas fa-exclamation-circle mr-1"
-                  data-oid="c87hq5d"
+                  data-oid="_mq-xuw"
                 ></i>{" "}
                 Overdue
               </button>
               <button
                 className="px-3 py-1.5 text-sm rounded-md transition-all text-gray-400 hover:text-white"
-                data-oid="vf_ma6u"
+                data-oid="zflyg8-"
               >
-                <i className="fas fa-layer-group mr-1" data-oid="rf1u2c3"></i>{" "}
+                <i className="fas fa-layer-group mr-1" data-oid="vmse43u"></i>{" "}
                 All
               </button>
             </div>
 
-            <div className="flex space-x-2" data-oid="2a2dshq">
-              <div className="relative" data-oid="lgm-o:9">
+            <div className="flex space-x-2" data-oid="-n:0:d2">
+              <div className="relative" data-oid="pairv6.">
                 <input
                   type="date"
                   placeholder="Filter by date"
                   className="bg-space-800/80 border border-space-700/50 px-3 py-1.5 rounded text-sm text-white focus:outline-none focus:border-green-500"
-                  data-oid="5lzmy4s"
+                  data-oid="1-2f64h"
                 />
               </div>
 
               <button
                 className="text-sm bg-space-800 text-white px-3 py-1.5 rounded hover:bg-space-700 flex items-center"
-                data-oid="57kstkn"
+                data-oid="0m5-zpr"
               >
                 <i
                   className="fas fa-print mr-1.5 text-green-400"
-                  data-oid="afi.mge"
+                  data-oid="cufl7nw"
                 ></i>{" "}
                 Print
               </button>
 
               <button
                 className="text-sm bg-space-800 text-white px-3 py-1.5 rounded hover:bg-space-700 flex items-center"
-                data-oid="h4xt9_:"
+                data-oid="cnwz0o."
               >
                 <i
                   className="fas fa-file-export mr-1.5 text-green-400"
-                  data-oid="2rboofu"
+                  data-oid=":orabk2"
                 ></i>{" "}
                 Export
               </button>
             </div>
           </div>
 
-          <GlassCard className="p-6 mb-6" data-oid="2176uoy">
+          <GlassCard className="p-6 mb-6" data-oid="_oio.2n">
             <div
               className="flex justify-between items-center mb-6"
-              data-oid="n_9p6jn"
+              data-oid="p9c0pnk"
             >
               <h3
                 className="text-xl font-space text-white flex items-center"
-                data-oid="r.ct:c5"
+                data-oid="ce1w9lj"
               >
                 <span
                   className="w-8 h-8 rounded-lg bg-green-500/20 flex items-center justify-center text-green-400 mr-3"
-                  data-oid="2md1lgg"
+                  data-oid="bb8:d_m"
                 >
                   <i
                     className="fas fa-file-invoice-dollar"
-                    data-oid="-z5a4g0"
+                    data-oid="amr_j:-"
                   ></i>
                 </span>
                 Pending Invoices
                 <span
                   className="ml-3 bg-yellow-400/20 text-yellow-400 text-xs px-2 py-0.5 rounded-full"
-                  data-oid="sbslnhl"
+                  data-oid="q8m4jtn"
                 >
                   {stats.pendingInvoices}
                 </span>
               </h3>
 
-              <div data-oid=":gffvqc">
+              <div data-oid="y2t99.4">
                 <span
                   className="text-sm text-yellow-400 mr-3"
-                  data-oid="c83ihap"
+                  data-oid="j0-a29f"
                 >
                   <i
                     className="fas fa-circle mr-1 text-xs"
-                    data-oid="ellmf-w"
+                    data-oid="_5xz8o7"
                   ></i>{" "}
                   ${stats.totalUnpaid.toLocaleString()} outstanding
                 </span>
@@ -1149,9 +1149,9 @@ const Jobs: FC = () => {
                 <button
                   className="text-sm bg-gradient-to-r from-green-500 to-green-700 text-white px-4 py-2 rounded-lg shadow-glow-md hover:shadow-glow-lg transition-all duration-300 flex items-center inline-flex"
                   onClick={() => setIsAddInvoiceModalOpen(true)}
-                  data-oid="h9o-j4a"
+                  data-oid="n8:5uhw"
                 >
-                  <i className="fas fa-plus mr-2" data-oid="3kgsd3y"></i> New
+                  <i className="fas fa-plus mr-2" data-oid="s-tvyfo"></i> New
                   Invoice
                 </button>
               </div>
@@ -1160,34 +1160,34 @@ const Jobs: FC = () => {
             {/* Invoices List with enhanced styling */}
             <div
               className="bg-space-800/30 rounded-lg border border-space-700/30 overflow-hidden"
-              data-oid="-ktn0ii"
+              data-oid="5aku5ki"
             >
-              <InvoicesList data-oid="thkpy1j" />
+              <InvoicesList data-oid="_ryea9d" />
             </div>
 
             {/* Quick Actions */}
             <div
               className="mt-6 flex flex-wrap justify-between items-center"
-              data-oid="0ae.h6a"
+              data-oid="rf131o."
             >
-              <div className="flex space-x-3" data-oid="6i0ywwn">
+              <div className="flex space-x-3" data-oid="-6wboet">
                 <button
                   className="text-sm bg-space-800 text-white px-3 py-2 rounded-lg hover:bg-space-700 flex items-center"
-                  data-oid="nhf8wv9"
+                  data-oid="e-8:8.j"
                 >
                   <i
                     className="fas fa-paper-plane mr-1.5 text-green-400"
-                    data-oid="vmwfcs5"
+                    data-oid="87hg1v0"
                   ></i>{" "}
                   Send Reminders
                 </button>
                 <button
                   className="text-sm bg-space-800 text-white px-3 py-2 rounded-lg hover:bg-space-700 flex items-center"
-                  data-oid="5w38.4g"
+                  data-oid="_i:vn1t"
                 >
                   <i
                     className="fas fa-file-pdf mr-1.5 text-green-400"
-                    data-oid="fo50eyl"
+                    data-oid="8q-76n9"
                   ></i>{" "}
                   Bulk Export
                 </button>
@@ -1196,9 +1196,9 @@ const Jobs: FC = () => {
               <button
                 className="text-sm bg-gradient-to-r from-green-700/80 to-green-900/80 text-white px-4 py-2 rounded-lg border border-green-600/30 hover:border-green-500/50 transition-all duration-300 flex items-center mt-3 sm:mt-0"
                 onClick={() => setIsAddInvoiceModalOpen(true)}
-                data-oid="jx9lb13"
+                data-oid="jqzo3u4"
               >
-                <i className="fas fa-plus mr-2" data-oid="jiw-10m"></i> Create
+                <i className="fas fa-plus mr-2" data-oid="b1eql4n"></i> Create
                 New Invoice
               </button>
             </div>
@@ -1206,47 +1206,47 @@ const Jobs: FC = () => {
         </TabsContent>
 
         {/* Clients Tab */}
-        <TabsContent value="clients" data-oid="nzgrlr1">
+        <TabsContent value="clients" data-oid="opb40_c">
           {/* Client Filter & Search */}
           <div
             className="flex flex-wrap justify-between items-center mb-4 gap-4"
-            data-oid="7xbivkn"
+            data-oid="jwmebyg"
           >
-            <div className="relative" data-oid="-4vw19z">
+            <div className="relative" data-oid="wy_3pt9">
               <input
                 type="text"
                 placeholder="Search clients..."
                 className="bg-space-800/50 border border-space-700/50 px-4 py-2 pl-10 rounded-lg text-sm text-white w-60 md:w-80 focus:outline-none focus:border-blue-400 shadow-glow-sm"
-                data-oid="x1gfdiv"
+                data-oid="g1coksc"
               />
 
               <div
                 className="absolute left-3 top-2.5 text-gray-400"
-                data-oid="rtgtg4j"
+                data-oid="sd5b038"
               >
-                <i className="fas fa-search" data-oid="-ulb1v6"></i>
+                <i className="fas fa-search" data-oid="vc-5.ut"></i>
               </div>
             </div>
 
-            <div className="flex space-x-2" data-oid="qqq427q">
+            <div className="flex space-x-2" data-oid="rkzgngt">
               <button
                 className="text-sm bg-space-800 text-white px-3 py-1.5 rounded hover:bg-space-700 flex items-center"
-                data-oid="e49sdqf"
+                data-oid="d6yrg3x"
               >
                 <i
                   className="fas fa-filter mr-1.5 text-blue-400"
-                  data-oid="l9m61po"
+                  data-oid=":_-t_9."
                 ></i>{" "}
                 Filter
               </button>
 
               <button
                 className="text-sm bg-space-800 text-white px-3 py-1.5 rounded hover:bg-space-700 flex items-center"
-                data-oid="bvr.vi7"
+                data-oid="2r48-5c"
               >
                 <i
                   className="fas fa-sort-alpha-down mr-1.5 text-blue-400"
-                  data-oid="ubbmd5-"
+                  data-oid="s7pavz."
                 ></i>{" "}
                 Sort
               </button>
@@ -1254,50 +1254,50 @@ const Jobs: FC = () => {
               <button
                 className="text-sm bg-gradient-to-r from-blue-700 to-blue-900 text-white px-3 py-1.5 rounded shadow-glow-sm hover:shadow-glow-md transition-all duration-300 flex items-center"
                 onClick={() => setIsAddClientModalOpen(true)}
-                data-oid="m8dfai:"
+                data-oid="pd7md8-"
               >
-                <i className="fas fa-plus mr-1.5" data-oid="en0rnm."></i> New
+                <i className="fas fa-plus mr-1.5" data-oid="worj:u8"></i> New
                 Client
               </button>
             </div>
           </div>
 
-          <GlassCard className="p-6 mb-6" data-oid="9e87.ne">
+          <GlassCard className="p-6 mb-6" data-oid="p52z1bu">
             <div
               className="flex justify-between items-center mb-6"
-              data-oid="t0e3hh3"
+              data-oid="ux.4zbs"
             >
               <h3
                 className="text-xl font-space text-white flex items-center"
-                data-oid="4le860v"
+                data-oid="_320:hr"
               >
                 <span
                   className="w-8 h-8 rounded-lg bg-blue-500/20 flex items-center justify-center text-blue-400 mr-3"
-                  data-oid="44eqza-"
+                  data-oid="s8puqii"
                 >
-                  <i className="fas fa-users" data-oid="ngbkf-0"></i>
+                  <i className="fas fa-users" data-oid=".sp-x0u"></i>
                 </span>
                 Clients
               </h3>
 
-              <div className="flex space-x-3" data-oid="0m-xh-0">
+              <div className="flex space-x-3" data-oid="_yozlpm">
                 <button
                   className="text-sm bg-space-800 text-white px-3 py-1.5 rounded hover:bg-space-700 flex items-center"
-                  data-oid=":fl3l5v"
+                  data-oid="m8z-lil"
                 >
                   <i
                     className="fas fa-envelope mr-1.5 text-blue-400"
-                    data-oid="_l1zv2p"
+                    data-oid="6f_kv6t"
                   ></i>{" "}
                   Email All
                 </button>
                 <button
                   className="text-sm bg-space-800 text-white px-3 py-1.5 rounded hover:bg-space-700 flex items-center"
-                  data-oid=".gxqboy"
+                  data-oid="agi8wj-"
                 >
                   <i
                     className="fas fa-file-export mr-1.5 text-blue-400"
-                    data-oid="0up1lc0"
+                    data-oid="dxxa0hf"
                   ></i>{" "}
                   Export
                 </button>
@@ -1452,29 +1452,29 @@ const Jobs: FC = () => {
                       }
                     });
                   }}
-                  data-oid="4g1:914"
+                  data-oid="5:f5gdk"
                 >
                   <span
                     className="absolute inset-0 w-full h-full bg-gradient-to-tr from-electric/10 to-cyan/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
-                    data-oid="0iwsool"
+                    data-oid="4a-z9qa"
                   ></span>
                   <span
                     className="absolute top-0 left-0 w-full h-full bg-cyan/20 transform -skew-x-12 -translate-x-full group-hover:translate-x-full transition-transform duration-700 ease-in-out"
-                    data-oid="-jkobpv"
+                    data-oid="p20yvok"
                   ></span>
                   <span
                     className="relative z-10 flex items-center justify-center"
-                    data-oid="tg47686"
+                    data-oid="n2-sin7"
                   >
                     <span
                       className="absolute -left-1 -top-1 w-8 h-8 rounded-full bg-gradient-to-br from-cyan/20 to-electric/10 blur-sm opacity-70 group-hover:opacity-100 transition-opacity duration-300"
-                      data-oid="oxoaa1b"
+                      data-oid="eyw72:9"
                     ></span>
                     <i
                       className="fas fa-user-plus mr-2 text-white relative z-20 group-hover:scale-110 transition-transform duration-300"
-                      data-oid="s6e1odr"
+                      data-oid="lcfo3kp"
                     ></i>
-                    <span className="relative z-20" data-oid="9jcivt8">
+                    <span className="relative z-20" data-oid="8yy.o1p">
                       Add Client
                     </span>
                   </span>
@@ -1485,68 +1485,68 @@ const Jobs: FC = () => {
             {/* Clients List with enhanced styling */}
             <div
               className="bg-space-800/30 rounded-lg border border-space-700/30 overflow-hidden"
-              data-oid="vsqr49h"
+              data-oid="ln_5g1d"
             >
-              <ClientsList data-oid="8hjr409" />
+              <ClientsList data-oid="j23rf_:" />
             </div>
 
             {/* Client Stats & Quick Actions */}
             <div
               className="mt-6 grid grid-cols-1 md:grid-cols-4 gap-4"
-              data-oid="d99fb1v"
+              data-oid="aunr8f5"
             >
               <div
                 className="bg-space-800/50 rounded-lg p-4 border border-space-700/30"
-                data-oid="fzh:frc"
+                data-oid="-4g-31b"
               >
-                <div className="text-xs text-gray-400 mb-1" data-oid="n7g41ob">
+                <div className="text-xs text-gray-400 mb-1" data-oid="nz2pc1q">
                   Total Clients
                 </div>
                 <div
                   className="text-xl font-bold text-white"
-                  data-oid="j_:h2js"
+                  data-oid="r4evblq"
                 >
                   24
                 </div>
-                <div className="text-xs text-blue-400 mt-1" data-oid="09rcova">
+                <div className="text-xs text-blue-400 mt-1" data-oid="g-j9ts.">
                   +3 this month
                 </div>
               </div>
 
               <div
                 className="bg-space-800/50 rounded-lg p-4 border border-space-700/30"
-                data-oid="x68st3y"
+                data-oid="8d5ga9l"
               >
-                <div className="text-xs text-gray-400 mb-1" data-oid="80oq9-c">
+                <div className="text-xs text-gray-400 mb-1" data-oid="rydvwyp">
                   Active Jobs
                 </div>
                 <div
                   className="text-xl font-bold text-white"
-                  data-oid="2htto:q"
+                  data-oid="v9gplyh"
                 >
                   {stats.activeJobs}
                 </div>
-                <div className="text-xs text-cyan mt-1" data-oid="z-d3da9">
+                <div className="text-xs text-cyan mt-1" data-oid="i64nss3">
                   Across {Math.min(stats.activeJobs + 3, 12)} clients
                 </div>
               </div>
 
               <div
                 className="bg-space-800/50 rounded-lg p-4 border border-space-700/30"
-                data-oid="af:awh1"
+                data-oid="bpb8pz."
               >
-                <div className="text-xs text-gray-400 mb-1" data-oid="s_aap0p">
+                <div className="text-xs text-gray-400 mb-1" data-oid="h1_af5i">
                   Outstanding
                 </div>
                 <div
                   className="text-xl font-bold text-white"
-                  data-oid="d_s988n"
+                  data-oid="8shs1ab"
                 >
                   ${stats.totalUnpaid.toLocaleString()}
                 </div>
                 <div
                   className="text-xs text-yellow-400 mt-1"
-                  data-oid="qa4j3ik"
+                  data-oid="_t-lqes"
                 >
                   {stats.pendingInvoices} unpaid invoices
                 </div>
@@ -1554,18 +1554,18 @@ const Jobs: FC = () => {
 
               <div
                 className="bg-space-800/50 rounded-lg p-4 border border-space-700/30"
-                data-oid="o0cb8z0"
+                data-oid="fhs:xnf"
               >
-                <div className="text-xs text-gray-400 mb-1" data-oid="6c7ugse">
+                <div className="text-xs text-gray-400 mb-1" data-oid="_k7_gux">
                   Client Portal
                 </div>
                 <button
                   className="mt-1 text-xs bg-blue-900/50 hover:bg-blue-800/70 text-blue-400 hover:text-white px-3 py-1.5 rounded-lg border border-blue-700/40 hover:border-blue-600/60 transition-all duration-300 w-full"
-                  data-oid="rtc1so_"
+                  data-oid="weaqoop"
                 >
                   <i
                     className="fas fa-external-link-alt mr-1.5"
-                    data-oid="5dm:87t"
+                    data-oid="n1ghfvn"
                   ></i>{" "}
                   Manage Access
                 </button>
@@ -1579,19 +1579,19 @@ const Jobs: FC = () => {
       <AddClientModal
         isOpen={isAddClientModalOpen}
         onClose={() => setIsAddClientModalOpen(false)}
-        data-oid="rivlyzx"
+        data-oid="3a5rbw7"
       />
 
       <AddProjectModal
         isOpen={isAddProjectModalOpen}
         onClose={() => setIsAddProjectModalOpen(false)}
-        data-oid="1-j.aod"
+        data-oid=".z7:vr3"
       />
 
       <AddInvoiceModal
         isOpen={isAddInvoiceModalOpen}
         onClose={() => setIsAddInvoiceModalOpen(false)}
-        data-oid="u-bxmss"
+        data-oid="c54vdc7"
       />
     </main>
   );

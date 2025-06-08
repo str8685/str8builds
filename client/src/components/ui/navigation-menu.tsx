@@ -16,10 +16,10 @@ const NavigationMenu = React.forwardRef<
       className,
     )}
     {...props}
-    data-oid="wl931a:"
+    data-oid="_4kkwh3"
   >
     {children}
-    <NavigationMenuViewport data-oid="7cnrpwn" />
+    <NavigationMenuViewport data-oid="kxhspyh" />
   </NavigationMenuPrimitive.Root>
 ));
 NavigationMenu.displayName = NavigationMenuPrimitive.Root.displayName;
@@ -35,7 +35,7 @@ const NavigationMenuList = React.forwardRef<
       className,
     )}
     {...props}
-    data-oid="jmdphjv"
+    data-oid="c7g7_n2"
   />
 ));
 NavigationMenuList.displayName = NavigationMenuPrimitive.List.displayName;
@@ -54,13 +54,13 @@ const NavigationMenuTrigger = React.forwardRef<
     ref={ref}
     className={cn(navigationMenuTriggerStyle(), "group", className)}
     {...props}
-    data-oid="hjvfm3g"
+    data-oid="xe:vsyg"
   >
     {children}{" "}
     <ChevronDown
       className="relative top-[1px] ml-1 h-3 w-3 transition duration-200 group-data-[state=open]:rotate-180"
       aria-hidden="true"
-      data-oid="hbjrucl"
+      data-oid="_pyz_g1"
     />
   </NavigationMenuPrimitive.Trigger>
 ));
@@ -77,7 +77,7 @@ const NavigationMenuContent = React.forwardRef<
       className,
     )}
     {...props}
-    data-oid="vn8n:j1"
+    data-oid="wdrhaou"
   />
 ));
 NavigationMenuContent.displayName = NavigationMenuPrimitive.Content.displayName;
@@ -90,7 +90,7 @@ const NavigationMenuViewport = React.forwardRef<
 >(({ className, ...props }, ref) => (
   <div
     className={cn("absolute left-0 top-full flex justify-center")}
-    data-oid="urqd-48"
+    data-oid="7b-78pt"
   >
     <NavigationMenuPrimitive.Viewport
       className={cn(
@@ -99,7 +99,7 @@ const NavigationMenuViewport = React.forwardRef<
       )}
       ref={ref}
       {...props}
-      data-oid="4wbc19s"
+      data-oid="ff8asb-"
     />
   </div>
 ));
@@ -117,11 +117,11 @@ const NavigationMenuIndicator = React.forwardRef<
       className,
     )}
     {...props}
-    data-oid="oyegkk."
+    data-oid="ibfb_0y"
   >
     <div
       className="relative top-[60%] h-2 w-2 rotate-45 rounded-tl-sm bg-border shadow-md"
-      data-oid="0590vuh"
+      data-oid="q4eaevx"
     />
   </NavigationMenuPrimitive.Indicator>
 ));

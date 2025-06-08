@@ -191,7 +191,7 @@ const WeatherImpactor: FC = () => {
     return (
       <span
         className={`px-2 py-0.5 rounded-full text-xs font-medium ${colors[risk]}`}
-        data-oid="b02cgnk"
+        data-oid="xlcd9ku"
       >
         {risk.charAt(0).toUpperCase() + risk.slice(1)}
       </span>
@@ -216,41 +216,41 @@ const WeatherImpactor: FC = () => {
       className="rounded-xl mb-6 overflow-hidden p-0"
       variant="electric"
       glow={true}
-      data-oid="ajm-2t2"
+      data-oid="gf.j51a"
     >
       {/* Header */}
       <div
         className="flex justify-between items-center px-5 py-3 border-b border-electric/20"
-        data-oid="1l:d:f8"
+        data-oid="92qg2to"
       >
-        <div className="flex items-center" data-oid="43ydcx-">
+        <div className="flex items-center" data-oid="4dyp2m9">
           <i
             className="fas fa-cloud-sun-rain mr-2 text-electric"
-            data-oid="m_teug5"
+            data-oid="apfl2_k"
           ></i>
-          <h3 className="text-lg font-space text-white" data-oid="439rni8">
+          <h3 className="text-lg font-space text-white" data-oid="v3jcykq">
             Weather Impact Analyzer
           </h3>
           <div
             className="ml-2 px-2 py-1 bg-space-900/40 rounded-md"
-            data-oid="5_rz1ie"
+            data-oid="j0lrxno"
           >
-            <span className="text-xs text-gray-300" data-oid="vy-ft.q">
+            <span className="text-xs text-gray-300" data-oid="mkh5-ev">
               {location}
             </span>
           </div>
         </div>
-        <div className="flex items-center space-x-2" data-oid="bkw77al">
+        <div className="flex items-center space-x-2" data-oid="6yhewmf">
           <span
             className={`text-lg ${getWeatherTrendIcon().split(" ")[1]}`}
-            data-oid="t56ls:k"
+            data-oid="b2m5kgd"
           >
             <i
               className={`fas ${getWeatherTrendIcon().split(" ")[0]}`}
-              data-oid="mk-zu-x"
+              data-oid="oi7zobk"
             ></i>
           </span>
-          <div className="text-2xl font-medium text-white" data-oid="5qnrwak">
+          <div className="text-2xl font-medium text-white" data-oid="hl7h-u9">
             {currentWeather.temp}°C
           </div>
         </div>
@@ -259,82 +259,82 @@ const WeatherImpactor: FC = () => {
       {/* Tabs */}
       <div
         className="flex border-b border-space-700/30 px-5 bg-space-900/30"
-        data-oid="5yan0ba"
+        data-oid="webz4vq"
       >
         <button
           className={`px-4 py-2.5 text-sm font-medium relative ${activeTab === "impact" ? "text-electric" : "text-gray-400 hover:text-gray-300"}`}
           onClick={() => setActiveTab("impact")}
-          data-oid="uox3a:b"
+          data-oid="06p2c_8"
         >
           <i
             className="fas fa-exclamation-triangle mr-1.5"
-            data-oid="5gclz.p"
+            data-oid="qfmql.0"
           ></i>
           Impact Analysis
           {activeTab === "impact" && (
             <span
               className="absolute bottom-0 left-0 right-0 h-0.5 bg-electric"
-              data-oid="379eodu"
+              data-oid="aw-4y6d"
             ></span>
           )}
         </button>
         <button
           className={`px-4 py-2.5 text-sm font-medium relative ${activeTab === "material" ? "text-electric" : "text-gray-400 hover:text-gray-300"}`}
           onClick={() => setActiveTab("material")}
-          data-oid="qevj6lq"
+          data-oid=".c_k:38"
         >
-          <i className="fas fa-cubes mr-1.5" data-oid="mhgu21r"></i>
+          <i className="fas fa-cubes mr-1.5" data-oid="xhz147a"></i>
           Material Advisory
           {activeTab === "material" && (
             <span
               className="absolute bottom-0 left-0 right-0 h-0.5 bg-electric"
-              data-oid="7mdk9yc"
+              data-oid="q-.9b4t"
             ></span>
           )}
         </button>
         <button
           className={`px-4 py-2.5 text-sm font-medium relative ${activeTab === "forecast" ? "text-electric" : "text-gray-400 hover:text-gray-300"}`}
           onClick={() => setActiveTab("forecast")}
-          data-oid="7i915ko"
+          data-oid="rs3r0v-"
         >
-          <i className="fas fa-chart-line mr-1.5" data-oid="09bs3hu"></i>
+          <i className="fas fa-chart-line mr-1.5" data-oid="cux0orr"></i>
           Forecast Impact
           {activeTab === "forecast" && (
             <span
               className="absolute bottom-0 left-0 right-0 h-0.5 bg-electric"
-              data-oid=":ya-vr_"
+              data-oid="sj0na19"
             ></span>
           )}
         </button>
       </div>
 
       {/* Main content area */}
-      <div className="p-5" data-oid="zz3gbui">
+      <div className="p-5" data-oid="3_7wgc-">
         {/* Impact Analysis Tab */}
         {activeTab === "impact" && (
-          <div data-oid="rdc:z7p">
+          <div data-oid="p85zik_">
             {/* Overall risk meter */}
-            <div className="mb-5" data-oid="ex3.p07">
+            <div className="mb-5" data-oid="1g8axwm">
               <div
                 className="flex justify-between items-center mb-2"
-                data-oid="apxmwlq"
+                data-oid="n8h.mgf"
               >
                 <h4
                   className="text-sm font-medium text-white"
-                  data-oid="8yrhk.f"
+                  data-oid="q_5fghl"
                 >
                   Overall Project Risk
                 </h4>
                 <span
                   className={`text-sm font-medium ${overallRisk.color}`}
-                  data-oid="1005b6-"
+                  data-oid="24na8xg"
                 >
                   {overallRisk.level} Risk
                 </span>
               </div>
               <div
                 className="w-full h-2 bg-space-800 rounded-full overflow-hidden"
-                data-oid="muw24d3"
+                data-oid="yuslclz"
               >
                 <div
                   className={`h-full transition-all duration-1000 ease-out ${
@@ -347,7 +347,7 @@ const WeatherImpactor: FC = () => {
                           : "bg-gradient-to-r from-red-600/70 to-red-500"
                   }`}
                   style={{ width: `${overallRisk.percentage}%` }}
-                  data-oid="2jzixyy"
+                  data-oid="5d5mi0m"
                 ></div>
               </div>
             </div>
@@ -355,50 +355,50 @@ const WeatherImpactor: FC = () => {
             {/* Impact categories */}
             <div
               className="grid grid-cols-1 md:grid-cols-2 gap-3"
-              data-oid="h98t2yh"
+              data-oid=":edprg_"
             >
               {impactRisks.map((impact, index) => (
                 <div
                   key={index}
                   className="bg-space-900/40 rounded-lg p-3"
-                  data-oid="o1xdp-1"
+                  data-oid="uckdrli"
                 >
                   <div
                     className="flex justify-between items-start mb-2"
-                    data-oid="xydt97-"
+                    data-oid="87vl1r8"
                   >
-                    <div className="flex items-center" data-oid="gy0-e--">
+                    <div className="flex items-center" data-oid="jw7stu1">
                       <div
                         className={`w-8 h-8 rounded-full bg-space-800 flex items-center justify-center ${impact.color} mr-2`}
-                        data-oid="makir2u"
+                        data-oid="rgw:t_l"
                       >
                         <i
                           className={`fas ${impact.icon}`}
-                          data-oid="ihzn-x8"
+                          data-oid="0r_-tef"
                         ></i>
                       </div>
-                      <div data-oid="dthtdtw">
+                      <div data-oid="i3cq93f">
                         <h5
                           className="text-sm font-medium text-white"
-                          data-oid="kl4ij9u"
+                          data-oid="svr:4v_"
                         >
                           {impact.category}
                         </h5>
                         <div
                           className="text-xs text-gray-400"
-                          data-oid="8zapqpi"
+                          data-oid="8761puz"
                         >
                           Risk Level:{" "}
-                          <RiskBadge risk={impact.risk} data-oid="yo3jpee" />
+                          <RiskBadge risk={impact.risk} data-oid="zne4pmb" />
                         </div>
                       </div>
                     </div>
                   </div>
-                  <p className="text-sm text-white mb-1" data-oid="2:b82si">
+                  <p className="text-sm text-white mb-1" data-oid="yrocw38">
                     {impact.impact}
                   </p>
-                  <p className="text-xs text-cyan-400" data-oid="_otgnsv">
-                    <i className="fas fa-lightbulb mr-1" data-oid="ibegl52"></i>{" "}
+                  <p className="text-xs text-cyan-400" data-oid="1n0yosr">
+                    <i className="fas fa-lightbulb mr-1" data-oid="ib9cdrl"></i>{" "}
                     {impact.recommendation}
                   </p>
                 </div>
@@ -408,44 +408,44 @@ const WeatherImpactor: FC = () => {
             {/* Trade Selection Box */}
             <div
               className="mt-5 mb-5 bg-space-800/80 rounded-lg p-4 border border-electric/30"
-              data-oid="r.jk7f1"
+              data-oid="rk_-ga5"
             >
               <div
                 className="flex justify-between items-center mb-3"
-                data-oid="rd:wc8a"
+                data-oid="xoo:9.t"
               >
                 <h4
                   className="text-sm font-medium text-white"
-                  data-oid="5az6.5n"
+                  data-oid="0ouie9e"
                 >
                   <i
                     className="fas fa-hard-hat mr-1.5 text-electric"
-                    data-oid="eo6oakc"
+                    data-oid="j:at9.p"
                   ></i>
                   Trade-Specific Weather Impact
                 </h4>
-                <div className="relative" data-oid="wevb_34">
+                <div className="relative" data-oid="asiv5bc">
                   <button
                     onClick={() => setShowTradeSelector(!showTradeSelector)}
                     className="bg-space-900/70 hover:bg-space-900 text-white px-3 py-1.5 rounded-md text-xs flex items-center transition-colors"
-                    data-oid="31nl_i."
+                    data-oid="ubv4.i8"
                   >
                     <i
                       className={`fas ${TRADES.find((t) => t.id === selectedTrade)?.icon || "fa-hammer"} mr-1.5`}
-                      data-oid="w.blzl_"
+                      data-oid="8pkzcqa"
                     ></i>
                     {TRADES.find((t) => t.id === selectedTrade)?.name ||
                       "Select Trade"}
                     <i
                       className={`fas fa-chevron-${showTradeSelector ? "up" : "down"} ml-2 text-gray-400`}
-                      data-oid="2rz-u_9"
+                      data-oid="oa-bt59"
                     ></i>
                   </button>
 
                   {showTradeSelector && (
                     <div
                       className="absolute right-0 mt-1 w-64 bg-space-900 rounded-lg shadow-lg border border-electric/20 z-10 max-h-72 overflow-y-auto"
-                      data-oid=".pmetvi"
+                      data-oid="jsaijmx"
                     >
                       {TRADES.map((trade) => (
                         <button
@@ -462,17 +462,17 @@ const WeatherImpactor: FC = () => {
                             // Simulate analysis delay
                             setTimeout(() => setIsAnalyzing(false), 800);
                           }}
-                          data-oid="m.o1ja8"
+                          data-oid=".fvnj9n"
                         >
                           <i
                             className={`fas ${trade.icon} w-5 mr-2`}
-                            data-oid="bs-h-:r"
+                            data-oid="kza9pvo"
                           ></i>
                           {trade.name}
                           {selectedTrade === trade.id && (
                             <i
                               className="fas fa-check ml-auto"
-                              data-oid="q8i5:wx"
+                              data-oid="c7osfci"
                             ></i>
                           )}
                         </button>
@@ -485,56 +485,56 @@ const WeatherImpactor: FC = () => {
               {isAnalyzing ? (
                 <div
                   className="flex items-center justify-center py-6"
-                  data-oid="s7k.dn1"
+                  data-oid="mq03pj9"
                 >
                   <div
                     className="animate-spin h-5 w-5 border-2 border-electric border-t-transparent rounded-full mr-2"
-                    data-oid="336lqk1"
+                    data-oid=".oq_d57"
                   ></div>
-                  <span className="text-sm text-gray-300" data-oid="2ijxwpz">
+                  <span className="text-sm text-gray-300" data-oid="i0-zyzy">
                     Analyzing impact for{" "}
                     {TRADES.find((t) => t.id === selectedTrade)?.name}...
                   </span>
                 </div>
               ) : (
-                <div className="space-y-3" data-oid="eqafnje">
+                <div className="space-y-3" data-oid="8d85ohq">
                   {/* Trade-specific impact */}
                   {selectedTrade === "painting" && (
-                    <div data-oid="4a3824o">
-                      <div className="flex items-start mb-2" data-oid="1jiqggb">
+                    <div data-oid="5k-0joc">
+                      <div className="flex items-start mb-2" data-oid="djwn-o4">
                         <div
                           className="h-6 w-6 rounded-full bg-space-900 flex items-center justify-center text-red-400 mr-2"
-                          data-oid="223c1ac"
+                          data-oid="gc2q5m7"
                         >
                           <i
                             className="fas fa-exclamation-triangle text-xs"
-                            data-oid="5lee3ye"
+                            data-oid="q147-9i"
                           ></i>
                         </div>
-                        <p className="text-sm text-white" data-oid="prhd1os">
+                        <p className="text-sm text-white" data-oid="osaov6x">
                           Painting operations severely affected by current
                           weather conditions.
                         </p>
                       </div>
                       <ul
                         className="pl-8 text-sm space-y-1.5"
-                        data-oid="k6mecx1"
+                        data-oid="ym2datu"
                       >
-                        <li className="text-gray-300" data-oid=":5w3-za">
-                          <span className="text-red-400" data-oid="5jlc5fa">
+                        <li className="text-gray-300" data-oid="9etbq.m">
+                          <span className="text-red-400" data-oid="f2r2jr5">
                             •
                           </span>{" "}
                           Exterior painting should be postponed (humidity above
                           70%)
                         </li>
-                        <li className="text-gray-300" data-oid=".p318qp">
-                          <span className="text-yellow-400" data-oid="fubtrcy">
+                        <li className="text-gray-300" data-oid="nw_ykpk">
+                          <span className="text-yellow-400" data-oid=":bjgy3b">
                             •
                           </span>{" "}
                           Interior painting possible with proper ventilation
                         </li>
-                        <li className="text-gray-300" data-oid="r58g:9k">
-                          <span className="text-green-400" data-oid="5jbppf_">
+                        <li className="text-gray-300" data-oid="2cghgaf">
+                          <span className="text-green-400" data-oid="wq9.74f">
                             •
                           </span>{" "}
                           Recommend scheduling exterior work for Friday (optimal
@@ -545,41 +545,41 @@ const WeatherImpactor: FC = () => {
                   )}
 
                   {selectedTrade === "electrical" && (
-                    <div data-oid="imq0iyc">
-                      <div className="flex items-start mb-2" data-oid="kuu2.04">
+                    <div data-oid="1myapnq">
+                      <div className="flex items-start mb-2" data-oid="qdxmfg5">
                         <div
                           className="h-6 w-6 rounded-full bg-space-900 flex items-center justify-center text-yellow-400 mr-2"
-                          data-oid="91s:pk6"
+                          data-oid="qovnqxl"
                         >
                           <i
                             className="fas fa-bolt text-xs"
-                            data-oid="2lmmgop"
+                            data-oid="eu10a1n"
                           ></i>
                         </div>
-                        <p className="text-sm text-white" data-oid="m7ng2i8">
+                        <p className="text-sm text-white" data-oid="k49hc.:">
                           Electrical work partially affected by current weather
                           conditions.
                         </p>
                       </div>
                       <ul
                         className="pl-8 text-sm space-y-1.5"
-                        data-oid="_r2o6sq"
+                        data-oid="n3pnav."
                       >
-                        <li className="text-gray-300" data-oid="kv2ytyd">
-                          <span className="text-yellow-400" data-oid="eik:p-0">
+                        <li className="text-gray-300" data-oid="3r8icrn">
+                          <span className="text-yellow-400" data-oid="k6dx_4i">
                             •
                           </span>{" "}
                           Outdoor electrical installations should use
                           weather-proof equipment
                         </li>
-                        <li className="text-gray-300" data-oid="ecxcqo6">
-                          <span className="text-green-400" data-oid="5lz2qgb">
+                        <li className="text-gray-300" data-oid="afwhe7d">
+                          <span className="text-green-400" data-oid="7s0t.jx">
                             •
                           </span>{" "}
                           Indoor electrical work can proceed as normal
                         </li>
-                        <li className="text-gray-300" data-oid="y0ps3xj">
-                          <span className="text-yellow-400" data-oid="a8jv55v">
+                        <li className="text-gray-300" data-oid="osmxlw2">
+                          <span className="text-yellow-400" data-oid="n02mjpd">
                             •
                           </span>{" "}
                           Extra care needed with temporary power connections
@@ -589,41 +589,41 @@ const WeatherImpactor: FC = () => {
                   )}
 
                   {selectedTrade === "roofing" && (
-                    <div data-oid="_a6z:0r">
-                      <div className="flex items-start mb-2" data-oid="gwlocn5">
+                    <div data-oid="mqy3_j5">
+                      <div className="flex items-start mb-2" data-oid="ojb:fj0">
                         <div
                           className="h-6 w-6 rounded-full bg-space-900 flex items-center justify-center text-red-400 mr-2"
-                          data-oid="j32uma."
+                          data-oid="z3r.odt"
                         >
                           <i
                             className="fas fa-exclamation-circle text-xs"
-                            data-oid="2m.dhi_"
+                            data-oid="_w.slm-"
                           ></i>
                         </div>
-                        <p className="text-sm text-white" data-oid="43l0lhl">
+                        <p className="text-sm text-white" data-oid="nv2_pj8">
                           Roofing operations severely affected by current
                           weather conditions.
                         </p>
                       </div>
                       <ul
                         className="pl-8 text-sm space-y-1.5"
-                        data-oid="djw4o9:"
+                        data-oid="-z_1z-o"
                       >
-                        <li className="text-gray-300" data-oid="l6dj6yg">
-                          <span className="text-red-400" data-oid="rk7bg29">
+                        <li className="text-gray-300" data-oid="j41ffq_">
+                          <span className="text-red-400" data-oid="86-1g6q">
                             •
                           </span>{" "}
                           All roofing installation should be postponed due to
                           safety concerns
                         </li>
-                        <li className="text-gray-300" data-oid="9z1r8:d">
-                          <span className="text-red-400" data-oid="r2zd._a">
+                        <li className="text-gray-300" data-oid="y92zske">
+                          <span className="text-red-400" data-oid="_81tifv">
                             •
                           </span>{" "}
                           High risk of water infiltration and material damage
                         </li>
-                        <li className="text-gray-300" data-oid="9b:ixjt">
-                          <span className="text-yellow-400" data-oid="kngmcuu">
+                        <li className="text-gray-300" data-oid="h2oc_zx">
+                          <span className="text-yellow-400" data-oid="_jl8jo5">
                             •
                           </span>{" "}
                           Ensure temporary coverings are secure with additional
@@ -636,21 +636,21 @@ const WeatherImpactor: FC = () => {
                   {selectedTrade !== "painting" &&
                     selectedTrade !== "electrical" &&
                     selectedTrade !== "roofing" && (
-                      <div data-oid="3q5zi9l">
+                      <div data-oid="byzffoy">
                         <div
                           className="flex items-start mb-2"
-                          data-oid="9jm:d7-"
+                          data-oid="beqrxwl"
                         >
                           <div
                             className="h-6 w-6 rounded-full bg-space-900 flex items-center justify-center text-yellow-400 mr-2"
-                            data-oid="d8js86l"
+                            data-oid="g1k1pfq"
                           >
                             <i
                               className={`fas ${TRADES.find((t) => t.id === selectedTrade)?.icon || "fa-hard-hat"} text-xs`}
-                              data-oid="8_z8u4v"
+                              data-oid="rbb_047"
                             ></i>
                           </div>
-                          <p className="text-sm text-white" data-oid="z1ldi6u">
+                          <p className="text-sm text-white" data-oid="c41:2xz">
                             {TRADES.find((t) => t.id === selectedTrade)?.name ||
                               "Selected trade"}{" "}
                             operations moderately affected by current weather.
@@ -658,27 +658,27 @@ const WeatherImpactor: FC = () => {
                         </div>
                         <ul
                           className="pl-8 text-sm space-y-1.5"
-                          data-oid="4vs3t15"
+                          data-oid="r:sbh6n"
                         >
-                          <li className="text-gray-300" data-oid="5.n6.h8">
+                          <li className="text-gray-300" data-oid="7ayjn7i">
                             <span
                               className="text-yellow-400"
-                              data-oid="8gelzdn"
+                              data-oid="-p-s8mg"
                             >
                               •
                             </span>{" "}
                             Consider adjusting outdoor work schedule due to rain
                           </li>
-                          <li className="text-gray-300" data-oid="agi:1io">
-                            <span className="text-green-400" data-oid="e8jwib0">
+                          <li className="text-gray-300" data-oid="4v_pq71">
+                            <span className="text-green-400" data-oid="m-8b3.2">
                               •
                             </span>{" "}
                             Indoor operations can continue as scheduled
                           </li>
-                          <li className="text-gray-300" data-oid="otr:rcl">
+                          <li className="text-gray-300" data-oid="-3k5oda">
                             <span
                               className="text-yellow-400"
-                              data-oid="o:93245"
+                              data-oid="2m:hs1h"
                             >
                               •
                             </span>{" "}
@@ -691,24 +691,24 @@ const WeatherImpactor: FC = () => {
 
                   <div
                     className="bg-electric/10 rounded-lg p-2.5 mt-3"
-                    data-oid="boo.86b"
+                    data-oid="2mjflz7"
                   >
                     <h5
                       className="text-xs font-medium text-electric mb-1.5"
-                      data-oid="qogv0uy"
+                      data-oid="75k9pz2"
                     >
                       Productivity Impact Analysis
                     </h5>
                     <div
                       className="flex justify-between items-center mb-1.5"
-                      data-oid="5ilt9ca"
+                      data-oid="qv:s2h_"
                     >
-                      <span className="text-xs text-white" data-oid="f5oec7m">
+                      <span className="text-xs text-white" data-oid="2a8h.21">
                         Estimated productivity impact:
                       </span>
                       <span
                         className="text-xs font-medium text-yellow-400"
-                        data-oid="kzetl:w"
+                        data-oid="mqc2y3f"
                       >
                         {selectedTrade === "roofing" ||
                         selectedTrade === "painting"
@@ -720,7 +720,7 @@ const WeatherImpactor: FC = () => {
                     </div>
                     <div
                       className="w-full h-1.5 bg-space-900 rounded-full overflow-hidden"
-                      data-oid="h9.48cl"
+                      data-oid="en9o5x3"
                     >
                       <div
                         className={`h-full ${
@@ -731,7 +731,7 @@ const WeatherImpactor: FC = () => {
                               ? "bg-yellow-500 w-[20%]"
                               : "bg-yellow-500 w-[25%]"
                         }`}
-                        data-oid="twk0-uu"
+                        data-oid="y8c_at."
                       ></div>
                     </div>
                   </div>
@@ -740,19 +740,19 @@ const WeatherImpactor: FC = () => {
 
               <div
                 className="mt-3 flex justify-between items-center"
-                data-oid="_e188h2"
+                data-oid="fvsq3jl"
               >
-                <span className="text-xs text-gray-400" data-oid="m1gs:e.">
-                  <i className="fas fa-clock mr-1" data-oid="71_.jsu"></i>{" "}
+                <span className="text-xs text-gray-400" data-oid="sevvi.x">
+                  <i className="fas fa-clock mr-1" data-oid="zvuxqhs"></i>{" "}
                   Updated just now
                 </span>
                 <button
                   className="text-xs bg-electric/20 hover:bg-electric/30 text-electric hover:text-white px-2.5 py-1 rounded transition-colors"
-                  data-oid="poz2_zt"
+                  data-oid="x3n3:7x"
                 >
                   <i
                     className="fas fa-file-download mr-1"
-                    data-oid="g_ihfvv"
+                    data-oid="cibn8g."
                   ></i>{" "}
                   Export Report
                 </button>
@@ -762,31 +762,31 @@ const WeatherImpactor: FC = () => {
             {/* Current job impact */}
             <div
               className="mt-5 bg-space-800/60 rounded-lg p-4 border-l-4 border-electric"
-              data-oid="2-4ecn7"
+              data-oid="y7490.h"
             >
               <h4
                 className="text-sm font-medium text-white mb-2"
-                data-oid="s5fpkdp"
+                data-oid="x34de12"
               >
                 Current Job Impact: {currentJob.name}
               </h4>
-              <p className="text-sm text-gray-300" data-oid="rc8cj7v">
+              <p className="text-sm text-gray-300" data-oid="djl8xs_">
                 {detailedImpact.summary}. Consider adjusting the schedule to
                 account for weather conditions.
               </p>
-              <div className="mt-3 flex justify-between" data-oid="o_dgm4t">
-                <span className="text-xs text-gray-400" data-oid="tgvuoeq">
-                  <i className="fas fa-clock mr-1" data-oid="5qix578"></i>{" "}
+              <div className="mt-3 flex justify-between" data-oid="zfc4m34">
+                <span className="text-xs text-gray-400" data-oid="qs2bhg1">
+                  <i className="fas fa-clock mr-1" data-oid="33yng.z"></i>{" "}
                   Updated 10 mins ago
                 </span>
                 <button
                   className="text-xs text-electric hover:text-cyan-400 transition-colors"
-                  data-oid="nu7v-:o"
+                  data-oid="ui.9e.g"
                 >
                   View detailed report{" "}
                   <i
                     className="fas fa-chevron-right ml-1"
-                    data-oid="9cxx4o8"
+                    data-oid="jh962p-"
                   ></i>
                 </button>
               </div>
@@ -796,42 +796,42 @@ const WeatherImpactor: FC = () => {
 
         {/* Material Advisory Tab */}
         {activeTab === "material" && (
-          <div data-oid="4wz6s7i">
-            <div className="grid grid-cols-1 gap-3" data-oid="rs7jjps">
+          <div data-oid="mzog80d">
+            <div className="grid grid-cols-1 gap-3" data-oid="qnw:58q">
               {materialImpacts.map((material, index) => (
                 <div
                   key={index}
                   className="bg-space-900/40 rounded-lg p-3 flex items-start"
-                  data-oid=":qxelw7"
+                  data-oid="brll6b3"
                 >
                   <div
                     className="w-10 h-10 rounded-full bg-space-800 flex items-center justify-center text-electric mr-3 mt-1"
-                    data-oid="skv4qw8"
+                    data-oid="dn-iddg"
                   >
                     <i
                       className={`fas ${material.icon}`}
-                      data-oid=".-3i74l"
+                      data-oid="341qs.s"
                     ></i>
                   </div>
-                  <div className="flex-1" data-oid="5rr5od_">
+                  <div className="flex-1" data-oid="tcmkj.w">
                     <h5
                       className="text-sm font-medium text-white"
-                      data-oid="cqp4f3u"
+                      data-oid="8tzw2u."
                     >
                       {material.material}
                     </h5>
                     <p
                       className="text-xs text-gray-300 mb-1"
-                      data-oid="_km_5dc"
+                      data-oid="v7:_.oj"
                     >
                       {material.impact}
                     </p>
                     <div
                       className="bg-electric/10 rounded-lg p-2 border-l-2 border-electric/50"
-                      data-oid="n28:3f6"
+                      data-oid="zorw-zy"
                     >
-                      <p className="text-xs text-electric" data-oid="sjvc3mv">
-                        <strong data-oid="3:6ti6t">Mitigation:</strong>{" "}
+                      <p className="text-xs text-electric" data-oid="pvxpb:q">
+                        <strong data-oid="1v-rypb">Mitigation:</strong>{" "}
                         {material.mitigationStrategy}
                       </p>
                     </div>
@@ -842,18 +842,18 @@ const WeatherImpactor: FC = () => {
 
             <div
               className="mt-4 p-3 bg-space-900/40 rounded-lg"
-              data-oid="wr2-ygm"
+              data-oid="32yr_zg"
             >
               <h4
                 className="text-sm font-medium text-white mb-2"
-                data-oid="g4-ua_j"
+                data-oid="_ldr9rj"
               >
                 Material Delivery Advisory
               </h4>
-              <p className="text-xs text-gray-300" data-oid="6vygsw.">
+              <p className="text-xs text-gray-300" data-oid="x:2t8xl">
                 <i
                   className="fas fa-truck mr-1 text-yellow-400"
-                  data-oid="-m2:30q"
+                  data-oid="7xf0cu1"
                 ></i>{" "}
                 Potential delivery delays for cement and aggregates due to road
                 conditions. Consider scheduling deliveries 1-2 days earlier than
@@ -865,38 +865,38 @@ const WeatherImpactor: FC = () => {
 
         {/* Forecast Impact Tab */}
         {activeTab === "forecast" && (
-          <div data-oid="4qh38k0">
-            <div className="grid grid-cols-5 gap-2 mb-4" data-oid="fw_q6hb">
+          <div data-oid="u:r25ct">
+            <div className="grid grid-cols-5 gap-2 mb-4" data-oid="tfbk1wq">
               {forecast.map((day, index) => (
                 <div
                   key={index}
                   className={`bg-space-900/40 rounded-lg p-2 text-center ${index === 0 ? "border border-electric/40" : ""}`}
-                  data-oid="bqrzncv"
+                  data-oid="e.:73-2"
                 >
-                  <div className="text-xs text-gray-400" data-oid="bs2ckye">
+                  <div className="text-xs text-gray-400" data-oid="g5.azzc">
                     {day.day}
                   </div>
-                  <div className="my-1" data-oid="f71nyhu">
+                  <div className="my-1" data-oid="-:l1ndw">
                     <i
                       className={`fas ${day.icon} ${day.icon.includes("sun") ? "text-yellow-400" : day.icon.includes("rain") ? "text-blue-400" : "text-gray-400"}`}
-                      data-oid="oq:_y42"
+                      data-oid="t1ql597"
                     ></i>
                   </div>
                   <div
                     className="text-sm font-medium text-white"
-                    data-oid="d1j2n.8"
+                    data-oid="b7oprmy"
                   >
                     {day.temp}°C
                   </div>
                   <div
                     className="text-xs text-gray-500 mt-1"
-                    data-oid="5tfpib4"
+                    data-oid="cfkfd6:"
                   >
                     {day.conditions}
                   </div>
                   <div
                     className={`text-xs mt-1 ${day.conditions.toLowerCase().includes("rain") ? "text-red-400" : "text-green-400"}`}
-                    data-oid="3tp:_5t"
+                    data-oid="bblbz4_"
                   >
                     {day.conditions.toLowerCase().includes("rain")
                       ? "High Impact"
@@ -908,60 +908,60 @@ const WeatherImpactor: FC = () => {
 
             <div
               className="bg-space-900/40 rounded-lg p-3 mb-3"
-              data-oid="89qinm0"
+              data-oid="3c2tha1"
             >
               <h4
                 className="text-sm font-medium text-white mb-2"
-                data-oid="kqe:.w6"
+                data-oid="-lfsr57"
               >
                 5-Day Construction Outlook
               </h4>
               <div
                 className="text-xs text-gray-300 space-y-1"
-                data-oid="rm903e0"
+                data-oid="_81pqjy"
               >
-                <div data-oid=":9qg5sf">
-                  <strong data-oid=":0k_p7x">Today:</strong> Delay exterior work
+                <div data-oid="ki8o:e3">
+                  <strong data-oid="-10idok">Today:</strong> Delay exterior work
                   until afternoon when rain subsides
                 </div>
-                <div data-oid="5t5s51d">
-                  <strong data-oid="jxxel9-">Tomorrow:</strong> Optimal
+                <div data-oid="qph_y_q">
+                  <strong data-oid="bw5ek:7">Tomorrow:</strong> Optimal
                   conditions for all work types
                 </div>
-                <div data-oid="437xjv8">
-                  <strong data-oid="_dfxdaf">Friday:</strong> Schedule exterior
+                <div data-oid="lziss.d">
+                  <strong data-oid="t4nthk9">Friday:</strong> Schedule exterior
                   painting and concrete pours
                 </div>
-                <div data-oid="woj4ypn">
-                  <strong data-oid="o.haafs">Saturday:</strong> Normal
+                <div data-oid="3hsu595">
+                  <strong data-oid="ozt08y4">Saturday:</strong> Normal
                   operations with minor wind concerns
                 </div>
-                <div data-oid="e4-61ak">
-                  <strong data-oid="ra1rvdn">Sunday:</strong> Plan for indoor
+                <div data-oid="rbx:is5">
+                  <strong data-oid="pr4oj5.">Sunday:</strong> Plan for indoor
                   work only - severe weather expected
                 </div>
               </div>
             </div>
 
             {/* Notifications */}
-            <div className="bg-space-900/40 rounded-lg p-3" data-oid="zziggc4">
+            <div className="bg-space-900/40 rounded-lg p-3" data-oid="f-wrjq-">
               <div
                 className="flex justify-between items-center mb-2"
-                data-oid="8ylzuwn"
+                data-oid="e_fxggb"
               >
                 <h4
                   className="text-sm font-medium text-white"
-                  data-oid="c-y:qny"
+                  data-oid=".c5y7hr"
                 >
                   Weather Alerts
                 </h4>
-                <span className="text-xs text-gray-400" data-oid="0kvooy2">
+                <span className="text-xs text-gray-400" data-oid="qpuq4g9">
                   {notifications.length} new
                 </span>
               </div>
               <div
                 className="space-y-2 max-h-32 overflow-y-auto"
-                data-oid="qt4hosc"
+                data-oid="6c-ktvc"
               >
                 {notifications.map((notification, index) => (
                   <div
@@ -973,9 +973,9 @@ const WeatherImpactor: FC = () => {
                           ? "bg-yellow-900/20 border-l-2 border-yellow-500"
                           : "bg-blue-900/20 border-l-2 border-blue-500"
                     }`}
-                    data-oid="nqhjrq2"
+                    data-oid="_s4i__z"
                   >
-                    <div data-oid="we-k7zx">
+                    <div data-oid="p0qgyri">
                       <i
                         className={`fas ${
                           notification.type === "alert"
@@ -984,11 +984,11 @@ const WeatherImpactor: FC = () => {
                               ? "fa-exclamation-triangle text-yellow-500"
                               : "fa-info-circle text-blue-500"
                         } mr-1.5`}
-                        data-oid="wsv3l08"
+                        data-oid="lungha-"
                       ></i>
                       {notification.message}
                     </div>
-                    <div className="text-gray-400 ml-2" data-oid="zkltg:g">
+                    <div className="text-gray-400 ml-2" data-oid="8su-20s">
                       {notification.time}
                     </div>
                   </div>
@@ -1002,20 +1002,20 @@ const WeatherImpactor: FC = () => {
       {/* Footer */}
       <div
         className="bg-space-900/80 px-5 py-3 flex justify-between items-center border-t border-electric/10"
-        data-oid="xlf9n0g"
+        data-oid="h81hp_8"
       >
-        <div className="text-xs text-gray-400" data-oid="vkj:mn6">
+        <div className="text-xs text-gray-400" data-oid="k4lfzm8">
           <i
             className="fas fa-sync fa-spin text-electric mr-1.5"
-            data-oid="5a3p:qc"
+            data-oid="_1z2vru"
           ></i>
           Auto-refreshing every 30 minutes
         </div>
         <button
           className="bg-electric/20 hover:bg-electric/30 text-electric hover:text-white px-3 py-1 rounded-md text-xs transition-all duration-200"
-          data-oid="u5g0p5p"
+          data-oid="m1ic1bi"
         >
-          <i className="fas fa-bolt mr-1.5" data-oid="5ovwsb."></i>
+          <i className="fas fa-bolt mr-1.5" data-oid="yv8ynvz"></i>
           Generate Mitigation Plan
         </button>
       </div>

@@ -19,24 +19,24 @@ const ActiveProjects: FC = () => {
   ];
 
   return (
-    <GlassCard className="p-4" data-oid="omv_m:l">
-      <div className="flex justify-between items-start mb-3" data-oid="wp7arj5">
-        <h3 className="text-md font-space text-white" data-oid="3srn8ml">
+    <GlassCard className="p-4" data-oid=".yptaii">
+      <div className="flex justify-between items-start mb-3" data-oid="fod4xe8">
+        <h3 className="text-md font-space text-white" data-oid="-avt2ft">
           Active Projects
         </h3>
-        <span className="text-electric" data-oid="e4wkjrx">
-          <i className="fas fa-project-diagram" data-oid="zflvoq3"></i>
+        <span className="text-electric" data-oid="_yt2c:2">
+          <i className="fas fa-project-diagram" data-oid="rz86dm1"></i>
         </span>
       </div>
 
       <div
         className="text-2xl font-space font-bold text-electric mb-2"
-        data-oid="f7mepfo"
+        data-oid="95z_8xg"
       >
         {projects.length}
       </div>
 
-      <div className="space-y-1" data-oid="64qx.w9">
+      <div className="space-y-1" data-oid="bgee7n1">
         {projects.map((project) => (
           <div
             key={project.id}
@@ -45,30 +45,30 @@ const ActiveProjects: FC = () => {
                 ? "active-job-card px-2 -mx-2"
                 : ""
             }`}
-            data-oid="qbns6th"
+            data-oid="p_ldeb8"
           >
-            <div className="text-sm" data-oid="32i25:h">
-              <div className="text-white" data-oid="mt0lmvy">
+            <div className="text-sm" data-oid="_6tmwd8">
+              <div className="text-white" data-oid="cfadn_g">
                 {project.name}
               </div>
-              <div className="flex items-center" data-oid="ch:5fgb">
+              <div className="flex items-center" data-oid="h2q1qan">
                 {project.status === "In Progress" && (
                   <span
                     className="h-2 w-2 rounded-full bg-green-400 mr-1.5 animate-pulse"
-                    data-oid="6s4y.a."
+                    data-oid="kkqv5vz"
                   ></span>
                 )}
-                <span className="text-xs text-gray-400" data-oid="bimvh8w">
+                <span className="text-xs text-gray-400" data-oid="3nxe7y8">
                   {project.status} ({project.progress}%)
                 </span>
               </div>
             </div>
-            <div data-oid="q:0oijr">
+            <div data-oid="zit9d5.">
               <button
                 className="text-xs text-electric hover:text-cyan"
-                data-oid="8ghkaee"
+                data-oid="gx6i6x."
               >
-                <i className="fas fa-arrow-right" data-oid="ofr5:ym"></i>
+                <i className="fas fa-arrow-right" data-oid="qm7rm5q"></i>
               </button>
             </div>
           </div>

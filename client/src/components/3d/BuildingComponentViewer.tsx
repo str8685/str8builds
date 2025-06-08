@@ -163,101 +163,101 @@ function ComponentModel({
       onClick={() => onSelect(data.id)}
       onPointerOver={() => setHovered(true)}
       onPointerOut={() => setHovered(false)}
-      data-oid="w5qn_lr"
+      data-oid="asmz.iv"
     >
       {/* Instead of loading a model, we'll use basic shapes based on component type */}
       {data.id.includes("foundation") && data.dimensions && (
-        <mesh data-oid="57jdl9k">
+        <mesh data-oid="_tgpw3z">
           <boxGeometry
             args={[
               data.dimensions.width,
               data.dimensions.height,
               data.dimensions.depth,
             ]}
-            data-oid="-497-9h"
+            data-oid="yezkb._"
           />
 
           <meshStandardMaterial
             color={material.color}
             roughness={material.roughness || 0.5}
             metalness={material.metalness || 0.5}
-            data-oid="qzq1tcc"
+            data-oid="rg4m.vl"
           />
         </mesh>
       )}
 
       {data.id.includes("frame") && data.dimensions && (
-        <mesh data-oid="20z.hgu">
+        <mesh data-oid="s3y8lxz">
           <boxGeometry
             args={[
               data.dimensions.width * 0.8,
               data.dimensions.height,
               data.dimensions.depth * 0.8,
             ]}
-            data-oid="0arhzcr"
+            data-oid="4jf5t-9"
           />
 
           <meshStandardMaterial
             color={material.color}
             roughness={material.roughness || 0.5}
             metalness={material.metalness || 0.5}
-            data-oid="lkfl4ht"
+            data-oid="_rdyg3d"
           />
         </mesh>
       )}
 
       {data.id.includes("roof") && data.dimensions && (
-        <mesh data-oid="2-77v.-">
+        <mesh data-oid="ggk4khw">
           <coneGeometry
             args={[data.dimensions.width / 2, data.dimensions.height, 4]}
-            data-oid="csugu1:"
+            data-oid="m71z9:4"
           />
 
           <meshStandardMaterial
             color={material.color}
             roughness={material.roughness || 0.5}
             metalness={material.metalness || 0.5}
-            data-oid="reba08v"
+            data-oid="efjm:2t"
           />
         </mesh>
       )}
 
       {data.id.includes("wall") && data.dimensions && (
-        <mesh data-oid="rlz5c3s">
+        <mesh data-oid="e:ake01">
           <boxGeometry
             args={[
               data.dimensions.width,
               data.dimensions.height,
               data.dimensions.depth * 0.1,
             ]}
-            data-oid="27na4jz"
+            data-oid="yqbiyjr"
           />
 
           <meshStandardMaterial
             color={material.color}
             roughness={material.roughness || 0.5}
             metalness={material.metalness || 0.5}
-            data-oid=".tv49-_"
+            data-oid="m.a4in6"
           />
         </mesh>
       )}
 
       {data.id.includes("window") && data.dimensions && (
-        <mesh data-oid="_85sk4w">
+        <mesh data-oid="f7rpk:l">
           <boxGeometry
             args={[
               data.dimensions.width * 0.8,
               data.dimensions.height * 0.8,
               data.dimensions.depth * 0.1,
             ]}
-            data-oid="nqdf78y"
+            data-oid="mfp:ve8"
           />
 
           <meshStandardMaterial
             color={"#88ccff"}
             transparent
             opacity={0.6}
-            data-oid="9zz-5uf"
+            data-oid="wqktf_b"
           />
         </mesh>
       )}
@@ -268,9 +268,9 @@ function ComponentModel({
         !data.id.includes("roof") &&
         !data.id.includes("wall") &&
         !data.id.includes("window") && (
-          <mesh data-oid="h_100bl">
-            <boxGeometry args={[1, 1, 1]} data-oid="gpnhv64" />
-            <meshStandardMaterial color={material.color} data-oid="rl76xza" />
+          <mesh data-oid="8ty5fcf">
+            <boxGeometry args={[1, 1, 1]} data-oid="t:lxnfz" />
+            <meshStandardMaterial color={material.color} data-oid="4f02csi" />
           </mesh>
         )}
 
@@ -278,11 +278,11 @@ function ComponentModel({
         <Html
           position={[0, data.dimensions?.height || 2, 0]}
           center
-          data-oid="eedl1xf"
+          data-oid="d141nvt"
         >
           <div
             className="bg-black/80 text-white px-2 py-1 rounded text-xs whitespace-nowrap"
-            data-oid="xi7r.m."
+            data-oid="eh:9:li"
           >
             {data.name}
           </div>
@@ -296,7 +296,7 @@ function ComponentModel({
 function boxHelper({ args }: any) {
   const [box, color] = args;
   const boxHelper = new THREE.BoxHelper(box, color);
-  return <primitive object={boxHelper} data-oid="yekeybk" />;
+  return <primitive object={boxHelper} data-oid="5pdtppv" />;
 }
 
 // Main scene with all building components
@@ -344,7 +344,7 @@ function BuildingScene({
       {/* Environment and Lighting */}
       <Environment
         preset={lightPreset.dayTime === "night" ? "night" : "city"}
-        data-oid="fskiwjt"
+        data-oid="xtn_634"
       />
 
       <directionalLight
@@ -353,7 +353,7 @@ function BuildingScene({
         intensity={lightPreset.intensity}
         color={lightPreset.color}
         castShadow
-        data-oid="p5.:ioy"
+        data-oid="rl5cor7"
       />
 
       <spotLight
@@ -364,10 +364,10 @@ function BuildingScene({
         intensity={0.5 * lightPreset.intensity}
         color={lightPreset.color}
         castShadow
-        data-oid="g7uis8k"
+        data-oid="zvmq8pu"
       />
 
-      <ambientLight intensity={0.4} data-oid="gx6r:xa" />
+      <ambientLight intensity={0.4} data-oid="mqpgbv2" />
 
       {/* Scene models */}
       <Grid
@@ -381,7 +381,7 @@ function BuildingScene({
         sectionColor="#9d4b4b"
         fadeDistance={30}
         infiniteGrid
-        data-oid=":_8ivbx"
+        data-oid="3j5dfyq"
       />
 
       {/* Building Components */}
@@ -392,19 +392,19 @@ function BuildingScene({
           onSelect={handleSelectComponent}
           isSelected={component.id === selectedComponent}
           materialId={currentMaterialId}
-          data-oid="bj4wnqh"
+          data-oid="cp_liws"
         />
       ))}
 
       {/* Transform Controls - commented out due to type issues with refs */}
       {/* 
-                   {enableTransform && selectedComponent && (
-                     <TransformControls 
-                       object={selectedRef} 
-                       mode="translate"
-                     />
-                   )}
-                  */}
+                       {enableTransform && selectedComponent && (
+                         <TransformControls 
+                           object={selectedRef} 
+                           mode="translate"
+                         />
+                       )}
+                      */}
     </>
   );
 }
@@ -432,60 +432,60 @@ function ControlsPanel({
   onExport: () => void;
 }) {
   return (
-    <div className="absolute top-4 right-4 w-64 z-10" data-oid=".xhi3qd">
-      <GlassCard className="p-4" data-oid=":pbnlg8">
-        <div className="text-white" data-oid="hk4f7:7">
+    <div className="absolute top-4 right-4 w-64 z-10" data-oid="hajac:4">
+      <GlassCard className="p-4" data-oid="0o7pq4b">
+        <div className="text-white" data-oid="-rb805v">
           <div
             className="flex justify-between items-center mb-3"
-            data-oid=":7ryybh"
+            data-oid="plu.eq0"
           >
-            <h3 className="text-cyan font-space text-lg" data-oid="2-9ymx0">
+            <h3 className="text-cyan font-space text-lg" data-oid="huvqcrs">
               3D Controls
             </h3>
             <button
               className="text-gray-400 hover:text-white"
               onClick={onClose}
-              data-oid="-wz_:18"
+              data-oid="vxz:s.6"
             >
-              <i className="fas fa-times" data-oid="jtldqmn"></i>
+              <i className="fas fa-times" data-oid="cgnfens"></i>
             </button>
           </div>
 
           {selectedComponent ? (
-            <div className="mb-4" data-oid="kvx5n_e">
-              <h4 className="text-md font-bold mb-1" data-oid="qgy.e3c">
+            <div className="mb-4" data-oid="uuyfbc8">
+              <h4 className="text-md font-bold mb-1" data-oid="ev6mqk8">
                 {selectedComponent.name}
               </h4>
-              <p className="text-gray-300 text-xs mb-2" data-oid=":gpnuzo">
+              <p className="text-gray-300 text-xs mb-2" data-oid="c2ldmay">
                 {selectedComponent.description}
               </p>
 
               {selectedComponent.dimensions && (
                 <div
                   className="grid grid-cols-3 gap-1 text-xs mb-2"
-                  data-oid="lwsz.cq"
+                  data-oid="_r1-:i8"
                 >
-                  <div className="bg-space-800 p-1 rounded" data-oid="35cofyx">
-                    <span className="block text-gray-400" data-oid="1slqn.q">
+                  <div className="bg-space-800 p-1 rounded" data-oid="p4h6.gg">
+                    <span className="block text-gray-400" data-oid="22qtftt">
                       Width
                     </span>
-                    <span data-oid="cwzlw.s">
+                    <span data-oid="wehml4_">
                       {selectedComponent.dimensions.width}m
                     </span>
                   </div>
-                  <div className="bg-space-800 p-1 rounded" data-oid="nojsjve">
-                    <span className="block text-gray-400" data-oid="a_tkvj1">
+                  <div className="bg-space-800 p-1 rounded" data-oid="fayzmy4">
+                    <span className="block text-gray-400" data-oid="sv384l_">
                       Height
                     </span>
-                    <span data-oid="-_zy:kt">
+                    <span data-oid="w0lltd5">
                       {selectedComponent.dimensions.height}m
                     </span>
                   </div>
-                  <div className="bg-space-800 p-1 rounded" data-oid="uhe7tse">
-                    <span className="block text-gray-400" data-oid="qfc_y63">
+                  <div className="bg-space-800 p-1 rounded" data-oid="kr6yy8w">
+                    <span className="block text-gray-400" data-oid="b7ycxac">
                       Depth
                     </span>
-                    <span data-oid="t9hy.gq">
+                    <span data-oid="pej0kmw">
                       {selectedComponent.dimensions.depth}m
                     </span>
                   </div>
@@ -493,19 +493,19 @@ function ControlsPanel({
               )}
             </div>
           ) : (
-            <p className="text-gray-400 text-sm mb-4" data-oid="k06y6h0">
+            <p className="text-gray-400 text-sm mb-4" data-oid="ncc8p.h">
               Select a component to view details
             </p>
           )}
 
-          <div className="mb-4" data-oid="yj8sidx">
+          <div className="mb-4" data-oid=":2x-i04">
             <label
               className="block text-sm text-gray-300 mb-1"
-              data-oid="ih29dot"
+              data-oid="b-nk7dx"
             >
               Material
             </label>
-            <div className="grid grid-cols-3 gap-1" data-oid="f7uks5v">
+            <div className="grid grid-cols-3 gap-1" data-oid="lhpp-as">
               {materialOptions.map((material) => (
                 <button
                   key={material.id}
@@ -521,7 +521,7 @@ function ControlsPanel({
                         ? material.color
                         : "transparent",
                   }}
-                  data-oid="5g2_emz"
+                  data-oid="lz-ydhu"
                 >
                   {material.name}
                 </button>
@@ -529,14 +529,14 @@ function ControlsPanel({
             </div>
           </div>
 
-          <div className="mb-4" data-oid="i.lf7oz">
+          <div className="mb-4" data-oid="pinr-l:">
             <label
               className="block text-sm text-gray-300 mb-1"
-              data-oid="n2szdak"
+              data-oid="vqiuwuo"
             >
               Lighting
             </label>
-            <div className="grid grid-cols-2 gap-1" data-oid="lhgcavp">
+            <div className="grid grid-cols-2 gap-1" data-oid="j_vg-t7">
               {lightingPresets.map((preset) => (
                 <button
                   key={preset.id}
@@ -546,7 +546,7 @@ function ControlsPanel({
                       : "bg-space-800 text-gray-300 hover:bg-space-700"
                   }`}
                   onClick={() => setCurrentLightingId(preset.id)}
-                  data-oid="2ux575."
+                  data-oid="gqz38kj"
                 >
                   {preset.name}
                 </button>
@@ -554,11 +554,11 @@ function ControlsPanel({
             </div>
           </div>
 
-          <div className="mt-4" data-oid="9zwnbpe">
+          <div className="mt-4" data-oid="mgnjxl2">
             <button
               className="w-full bg-purple-900 text-cyan py-2 rounded hover:bg-purple-800 btn-glow btn-glow-cyan"
               onClick={onExport}
-              data-oid="3f56aa5"
+              data-oid="u3i0na:"
             >
               Export View
             </button>
@@ -572,44 +572,44 @@ function ControlsPanel({
 // Instructions overlay
 function InstructionsOverlay({ onClose }: { onClose: () => void }) {
   return (
-    <div className="absolute bottom-4 left-4 max-w-md z-10" data-oid="25u014.">
-      <GlassCard className="p-3" data-oid="ecnl5_-">
-        <div className="flex justify-between items-start" data-oid="p1.evl-">
-          <h4 className="text-cyan font-space text-sm" data-oid="r2zqfuw">
+    <div className="absolute bottom-4 left-4 max-w-md z-10" data-oid="q8-5g_y">
+      <GlassCard className="p-3" data-oid="3-gqeag">
+        <div className="flex justify-between items-start" data-oid="si_762f">
+          <h4 className="text-cyan font-space text-sm" data-oid="zqk0u9p">
             Navigation Controls
           </h4>
           <button
             className="text-gray-400 hover:text-white text-xs"
             onClick={onClose}
-            data-oid=".v05zxg"
+            data-oid="zy0bo3v"
           >
-            <i className="fas fa-times" data-oid="2j56l2d"></i>
+            <i className="fas fa-times" data-oid="h72tr49"></i>
           </button>
         </div>
         <div
           className="text-xs text-gray-300 mt-2 grid grid-cols-2 gap-2"
-          data-oid="i.16v5v"
+          data-oid="-zwou_d"
         >
-          <div data-oid="07t23dt">
-            <span className="text-cyan" data-oid="z2.-379">
+          <div data-oid="-7cekqx">
+            <span className="text-cyan" data-oid="phzas4t">
               Left Click + Drag:
             </span>{" "}
             Rotate
           </div>
-          <div data-oid="u.j1w.3">
-            <span className="text-cyan" data-oid="1tf:1jj">
+          <div data-oid="_2nm20g">
+            <span className="text-cyan" data-oid=":zjq6s9">
               Right Click + Drag:
             </span>{" "}
             Pan
           </div>
-          <div data-oid="i4rc236">
-            <span className="text-cyan" data-oid="1dywsk-">
+          <div data-oid="tou.jqq">
+            <span className="text-cyan" data-oid="_ciffnv">
               Mouse Wheel:
             </span>{" "}
             Zoom
           </div>
-          <div data-oid="2.fo5-7">
-            <span className="text-cyan" data-oid="xrxb65w">
+          <div data-oid="-i02rf:">
+            <span className="text-cyan" data-oid="t1kkfri">
               Click on component:
             </span>{" "}
             Select
@@ -732,15 +732,15 @@ const BuildingComponentViewer: FC<BuildingComponentViewerProps> = ({
   return (
     <div
       className={`relative w-full h-[600px] ${className}`}
-      data-oid="gb4zjf1"
+      data-oid="v5bae86"
     >
       {/* Main 3D Canvas */}
-      <Canvas shadows className="w-full h-full" data-oid="spwr5in">
+      <Canvas shadows className="w-full h-full" data-oid="hh63xfe">
         <PerspectiveCamera
           makeDefault
           position={[10, 10, 10]}
           fov={45}
-          data-oid="sd0f.yk"
+          data-oid="1d.hybp"
         />
 
         <BuildingScene
@@ -750,7 +750,7 @@ const BuildingComponentViewer: FC<BuildingComponentViewerProps> = ({
           currentMaterialId={currentMaterialId}
           currentLightingId={currentLightingId}
           showHelpers={false}
-          data-oid=".yptuby"
+          data-oid="pn.v2fc"
         />
 
         <OrbitControls
@@ -759,7 +759,7 @@ const BuildingComponentViewer: FC<BuildingComponentViewerProps> = ({
           enableRotate={true}
           minDistance={2}
           maxDistance={20}
-          data-oid="iwjev-0"
+          data-oid=":v_4mi_"
         />
 
         {/* Optional performance stats */}
@@ -777,14 +777,14 @@ const BuildingComponentViewer: FC<BuildingComponentViewerProps> = ({
         setCurrentLightingId={setCurrentLightingId}
         onClose={onClose}
         onExport={handleExport}
-        data-oid="ppdc26l"
+        data-oid="b_psira"
       />
 
       {/* Instructions */}
       {showInstructions && (
         <InstructionsOverlay
           onClose={() => setShowInstructions(false)}
-          data-oid="k_wyw0r"
+          data-oid="o-5f6mw"
         />
       )}
 
@@ -792,9 +792,9 @@ const BuildingComponentViewer: FC<BuildingComponentViewerProps> = ({
       <button
         className="absolute top-4 left-4 bg-space-800/80 text-white p-2 rounded-full hover:bg-space-700 z-10"
         onClick={onClose}
-        data-oid="2afq.b3"
+        data-oid="66v6-nw"
       >
-        <i className="fas fa-arrow-left" data-oid=":lk0hah"></i>
+        <i className="fas fa-arrow-left" data-oid="jyzcd-3"></i>
       </button>
     </div>
   );

@@ -80,40 +80,40 @@ export const VolumeDetector: FC = () => {
   };
 
   return (
-    <GlassCard className="p-6" data-oid="8kzysfp">
+    <GlassCard className="p-6" data-oid="lveofz1">
       <div
         className="flex items-center justify-between mb-4"
-        data-oid="h.bljwt"
+        data-oid="cwa3rnl"
       >
-        <h2 className="text-xl font-bold text-white" data-oid=".auw0gw">
+        <h2 className="text-xl font-bold text-white" data-oid="1puui1e">
           Volume Detector
         </h2>
-        <Volume2 className="text-cyan-400" data-oid="vllarbh" />
+        <Volume2 className="text-cyan-400" data-oid="haz4juq" />
       </div>
 
       {!isSupported ? (
-        <div className="text-center py-8 text-red-400" data-oid="cca1y5b">
+        <div className="text-center py-8 text-red-400" data-oid="bcwybmd">
           Microphone access not supported or permission denied
         </div>
       ) : (
         <>
           <div
             className="relative w-full h-8 bg-space-800/50 rounded-full overflow-hidden mb-4"
-            data-oid="i6y8g_3"
+            data-oid=".pqj5wf"
           >
             <div
               className="absolute top-0 left-0 h-full bg-gradient-to-r from-cyan-400 to-cyan-600 transition-all duration-100"
               style={{ width: `${volume}%` }}
-              data-oid="p_2_hq2"
+              data-oid="z6u005-"
             />
 
             <div
               className="absolute inset-0 flex items-center justify-center"
-              data-oid="-blj5uk"
+              data-oid="o73gwtp"
             >
               <span
                 className="text-xs font-medium text-white mix-blend-overlay"
-                data-oid="z0y.rmp"
+                data-oid="j93uee-"
               >
                 {volume.toFixed(0)}%
               </span>
@@ -123,15 +123,15 @@ export const VolumeDetector: FC = () => {
           <button
             onClick={toggleListening}
             className={`w-full py-3 rounded-lg flex items-center justify-center gap-2 transition-colors ${isListening ? "bg-red-500/90 hover:bg-red-500" : "bg-cyan-500/90 hover:bg-cyan-500"}`}
-            data-oid="ixh:cje"
+            data-oid="ap5z5m1"
           >
-            <Mic className="w-5 h-5" data-oid="l_fhlur" />
+            <Mic className="w-5 h-5" data-oid="j19lhkd" />
             {isListening ? "Stop Listening" : "Start Listening"}
           </button>
 
           <p
             className="text-xs text-gray-400 mt-3 text-center"
-            data-oid="4h.-0ec"
+            data-oid="pvx7f5."
           >
             {isListening
               ? "Listening to microphone..."

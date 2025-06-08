@@ -73,10 +73,10 @@ const ProtectedRoute: FC<ProtectedRouteProps> = ({ children }) => {
 
     // Use a minimal loading indicator that doesn't cause layout shifts
     return (
-      <div className="fixed top-0 left-0 right-0 z-50 h-1" data-oid="b_r5n-x">
+      <div className="fixed top-0 left-0 right-0 z-50 h-1" data-oid="zbdrxfh">
         <div
           className="h-full bg-gradient-to-r from-blue-500 to-cyan-400 animate-pulse"
-          data-oid="7sa54ml"
+          data-oid="pgor7q8"
         ></div>
       </div>
     );
@@ -87,22 +87,22 @@ const ProtectedRoute: FC<ProtectedRouteProps> = ({ children }) => {
     return (
       <div
         className="flex flex-col justify-center items-center min-h-screen bg-space-900/50"
-        data-oid="ns5.8b."
+        data-oid="nfprtd5"
       >
         <div
           className="bg-red-900/30 border border-red-700 rounded-lg p-4 max-w-md"
-          data-oid="69cjn_p"
+          data-oid="a:h54a4"
         >
-          <h3 className="text-red-400 text-lg mb-2" data-oid="pc_0ecu">
+          <h3 className="text-red-400 text-lg mb-2" data-oid="le:ps:.">
             Authentication Error
           </h3>
-          <p className="text-white mb-4" data-oid="q36ihcf">
+          <p className="text-white mb-4" data-oid="zfdrf3q">
             {authError}
           </p>
           <button
             onClick={() => navigate("/login")}
             className="bg-red-800 hover:bg-red-700 text-white py-2 px-4 rounded-md text-sm"
-            data-oid="9f:a86p"
+            data-oid="t36ufks"
           >
             Return to Login
           </button>
@@ -113,7 +113,7 @@ const ProtectedRoute: FC<ProtectedRouteProps> = ({ children }) => {
 
   // Redirect to login if not authenticated
   if (redirectToLogin) {
-    return <Redirect to="/login" data-oid="d2dub38" />;
+    return <Redirect to="/login" data-oid="xpie-bj" />;
   }
 
   // If authenticated and no errors, render children

@@ -192,27 +192,27 @@ const ProjectCamera: FC<ProjectCameraProps> = ({ project, onClose }) => {
   return (
     <div
       className="bg-space-900 rounded-lg p-4 w-full max-w-lg mx-auto overflow-hidden"
-      data-oid="4kptw7p"
+      data-oid="j8zfjb5"
     >
       <div
         className="flex justify-between items-center mb-4"
-        data-oid="q-9aijw"
+        data-oid="ygt5jeo"
       >
-        <h3 className="text-white text-lg font-medium" data-oid=":k6sjtl">
+        <h3 className="text-white text-lg font-medium" data-oid="c-_.enr">
           Project Camera
         </h3>
         <button
           className="text-gray-400 hover:text-white"
           onClick={onClose}
-          data-oid="ujxk-2s"
+          data-oid="t:szd.v"
         >
-          <i className="fas fa-times" data-oid="yoy5qny"></i>
+          <i className="fas fa-times" data-oid="vl8tah5"></i>
         </button>
       </div>
 
       <div
         className="rounded-lg overflow-hidden bg-space-800 relative"
-        data-oid="8yflysm"
+        data-oid="8__sf8o"
       >
         {!capturedImage ? (
           <>
@@ -221,42 +221,42 @@ const ProjectCamera: FC<ProjectCameraProps> = ({ project, onClose }) => {
               autoPlay
               playsInline
               className="w-full h-64 object-cover"
-              data-oid="v-nky25"
+              data-oid="2:vpoo4"
             />
 
             {cameraActive && (
               <div
                 className="absolute bottom-3 left-0 right-0 flex justify-center space-x-3"
-                data-oid="42cvsuu"
+                data-oid="::sc7ti"
               >
                 <Button
                   variant="secondary"
                   size="icon"
                   onClick={switchCamera}
                   className="rounded-full h-10 w-10 bg-space-700/50 hover:bg-space-700"
-                  data-oid="4mss1u:"
+                  data-oid="_n6iw_k"
                 >
-                  <i className="fas fa-sync" data-oid="8f0j8kn"></i>
+                  <i className="fas fa-sync" data-oid="2tj:e6u"></i>
                 </Button>
                 <Button
                   variant="default"
                   size="icon"
                   onClick={capturePhoto}
                   className="rounded-full h-14 w-14 bg-purple-600/70 hover:bg-purple-600 btn-glow btn-glow-cyan"
-                  data-oid="i--kgtn"
+                  data-oid="31b0kce"
                 >
-                  <i className="fas fa-camera" data-oid="00g87_u"></i>
+                  <i className="fas fa-camera" data-oid="fcatoxv"></i>
                 </Button>
               </div>
             )}
           </>
         ) : (
-          <div className="relative" data-oid="7.wy0my">
+          <div className="relative" data-oid="6w98vr_">
             <img
               src={capturedImage}
               alt="Captured project"
               className="w-full h-64 object-contain"
-              data-oid="w_ouoj3"
+              data-oid="wrz05en"
             />
 
             <Button
@@ -264,23 +264,23 @@ const ProjectCamera: FC<ProjectCameraProps> = ({ project, onClose }) => {
               size="sm"
               onClick={retakePhoto}
               className="absolute top-2 right-2 bg-space-700/70 hover:bg-space-700"
-              data-oid="o0pqdos"
+              data-oid="niqio_m"
             >
-              <i className="fas fa-redo mr-1" data-oid="msv2r4f"></i> Retake
+              <i className="fas fa-redo mr-1" data-oid="lfqro00"></i> Retake
             </Button>
           </div>
         )}
       </div>
 
-      <canvas ref={canvasRef} className="hidden" data-oid="0zycus5" />
+      <canvas ref={canvasRef} className="hidden" data-oid="ue_uq4c" />
 
       {capturedImage && (
-        <div className="mt-4 space-y-3" data-oid="71tk-_b">
-          <div data-oid="s6s4fcr">
+        <div className="mt-4 space-y-3" data-oid="5sabcj_">
+          <div data-oid="y.3k8no">
             <label
               htmlFor="note"
               className="block text-sm font-medium text-gray-300 mb-1"
-              data-oid="l_oof7d"
+              data-oid="-cz8eav"
             >
               Add a note about this photo
             </label>
@@ -291,16 +291,16 @@ const ProjectCamera: FC<ProjectCameraProps> = ({ project, onClose }) => {
               placeholder="Describe what's in this photo..."
               className="bg-space-800 border-space-700 text-white"
               rows={3}
-              data-oid="8fr4l:6"
+              data-oid="gftob92"
             />
           </div>
 
-          <div className="flex justify-end space-x-2" data-oid="mv-ur8m">
+          <div className="flex justify-end space-x-2" data-oid="a:q8ddf">
             <Button
               variant="outline"
               onClick={onClose}
               className="border-space-700 text-gray-300 hover:bg-space-800"
-              data-oid="8ff8-9."
+              data-oid="2k7uft1"
             >
               Cancel
             </Button>
@@ -309,19 +309,19 @@ const ProjectCamera: FC<ProjectCameraProps> = ({ project, onClose }) => {
               onClick={saveProjectPhoto}
               disabled={isSaving}
               className="bg-purple-900 text-cyan hover:bg-purple-800 btn-glow btn-glow-cyan"
-              data-oid="v4:6cdo"
+              data-oid="y.7y0d8"
             >
               {isSaving ? (
                 <>
                   <div
                     className="h-4 w-4 border-2 border-t-transparent border-cyan rounded-full animate-spin mr-2"
-                    data-oid="fyjqpkw"
+                    data-oid="6rf6d2a"
                   ></div>
                   Saving...
                 </>
               ) : (
                 <>
-                  <i className="fas fa-save mr-1" data-oid="wrby2a7"></i> Save
+                  <i className="fas fa-save mr-1" data-oid="osnr3cd"></i> Save
                 </>
               )}
             </Button>

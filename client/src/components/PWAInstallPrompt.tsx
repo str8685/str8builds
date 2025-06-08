@@ -55,7 +55,7 @@ const PWAInstallPrompt: FC<PWAInstallPromptProps> = ({ className = "" }) => {
   if (!installable || !showBanner) return null;
 
   return (
-    <AnimatePresence data-oid="eech85d">
+    <AnimatePresence data-oid="ifcl7r5">
       {showBanner && (
         <motion.div
           className={`fixed bottom-16 left-0 right-0 z-50 mx-auto px-4 ${className}`}
@@ -63,54 +63,54 @@ const PWAInstallPrompt: FC<PWAInstallPromptProps> = ({ className = "" }) => {
           animate={{ y: 0, opacity: 1 }}
           exit={{ y: 100, opacity: 0 }}
           transition={{ type: "spring", stiffness: 300, damping: 30 }}
-          data-oid="npoqz1-"
+          data-oid="e4qt5el"
         >
           <div
             className="max-w-md mx-auto bg-gradient-to-br from-space-800 to-space-900 rounded-xl shadow-2xl overflow-hidden border border-blue-500/30"
-            data-oid="npathwi"
+            data-oid="18u3_v2"
           >
-            <div className="p-4 relative" data-oid=":2u37yi">
+            <div className="p-4 relative" data-oid="urkifjg">
               <button
                 onClick={handleClose}
                 className="absolute top-2 right-2 p-1 text-gray-400 hover:text-white rounded-full"
-                data-oid="ecw02jg"
+                data-oid="z7b_e0-"
               >
-                <X size={20} data-oid="trr4ddm" />
+                <X size={20} data-oid="pnni2-t" />
               </button>
 
-              <div className="flex items-center" data-oid="jk2sgpr">
+              <div className="flex items-center" data-oid="vc2i29.">
                 <img
                   src={str8BuildLogo}
                   alt="STR8 BUILD"
                   className="w-14 h-auto mr-4 drop-shadow-[0_0_8px_rgba(59,130,246,0.5)]"
-                  data-oid="3-fydix"
+                  data-oid="ko6o:na"
                 />
 
-                <div data-oid="bk25soj">
+                <div data-oid="_5ms4kk">
                   <h3
                     className="text-lg font-bold text-white"
-                    data-oid="fqj440_"
+                    data-oid="a6nkb2r"
                   >
                     Install STR8 BUILD
                   </h3>
-                  <p className="text-sm text-blue-200" data-oid="..ra-.t">
+                  <p className="text-sm text-blue-200" data-oid=":6vd_wp">
                     Add to your home screen for quick access
                   </p>
                 </div>
               </div>
 
-              <div className="mt-3 flex justify-end" data-oid="0f4jz3y">
+              <div className="mt-3 flex justify-end" data-oid="1apwc5k">
                 <button
                   onClick={handleClose}
                   className="mr-2 px-3 py-1.5 text-sm text-blue-300 hover:text-blue-100"
-                  data-oid="5v4:rdk"
+                  data-oid="az1o-h7"
                 >
                   Not now
                 </button>
                 <button
                   onClick={handleInstallClick}
                   className="px-4 py-1.5 text-sm font-medium bg-blue-600 text-white rounded-md hover:bg-blue-700"
-                  data-oid="5:331ci"
+                  data-oid="bi7:d3p"
                 >
                   Install
                 </button>

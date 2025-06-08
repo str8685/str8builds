@@ -106,15 +106,15 @@ const ProjectPhotos: FC<ProjectPhotosProps> = ({ project }) => {
     return (
       <div
         className="p-6 text-center bg-space-800/50 rounded-lg flex flex-col items-center justify-center h-48"
-        data-oid="46kpf88"
+        data-oid="npfhqx4"
       >
         <div
           className="animate-spin text-cyan-400 text-2xl mb-3"
-          data-oid="6t1x7wb"
+          data-oid="q6f9el3"
         >
-          <i className="fas fa-circle-notch" data-oid="h8gy5ii"></i>
+          <i className="fas fa-circle-notch" data-oid="udbd7l6"></i>
         </div>
-        <div className="text-gray-400" data-oid="7jwkipf">
+        <div className="text-gray-400" data-oid="9halrib">
           Loading project photos...
         </div>
       </div>
@@ -125,16 +125,16 @@ const ProjectPhotos: FC<ProjectPhotosProps> = ({ project }) => {
     return (
       <div
         className="p-6 text-center bg-space-800/50 rounded-lg h-48 flex flex-col items-center justify-center"
-        data-oid="icm2u0:"
+        data-oid="i7r9yx8"
       >
-        <div className="text-gray-400 mb-2" data-oid=".gysvl9">
+        <div className="text-gray-400 mb-2" data-oid="a2cy0rm">
           <i
             className="fas fa-camera text-2xl mb-3 text-gray-500"
-            data-oid="qrqd4pm"
+            data-oid="sz6hfwy"
           ></i>
-          <div data-oid="le1-gnf">No photos yet</div>
+          <div data-oid="e3:73ev">No photos yet</div>
         </div>
-        <p className="text-xs text-gray-500" data-oid="xwb.p4a">
+        <p className="text-xs text-gray-500" data-oid="a4vyk_s">
           Use the Project Camera tool to take photos
         </p>
       </div>
@@ -142,8 +142,8 @@ const ProjectPhotos: FC<ProjectPhotosProps> = ({ project }) => {
   }
 
   return (
-    <div className="space-y-4" data-oid="t5l_rrm">
-      <div className="grid grid-cols-2 gap-3" data-oid="lf50-4i">
+    <div className="space-y-4" data-oid="hfv0an4">
+      <div className="grid grid-cols-2 gap-3" data-oid="2ifg_.-">
         {photos.map((photo) => (
           <motion.div
             key={photo.id}
@@ -152,44 +152,44 @@ const ProjectPhotos: FC<ProjectPhotosProps> = ({ project }) => {
             className="bg-gradient-to-b from-space-800 to-space-900 rounded-xl overflow-hidden cursor-pointer group transition-all duration-300 hover:shadow-lg hover:shadow-cyan-500/10 border border-space-700/30"
             onClick={() => setSelectedPhoto(photo)}
             whileHover={{ y: -5 }}
-            data-oid="rce39-e"
+            data-oid="1kipvhd"
           >
-            <div className="relative h-40" data-oid=".nbz8zz">
+            <div className="relative h-40" data-oid="sj9la44">
               <img
                 src={photo.imageUrl}
                 alt={photo.name || "Project photo"}
                 className="w-full h-full object-cover"
-                data-oid="uqsa9ul"
+                data-oid="r2z6_t0"
               />
 
               <div
                 className="absolute inset-0 bg-gradient-to-t from-space-900/90 via-space-900/30 to-transparent pointer-events-none"
-                data-oid="tqb6._f"
+                data-oid="p52tv54"
               ></div>
               <div
                 className="absolute bottom-0 left-0 right-0 p-3"
-                data-oid="jos4f97"
+                data-oid="o3lqhjr"
               >
                 <div
                   className="text-xs font-medium text-white"
-                  data-oid=":7qdtwb"
+                  data-oid="slf-.0m"
                 >
                   {photo.name}
                 </div>
-                <div className="text-xs text-gray-300" data-oid="5ko-b8v">
+                <div className="text-xs text-gray-300" data-oid="pe5pr0z">
                   {formatTimestamp(photo.createdAt)}
                 </div>
               </div>
               <div
                 className="absolute inset-0 bg-cyan-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
-                data-oid="9azkqpt"
+                data-oid="afrz37_"
               ></div>
             </div>
             {photo.description && (
-              <div className="p-3" data-oid="1bahygz">
+              <div className="p-3" data-oid="35pfu-d">
                 <p
                   className="text-xs text-gray-400 line-clamp-2"
-                  data-oid="i99wx5g"
+                  data-oid=":.fvw3y"
                 >
                   {photo.description}
                 </p>
@@ -203,68 +203,68 @@ const ProjectPhotos: FC<ProjectPhotosProps> = ({ project }) => {
       <Dialog
         open={!!selectedPhoto}
         onOpenChange={(open) => !open && setSelectedPhoto(null)}
-        data-oid="w-z2:0b"
+        data-oid="qjui.-q"
       >
         <DialogContent
           className="bg-gradient-to-br from-space-900 via-space-950 to-space-900 border border-space-700/50 text-white max-w-2xl overflow-hidden p-0"
-          data-oid="zectjft"
+          data-oid="wpxtfn8"
         >
-          <div className="absolute inset-0 overflow-hidden" data-oid=".9ofu6.">
+          <div className="absolute inset-0 overflow-hidden" data-oid="r35t.00">
             <div
               className="absolute -inset-[100px] bg-cyan-800/5 blur-3xl rounded-full top-0 right-0 z-0"
-              data-oid="n8lgw8x"
+              data-oid="j-_bb3y"
             ></div>
             <div
               className="absolute -inset-[100px] bg-blue-800/5 blur-3xl rounded-full bottom-0 left-0 z-0"
-              data-oid=":gx_:eu"
+              data-oid="fck:4t3"
             ></div>
             <div
               className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-cyan-500/20 to-transparent"
-              data-oid="d-qcrw-"
+              data-oid="-jwemu-"
             ></div>
             <div
               className="absolute bottom-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-cyan-500/20 to-transparent"
-              data-oid="nohz7yt"
+              data-oid="jmlt8q:"
             ></div>
           </div>
 
-          <div className="relative z-10 p-6" data-oid="0y:ib1z">
-            <DialogHeader className="mb-4" data-oid="595pyb0">
+          <div className="relative z-10 p-6" data-oid="ndrytaf">
+            <DialogHeader className="mb-4" data-oid="e0bou_5">
               <DialogTitle
                 className="flex items-center text-xl font-space text-cyan-400 tracking-wide"
-                data-oid="c_7ady3"
+                data-oid=":-qhk3v"
               >
                 <div
                   className="flex items-center justify-center h-8 w-8 rounded-full bg-cyan-900/50 mr-3"
-                  data-oid="g.niy0v"
+                  data-oid="92z6wv6"
                 >
-                  <i className="fas fa-image" data-oid="ddnap-_"></i>
+                  <i className="fas fa-image" data-oid="p:3_4j1"></i>
                 </div>
-                <span data-oid="55v9rs9">
+                <span data-oid="bw0zvkx">
                   {selectedPhoto?.name || "Project Photo"}
                 </span>
               </DialogTitle>
             </DialogHeader>
 
-            <div className="space-y-6" data-oid="qx4i2ni">
+            <div className="space-y-6" data-oid="e-3j94o">
               <div
                 className="rounded-xl overflow-hidden shadow-2xl border border-space-700/50"
-                data-oid="aw9swn_"
+                data-oid="ci0v-9c"
               >
                 <img
                   src={selectedPhoto?.imageUrl}
                   alt={selectedPhoto?.name || "Project photo"}
                   className="w-full object-contain max-h-[60vh] bg-gradient-to-b from-space-800 to-space-900"
-                  data-oid="6b:5pu6"
+                  data-oid="jh0rl9_"
                 />
               </div>
 
-              <div className="space-y-4" data-oid="3z24.p0">
+              <div className="space-y-4" data-oid="s78_l75">
                 <div
                   className="flex justify-between items-center"
-                  data-oid="6uwt7xv"
+                  data-oid="oypd3_o"
                 >
-                  <div className="text-sm text-gray-300" data-oid="9hu4qbz">
+                  <div className="text-sm text-gray-300" data-oid="s3b7ana">
                     {selectedPhoto && formatTimestamp(selectedPhoto.createdAt)}
                   </div>
 
@@ -275,9 +275,9 @@ const ProjectPhotos: FC<ProjectPhotosProps> = ({ project }) => {
                       selectedPhoto && deletePhoto(selectedPhoto.id)
                     }
                     className="bg-red-900/70 hover:bg-red-800 text-white border-red-700/30"
-                    data-oid="cv0k2d7"
+                    data-oid="3cdsfbo"
                   >
-                    <i className="fas fa-trash-alt mr-2" data-oid="383nmis"></i>{" "}
+                    <i className="fas fa-trash-alt mr-2" data-oid="lj2lyo9"></i>{" "}
                     Delete
                   </Button>
                 </div>
@@ -285,15 +285,15 @@ const ProjectPhotos: FC<ProjectPhotosProps> = ({ project }) => {
                 {selectedPhoto?.description && (
                   <div
                     className="bg-space-800/70 backdrop-blur-sm rounded-xl p-4 border border-space-700/30"
-                    data-oid="8qr0fd7"
+                    data-oid="f:929cr"
                   >
                     <h4
                       className="text-sm font-medium text-gray-300 mb-2"
-                      data-oid="8:xz3ab"
+                      data-oid="q30-f3c"
                     >
                       Description
                     </h4>
-                    <p className="text-gray-200" data-oid="-h4257j">
+                    <p className="text-gray-200" data-oid="h.gm0w1">
                       {selectedPhoto.description}
                     </p>
                   </div>

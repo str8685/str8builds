@@ -240,7 +240,7 @@ const GlassCard: FC<GlassCardProps> = ({
       onMouseLeave={() => setIsHovered(false)}
       style={heightStyle}
       data-component-name="GlassCard"
-      data-oid="7.rgac8"
+      data-oid="o69ijrd"
     >
       {/* Click ripple effect */}
       {rippleEffect && interactive && (
@@ -252,7 +252,7 @@ const GlassCard: FC<GlassCardProps> = ({
             width: "100px",
             height: "100px",
           }}
-          data-oid="6_lu3vp"
+          data-oid="ys_m3uo"
         />
       )}
 
@@ -260,11 +260,11 @@ const GlassCard: FC<GlassCardProps> = ({
       {loading && (
         <div
           className="absolute inset-0 bg-space-900/70 z-10 flex items-center justify-center backdrop-blur-sm"
-          data-oid="8c.dwew"
+          data-oid="8kvx-kr"
         >
           <div
             className={`w-10 h-10 border-2 border-t-transparent rounded-full animate-spin border-${variant}-400`}
-            data-oid="fwzjkwa"
+            data-oid="6ot5cy-"
           />
         </div>
       )}
@@ -273,25 +273,25 @@ const GlassCard: FC<GlassCardProps> = ({
       {(title || icon) && (
         <div
           className={`flex justify-between items-center ${title && subtitle ? "mb-4" : "mb-2"} ${paddingClass}`}
-          data-oid="5:5goej"
+          data-oid="5v6tcf0"
         >
-          <div className="flex items-center gap-2" data-oid="mhbllct">
+          <div className="flex items-center gap-2" data-oid="f3g92vb">
             {icon && (
-              <div className={`text-${variant}-400 text-lg`} data-oid="o3k6x0x">
-                <i className={icon} data-oid="7-0063e"></i>
+              <div className={`text-${variant}-400 text-lg`} data-oid="lh19bda">
+                <i className={icon} data-oid="ma3it4z"></i>
               </div>
             )}
-            <div data-oid="fopa19c">
+            <div data-oid="e2qk5wo">
               {title && (
                 <h3
                   className="text-md font-space text-white"
-                  data-oid="23g5qim"
+                  data-oid="7lw93:d"
                 >
                   {title}
                 </h3>
               )}
               {subtitle && (
-                <p className="text-xs text-gray-400" data-oid="lq88bcs">
+                <p className="text-xs text-gray-400" data-oid="d:qeul_">
                   {subtitle}
                 </p>
               )}
@@ -304,11 +304,11 @@ const GlassCard: FC<GlassCardProps> = ({
               onClick={handleToggleExpand}
               className={`text-xs text-${variant}-400 hover:text-${variant}-300 transition-colors`}
               aria-label={isExpanded ? "Collapse" : "Expand"}
-              data-oid="upi39_y"
+              data-oid="9-j_lh:"
             >
               <i
                 className={`fas fa-chevron-${isExpanded ? "up" : "down"}`}
-                data-oid="o2kkf5r"
+                data-oid="hm9_t9o"
               ></i>
             </button>
           )}
@@ -323,7 +323,7 @@ const GlassCard: FC<GlassCardProps> = ({
         ${!title && !icon ? paddingClass : ""}
         ${title || icon ? paddingClass.replace("p-", "px-") : ""}
       `}
-        data-oid="168sl_e"
+        data-oid="7:wxdq8"
       >
         {children}
       </div>
@@ -332,7 +332,7 @@ const GlassCard: FC<GlassCardProps> = ({
       {footerContent && (
         <div
           className={`mt-4 pt-3 border-t border-${variant}-900/30 ${paddingClass}`}
-          data-oid="hxtoo8b"
+          data-oid="p1ci-ji"
         >
           {footerContent}
         </div>
@@ -342,7 +342,7 @@ const GlassCard: FC<GlassCardProps> = ({
       {interactive && isHovered && (
         <div
           className={`absolute inset-0 bg-gradient-to-b from-${variant}-500/5 to-transparent pointer-events-none opacity-30`}
-          data-oid="cq:_.n."
+          data-oid="9gw7_q7"
         ></div>
       )}
     </div>

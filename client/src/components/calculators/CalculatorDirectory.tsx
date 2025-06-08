@@ -455,30 +455,30 @@ const CalculatorDirectory: FC = () => {
   ).sort();
 
   return (
-    <div className="w-full" data-oid=":lczcgg">
+    <div className="w-full" data-oid="li0s26w">
       <GlassCard
         className="mb-6 p-6"
         variant="electric"
         glow
-        data-oid="vtyzo.f"
+        data-oid="qtlv-m6"
       >
         <h1
           className="text-3xl font-bold mb-4 text-electric"
-          data-oid="-.yh96p"
+          data-oid="8tlnkar"
         >
           Calculator Directory
         </h1>
-        <p className="text-gray-300 mb-6" data-oid="it4yaro">
+        <p className="text-gray-300 mb-6" data-oid="jlbu0pd">
           A comprehensive collection of professional calculators and tools for
           construction, woodworking, and design.
         </p>
 
         {/* Search bar */}
-        <div className="relative mb-6" data-oid="b1ylgyy">
+        <div className="relative mb-6" data-oid="_eoh714">
           <Search
             className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400"
             size={20}
-            data-oid="fev665f"
+            data-oid="z7b.nlv"
           />
 
           <input
@@ -487,16 +487,16 @@ const CalculatorDirectory: FC = () => {
             className="w-full pl-10 py-3 bg-space-800/60 border border-electric/20 rounded-lg focus:outline-none focus:ring-2 focus:ring-electric/30 focus:border-electric/30 transition-all text-white"
             value={searchTerm}
             onChange={(e) => setSearchTerm(e.target.value)}
-            data-oid="f0wl62e"
+            data-oid="ho4t1ud"
           />
         </div>
 
         {/* Category filter buttons */}
-        <div className="flex flex-wrap gap-2 mb-6" data-oid="9xvs98i">
+        <div className="flex flex-wrap gap-2 mb-6" data-oid="_akayre">
           <button
             className={`px-4 py-2 rounded-full text-sm transition-all ${!activeCategory ? "bg-cyan text-black font-medium shadow-lg shadow-electric/20" : "bg-space-800/60 text-gray-300 border border-gray-700 hover:border-electric/30"}`}
             onClick={() => setActiveCategory(null)}
-            data-oid="4c.huo5"
+            data-oid="swc0.08"
           >
             All
           </button>
@@ -510,7 +510,7 @@ const CalculatorDirectory: FC = () => {
                   : "bg-space-800/60 text-gray-300 border border-gray-700 hover:border-electric/30"
               }`}
               onClick={() => setActiveCategory(category)}
-              data-oid=":2syq0d"
+              data-oid="6ivpkob"
             >
               {category}
             </button>
@@ -522,7 +522,7 @@ const CalculatorDirectory: FC = () => {
       {filteredCalculators.length > 0 ? (
         <div
           className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 overflow-visible"
-          data-oid="n9xk2g4"
+          data-oid="ncju6_j"
         >
           {filteredCalculators.map((calc, index) => (
             <CalculatorCard
@@ -530,14 +530,14 @@ const CalculatorDirectory: FC = () => {
               name={calc.name}
               url={calc.url}
               category={calc.category}
-              data-oid="u_df.7c"
+              data-oid="qp4duzv"
             />
           ))}
         </div>
       ) : (
         <div
           className="col-span-2 text-center py-10 text-gray-400"
-          data-oid="_meat-l"
+          data-oid="sbfiq6u"
         >
           No calculators found. Try adjusting your search.
         </div>
@@ -579,39 +579,39 @@ const CalculatorCard: FC<{
     <div
       className={`relative rounded-xl bg-space-900/80 border border-${color}/30
       transition-all duration-300 hover:scale-[1.03] group hover:shadow-lg hover:shadow-${color}/10 h-auto`}
-      data-oid="0xt-c6w"
+      data-oid="ol9k-vw"
     >
       {/* Top accent line */}
       <div
         className={`absolute top-0 left-0 w-full h-[2px] bg-gradient-to-r from-transparent via-${color} to-transparent`}
-        data-oid=":mugfbi"
+        data-oid="_f808am"
       ></div>
 
       {/* Category badge */}
       <div
         className={`absolute top-3 right-3 px-2.5 py-0.5 rounded-full text-xs font-medium bg-${color}/10 text-${color} border border-${color}/20`}
-        data-oid="fspqglt"
+        data-oid="sa6di:7"
       >
         {category}
       </div>
 
-      <div className="p-5" data-oid="a5r0-_c">
-        <div className="flex items-start mb-4" data-oid="1g6m75u">
+      <div className="p-5" data-oid="1m2rqiw">
+        <div className="flex items-start mb-4" data-oid="awdk7re">
           <div
             className={`flex items-center justify-center h-10 w-10 rounded-full mr-3
             bg-gradient-to-br from-${color}/20 to-transparent border border-${color}/30`}
-            data-oid="_7bt:40"
+            data-oid="kjn1rpr"
           >
-            <i className="fas fa-calculator" data-oid="s.lw5v_"></i>
+            <i className="fas fa-calculator" data-oid="khrc9ix"></i>
           </div>
-          <div data-oid="_ofdjn5">
+          <div data-oid="27.xzo8">
             <h3
               className="text-lg font-medium text-white mb-1 line-clamp-2"
-              data-oid="knrx2.0"
+              data-oid="c9aaaf0"
             >
               {name}
             </h3>
-            <p className="text-sm text-gray-400" data-oid="qi1w5nh">
+            <p className="text-sm text-gray-400" data-oid="rb5xjhn">
               {domain}
             </p>
           </div>
@@ -619,7 +619,7 @@ const CalculatorCard: FC<{
 
         <div
           className="mt-6 flex justify-between items-center"
-          data-oid="9ffc0-z"
+          data-oid="ml8-_.r"
         >
           <a
             href={url}
@@ -629,17 +629,17 @@ const CalculatorCard: FC<{
               bg-space-800 border border-${color}/30 text-${color}
               hover:bg-space-700 hover:text-white hover:border-${color}/50
               transition-all duration-300 flex items-center`}
-            data-oid="4__v3vn"
+            data-oid="_b47ryb"
           >
-            <i className="fas fa-external-link-alt mr-2" data-oid="r:f_k5l"></i>
-            <span data-oid="w6s04mm">Open Calculator</span>
+            <i className="fas fa-external-link-alt mr-2" data-oid="x4d64m0"></i>
+            <span data-oid="o.db0hg">Open Calculator</span>
           </a>
 
           <div
             className="text-gray-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
-            data-oid="0vb4.dm"
+            data-oid="ttap7fb"
           >
-            <i className="fas fa-arrow-right" data-oid="1.bgw2d"></i>
+            <i className="fas fa-arrow-right" data-oid="6mw4e0v"></i>
           </div>
         </div>
       </div>
@@ -647,7 +647,7 @@ const CalculatorCard: FC<{
       {/* Bottom accent line */}
       <div
         className={`absolute bottom-0 left-0 w-full h-[1px] bg-gradient-to-r from-${color}/30 via-transparent to-${color}/30`}
-        data-oid="ifwyzci"
+        data-oid="9o-b5up"
       ></div>
     </div>
   );

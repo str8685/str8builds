@@ -61,7 +61,7 @@ const FontHelpIcon: React.FC<FontHelpIconProps> = ({
       role="button"
       aria-label="Help"
       tabIndex={0}
-      data-oid="sy8:6jv"
+      data-oid="qikt-2j"
     >
       ?
     </div>

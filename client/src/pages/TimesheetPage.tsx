@@ -727,18 +727,18 @@ const TimesheetPage: FC = () => {
     return (
       <div
         className="mb-6 p-4 border border-gray-700 rounded-lg bg-gray-800/50"
-        data-oid="87cl5nq"
+        data-oid="dzd8lkk"
       >
-        <h3 className="text-lg font-medium mb-2" data-oid="ne2ckoq">
+        <h3 className="text-lg font-medium mb-2" data-oid="cljvzc8">
           Testing Tools
         </h3>
-        <p className="text-sm text-gray-400 mb-3" data-oid="j_w8-kp">
+        <p className="text-sm text-gray-400 mb-3" data-oid="px8is1:">
           Use this to create demo time entries for testing
         </p>
         <Button
           onClick={createDemoTimeEntry}
           className="bg-cyan-600 hover:bg-cyan-700 text-white"
-          data-oid="ew-bzhp"
+          data-oid="0ymwwwb"
         >
           Create Demo Time Entry
         </Button>
@@ -747,81 +747,81 @@ const TimesheetPage: FC = () => {
   };
 
   return (
-    <div className="container mx-auto max-w-6xl px-4 py-8" data-oid="4._9r0v">
-      <Toaster data-oid="nc0a2.0" />
-      <ForceTimeEntryDisplay data-oid="6s1zaue" />
+    <div className="container mx-auto max-w-6xl px-4 py-8" data-oid="jo0elqa">
+      <Toaster data-oid="vs7p4k5" />
+      <ForceTimeEntryDisplay data-oid="_yx76vo" />
       <PageTitle
         title="Professional Time Tracking"
         subtitle="Track and manage your billable hours efficiently"
         icon="fa-clock"
-        data-oid="tembe-."
+        data-oid="s5f3o6m"
       />
 
       {/* Statistics Cards */}
       <div
         className="grid grid-cols-1 md:grid-cols-4 gap-6 mb-6"
-        data-oid="61s7:3e"
+        data-oid="bybh:-6"
       >
-        <GlassCard className="p-5" data-oid="jfg-496">
-          <div className="text-xs text-gray-400 mb-1" data-oid="29ckh60">
+        <GlassCard className="p-5" data-oid="6a3qq1q">
+          <div className="text-xs text-gray-400 mb-1" data-oid="3:r-e6e">
             Total Hours
           </div>
-          <div className="text-2xl font-bold text-white" data-oid="_i6h5uc">
+          <div className="text-2xl font-bold text-white" data-oid="d202kpw">
             {stats.totalHours.toFixed(1)} hrs
           </div>
-          <div className="text-xs text-gray-400 mt-2" data-oid="-o22x1d">
+          <div className="text-xs text-gray-400 mt-2" data-oid="vl104:i">
             {timeEntries.length} time entries
           </div>
         </GlassCard>
 
-        <GlassCard className="p-5" data-oid="l.mvzbg">
-          <div className="text-xs text-gray-400 mb-1" data-oid="u2cxxze">
+        <GlassCard className="p-5" data-oid="2nke-2x">
+          <div className="text-xs text-gray-400 mb-1" data-oid="uh09ahd">
             Total Earnings
           </div>
-          <div className="text-2xl font-bold text-green-400" data-oid="9eljvpu">
+          <div className="text-2xl font-bold text-green-400" data-oid="l-r_kcz">
             ${stats.totalEarnings.toFixed(2)}
           </div>
-          <div className="text-xs text-gray-400 mt-2" data-oid=".ork_4n">
+          <div className="text-xs text-gray-400 mt-2" data-oid="_-f-_gm">
             Based on hourly rates
           </div>
         </GlassCard>
 
-        <GlassCard className="p-5" data-oid="w_jr990">
-          <div className="text-xs text-gray-400 mb-1" data-oid="-ef99g:">
+        <GlassCard className="p-5" data-oid="lb2cq0i">
+          <div className="text-xs text-gray-400 mb-1" data-oid="g_t3_rq">
             This Week
           </div>
-          <div className="text-2xl font-bold text-cyan" data-oid="y0umk.s">
+          <div className="text-2xl font-bold text-cyan" data-oid="rj7wk2u">
             {stats.thisWeekHours.toFixed(1)} hrs
           </div>
-          <div className="text-xs text-gray-400 mt-2" data-oid="9a16jqb">
+          <div className="text-xs text-gray-400 mt-2" data-oid="ukjb8vw">
             Since Sunday
           </div>
         </GlassCard>
 
-        <GlassCard className="p-5" data-oid="d:g50tf">
-          <div className="text-xs text-gray-400 mb-1" data-oid=":-tbae8">
+        <GlassCard className="p-5" data-oid="ju5u2hm">
+          <div className="text-xs text-gray-400 mb-1" data-oid="bzrwu.x">
             This Month
           </div>
           <div
             className="text-2xl font-bold text-purple-400"
-            data-oid="l._r81w"
+            data-oid="77ia7pa"
           >
             {stats.thisMonthHours.toFixed(1)} hrs
           </div>
-          <div className="text-xs text-gray-400 mt-2" data-oid="z01t4t1">
+          <div className="text-xs text-gray-400 mt-2" data-oid="kq120io">
             {new Date().toLocaleString("default", { month: "long" })}
           </div>
         </GlassCard>
       </div>
 
       {/* Main Content */}
-      <GlassCard className="p-5" data-oid="t:bdsmy">
+      <GlassCard className="p-5" data-oid="2z6x0hc">
         {/* Top Action Bar */}
         <div
           className="flex flex-wrap justify-between items-center mb-6 gap-4"
-          data-oid="mu02nh2"
+          data-oid="6vd2h29"
         >
-          <div className="flex space-x-1" data-oid="e4hzj7w">
+          <div className="flex space-x-1" data-oid="qrwj.59">
             <button
               onClick={() => setActiveView("list")}
               className={`px-4 py-2 text-sm rounded-md ${
@@ -829,9 +829,9 @@ const TimesheetPage: FC = () => {
                   ? "bg-electric/20 text-electric"
                   : "text-gray-400 hover:bg-space-800/50"
               }`}
-              data-oid="t.3gf90"
+              data-oid="lu3w.y5"
             >
-              <i className="fas fa-list-ul mr-2" data-oid="gjyyzzf"></i>
+              <i className="fas fa-list-ul mr-2" data-oid="ora6383"></i>
               List View
             </button>
             <button
@@ -841,9 +841,9 @@ const TimesheetPage: FC = () => {
                   ? "bg-electric/20 text-electric"
                   : "text-gray-400 hover:bg-space-800/50"
               }`}
-              data-oid="3qm8dd:"
+              data-oid="e_3ebwc"
             >
-              <i className="fas fa-calendar-alt mr-2" data-oid="me5:ihe"></i>
+              <i className="fas fa-calendar-alt mr-2" data-oid="407lzd8"></i>
               Calendar
             </button>
             <button
@@ -853,23 +853,23 @@ const TimesheetPage: FC = () => {
                   ? "bg-electric/20 text-electric"
                   : "text-gray-400 hover:bg-space-800/50"
               }`}
-              data-oid="zqdea_6"
+              data-oid="yd27aku"
             >
-              <i className="fas fa-chart-bar mr-2" data-oid="as:0d-h"></i>
+              <i className="fas fa-chart-bar mr-2" data-oid="x-ik_dh"></i>
               Charts
             </button>
           </div>
 
-          <div className="flex-1 space-y-4" data-oid="3juvi3o">
+          <div className="flex-1 space-y-4" data-oid="kahf4u6">
             <div
               className="flex justify-between items-center mb-2"
-              data-oid="4c58ho8"
+              data-oid="-r:fxnc"
             >
-              <PageTitle title="Timesheet & Time Tracking" data-oid="ru5798g" />
+              <PageTitle title="Timesheet & Time Tracking" data-oid="ndygj7l" />
               <button
                 onClick={handleRefresh}
                 className="bg-electric/80 hover:bg-electric text-white p-2 text-sm rounded-md font-medium flex items-center"
-                data-oid="pmzt656"
+                data-oid="0xjm8x4"
               >
                 <svg
                   className="w-4 h-4 mr-2"
@@ -877,73 +877,73 @@ const TimesheetPage: FC = () => {
                   stroke="currentColor"
                   viewBox="0 0 24 24"
                   xmlns="http://www.w3.org/2000/svg"
-                  data-oid="4:c-dk8"
+                  data-oid="o1qxj2a"
                 >
                   <path
                     strokeLinecap="round"
                     strokeLinejoin="round"
                     strokeWidth="2"
                     d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"
-                    data-oid="ouepo6_"
+                    data-oid="sx-x3h4"
                   ></path>
                 </svg>
                 Refresh Data
               </button>
             </div>
-            <div className="p-6" data-oid="e672_-.">
+            <div className="p-6" data-oid="2:viyez">
               {/* Debug component to help troubleshoot timesheet entry issues */}
-              <TimeEntryDebugger data-oid="6zet.0h" />
+              <TimeEntryDebugger data-oid="3m8:ve2" />
             </div>
-            <div className="relative" data-oid="pdjwmty">
+            <div className="relative" data-oid="e_41zkd">
               <input
                 type="text"
                 placeholder="Search time entries..."
                 value={searchTerm}
                 onChange={(e) => setSearchTerm(e.target.value)}
                 className="bg-space-800/50 border border-space-700 px-3 py-2 rounded-md text-sm text-white w-60 focus:outline-none focus:border-electric"
-                data-oid="piszws6"
+                data-oid="uf-a..9"
               />
 
               <div
                 className="absolute right-3 top-2.5 text-gray-400"
-                data-oid="w1sh:hf"
+                data-oid="2mt346-"
               >
-                <i className="fas fa-search" data-oid="ggj977o"></i>
+                <i className="fas fa-search" data-oid="34844.a"></i>
               </div>
             </div>
-            <div className="dropdown dropdown-end" data-oid="gvnb5ml">
+            <div className="dropdown dropdown-end" data-oid="n.c5i:c">
               <button
                 className="bg-space-800/50 border border-space-700 px-3 py-2 rounded-md text-sm text-white"
-                data-oid="ppa.ng9"
+                data-oid="55k.m_j"
               >
-                <i className="fas fa-file-export" data-oid="xvyfbus"></i>
+                <i className="fas fa-file-export" data-oid="0ym17fy"></i>
               </button>
               <div
                 className="dropdown-content bg-space-800 border border-space-700 rounded-md p-2 w-40 right-0 mt-1"
-                data-oid="nz0nisc"
+                data-oid="y.nekky"
               >
                 <button
                   onClick={handleExportPdf}
                   className="block px-4 py-2 text-sm text-white w-full text-left hover:bg-space-700 rounded"
-                  data-oid="k6dnz:l"
+                  data-oid="djv9w8d"
                 >
-                  <i className="fas fa-file-pdf mr-2" data-oid="uryu.qq"></i>{" "}
+                  <i className="fas fa-file-pdf mr-2" data-oid="5d1o0d4"></i>{" "}
                   Export PDF
                 </button>
                 <button
                   onClick={handleExportCsv}
                   className="block px-4 py-2 text-sm text-white w-full text-left hover:bg-space-700 rounded"
-                  data-oid="zrrxzlp"
+                  data-oid="-qujexj"
                 >
-                  <i className="fas fa-file-csv mr-2" data-oid="ujhoavt"></i>{" "}
+                  <i className="fas fa-file-csv mr-2" data-oid="phwa197"></i>{" "}
                   Export CSV
                 </button>
                 <button
                   onClick={handleEmailTimesheet}
                   className="block px-4 py-2 text-sm text-white w-full text-left hover:bg-space-700 rounded"
-                  data-oid="bs2z9l8"
+                  data-oid="h_ezvx_"
                 >
-                  <i className="fas fa-envelope mr-2" data-oid="rdbt-a2"></i>{" "}
+                  <i className="fas fa-envelope mr-2" data-oid="nfy2lin"></i>{" "}
                   Email
                 </button>
               </div>
@@ -951,9 +951,9 @@ const TimesheetPage: FC = () => {
             <button
               onClick={() => toggleForm()}
               className="bg-electric/80 hover:bg-electric text-white px-4 py-2 text-sm rounded-md font-medium"
-              data-oid="xzzdbyu"
+              data-oid="13z8x8z"
             >
-              <i className="fas fa-plus mr-1" data-oid="llsvp8x"></i> Add Time
+              <i className="fas fa-plus mr-1" data-oid="xgv6a7y"></i> Add Time
             </button>
           </div>
         </div>
@@ -963,16 +963,16 @@ const TimesheetPage: FC = () => {
           <form
             onSubmit={handleSubmit}
             className="bg-space-800/50 rounded-lg p-4 mb-4"
-            data-oid="32q_yqr"
+            data-oid="2nkudy_"
           >
             <div
               className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-4"
-              data-oid="8_h_dq-"
+              data-oid="kpn_.vs"
             >
-              <div data-oid="-cm.skx">
+              <div data-oid="6:bta.6">
                 <label
                   className="block text-xs text-gray-400 mb-1"
-                  data-oid="3.0bbm5"
+                  data-oid="f_xth2h"
                 >
                   Project
                 </label>
@@ -981,23 +981,23 @@ const TimesheetPage: FC = () => {
                   value={formData.projectId}
                   onChange={handleChange}
                   className="w-full bg-space-800 border border-gray-700 rounded p-2 text-sm text-white"
-                  data-oid="7.2bdf4"
+                  data-oid="ub8l77j"
                 >
                   {projects.map((project: Project) => (
                     <option
                       key={project.id}
                       value={project.id}
-                      data-oid="0eqp-0f"
+                      data-oid="1cl8nwd"
                     >
                       {project.name}
                     </option>
                   ))}
                 </select>
               </div>
-              <div data-oid="tvj_.zk">
+              <div data-oid="f7k9t-7">
                 <label
                   className="block text-xs text-gray-400 mb-1"
-                  data-oid="nk8bm6i"
+                  data-oid="j5b7igm"
                 >
                   Date
                 </label>
@@ -1007,13 +1007,13 @@ const TimesheetPage: FC = () => {
                   value={formData.date}
                   onChange={handleChange}
                   className="w-full bg-space-800 border border-gray-700 rounded p-2 text-sm text-white"
-                  data-oid="92fewmz"
+                  data-oid="4p6x6nw"
                 />
               </div>
-              <div data-oid="_e7crsl">
+              <div data-oid="1.rwvbg">
                 <label
                   className="block text-xs text-gray-400 mb-1"
-                  data-oid="kpx3c2o"
+                  data-oid="b06jorb"
                 >
                   Duration (HH:MM)
                 </label>
@@ -1024,7 +1024,7 @@ const TimesheetPage: FC = () => {
                   onChange={handleChange}
                   placeholder="e.g. 02:30"
                   className="w-full bg-space-800 border border-gray-700 rounded p-2 text-sm text-white"
-                  data-oid="y5sbx6a"
+                  data-oid="i9be6h0"
                 />
               </div>
             </div>
@@ -1036,22 +1036,22 @@ const TimesheetPage: FC = () => {
               className="w-full bg-space-800 border border-gray-700 rounded p-2 text-sm text-white mb-4"
               placeholder="Notes about work completed"
               rows={3}
-              data-oid="8o.ti45"
+              data-oid="5ibl3yp"
             ></textarea>
 
-            <div className="flex space-x-2 justify-end" data-oid="vyl7ofc">
+            <div className="flex space-x-2 justify-end" data-oid="47xgsm7">
               <button
                 type="button"
                 onClick={() => closeForm()}
                 className="bg-space-800 text-white px-4 py-2 rounded hover:bg-space-700"
-                data-oid="cugj_8d"
+                data-oid="c5:t2ll"
               >
                 Cancel
               </button>
               <button
                 type="submit"
                 className="bg-electric text-white px-4 py-2 rounded hover:bg-electric/80"
-                data-oid="zh2k5g8"
+                data-oid=".6s.e2z"
               >
                 Add Time Entry
               </button>
@@ -1063,98 +1063,98 @@ const TimesheetPage: FC = () => {
         {isLoading ? (
           <div
             className="flex justify-between items-center mb-6"
-            data-oid="4dsaffu"
+            data-oid="qut6sbd"
           >
             <div
               className="animate-spin rounded-full h-8 w-8 border-t-2 border-b-2 border-cyan"
-              data-oid="qt7.t8w"
+              data-oid="s19erv5"
             ></div>
-            <div data-oid="760omwy">
-              <p className="text-gray-400" data-oid="jszdmgc">
+            <div data-oid="pymnzvo">
+              <p className="text-gray-400" data-oid="g9c.st5">
                 No time entries found matching your criteria.
               </p>
-              <p className="text-xs text-gray-500 mt-1" data-oid=".sjkm:x">
+              <p className="text-xs text-gray-500 mt-1" data-oid="zrnwz6v">
                 Try changing your search or add a new time entry.
               </p>
             </div>
           </div>
         ) : (
-          <div className="overflow-x-auto" data-oid="n9nes67">
-            <table className="w-full" data-oid="07n88pa">
-              <thead className="text-left" data-oid="vu0764d">
-                <tr className="border-b border-gray-700/50" data-oid="l_p5kqe">
+          <div className="overflow-x-auto" data-oid="goizl2d">
+            <table className="w-full" data-oid="4zg3n62">
+              <thead className="text-left" data-oid="u6odv_q">
+                <tr className="border-b border-gray-700/50" data-oid=".p7r057">
                   <th
                     className="px-4 py-2 text-xs text-gray-400 font-medium"
-                    data-oid="yv618:3"
+                    data-oid="qxj7n1m"
                   >
                     DATE
                   </th>
                   <th
                     className="px-4 py-2 text-xs text-gray-400 font-medium"
-                    data-oid="bcuaugx"
+                    data-oid="g.kny55"
                   >
                     PROJECT
                   </th>
                   <th
                     className="px-4 py-2 text-xs text-gray-400 font-medium"
-                    data-oid="fm9r9m4"
+                    data-oid="pqv4gkn"
                   >
                     DESCRIPTION
                   </th>
                   <th
                     className="px-4 py-2 text-xs text-gray-400 font-medium"
-                    data-oid="-w7_7px"
+                    data-oid="f9hyvts"
                   >
                     DURATION
                   </th>
                   <th
                     className="px-4 py-2 text-xs text-gray-400 font-medium text-right"
-                    data-oid="-3-9jie"
+                    data-oid="obp2:ft"
                   >
                     AMOUNT
                   </th>
                   <th
                     className="px-4 py-2 text-xs text-gray-400 font-medium text-right"
-                    data-oid="mqis-6v"
+                    data-oid="zpizw__"
                   >
                     ACTIONS
                   </th>
                 </tr>
               </thead>
-              <tbody data-oid="to-.g3h">
+              <tbody data-oid="_4jnf8v">
                 {filteredEntries.map((entry: TimeEntry) => (
                   <tr
                     key={entry.id}
                     className="border-b border-gray-700/30 hover:bg-space-800/50 transition-colors"
-                    data-oid="2oc5m8t"
+                    data-oid="71ivug4"
                   >
                     <td
                       className="px-4 py-3 text-sm text-gray-400"
-                      data-oid=":jv-u1q"
+                      data-oid="1:3k9wg"
                     >
                       {formatDate(entry.startTime.toString())}
                     </td>
                     <td
                       className="px-4 py-3 text-sm text-white"
-                      data-oid="3qgo7_z"
+                      data-oid="2vkj7g8"
                     >
                       {getProjectName(entry.projectId)}
                     </td>
                     <td
                       className="px-4 py-3 text-sm text-gray-300"
-                      data-oid="_3t0663"
+                      data-oid="7r170yh"
                     >
                       {entry.notes || "No description"}
                     </td>
                     <td
                       className="px-4 py-3 text-sm text-cyan font-medium"
-                      data-oid="_egysx5"
+                      data-oid="aqtlwgh"
                     >
                       {formatDuration(entry.duration || 0)}
                     </td>
                     <td
                       className="px-4 py-3 text-sm text-white text-right font-medium"
-                      data-oid=":-vg605"
+                      data-oid="1yvt.vm"
                     >
                       $
                       {entry.hourlyRate && entry.duration
@@ -1164,10 +1164,10 @@ const TimesheetPage: FC = () => {
                           )
                         : "0.00"}
                     </td>
-                    <td className="px-4 py-3 text-right" data-oid="lmr1362">
+                    <td className="px-4 py-3 text-right" data-oid="3vfm_uw">
                       <div
                         className="flex space-x-1 justify-end"
-                        data-oid="jl_xwex"
+                        data-oid="r80zbc:"
                       >
                         <button
                           className="p-1 text-electric hover:text-cyan"
@@ -1175,9 +1175,9 @@ const TimesheetPage: FC = () => {
                             console.log("Edit time entry", entry.id)
                           }
                           title="Edit"
-                          data-oid="sc-nd6s"
+                          data-oid="raicuhr"
                         >
-                          <i className="fas fa-edit" data-oid="r7tns9b"></i>
+                          <i className="fas fa-edit" data-oid="8s8vi20"></i>
                         </button>
                         <button
                           className="p-1 text-electric hover:text-cyan"
@@ -1190,9 +1190,9 @@ const TimesheetPage: FC = () => {
                             })
                           }
                           title="Duplicate"
-                          data-oid="715ys9x"
+                          data-oid="faqgy6c"
                         >
-                          <i className="fas fa-clone" data-oid="ijfzm9v"></i>
+                          <i className="fas fa-clone" data-oid="wvy0h__"></i>
                         </button>
                         <button
                           className="p-1 text-red-400 hover:text-red-500"
@@ -1200,11 +1200,11 @@ const TimesheetPage: FC = () => {
                             console.log("Delete time entry", entry.id)
                           }
                           title="Delete"
-                          data-oid="2b.0ua."
+                          data-oid="bhot.os"
                         >
                           <i
                             className="fas fa-trash-alt"
-                            data-oid="gc99fdv"
+                            data-oid="5er595f"
                           ></i>
                         </button>
                       </div>
@@ -1218,15 +1218,15 @@ const TimesheetPage: FC = () => {
 
         {/* Calendar View Placeholder */}
         {activeView === "calendar" && (
-          <div className="p-8 text-center" data-oid="vu6fsu2">
+          <div className="p-8 text-center" data-oid="i50:hkf">
             <i
               className="fas fa-calendar-alt text-4xl text-electric/40 mb-4"
-              data-oid="yo1m4ka"
+              data-oid="sidfkic"
             ></i>
-            <p className="text-gray-400" data-oid="rj667bu">
+            <p className="text-gray-400" data-oid="28zhq3j">
               Calendar view is coming soon!
             </p>
-            <p className="text-xs text-gray-500 mt-1" data-oid=":iv_gx0">
+            <p className="text-xs text-gray-500 mt-1" data-oid="2kri0v9">
               Check back for time entry visualization by day, week, and month.
             </p>
           </div>
@@ -1234,15 +1234,15 @@ const TimesheetPage: FC = () => {
 
         {/* Chart View Placeholder */}
         {activeView === "chart" && (
-          <div className="p-8 text-center" data-oid="3cpoydu">
+          <div className="p-8 text-center" data-oid="hug.625">
             <i
               className="fas fa-chart-bar text-4xl text-electric/40 mb-4"
-              data-oid="qwj6u:u"
+              data-oid="bx.97uq"
             ></i>
-            <p className="text-gray-400" data-oid="29:guz.">
+            <p className="text-gray-400" data-oid="y63w-gl">
               Charts and analytics coming soon!
             </p>
-            <p className="text-xs text-gray-500 mt-1" data-oid="kqe5m-b">
+            <p className="text-xs text-gray-500 mt-1" data-oid="_gj.4c7">
               Visualize your time data with detailed reports and graphs.
             </p>
           </div>

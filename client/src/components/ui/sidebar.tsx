@@ -142,8 +142,8 @@ const SidebarProvider = React.forwardRef<
     );
 
     return (
-      <SidebarContext.Provider value={contextValue} data-oid="v1aoa9m">
-        <TooltipProvider delayDuration={0} data-oid="ci743.t">
+      <SidebarContext.Provider value={contextValue} data-oid="eg.3i2o">
+        <TooltipProvider delayDuration={0} data-oid="2b6q_w4">
           <div
             style={
               {
@@ -158,7 +158,7 @@ const SidebarProvider = React.forwardRef<
             )}
             ref={ref}
             {...props}
-            data-oid="ipt-0pz"
+            data-oid="f8uy3dn"
           >
             {children}
           </div>
@@ -199,7 +199,7 @@ const Sidebar = React.forwardRef<
           )}
           ref={ref}
           {...props}
-          data-oid="2vggd4p"
+          data-oid="-cgz1iv"
         >
           {children}
         </div>
@@ -212,7 +212,7 @@ const Sidebar = React.forwardRef<
           open={openMobile}
           onOpenChange={setOpenMobile}
           {...props}
-          data-oid="qkhywk8"
+          data-oid="iugo9-w"
         >
           <SheetContent
             data-sidebar="sidebar"
@@ -224,15 +224,15 @@ const Sidebar = React.forwardRef<
               } as React.CSSProperties
             }
             side={side}
-            data-oid="1elh8rj"
+            data-oid="ben80x5"
           >
-            <SheetHeader className="sr-only" data-oid="z7n5mqh">
-              <SheetTitle data-oid="w643n2v">Sidebar</SheetTitle>
-              <SheetDescription data-oid="s061v.o">
+            <SheetHeader className="sr-only" data-oid="4qs1pch">
+              <SheetTitle data-oid="4i4byen">Sidebar</SheetTitle>
+              <SheetDescription data-oid="2p:c8zp">
                 Displays the mobile sidebar.
               </SheetDescription>
             </SheetHeader>
-            <div className="flex h-full w-full flex-col" data-oid="zg4p4ow">
+            <div className="flex h-full w-full flex-col" data-oid="xy54:06">
               {children}
             </div>
           </SheetContent>
@@ -248,7 +248,7 @@ const Sidebar = React.forwardRef<
         data-collapsible={state === "collapsed" ? collapsible : ""}
         data-variant={variant}
         data-side={side}
-        data-oid="hadibu9"
+        data-oid="o6c.ye."
       >
         {/* This is what handles the sidebar gap on desktop */}
         <div
@@ -260,7 +260,7 @@ const Sidebar = React.forwardRef<
               ? "group-data-[collapsible=icon]:w-[calc(var(--sidebar-width-icon)_+_theme(spacing.4))]"
               : "group-data-[collapsible=icon]:w-[--sidebar-width-icon]",
           )}
-          data-oid="rzm9i09"
+          data-oid="2-f4_.:"
         />
 
         <div
@@ -276,12 +276,12 @@ const Sidebar = React.forwardRef<
             className,
           )}
           {...props}
-          data-oid="c_u75kx"
+          data-oid="7eme243"
         >
           <div
             data-sidebar="sidebar"
             className="flex h-full w-full flex-col bg-sidebar group-data-[variant=floating]:rounded-lg group-data-[variant=floating]:border group-data-[variant=floating]:border-sidebar-border group-data-[variant=floating]:shadow"
-            data-oid="cn7p1zd"
+            data-oid="lsiqr57"
           >
             {children}
           </div>
@@ -310,10 +310,10 @@ const SidebarTrigger = React.forwardRef<
         toggleSidebar();
       }}
       {...props}
-      data-oid="3rg9exw"
+      data-oid="uuvqwor"
     >
-      <PanelLeft data-oid="m77l8sv" />
-      <span className="sr-only" data-oid="ms8o:lr">
+      <PanelLeft data-oid="oj_a32d" />
+      <span className="sr-only" data-oid="f8nj2sb">
         Toggle Sidebar
       </span>
     </Button>
@@ -345,7 +345,7 @@ const SidebarRail = React.forwardRef<
         className,
       )}
       {...props}
-      data-oid="v:4bjs4"
+      data-oid="e6oo4k6"
     />
   );
 });
@@ -364,7 +364,7 @@ const SidebarInset = React.forwardRef<
         className,
       )}
       {...props}
-      data-oid="jfeflg."
+      data-oid="-txh0x2"
     />
   );
 });
@@ -383,7 +383,7 @@ const SidebarInput = React.forwardRef<
         className,
       )}
       {...props}
-      data-oid="v7xm85d"
+      data-oid="ska0bn3"
     />
   );
 });
@@ -399,7 +399,7 @@ const SidebarHeader = React.forwardRef<
       data-sidebar="header"
       className={cn("flex flex-col gap-2 p-2", className)}
       {...props}
-      data-oid="xz7nb47"
+      data-oid="i89qiap"
     />
   );
 });
@@ -415,7 +415,7 @@ const SidebarFooter = React.forwardRef<
       data-sidebar="footer"
       className={cn("flex flex-col gap-2 p-2", className)}
       {...props}
-      data-oid="x9r3nbk"
+      data-oid="lm-vzfb"
     />
   );
 });
@@ -431,7 +431,7 @@ const SidebarSeparator = React.forwardRef<
       data-sidebar="separator"
       className={cn("mx-2 w-auto bg-sidebar-border", className)}
       {...props}
-      data-oid="gxoyhsm"
+      data-oid="y1el3r."
     />
   );
 });
@@ -450,7 +450,7 @@ const SidebarContent = React.forwardRef<
         className,
       )}
       {...props}
-      data-oid="fovyeuj"
+      data-oid="b15r7o."
     />
   );
 });
@@ -466,7 +466,7 @@ const SidebarGroup = React.forwardRef<
       data-sidebar="group"
       className={cn("relative flex w-full min-w-0 flex-col p-2", className)}
       {...props}
-      data-oid="1iutwc1"
+      data-oid="z5enqd:"
     />
   );
 });
@@ -488,7 +488,7 @@ const SidebarGroupLabel = React.forwardRef<
         className,
       )}
       {...props}
-      data-oid="qh9vy28"
+      data-oid="w:f6.sa"
     />
   );
 });
@@ -512,7 +512,7 @@ const SidebarGroupAction = React.forwardRef<
         className,
       )}
       {...props}
-      data-oid="igj3k7q"
+      data-oid="gmugkc1"
     />
   );
 });
@@ -527,7 +527,7 @@ const SidebarGroupContent = React.forwardRef<
     data-sidebar="group-content"
     className={cn("w-full text-sm", className)}
     {...props}
-    data-oid="u2iq59."
+    data-oid="izay247"
   />
 ));
 SidebarGroupContent.displayName = "SidebarGroupContent";
@@ -541,7 +541,7 @@ const SidebarMenu = React.forwardRef<
     data-sidebar="menu"
     className={cn("flex w-full min-w-0 flex-col gap-1", className)}
     {...props}
-    data-oid="3kn.uta"
+    data-oid="9nosym3"
   />
 ));
 SidebarMenu.displayName = "SidebarMenu";
@@ -555,7 +555,7 @@ const SidebarMenuItem = React.forwardRef<
     data-sidebar="menu-item"
     className={cn("group/menu-item relative", className)}
     {...props}
-    data-oid="mn942ej"
+    data-oid="_7sgx-_"
   />
 ));
 SidebarMenuItem.displayName = "SidebarMenuItem";
@@ -613,7 +613,7 @@ const SidebarMenuButton = React.forwardRef<
         data-active={isActive}
         className={cn(sidebarMenuButtonVariants({ variant, size }), className)}
         {...props}
-        data-oid="nvuh1gr"
+        data-oid="1:-wzfv"
       />
     );
 
@@ -628,8 +628,8 @@ const SidebarMenuButton = React.forwardRef<
     }
 
     return (
-      <Tooltip data-oid="b5ekeaz">
-        <TooltipTrigger asChild data-oid="n8tdqgk">
+      <Tooltip data-oid="0c3l3a9">
+        <TooltipTrigger asChild data-oid="5lnp.r1">
           {button}
         </TooltipTrigger>
         <TooltipContent
@@ -637,7 +637,7 @@ const SidebarMenuButton = React.forwardRef<
           align="center"
           hidden={state !== "collapsed" || isMobile}
           {...tooltip}
-          data-oid="2.34ped"
+          data-oid="j-z48f_"
         />
       </Tooltip>
     );
@@ -671,7 +671,7 @@ const SidebarMenuAction = React.forwardRef<
         className,
       )}
       {...props}
-      data-oid="hq1larc"
+      data-oid=".ui1q5d"
     />
   );
 });
@@ -694,7 +694,7 @@ const SidebarMenuBadge = React.forwardRef<
       className,
     )}
     {...props}
-    data-oid="vu-j2am"
+    data-oid="z:9x4ay"
   />
 ));
 SidebarMenuBadge.displayName = "SidebarMenuBadge";
@@ -716,13 +716,13 @@ const SidebarMenuSkeleton = React.forwardRef<
       data-sidebar="menu-skeleton"
       className={cn("flex h-8 items-center gap-2 rounded-md px-2", className)}
       {...props}
-      data-oid="z0498sz"
+      data-oid="-4-:53q"
     >
       {showIcon && (
         <Skeleton
           className="size-4 rounded-md"
           data-sidebar="menu-skeleton-icon"
-          data-oid="umi2owi"
+          data-oid="-6saib5"
         />
       )}
       <Skeleton
@@ -733,7 +733,7 @@ const SidebarMenuSkeleton = React.forwardRef<
             "--skeleton-width": width,
           } as React.CSSProperties
         }
-        data-oid="5gk9_cn"
+        data-oid=".dolpmv"
       />
     </div>
   );
@@ -753,7 +753,7 @@ const SidebarMenuSub = React.forwardRef<
       className,
     )}
     {...props}
-    data-oid="8z1d_vu"
+    data-oid="ngtv42e"
   />
 ));
 SidebarMenuSub.displayName = "SidebarMenuSub";
@@ -761,7 +761,7 @@ SidebarMenuSub.displayName = "SidebarMenuSub";
 const SidebarMenuSubItem = React.forwardRef<
   HTMLLIElement,
   React.ComponentProps<"li">
->(({ ...props }, ref) => <li ref={ref} {...props} data-oid="imofesc" />);
+>(({ ...props }, ref) => <li ref={ref} {...props} data-oid="k3o02nu" />);
 SidebarMenuSubItem.displayName = "SidebarMenuSubItem";
 
 const SidebarMenuSubButton = React.forwardRef<
@@ -789,7 +789,7 @@ const SidebarMenuSubButton = React.forwardRef<
         className,
       )}
       {...props}
-      data-oid="-ohfch0"
+      data-oid="ujqx79g"
     />
   );
 });

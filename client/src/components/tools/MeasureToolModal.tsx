@@ -244,63 +244,63 @@ const MeasureToolModal: FC<MeasureToolModalProps> = ({
   };
 
   return (
-    <Dialog open={open} onOpenChange={onOpenChange} data-oid="yadg.mo">
+    <Dialog open={open} onOpenChange={onOpenChange} data-oid="weru-il">
       <DialogContent
         className="bg-gradient-to-br from-space-900 via-space-950 to-space-900 border border-space-700/50 text-white max-w-4xl h-[80vh] flex flex-col p-0"
-        data-oid="v11svk3"
+        data-oid=":wsw76t"
       >
-        <div className="absolute inset-0 overflow-hidden" data-oid="gtd07tq">
+        <div className="absolute inset-0 overflow-hidden" data-oid="-63382y">
           <div
             className="absolute -inset-[100px] bg-cyan-800/5 blur-3xl rounded-full top-0 right-0 z-0"
-            data-oid="f_6d9tz"
+            data-oid="x63e5v8"
           ></div>
           <div
             className="absolute -inset-[100px] bg-blue-800/5 blur-3xl rounded-full bottom-0 left-0 z-0"
-            data-oid="ek5p2xf"
+            data-oid="1e:tmvl"
           ></div>
           <div
             className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-cyan-500/20 to-transparent"
-            data-oid="x9paj92"
+            data-oid="7wux-j:"
           ></div>
           <div
             className="absolute bottom-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-cyan-500/20 to-transparent"
-            data-oid=":9jkjow"
+            data-oid="0_:486a"
           ></div>
         </div>
 
         <div
           className="relative z-10 flex flex-col h-full p-6"
-          data-oid="a8e7qbj"
+          data-oid="mq2:z_f"
         >
-          <DialogHeader className="mb-4 flex-shrink-0" data-oid="rwecrgl">
+          <DialogHeader className="mb-4 flex-shrink-0" data-oid="8oxuadt">
             <DialogTitle
               className="flex items-center text-xl font-space text-cyan-400 tracking-wide"
-              data-oid="es8feva"
+              data-oid="lbjr946"
             >
-              <i className="fas fa-ruler mr-3" data-oid=":5mrg:r"></i>
-              <span data-oid="1ap.o06">Measurement Tool</span>
+              <i className="fas fa-ruler mr-3" data-oid="18r2p84"></i>
+              <span data-oid="yo455qu">Measurement Tool</span>
             </DialogTitle>
           </DialogHeader>
 
-          <div className="flex-grow flex flex-col mb-4" data-oid="vaxs5yl">
+          <div className="flex-grow flex flex-col mb-4" data-oid="5_6x2jv">
             <div
               className="bg-space-900/70 p-4 rounded-lg mb-4 text-sm text-gray-300"
-              data-oid="zju-sio"
+              data-oid="6ts405f"
             >
-              <p data-oid="mi7_r55">
+              <p data-oid="lfxgzi-">
                 Click and drag to measure distances. For accurate measurements,
                 calibrate the tool first.
               </p>
               {distance !== null && (
                 <div
                   className="mt-2 text-lg text-white font-medium"
-                  data-oid="ait108."
+                  data-oid=".f4gy7w"
                 >
-                  <span data-oid="_wdoygh">Measured: </span>
-                  <span className="text-cyan-400" data-oid="yx.0aao">
+                  <span data-oid="0:dv63x">Measured: </span>
+                  <span className="text-cyan-400" data-oid="jlq5n_.">
                     {distance.toFixed(1)} cm
                   </span>
-                  <span data-oid="yrwpbbh">
+                  <span data-oid="4:rd1:s">
                     {" "}
                     ({(distance / 100).toFixed(2)} m)
                   </span>
@@ -311,12 +311,12 @@ const MeasureToolModal: FC<MeasureToolModalProps> = ({
             <div
               className="flex-grow relative rounded-lg overflow-hidden border border-space-700/50"
               ref={containerRef}
-              data-oid="b37hy07"
+              data-oid="icu1wh4"
             >
               {/* Background grid pattern */}
               <div
                 className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PHBhdHRlcm4gaWQ9ImdyaWQiIHdpZHRoPSI0MCIgaGVpZ2h0PSI0MCIgcGF0dGVyblVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+PHBhdGggZD0iTSAwIDEwIEwgNDAgMTAgTSAxMCAwIEwgMTAgNDAgTSAwIDIwIEwgNDAgMjAgTSAyMCAwIEwgMjAgNDAgTSAwIDMwIEwgNDAgMzAgTSAzMCAwIEwgMzAgNDAiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzFmMmE0NCIgc3Ryb2tlLXdpZHRoPSIxIi8+PC9wYXR0ZXJuPjwvZGVmcz48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2dyaWQpIiAvPjwvc3ZnPg==')]"
-                data-oid="o16lldv"
+                data-oid="g85132q"
               ></div>
 
               <canvas
@@ -326,34 +326,34 @@ const MeasureToolModal: FC<MeasureToolModalProps> = ({
                 onMouseMove={handleMouseMove}
                 onMouseUp={handleMouseUp}
                 onMouseLeave={handleMouseUp}
-                data-oid="fdjveqt"
+                data-oid="30u5sl8"
               />
             </div>
           </div>
 
           <DialogFooter
             className="flex-shrink-0 flex justify-between items-center"
-            data-oid=".lnjznh"
+            data-oid="vgqf2pl"
           >
-            <div className="flex gap-2" data-oid="1n87_mp">
+            <div className="flex gap-2" data-oid="-bkwy2k">
               <Button
                 variant="outline"
                 className="bg-space-800 border-space-700 hover:bg-space-700 text-white"
                 onClick={resetTool}
-                data-oid="zj-y3hu"
+                data-oid="0q7dnm2"
               >
-                <i className="fas fa-redo mr-2" data-oid="oropbst"></i> Reset
+                <i className="fas fa-redo mr-2" data-oid="0ht7dj6"></i> Reset
               </Button>
 
               <Button
                 variant="outline"
                 className="bg-amber-900/60 border-amber-700/50 hover:bg-amber-800/60 text-white"
                 onClick={startCalibration}
-                data-oid="k396h6d"
+                data-oid="uoxkkhz"
               >
                 <i
                   className="fas fa-ruler-combined mr-2"
-                  data-oid="xyx1syi"
+                  data-oid="h9p7lr2"
                 ></i>{" "}
                 Calibrate
               </Button>
@@ -362,7 +362,7 @@ const MeasureToolModal: FC<MeasureToolModalProps> = ({
             <Button
               onClick={() => onOpenChange(false)}
               className="bg-gradient-to-r from-cyan-600 to-cyan-700 hover:from-cyan-500 hover:to-cyan-600 text-white"
-              data-oid="gtr34q3"
+              data-oid="rpx.v-t"
             >
               Close
             </Button>
@@ -372,26 +372,26 @@ const MeasureToolModal: FC<MeasureToolModalProps> = ({
         {showingCalibrationInput && (
           <div
             className="absolute inset-0 flex items-center justify-center bg-black/60 z-30"
-            data-oid="a6.groz"
+            data-oid=":_29ng5"
           >
             <motion.div
               initial={{ opacity: 0, scale: 0.9 }}
               animate={{ opacity: 1, scale: 1 }}
               className="bg-space-800 p-6 rounded-lg max-w-md w-full mx-4 border border-space-600"
-              data-oid="gt5xr2x"
+              data-oid="6:yweyz"
             >
               <h3
                 className="text-xl font-medium text-white mb-4"
-                data-oid="y701uqg"
+                data-oid="hda6cv7"
               >
                 Calibration
               </h3>
-              <p className="text-gray-300 mb-4" data-oid="d3j_las">
+              <p className="text-gray-300 mb-4" data-oid="7.21t7:">
                 Enter the actual length of the line you just drew (in
                 centimeters):
               </p>
 
-              <div className="flex items-center gap-2 mb-6" data-oid="fl4qu3_">
+              <div className="flex items-center gap-2 mb-6" data-oid="fqqdg2t">
                 <input
                   type="number"
                   value={calibrationValue}
@@ -399,15 +399,15 @@ const MeasureToolModal: FC<MeasureToolModalProps> = ({
                   className="bg-space-900 border border-space-600 text-white px-3 py-2 rounded-md w-full"
                   min="0.1"
                   step="0.1"
-                  data-oid="hpio8go"
+                  data-oid=".shgnz0"
                 />
 
-                <span className="text-gray-300" data-oid="h8j-1ek">
+                <span className="text-gray-300" data-oid="b6-sv32">
                   cm
                 </span>
               </div>
 
-              <div className="flex justify-end gap-2" data-oid="54-78bt">
+              <div className="flex justify-end gap-2" data-oid="ud8mh5_">
                 <Button
                   variant="outline"
                   className="bg-space-900 border-space-700 hover:bg-space-700 text-white"
@@ -416,7 +416,7 @@ const MeasureToolModal: FC<MeasureToolModalProps> = ({
                     setCalibrating(false);
                     resetTool();
                   }}
-                  data-oid="m:xyl_-"
+                  data-oid=":bo4rum"
                 >
                   Cancel
                 </Button>
@@ -424,7 +424,7 @@ const MeasureToolModal: FC<MeasureToolModalProps> = ({
                 <Button
                   onClick={finishCalibration}
                   className="bg-gradient-to-r from-amber-600 to-amber-700 hover:from-amber-500 hover:to-amber-600 text-white"
-                  data-oid="xds-z.s"
+                  data-oid="asyuhzm"
                 >
                   Apply Calibration
                 </Button>

@@ -238,7 +238,7 @@ const VoiceCommandListener: FC<VoiceCommandListenerProps> = ({
     return (
       <div
         className="text-red-500 p-4 border border-red-400 rounded mb-4"
-        data-oid="2cxvqb3"
+        data-oid="p1z6io:"
       >
         Your browser does not support speech recognition.
       </div>
@@ -248,31 +248,31 @@ const VoiceCommandListener: FC<VoiceCommandListenerProps> = ({
   return (
     <div
       className={`fixed right-4 bottom-20 z-40 ${isActive ? "scale-100" : "scale-0 opacity-0"} transition-all duration-300`}
-      data-oid="r4tg46j"
+      data-oid=".xhnro-"
     >
-      <div className="relative" data-oid="f_zpm9q">
+      <div className="relative" data-oid="g3q8suy">
         <div
           className={`bg-space-900 border ${listening ? "border-cyan animate-pulse" : "border-white/10"} rounded-full p-4 shadow-lg glass-card mb-2`}
-          data-oid="bf:-:uo"
+          data-oid="aqv94xi"
         >
           <div
             className="w-16 h-16 flex items-center justify-center relative"
-            data-oid="_nu76fc"
+            data-oid="ylryrnq"
           >
             {/* Animated waves when listening */}
             {listening && (
               <>
                 <div
                   className="absolute inset-0 rounded-full bg-cyan opacity-20 animate-ping"
-                  data-oid="qqn9u.w"
+                  data-oid="0.47nj7"
                 ></div>
                 <div
                   className="absolute inset-2 rounded-full bg-cyan opacity-10 animate-ping animation-delay-300"
-                  data-oid="fet9a2t"
+                  data-oid="rj5fk7l"
                 ></div>
                 <div
                   className="absolute inset-4 rounded-full bg-cyan opacity-5 animate-ping animation-delay-600"
-                  data-oid="9h7c927"
+                  data-oid="8r8boxb"
                 ></div>
               </>
             )}
@@ -284,14 +284,14 @@ const VoiceCommandListener: FC<VoiceCommandListenerProps> = ({
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
-              data-oid="6cke5pm"
+              data-oid="9ib7ut-"
             >
               <path
                 strokeLinecap="round"
                 strokeLinejoin="round"
                 strokeWidth={2}
                 d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z"
-                data-oid="1-n.htq"
+                data-oid="8helew5"
               />
             </svg>
           </div>
@@ -301,15 +301,15 @@ const VoiceCommandListener: FC<VoiceCommandListenerProps> = ({
         {listening && transcript && (
           <div
             className="absolute -top-16 right-0 bg-space-900 text-white p-3 rounded-lg shadow-lg border border-white/10 min-w-[200px] max-w-[300px]"
-            data-oid="-h_f6t3"
+            data-oid="77dpu:3"
           >
             <p
               className="text-sm text-cyan font-semibold mb-1"
-              data-oid="gww7hy8"
+              data-oid="8s6foq7"
             >
               Listening...
             </p>
-            <p className="text-xs line-clamp-2" data-oid="05i2onn">
+            <p className="text-xs line-clamp-2" data-oid="4uklw7a">
               {transcript}
             </p>
           </div>
@@ -319,7 +319,7 @@ const VoiceCommandListener: FC<VoiceCommandListenerProps> = ({
         <button
           onClick={onToggle}
           className={`absolute -bottom-10 left-1/2 transform -translate-x-1/2 bg-purple-800 text-white text-xs py-1 px-3 rounded-full shadow-lg ${isActive ? "bg-red-600" : ""}`}
-          data-oid="88qdo4s"
+          data-oid="amnfhyg"
         >
           {isActive ? "Stop Listening" : "Voice Commands"}
         </button>

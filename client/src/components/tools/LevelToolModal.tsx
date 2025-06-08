@@ -158,95 +158,95 @@ const LevelToolModal: FC<LevelToolModalProps> = ({ open, onOpenChange }) => {
   const isLevelVertical = Math.abs(rotation.gamma) < 0.5;
 
   return (
-    <Dialog open={open} onOpenChange={onOpenChange} data-oid="nu5n_bc">
+    <Dialog open={open} onOpenChange={onOpenChange} data-oid="l-fjgri">
       <DialogContent
         className="bg-gradient-to-br from-space-900 via-space-950 to-space-900 border border-space-700/50 text-white max-w-md"
-        data-oid="601i.ii"
+        data-oid="vb_-o8d"
       >
-        <div className="absolute inset-0 overflow-hidden" data-oid="s1_opuv">
+        <div className="absolute inset-0 overflow-hidden" data-oid="0r.4qwn">
           <div
             className="absolute -inset-[100px] bg-cyan-800/5 blur-3xl rounded-full top-0 right-0 z-0"
-            data-oid="dve8d5e"
+            data-oid="4kuldrs"
           ></div>
           <div
             className="absolute -inset-[100px] bg-blue-800/5 blur-3xl rounded-full bottom-0 left-0 z-0"
-            data-oid="r.a70fk"
+            data-oid="qn2:spn"
           ></div>
           <div
             className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-cyan-500/20 to-transparent"
-            data-oid="p726hhb"
+            data-oid="67fxhd8"
           ></div>
           <div
             className="absolute bottom-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-cyan-500/20 to-transparent"
-            data-oid="moa61um"
+            data-oid="bu7-5rk"
           ></div>
         </div>
 
-        <div className="relative z-10" data-oid="6ciyrne">
-          <DialogHeader className="mb-6" data-oid=":dieb:z">
+        <div className="relative z-10" data-oid="15a5s32">
+          <DialogHeader className="mb-6" data-oid="y0qcb-_">
             <DialogTitle
               className="flex items-center text-xl font-space text-cyan-400 tracking-wide"
-              data-oid="rf59s-a"
+              data-oid="llx:bdm"
             >
               <i
                 className="fas fa-level-up-alt fa-rotate-90 mr-3"
-                data-oid="1pjjg0j"
+                data-oid="-4cnlbs"
               ></i>
-              <span data-oid="a6yoylt">Digital Level</span>
+              <span data-oid="w2sc0qi">Digital Level</span>
             </DialogTitle>
           </DialogHeader>
 
           {permissionError ? (
-            <div className="p-6 text-center" data-oid="ytat173">
-              <div className="text-3xl text-amber-500 mb-4" data-oid="6u:ujsq">
+            <div className="p-6 text-center" data-oid="igtaodd">
+              <div className="text-3xl text-amber-500 mb-4" data-oid="kq3t9nz">
                 <i
                   className="fas fa-exclamation-triangle"
-                  data-oid="fs3mg65"
+                  data-oid="pz1j48s"
                 ></i>
               </div>
-              <p className="text-gray-300 mb-4" data-oid="sx5ha55">
+              <p className="text-gray-300 mb-4" data-oid="qnxprx1">
                 {permissionError}
               </p>
-              <p className="text-sm text-gray-400 mb-4" data-oid="8z0lq21">
+              <p className="text-sm text-gray-400 mb-4" data-oid="zi53jag">
                 This tool requires motion sensors that are typically available
                 on mobile devices.
               </p>
               <Button
                 onClick={requestPermission}
                 className="bg-cyan-700 hover:bg-cyan-600 text-white"
-                data-oid="f5l02xf"
+                data-oid="s0xkf.:"
               >
                 Try Again
               </Button>
             </div>
           ) : (
-            <div className="space-y-6" data-oid="u-zllpj">
+            <div className="space-y-6" data-oid="ganx7yg">
               {/* Horizontal Level */}
               <div
                 className="bg-space-800/70 rounded-lg p-4 space-y-2"
-                data-oid="k_bg9h5"
+                data-oid="x2ac2xe"
               >
                 <h3
                   className="text-sm font-medium text-gray-300 mb-2"
-                  data-oid="3muy12_"
+                  data-oid="avrjt_a"
                 >
                   Horizontal Level
                 </h3>
                 <div
                   className="relative h-12 bg-space-900 rounded-lg overflow-hidden"
-                  data-oid="_vutxf8"
+                  data-oid="0n31a9-"
                 >
                   <div
                     className="absolute inset-0 flex items-center justify-center"
-                    data-oid="vuomxj8"
+                    data-oid=".rwurwj"
                   >
                     <div
                       className={`absolute h-px w-full ${isLevelHorizontal ? "bg-green-500" : "bg-gray-600"}`}
-                      data-oid="rcs6jp0"
+                      data-oid="w3uqc.5"
                     ></div>
                     <div
                       className="absolute h-full w-px bg-gray-600"
-                      data-oid="typ-cxr"
+                      data-oid="wcq8:v-"
                     ></div>
                   </div>
 
@@ -257,21 +257,21 @@ const LevelToolModal: FC<LevelToolModalProps> = ({ open, onOpenChange }) => {
                       opacity: locked ? 0.7 : 1,
                     }}
                     transition={{ type: "spring", stiffness: 300, damping: 30 }}
-                    data-oid="ywlfpsk"
+                    data-oid="icjjmkp"
                   />
 
                   <div
                     className="absolute inset-0 pointer-events-none"
-                    data-oid="s2vxkm-"
+                    data-oid="9dhe_97"
                   >
                     {isLevelHorizontal && (
                       <div
                         className="absolute inset-0 bg-green-500/10 flex items-center justify-center"
-                        data-oid=".cnro.:"
+                        data-oid="c115mpu"
                       >
                         <div
                           className="text-green-500 text-xs font-medium"
-                          data-oid="pi.nr2i"
+                          data-oid="2_:tc4-"
                         >
                           LEVEL
                         </div>
@@ -281,18 +281,18 @@ const LevelToolModal: FC<LevelToolModalProps> = ({ open, onOpenChange }) => {
                 </div>
                 <div
                   className="flex justify-between text-xs"
-                  data-oid="v-mna0d"
+                  data-oid="ej7zg8u"
                 >
-                  <span className="text-gray-400" data-oid="-zl7511">
+                  <span className="text-gray-400" data-oid="qo:qm_-">
                     -5°
                   </span>
                   <span
                     className={`font-medium ${isLevelHorizontal ? "text-green-500" : "text-cyan-400"}`}
-                    data-oid="9sfd1zv"
+                    data-oid=".1x9_lg"
                   >
                     {rotation.gamma.toFixed(1)}°
                   </span>
-                  <span className="text-gray-400" data-oid="zkzofbr">
+                  <span className="text-gray-400" data-oid="jbers44">
                     +5°
                   </span>
                 </div>
@@ -301,29 +301,29 @@ const LevelToolModal: FC<LevelToolModalProps> = ({ open, onOpenChange }) => {
               {/* Vertical Level */}
               <div
                 className="bg-space-800/70 rounded-lg p-4 space-y-2"
-                data-oid="75q198i"
+                data-oid="d_dknls"
               >
                 <h3
                   className="text-sm font-medium text-gray-300 mb-2"
-                  data-oid="9_12:9-"
+                  data-oid="1:tp3om"
                 >
                   Vertical Level
                 </h3>
                 <div
                   className="relative h-36 w-12 bg-space-900 rounded-lg overflow-hidden mx-auto"
-                  data-oid="vva9fm8"
+                  data-oid=".h.-ltx"
                 >
                   <div
                     className="absolute inset-0 flex items-center justify-center"
-                    data-oid="1wr.96v"
+                    data-oid="8torzrk"
                   >
                     <div
                       className="absolute h-full w-px bg-gray-600"
-                      data-oid="w:uw7kw"
+                      data-oid="h79z08q"
                     ></div>
                     <div
                       className={`absolute h-px w-full ${isLevelVertical ? "bg-green-500" : "bg-gray-600"}`}
-                      data-oid="fvhjw1c"
+                      data-oid="bmjiuwr"
                     ></div>
                   </div>
 
@@ -334,21 +334,21 @@ const LevelToolModal: FC<LevelToolModalProps> = ({ open, onOpenChange }) => {
                       opacity: locked ? 0.7 : 1,
                     }}
                     transition={{ type: "spring", stiffness: 300, damping: 30 }}
-                    data-oid="xcdmimb"
+                    data-oid="0ncyxpm"
                   />
 
                   <div
                     className="absolute inset-0 pointer-events-none"
-                    data-oid="ud-fb.y"
+                    data-oid="hsz63_a"
                   >
                     {isLevelVertical && (
                       <div
                         className="absolute inset-0 bg-green-500/10 flex items-center justify-center"
-                        data-oid="kjgs6cb"
+                        data-oid="90gzdf4"
                       >
                         <div
                           className="text-green-500 text-xs font-medium rotate-90"
-                          data-oid="a8ag8ll"
+                          data-oid="fnzjs-y"
                         >
                           LEVEL
                         </div>
@@ -356,24 +356,24 @@ const LevelToolModal: FC<LevelToolModalProps> = ({ open, onOpenChange }) => {
                     )}
                   </div>
                 </div>
-                <div className="flex justify-center text-xs" data-oid="2p4-:at">
+                <div className="flex justify-center text-xs" data-oid="evk3xge">
                   <span
                     className={`font-medium ${isLevelVertical ? "text-green-500" : "text-cyan-400"}`}
-                    data-oid="p6du.98"
+                    data-oid="4cs-u::"
                   >
                     {rotation.beta.toFixed(1)}°
                   </span>
                 </div>
               </div>
 
-              <div className="flex justify-between" data-oid="u:._tax">
+              <div className="flex justify-between" data-oid="h8pt9ug">
                 <Button
                   variant="outline"
                   className="bg-space-800 border-space-700 hover:bg-space-700 text-white"
                   onClick={resetOrientation}
-                  data-oid="4s792tu"
+                  data-oid="ruu8cg7"
                 >
-                  <i className="fas fa-redo mr-2" data-oid=".fjlocw"></i> Reset
+                  <i className="fas fa-redo mr-2" data-oid="am7omqj"></i> Reset
                 </Button>
 
                 <Button
@@ -384,11 +384,11 @@ const LevelToolModal: FC<LevelToolModalProps> = ({ open, onOpenChange }) => {
                       : "bg-space-800 border-space-700 hover:bg-space-700 text-white"
                   }
                   onClick={toggleLock}
-                  data-oid="dmtni7_"
+                  data-oid="_o6:tne"
                 >
                   <i
                     className={`fas ${locked ? "fa-lock" : "fa-lock-open"} mr-2`}
-                    data-oid="3tdi-jz"
+                    data-oid="xhgrk-q"
                   ></i>
                   {locked ? "Unlock" : "Lock"}
                 </Button>

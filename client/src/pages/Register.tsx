@@ -96,11 +96,11 @@ const Register: FC = () => {
   return (
     <div
       className="min-h-screen bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 flex flex-col items-center justify-center p-4"
-      data-oid="njvgz2q"
+      data-oid="ygx:_9j"
     >
-      <InstallPrompt forceShow={true} data-oid=":5vpf-m" />
+      <InstallPrompt forceShow={true} data-oid="s5454ip" />
       {/* PWA Install Prompt */}
-      <PWAInstallPrompt data-oid=":q24hel" />
+      <PWAInstallPrompt data-oid="s48irlm" />
 
       {/* Enhanced Logo Section */}
       <motion.div
@@ -108,19 +108,19 @@ const Register: FC = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
         className="mb-12 text-center"
-        data-oid="ahjjk5s"
+        data-oid="je4rzbg"
       >
-        <div className="relative inline-block" data-oid="u7lsgji">
+        <div className="relative inline-block" data-oid="nl14nnb">
           <img
             src={str8BuildLogo}
             alt="STR8 BUILD Logo"
             className="w-64 h-auto mx-auto drop-shadow-[0_0_25px_rgba(34,211,238,0.6)] hover:drop-shadow-[0_0_35px_rgba(34,211,238,0.8)] transition-all duration-500 transform hover:scale-105"
-            data-oid="o-bqntt"
+            data-oid="e6l3y.b"
           />
 
           <div
             className="absolute inset-0 bg-gradient-to-r from-cyan-400/20 to-blue-500/20 rounded-full blur-xl -z-10"
-            data-oid="dngfbeu"
+            data-oid="lb5qfsd"
           ></div>
         </div>
         <motion.h1
@@ -128,7 +128,7 @@ const Register: FC = () => {
           animate={{ opacity: 1 }}
           transition={{ delay: 0.3, duration: 0.6 }}
           className="mt-6 text-3xl font-bold text-white tracking-wide"
-          data-oid="bz60qpj"
+          data-oid="fh:f5j8"
         >
           STR8 BUILD
         </motion.h1>
@@ -137,7 +137,7 @@ const Register: FC = () => {
           animate={{ opacity: 1 }}
           transition={{ delay: 0.5, duration: 0.6 }}
           className="mt-2 text-lg text-cyan-300 font-medium"
-          data-oid="i4na13q"
+          data-oid="65ldxgl"
         >
           Professional Construction Management
         </motion.p>
@@ -148,139 +148,139 @@ const Register: FC = () => {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.2, duration: 0.6 }}
-        data-oid="-6f-wy1"
+        data-oid="fond134"
       >
         <Card
           className="w-full max-w-md bg-gray-800/60 backdrop-blur-lg border-gray-700/50 shadow-2xl overflow-hidden ring-1 ring-cyan-500/20"
-          data-oid="zns94n-"
+          data-oid="3org8g."
         >
           <CardHeader
             className="border-b border-gray-700/50 bg-gradient-to-r from-gray-800/80 to-gray-700/80"
-            data-oid="iwf43r_"
+            data-oid="gf8xi5:"
           >
             <CardTitle
               className="text-2xl font-bold text-cyan-400 text-center"
-              data-oid="8034sxi"
+              data-oid="dot8bo:"
             >
               Create Account
             </CardTitle>
             <CardDescription
               className="text-gray-300 text-center"
-              data-oid="ygls4o4"
+              data-oid="yf3jpui"
             >
               Join {APP_NAME} today
             </CardDescription>
           </CardHeader>
-          <CardContent className="p-8" data-oid=":m:ahln">
-            <Form {...form} data-oid="jmdjc0-">
+          <CardContent className="p-8" data-oid="je6a6j-">
+            <Form {...form} data-oid="ujsnutw">
               <form
                 onSubmit={form.handleSubmit(onSubmit)}
                 className="space-y-5"
-                data-oid=":i2mlr:"
+                data-oid="vxh:uue"
               >
                 <FormField
                   control={form.control}
                   name="username"
                   render={({ field }) => (
-                    <FormItem data-oid="wffzylb">
+                    <FormItem data-oid="j7x4jcf">
                       <FormLabel
                         className="text-gray-300 font-medium"
-                        data-oid="t0yanxu"
+                        data-oid="ctwd:o_"
                       >
                         Username
                       </FormLabel>
-                      <FormControl data-oid="y-01-cu">
+                      <FormControl data-oid="kcleogf">
                         <Input
                           placeholder="Choose a username"
                           {...field}
                           className="bg-gray-700/80 border-gray-600 text-white focus:ring-2 focus:ring-cyan-500 focus:border-transparent h-11 text-base"
-                          data-oid="1p9oi8:"
+                          data-oid="whkqdn."
                         />
                       </FormControl>
                       <FormMessage
                         className="text-rose-400"
-                        data-oid="9u3r.15"
+                        data-oid="u..c-ee"
                       />
                     </FormItem>
                   )}
-                  data-oid="t6y6c4q"
+                  data-oid="a9qrsjt"
                 />
 
                 <FormField
                   control={form.control}
                   name="email"
                   render={({ field }) => (
-                    <FormItem data-oid="fcpp5-h">
+                    <FormItem data-oid="5i:3vo9">
                       <FormLabel
                         className="text-gray-300 font-medium"
-                        data-oid="jlzpp:a"
+                        data-oid="5v7ry.:"
                       >
                         Email
                       </FormLabel>
-                      <FormControl data-oid="o3v9w7.">
+                      <FormControl data-oid="w95z_zi">
                         <Input
                           type="email"
                           placeholder="Enter your email"
                           {...field}
                           className="bg-gray-700/80 border-gray-600 text-white focus:ring-2 focus:ring-cyan-500 focus:border-transparent h-11 text-base"
-                          data-oid="pqgtg.y"
+                          data-oid="ml.otng"
                         />
                       </FormControl>
                       <FormMessage
                         className="text-rose-400"
-                        data-oid="inv0fep"
+                        data-oid="61t-.0."
                       />
                     </FormItem>
                   )}
-                  data-oid="hwz8ovf"
+                  data-oid="n7svfj."
                 />
 
                 <FormField
                   control={form.control}
                   name="password"
                   render={({ field }) => (
-                    <FormItem data-oid="zk7r8v_">
+                    <FormItem data-oid="waui_k2">
                       <FormLabel
                         className="text-gray-300 font-medium"
-                        data-oid="-a2jpzv"
+                        data-oid="g7ipel3"
                       >
                         Password
                       </FormLabel>
-                      <FormControl data-oid="3rxvjns">
+                      <FormControl data-oid="y2nog8q">
                         <Input
                           type="password"
                           placeholder="Create a password"
                           {...field}
                           className="bg-gray-700/80 border-gray-600 text-white focus:ring-2 focus:ring-cyan-500 focus:border-transparent h-11 text-base"
-                          data-oid="3pla7u0"
+                          data-oid="6w.g.u-"
                         />
                       </FormControl>
                       <FormMessage
                         className="text-rose-400"
-                        data-oid="9l945a4"
+                        data-oid="tb04blg"
                       />
                     </FormItem>
                   )}
-                  data-oid="18xtpj2"
+                  data-oid="nwikovi"
                 />
 
                 {form.watch("password") && (
-                  <div className="pt-2" data-oid="y.jkb5q">
+                  <div className="pt-2" data-oid=":4f4hvs">
                     <div
                       className="h-1 bg-gray-700 rounded-full overflow-hidden"
-                      data-oid="ymrr:7n"
+                      data-oid=":6dmglz"
                     >
                       <div
                         className={`h-full transition-all duration-300 ${form.watch("password").length >= 8 ? "bg-green-500" : "bg-yellow-500"}`}
                         style={{
                           width: `${Math.min(100, form.watch("password").length * 10)}%`,
                         }}
-                        data-oid="29ohotm"
+                        data-oid="vkv7twh"
                       />
                     </div>
                     <p
                       className="text-xs text-gray-400 mt-1"
-                      data-oid="iqem-85"
+                      data-oid="mta_mno"
                     >
                       Password strength:{" "}
                       {form.watch("password").length >= 8 ? "Strong" : "Weak"}
@@ -291,41 +291,41 @@ const Register: FC = () => {
                   control={form.control}
                   name="confirmPassword"
                   render={({ field }) => (
-                    <FormItem data-oid="0d_4tko">
+                    <FormItem data-oid="67snqm:">
                       <FormLabel
                         className="text-gray-300 font-medium"
-                        data-oid="i1a6_n5"
+                        data-oid="d6s2c8x"
                       >
                         Confirm Password
                       </FormLabel>
-                      <FormControl data-oid="_v9itq3">
+                      <FormControl data-oid="6hddqsv">
                         <Input
                           type="password"
                           placeholder="Confirm your password"
                           {...field}
                           className="bg-gray-700/80 border-gray-600 text-white focus:ring-2 focus:ring-cyan-500 focus:border-transparent h-11 text-base"
-                          data-oid="ur0l6v6"
+                          data-oid="ak5uwj7"
                         />
                       </FormControl>
                       <FormMessage
                         className="text-rose-400"
-                        data-oid="85whi5o"
+                        data-oid="j2927e4"
                       />
                     </FormItem>
                   )}
-                  data-oid="jdihee9"
+                  data-oid="vaayxs8"
                 />
 
                 <Button
                   type="submit"
                   className="w-full h-12 mt-8 bg-gradient-to-r from-cyan-600 to-blue-600 hover:from-cyan-500 hover:to-blue-500 text-white font-semibold text-lg transition-all duration-300 hover:shadow-lg hover:shadow-cyan-500/30 transform hover:scale-[1.02]"
                   disabled={isLoading}
-                  data-oid="msug_og"
+                  data-oid="682921m"
                 >
                   {isLoading ? (
                     <LucideLoader2
                       className="mr-2 h-5 w-5 animate-spin"
-                      data-oid="4dvkms_"
+                      data-oid="4ppfk_n"
                     />
                   ) : null}
                   Create Account
@@ -333,14 +333,14 @@ const Register: FC = () => {
               </form>
             </Form>
 
-            <div className="mt-6 text-center" data-oid="v0aio68">
-              <Separator className="my-6 bg-gray-600" data-oid="zbpszyg" />
-              <p className="text-sm text-gray-400" data-oid="2qpy2aw">
+            <div className="mt-6 text-center" data-oid="aujjevn">
+              <Separator className="my-6 bg-gray-600" data-oid="5a5zzaj" />
+              <p className="text-sm text-gray-400" data-oid="8ib392-">
                 Already have an account?{" "}
                 <Link
                   href="/login"
                   className="text-cyan-400 hover:text-cyan-300 font-medium transition-colors"
-                  data-oid="8s7kliv"
+                  data-oid="up_i1o1"
                 >
                   Sign In
                 </Link>
@@ -349,7 +349,7 @@ const Register: FC = () => {
           </CardContent>
           <CardFooter
             className="flex justify-center text-xs text-gray-500 bg-gray-800/40 py-4"
-            data-oid="2t_qst:"
+            data-oid="i3_z032"
           >
             &copy; {new Date().getFullYear()} STR8 BUILD Ltd. All rights
             reserved.

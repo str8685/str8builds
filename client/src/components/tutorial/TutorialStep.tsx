@@ -99,7 +99,7 @@ const TutorialStep: React.FC<TutorialStepProps> = ({
       <div
         className="fixed inset-0 bg-space-950 bg-opacity-80 z-50 transition-opacity duration-300"
         style={{ backdropFilter: "blur(3px)" }}
-        data-oid=":dqnfqk"
+        data-oid="df3.p_4"
       />
 
       {/* Target element highlight */}
@@ -113,7 +113,7 @@ const TutorialStep: React.FC<TutorialStepProps> = ({
             height: position.height,
             boxShadow: "0 0 0 9999px rgba(0, 0, 0, 0.7)",
           }}
-          data-oid="w.wa6aq"
+          data-oid="hki53y_"
         />
       )}
 
@@ -126,59 +126,59 @@ const TutorialStep: React.FC<TutorialStepProps> = ({
           borderColor: "rgba(0, 230, 255, 0.3)",
           boxShadow: "0 0 15px rgba(0, 230, 255, 0.3)",
         }}
-        data-oid="-_o-4.q"
+        data-oid="g5mchd2"
       >
         {/* Progress indicator */}
         <div
           className="absolute -top-2 left-0 w-full flex justify-center"
-          data-oid="ier4_--"
+          data-oid="w6:aotk"
         >
           <div
             className="bg-space-900 rounded-full px-3 py-1 text-xs font-medium"
-            data-oid="g68nkz6"
+            data-oid="6_hwz:l"
           >
             Step {currentStepIndex + 1} of {totalSteps}
           </div>
         </div>
 
         {/* Animation icon area */}
-        <div className="flex justify-center mb-4" data-oid="nmuld-j">
+        <div className="flex justify-center mb-4" data-oid="kvs7aj-">
           <AnimatedIcon
             animationKey={step.animationKey || "default"}
-            data-oid="is-9w64"
+            data-oid=":-:j8r1"
           />
         </div>
 
         {/* Content */}
-        <h3 className="text-xl font-bold text-white mb-2" data-oid="fl-y1o2">
+        <h3 className="text-xl font-bold text-white mb-2" data-oid="560eh1h">
           {step.title}
         </h3>
-        <p className="text-gray-300 mb-6" data-oid="jicxi-y">
+        <p className="text-gray-300 mb-6" data-oid="95426ks">
           {step.description}
         </p>
 
         {/* Navigation buttons */}
         <div
           className="flex justify-between items-center mt-4"
-          data-oid=":zb5j1j"
+          data-oid="sx82_bp"
         >
-          <div data-oid="vb-x39g">
+          <div data-oid="3zezpv7">
             {!isFirst && (
               <button
                 onClick={onPrev}
                 className="text-gray-300 hover:text-cyan mr-2"
-                data-oid="3exz:9u"
+                data-oid="zbjg.fg"
               >
                 Previous
               </button>
             )}
           </div>
 
-          <div data-oid="l7l-6ve">
+          <div data-oid="tjcqjq7">
             <button
               onClick={onSkip}
               className="text-gray-400 hover:text-gray-200 text-sm mr-4"
-              data-oid="nu:to6w"
+              data-oid="drmy927"
             >
               Skip Tutorial
             </button>
@@ -186,7 +186,7 @@ const TutorialStep: React.FC<TutorialStepProps> = ({
             <button
               onClick={onNext}
               className="btn-primary px-4 py-2 rounded-lg"
-              data-oid="7fiqhw_"
+              data-oid="8mz3jkg"
             >
               {isLast ? "Finish" : "Next"}
             </button>

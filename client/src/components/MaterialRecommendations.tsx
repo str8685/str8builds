@@ -68,18 +68,18 @@ const MaterialRecommendations: FC<MaterialRecommendationsProps> = ({
   return (
     <div
       className={`glass-card p-6 rounded-lg ${className}`}
-      data-oid="qsg_9vq"
+      data-oid="uucrxgy"
     >
-      <h2 className="text-xl font-bold text-cyan mb-4" data-oid=":anz6zv">
+      <h2 className="text-xl font-bold text-cyan mb-4" data-oid="1lpdkps">
         AI Material Advisor
       </h2>
 
-      <div className="space-y-4" data-oid="a5yx4hu">
-        <div data-oid=":eg6i:9">
+      <div className="space-y-4" data-oid="r3rp5bu">
+        <div data-oid="0erdxri">
           <label
             htmlFor="projectType"
             className="block text-sm font-medium text-gray-300 mb-1"
-            data-oid="zv:9hh-"
+            data-oid="mqilfce"
           >
             Project Type
           </label>
@@ -88,21 +88,21 @@ const MaterialRecommendations: FC<MaterialRecommendationsProps> = ({
             className="w-full bg-space-800 text-white border border-gray-700 rounded-md p-2.5 focus:border-cyan focus:ring-1 focus:ring-cyan"
             value={projectType}
             onChange={(e) => setProjectType(e.target.value)}
-            data-oid="znmti.2"
+            data-oid="-ob0dfk"
           >
             {projectTypes.map((type) => (
-              <option key={type} value={type} data-oid="c7ab_87">
+              <option key={type} value={type} data-oid="wncc_a:">
                 {type}
               </option>
             ))}
           </select>
         </div>
 
-        <div data-oid="wnb5x71">
+        <div data-oid="hcu7uo1">
           <label
             htmlFor="budget"
             className="block text-sm font-medium text-gray-300 mb-1"
-            data-oid="w844ykk"
+            data-oid="59zphdo"
           >
             Budget Range
           </label>
@@ -111,21 +111,21 @@ const MaterialRecommendations: FC<MaterialRecommendationsProps> = ({
             className="w-full bg-space-800 text-white border border-gray-700 rounded-md p-2.5 focus:border-cyan focus:ring-1 focus:ring-cyan"
             value={budget}
             onChange={(e) => setBudget(e.target.value)}
-            data-oid="_rprblm"
+            data-oid="fuvztc-"
           >
             {budgetOptions.map((option) => (
-              <option key={option} value={option} data-oid="g.l6qw6">
+              <option key={option} value={option} data-oid="m5uxbk2">
                 {option}
               </option>
             ))}
           </select>
         </div>
 
-        <div data-oid="4i:qb.k">
+        <div data-oid="0io-:u8">
           <label
             htmlFor="location"
             className="block text-sm font-medium text-gray-300 mb-1"
-            data-oid="7i6l549"
+            data-oid="hxnx_un"
           >
             Location in NZ
           </label>
@@ -134,10 +134,10 @@ const MaterialRecommendations: FC<MaterialRecommendationsProps> = ({
             className="w-full bg-space-800 text-white border border-gray-700 rounded-md p-2.5 focus:border-cyan focus:ring-1 focus:ring-cyan"
             value={location}
             onChange={(e) => setLocation(e.target.value)}
-            data-oid="_l7nw4b"
+            data-oid="e:ond_x"
           >
             {NZ_REGIONS.map((region) => (
-              <option key={region} value={region} data-oid="efcnku0">
+              <option key={region} value={region} data-oid="cr28u0w">
                 {region}
               </option>
             ))}
@@ -152,19 +152,19 @@ const MaterialRecommendations: FC<MaterialRecommendationsProps> = ({
               ? "bg-purple-700 cursor-not-allowed"
               : "bg-purple-800 hover:bg-purple-700 btn-glow btn-glow-cyan"
           }`}
-          data-oid="_lrg:1g"
+          data-oid="20up7qn"
         >
           {isLoading ? (
             <span
               className="flex items-center justify-center"
-              data-oid="b3t:tyt"
+              data-oid="ie9pf6_"
             >
               <svg
                 className="animate-spin -ml-1 mr-2 h-4 w-4 text-white"
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
                 viewBox="0 0 24 24"
-                data-oid="i23sdvz"
+                data-oid="ss:9k-a"
               >
                 <circle
                   className="opacity-25"
@@ -173,13 +173,13 @@ const MaterialRecommendations: FC<MaterialRecommendationsProps> = ({
                   r="10"
                   stroke="currentColor"
                   strokeWidth="4"
-                  data-oid="ymzc::x"
+                  data-oid="4glq-gn"
                 ></circle>
                 <path
                   className="opacity-75"
                   fill="currentColor"
                   d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
-                  data-oid="xtnab7w"
+                  data-oid="4vbh.ri"
                 ></path>
               </svg>
               Finding Best Materials...
@@ -192,17 +192,17 @@ const MaterialRecommendations: FC<MaterialRecommendationsProps> = ({
         {recommendations && (
           <div
             className="mt-6 border border-cyan/20 rounded-md p-4 bg-space-800"
-            data-oid="k3h6tg4"
+            data-oid="-4_h:62"
           >
             <h3
               className="text-lg font-semibold text-cyan mb-2"
-              data-oid="r1_kxly"
+              data-oid=".hhkc:i"
             >
               Recommended Materials
             </h3>
             <div
               className="text-gray-200 whitespace-pre-line"
-              data-oid="ta63p71"
+              data-oid="u_oo1jm"
             >
               {recommendations}
             </div>

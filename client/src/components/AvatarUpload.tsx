@@ -44,24 +44,24 @@ const AvatarUpload: FC<AvatarUploadProps> = ({ initials, className = "" }) => {
       onMouseEnter={() => setIsHovering(true)}
       onMouseLeave={() => setIsHovering(false)}
       onClick={triggerFileInput}
-      data-oid="qyp3jow"
+      data-oid="x2edm8-"
     >
       {avatar ? (
         <div
           className="h-12 w-12 rounded-full overflow-hidden"
-          data-oid="cdojsc4"
+          data-oid=".e::zbc"
         >
           <img
             src={avatar}
             alt="User avatar"
             className="h-full w-full object-cover"
-            data-oid="8:b7oxs"
+            data-oid="urn4kp5"
           />
         </div>
       ) : (
         <div
           className="h-12 w-12 rounded-full bg-purple-800 flex items-center justify-center text-cyan font-medium text-lg"
-          data-oid="eh558ws"
+          data-oid="j8y8vtx"
         >
           {initials}
         </div>
@@ -70,14 +70,14 @@ const AvatarUpload: FC<AvatarUploadProps> = ({ initials, className = "" }) => {
       {isHovering && (
         <div
           className="absolute inset-0 flex items-center justify-center rounded-full bg-black bg-opacity-60 border-2 border-cyan animate-pulse"
-          data-oid=":jfzu-v"
+          data-oid="e8j.bhl"
         >
           <div
             className="bg-cyan bg-opacity-90 rounded-full p-1"
-            data-oid="27sqvob"
+            data-oid="mdfmgbb"
           >
-            <span className="text-space-900 text-sm" data-oid="b.rzlod">
-              <i className="fas fa-camera" data-oid="1pstgmg"></i>
+            <span className="text-space-900 text-sm" data-oid="6af31zl">
+              <i className="fas fa-camera" data-oid="e0a5mq7"></i>
             </span>
           </div>
         </div>
@@ -89,7 +89,7 @@ const AvatarUpload: FC<AvatarUploadProps> = ({ initials, className = "" }) => {
         onChange={handleFileChange}
         accept="image/*"
         className="hidden"
-        data-oid="vglfrit"
+        data-oid="vd7smha"
       />
     </div>
   );

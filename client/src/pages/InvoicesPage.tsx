@@ -340,40 +340,40 @@ const InvoicesPage: FC = () => {
   return (
     <div
       className="container mx-auto max-w-6xl px-4 pb-24 pt-8"
-      data-oid="_pal3h6"
+      data-oid="1_mntci"
     >
       <PageTitle
         title="Professional Invoices"
         subtitle="Create and manage professional invoices for your clients"
         icon="fa-file-invoice-dollar"
-        data-oid="1j0:ptp"
+        data-oid="32tctmw"
       />
 
       {/* Statistics Cards */}
       <div
         className="grid grid-cols-1 md:grid-cols-4 gap-6 mb-6"
-        data-oid="d9joxc0"
+        data-oid="5:873hu"
       >
-        <GlassCard className="p-5" data-oid="71q-9t4">
-          <div className="text-xs text-gray-400 mb-1" data-oid="0rpc5um">
+        <GlassCard className="p-5" data-oid="_p3725p">
+          <div className="text-xs text-gray-400 mb-1" data-oid=":e.tu3x">
             Total Value
           </div>
-          <div className="text-2xl font-bold text-white" data-oid="0ho._06">
+          <div className="text-2xl font-bold text-white" data-oid=":dstko3">
             ${formatCurrency(stats.total)}
           </div>
-          <div className="text-xs text-gray-400 mt-2" data-oid="3kk5qpb">
+          <div className="text-xs text-gray-400 mt-2" data-oid="raqise-">
             {filteredInvoices.length} invoices
           </div>
         </GlassCard>
 
-        <GlassCard className="p-5" data-oid=".-y3zl0">
-          <div className="text-xs text-gray-400 mb-1" data-oid="4bz19w6">
+        <GlassCard className="p-5" data-oid="smvsfrl">
+          <div className="text-xs text-gray-400 mb-1" data-oid="3jimey7">
             Paid
           </div>
-          <div className="text-2xl font-bold text-green-400" data-oid="bh.h_kj">
+          <div className="text-2xl font-bold text-green-400" data-oid="to7:.lb">
             ${formatCurrency(stats.paid)}
           </div>
-          <div className="text-xs text-gray-400 mt-2" data-oid="q0l5msj">
+          <div className="text-xs text-gray-400 mt-2" data-oid=".e-7k.i">
             {
               filteredInvoices.filter((inv: Invoice) => inv.status === "paid")
                 .length
@@ -382,14 +382,14 @@ const InvoicesPage: FC = () => {
           </div>
         </GlassCard>
 
-        <GlassCard className="p-5" data-oid="x303_7d">
-          <div className="text-xs text-gray-400 mb-1" data-oid="-k_jt4t">
+        <GlassCard className="p-5" data-oid="-9zj8q3">
+          <div className="text-xs text-gray-400 mb-1" data-oid="0x5rt27">
             Pending
           </div>
-          <div className="text-2xl font-bold text-blue-400" data-oid="gtrvfq2">
+          <div className="text-2xl font-bold text-blue-400" data-oid=":otzzdh">
             ${formatCurrency(stats.pending)}
           </div>
-          <div className="text-xs text-gray-400 mt-2" data-oid="72pnt_l">
+          <div className="text-xs text-gray-400 mt-2" data-oid="-nuzty6">
             {
               filteredInvoices.filter(
                 (inv: Invoice) => inv.status === "pending",
@@ -399,14 +399,14 @@ const InvoicesPage: FC = () => {
           </div>
         </GlassCard>
 
-        <GlassCard className="p-5" data-oid="vqr6mac">
-          <div className="text-xs text-gray-400 mb-1" data-oid="y0jt6o0">
+        <GlassCard className="p-5" data-oid="tu4bj9s">
+          <div className="text-xs text-gray-400 mb-1" data-oid="3hpeddk">
             Overdue
           </div>
-          <div className="text-2xl font-bold text-red-400" data-oid="d2jensr">
+          <div className="text-2xl font-bold text-red-400" data-oid="tmir:mc">
             ${formatCurrency(stats.overdue)}
           </div>
-          <div className="text-xs text-gray-400 mt-2" data-oid="o1gfp7q">
+          <div className="text-xs text-gray-400 mt-2" data-oid="y.p.lf_">
             {
               filteredInvoices.filter(
                 (inv: Invoice) =>
@@ -420,13 +420,13 @@ const InvoicesPage: FC = () => {
       </div>
 
       {/* Main Content */}
-      <GlassCard className="p-5" data-oid="ncqqk49">
+      <GlassCard className="p-5" data-oid="r5_5q1c">
         {/* Top Action Bar */}
         <div
           className="flex flex-wrap justify-between items-center mb-6 gap-4"
-          data-oid="y3_850n"
+          data-oid="sj_o4a5"
         >
-          <div className="flex space-x-1" data-oid="cgeoib3">
+          <div className="flex space-x-1" data-oid="xt.dsqr">
             <button
               onClick={() => setActiveTab("all")}
               className={`px-4 py-2 text-sm rounded-md ${
@@ -434,7 +434,7 @@ const InvoicesPage: FC = () => {
                   ? "bg-electric/20 text-electric"
                   : "text-gray-400 hover:bg-space-800/50"
               }`}
-              data-oid="0yp359:"
+              data-oid="3dv87if"
             >
               All
             </button>
@@ -445,7 +445,7 @@ const InvoicesPage: FC = () => {
                   ? "bg-gray-500/20 text-gray-400"
                   : "text-gray-400 hover:bg-space-800/50"
               }`}
-              data-oid="r891zjr"
+              data-oid="mfofuyc"
             >
               Draft
             </button>
@@ -456,7 +456,7 @@ const InvoicesPage: FC = () => {
                   ? "bg-blue-500/20 text-blue-400"
                   : "text-gray-400 hover:bg-space-800/50"
               }`}
-              data-oid="rrp74xo"
+              data-oid="cn77f1i"
             >
               Pending
             </button>
@@ -467,7 +467,7 @@ const InvoicesPage: FC = () => {
                   ? "bg-green-500/20 text-green-400"
                   : "text-gray-400 hover:bg-space-800/50"
               }`}
-              data-oid="5cq8zb9"
+              data-oid="__yv.-6"
             >
               Paid
             </button>
@@ -478,63 +478,63 @@ const InvoicesPage: FC = () => {
                   ? "bg-red-500/20 text-red-400"
                   : "text-gray-400 hover:bg-space-800/50"
               }`}
-              data-oid="8sr1n1r"
+              data-oid="9g6j9i8"
             >
               Overdue
             </button>
           </div>
 
-          <div className="flex space-x-2" data-oid="go0jw4h">
-            <div className="relative" data-oid=".a5japc">
+          <div className="flex space-x-2" data-oid="zgw3xk0">
+            <div className="relative" data-oid="zgt5p49">
               <input
                 type="text"
                 placeholder="Search invoices..."
                 value={searchTerm}
                 onChange={(e) => setSearchTerm(e.target.value)}
                 className="bg-space-800/50 border border-space-700 px-3 py-2 rounded-md text-sm text-white w-60 focus:outline-none focus:border-electric"
-                data-oid="goc.y::"
+                data-oid="ec.nd7a"
               />
 
               <div
                 className="absolute right-3 top-2.5 text-gray-400"
-                data-oid="e9noocy"
+                data-oid="tje7c6b"
               >
-                <i className="fas fa-search" data-oid=".15vfds"></i>
+                <i className="fas fa-search" data-oid=":g2mpxx"></i>
               </div>
             </div>
-            <div className="dropdown dropdown-end" data-oid="bj2y8g8">
+            <div className="dropdown dropdown-end" data-oid="nf97b4c">
               <button
                 className="bg-space-800/50 border border-space-700 px-3 py-2 rounded-md text-sm text-white"
-                data-oid="6ut02.5"
+                data-oid="cwp3_kz"
               >
-                <i className="fas fa-ellipsis-v" data-oid="9q4z16l"></i>
+                <i className="fas fa-ellipsis-v" data-oid="kpj5a0x"></i>
               </button>
               <div
                 className="dropdown-content bg-space-800 border border-space-700 rounded-md p-2 w-40 right-0 mt-1"
-                data-oid="85tj:m1"
+                data-oid="3v9p7zt"
               >
                 <button
                   onClick={handleExportPdf}
                   className="block px-4 py-2 text-sm text-white w-full text-left hover:bg-space-700 rounded"
-                  data-oid="txd9xnr"
+                  data-oid="mqt7bt:"
                 >
-                  <i className="fas fa-file-pdf mr-2" data-oid="o8n.dds"></i>{" "}
+                  <i className="fas fa-file-pdf mr-2" data-oid="0-xlk0w"></i>{" "}
                   Export PDF
                 </button>
                 <button
                   onClick={handleExportCsv}
                   className="block px-4 py-2 text-sm text-white w-full text-left hover:bg-space-700 rounded"
-                  data-oid="-80b8x4"
+                  data-oid="bq.9mn1"
                 >
-                  <i className="fas fa-file-csv mr-2" data-oid="wv-r447"></i>{" "}
+                  <i className="fas fa-file-csv mr-2" data-oid=".ixls.e"></i>{" "}
                   Export CSV
                 </button>
                 <button
                   onClick={handleEmailInvoice}
                   className="block px-4 py-2 text-sm text-white w-full text-left hover:bg-space-700 rounded"
-                  data-oid="-m3dchk"
+                  data-oid="8-lapki"
                 >
-                  <i className="fas fa-envelope mr-2" data-oid="2hwste5"></i>{" "}
+                  <i className="fas fa-envelope mr-2" data-oid="ekww11k"></i>{" "}
                   Email Invoice
                 </button>
               </div>
@@ -544,9 +544,9 @@ const InvoicesPage: FC = () => {
                 /* TODO: Add new invoice */
               }}
               className="bg-electric/80 hover:bg-electric text-white px-4 py-2 text-sm rounded-md font-medium"
-              data-oid="k6p21-:"
+              data-oid="-ip5gzp"
             >
-              <i className="fas fa-plus mr-1" data-oid="-wy2fl1"></i> New
+              <i className="fas fa-plus mr-1" data-oid="zreyz9v"></i> New
               Invoice
             </button>
           </div>
@@ -554,134 +554,134 @@ const InvoicesPage: FC = () => {
 
         {/* Invoice List */}
         {isLoading ? (
-          <div className="space-y-3" data-oid="15d8n9i">
-            <div className="flex justify-center p-10" data-oid="ab:txdc">
+          <div className="space-y-3" data-oid="wll:qp9">
+            <div className="flex justify-center p-10" data-oid=".87ay8p">
               <div
                 className="animate-spin rounded-full h-8 w-8 border-t-2 border-b-2 border-cyan"
-                data-oid="yfq6jn:"
+                data-oid="qf0nlox"
               ></div>
             </div>
           </div>
         ) : filteredInvoices.length === 0 ? (
-          <div className="space-y-2" data-oid="7upwjsa">
-            <div className="p-6 text-center" data-oid="hjwun3z">
-              <p className="text-gray-400" data-oid="ylclg2c">
+          <div className="space-y-2" data-oid="raikdk5">
+            <div className="p-6 text-center" data-oid="81wzq81">
+              <p className="text-gray-400" data-oid="noptyhb">
                 No invoices found matching your criteria.
               </p>
-              <p className="text-xs text-gray-500 mt-1" data-oid="lc7958r">
+              <p className="text-xs text-gray-500 mt-1" data-oid="a2thq8n">
                 Try changing your filters or create a new invoice.
               </p>
             </div>
           </div>
         ) : (
-          <div className="overflow-x-auto" data-oid="93jsf5k">
-            <table className="w-full" data-oid="wmpplv4">
-              <thead className="text-left" data-oid="5ppefb2">
-                <tr className="border-b border-gray-700/50" data-oid="zhlzo-d">
+          <div className="overflow-x-auto" data-oid="tmwwl5i">
+            <table className="w-full" data-oid="4e-:h:h">
+              <thead className="text-left" data-oid="uot810y">
+                <tr className="border-b border-gray-700/50" data-oid=".ohxp4_">
                   <th
                     className="px-4 py-2 text-xs text-gray-400 font-medium"
-                    data-oid="_3wmhrw"
+                    data-oid="4phyfq3"
                   >
                     INVOICE #
                   </th>
                   <th
                     className="px-4 py-2 text-xs text-gray-400 font-medium"
-                    data-oid="am22v:h"
+                    data-oid="gctfcc1"
                   >
                     CLIENT
                   </th>
                   <th
                     className="px-4 py-2 text-xs text-gray-400 font-medium"
-                    data-oid="5s_moyv"
+                    data-oid=".0ea0y2"
                   >
                     ISSUE DATE
                   </th>
                   <th
                     className="px-4 py-2 text-xs text-gray-400 font-medium"
-                    data-oid="msthfr2"
+                    data-oid="ej005p2"
                   >
                     DUE DATE
                   </th>
                   <th
                     className="px-4 py-2 text-xs text-gray-400 font-medium"
-                    data-oid="o-bywq-"
+                    data-oid=".n9asvx"
                   >
                     STATUS
                   </th>
                   <th
                     className="px-4 py-2 text-xs text-gray-400 font-medium text-right"
-                    data-oid="rjkoc.v"
+                    data-oid="piugk5h"
                   >
                     AMOUNT
                   </th>
                   <th
                     className="px-4 py-2 text-xs text-gray-400 font-medium text-right"
-                    data-oid="sqbrmp7"
+                    data-oid="gd0:le2"
                   >
                     ACTIONS
                   </th>
                 </tr>
               </thead>
-              <tbody data-oid="rj7jj9:">
+              <tbody data-oid="wws4j.i">
                 {filteredInvoices.map((invoice: Invoice) => (
                   <tr
                     key={invoice.id}
                     className="border-b border-gray-700/30 hover:bg-space-800/50 transition-colors"
-                    data-oid="w84nmvt"
+                    data-oid="r.vriwf"
                   >
                     <td
                       className="px-4 py-3 text-sm text-white font-medium"
-                      data-oid="u.razd3"
+                      data-oid="7-1bzf."
                     >
                       {invoice.invoiceNumber}
                     </td>
                     <td
                       className="px-4 py-3 text-sm text-white"
-                      data-oid="gu1c..1"
+                      data-oid="c_8-hqf"
                     >
                       {getClientName(invoice.clientId)}
                     </td>
                     <td
                       className="px-4 py-3 text-sm text-gray-400"
-                      data-oid="ecnsz55"
+                      data-oid="3nao4k7"
                     >
                       {new Date(invoice.issueDate).toLocaleDateString()}
                     </td>
                     <td
                       className="px-4 py-3 text-sm text-gray-400"
-                      data-oid="5tifxew"
+                      data-oid="-5jmehc"
                     >
                       {new Date(invoice.dueDate).toLocaleDateString()}
                     </td>
-                    <td className="px-4 py-3" data-oid=".7lp1no">
+                    <td className="px-4 py-3" data-oid="lyxc3f9">
                       <span
                         className={`inline-block px-2 py-1 text-xs rounded ${getStatusClass(
                           invoice.status || "pending",
                           invoice.dueDate.toString(),
                         )}`}
-                        data-oid="-vva8au"
+                        data-oid="nwewt:k"
                       >
                         {getStatusText(invoice)}
                       </span>
                     </td>
                     <td
                       className="px-4 py-3 text-sm text-white text-right font-medium"
-                      data-oid="3i_gc0o"
+                      data-oid="omnu3:k"
                     >
                       ${formatCurrency(invoice.total)}
                     </td>
-                    <td className="px-4 py-3 text-right" data-oid="chi154q">
+                    <td className="px-4 py-3 text-right" data-oid="_gqo_si">
                       <div
                         className="flex space-x-1 justify-end"
-                        data-oid="wqnryl-"
+                        data-oid="t_:o0.0"
                       >
                         <button
                           className="p-1 text-electric hover:text-cyan"
                           onClick={() => openDetailModal(invoice)}
                           title="View"
-                          data-oid="0oj6efj"
+                          data-oid="ua9k6w-"
                         >
-                          <i className="fas fa-eye" data-oid="k1cz-qk"></i>
+                          <i className="fas fa-eye" data-oid="p-uh2b1"></i>
                         </button>
                         <button
                           className="p-1 text-electric hover:text-cyan"
@@ -689,9 +689,9 @@ const InvoicesPage: FC = () => {
                             console.log("Edit invoice", invoice.id)
                           }
                           title="Edit"
-                          data-oid="ml6hwca"
+                          data-oid="8zviv3t"
                         >
-                          <i className="fas fa-edit" data-oid="anj75pd"></i>
+                          <i className="fas fa-edit" data-oid="au2bitx"></i>
                         </button>
                         <button
                           className="p-1 text-electric hover:text-cyan"
@@ -699,11 +699,11 @@ const InvoicesPage: FC = () => {
                             console.log("Send invoice", invoice.id)
                           }
                           title="Send"
-                          data-oid="wo2sfa9"
+                          data-oid="2he3n:."
                         >
                           <i
                             className="fas fa-paper-plane"
-                            data-oid="l_98jcn"
+                            data-oid="j8powfa"
                           ></i>
                         </button>
                       </div>

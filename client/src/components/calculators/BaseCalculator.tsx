@@ -20,20 +20,20 @@ const BaseCalculator: FC<BaseCalculatorProps> = ({
       variant={variant}
       blur="md"
       glow={true}
-      data-oid="jou.-vs"
+      data-oid="ejy29lj"
     >
       <h2
         className={`text-2xl font-semibold mb-2 ${variant === "cyan" ? "text-cyan" : variant === "electric" ? "text-electric" : variant === "teal" ? "text-teal" : variant === "purple" ? "text-purple-800" : "text-white"}`}
-        data-oid="ifacc0m"
+        data-oid="qm27oe5"
       >
         {title}
       </h2>
       {description && (
-        <p className="text-sm text-gray-300 mb-4" data-oid="datt03m">
+        <p className="text-sm text-gray-300 mb-4" data-oid="st9rkes">
           {description}
         </p>
       )}
-      <div className="w-full" data-oid="y2k87cm">
+      <div className="w-full" data-oid="6-8l27h">
         {children}
       </div>
     </GlassCard>

@@ -28,7 +28,7 @@ export const FloatingElement: React.FC<FloatingElementProps> = ({
           ease: "easeInOut",
         },
       }}
-      data-oid="4tuxnzk"
+      data-oid="b8v26pm"
     >
       {children}
     </motion.div>
@@ -63,7 +63,7 @@ export const PulsingElement: React.FC<PulsingElementProps> = ({
           ease: "easeInOut",
         },
       }}
-      data-oid="vt4g4r6"
+      data-oid="9.jtw9."
     >
       {children}
     </motion.div>
@@ -102,7 +102,7 @@ export const FadingElement: React.FC<FadingElementProps> = ({
           ease: "easeIn",
         },
       }}
-      data-oid="euku4mz"
+      data-oid="dxflxej"
     >
       {children}
     </motion.div>
@@ -166,7 +166,7 @@ export const SlideInElement: React.FC<SlideInElementProps> = ({
           ease: "easeIn",
         },
       }}
-      data-oid="h9xsojy"
+      data-oid="0wndhgb"
     >
       {children}
     </motion.div>
@@ -178,7 +178,7 @@ export const AnimatedLogo: React.FC<{ className?: string }> = ({
   className = "",
 }) => {
   return (
-    <div className={`relative ${className}`} data-oid="d_qszw_">
+    <div className={`relative ${className}`} data-oid="1u-vn6a">
       {/* Glowing background effect */}
       <motion.div
         className="absolute inset-0 rounded-full bg-cyan-500 blur-xl"
@@ -192,7 +192,7 @@ export const AnimatedLogo: React.FC<{ className?: string }> = ({
           repeatType: "reverse",
           ease: "easeInOut",
         }}
-        data-oid="9dqrimv"
+        data-oid="3q_sifq"
       />
 
       {/* STR8 BUILD text logo */}
@@ -211,7 +211,7 @@ export const AnimatedLogo: React.FC<{ className?: string }> = ({
           repeatType: "reverse",
           ease: "easeInOut",
         }}
-        data-oid="b4goqjv"
+        data-oid="_jj4n-6"
       >
         STR8 BUILD
       </motion.div>
@@ -222,15 +222,15 @@ export const AnimatedLogo: React.FC<{ className?: string }> = ({
 // Animated construction elements that appear in sequence
 export const ConstructionElements: React.FC = () => {
   return (
-    <div className="relative h-40 w-full" data-oid="9gs-6t7">
+    <div className="relative h-40 w-full" data-oid=".39ty7d">
       {/* Foundation */}
       <SlideInElement
         direction="bottom"
         delay={0.3}
         className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-40 h-4 bg-gray-700 rounded-lg"
-        data-oid="76k_qto"
+        data-oid="-p5ch2i"
       >
-        <div className="w-full h-full" data-oid="9x5v598" />
+        <div className="w-full h-full" data-oid="4oox:k7" />
       </SlideInElement>
 
       {/* Building structure */}
@@ -238,9 +238,9 @@ export const ConstructionElements: React.FC = () => {
         direction="bottom"
         delay={0.8}
         className="absolute bottom-4 left-1/2 transform -translate-x-1/2 w-32 h-32 bg-space-800 border border-cyan-500/30 rounded-sm"
-        data-oid="mqmpoi9"
+        data-oid=".upuz_a"
       >
-        <div className="w-full h-full" data-oid="tr9opql" />
+        <div className="w-full h-full" data-oid="_mm7ovu" />
       </SlideInElement>
 
       {/* Windows */}
@@ -248,18 +248,18 @@ export const ConstructionElements: React.FC = () => {
         direction="left"
         delay={1.3}
         className="absolute bottom-20 left-1/2 transform -translate-x-1/2 -translate-x-8 w-6 h-8 bg-cyan-500/20 border border-cyan-500/50 rounded-sm"
-        data-oid="0nh5h03"
+        data-oid="l8ixkar"
       >
-        <div className="w-full h-full" data-oid="in9jlj." />
+        <div className="w-full h-full" data-oid="ckclhqv" />
       </SlideInElement>
 
       <SlideInElement
         direction="right"
         delay={1.4}
         className="absolute bottom-20 left-1/2 transform -translate-x-1/2 translate-x-8 w-6 h-8 bg-cyan-500/20 border border-cyan-500/50 rounded-sm"
-        data-oid="u:vt:lz"
+        data-oid="-qxhw0u"
       >
-        <div className="w-full h-full" data-oid="m.-k_0p" />
+        <div className="w-full h-full" data-oid="bt26xuv" />
       </SlideInElement>
 
       {/* Roof */}
@@ -267,9 +267,9 @@ export const ConstructionElements: React.FC = () => {
         direction="top"
         delay={1.8}
         className="absolute bottom-36 left-1/2 transform -translate-x-1/2 w-36 h-4 bg-cyan-800/70 rounded-sm"
-        data-oid="-wpfvnf"
+        data-oid="e.ajfqz"
       >
-        <div className="w-full h-full" data-oid="k4wrd-k" />
+        <div className="w-full h-full" data-oid=":9ux2hq" />
       </SlideInElement>
 
       {/* Construction crane */}
@@ -277,33 +277,33 @@ export const ConstructionElements: React.FC = () => {
         direction="right"
         delay={2.2}
         className="absolute bottom-40 left-1/2 transform -translate-x-1/2 translate-x-16"
-        data-oid=":kcg6gm"
+        data-oid="drle2dc"
       >
         <motion.div
           className="w-2 h-24 bg-orange-500 origin-bottom"
           animate={{ rotate: [0, 5, 0, -5, 0] }}
           transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
-          data-oid="jb5z177"
+          data-oid="48-e98t"
         >
           <motion.div
             className="absolute top-0 left-0 w-20 h-2 bg-orange-500 -translate-x-20"
             animate={{ translateY: [0, -2, 0, 2, 0] }}
             transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
-            data-oid="7k.zo9y"
+            data-oid="si_8duk"
           >
             <div
               className="absolute bottom-0 left-0 w-1 h-8 bg-gray-500 origin-top"
-              data-oid="2eorqrd"
+              data-oid="szbbv0j"
             >
               <div
                 className="absolute bottom-0 left-0 w-2 h-2 bg-gray-400 rounded-full transform -translate-x-1/2"
-                data-oid="nfs4mgu"
+                data-oid="akpeqzr"
               />
             </div>
           </motion.div>
           <div
             className="absolute top-0 left-0 w-3 h-3 bg-red-500 rounded-full transform -translate-x-1/2 -translate-y-1/2"
-            data-oid="xcesvno"
+            data-oid="bpwo.61"
           />
         </motion.div>
       </SlideInElement>
@@ -352,13 +352,13 @@ export const TypingText: React.FC<TypingTextProps> = ({
   }, [text, currentIndex, delay, typingSpeed]);
 
   return (
-    <div className={className} data-oid="5g2j.do">
-      <span data-oid="73mrbcr">{displayedText}</span>
+    <div className={className} data-oid=".9m6r94">
+      <span data-oid="nl0runi">{displayedText}</span>
       <motion.span
         animate={{ opacity: [0, 1, 0] }}
         transition={{ duration: 0.8, repeat: Infinity }}
         className="inline-block w-2 h-4 ml-1 bg-cyan-500"
-        data-oid=":3fgxzq"
+        data-oid="1vv9mrf"
       />
     </div>
   );

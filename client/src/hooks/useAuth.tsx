@@ -357,7 +357,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
         register,
         logout,
       }}
-      data-oid="2h4.kvb"
+      data-oid="t0gu9aa"
     >
       {children}
     </AuthContext.Provider>

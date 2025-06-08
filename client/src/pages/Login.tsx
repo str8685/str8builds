@@ -175,10 +175,10 @@ const Login: FC = () => {
       style={{
         background: `linear-gradient(135deg, rgb(8, 13, 24) 0%, rgb(16, 21, 40) 100%)`,
       }}
-      data-oid="k1u.66b"
+      data-oid="2dmm0hc"
     >
       {/* Animated background stars */}
-      <div className="absolute inset-0 overflow-hidden" data-oid="rz9i4nq">
+      <div className="absolute inset-0 overflow-hidden" data-oid="0p8bh02">
         {stars.map((star) => (
           <div
             key={star.id}
@@ -195,7 +195,7 @@ const Login: FC = () => {
                   : "none",
               animation: `pulse ${star.animationDuration}s ease-in-out infinite ${star.delay}s`,
             }}
-            data-oid="5afw4hb"
+            data-oid="-:v_i5t"
           />
         ))}
       </div>
@@ -208,12 +208,12 @@ const Login: FC = () => {
           backgroundPosition: `${50 + bgPosition.x}% ${50 + bgPosition.y}%`,
           transition: "background-position 0.5s ease-out",
         }}
-        data-oid="v3tcg2g"
+        data-oid="gosxdxy"
       >
-        <InstallPrompt forceShow={true} data-oid="0ym_ne5" />
-        <div className="sm:mx-auto sm:w-full sm:max-w-md" data-oid="132-pt.">
+        <InstallPrompt forceShow={true} data-oid="9nafkfb" />
+        <div className="sm:mx-auto sm:w-full sm:max-w-md" data-oid="6guy-a6">
           {/* PWA Install Prompt */}
-          <PWAInstallPrompt data-oid="nrk_9dj" />
+          <PWAInstallPrompt data-oid="qm2dot9" />
 
           {/* Enhanced Logo Section with advanced animations */}
           <motion.div
@@ -221,19 +221,19 @@ const Login: FC = () => {
             initial="hidden"
             animate="visible"
             whileHover="hover"
-            data-oid="e4u_izr"
+            data-oid="o8n1k5n"
           >
             <motion.div
               className="relative inline-block"
               variants={logoVariants}
-              data-oid="58s4fqo"
+              data-oid="ahmt-l5"
             >
               <motion.img
                 src={str8BuildLogo}
                 alt="STR8 BUILD Logo"
                 className="w-64 h-auto mx-auto"
                 style={{ filter: "drop-shadow(0 0 25px rgba(34,211,238,0.6))" }}
-                data-oid="c_6qj4o"
+                data-oid="aic91u8"
               />
 
               {/* Animated glow effect */}
@@ -248,7 +248,7 @@ const Login: FC = () => {
                   repeat: Infinity,
                   repeatType: "reverse",
                 }}
-                data-oid="r8:pk37"
+                data-oid="4-_.vl9"
               />
             </motion.div>
 
@@ -261,9 +261,9 @@ const Login: FC = () => {
                 color: "#22d3ee",
                 textShadow: "0 0 10px rgba(34,211,238,0.3)",
               }}
-              data-oid="7bibp10"
+              data-oid="twlxvg:"
             >
-              <span className="tracking-wider" data-oid="njpudil">
+              <span className="tracking-wider" data-oid="7kdbcs9">
                 PROFESSIONAL CONSTRUCTION MANAGEMENT
               </span>
             </motion.p>
@@ -275,43 +275,43 @@ const Login: FC = () => {
             initial="hidden"
             animate="visible"
             className="relative"
-            data-oid="mawxqzl"
+            data-oid="w:370g6"
           >
             {/* Card glow effect */}
             <div
               className="absolute -inset-1 bg-gradient-to-r from-cyan-600/20 via-blue-500/20 to-purple-600/20 rounded-xl blur-xl opacity-70"
-              data-oid="s3.qrlm"
+              data-oid="j-a2uga"
             ></div>
 
             <Card
               className="relative w-full max-w-md overflow-hidden rounded-xl border-0 shadow-2xl"
-              data-oid="7yj0jd3"
+              data-oid="lurdil3"
             >
               {/* Glass panel design */}
               <div
                 className="absolute inset-0 bg-gradient-to-br from-space-900/90 via-space-800/90 to-space-900/90 backdrop-blur-md border border-cyan-500/10 rounded-xl z-0"
-                data-oid="v9u97p1"
+                data-oid="yy97mk2"
               ></div>
 
               {/* Card content */}
               <CardHeader
                 className="relative z-10 border-b border-space-700/50 bg-gradient-to-r from-space-900/70 to-space-800/70 pb-6"
-                data-oid="os.nr_q"
+                data-oid=".k43q70"
               >
                 <div
                   className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-cyan-500 via-blue-500 to-cyan-400"
-                  data-oid="7s8g7cf"
+                  data-oid="vfuc2xg"
                 ></div>
 
                 <CardTitle
                   className="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-300 text-center drop-shadow-lg"
-                  data-oid="e0mjsz."
+                  data-oid=":s6m:2."
                 >
                   Welcome Back
                 </CardTitle>
                 <CardDescription
                   className="text-gray-300 text-center mt-1"
-                  data-oid="1eu8x6k"
+                  data-oid="dr9yxhb"
                 >
                   Sign in to your {APP_NAME} account
                 </CardDescription>
@@ -319,130 +319,130 @@ const Login: FC = () => {
 
               <CardContent
                 className="relative z-10 p-8 pt-8"
-                data-oid="ku-jq67"
+                data-oid="6qxzvz."
               >
-                <Form {...form} data-oid="2194q4e">
+                <Form {...form} data-oid="8ipv2pq">
                   <form
                     onSubmit={form.handleSubmit(onSubmit)}
                     className="space-y-6"
-                    data-oid="t0bzx5d"
+                    data-oid="d935_4p"
                   >
                     <FormField
                       control={form.control}
                       name="username"
                       render={({ field }) => (
-                        <FormItem className="space-y-3" data-oid="eyof:00">
+                        <FormItem className="space-y-3" data-oid="f1bap5p">
                           <FormLabel
                             className="text-cyan-100 font-medium flex items-center gap-2"
-                            data-oid="cj5h2:n"
+                            data-oid="dckqjgx"
                           >
                             <User
                               size={16}
                               className="text-cyan-400"
-                              data-oid="_uuca2a"
+                              data-oid="i:z2tb."
                             />
                             Username
                           </FormLabel>
-                          <FormControl data-oid=".j0hzko">
-                            <div className="relative group" data-oid=".wns4vc">
+                          <FormControl data-oid="w3:fan4">
+                            <div className="relative group" data-oid="tg-6bwq">
                               <Input
                                 {...field}
                                 className="bg-space-800/50 border-space-600 text-white h-12 pl-4 pr-10 rounded-lg focus:ring-2 focus:ring-cyan-500/70 focus:border-transparent transition-all duration-300 placeholder:text-gray-500"
                                 placeholder="Enter your username"
-                                data-oid="cyf8lt5"
+                                data-oid="1dz1t:0"
                               />
 
                               <div
                                 className="absolute inset-0 rounded-lg bg-gradient-to-r from-cyan-500/0 via-cyan-500/0 to-blue-500/0 opacity-0 group-hover:opacity-100 group-focus-within:opacity-100 transition-opacity duration-300 pointer-events-none"
-                                data-oid="ekfk-8w"
+                                data-oid="s0_e3dc"
                               ></div>
                             </div>
                           </FormControl>
                           <FormMessage
                             className="text-rose-400 text-xs"
-                            data-oid="w4.fpde"
+                            data-oid="o7fs_6z"
                           />
                         </FormItem>
                       )}
-                      data-oid="jps3w2x"
+                      data-oid="tpbz0al"
                     />
 
                     <FormField
                       control={form.control}
                       name="password"
                       render={({ field }) => (
-                        <FormItem className="space-y-3" data-oid="36sb3i4">
+                        <FormItem className="space-y-3" data-oid="bepnq.i">
                           <FormLabel
                             className="text-cyan-100 font-medium flex items-center gap-2"
-                            data-oid=":qjhgap"
+                            data-oid="pvf1294"
                           >
                             <Lock
                               size={16}
                               className="text-cyan-400"
-                              data-oid="978k6oh"
+                              data-oid="4uhi_sq"
                             />
                             Password
                           </FormLabel>
-                          <FormControl data-oid=".yq3q-v">
-                            <div className="relative group" data-oid="amxkc0d">
+                          <FormControl data-oid="9t4jrey">
+                            <div className="relative group" data-oid="mvq5.da">
                               <Input
                                 type="password"
                                 {...field}
                                 className="bg-space-800/50 border-space-600 text-white h-12 pl-4 pr-10 rounded-lg focus:ring-2 focus:ring-cyan-500/70 focus:border-transparent transition-all duration-300 placeholder:text-gray-500"
                                 placeholder="Enter your password"
-                                data-oid="0flylt-"
+                                data-oid="q9ttqff"
                               />
 
                               <div
                                 className="absolute inset-0 rounded-lg bg-gradient-to-r from-cyan-500/0 via-cyan-500/0 to-blue-500/0 opacity-0 group-hover:opacity-100 group-focus-within:opacity-100 transition-opacity duration-300 pointer-events-none"
-                                data-oid="j7yx0-g"
+                                data-oid="qmqme2l"
                               ></div>
                             </div>
                           </FormControl>
                           <FormMessage
                             className="text-rose-400 text-xs"
-                            data-oid="xklt53e"
+                            data-oid="6o._3rc"
                           />
                         </FormItem>
                       )}
-                      data-oid="c_.fmvw"
+                      data-oid="49az.cr"
                     />
 
                     <motion.div
                       whileHover={{ scale: 1.02 }}
                       whileTap={{ scale: 0.98 }}
                       className="pt-2"
-                      data-oid="rpu5u8p"
+                      data-oid="8l11zed"
                     >
                       <Button
                         type="submit"
                         className="w-full h-12 mt-2 relative overflow-hidden bg-gradient-to-r from-cyan-600 to-blue-600 text-white font-medium text-lg rounded-lg transition-all duration-300 group"
                         disabled={isLoading}
-                        data-oid="1mw_8k4"
+                        data-oid="g86i4zz"
                       >
                         {/* Button hover effect */}
                         <div
                           className="absolute inset-0 bg-gradient-to-r from-cyan-400 to-blue-500 translate-y-full group-hover:translate-y-0 transition-transform duration-300"
-                          data-oid="5_tnt8g"
+                          data-oid="nuekd43"
                         ></div>
 
                         {/* Button content */}
                         <div
                           className="relative flex items-center justify-center gap-2"
-                          data-oid="gdhxaxk"
+                          data-oid="30t8t2v"
                         >
                           {isLoading ? (
                             <LucideLoader2
                               className="h-5 w-5 animate-spin text-white"
-                              data-oid="ruqjijs"
+                              data-oid="63go4bj"
                             />
                           ) : (
                             <>
-                              <span data-oid="umf33lm">Sign In</span>
+                              <span data-oid="ypkoud-">Sign In</span>
                               <ChevronRight
                                 size={18}
                                 className="group-hover:translate-x-1 transition-transform duration-300"
-                                data-oid="lzkibpb"
+                                data-oid="ybacbth"
                               />
                             </>
                           )}
@@ -451,40 +451,40 @@ const Login: FC = () => {
                         {/* Button glow */}
                         <div
                           className="absolute inset-0 bg-gradient-to-r from-cyan-400/0 via-cyan-400/40 to-blue-500/0 opacity-0 group-hover:opacity-100 blur-xl transition-opacity duration-300"
-                          data-oid="92md:zp"
+                          data-oid="i0n-ax4"
                         ></div>
                       </Button>
                     </motion.div>
                   </form>
                 </Form>
 
-                <div className="mt-8 text-center" data-oid="l63kghc">
+                <div className="mt-8 text-center" data-oid="xycppwu">
                   <div
                     className="relative flex items-center justify-center"
-                    data-oid="1271do8"
+                    data-oid="5o:541m"
                   >
                     <div
                       className="flex-grow h-px bg-gradient-to-r from-transparent via-gray-600 to-transparent"
-                      data-oid="j_qm5o-"
+                      data-oid=".8kbj-9"
                     ></div>
                   </div>
 
-                  <p className="mt-6 text-sm text-gray-300" data-oid="1:m0j78">
+                  <p className="mt-6 text-sm text-gray-300" data-oid="gtr1bnq">
                     Don't have an account?{" "}
                     <Link
                       href="/register"
                       className="relative inline-block group"
-                      data-oid="z2nrg10"
+                      data-oid="pf04igz"
                     >
                       <span
                         className="text-cyan-400 font-medium transition-colors group-hover:text-cyan-300"
-                        data-oid="mp:a_lr"
+                        data-oid="vwbi21:"
                       >
                         Create Account
                       </span>
                       <span
                         className="absolute -bottom-1 left-0 w-0 h-0.5 bg-cyan-400 group-hover:w-full transition-all duration-300"
-                        data-oid="abrxve6"
+                        data-oid="8d_85kz"
                       ></span>
                     </Link>
                   </p>
@@ -493,9 +493,9 @@ const Login: FC = () => {
 
               <CardFooter
                 className="relative z-10 flex justify-center text-xs text-gray-400 bg-space-800/60 py-4 border-t border-gray-800/50"
-                data-oid="4o9yk6b"
+                data-oid="4-h.a45"
               >
-                <span className="opacity-70" data-oid="::gd-cd">
+                <span className="opacity-70" data-oid="7ojc7e_">
                   &copy; {new Date().getFullYear()} STR8 BUILD Ltd. All rights
                   reserved.
                 </span>

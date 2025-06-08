@@ -51,7 +51,7 @@ export const TutorialProvider: React.FC<TutorialProviderProps> = ({
 }) => {
   // Always use default values that disable tutorials
   return (
-    <TutorialContext.Provider value={defaultValue} data-oid="z-.-28u">
+    <TutorialContext.Provider value={defaultValue} data-oid="up_0.zl">
       {children}
     </TutorialContext.Provider>
   );

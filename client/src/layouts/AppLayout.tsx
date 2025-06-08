@@ -62,29 +62,29 @@ export const AppLayout: FC<AppLayoutProps> = ({ children }) => {
   return (
     <div
       className="bg-space-900 text-gray-100 min-h-screen overflow-x-hidden pb-20 relative"
-      data-oid="qgshk1t"
+      data-oid="k0g.mbe"
     >
       {/* Animated Background */}
-      <AnimatedBackground data-oid="12tirh2" />
+      <AnimatedBackground data-oid="9444k1e" />
 
       {/* Main Content */}
-      <div className="relative z-10 max-w-full" data-oid="esw3ahd">
-        <Header data-oid="6b1dld8" />
+      <div className="relative z-10 max-w-full" data-oid="_::nciv">
+        <Header data-oid="v4m68.7" />
         <div
           className="px-2 sm:px-4 md:px-6 max-w-7xl mx-auto"
-          data-oid="0a:5s7t"
+          data-oid="surtbgq"
         >
           {children}
         </div>
-        <BottomNav data-oid="lfwklsj" />
-        <PwaInstallBanner data-oid="8.ju71z" />
+        <BottomNav data-oid="tev5n5d" />
+        <PwaInstallBanner data-oid="k947vs:" />
       </div>
 
       {/* Voice Command Listener */}
       <VoiceCommandListener
         isActive={voiceCommandActive}
         onToggle={toggleVoiceCommand}
-        data-oid="lxx3po0"
+        data-oid="-j2anbj"
       />
 
       {/* Microphone button for voice commands - hidden by default, shown with Alt+V */}
@@ -94,7 +94,7 @@ export const AppLayout: FC<AppLayoutProps> = ({ children }) => {
           className="fixed right-4 bottom-20 z-40 bg-purple-800 hover:bg-purple-700 text-white p-3 rounded-full shadow-lg btn-glow btn-glow-cyan transition-all duration-300"
           aria-label="Voice Commands"
           title="Press Alt+V to show/hide this button (Voice Commands)"
-          data-oid="-avqm15"
+          data-oid="iphfghp"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -102,14 +102,14 @@ export const AppLayout: FC<AppLayoutProps> = ({ children }) => {
             fill="none"
             viewBox="0 0 24 24"
             stroke="currentColor"
-            data-oid="pc2jf-7"
+            data-oid="xqy8s0h"
           >
             <path
               strokeLinecap="round"
               strokeLinejoin="round"
               strokeWidth={2}
               d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z"
-              data-oid="agkdmct"
+              data-oid="1m4q_75"
             />
           </svg>
         </button>
@@ -122,7 +122,7 @@ export const AppLayout: FC<AppLayoutProps> = ({ children }) => {
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossOrigin="anonymous"
         referrerPolicy="no-referrer"
-        data-oid="bo.vdph"
+        data-oid="1p36l_4"
       />
     </div>
   );

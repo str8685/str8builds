@@ -5,74 +5,74 @@ const IconExample: React.FC = () => {
   return (
     <div
       className="min-h-screen bg-space-950 text-white p-8"
-      data-oid="o__7ru:"
+      data-oid="zy.o_r0"
     >
-      <h1 className="text-2xl font-bold mb-8 text-cyan-300" data-oid="u0f3md.">
+      <h1 className="text-2xl font-bold mb-8 text-cyan-300" data-oid="ve9erho">
         Help Circle Icon Examples
       </h1>
 
       <div
         className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
-        data-oid="9tend4."
+        data-oid="e.2i_g5"
       >
         {/* Basic Example */}
         <div
           className="bg-space-900 p-6 rounded-xl border border-cyan-900/30"
-          data-oid="m0o-rna"
+          data-oid="z.676mh"
         >
-          <h2 className="text-lg font-medium mb-4" data-oid="dm0riqq">
+          <h2 className="text-lg font-medium mb-4" data-oid="g8zhwqo">
             Basic Example
           </h2>
-          <div className="flex items-center gap-2" data-oid="h:ngc93">
-            <HelpCircleIcon data-oid="59ud-v2" />
-            <span data-oid="qvda43-">Default Help Icon</span>
+          <div className="flex items-center gap-2" data-oid="0ot_rz0">
+            <HelpCircleIcon data-oid="58:wwh5" />
+            <span data-oid="c10wh4r">Default Help Icon</span>
           </div>
         </div>
 
         {/* Interactive Example */}
         <div
           className="bg-space-900 p-6 rounded-xl border border-cyan-900/30"
-          data-oid="q8947kf"
+          data-oid=".cfs:kb"
         >
-          <h2 className="text-lg font-medium mb-4" data-oid="s8rgz--">
+          <h2 className="text-lg font-medium mb-4" data-oid="5tu8yjr">
             Interactive Example
           </h2>
-          <div className="flex flex-col gap-4" data-oid="4tdwau.">
-            <div className="flex items-center gap-2" data-oid="cwvp-t0">
+          <div className="flex flex-col gap-4" data-oid="3atwiq4">
+            <div className="flex items-center gap-2" data-oid="t7ejfio">
               <HelpCircleIcon
                 onClick={() => alert("Help icon clicked!")}
                 color="#4FEBFF"
-                data-oid="edqmck3"
+                data-oid="umwy-ri"
               />
 
-              <span data-oid="fjiqfuo">Click for alert</span>
+              <span data-oid="btd:1.z">Click for alert</span>
             </div>
 
             {/* Click counter example */}
-            <ClickCounter data-oid="c5gv4y-" />
+            <ClickCounter data-oid="nsy4::-" />
           </div>
         </div>
 
         {/* Color Variants Example */}
         <div
           className="bg-space-900 p-6 rounded-xl border border-cyan-900/30"
-          data-oid=".iee_tz"
+          data-oid="w8tayel"
         >
-          <h2 className="text-lg font-medium mb-4" data-oid="ieab9d6">
+          <h2 className="text-lg font-medium mb-4" data-oid="kuplj:.">
             Color Variants
           </h2>
-          <div className="flex flex-col gap-4" data-oid="q4jpii:">
-            <div className="flex items-center gap-2" data-oid="a9f832r">
-              <HelpCircleIcon color="#4FEBFF" data-oid="db-gudy" />
-              <span data-oid="jbf5:92">Cyan</span>
+          <div className="flex flex-col gap-4" data-oid="xu7y:o1">
+            <div className="flex items-center gap-2" data-oid="fg3vkw-">
+              <HelpCircleIcon color="#4FEBFF" data-oid="3z6knm2" />
+              <span data-oid="ox3iwuh">Cyan</span>
             </div>
-            <div className="flex items-center gap-2" data-oid="n_k_cah">
-              <HelpCircleIcon color="#6366f1" data-oid="kebyqlp" />
-              <span data-oid="d48nkm-">Indigo</span>
+            <div className="flex items-center gap-2" data-oid=".8-bjdf">
+              <HelpCircleIcon color="#6366f1" data-oid="vynosx." />
+              <span data-oid="db8e.82">Indigo</span>
             </div>
-            <div className="flex items-center gap-2" data-oid="2w44tun">
-              <HelpCircleIcon color="#F471B5" data-oid="rcdnbv." />
-              <span data-oid=".5vj2.8">Pink</span>
+            <div className="flex items-center gap-2" data-oid="nq_mch:">
+              <HelpCircleIcon color="#F471B5" data-oid="oyqcqek" />
+              <span data-oid="v76kgm4">Pink</span>
             </div>
           </div>
         </div>
@@ -80,67 +80,67 @@ const IconExample: React.FC = () => {
         {/* Sizes Example */}
         <div
           className="bg-space-900 p-6 rounded-xl border border-cyan-900/30"
-          data-oid=":v2id6c"
+          data-oid="e9zzt.c"
         >
-          <h2 className="text-lg font-medium mb-4" data-oid="b1d3_pg">
+          <h2 className="text-lg font-medium mb-4" data-oid="8yyjs4q">
             Different Sizes
           </h2>
-          <div className="flex items-center gap-4" data-oid="v7ezsys">
-            <HelpCircleIcon size={16} data-oid="6.r0lys" />
-            <HelpCircleIcon size={24} data-oid="i_ohv2j" />
-            <HelpCircleIcon size={32} data-oid="n4qe-ik" />
-            <HelpCircleIcon size={40} data-oid="sczgs89" />
+          <div className="flex items-center gap-4" data-oid="0bjmsjh">
+            <HelpCircleIcon size={16} data-oid="q9.vguw" />
+            <HelpCircleIcon size={24} data-oid="9t8f_30" />
+            <HelpCircleIcon size={32} data-oid="atwq:77" />
+            <HelpCircleIcon size={40} data-oid="7i23zyh" />
           </div>
         </div>
 
         {/* Interactive Icons */}
         <div
           className="bg-space-900 p-6 rounded-xl border border-cyan-900/30"
-          data-oid="b-7ua09"
+          data-oid="u97w6ho"
         >
-          <h2 className="text-lg font-medium mb-4" data-oid="ma0g8pu">
+          <h2 className="text-lg font-medium mb-4" data-oid="uoc_0gm">
             Click Test
           </h2>
-          <div className="flex flex-col gap-4" data-oid="h5d4nah">
-            <div className="flex items-center gap-4" data-oid="idvqqv5">
+          <div className="flex flex-col gap-4" data-oid=".p03:47">
+            <div className="flex items-center gap-4" data-oid="k:ejih4">
               <HelpCircleIcon
                 onClick={() => alert("Icon 1 clicked!")}
                 color="#4FEBFF"
                 size={24}
-                data-oid="ppu.7zw"
+                data-oid="lo497fi"
               />
 
               <HelpCircleIcon
                 onClick={() => alert("Icon 2 clicked!")}
                 color="#6366f1"
                 size={24}
-                data-oid="eivfwca"
+                data-oid="x72ve2j"
               />
 
               <HelpCircleIcon
                 onClick={() => alert("Icon 3 clicked!")}
                 color="#F471B5"
                 size={24}
-                data-oid="zt-qbwo"
+                data-oid="r7qgbt8"
               />
             </div>
-            <div className="text-xs text-gray-400 mt-2" data-oid="nf1sgjc">
+            <div className="text-xs text-gray-400 mt-2" data-oid="1hx7h_9">
               Click any icon above to trigger an alert
             </div>
 
             {/* Guaranteed clickable fallback */}
             <div
               className="mt-4 p-3 bg-space-800 rounded-lg"
-              data-oid="kafodc1"
+              data-oid="i2e2hc8"
             >
-              <h3 className="text-sm font-medium mb-2" data-oid="hfjh1br">
+              <h3 className="text-sm font-medium mb-2" data-oid="zh05t3:">
                 Fallback Click Test
               </h3>
-              <div className="flex items-center gap-2" data-oid="wl3wnkt">
+              <div className="flex items-center gap-2" data-oid="o0kdd2t">
                 <button
                   className="px-3 py-1 bg-cyan-900/50 hover:bg-cyan-800/50 rounded-md text-sm flex items-center gap-2"
                   onClick={() => alert("Regular HTML button clicked!")}
-                  data-oid="szli5sh"
+                  data-oid="ozmwoua"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -152,16 +152,16 @@ const IconExample: React.FC = () => {
                     strokeWidth="2"
                     strokeLinecap="round"
                     strokeLinejoin="round"
-                    data-oid="9pz.xvo"
+                    data-oid="a95o_h5"
                   >
-                    <circle cx="12" cy="12" r="10" data-oid="zg.oi91"></circle>
+                    <circle cx="12" cy="12" r="10" data-oid="p2v8jo9"></circle>
                     <path
                       d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"
-                      data-oid="_ntqrje"
+                      data-oid="6a6--wt"
                     ></path>
-                    <path d="M12 17h.01" data-oid="wycl-o_"></path>
+                    <path d="M12 17h.01" data-oid="y0o45f7"></path>
                   </svg>
-                  <span data-oid="r.b5os6">Plain HTML Button</span>
+                  <span data-oid=".g.2caq">Plain HTML Button</span>
                 </button>
               </div>
             </div>
@@ -171,19 +171,19 @@ const IconExample: React.FC = () => {
         {/* Advanced Example */}
         <div
           className="bg-space-900 p-6 rounded-xl border border-cyan-900/30"
-          data-oid="hbcczct"
+          data-oid="o9nn-j4"
         >
-          <h2 className="text-lg font-medium mb-4" data-oid=".xx1paw">
+          <h2 className="text-lg font-medium mb-4" data-oid="he41os1">
             In Button Example
           </h2>
-          <div className="flex items-center gap-2" data-oid="kmm3vf8">
+          <div className="flex items-center gap-2" data-oid="8886rjq">
             <button
               className="bg-gradient-to-r from-cyan-900/50 to-blue-900/50 hover:from-cyan-800/50 hover:to-blue-800/50 px-4 py-2 rounded-lg flex items-center gap-2 transition-all duration-300 border border-cyan-700/30"
               onClick={() => alert("Button with icon clicked!")}
-              data-oid="id0s0hn"
+              data-oid="l:wulok"
             >
-              <span data-oid="_u8itdy">Need Help?</span>
-              <HelpCircleIcon size={20} data-oid="_e18hnd" />
+              <span data-oid=".i-.kt9">Need Help?</span>
+              <HelpCircleIcon size={20} data-oid="0ofl319" />
             </button>
           </div>
         </div>
@@ -199,24 +199,24 @@ const ClickCounter: React.FC = () => {
   return (
     <div
       className="flex items-center gap-2 mt-4 p-3 bg-space-800 rounded-lg"
-      data-oid="jlj7w7e"
+      data-oid="v1oxr8r"
     >
-      <div className="flex items-center gap-2" data-oid="7ycm.zy">
+      <div className="flex items-center gap-2" data-oid="m:x_kr0">
         <HelpCircleIcon
           onClick={() => setCount((prev) => prev + 1)}
           color="#F471B5"
           size={24}
-          data-oid="aw7fi3g"
+          data-oid="msjf2m6"
         />
 
-        <div className="flex flex-col" data-oid=".4ue4:o">
-          <span data-oid="stcj8lh">
+        <div className="flex flex-col" data-oid="ieooxjo">
+          <span data-oid="m534ykg">
             Click counter:{" "}
-            <strong className="text-cyan-300" data-oid="29siy9j">
+            <strong className="text-cyan-300" data-oid="_vbasq:">
               {count}
             </strong>
           </span>
-          <span className="text-xs text-gray-400" data-oid="_:rpf8h">
+          <span className="text-xs text-gray-400" data-oid="f9hu4.v">
             Click the icon to increment
           </span>
         </div>
@@ -226,7 +226,7 @@ const ClickCounter: React.FC = () => {
       <button
         className="ml-auto px-3 py-1 bg-cyan-900/50 hover:bg-cyan-800/50 rounded-md text-sm"
         onClick={() => setCount(0)}
-        data-oid="h1n1z3i"
+        data-oid="i77-v8d"
       >
         Reset
       </button>

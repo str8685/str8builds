@@ -127,45 +127,45 @@ const SettingsDrawer: FC<SettingsDrawerProps> = ({ isOpen, onClose }) => {
   if (!isOpen) return null;
 
   return (
-    <div data-oid="h2ulb.f">
+    <div data-oid="0km4ncc">
       {/* Backdrop */}
       <div
         className="fixed inset-0 bg-black bg-opacity-50 z-40"
         onClick={onClose}
-        data-oid="30l360d"
+        data-oid="no8slz:"
       ></div>
 
       {/* Drawer */}
       <div
         className="fixed right-0 top-0 bottom-0 w-full md:w-96 bg-space-900 z-50 shadow-xl border-l border-white/10 p-6 transform transition-transform duration-300 ease-in-out overflow-y-auto"
-        data-oid="28p4fx2"
+        data-oid="fwurf:_"
       >
         {/* Header */}
         <div
           className="flex justify-between items-center mb-6"
-          data-oid="f-:ca23"
+          data-oid="wnokbov"
         >
-          <h2 className="text-2xl font-space text-cyan" data-oid="c-d83ae">
+          <h2 className="text-2xl font-space text-cyan" data-oid="zpl2tmc">
             Settings
           </h2>
           <button
             className="text-gray-400 hover:text-white text-xl"
             onClick={onClose}
-            data-oid="q1mjz.g"
+            data-oid="ry1:wjr"
           >
-            <i className="fas fa-times" data-oid=".ejjf4d"></i>
+            <i className="fas fa-times" data-oid="_88s:b0"></i>
           </button>
         </div>
 
         {/* Settings Content */}
-        <div className="space-y-6" data-oid="fdz7lan">
+        <div className="space-y-6" data-oid="gj-sjv6">
           {/* Hourly Rate */}
-          <div className="glass-card p-4 rounded-lg" data-oid="dmsyun0">
-            <h3 className="text-cyan font-medium mb-3" data-oid="wbsz93_">
+          <div className="glass-card p-4 rounded-lg" data-oid="q4etl8a">
+            <h3 className="text-cyan font-medium mb-3" data-oid="cnvh2fp">
               Default Hourly Rate
             </h3>
-            <div className="flex items-center" data-oid="v0uuj47">
-              <span className="text-gray-300 mr-2" data-oid="97g9vem">
+            <div className="flex items-center" data-oid="ps4xil_">
+              <span className="text-gray-300 mr-2" data-oid="ivydmdm">
                 $
               </span>
               <input
@@ -175,66 +175,66 @@ const SettingsDrawer: FC<SettingsDrawerProps> = ({ isOpen, onClose }) => {
                 className="bg-space-800 text-white border border-gray-700 rounded px-3 py-2 w-full"
                 min="0"
                 step="0.01"
-                data-oid=".kwiab0"
+                data-oid="17-u8bq"
               />
 
-              <span className="text-gray-300 ml-2" data-oid="3._ri0d">
+              <span className="text-gray-300 ml-2" data-oid="vtjsvpv">
                 NZD
               </span>
             </div>
-            <p className="text-gray-400 text-sm mt-2" data-oid="2gcb6kg">
+            <p className="text-gray-400 text-sm mt-2" data-oid="9rqsm7b">
               This hourly rate will be used by default for new projects and time
               entries.
             </p>
           </div>
 
           {/* Theme Toggle */}
-          <div className="glass-card p-4 rounded-lg" data-oid="piw7f.0">
-            <h3 className="text-cyan font-medium mb-3" data-oid="kwywnl2">
+          <div className="glass-card p-4 rounded-lg" data-oid="tuls5at">
+            <h3 className="text-cyan font-medium mb-3" data-oid="gu1k_k1">
               Theme
             </h3>
             <div
               className="flex items-center justify-between"
-              data-oid="t1yqww1"
+              data-oid="2.5m.73"
             >
-              <span className="text-gray-300" data-oid="yrjkyuv">
+              <span className="text-gray-300" data-oid="18:176s">
                 Dark Mode
               </span>
               <label
                 className="relative inline-flex items-center cursor-pointer"
-                data-oid="6eafxh1"
+                data-oid="h-6rxrf"
               >
                 <input
                   type="checkbox"
                   checked={settings.darkMode}
                   onChange={(e) => updateSetting("darkMode", e.target.checked)}
                   className="sr-only peer"
-                  data-oid="fop.4k0"
+                  data-oid="dtffjy8"
                 />
 
                 <div
                   className="w-11 h-6 bg-gray-700 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-cyan"
-                  data-oid="02mc:do"
+                  data-oid="s7sxw7r"
                 ></div>
               </label>
             </div>
           </div>
 
           {/* Notifications */}
-          <div className="glass-card p-4 rounded-lg" data-oid="6fjhrzi">
-            <h3 className="text-cyan font-medium mb-3" data-oid="ihgbs7p">
+          <div className="glass-card p-4 rounded-lg" data-oid="a:_68pr">
+            <h3 className="text-cyan font-medium mb-3" data-oid="xy2-1:i">
               Notifications
             </h3>
             <div
               className="flex items-center justify-between"
-              data-oid=".nk79lm"
+              data-oid="p9uep.."
             >
-              <span className="text-gray-300" data-oid="sqmqoli">
+              <span className="text-gray-300" data-oid="q3j5493">
                 Enable Notifications
               </span>
               <label
                 className="relative inline-flex items-center cursor-pointer"
-                data-oid="hg76i56"
+                data-oid="m98o9tv"
               >
                 <input
                   type="checkbox"
@@ -243,34 +243,34 @@ const SettingsDrawer: FC<SettingsDrawerProps> = ({ isOpen, onClose }) => {
                     updateSetting("notifications", e.target.checked)
                   }
                   className="sr-only peer"
-                  data-oid="6:6n_1m"
+                  data-oid="rjo9hmy"
                 />
 
                 <div
                   className="w-11 h-6 bg-gray-700 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-cyan"
-                  data-oid="bi2hbwb"
+                  data-oid="2o4pp5r"
                 ></div>
               </label>
             </div>
           </div>
 
           {/* Unit System */}
-          <div className="glass-card p-4 rounded-lg" data-oid="i7d-n:r">
-            <h3 className="text-cyan font-medium mb-3" data-oid="m-_507g">
+          <div className="glass-card p-4 rounded-lg" data-oid="i47089x">
+            <h3 className="text-cyan font-medium mb-3" data-oid="xxtmfx8">
               Unit System
             </h3>
-            <div className="grid grid-cols-2 gap-2" data-oid=".tjj.td">
+            <div className="grid grid-cols-2 gap-2" data-oid="wwbdnx7">
               <button
                 className={`py-2 px-4 rounded-md text-center ${settings.unitSystem === "metric" ? "bg-purple-800 text-white" : "bg-space-800 text-gray-400"}`}
                 onClick={() => updateSetting("unitSystem", "metric")}
-                data-oid="i0kmbsx"
+                data-oid="bvh1has"
               >
                 Metric (mm, cm, m)
               </button>
               <button
                 className={`py-2 px-4 rounded-md text-center ${settings.unitSystem === "imperial" ? "bg-purple-800 text-white" : "bg-space-800 text-gray-400"}`}
                 onClick={() => updateSetting("unitSystem", "imperial")}
-                data-oid="j9lxeis"
+                data-oid="ochjx6l"
               >
                 Imperial (in, ft)
               </button>
@@ -278,46 +278,46 @@ const SettingsDrawer: FC<SettingsDrawerProps> = ({ isOpen, onClose }) => {
           </div>
 
           {/* Auto Sync */}
-          <div className="glass-card p-4 rounded-lg" data-oid="tzr6-sz">
-            <h3 className="text-cyan font-medium mb-3" data-oid="pka9obn">
+          <div className="glass-card p-4 rounded-lg" data-oid="6k4cq8e">
+            <h3 className="text-cyan font-medium mb-3" data-oid="vkrak17">
               Sync
             </h3>
             <div
               className="flex items-center justify-between"
-              data-oid="lfscx::"
+              data-oid="2ruaj_a"
             >
-              <span className="text-gray-300" data-oid="oqbww-k">
+              <span className="text-gray-300" data-oid="wve.4lt">
                 Auto-sync Data
               </span>
               <label
                 className="relative inline-flex items-center cursor-pointer"
-                data-oid="_imer-t"
+                data-oid="v_p6xdq"
               >
                 <input
                   type="checkbox"
                   checked={settings.autoSync}
                   onChange={(e) => updateSetting("autoSync", e.target.checked)}
                   className="sr-only peer"
-                  data-oid="5hp_mxv"
+                  data-oid="4r0cn:."
                 />
 
                 <div
                   className="w-11 h-6 bg-gray-700 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-cyan"
-                  data-oid=".dna:jx"
+                  data-oid="15901c7"
                 ></div>
               </label>
             </div>
-            <p className="text-gray-400 text-sm mt-2" data-oid="k5nm4df">
+            <p className="text-gray-400 text-sm mt-2" data-oid="vwha2xg">
               Automatically sync your data to the cloud when changes are made.
             </p>
           </div>
 
           {/* Action Buttons */}
-          <div className="flex space-x-3 mt-6" data-oid="o27g0id">
+          <div className="flex space-x-3 mt-6" data-oid="hgnjw.z">
             <button
               className="flex-1 bg-purple-900 text-cyan py-2 rounded-lg hover:bg-purple-800 btn-glow btn-glow-cyan"
               onClick={onClose}
-              data-oid="ih2ctfr"
+              data-oid="xg:.m5r"
             >
               Save & Close
             </button>

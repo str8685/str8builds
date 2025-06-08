@@ -148,83 +148,83 @@ const RecentTimeEntries: FC = () => {
   return (
     <GlassCard
       className="p-5 overflow-hidden neon-border-purple"
-      data-oid="g5eoxmt"
+      data-oid="nnell:8"
     >
       <div
         className="flex justify-between items-center mb-4"
-        data-oid="ekorfqf"
+        data-oid="-2wqqhq"
       >
-        <h3 className="text-lg font-space text-purple-400" data-oid="qjkvk3g">
+        <h3 className="text-lg font-space text-purple-400" data-oid=".duuys1">
           Recent Time Entries
         </h3>
         <button
           className="text-xs bg-space-800 hover:bg-space-700 text-white px-3 py-1 rounded"
           onClick={() => fetchTimeEntries(true)}
-          data-oid="ggcox5v"
+          data-oid="u1o61hn"
         >
-          <i className="fas fa-refresh mr-1" data-oid=".pwnjrk"></i> Refresh
+          <i className="fas fa-refresh mr-1" data-oid="tsq103d"></i> Refresh
         </button>
       </div>
 
       {isLoading ? (
-        <div className="flex justify-center py-8" data-oid="xil:drx">
+        <div className="flex justify-center py-8" data-oid="-e:fuci">
           <div
             className="animate-spin rounded-full h-8 w-8 border-t-2 border-b-2 border-purple-400"
-            data-oid="e4f_0ly"
+            data-oid="kuo_wyy"
           ></div>
         </div>
       ) : timeEntries.length > 0 ? (
-        <div className="space-y-3" data-oid="6d_r3jv">
+        <div className="space-y-3" data-oid="ttn253s">
           {timeEntries.map((entry, index) => (
             <div
               key={entry.id}
               className={`bg-space-900/80 rounded-lg p-3 border border-space-800 relative ${
                 index === 0 ? "active-job-card" : ""
               }`}
-              data-oid="1chh_iq"
+              data-oid="v9omwo7"
             >
               <div
                 className="flex flex-col md:flex-row justify-between"
-                data-oid="1rjl.84"
+                data-oid="245..o6"
               >
-                <div data-oid="or6vz4q">
-                  <div className="flex items-center" data-oid="irpm6yz">
+                <div data-oid="mfgxgbo">
+                  <div className="flex items-center" data-oid="x4tttue">
                     {index === 0 && (
                       <span
                         className="h-2 w-2 rounded-full bg-green-400 mr-1.5 animate-pulse"
-                        data-oid="s83c0kd"
+                        data-oid="q29m_cq"
                       ></span>
                     )}
-                    <h4 className="text-white font-medium" data-oid="4m9nbx-">
+                    <h4 className="text-white font-medium" data-oid="38ovlhi">
                       {entry.projectName || `Project #${entry.projectId}`}
                     </h4>
                   </div>
-                  <p className="text-gray-400 text-xs" data-oid="djt8m0o">
+                  <p className="text-gray-400 text-xs" data-oid="1j_5vgl">
                     {entry.clientName || "Client"}
                   </p>
                   <div
                     className="flex items-center mt-1 text-xs"
-                    data-oid="5:4zf2y"
+                    data-oid="__jrl0g"
                   >
-                    <span className="text-purple-300 mr-3" data-oid="4ajh8nh">
-                      <i className="fas fa-clock mr-1" data-oid="gtz1ps9"></i>
+                    <span className="text-purple-300 mr-3" data-oid="vlwndl2">
+                      <i className="fas fa-clock mr-1" data-oid="q8xbzw9"></i>
                       {formatDuration(entry.duration)}
                     </span>
-                    <span className="text-gray-400" data-oid="mtx:5:e">
+                    <span className="text-gray-400" data-oid="et5wuep">
                       <i
                         className="fas fa-calendar-alt mr-1"
-                        data-oid="ab--vq7"
+                        data-oid="a40r43n"
                       ></i>
                       {formatDate(entry.startTime)}
                     </span>
                   </div>
                 </div>
 
-                <div className="mt-2 md:mt-0 text-right" data-oid="rtq7y1a">
-                  <div className="text-teal font-medium" data-oid=":w5uw21">
+                <div className="mt-2 md:mt-0 text-right" data-oid="x4ukaco">
+                  <div className="text-teal font-medium" data-oid="2cfm1j_">
                     ${calculateCost(entry.duration, entry.hourlyRate)}
                   </div>
-                  <div className="text-gray-400 text-xs" data-oid="eailhgh">
+                  <div className="text-gray-400 text-xs" data-oid=":2vitst">
                     @${parseFloat(entry.hourlyRate).toFixed(2)}/hr
                   </div>
                 </div>
@@ -233,7 +233,7 @@ const RecentTimeEntries: FC = () => {
               {entry.notes && (
                 <div
                   className="mt-2 text-xs text-gray-400 border-t border-gray-800 pt-2"
-                  data-oid="f10koec"
+                  data-oid="ctzcvzp"
                 >
                   {entry.notes}
                 </div>
@@ -244,12 +244,12 @@ const RecentTimeEntries: FC = () => {
       ) : (
         <div
           className="bg-space-900/80 rounded-lg p-4 text-center"
-          data-oid="hbhlgl1"
+          data-oid="q2d6f3d"
         >
-          <p className="text-gray-400" data-oid="4:d-w6b">
+          <p className="text-gray-400" data-oid="35wmr2r">
             No time entries yet.
           </p>
-          <p className="text-xs text-gray-500 mt-1" data-oid="l-dq.2b">
+          <p className="text-xs text-gray-500 mt-1" data-oid="9twuop5">
             Use the timer above to track your time and save it.
           </p>
         </div>

@@ -204,32 +204,32 @@ const ProjectCamModal: FC<ProjectCamModalProps> = ({ open, onOpenChange }) => {
   };
 
   return (
-    <Dialog open={open} onOpenChange={onOpenChange} data-oid="gqot_rf">
+    <Dialog open={open} onOpenChange={onOpenChange} data-oid="fijd:ra">
       <DialogContent
         className="sm:max-w-lg bg-gradient-to-br from-space-900 via-space-950 to-space-900 border border-cyan-800/30 text-white shadow-glow-lg overflow-hidden p-0"
-        data-oid=":8eg._o"
+        data-oid="kc:4fk9"
       >
         {/* Animated background elements */}
-        <div className="absolute inset-0 overflow-hidden" data-oid="3tefl1-">
+        <div className="absolute inset-0 overflow-hidden" data-oid="9s7jm77">
           <div
             className="absolute -inset-[100px] bg-cyan-800/5 blur-3xl rounded-full top-0 right-0 z-0"
-            data-oid="o0cldce"
+            data-oid="726zr.2"
           ></div>
           <div
             className="absolute -inset-[100px] bg-blue-800/5 blur-3xl rounded-full bottom-0 left-0 z-0"
-            data-oid="jek89ak"
+            data-oid="tu24h-g"
           ></div>
           <div
             className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-cyan-500/20 to-transparent"
-            data-oid=":cq1j8n"
+            data-oid="xzw:qo5"
           ></div>
           <div
             className="absolute bottom-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-cyan-500/20 to-transparent"
-            data-oid="eeczhi1"
+            data-oid="4rmwj1_"
           ></div>
           <div
             className="absolute grid grid-cols-6 grid-rows-6 h-full w-full"
-            data-oid="nqyjj-b"
+            data-oid="6vmvry9"
           >
             {Array.from({ length: 10 }).map((_, i) => (
               <motion.div
@@ -249,37 +249,37 @@ const ProjectCamModal: FC<ProjectCamModalProps> = ({ open, onOpenChange }) => {
                   repeat: Infinity,
                   ease: "easeInOut",
                 }}
-                data-oid="x-b4k-i"
+                data-oid=":30xbsh"
               />
             ))}
           </div>
         </div>
 
-        <div className="relative z-10 p-6" data-oid="_tmcr:2">
-          <DialogHeader className="mb-4" data-oid="i-2e3_-">
+        <div className="relative z-10 p-6" data-oid="slewq5v">
+          <DialogHeader className="mb-4" data-oid="f:o9vx_">
             <motion.div
               initial={{ x: -20, opacity: 0 }}
               animate={{ x: 0, opacity: 1 }}
               transition={{ duration: 0.3 }}
-              data-oid="inkvy0d"
+              data-oid=".em216x"
             >
               <DialogTitle
                 className="flex items-center text-xl font-space text-cyan-400 tracking-wide"
-                data-oid="4d-q6x5"
+                data-oid="tbwq7a1"
               >
                 <div
                   className="flex items-center justify-center h-8 w-8 rounded-full bg-cyan-900/50 mr-3"
-                  data-oid="j:_mppt"
+                  data-oid="i-n:2:l"
                 >
-                  <i className="fas fa-camera" data-oid="8fl9m8r"></i>
+                  <i className="fas fa-camera" data-oid="6q6eiol"></i>
                 </div>
-                <span data-oid="m-spd3i">Project Camera</span>
+                <span data-oid="ew4nbp:">Project Camera</span>
               </DialogTitle>
             </motion.div>
           </DialogHeader>
 
-          <div className="space-y-6" data-oid="rtyelkv">
-            <AnimatePresence mode="wait" data-oid="4its5s9">
+          <div className="space-y-6" data-oid="1-1v:4n">
+            <AnimatePresence mode="wait" data-oid="9rjg:xp">
               {error ? (
                 <motion.div
                   key="error"
@@ -287,18 +287,18 @@ const ProjectCamModal: FC<ProjectCamModalProps> = ({ open, onOpenChange }) => {
                   animate={{ opacity: 1, y: 0 }}
                   exit={{ opacity: 0, y: -10 }}
                   className="bg-gradient-to-r from-red-900/40 to-red-950/40 border border-red-700/50 rounded-xl p-4 text-sm shadow-lg flex items-center"
-                  data-oid="j6xcql5"
+                  data-oid="x4.3z0x"
                 >
                   <div
                     className="bg-red-700/30 h-8 w-8 rounded-full flex items-center justify-center mr-3 flex-shrink-0"
-                    data-oid="9u1t0s5"
+                    data-oid=":7ugp2o"
                   >
                     <i
                       className="fas fa-exclamation-triangle"
-                      data-oid=":op.ua8"
+                      data-oid="hw6gond"
                     ></i>
                   </div>
-                  <p data-oid="l7e1tvc">{error}</p>
+                  <p data-oid="re3ri5z">{error}</p>
                 </motion.div>
               ) : loading ? (
                 <motion.div
@@ -307,28 +307,28 @@ const ProjectCamModal: FC<ProjectCamModalProps> = ({ open, onOpenChange }) => {
                   animate={{ opacity: 1 }}
                   exit={{ opacity: 0 }}
                   className="h-[350px] flex items-center justify-center bg-gradient-to-b from-space-800/80 to-space-900/80 rounded-xl backdrop-blur-sm border border-space-700/30 shadow-inner"
-                  data-oid=".f9hmbt"
+                  data-oid="22-243a"
                 >
                   <div
                     className="flex flex-col items-center"
-                    data-oid="y9-jr93"
+                    data-oid="_91dxam"
                   >
-                    <div className="relative" data-oid="581sjka">
+                    <div className="relative" data-oid="y4.3i:4">
                       <div
                         className="absolute inset-0 rounded-full animate-ping bg-cyan-500/10"
-                        data-oid="achh1c5"
+                        data-oid="-ngmiet"
                       ></div>
                       <div
                         className="animate-spin text-cyan-400 text-2xl mb-3 drop-shadow-glow-sm"
-                        data-oid="7kqmxks"
+                        data-oid="l1xlvmt"
                       >
                         <i
                           className="fas fa-circle-notch"
-                          data-oid="-1.62i8"
+                          data-oid="fznwrei"
                         ></i>
                       </div>
                     </div>
-                    <p className="text-sm text-gray-300" data-oid="5ntyqa4">
+                    <p className="text-sm text-gray-300" data-oid="1q8wnpq">
                       Accessing camera...
                     </p>
                   </div>
@@ -340,35 +340,35 @@ const ProjectCamModal: FC<ProjectCamModalProps> = ({ open, onOpenChange }) => {
                   animate={{ opacity: 1, scale: 1 }}
                   exit={{ opacity: 0 }}
                   className="space-y-4"
-                  data-oid="z.s5d1d"
+                  data-oid="tm5e4hm"
                 >
                   <div
                     className="relative rounded-xl overflow-hidden shadow-2xl border border-space-700/50"
-                    data-oid="d._1pm_"
+                    data-oid="f-cj3e:"
                   >
                     <div
                       className="absolute inset-0 bg-gradient-to-t from-space-950/80 via-transparent to-transparent z-10 pointer-events-none"
-                      data-oid="729yfui"
+                      data-oid="ev:bvoy"
                     ></div>
                     <img
                       src={capturedImage}
                       alt="Captured project"
                       className="max-h-[250px] w-full object-contain bg-gradient-to-b from-space-800 to-space-900"
-                      data-oid="o.t1ogq"
+                      data-oid="5stjbsi"
                     />
 
                     <div
                       className="absolute top-3 right-3 z-20"
-                      data-oid="ioxtfy2"
+                      data-oid="diq2o9_"
                     >
                       <Button
                         variant="outline"
                         size="sm"
                         className="bg-space-800/90 hover:bg-space-700/90 text-white border-space-600/50 rounded-full h-9 w-9 p-0 shadow-lg"
                         onClick={() => setCapturedImage(null)}
-                        data-oid="wsjrxh-"
+                        data-oid="o:veaoa"
                       >
-                        <i className="fas fa-redo" data-oid="y-nolx."></i>
+                        <i className="fas fa-redo" data-oid="30ejh1f"></i>
                       </Button>
                     </div>
                   </div>
@@ -376,46 +376,46 @@ const ProjectCamModal: FC<ProjectCamModalProps> = ({ open, onOpenChange }) => {
                   {/* Project Photo Details Form */}
                   <div
                     className="space-y-3 bg-space-900/50 p-4 rounded-xl border border-space-700/30"
-                    data-oid=":-d.-kc"
+                    data-oid="1zyy0s5"
                   >
                     <h3
                       className="text-sm font-medium text-cyan-400"
-                      data-oid="cw5.lqz"
+                      data-oid="qe3g.d-"
                     >
                       Photo Details
                     </h3>
 
-                    <div className="space-y-2" data-oid="0sl:y7i">
+                    <div className="space-y-2" data-oid="3a-voei">
                       <Label
                         htmlFor="project"
                         className="text-gray-300 text-sm"
-                        data-oid="svym:1g"
+                        data-oid="5awmqfh"
                       >
                         Project
                       </Label>
                       <Select
                         value={selectedProjectId}
                         onValueChange={setSelectedProjectId}
-                        data-oid="jyf:qyy"
+                        data-oid="8p.8qy9"
                       >
                         <SelectTrigger
                           className="bg-space-800 border-space-700 text-white"
-                          data-oid="rdo9uwu"
+                          data-oid="vv2d1qu"
                         >
                           <SelectValue
                             placeholder="Select project"
-                            data-oid=":044cbc"
+                            data-oid="yllalob"
                           />
                         </SelectTrigger>
                         <SelectContent
                           className="bg-space-800 border-space-700 text-white"
-                          data-oid="e2v7s4b"
+                          data-oid="pw_zv.o"
                         >
                           {projectsLoading ? (
                             <SelectItem
                               value="loading"
                               disabled
-                              data-oid="9q5h1ae"
+                              data-oid="9kvudpf"
                             >
                               Loading projects...
                             </SelectItem>
@@ -424,7 +424,7 @@ const ProjectCamModal: FC<ProjectCamModalProps> = ({ open, onOpenChange }) => {
                               <SelectItem
                                 key={project.id}
                                 value={String(project.id)}
-                                data-oid="cpcez0w"
+                                data-oid="508fiu0"
                               >
                                 {project.name}
                               </SelectItem>
@@ -433,7 +433,7 @@ const ProjectCamModal: FC<ProjectCamModalProps> = ({ open, onOpenChange }) => {
                             <SelectItem
                               value="none"
                               disabled
-                              data-oid="92_ce25"
+                              data-oid="_h:vv7."
                             >
                               No projects available
                             </SelectItem>
@@ -442,11 +442,11 @@ const ProjectCamModal: FC<ProjectCamModalProps> = ({ open, onOpenChange }) => {
                       </Select>
                     </div>
 
-                    <div className="space-y-2" data-oid="s:b7at9">
+                    <div className="space-y-2" data-oid="dgkxpy0">
                       <Label
                         htmlFor="photoName"
                         className="text-gray-300 text-sm"
-                        data-oid="i9jbef-"
+                        data-oid="8gj_yg:"
                       >
                         Photo Name
                       </Label>
@@ -456,15 +456,15 @@ const ProjectCamModal: FC<ProjectCamModalProps> = ({ open, onOpenChange }) => {
                         onChange={(e) => setPhotoName(e.target.value)}
                         className="bg-space-800 border-space-700 text-white"
                         placeholder="Enter photo name"
-                        data-oid="6.ip4-8"
+                        data-oid="ywnn4fo"
                       />
                     </div>
 
-                    <div className="space-y-2" data-oid=":7vhwlp">
+                    <div className="space-y-2" data-oid="iue1_0-">
                       <Label
                         htmlFor="photoDescription"
                         className="text-gray-300 text-sm"
-                        data-oid="t1j.026"
+                        data-oid="6j8r3o5"
                       >
                         Description (optional)
                       </Label>
@@ -474,7 +474,7 @@ const ProjectCamModal: FC<ProjectCamModalProps> = ({ open, onOpenChange }) => {
                         onChange={(e) => setPhotoDescription(e.target.value)}
                         className="bg-space-800 border-space-700 text-white"
                         placeholder="Describe what's in this photo"
-                        data-oid="2ukx_ip"
+                        data-oid="x9zmu7."
                       />
                     </div>
                   </div>
@@ -486,56 +486,56 @@ const ProjectCamModal: FC<ProjectCamModalProps> = ({ open, onOpenChange }) => {
                   animate={{ opacity: 1 }}
                   exit={{ opacity: 0 }}
                   className="relative bg-black rounded-xl overflow-hidden shadow-2xl border border-space-700/50 aspect-video"
-                  data-oid="x:hq0j3"
+                  data-oid="8tbfv7q"
                 >
                   <video
                     ref={videoRef}
                     autoPlay
                     playsInline
                     className="w-full h-full object-cover"
-                    data-oid="1fq-vlr"
+                    data-oid="q1wi6f6"
                   />
 
                   <div
                     className="absolute inset-x-0 bottom-0 h-20 bg-gradient-to-t from-black/80 to-transparent pointer-events-none"
-                    data-oid="t4mg94o"
+                    data-oid="lqydt8m"
                   ></div>
                   <div
                     className="absolute inset-x-0 top-0 h-10 bg-gradient-to-b from-black/50 to-transparent pointer-events-none"
-                    data-oid="0h9-33m"
+                    data-oid="egx4-75"
                   ></div>
 
                   <div
                     className="absolute top-3 left-3 flex items-center space-x-2 text-white/70 text-xs"
-                    data-oid="wq:qs-e"
+                    data-oid="ntdwfji"
                   >
-                    <div className="flex items-center" data-oid="lkwbudo">
+                    <div className="flex items-center" data-oid="ojfja1e">
                       <div
                         className="h-2 w-2 rounded-full bg-red-500 animate-pulse mr-1"
-                        data-oid="lkxa771"
+                        data-oid="egjmmlh"
                       ></div>
-                      <span data-oid="ed6:f.s">REC</span>
+                      <span data-oid="owv6g_u">REC</span>
                     </div>
-                    <span data-oid="s_i1qpu">|</span>
-                    <span data-oid="i9cloq4">
+                    <span data-oid="98xhr84">|</span>
+                    <span data-oid="sf6cgp6">
                       {new Date().toLocaleTimeString()}
                     </span>
                   </div>
 
                   <div
                     className="absolute bottom-6 left-0 right-0 flex justify-center"
-                    data-oid="c_ljzqx"
+                    data-oid="la9v__7"
                   >
                     <motion.button
                       whileTap={{ scale: 0.9 }}
                       onClick={captureImage}
                       className="rounded-full h-14 w-14 bg-white/10 backdrop-blur-sm hover:bg-white/20 flex items-center justify-center p-0 border-2 border-cyan-500/80 shadow-glow-sm"
                       aria-label="Take photo"
-                      data-oid="f4y6rkt"
+                      data-oid="inanoop"
                     >
                       <div
                         className="rounded-full h-10 w-10 border-3 border-cyan-400 shadow-inner"
-                        data-oid=".35ecuy"
+                        data-oid="bxfvvc-"
                       ></div>
                     </motion.button>
                   </div>
@@ -544,43 +544,43 @@ const ProjectCamModal: FC<ProjectCamModalProps> = ({ open, onOpenChange }) => {
             </AnimatePresence>
 
             {/* Hidden canvas for image capture */}
-            <canvas ref={canvasRef} className="hidden" data-oid="x2keuv-" />
+            <canvas ref={canvasRef} className="hidden" data-oid="lxh1__2" />
           </div>
 
-          <div className="relative z-10 mt-4 px-6 pb-6" data-oid="he9o7dv">
+          <div className="relative z-10 mt-4 px-6 pb-6" data-oid="frpc3kt">
             <div
               className="flex justify-between items-center"
-              data-oid="wavmh6h"
+              data-oid="pivgkgz"
             >
               <Button
                 variant="outline"
                 onClick={() => onOpenChange(false)}
                 className="border-space-700/50 bg-space-800/50 hover:bg-space-700/70 text-gray-300 hover:text-white transition-all duration-300"
-                data-oid="b4src12"
+                data-oid="weazt1-"
               >
                 Cancel
               </Button>
 
               {capturedImage && (
-                <div className="flex gap-3" data-oid="-_jjuc8">
+                <div className="flex gap-3" data-oid="t.djp16">
                   <motion.div
                     initial={{ opacity: 0, y: 10 }}
                     animate={{ opacity: 1, y: 0 }}
                     exit={{ opacity: 0 }}
                     className="flex-grow"
-                    data-oid=":y6xciz"
+                    data-oid="hynapfg"
                   >
                     <Button
                       onClick={saveImage}
                       disabled={!selectedProjectId || saveLoading}
                       className="bg-gradient-to-r from-cyan-600 to-cyan-700 hover:from-cyan-500 hover:to-cyan-600 text-white border-none shadow-glow-sm w-full"
-                      data-oid="jyrabqa"
+                      data-oid="huj4t7:"
                     >
                       {saveLoading ? (
                         <>
                           <i
                             className="fas fa-circle-notch fa-spin mr-2"
-                            data-oid="a7o2xtj"
+                            data-oid="a15h9.3"
                           ></i>{" "}
                           Saving...
                         </>
@@ -588,7 +588,7 @@ const ProjectCamModal: FC<ProjectCamModalProps> = ({ open, onOpenChange }) => {
                         <>
                           <i
                             className="fas fa-save mr-2"
-                            data-oid="vzwrpgp"
+                            data-oid="9tk_.51"
                           ></i>{" "}
                           Save to Project
                         </>

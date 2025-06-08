@@ -87,28 +87,28 @@ const ModelViewer: FC = () => {
   return (
     <main
       className="container mx-auto px-4 py-8 models-section"
-      data-oid="ay8gfm_"
+      data-oid="57k_iqd"
     >
       <div
         className="flex justify-between items-center mb-6"
-        data-oid="0xxgqrh"
+        data-oid="hfwqjxh"
       >
         <h1
           className="text-2xl font-space font-bold text-white"
-          data-oid="m5pf9:m"
+          data-oid="y5af_7w"
         >
-          <i className="fas fa-cube mr-2" data-oid="4kbrzm6"></i>
+          <i className="fas fa-cube mr-2" data-oid="at2nl32"></i>
           3D Building Components
         </h1>
       </div>
 
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-6" data-oid="u5..f40">
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-6" data-oid="ju6vcma">
         {/* Project List */}
-        <div className="col-span-1" data-oid="tg94uz2">
-          <GlassCard className="p-4 h-full" data-oid="yhmzud9">
+        <div className="col-span-1" data-oid="1etf290">
+          <GlassCard className="p-4 h-full" data-oid="tgykxkm">
             <h2
               className="text-lg font-space text-white mb-3"
-              data-oid="8yk34di"
+              data-oid="6v.n-jh"
             >
               Building Projects
             </h2>
@@ -116,26 +116,26 @@ const ModelViewer: FC = () => {
             {isLoading ? (
               <div
                 className="h-40 flex justify-center items-center"
-                data-oid="0mke2kn"
+                data-oid="x2q133f"
               >
                 <div
                   className="animate-spin rounded-full h-8 w-8 border-t-2 border-b-2 border-cyan"
-                  data-oid="yg93:16"
+                  data-oid="bgjf2kl"
                 ></div>
               </div>
             ) : (
-              <div className="space-y-3" data-oid="r_bl5x4">
+              <div className="space-y-3" data-oid="rgs2cik">
                 {projects.length === 0 ? (
                   <div
                     className="bg-space-800/60 p-6 rounded-lg text-center"
-                    data-oid="7synxg7"
+                    data-oid="gcq89qa"
                   >
-                    <p className="text-gray-400" data-oid="q:mw821">
+                    <p className="text-gray-400" data-oid="fc.99qu">
                       No projects available
                     </p>
                     <p
                       className="text-xs text-gray-500 mt-2"
-                      data-oid="7uzw0-9"
+                      data-oid="_tmlsof"
                     >
                       Projects will appear here when added
                     </p>
@@ -150,27 +150,27 @@ const ModelViewer: FC = () => {
                           : "border-l-4 border-transparent hover:border-cyan/50"
                       }`}
                       onClick={() => handleSelectProject(project)}
-                      data-oid="l7ocr5u"
+                      data-oid="_l7lwn1"
                     >
-                      <h3 className="text-white font-medium" data-oid="ccs4ti:">
+                      <h3 className="text-white font-medium" data-oid="c8::2of">
                         {project.name}
                       </h3>
                       <p
                         className="text-gray-400 text-xs mt-1"
-                        data-oid="xks7anx"
+                        data-oid="0c6tm6c"
                       >
                         {project.description}
                       </p>
                       <div
                         className="flex justify-between items-center mt-2"
-                        data-oid="6wpa-4_"
+                        data-oid="lm8ct72"
                       >
-                        <span className="text-xs text-cyan" data-oid="aiu.suf">
+                        <span className="text-xs text-cyan" data-oid="95xz1py">
                           {project.components.length} components
                         </span>
                         <span
                           className="text-xs bg-space-700 rounded-full px-2 py-0.5"
-                          data-oid="zws74us"
+                          data-oid="_0uu8wy"
                         >
                           {project.id}
                         </span>
@@ -184,31 +184,31 @@ const ModelViewer: FC = () => {
         </div>
 
         {/* Component Viewer */}
-        <div className="col-span-1 lg:col-span-2" data-oid="afwbxrv">
+        <div className="col-span-1 lg:col-span-2" data-oid="4v3pmci">
           {selectedProject ? (
-            <div className="grid grid-cols-1 gap-6" data-oid="kf9jysi">
+            <div className="grid grid-cols-1 gap-6" data-oid="_kn6-1x">
               {/* Project Details */}
-              <GlassCard className="p-4" data-oid="hberae:">
+              <GlassCard className="p-4" data-oid="sq10-b7">
                 <div
                   className="flex justify-between items-start"
-                  data-oid="n429.:q"
+                  data-oid="0lp0vwo"
                 >
-                  <div data-oid="m65sdjf">
+                  <div data-oid="8j-wtso">
                     <h2
                       className="text-lg font-space text-white"
-                      data-oid="zt.w2d6"
+                      data-oid="wugr7ro"
                     >
                       {selectedProject.name}
                     </h2>
                     <p
                       className="text-gray-400 text-sm mt-1"
-                      data-oid="s0uz8oe"
+                      data-oid="hi5f-np"
                     >
                       {selectedProject.description}
                     </p>
                   </div>
 
-                  <div className="flex gap-2" data-oid="lmqvi-6">
+                  <div className="flex gap-2" data-oid=".xiybgi">
                     <button
                       className="text-sm bg-space-800 text-cyan px-3 py-1 rounded hover:bg-space-700"
                       onClick={() => {
@@ -218,11 +218,11 @@ const ModelViewer: FC = () => {
                             "Model data has been exported to your project folder.",
                         });
                       }}
-                      data-oid="q5:ona1"
+                      data-oid="nx52e9m"
                     >
                       <i
                         className="fas fa-file-export mr-1"
-                        data-oid="73l3:lh"
+                        data-oid="fuv_k.l"
                       ></i>{" "}
                       Export
                     </button>
@@ -235,9 +235,9 @@ const ModelViewer: FC = () => {
                             "Coming soon! Full 3D viewing capabilities will be available in the next release.",
                         });
                       }}
-                      data-oid="z888biw"
+                      data-oid="ry3b-jl"
                     >
-                      <i className="fas fa-cube mr-1" data-oid="e1bz6q3"></i> 3D
+                      <i className="fas fa-cube mr-1" data-oid="30a73gc"></i> 3D
                       View
                     </button>
                   </div>
@@ -247,7 +247,7 @@ const ModelViewer: FC = () => {
               {/* Component Visualization */}
               <div
                 className="grid grid-cols-1 md:grid-cols-3 gap-4"
-                data-oid="mw1_d4a"
+                data-oid="ez.r866"
               >
                 {selectedProject.components.map((component) => (
                   <div
@@ -258,42 +258,42 @@ const ModelViewer: FC = () => {
                         : ""
                     }`}
                     onClick={() => handleSelectComponent(component)}
-                    data-oid="j.5tj5w"
+                    data-oid="8fviw6s"
                   >
                     <div
                       className="aspect-video mb-2 rounded bg-space-900 flex items-center justify-center"
-                      data-oid="ie7dy6x"
+                      data-oid="wlt9wdg"
                     >
                       <div
                         className="w-16 h-16 rounded"
                         style={{
                           backgroundColor: getMaterialColor(component.material),
                         }}
-                        data-oid="g1ilotk"
+                        data-oid="qtd4nw."
                       >
                         {component.type === "foundation" && (
                           <div
                             className="w-full h-full flex items-center justify-center"
-                            data-oid="rg47bro"
+                            data-oid="-phdexl"
                           >
                             <div
                               className="w-3/4 h-1/4 bg-space-700/50"
-                              data-oid="f9ixx0e"
+                              data-oid="7ryj-p4"
                             ></div>
                           </div>
                         )}
                         {component.type === "frame" && (
-                          <div className="w-full h-full p-2" data-oid="u2s4116">
+                          <div className="w-full h-full p-2" data-oid="zuqh.pz">
                             <div
                               className="w-full h-full border-2 border-space-700/50"
-                              data-oid="1l_5z9."
+                              data-oid="rt1gyal"
                             ></div>
                           </div>
                         )}
                         {component.type === "roof" && (
                           <div
                             className="w-full h-full flex items-center justify-center"
-                            data-oid="5elrpfv"
+                            data-oid="jeuk7wh"
                           >
                             <div
                               className="w-3/4 h-1/2"
@@ -303,26 +303,26 @@ const ModelViewer: FC = () => {
                                 ),
                                 clipPath: "polygon(0% 100%, 50% 0%, 100% 100%)",
                               }}
-                              data-oid="-hmgpd7"
+                              data-oid="s_x2s:h"
                             ></div>
                           </div>
                         )}
                         {component.type === "walls" && (
-                          <div className="w-full h-full p-3" data-oid="p6hr7vp">
+                          <div className="w-full h-full p-3" data-oid="idb4e8l">
                             <div
                               className="w-full h-full bg-space-700/50"
-                              data-oid="ee8x48i"
+                              data-oid="m-t:bu6"
                             ></div>
                           </div>
                         )}
                         {component.type === "windows" && (
                           <div
                             className="w-full h-full p-4 flex items-center justify-center"
-                            data-oid="8.uhk-2"
+                            data-oid="..hp223"
                           >
                             <div
                               className="w-full h-full bg-cyan/30 border border-white/30"
-                              data-oid="rv6119k"
+                              data-oid="_6pg_v:"
                             ></div>
                           </div>
                         )}
@@ -330,19 +330,19 @@ const ModelViewer: FC = () => {
                     </div>
                     <h3
                       className="text-white text-sm font-medium"
-                      data-oid="vry.xws"
+                      data-oid="p:ja7a."
                     >
                       {component.name}
                     </h3>
                     <p
                       className="text-gray-400 text-xs mt-1 line-clamp-2"
-                      data-oid=".b8n2er"
+                      data-oid="2qwgit2"
                     >
                       {component.description}
                     </p>
                     <div
                       className="mt-2 flex justify-between"
-                      data-oid="cz7bclf"
+                      data-oid="9zudcc2"
                     >
                       <span
                         className="text-xs rounded-full px-2 py-0.5"
@@ -350,13 +350,13 @@ const ModelViewer: FC = () => {
                           backgroundColor: `${getMaterialColor(component.material)}30`,
                           color: getMaterialColor(component.material),
                         }}
-                        data-oid="v6-xpy3"
+                        data-oid="_h26v_7"
                       >
                         {component.material}
                       </span>
                       <span
                         className="text-xs text-gray-400"
-                        data-oid="ejghjuj"
+                        data-oid="u80-2z."
                       >
                         {component.dimensions.width}m ×{" "}
                         {component.dimensions.height}m ×{" "}
@@ -369,94 +369,94 @@ const ModelViewer: FC = () => {
 
               {/* Component Details */}
               {selectedComponent && (
-                <GlassCard className="p-4" data-oid="mtrfau4">
+                <GlassCard className="p-4" data-oid="gkbrldr">
                   <h3
                     className="text-lg font-space text-white mb-3"
-                    data-oid="_5myayy"
+                    data-oid="0qt3j2u"
                   >
                     {selectedComponent.name} Details
                   </h3>
 
                   <div
                     className="grid grid-cols-1 md:grid-cols-2 gap-6"
-                    data-oid="misk0nu"
+                    data-oid="zmqrkb1"
                   >
-                    <div data-oid="t7szh65">
+                    <div data-oid="birpin5">
                       <div
                         className="aspect-video rounded-lg overflow-hidden bg-space-800 flex items-center justify-center mb-3"
-                        data-oid=":5m2c:t"
+                        data-oid="7rd6yyy"
                       >
                         <ModelFallback
                           message="3D preview will be available in the next update"
                           className="h-full w-full"
-                          data-oid="4bujfwv"
+                          data-oid=".sp.0bc"
                         />
                       </div>
 
                       <div
                         className="grid grid-cols-3 gap-2 text-sm"
-                        data-oid="6lkor0a"
+                        data-oid="j91ahq4"
                       >
                         <div
                           className="bg-space-800 p-2 rounded"
-                          data-oid="b55p8ll"
+                          data-oid="j__tg_-"
                         >
                           <span
                             className="block text-gray-400 text-xs"
-                            data-oid="yu7_7lq"
+                            data-oid="iwuiasl"
                           >
                             Width
                           </span>
-                          <span className="text-white" data-oid="349_kjj">
+                          <span className="text-white" data-oid=":8_sqiy">
                             {selectedComponent.dimensions.width}m
                           </span>
                         </div>
                         <div
                           className="bg-space-800 p-2 rounded"
-                          data-oid="rpd1hun"
+                          data-oid="3bjw0cb"
                         >
                           <span
                             className="block text-gray-400 text-xs"
-                            data-oid="sr8n.nj"
+                            data-oid="te9r5aa"
                           >
                             Height
                           </span>
-                          <span className="text-white" data-oid="4v60hqh">
+                          <span className="text-white" data-oid="d.86bai">
                             {selectedComponent.dimensions.height}m
                           </span>
                         </div>
                         <div
                           className="bg-space-800 p-2 rounded"
-                          data-oid="kr4_9oa"
+                          data-oid="g5ns1oe"
                         >
                           <span
                             className="block text-gray-400 text-xs"
-                            data-oid="m3whmo:"
+                            data-oid="8aerur4"
                           >
                             Depth
                           </span>
-                          <span className="text-white" data-oid="o:6-1y5">
+                          <span className="text-white" data-oid="0g:zlp3">
                             {selectedComponent.dimensions.depth}m
                           </span>
                         </div>
                       </div>
                     </div>
 
-                    <div data-oid="xl6wuby">
+                    <div data-oid="e1a6v71">
                       <h4
                         className="text-white font-medium mb-2"
-                        data-oid="s3l-d4l"
+                        data-oid="-aiu9x_"
                       >
                         Description
                       </h4>
-                      <p className="text-gray-300 text-sm" data-oid="8ozr1d9">
+                      <p className="text-gray-300 text-sm" data-oid=":0.u7jn">
                         {selectedComponent.description}
                       </p>
 
-                      <div className="mt-4" data-oid="tvdv.c4">
+                      <div className="mt-4" data-oid="93kxv9_">
                         <h4
                           className="text-white font-medium mb-2"
-                          data-oid=".e1:dag"
+                          data-oid="9:2z5:k"
                         >
                           Material
                         </h4>
@@ -465,7 +465,7 @@ const ModelViewer: FC = () => {
                           style={{
                             borderLeft: `4px solid ${getMaterialColor(selectedComponent.material)}`,
                           }}
-                          data-oid="ph.t23r"
+                          data-oid="8hh2b3n"
                         >
                           <div
                             className="w-6 h-6 rounded mr-3"
@@ -474,18 +474,18 @@ const ModelViewer: FC = () => {
                                 selectedComponent.material,
                               ),
                             }}
-                            data-oid="s7958.t"
+                            data-oid="t5:7r42"
                           ></div>
-                          <div data-oid="aa65uo8">
+                          <div data-oid="-9ey4db">
                             <p
                               className="text-white capitalize"
-                              data-oid=".kbqc.n"
+                              data-oid="gsk:6g3"
                             >
                               {selectedComponent.material}
                             </p>
                             <p
                               className="text-xs text-gray-400"
-                              data-oid="t8e8vip"
+                              data-oid="0q51slh"
                             >
                               Standard NZ Construction Grade
                             </p>
@@ -493,7 +493,7 @@ const ModelViewer: FC = () => {
                         </div>
                       </div>
 
-                      <div className="mt-4 flex justify-end" data-oid="39v7n0w">
+                      <div className="mt-4 flex justify-end" data-oid="-fsxrbw">
                         <button
                           className="text-sm bg-purple-900 text-cyan px-3 py-1 rounded hover:bg-purple-800 btn-glow btn-glow-cyan"
                           onClick={() => {
@@ -503,11 +503,11 @@ const ModelViewer: FC = () => {
                                 "Technical specifications downloaded successfully.",
                             });
                           }}
-                          data-oid="454hm_9"
+                          data-oid="_pjhy25"
                         >
                           <i
                             className="fas fa-file-pdf mr-1"
-                            data-oid="iqcvyix"
+                            data-oid="26r4kg0"
                           ></i>{" "}
                           Download Specs
                         </button>
@@ -520,23 +520,23 @@ const ModelViewer: FC = () => {
           ) : (
             <GlassCard
               className="p-6 h-full flex flex-col items-center justify-center text-center"
-              data-oid="jcy-sq_"
+              data-oid="y:sz2b8"
             >
-              <div className="text-6xl text-cyan mb-4" data-oid="..-rgz7">
-                <i className="fas fa-cube" data-oid="1eb.kgj"></i>
+              <div className="text-6xl text-cyan mb-4" data-oid="f9b.zzk">
+                <i className="fas fa-cube" data-oid="i__7.hz"></i>
               </div>
               <h2
                 className="text-xl font-space text-white mb-2"
-                data-oid="q63ohra"
+                data-oid="uhxi3ka"
               >
                 3D Building Component Explorer
               </h2>
-              <p className="text-gray-300 mb-6 max-w-lg" data-oid="9-e17g.">
+              <p className="text-gray-300 mb-6 max-w-lg" data-oid="ym0iiz7">
                 Select a project from the list to view its building components
                 in detail. Explore dimensions, materials, and specifications for
                 each component.
               </p>
-              <p className="text-gray-400 text-sm" data-oid="nildiwk">
+              <p className="text-gray-400 text-sm" data-oid="rfu-de3">
                 STR8 BUILD's 3D visualization features allow you to better
                 understand construction details, materials, and assembly
                 techniques used in New Zealand construction projects.

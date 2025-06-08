@@ -176,9 +176,9 @@ const SystemMaintenance: FC = () => {
   });
 
   return (
-    <div className="space-y-4" data-oid="lzy11m7">
-      <div className="flex justify-between items-center" data-oid="anuq9qp">
-        <h3 className="text-xl font-bold text-white" data-oid="swmd2om">
+    <div className="space-y-4" data-oid="1qb4zu:">
+      <div className="flex justify-between items-center" data-oid="4_rd8.i">
+        <h3 className="text-xl font-bold text-white" data-oid="s0nip7h">
           System Maintenance
         </h3>
       </div>
@@ -188,126 +188,126 @@ const SystemMaintenance: FC = () => {
         value={activeTab}
         onValueChange={setActiveTab}
         className="space-y-4"
-        data-oid="a_c0klr"
+        data-oid="nkksd9s"
       >
         <TabsList
           className="bg-space-900 border border-space-700 p-1"
-          data-oid="nmu4sgk"
+          data-oid="hwh0jp-"
         >
           <TabsTrigger
             value="health"
             className="data-[state=active]:bg-purple-900 data-[state=active]:text-cyan"
-            data-oid="a73wjr5"
+            data-oid="lxx.5zj"
           >
-            <Activity className="h-4 w-4 mr-2" data-oid="c4-zu7i" />
+            <Activity className="h-4 w-4 mr-2" data-oid="k70bq1h" />
             System Health
           </TabsTrigger>
           <TabsTrigger
             value="logs"
             className="data-[state=active]:bg-purple-900 data-[state=active]:text-cyan"
-            data-oid="_m72uii"
+            data-oid="ey.26qf"
           >
-            <Terminal className="h-4 w-4 mr-2" data-oid="832hwz7" />
+            <Terminal className="h-4 w-4 mr-2" data-oid="s3oqrqi" />
             System Logs
           </TabsTrigger>
           <TabsTrigger
             value="settings"
             className="data-[state=active]:bg-purple-900 data-[state=active]:text-cyan"
-            data-oid="dun6:vw"
+            data-oid="yo-t8h1"
           >
-            <Settings className="h-4 w-4 mr-2" data-oid="i-sfu-n" />
+            <Settings className="h-4 w-4 mr-2" data-oid="ymjfzuu" />
             System Settings
           </TabsTrigger>
           <TabsTrigger
             value="backup"
             className="data-[state=active]:bg-purple-900 data-[state=active]:text-cyan"
-            data-oid="-opn0:t"
+            data-oid="p3by-4r"
           >
-            <Database className="h-4 w-4 mr-2" data-oid="j6uk.gr" />
+            <Database className="h-4 w-4 mr-2" data-oid="0__g6_9" />
             Backup & Restore
           </TabsTrigger>
         </TabsList>
 
         {/* System Health Tab */}
-        <TabsContent value="health" className="space-y-4" data-oid="8cxy5al">
-          <div className="flex justify-between items-center" data-oid="dl4qupx">
-            <div className="flex items-center" data-oid="d4ezw:0">
+        <TabsContent value="health" className="space-y-4" data-oid=".76ru5:">
+          <div className="flex justify-between items-center" data-oid="daf6j-0">
+            <div className="flex items-center" data-oid="a3qc.ls">
               <span
                 className="h-3 w-3 rounded-full bg-green-500 mr-2"
-                data-oid="qw0nu:u"
+                data-oid="t:qk-72"
               ></span>
-              <span className="text-sm text-white" data-oid="3104qan">
+              <span className="text-sm text-white" data-oid="6blgg3j">
                 All Systems Operational
               </span>
             </div>
             <Button
               size="sm"
               className="bg-space-900 hover:bg-space-800 text-gray-300"
-              data-oid="ts9kxsx"
+              data-oid="q2e4qmx"
             >
-              <RefreshCw className="h-3 w-3 mr-2" data-oid="80t02d7" />
+              <RefreshCw className="h-3 w-3 mr-2" data-oid=":cr2mg3" />
               Refresh
             </Button>
           </div>
 
           <div
             className="grid grid-cols-1 md:grid-cols-3 gap-4"
-            data-oid="afzha7-"
+            data-oid="b2is-j."
           >
             {/* CPU Card */}
-            <GlassCard className="p-4" data-oid="t19gjvm">
-              <div className="flex items-center mb-4" data-oid="8.t_qrq">
-                <Cpu className="h-5 w-5 text-cyan mr-2" data-oid="tf9255q" />
-                <h4 className="text-md font-bold text-white" data-oid="zq3ux-x">
+            <GlassCard className="p-4" data-oid=".r4s61u">
+              <div className="flex items-center mb-4" data-oid="ebtoblm">
+                <Cpu className="h-5 w-5 text-cyan mr-2" data-oid="dzkpb:d" />
+                <h4 className="text-md font-bold text-white" data-oid="wntjrhy">
                   CPU
                 </h4>
               </div>
 
-              <div className="space-y-4" data-oid="d49ods6">
-                <div data-oid="qdwa7fd">
+              <div className="space-y-4" data-oid="6nm5n_k">
+                <div data-oid="ed2tu3a">
                   <div
                     className="flex justify-between text-sm mb-1"
-                    data-oid="xoy:wla"
+                    data-oid=":sw3ew6"
                   >
-                    <span className="text-gray-400" data-oid="bkmeqrr">
+                    <span className="text-gray-400" data-oid="6hcpi-2">
                       Usage
                     </span>
-                    <span className="text-white" data-oid="lkpqglw">
+                    <span className="text-white" data-oid="q-5tgy2">
                       {systemHealth.cpu.usage}%
                     </span>
                   </div>
                   <div
                     className="w-full h-2 bg-space-800 rounded-full"
-                    data-oid="ue__.0j"
+                    data-oid="b150ara"
                   >
                     <div
                       className="h-full bg-gradient-to-r from-green-500 to-teal-500 rounded-full"
                       style={{ width: `${systemHealth.cpu.usage}%` }}
-                      data-oid="y20vyyt"
+                      data-oid="j5qzi92"
                     ></div>
                   </div>
                 </div>
 
-                <div className="grid grid-cols-2 gap-2" data-oid="uz0mdcr">
+                <div className="grid grid-cols-2 gap-2" data-oid="lue7l7w">
                   <div
                     className="bg-space-900/50 p-2 rounded-lg"
-                    data-oid="v1gp_.s"
+                    data-oid="9t54sid"
                   >
-                    <div className="text-xs text-gray-400" data-oid="ny.vwhj">
+                    <div className="text-xs text-gray-400" data-oid="z.i1dx9">
                       Cores
                     </div>
-                    <div className="text-sm text-white" data-oid=":..tc:m">
+                    <div className="text-sm text-white" data-oid="fdykpg1">
                       {systemHealth.cpu.cores}
                     </div>
                   </div>
                   <div
                     className="bg-space-900/50 p-2 rounded-lg"
-                    data-oid="9qbyjrp"
+                    data-oid="dqz01vm"
                   >
-                    <div className="text-xs text-gray-400" data-oid="_lip.b7">
+                    <div className="text-xs text-gray-400" data-oid="2ymd-.l">
                       Temperature
                     </div>
-                    <div className="text-sm text-white" data-oid="3t67s1g">
+                    <div className="text-sm text-white" data-oid="fq.53p8">
                       {systemHealth.cpu.temperature}°C
                     </div>
                   </div>
@@ -316,66 +316,66 @@ const SystemMaintenance: FC = () => {
             </GlassCard>
 
             {/* Memory Card */}
-            <GlassCard className="p-4" data-oid="qz:vsbf">
-              <div className="flex items-center mb-4" data-oid="t5a:ws1">
+            <GlassCard className="p-4" data-oid="4xaag_d">
+              <div className="flex items-center mb-4" data-oid="rj-lcy5">
                 <HardDrive
                   className="h-5 w-5 text-electric mr-2"
-                  data-oid="j.pmis."
+                  data-oid="8g:3v9_"
                 />
 
-                <h4 className="text-md font-bold text-white" data-oid="fxeaow4">
+                <h4 className="text-md font-bold text-white" data-oid="uljvf65">
                   Memory
                 </h4>
               </div>
 
-              <div className="space-y-4" data-oid="zdof3ou">
-                <div data-oid="8:7-f0n">
+              <div className="space-y-4" data-oid="vqiawf-">
+                <div data-oid="wkqda7-">
                   <div
                     className="flex justify-between text-sm mb-1"
-                    data-oid="iq_tn._"
+                    data-oid="19hpijm"
                   >
-                    <span className="text-gray-400" data-oid="5kcd4i-">
+                    <span className="text-gray-400" data-oid="n30jvzz">
                       Usage
                     </span>
-                    <span className="text-white" data-oid="0g578rt">
+                    <span className="text-white" data-oid="x1j_.tl">
                       {systemHealth.memory.used} MB /{" "}
                       {systemHealth.memory.total} MB
                     </span>
                   </div>
                   <div
                     className="w-full h-2 bg-space-800 rounded-full"
-                    data-oid="o-cikhu"
+                    data-oid="_dh_6jd"
                   >
                     <div
                       className="h-full bg-gradient-to-r from-blue-500 to-electric rounded-full"
                       style={{
                         width: `${(systemHealth.memory.used / systemHealth.memory.total) * 100}%`,
                       }}
-                      data-oid="s:duoiv"
+                      data-oid="o2.w2lb"
                     ></div>
                   </div>
                 </div>
 
-                <div className="grid grid-cols-2 gap-2" data-oid="cuz30.w">
+                <div className="grid grid-cols-2 gap-2" data-oid="ijg9.ho">
                   <div
                     className="bg-space-900/50 p-2 rounded-lg"
-                    data-oid="qhzaifi"
+                    data-oid="o7a_2ly"
                   >
-                    <div className="text-xs text-gray-400" data-oid="4v8tyu:">
+                    <div className="text-xs text-gray-400" data-oid="c6vo.38">
                       Used
                     </div>
-                    <div className="text-sm text-white" data-oid="h503:rr">
+                    <div className="text-sm text-white" data-oid="nigavog">
                       {(systemHealth.memory.used / 1024).toFixed(1)} GB
                     </div>
                   </div>
                   <div
                     className="bg-space-900/50 p-2 rounded-lg"
-                    data-oid=".gufdll"
+                    data-oid="v4s.zyb"
                   >
-                    <div className="text-xs text-gray-400" data-oid="-8te_b7">
+                    <div className="text-xs text-gray-400" data-oid="y569jad">
                       Free
                     </div>
-                    <div className="text-sm text-white" data-oid="zf0kx1p">
+                    <div className="text-sm text-white" data-oid="2bvubqt">
                       {(systemHealth.memory.free / 1024).toFixed(1)} GB
                     </div>
                   </div>
@@ -384,65 +384,65 @@ const SystemMaintenance: FC = () => {
             </GlassCard>
 
             {/* Disk Card */}
-            <GlassCard className="p-4" data-oid="1i8:m.0">
-              <div className="flex items-center mb-4" data-oid="p0x4u87">
+            <GlassCard className="p-4" data-oid="j5-6bm1">
+              <div className="flex items-center mb-4" data-oid="qfcmw:_">
                 <Database
                   className="h-5 w-5 text-teal mr-2"
-                  data-oid="2x-m-hs"
+                  data-oid="-deo5i0"
                 />
 
-                <h4 className="text-md font-bold text-white" data-oid="pdlj0rp">
+                <h4 className="text-md font-bold text-white" data-oid="12fi264">
                   Disk
                 </h4>
               </div>
 
-              <div className="space-y-4" data-oid="s9j6ut6">
-                <div data-oid="a_j1g9u">
+              <div className="space-y-4" data-oid="ket7uc5">
+                <div data-oid=".dimlcn">
                   <div
                     className="flex justify-between text-sm mb-1"
-                    data-oid="uxy090x"
+                    data-oid="c5:4mye"
                   >
-                    <span className="text-gray-400" data-oid="ttode1f">
+                    <span className="text-gray-400" data-oid="x5:uegu">
                       Usage
                     </span>
-                    <span className="text-white" data-oid="4ff9.d_">
+                    <span className="text-white" data-oid="c2ngjfb">
                       {systemHealth.disk.used} GB / {systemHealth.disk.total} GB
                     </span>
                   </div>
                   <div
                     className="w-full h-2 bg-space-800 rounded-full"
-                    data-oid=".mpljst"
+                    data-oid="2xj0o9b"
                   >
                     <div
                       className="h-full bg-gradient-to-r from-purple-500 to-teal-500 rounded-full"
                       style={{
                         width: `${(systemHealth.disk.used / systemHealth.disk.total) * 100}%`,
                       }}
-                      data-oid="bqo:iwf"
+                      data-oid="43odw1s"
                     ></div>
                   </div>
                 </div>
 
-                <div className="grid grid-cols-2 gap-2" data-oid="y-0ugwi">
+                <div className="grid grid-cols-2 gap-2" data-oid="rs1z0ku">
                   <div
                     className="bg-space-900/50 p-2 rounded-lg"
-                    data-oid="zzia4.1"
+                    data-oid="rheym8:"
                   >
-                    <div className="text-xs text-gray-400" data-oid="tuzm_hc">
+                    <div className="text-xs text-gray-400" data-oid="miob:tg">
                       Used
                     </div>
-                    <div className="text-sm text-white" data-oid="l77ri10">
+                    <div className="text-sm text-white" data-oid="2rzu4:5">
                       {systemHealth.disk.used} GB
                     </div>
                   </div>
                   <div
                     className="bg-space-900/50 p-2 rounded-lg"
-                    data-oid="uf22ph0"
+                    data-oid="o3:9446"
                   >
-                    <div className="text-xs text-gray-400" data-oid="v2:5nae">
+                    <div className="text-xs text-gray-400" data-oid="_ezmgsp">
                       Free
                     </div>
-                    <div className="text-sm text-white" data-oid="bj-cxu.">
+                    <div className="text-sm text-white" data-oid="zlwhjp:">
                       {systemHealth.disk.free} GB
                     </div>
                   </div>
@@ -452,64 +452,64 @@ const SystemMaintenance: FC = () => {
           </div>
 
           {/* System Status */}
-          <GlassCard className="p-4" data-oid="r7k1iqp">
-            <div className="flex items-center mb-4" data-oid="hqgq3cy">
-              <Server className="h-5 w-5 text-cyan mr-2" data-oid="7u-ee53" />
-              <h4 className="text-md font-bold text-white" data-oid="hl_352e">
+          <GlassCard className="p-4" data-oid="69mhp79">
+            <div className="flex items-center mb-4" data-oid="v3z-2d4">
+              <Server className="h-5 w-5 text-cyan mr-2" data-oid=":sbcpfw" />
+              <h4 className="text-md font-bold text-white" data-oid="azyd_j8">
                 System Status
               </h4>
             </div>
 
-            <div className="space-y-4" data-oid="qc-rclw">
+            <div className="space-y-4" data-oid="y.kcvx6">
               <div
                 className="bg-space-900/50 p-3 rounded-lg flex items-center"
-                data-oid="ixp63zj"
+                data-oid="0gdiuu2"
               >
-                <Power className="h-5 w-5 text-teal mr-3" data-oid="me-50_o" />
-                <div data-oid="nhmv0l2">
-                  <div className="text-sm text-white" data-oid="921unj1">
+                <Power className="h-5 w-5 text-teal mr-3" data-oid="nf8rd4j" />
+                <div data-oid="3b_z0f0">
+                  <div className="text-sm text-white" data-oid="7hbofyd">
                     System Uptime
                   </div>
-                  <div className="text-xs text-gray-400" data-oid="5_6anlh">
+                  <div className="text-xs text-gray-400" data-oid="1nqiwoc">
                     {systemHealth.uptime}
                   </div>
                 </div>
               </div>
 
-              <div className="overflow-x-auto" data-oid=".3r070q">
-                <table className="w-full" data-oid="yewfgsv">
-                  <thead className="text-gray-400 text-sm" data-oid="0p38xw3">
-                    <tr data-oid="x2.bdg6">
-                      <th className="text-left pb-2" data-oid="ey3ogqg">
+              <div className="overflow-x-auto" data-oid="qww-hyi">
+                <table className="w-full" data-oid="bkl8jmj">
+                  <thead className="text-gray-400 text-sm" data-oid="65hzvn_">
+                    <tr data-oid="_o2f.yb">
+                      <th className="text-left pb-2" data-oid="komuve4">
                         Service
                       </th>
-                      <th className="text-left pb-2" data-oid="14:ui35">
+                      <th className="text-left pb-2" data-oid="h1b_e0g">
                         Status
                       </th>
-                      <th className="text-left pb-2" data-oid="214t6pc">
+                      <th className="text-left pb-2" data-oid="6666k2j">
                         Uptime
                       </th>
                     </tr>
                   </thead>
-                  <tbody className="text-white" data-oid="i1-9m__">
+                  <tbody className="text-white" data-oid="wp3v3b5">
                     {systemHealth.servicesStatus.map((service, idx) => (
                       <tr
                         key={idx}
                         className="border-t border-gray-800"
-                        data-oid="qrf3ac9"
+                        data-oid="2-yuy66"
                       >
-                        <td className="py-2" data-oid="t40u76l">
+                        <td className="py-2" data-oid="gusohi9">
                           {service.name}
                         </td>
-                        <td className="py-2" data-oid="8.m6xk1">
+                        <td className="py-2" data-oid="j28dcs3">
                           <Badge
                             className="bg-green-900 text-green-300"
-                            data-oid="j1vfai_"
+                            data-oid="nyk6lw3"
                           >
                             {service.status}
                           </Badge>
                         </td>
-                        <td className="py-2" data-oid="mcl6_rf">
+                        <td className="py-2" data-oid="7v37:fu">
                           {service.time}
                         </td>
                       </tr>
@@ -522,16 +522,16 @@ const SystemMaintenance: FC = () => {
         </TabsContent>
 
         {/* System Logs Tab */}
-        <TabsContent value="logs" className="space-y-4" data-oid="o.r2njs">
-          <GlassCard className="p-4" data-oid="y5k.lt2">
+        <TabsContent value="logs" className="space-y-4" data-oid="xgbjcga">
+          <GlassCard className="p-4" data-oid="7:yjyiy">
             <div
               className="flex flex-col md:flex-row gap-4 mb-4"
-              data-oid="p4zdp6w"
+              data-oid="xgqh:o3"
             >
-              <div className="relative flex-grow" data-oid="dass4i3">
+              <div className="relative flex-grow" data-oid="02_mu3z">
                 <Search
                   className="absolute left-3 top-1/2 transform -translate-y-1/2 h-4 w-4 text-gray-400"
-                  data-oid="t3e.xoc"
+                  data-oid="0d6mzwr"
                 />
 
                 <Input
@@ -539,30 +539,30 @@ const SystemMaintenance: FC = () => {
                   value={searchTerm}
                   onChange={(e) => setSearchTerm(e.target.value)}
                   className="pl-10 bg-space-900 border-gray-700 text-white"
-                  data-oid="r6yd0yy"
+                  data-oid="wqw42cy"
                 />
               </div>
 
               <div
                 className="flex items-center bg-space-900 rounded-md border border-gray-700 px-3 py-1"
-                data-oid="sik70eb"
+                data-oid="gtjj7v7"
               >
                 <select
                   value={logLevel}
                   onChange={(e) => setLogLevel(e.target.value)}
                   className="bg-transparent text-white text-sm focus:outline-none"
-                  data-oid="f:vw_ah"
+                  data-oid="2fzzx9j"
                 >
-                  <option value="all" data-oid="5hgrg2h">
+                  <option value="all" data-oid="k.1sj4t">
                     All Levels
                   </option>
-                  <option value="info" data-oid="lh3g9br">
+                  <option value="info" data-oid="b0i_yuv">
                     Info
                   </option>
-                  <option value="warning" data-oid="x9uk-1h">
+                  <option value="warning" data-oid="_8ylb0m">
                     Warning
                   </option>
-                  <option value="error" data-oid="oeyrbai">
+                  <option value="error" data-oid="nleh5d5">
                     Error
                   </option>
                 </select>
@@ -570,46 +570,46 @@ const SystemMaintenance: FC = () => {
 
               <Button
                 className="bg-space-900 hover:bg-space-800 text-gray-300"
-                data-oid="g6n4nbj"
+                data-oid="bhdigf6"
               >
-                <Download className="h-4 w-4 mr-2" data-oid="9kh38_-" />
+                <Download className="h-4 w-4 mr-2" data-oid="s3w4uqy" />
                 Export Logs
               </Button>
             </div>
 
-            <div className="overflow-x-auto" data-oid="6_63w2g">
-              <table className="w-full" data-oid="462dlwq">
-                <thead className="text-gray-400 text-sm" data-oid="v4nfgtq">
-                  <tr className="border-b border-gray-800" data-oid="5obfnzr">
-                    <th className="text-left pb-2 pl-2" data-oid="wg0o3dd">
+            <div className="overflow-x-auto" data-oid=".-ynwq1">
+              <table className="w-full" data-oid="y_t_5ny">
+                <thead className="text-gray-400 text-sm" data-oid="s-z8f8j">
+                  <tr className="border-b border-gray-800" data-oid="ram8iim">
+                    <th className="text-left pb-2 pl-2" data-oid="b2qq2l-">
                       Level
                     </th>
-                    <th className="text-left pb-2" data-oid="la70t.i">
+                    <th className="text-left pb-2" data-oid="cqba87p">
                       Message
                     </th>
-                    <th className="text-left pb-2" data-oid="4xf7sy:">
+                    <th className="text-left pb-2" data-oid="hsvfoo6">
                       Service
                     </th>
-                    <th className="text-left pb-2" data-oid="rxe.-4m">
+                    <th className="text-left pb-2" data-oid="yws9go_">
                       Timestamp
                     </th>
-                    <th className="text-right pb-2 pr-2" data-oid="pykf9bu">
+                    <th className="text-right pb-2 pr-2" data-oid="w4l5jxn">
                       Actions
                     </th>
                   </tr>
                 </thead>
-                <tbody className="text-white" data-oid="xt6oex9">
+                <tbody className="text-white" data-oid="n6-ghs1">
                   {filteredLogs.map((log) => (
                     <tr
                       key={log.id}
                       className="border-b border-gray-800 hover:bg-space-900/50"
-                      data-oid="482vd_h"
+                      data-oid="8m3v-d_"
                     >
-                      <td className="py-3 pl-2" data-oid=".tme1g-">
+                      <td className="py-3 pl-2" data-oid="_2pn7.:">
                         {log.level === "error" && (
                           <Badge
                             className="bg-red-900 text-red-300"
-                            data-oid="kyq.rrj"
+                            data-oid="jf3hb6u"
                           >
                             Error
                           </Badge>
@@ -617,7 +617,7 @@ const SystemMaintenance: FC = () => {
                         {log.level === "warning" && (
                           <Badge
                             className="bg-yellow-900 text-yellow-300"
-                            data-oid="1rpb4mk"
+                            data-oid="tc1t7cv"
                           >
                             Warning
                           </Badge>
@@ -625,30 +625,30 @@ const SystemMaintenance: FC = () => {
                         {log.level === "info" && (
                           <Badge
                             className="bg-blue-900 text-blue-300"
-                            data-oid="2wfqgf8"
+                            data-oid="q1_46ba"
                           >
                             Info
                           </Badge>
                         )}
                       </td>
-                      <td className="py-3" data-oid="53nt0h3">
+                      <td className="py-3" data-oid="oya62.r">
                         {log.message}
                       </td>
-                      <td className="py-3" data-oid="s-icoik">
+                      <td className="py-3" data-oid="cve7l0_">
                         {log.service}
                       </td>
                       <td
                         className="py-3 text-sm text-gray-400"
-                        data-oid="nqdqlm2"
+                        data-oid=".gysvj1"
                       >
                         {formatDate(log.timestamp)}
                       </td>
-                      <td className="py-3 pr-2 text-right" data-oid="jq:a5t:">
+                      <td className="py-3 pr-2 text-right" data-oid="6vi1obr">
                         <button
                           className="p-1 text-gray-400 hover:text-cyan"
-                          data-oid=".ak18iw"
+                          data-oid=".am9qyf"
                         >
-                          <Eye className="h-4 w-4" data-oid="3mz7u4a" />
+                          <Eye className="h-4 w-4" data-oid="s.ab.it" />
                         </button>
                       </td>
                     </tr>
@@ -658,7 +658,7 @@ const SystemMaintenance: FC = () => {
             </div>
 
             {filteredLogs.length === 0 && (
-              <div className="p-8 text-center text-gray-400" data-oid="y7m8dxr">
+              <div className="p-8 text-center text-gray-400" data-oid="7a5j3fa">
                 No logs found matching your search criteria.
               </div>
             )}
@@ -666,55 +666,55 @@ const SystemMaintenance: FC = () => {
         </TabsContent>
 
         {/* System Settings Tab */}
-        <TabsContent value="settings" className="space-y-4" data-oid="sct8w6h">
+        <TabsContent value="settings" className="space-y-4" data-oid="p3bwx2-">
           {systemSettings.map((group) => (
-            <GlassCard key={group.id} className="p-4" data-oid="3bdw92k">
-              <div className="flex items-center mb-4" data-oid=":xe65:z">
+            <GlassCard key={group.id} className="p-4" data-oid="k7tsjxd">
+              <div className="flex items-center mb-4" data-oid="982up_e">
                 <Settings
                   className="h-5 w-5 text-cyan mr-2"
-                  data-oid="87e52nx"
+                  data-oid=":4ens2f"
                 />
 
-                <h4 className="text-md font-bold text-white" data-oid="xm:c3wa">
+                <h4 className="text-md font-bold text-white" data-oid="ktco1wk">
                   {group.name}
                 </h4>
               </div>
 
-              <div className="space-y-2" data-oid="eyzul-d">
+              <div className="space-y-2" data-oid="3-4f0xi">
                 {group.settings.map((setting, idx) => (
                   <div
                     key={idx}
                     className="grid grid-cols-12 gap-4 p-2 border-b border-gray-800"
-                    data-oid="y69k7sn"
+                    data-oid="chgwcxj"
                   >
                     <div
                       className="col-span-4 text-sm text-white"
-                      data-oid="zb4frmr"
+                      data-oid="2cpfpig"
                     >
                       {setting.key}
                     </div>
-                    <div className="col-span-6" data-oid="1wo1qy3">
+                    <div className="col-span-6" data-oid="gjow-rc">
                       <Input
                         className="bg-space-900 border-gray-700 text-white"
                         defaultValue={setting.value}
-                        data-oid="6_ozojb"
+                        data-oid="z6qm4li"
                       />
                     </div>
                     <div
                       className="col-span-2 flex justify-end"
-                      data-oid="3lkcslk"
+                      data-oid="amcog:p"
                     >
                       <Button
                         className="mr-1 bg-space-900 hover:bg-space-800 text-gray-300"
                         size="sm"
-                        data-oid="tt::4.-"
+                        data-oid="f9892tk"
                       >
-                        <RefreshCw className="h-3 w-3" data-oid="fvtvlii" />
+                        <RefreshCw className="h-3 w-3" data-oid="chws4k3" />
                       </Button>
                       <Button
                         className="bg-purple-900 text-cyan hover:bg-purple-800"
                         size="sm"
-                        data-oid="how_ljx"
+                        data-oid="u.e1126"
                       >
                         Save
                       </Button>
@@ -727,47 +727,47 @@ const SystemMaintenance: FC = () => {
         </TabsContent>
 
         {/* Backup & Restore Tab */}
-        <TabsContent value="backup" className="space-y-4" data-oid="-.174u3">
+        <TabsContent value="backup" className="space-y-4" data-oid="y9tyvx2">
           <div
             className="grid grid-cols-1 md:grid-cols-2 gap-4"
-            data-oid="clja1iw"
+            data-oid="19fgwhq"
           >
-            <GlassCard className="p-4" data-oid="_fxu612">
-              <div className="flex items-center mb-4" data-oid="kkcmg8e">
+            <GlassCard className="p-4" data-oid="58n1_ij">
+              <div className="flex items-center mb-4" data-oid="4uqzw8p">
                 <Database
                   className="h-5 w-5 text-electric mr-2"
-                  data-oid="gqxranh"
+                  data-oid="-z04go:"
                 />
 
-                <h4 className="text-md font-bold text-white" data-oid=":av_z0.">
+                <h4 className="text-md font-bold text-white" data-oid="7bsa320">
                   Database Backup
                 </h4>
               </div>
 
-              <div className="space-y-4" data-oid="5w:amwn">
+              <div className="space-y-4" data-oid="g_b3xrw">
                 <div
                   className="bg-space-900/50 p-3 rounded-lg"
-                  data-oid="ic-k2yb"
+                  data-oid="e59mr4r"
                 >
                   <div
                     className="flex items-center justify-between mb-2"
-                    data-oid="wesi8e6"
+                    data-oid="6voq6kr"
                   >
-                    <div className="text-sm text-gray-400" data-oid="15krgku">
+                    <div className="text-sm text-gray-400" data-oid="e4i_7eb">
                       Last Backup
                     </div>
-                    <div className="text-sm text-white" data-oid="k47x1yb">
+                    <div className="text-sm text-white" data-oid="5_nqac4">
                       {systemHealth.lastBackup}
                     </div>
                   </div>
                   <div
                     className="flex items-center justify-between"
-                    data-oid="1aoja-7"
+                    data-oid="_20xp9z"
                   >
-                    <div className="text-sm text-gray-400" data-oid="dzyjqq-">
+                    <div className="text-sm text-gray-400" data-oid="y4fsp6x">
                       Next Scheduled Backup
                     </div>
-                    <div className="text-sm text-white" data-oid="iq81.fb">
+                    <div className="text-sm text-white" data-oid="aa8famk">
                       {systemHealth.nextScheduledBackup}
                     </div>
                   </div>
@@ -775,45 +775,45 @@ const SystemMaintenance: FC = () => {
 
                 <Button
                   className="w-full bg-purple-900 text-cyan hover:bg-purple-800"
-                  data-oid="xm7frea"
+                  data-oid="t-ley.i"
                 >
-                  <Database className="h-4 w-4 mr-2" data-oid="-hny4m5" />
+                  <Database className="h-4 w-4 mr-2" data-oid="q-air2y" />
                   Trigger Manual Backup
                 </Button>
               </div>
             </GlassCard>
 
-            <GlassCard className="p-4" data-oid="63a4-xv">
-              <div className="flex items-center mb-4" data-oid="rnjuz0u">
+            <GlassCard className="p-4" data-oid="p2viks7">
+              <div className="flex items-center mb-4" data-oid="7pi6voz">
                 <ArrowDown
                   className="h-5 w-5 text-teal mr-2"
-                  data-oid="1d92ib3"
+                  data-oid="ktb7:8b"
                 />
 
-                <h4 className="text-md font-bold text-white" data-oid="-:-.3k3">
+                <h4 className="text-md font-bold text-white" data-oid="it0pz:9">
                   Restore Database
                 </h4>
               </div>
 
-              <div className="space-y-4" data-oid="hcg:yk9">
+              <div className="space-y-4" data-oid=".akbfan">
                 <div
                   className="bg-red-900/20 p-3 rounded-lg border border-red-800"
-                  data-oid="kj2oyu4"
+                  data-oid="kgbo2-z"
                 >
-                  <div className="flex items-start" data-oid="3a9l-zh">
+                  <div className="flex items-start" data-oid="b:v4stk">
                     <AlertCircle
                       className="h-5 w-5 text-red-400 mr-2 mt-0.5"
-                      data-oid="f3ds8ne"
+                      data-oid="qedj44."
                     />
 
-                    <div data-oid="k6maww:">
+                    <div data-oid="5hu:csp">
                       <div
                         className="text-sm font-medium text-white mb-1"
-                        data-oid="z-:1h6p"
+                        data-oid="1128pao"
                       >
                         Warning
                       </div>
-                      <div className="text-xs text-gray-300" data-oid="m873pg.">
+                      <div className="text-xs text-gray-300" data-oid="g_y73mz">
                         Restoring a database backup will replace all current
                         data. This action cannot be undone.
                       </div>
@@ -821,24 +821,24 @@ const SystemMaintenance: FC = () => {
                   </div>
                 </div>
 
-                <div className="space-y-2" data-oid="-etd0eg">
-                  <label className="text-sm text-gray-400" data-oid="6vp2.uk">
+                <div className="space-y-2" data-oid="y_i9xls">
+                  <label className="text-sm text-gray-400" data-oid="8hfrllv">
                     Select Backup
                   </label>
                   <select
                     className="w-full bg-space-900 border border-gray-700 rounded p-2 text-white"
-                    data-oid="cieauvc"
+                    data-oid="o8tljxc"
                   >
-                    <option value="latest" data-oid="7ksyyo3">
+                    <option value="latest" data-oid="6ph_dso">
                       Latest Backup (2023-06-08 03:00 AM)
                     </option>
-                    <option value="20230607" data-oid="2hrguze">
+                    <option value="20230607" data-oid="w1bpm9-">
                       2023-06-07 03:00 AM
                     </option>
-                    <option value="20230606" data-oid="wa3qwgz">
+                    <option value="20230606" data-oid="fxx00z8">
                       2023-06-06 03:00 AM
                     </option>
-                    <option value="20230605" data-oid="bisismi">
+                    <option value="20230605" data-oid="ukmsllp">
                       2023-06-05 03:00 AM
                     </option>
                   </select>
@@ -847,7 +847,7 @@ const SystemMaintenance: FC = () => {
                 <Button
                   className="w-full bg-red-900 hover:bg-red-800 text-gray-200"
                   variant="destructive"
-                  data-oid="ii9bqc1"
+                  data-oid="x:-tbwj"
                 >
                   Restore Selected Backup
                 </Button>
@@ -855,182 +855,182 @@ const SystemMaintenance: FC = () => {
             </GlassCard>
           </div>
 
-          <GlassCard className="p-4" data-oid="-qgefaz">
-            <div className="flex items-center mb-4" data-oid="_i8phgp">
-              <FileText className="h-5 w-5 text-cyan mr-2" data-oid="bp:x_hg" />
-              <h4 className="text-md font-bold text-white" data-oid=":7cb59g">
+          <GlassCard className="p-4" data-oid="bh9n-o.">
+            <div className="flex items-center mb-4" data-oid="go43gr4">
+              <FileText className="h-5 w-5 text-cyan mr-2" data-oid="a27dafa" />
+              <h4 className="text-md font-bold text-white" data-oid=":9komyn">
                 Backup History
               </h4>
             </div>
 
-            <div className="overflow-x-auto" data-oid="gjuuh.b">
-              <table className="w-full" data-oid="0p4djn:">
-                <thead className="text-gray-400 text-sm" data-oid="4ck6l12">
-                  <tr className="border-b border-gray-800" data-oid="yuvfj4c">
-                    <th className="text-left pb-2" data-oid="ey-s2l-">
+            <div className="overflow-x-auto" data-oid="8u0q.se">
+              <table className="w-full" data-oid="gkgz4y1">
+                <thead className="text-gray-400 text-sm" data-oid="d:q6277">
+                  <tr className="border-b border-gray-800" data-oid="5wt7iqm">
+                    <th className="text-left pb-2" data-oid="l7kum55">
                       Date & Time
                     </th>
-                    <th className="text-left pb-2" data-oid="53cv2rq">
+                    <th className="text-left pb-2" data-oid="a:q:5ja">
                       Size
                     </th>
-                    <th className="text-left pb-2" data-oid="tdq_8-8">
+                    <th className="text-left pb-2" data-oid="5:1ojb3">
                       Type
                     </th>
-                    <th className="text-left pb-2" data-oid="wv-3zk8">
+                    <th className="text-left pb-2" data-oid="ohdz3k4">
                       Status
                     </th>
-                    <th className="text-right pb-2" data-oid="dkcaz2o">
+                    <th className="text-right pb-2" data-oid="nrlz.o0">
                       Actions
                     </th>
                   </tr>
                 </thead>
-                <tbody className="text-white" data-oid="r4yzwat">
+                <tbody className="text-white" data-oid="ud:b:77">
                   <tr
                     className="border-b border-gray-800 hover:bg-space-900/50"
-                    data-oid="h9spdtd"
+                    data-oid="juqauou"
                   >
-                    <td className="py-3" data-oid="3xe_unw">
+                    <td className="py-3" data-oid="1cvtvzn">
                       2023-06-08 03:00 AM
                     </td>
-                    <td className="py-3" data-oid="ib0ieyb">
+                    <td className="py-3" data-oid="nuf7skh">
                       245 MB
                     </td>
-                    <td className="py-3" data-oid="y43y-_i">
+                    <td className="py-3" data-oid="xs:funl">
                       Scheduled
                     </td>
-                    <td className="py-3" data-oid="0c6y:8g">
+                    <td className="py-3" data-oid="m_zs57_">
                       <Badge
                         className="bg-green-900 text-green-300"
-                        data-oid="ycgg8s-"
+                        data-oid="khth5ea"
                       >
                         Completed
                       </Badge>
                     </td>
-                    <td className="py-3 text-right" data-oid="qfdd:d0">
+                    <td className="py-3 text-right" data-oid="jq685fl">
                       <Button
                         size="sm"
                         className="mr-1 bg-space-900 hover:bg-space-800 text-gray-300"
-                        data-oid="u43o8yn"
+                        data-oid="68-4vje"
                       >
-                        <Download className="h-3 w-3" data-oid="_usf1nb" />
+                        <Download className="h-3 w-3" data-oid="_11v-i9" />
                       </Button>
                       <Button
                         size="sm"
                         className="bg-red-900/50 hover:bg-red-900 text-red-200"
-                        data-oid="f6pym3i"
+                        data-oid="o8lc4go"
                       >
-                        <Trash2 className="h-3 w-3" data-oid="9jch2q0" />
+                        <Trash2 className="h-3 w-3" data-oid="9vai:ce" />
                       </Button>
                     </td>
                   </tr>
                   <tr
                     className="border-b border-gray-800 hover:bg-space-900/50"
-                    data-oid="-yxpkmh"
+                    data-oid="jy901kz"
                   >
-                    <td className="py-3" data-oid="79qspd2">
+                    <td className="py-3" data-oid="4ucijki">
                       2023-06-07 03:00 AM
                     </td>
-                    <td className="py-3" data-oid="0qtytpm">
+                    <td className="py-3" data-oid="xcrgc_b">
                       242 MB
                     </td>
-                    <td className="py-3" data-oid="lba0:n.">
+                    <td className="py-3" data-oid="a.3sl_f">
                       Scheduled
                     </td>
-                    <td className="py-3" data-oid="ny588tb">
+                    <td className="py-3" data-oid="wx7:5.3">
                       <Badge
                         className="bg-green-900 text-green-300"
-                        data-oid="_rp8jtm"
+                        data-oid="sea4cb4"
                       >
                         Completed
                       </Badge>
                     </td>
-                    <td className="py-3 text-right" data-oid="qaho82s">
+                    <td className="py-3 text-right" data-oid="2mcmaeb">
                       <Button
                         size="sm"
                         className="mr-1 bg-space-900 hover:bg-space-800 text-gray-300"
-                        data-oid="6cw1s08"
+                        data-oid="g9nevaa"
                       >
-                        <Download className="h-3 w-3" data-oid="_w0azuf" />
+                        <Download className="h-3 w-3" data-oid="ez6.2u4" />
                       </Button>
                       <Button
                         size="sm"
                         className="bg-red-900/50 hover:bg-red-900 text-red-200"
-                        data-oid="khlamwp"
+                        data-oid="5iuqbrm"
                       >
-                        <Trash2 className="h-3 w-3" data-oid="ks0ewth" />
+                        <Trash2 className="h-3 w-3" data-oid="rqanaf8" />
                       </Button>
                     </td>
                   </tr>
                   <tr
                     className="border-b border-gray-800 hover:bg-space-900/50"
-                    data-oid="g8xrniu"
+                    data-oid="-76p7a4"
                   >
-                    <td className="py-3" data-oid="1u7jwi9">
+                    <td className="py-3" data-oid="y62a6af">
                       2023-06-06 03:00 AM
                     </td>
-                    <td className="py-3" data-oid="v9.3egf">
+                    <td className="py-3" data-oid="7k02-:i">
                       240 MB
                     </td>
-                    <td className="py-3" data-oid="_alr8fd">
+                    <td className="py-3" data-oid="q9c.ozs">
                       Scheduled
                     </td>
-                    <td className="py-3" data-oid="35j1uvi">
+                    <td className="py-3" data-oid=":e.ra89">
                       <Badge
                         className="bg-green-900 text-green-300"
-                        data-oid="fqhsv.9"
+                        data-oid="ebzrpp9"
                       >
                         Completed
                       </Badge>
                     </td>
-                    <td className="py-3 text-right" data-oid="lr0agrw">
+                    <td className="py-3 text-right" data-oid="853e05t">
                       <Button
                         size="sm"
                         className="mr-1 bg-space-900 hover:bg-space-800 text-gray-300"
-                        data-oid=".8tkqcd"
+                        data-oid=".hn3m5x"
                       >
-                        <Download className="h-3 w-3" data-oid="9f148y7" />
+                        <Download className="h-3 w-3" data-oid="5k9w4qj" />
                       </Button>
                       <Button
                         size="sm"
                         className="bg-red-900/50 hover:bg-red-900 text-red-200"
-                        data-oid="_q:t1b_"
+                        data-oid="r0o-s6y"
                       >
-                        <Trash2 className="h-3 w-3" data-oid="dqjmhff" />
+                        <Trash2 className="h-3 w-3" data-oid="6i4eo6j" />
                       </Button>
                     </td>
                   </tr>
-                  <tr className="hover:bg-space-900/50" data-oid="0oqc66:">
-                    <td className="py-3" data-oid="ksp9t2b">
+                  <tr className="hover:bg-space-900/50" data-oid="x703lg8">
+                    <td className="py-3" data-oid="v8-6xl_">
                       2023-06-05 15:42 PM
                     </td>
-                    <td className="py-3" data-oid="ii._e74">
+                    <td className="py-3" data-oid="-9v40p8">
                       239 MB
                     </td>
-                    <td className="py-3" data-oid="lelga_x">
+                    <td className="py-3" data-oid="ft5ev-c">
                       Manual
                     </td>
-                    <td className="py-3" data-oid="3u0myae">
+                    <td className="py-3" data-oid=":mhxo:d">
                       <Badge
                         className="bg-green-900 text-green-300"
-                        data-oid="uwtz-4l"
+                        data-oid="95q-z4a"
                       >
                         Completed
                       </Badge>
                     </td>
-                    <td className="py-3 text-right" data-oid="89iuwws">
+                    <td className="py-3 text-right" data-oid="7wf0j17">
                       <Button
                         size="sm"
                         className="mr-1 bg-space-900 hover:bg-space-800 text-gray-300"
-                        data-oid="levhc9u"
+                        data-oid="k99wz55"
                       >
-                        <Download className="h-3 w-3" data-oid="e0vxrci" />
+                        <Download className="h-3 w-3" data-oid="46mri4z" />
                       </Button>
                       <Button
                         size="sm"
                         className="bg-red-900/50 hover:bg-red-900 text-red-200"
-                        data-oid="89nq8g3"
+                        data-oid="duhnqxp"
                       >
-                        <Trash2 className="h-3 w-3" data-oid="6ejx0do" />
+                        <Trash2 className="h-3 w-3" data-oid="ti1i.:o" />
                       </Button>
                     </td>
                   </tr>
@@ -1039,69 +1039,69 @@ const SystemMaintenance: FC = () => {
             </div>
           </GlassCard>
 
-          <GlassCard className="p-4" data-oid="40u05ig">
-            <div className="flex items-center mb-4" data-oid="pjj:_5d">
-              <Calendar className="h-5 w-5 text-cyan mr-2" data-oid="dlabn7d" />
-              <h4 className="text-md font-bold text-white" data-oid="opvl_hb">
+          <GlassCard className="p-4" data-oid="mif1qar">
+            <div className="flex items-center mb-4" data-oid="-armd-t">
+              <Calendar className="h-5 w-5 text-cyan mr-2" data-oid="-d6d0tk" />
+              <h4 className="text-md font-bold text-white" data-oid="nn.ct9:">
                 Backup Schedule
               </h4>
             </div>
 
-            <div className="space-y-4" data-oid="9zzsh2q">
+            <div className="space-y-4" data-oid="umwo10i">
               <div
                 className="grid grid-cols-1 md:grid-cols-2 gap-4"
-                data-oid="8czl_ft"
+                data-oid="2gg__:a"
               >
-                <div className="space-y-2" data-oid="jjptm.k">
-                  <label className="text-sm text-gray-400" data-oid="bfb600y">
+                <div className="space-y-2" data-oid="rf2zv55">
+                  <label className="text-sm text-gray-400" data-oid="y8fy64a">
                     Backup Frequency
                   </label>
                   <select
                     className="w-full bg-space-900 border border-gray-700 rounded p-2 text-white"
-                    data-oid="edlutub"
+                    data-oid="badjsfg"
                   >
-                    <option value="daily" data-oid="z1bxaz8">
+                    <option value="daily" data-oid="xkdt_oy">
                       Daily
                     </option>
-                    <option value="weekly" data-oid="kvvxe98">
+                    <option value="weekly" data-oid="h5c._cf">
                       Weekly
                     </option>
-                    <option value="monthly" data-oid="z1-3:67">
+                    <option value="monthly" data-oid="naqg_jv">
                       Monthly
                     </option>
                   </select>
                 </div>
-                <div className="space-y-2" data-oid="l4y3ypd">
-                  <label className="text-sm text-gray-400" data-oid="g4jlkol">
+                <div className="space-y-2" data-oid="qzg4-z3">
+                  <label className="text-sm text-gray-400" data-oid="k8c36o5">
                     Backup Time
                   </label>
                   <Input
                     type="time"
                     className="bg-space-900 border-gray-700 text-white"
                     defaultValue="03:00"
-                    data-oid="hkdq.ro"
+                    data-oid="fmf:xrc"
                   />
                 </div>
               </div>
 
-              <div className="space-y-2" data-oid=":2_muhs">
-                <label className="text-sm text-gray-400" data-oid="7l_3xhd">
+              <div className="space-y-2" data-oid="p0rofda">
+                <label className="text-sm text-gray-400" data-oid="0s9poct">
                   Retention Policy
                 </label>
                 <select
                   className="w-full bg-space-900 border border-gray-700 rounded p-2 text-white"
-                  data-oid="4fdis1v"
+                  data-oid="-ktou_q"
                 >
-                  <option value="7" data-oid="5fn:2xg">
+                  <option value="7" data-oid="6h:jims">
                     Keep last 7 days
                   </option>
-                  <option value="14" data-oid="wa1ojti">
+                  <option value="14" data-oid="pu-a7:i">
                     Keep last 14 days
                   </option>
-                  <option value="30" data-oid="ui5vaym">
+                  <option value="30" data-oid="n_tw-qp">
                     Keep last 30 days
                   </option>
-                  <option value="90" data-oid="2:m95u7">
+                  <option value="90" data-oid="8n8yecz">
                     Keep last 90 days
                   </option>
                 </select>
@@ -1109,7 +1109,7 @@ const SystemMaintenance: FC = () => {
 
               <Button
                 className="w-full bg-purple-900 text-cyan hover:bg-purple-800"
-                data-oid="cfdl8ke"
+                data-oid="4y7duqt"
               >
                 Save Backup Settings
               </Button>

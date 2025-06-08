@@ -9,71 +9,71 @@ const LoaderDemo = () => {
   const [isVisible, setIsVisible] = useState(true);
 
   return (
-    <main className="flex flex-col p-6 min-h-screen" data-oid="_zf.c75">
+    <main className="flex flex-col p-6 min-h-screen" data-oid="6n592-s">
       <h1
         className="text-2xl md:text-3xl font-bold text-white mb-6"
-        data-oid="kje96v9"
+        data-oid="_sfudp:"
       >
         Construction Loader Demo
       </h1>
 
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-6" data-oid="je3t3yt">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-6" data-oid="j1-y10m">
         <GlassCard
           className="p-6 h-[400px] flex items-center justify-center"
-          data-oid="dj.6f:5"
+          data-oid="7wvz2cj"
         >
           {isVisible && (
             <ConstructionLoader
               size={size}
               message={message}
               fullScreen={fullScreen}
-              data-oid="35yr3ws"
+              data-oid="1:9oi4z"
             />
           )}
         </GlassCard>
 
-        <GlassCard className="p-6" data-oid="0ydt0g7">
-          <h2 className="text-xl font-bold text-white mb-4" data-oid="tryrxit">
+        <GlassCard className="p-6" data-oid="_duoltg">
+          <h2 className="text-xl font-bold text-white mb-4" data-oid="0vcy.gp">
             Loader Settings
           </h2>
 
-          <div className="space-y-4" data-oid="sd2bcd-">
-            <div data-oid="v0pl6qp">
+          <div className="space-y-4" data-oid="e9m4mtl">
+            <div data-oid="4a4.p2g">
               <label
                 className="block text-sm text-gray-400 mb-1"
-                data-oid="kr-7fg:"
+                data-oid="qnabbtb"
               >
                 Size
               </label>
-              <div className="flex space-x-2" data-oid="akk9s5f">
+              <div className="flex space-x-2" data-oid="lbv.dal">
                 <button
                   className={`px-4 py-2 rounded ${size === "small" ? "bg-electric text-white" : "bg-space-800 text-gray-300"}`}
                   onClick={() => setSize("small")}
-                  data-oid=".yc-9:-"
+                  data-oid="x2qtquq"
                 >
                   Small
                 </button>
                 <button
                   className={`px-4 py-2 rounded ${size === "medium" ? "bg-electric text-white" : "bg-space-800 text-gray-300"}`}
                   onClick={() => setSize("medium")}
-                  data-oid="rti8akf"
+                  data-oid=":4hjfb1"
                 >
                   Medium
                 </button>
                 <button
                   className={`px-4 py-2 rounded ${size === "large" ? "bg-electric text-white" : "bg-space-800 text-gray-300"}`}
                   onClick={() => setSize("large")}
-                  data-oid="63g_om:"
+                  data-oid="onjm3ub"
                 >
                   Large
                 </button>
               </div>
             </div>
 
-            <div data-oid="deezj7i">
+            <div data-oid="y0be4np">
               <label
                 className="block text-sm text-gray-400 mb-1"
-                data-oid=".cl2utl"
+                data-oid="3h85z8b"
               >
                 Message
               </label>
@@ -82,43 +82,43 @@ const LoaderDemo = () => {
                 value={message}
                 onChange={(e) => setMessage(e.target.value)}
                 className="w-full bg-space-800 border border-gray-700 rounded-md p-2 text-white"
-                data-oid="sp8wrsp"
+                data-oid="53uzt.e"
               />
             </div>
 
-            <div className="flex items-center space-x-2" data-oid="akojvt9">
+            <div className="flex items-center space-x-2" data-oid="p7yk4c1">
               <input
                 type="checkbox"
                 id="fullscreen"
                 checked={fullScreen}
                 onChange={(e) => setFullScreen(e.target.checked)}
                 className="h-4 w-4 bg-space-800 border border-gray-700 rounded"
-                data-oid="ax9dknd"
+                data-oid="-kuh7:l"
               />
 
               <label
                 htmlFor="fullscreen"
                 className="text-gray-300"
-                data-oid="48f.l3o"
+                data-oid="8rfbbrz"
               >
                 Fullscreen Mode
               </label>
             </div>
 
-            <div className="flex items-center space-x-2" data-oid="a_815jq">
+            <div className="flex items-center space-x-2" data-oid="q-:9er4">
               <input
                 type="checkbox"
                 id="visible"
                 checked={isVisible}
                 onChange={(e) => setIsVisible(e.target.checked)}
                 className="h-4 w-4 bg-space-800 border border-gray-700 rounded"
-                data-oid="52ych9v"
+                data-oid="gwk5stc"
               />
 
               <label
                 htmlFor="visible"
                 className="text-gray-300"
-                data-oid="74pbmyi"
+                data-oid="w3b4yco"
               >
                 Show Loader
               </label>
@@ -130,7 +130,7 @@ const LoaderDemo = () => {
                 setFullScreen(true);
                 setTimeout(() => setFullScreen(false), 3000);
               }}
-              data-oid="vpr5cxu"
+              data-oid="i1f5t97"
             >
               Show Fullscreen for 3 seconds
             </button>
@@ -138,14 +138,14 @@ const LoaderDemo = () => {
         </GlassCard>
       </div>
 
-      <div className="mt-6" data-oid="v.8h-15">
-        <GlassCard className="p-6" data-oid="ea837n2">
-          <h2 className="text-xl font-bold text-white mb-4" data-oid="35zmkfy">
+      <div className="mt-6" data-oid="gns.:uo">
+        <GlassCard className="p-6" data-oid="ekia7h_">
+          <h2 className="text-xl font-bold text-white mb-4" data-oid="axq7ok3">
             Usage Example
           </h2>
           <pre
             className="bg-space-900 p-4 rounded-md overflow-x-auto text-cyan-400"
-            data-oid="bd5gtna"
+            data-oid="3fm:enx"
           >
             {`// Import the component
 import ConstructionLoader from '@/components/loaders/ConstructionLoader';

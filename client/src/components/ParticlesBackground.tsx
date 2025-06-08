@@ -133,7 +133,7 @@ const ParticlesBackground: FC<ParticlesBackgroundProps> = ({
     <canvas
       ref={canvasRef}
       className={`fixed top-0 left-0 w-full h-full -z-10 opacity-30 ${className}`}
-      data-oid="_6dtip_"
+      data-oid="zdbqz1_"
     />
   );
 };

@@ -184,15 +184,15 @@ const LeafletMap: FC<LeafletMapProps> = ({
       <div
         className={`relative overflow-hidden rounded-lg ${className}`}
         style={{ height }}
-        data-oid="dg33wzt"
+        data-oid="ru:4y02"
       >
         <div
           className="absolute inset-0 bg-space-800/50 flex items-center justify-center"
-          data-oid="dc71ug."
+          data-oid="rx09vys"
         >
           <div
             className="animate-spin rounded-full h-8 w-8 border-t-2 border-b-2 border-cyan"
-            data-oid="o5xznp:"
+            data-oid="cntdu4_"
           ></div>
         </div>
       </div>
@@ -203,24 +203,24 @@ const LeafletMap: FC<LeafletMapProps> = ({
     <div
       className={`relative overflow-hidden rounded-lg ${className}`}
       style={{ height }}
-      data-oid="eq.b9kt"
+      data-oid="::n0m9m"
     >
       {errorMsg && (
         <div
           className="absolute inset-0 bg-space-800/80 flex items-center justify-center text-red-400 text-sm p-4 text-center z-50"
-          data-oid=":9m4lu3"
+          data-oid="kl_b0.f"
         >
-          <div data-oid="7s2o73c">
+          <div data-oid="6m3ac5m">
             <i
               className="fas fa-exclamation-triangle mb-2"
-              data-oid=":1nqwl:"
+              data-oid="f6z9y3p"
             ></i>
-            <p data-oid="qyvokvv">{errorMsg}</p>
+            <p data-oid="yst60rt">{errorMsg}</p>
             <button
               className="mt-2 text-xs bg-electric/20 text-electric px-2 py-1 rounded hover:bg-electric/30"
               onClick={getUserLocation}
               disabled={isRefreshing}
-              data-oid="g-yzac5"
+              data-oid="zv7xt.7"
             >
               {isRefreshing ? "Refreshing..." : "Try Again"}
             </button>
@@ -233,16 +233,16 @@ const LeafletMap: FC<LeafletMapProps> = ({
         zoom={12}
         style={{ height: "100%", width: "100%" }}
         zoomControl={!isMobile}
-        data-oid="yv0.ds0"
+        data-oid="wb_r.kt"
       >
         <TileLayer
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
           attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
-          data-oid=":1ezqq1"
+          data-oid="eh:7pwl"
         />
 
         {userLocation && (
-          <SetViewOnUser coords={userLocation} data-oid="h4gzfm_" />
+          <SetViewOnUser coords={userLocation} data-oid="eb5:ih8" />
         )}
 
         {/* User location */}
@@ -257,12 +257,12 @@ const LeafletMap: FC<LeafletMapProps> = ({
                 fillOpacity: 0.4,
               }}
               radius={50}
-              data-oid="zxc90nr"
+              data-oid="rm4rvgu"
             />
 
-            <Marker position={userLocation} data-oid=".18r8r8">
-              <Popup data-oid="82l6cdt">
-                <div className="text-xs font-medium" data-oid="4x1q31w">
+            <Marker position={userLocation} data-oid="6hst9h0">
+              <Popup data-oid="5k6qgc8">
+                <div className="text-xs font-medium" data-oid=".2bxdv_">
                   Your Location
                 </div>
               </Popup>
@@ -276,16 +276,16 @@ const LeafletMap: FC<LeafletMapProps> = ({
             key={supplier.id}
             position={[supplier.location.lat, supplier.location.lng]}
             icon={createCustomIcon(supplier.color)}
-            data-oid="sp9ra11"
+            data-oid="28chz7o"
           >
-            <Popup data-oid="fhm3ke7">
-              <div className="text-xs font-medium" data-oid="gknq112">
+            <Popup data-oid="m304xw1">
+              <div className="text-xs font-medium" data-oid="qeeyb.b">
                 {supplier.name}
               </div>
-              <div className="text-xs text-gray-300" data-oid="jm63e92">
+              <div className="text-xs text-gray-300" data-oid="5e_6xed">
                 {supplier.hours}
               </div>
-              <div className="text-xs text-gray-300" data-oid="6wv5d:8">
+              <div className="text-xs text-gray-300" data-oid="u4:3_b9">
                 {supplier.distance}
               </div>
             </Popup>
@@ -294,17 +294,17 @@ const LeafletMap: FC<LeafletMapProps> = ({
       </MapContainer>
 
       {/* Refresh button */}
-      <div className="absolute top-3 right-3" data-oid="j3y0xxv">
+      <div className="absolute top-3 right-3" data-oid="l.ai8tb">
         <button
           onClick={getUserLocation}
           disabled={isRefreshing}
           className="bg-space-900/80 rounded-full h-8 w-8 flex items-center justify-center text-gray-400 hover:text-electric transition-colors"
           title="Refresh location"
-          data-oid="6ho00sh"
+          data-oid="qfv8a5p"
         >
           <i
             className={`fas fa-sync-alt ${isRefreshing ? "animate-spin" : ""}`}
-            data-oid="-_j90t."
+            data-oid="naqufmr"
           ></i>
         </button>
       </div>
@@ -312,7 +312,7 @@ const LeafletMap: FC<LeafletMapProps> = ({
       {/* Map attribution */}
       <div
         className="absolute bottom-0 right-0 p-1 bg-space-900/80 text-[10px] text-gray-500"
-        data-oid="lo668pq"
+        data-oid="qtxqxdh"
       >
         OpenStreetMap • Live Location
       </div>
@@ -321,7 +321,7 @@ const LeafletMap: FC<LeafletMapProps> = ({
       {isMobile && (
         <div
           className="absolute bottom-6 right-3 flex flex-col space-y-2"
-          data-oid="ka5gvab"
+          data-oid=".8t114z"
         >
           <button
             onClick={() =>
@@ -331,9 +331,9 @@ const LeafletMap: FC<LeafletMapProps> = ({
             }
             className="bg-space-900/80 rounded-full h-8 w-8 flex items-center justify-center text-gray-400 hover:text-electric"
             aria-label="Zoom in"
-            data-oid="y1gkyle"
+            data-oid="f4difr5"
           >
-            <i className="fas fa-plus" data-oid="ji3o_ci"></i>
+            <i className="fas fa-plus" data-oid="88w6gq5"></i>
           </button>
           <button
             onClick={() =>
@@ -343,9 +343,9 @@ const LeafletMap: FC<LeafletMapProps> = ({
             }
             className="bg-space-900/80 rounded-full h-8 w-8 flex items-center justify-center text-gray-400 hover:text-electric"
             aria-label="Zoom out"
-            data-oid="v48z:i6"
+            data-oid="_-5wlfi"
           >
-            <i className="fas fa-minus" data-oid="03_l1_b"></i>
+            <i className="fas fa-minus" data-oid="1uy-qx0"></i>
           </button>
         </div>
       )}

@@ -138,7 +138,7 @@ const AddInvoiceModal: FC<AddInvoiceModalProps> = ({ isOpen, onClose }) => {
   if (!isOpen) return null;
 
   return (
-    <AnimatePresence data-oid="4oldzxl">
+    <AnimatePresence data-oid="v0zmeot">
       {isOpen && (
         <motion.div
           className="fixed inset-0 bg-black/70 backdrop-blur-sm z-50 flex items-center justify-center"
@@ -147,7 +147,7 @@ const AddInvoiceModal: FC<AddInvoiceModalProps> = ({ isOpen, onClose }) => {
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
           transition={{ duration: 0.3 }}
-          data-oid="qznogwo"
+          data-oid="g.va8-k"
         >
           <motion.div
             className="bg-gradient-to-b from-space-800 to-space-950 p-8 rounded-xl max-w-lg w-full mx-4 border border-space-700 shadow-2xl relative overflow-hidden"
@@ -156,28 +156,28 @@ const AddInvoiceModal: FC<AddInvoiceModalProps> = ({ isOpen, onClose }) => {
             animate={{ scale: 1, y: 0, opacity: 1 }}
             exit={{ scale: 0.9, y: 20, opacity: 0 }}
             transition={{ type: "spring", damping: 25, stiffness: 300 }}
-            data-oid="_g.dfyl"
+            data-oid="b9bvf.3"
           >
             {/* Decorative elements */}
             <div
               className="absolute -top-24 -right-24 w-48 h-48 bg-cyan/10 rounded-full blur-3xl"
-              data-oid="z28-ime"
+              data-oid="mxi5v3t"
             ></div>
             <div
               className="absolute -bottom-24 -left-24 w-48 h-48 bg-purple-900/20 rounded-full blur-3xl"
-              data-oid=":alvchz"
+              data-oid="mhw1au-"
             ></div>
             <div
               className="relative z-10 flex items-center justify-between mb-6"
-              data-oid="c76m301"
+              data-oid="za_e_b1"
             >
               <h2
                 className="text-2xl font-space font-bold text-white"
-                data-oid="ok2bu_s"
+                data-oid="uo75prv"
               >
                 <span
                   className="bg-clip-text text-transparent bg-gradient-to-r from-cyan to-blue-400"
-                  data-oid="q7abhit"
+                  data-oid="5..5ljs"
                 >
                   Create New Invoice
                 </span>
@@ -191,7 +191,7 @@ const AddInvoiceModal: FC<AddInvoiceModalProps> = ({ isOpen, onClose }) => {
                 className="text-gray-400 hover:text-white rounded-full p-1 transition-colors duration-200"
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.95 }}
-                data-oid="0e-mzw:"
+                data-oid="hbh2ik2"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -199,14 +199,14 @@ const AddInvoiceModal: FC<AddInvoiceModalProps> = ({ isOpen, onClose }) => {
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
-                  data-oid="htd.zei"
+                  data-oid="d84vs5y"
                 >
                   <path
                     strokeLinecap="round"
                     strokeLinejoin="round"
                     strokeWidth={2}
                     d="M6 18L18 6M6 6l12 12"
-                    data-oid=".ysq78e"
+                    data-oid="a4is..g"
                   />
                 </svg>
               </motion.button>
@@ -215,16 +215,16 @@ const AddInvoiceModal: FC<AddInvoiceModalProps> = ({ isOpen, onClose }) => {
             <form
               onSubmit={handleSubmit}
               className="relative z-10"
-              data-oid="573oj1k"
+              data-oid="s7we:gx"
             >
               <div
                 className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6"
-                data-oid="8ds-hvb"
+                data-oid="ge02jl8"
               >
-                <div data-oid="up4uetj">
+                <div data-oid="wjzw0:h">
                   <label
                     className="block text-xs font-medium text-cyan/80 mb-2 uppercase tracking-wider"
-                    data-oid="152fa57"
+                    data-oid="-q-g34:"
                   >
                     Invoice Number
                   </label>
@@ -235,14 +235,14 @@ const AddInvoiceModal: FC<AddInvoiceModalProps> = ({ isOpen, onClose }) => {
                     onChange={handleChange}
                     className="w-full bg-space-900/60 border border-space-700 rounded-lg p-3 text-sm text-white ring-offset-space-950 focus:ring-2 focus:ring-cyan/40 focus:border-cyan/70 focus:outline-none transition-all duration-200 placeholder-gray-500"
                     required
-                    data-oid="6v60_cq"
+                    data-oid="byxaazo"
                   />
                 </div>
 
-                <div data-oid="epmafxk">
+                <div data-oid="q65nnn3">
                   <label
                     className="block text-xs font-medium text-cyan/80 mb-2 uppercase tracking-wider"
-                    data-oid="kqp331f"
+                    data-oid="c9k1e3v"
                   >
                     Status
                   </label>
@@ -251,27 +251,27 @@ const AddInvoiceModal: FC<AddInvoiceModalProps> = ({ isOpen, onClose }) => {
                     value={formData.status}
                     onChange={handleChange}
                     className="w-full bg-space-900/60 border border-space-700 rounded-lg p-3 text-sm text-white ring-offset-space-950 focus:ring-2 focus:ring-cyan/40 focus:border-cyan/70 focus:outline-none transition-all duration-200 appearance-none custom-select"
-                    data-oid="8vi3npz"
+                    data-oid="cj6ki7p"
                   >
-                    <option value="pending" data-oid="u1vr4cy">
+                    <option value="pending" data-oid="goe15zu">
                       Pending
                     </option>
-                    <option value="sent" data-oid="meizti4">
+                    <option value="sent" data-oid="hs-8tmz">
                       Sent
                     </option>
-                    <option value="paid" data-oid="1n2293g">
+                    <option value="paid" data-oid="n3jh6jj">
                       Paid
                     </option>
-                    <option value="overdue" data-oid="lzrx38b">
+                    <option value="overdue" data-oid="hat3g9y">
                       Overdue
                     </option>
                   </select>
                 </div>
 
-                <div data-oid="furb6.q">
+                <div data-oid="9_1btri">
                   <label
                     className="block text-xs font-medium text-cyan/80 mb-2 uppercase tracking-wider"
-                    data-oid="iefx9_7"
+                    data-oid="gbpbrtr"
                   >
                     Client
                   </label>
@@ -281,13 +281,13 @@ const AddInvoiceModal: FC<AddInvoiceModalProps> = ({ isOpen, onClose }) => {
                     onChange={handleChange}
                     className="w-full bg-space-900/60 border border-space-700 rounded-lg p-3 text-sm text-white ring-offset-space-950 focus:ring-2 focus:ring-cyan/40 focus:border-cyan/70 focus:outline-none transition-all duration-200 appearance-none custom-select"
                     required
-                    data-oid="-zmxxnf"
+                    data-oid="ab-zw-a"
                   >
-                    <option value="" data-oid="nea:uni">
+                    <option value="" data-oid="cj2qmld">
                       -- Select Client --
                     </option>
                     {isLoadingClients ? (
-                      <option disabled data-oid="gz79aa1">
+                      <option disabled data-oid="4o_5d.d">
                         Loading clients...
                       </option>
                     ) : typedClients.length > 0 ? (
@@ -295,23 +295,23 @@ const AddInvoiceModal: FC<AddInvoiceModalProps> = ({ isOpen, onClose }) => {
                         <option
                           key={client.id}
                           value={client.id}
-                          data-oid="ol9gcof"
+                          data-oid="4:6ea1b"
                         >
                           {client.name}
                         </option>
                       ))
                     ) : (
-                      <option disabled data-oid="d280zap">
+                      <option disabled data-oid="fta6eeu">
                         No clients available
                       </option>
                     )}
                   </select>
                 </div>
 
-                <div data-oid="x86esqk">
+                <div data-oid="mkbsx1k">
                   <label
                     className="block text-xs font-medium text-cyan/80 mb-2 uppercase tracking-wider"
-                    data-oid="78qetga"
+                    data-oid="37:2lci"
                   >
                     Project
                   </label>
@@ -321,13 +321,13 @@ const AddInvoiceModal: FC<AddInvoiceModalProps> = ({ isOpen, onClose }) => {
                     onChange={handleChange}
                     className="w-full bg-space-900/60 border border-space-700 rounded-lg p-3 text-sm text-white ring-offset-space-950 focus:ring-2 focus:ring-cyan/40 focus:border-cyan/70 focus:outline-none transition-all duration-200 appearance-none custom-select disabled:opacity-60 disabled:cursor-not-allowed"
                     disabled={!formData.clientId}
-                    data-oid="7vz3rej"
+                    data-oid="z7:t46_"
                   >
-                    <option value="" data-oid="7wll3gq">
+                    <option value="" data-oid="4fwls40">
                       -- Select Project --
                     </option>
                     {isLoadingProjects ? (
-                      <option disabled data-oid="xdiu62:">
+                      <option disabled data-oid="v6e9:13">
                         Loading projects...
                       </option>
                     ) : filteredProjects.length > 0 ? (
@@ -335,23 +335,23 @@ const AddInvoiceModal: FC<AddInvoiceModalProps> = ({ isOpen, onClose }) => {
                         <option
                           key={project.id}
                           value={project.id}
-                          data-oid="hdzsw3r"
+                          data-oid="do84l1g"
                         >
                           {project.name}
                         </option>
                       ))
                     ) : (
-                      <option disabled data-oid="eiyue94">
+                      <option disabled data-oid="l3353j3">
                         No projects for this client
                       </option>
                     )}
                   </select>
                 </div>
 
-                <div data-oid="t_.xuj6">
+                <div data-oid="lftsk_f">
                   <label
                     className="block text-xs font-medium text-cyan/80 mb-2 uppercase tracking-wider"
-                    data-oid="lv3zr00"
+                    data-oid="yd3zh0t"
                   >
                     Issue Date
                   </label>
@@ -362,14 +362,14 @@ const AddInvoiceModal: FC<AddInvoiceModalProps> = ({ isOpen, onClose }) => {
                     onChange={handleChange}
                     className="w-full bg-space-900/60 border border-space-700 rounded-lg p-3 text-sm text-white ring-offset-space-950 focus:ring-2 focus:ring-cyan/40 focus:border-cyan/70 focus:outline-none transition-all duration-200 custom-date-input"
                     required
-                    data-oid=":tymdzm"
+                    data-oid="o6p0fg2"
                   />
                 </div>
 
-                <div data-oid="z.xqdl3">
+                <div data-oid="p.icbjk">
                   <label
                     className="block text-xs font-medium text-cyan/80 mb-2 uppercase tracking-wider"
-                    data-oid="0vnonhp"
+                    data-oid="5e4p.9a"
                   >
                     Due Date
                   </label>
@@ -380,21 +380,21 @@ const AddInvoiceModal: FC<AddInvoiceModalProps> = ({ isOpen, onClose }) => {
                     onChange={handleChange}
                     className="w-full bg-space-900/60 border border-space-700 rounded-lg p-3 text-sm text-white ring-offset-space-950 focus:ring-2 focus:ring-cyan/40 focus:border-cyan/70 focus:outline-none transition-all duration-200 custom-date-input"
                     required
-                    data-oid="eukkn8h"
+                    data-oid="nz8oocb"
                   />
                 </div>
 
-                <div data-oid="ly6g9_y">
+                <div data-oid="unqjktj">
                   <label
                     className="block text-xs font-medium text-cyan/80 mb-2 uppercase tracking-wider"
-                    data-oid="34-77t:"
+                    data-oid="oof7-jp"
                   >
                     Subtotal ($)
                   </label>
-                  <div className="relative" data-oid="r6wr:wc">
+                  <div className="relative" data-oid="sz9rzzq">
                     <span
                       className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400"
-                      data-oid="j9yvj1a"
+                      data-oid="k-yuqw1"
                     >
                       $
                     </span>
@@ -407,22 +407,22 @@ const AddInvoiceModal: FC<AddInvoiceModalProps> = ({ isOpen, onClose }) => {
                       step="0.01"
                       min="0"
                       required
-                      data-oid="6p41z6k"
+                      data-oid="f6iw79f"
                     />
                   </div>
                 </div>
 
-                <div data-oid="p6_o3xk">
+                <div data-oid="fwfs6i5">
                   <label
                     className="block text-xs font-medium text-cyan/80 mb-2 uppercase tracking-wider"
-                    data-oid="3v1fe83"
+                    data-oid="pweu2nm"
                   >
                     Tax (GST) ($)
                   </label>
-                  <div className="relative" data-oid="ryv0xif">
+                  <div className="relative" data-oid="6l.mtwi">
                     <span
                       className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400"
-                      data-oid="-cqu3oj"
+                      data-oid="utc4wcx"
                     >
                       $
                     </span>
@@ -434,22 +434,22 @@ const AddInvoiceModal: FC<AddInvoiceModalProps> = ({ isOpen, onClose }) => {
                       className="w-full bg-space-900/60 border border-space-700 rounded-lg p-3 pl-7 text-sm text-white ring-offset-space-950 focus:ring-2 focus:ring-cyan/40 focus:border-cyan/70 focus:outline-none transition-all duration-200"
                       step="0.01"
                       min="0"
-                      data-oid="ekwyl.w"
+                      data-oid="wbvy4.."
                     />
                   </div>
                 </div>
 
-                <div className="md:col-span-2" data-oid="6cn-pih">
+                <div className="md:col-span-2" data-oid="si87b76">
                   <label
                     className="block text-xs font-medium text-cyan/80 mb-2 uppercase tracking-wider"
-                    data-oid="5rio8.v"
+                    data-oid="b73v0xr"
                   >
                     Total ($)
                   </label>
-                  <div className="relative" data-oid="y:6ka3g">
+                  <div className="relative" data-oid="4:9kkll">
                     <span
                       className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400"
-                      data-oid="8a6.dj1"
+                      data-oid="2oo1p0d"
                     >
                       $
                     </span>
@@ -459,21 +459,21 @@ const AddInvoiceModal: FC<AddInvoiceModalProps> = ({ isOpen, onClose }) => {
                       value={formData.total}
                       className="w-full bg-space-900/60 border border-space-700 rounded-lg p-3 pl-7 text-sm font-medium text-cyan bg-space-950/40 ring-offset-space-950 focus:ring-2 focus:ring-cyan/40 focus:border-cyan/70 focus:outline-none transition-all duration-200"
                       readOnly
-                      data-oid="tzyh5wc"
+                      data-oid="0ejm6er"
                     />
                   </div>
                   <p
                     className="text-xs text-gray-400 mt-1 italic"
-                    data-oid="39q-09g"
+                    data-oid="iqkndt9"
                   >
                     Total is calculated automatically
                   </p>
                 </div>
 
-                <div className="md:col-span-2" data-oid="abu0b5k">
+                <div className="md:col-span-2" data-oid="so4p:bw">
                   <label
                     className="block text-xs font-medium text-cyan/80 mb-2 uppercase tracking-wider"
-                    data-oid="bt9uq7v"
+                    data-oid="x7uhluq"
                   >
                     Notes
                   </label>
@@ -484,14 +484,14 @@ const AddInvoiceModal: FC<AddInvoiceModalProps> = ({ isOpen, onClose }) => {
                     className="w-full bg-space-900/60 border border-space-700 rounded-lg p-3 text-sm text-white ring-offset-space-950 focus:ring-2 focus:ring-cyan/40 focus:border-cyan/70 focus:outline-none transition-all duration-200 resize-none"
                     rows={3}
                     placeholder="Additional information for this invoice..."
-                    data-oid="p_2wvx9"
+                    data-oid=".mebeq_"
                   ></textarea>
                 </div>
               </div>
 
               <div
                 className="flex justify-end space-x-4 mt-8"
-                data-oid="nn:ajn."
+                data-oid="s88qxjs"
               >
                 <motion.button
                   type="button"
@@ -502,7 +502,7 @@ const AddInvoiceModal: FC<AddInvoiceModalProps> = ({ isOpen, onClose }) => {
                   className="bg-space-800/80 text-gray-300 px-5 py-3 rounded-lg border border-space-700 hover:bg-space-700 transition-all duration-200 text-sm font-medium"
                   whileHover={{ scale: 1.02 }}
                   whileTap={{ scale: 0.98 }}
-                  data-oid="g8st2y4"
+                  data-oid="3tklsvf"
                 >
                   Cancel
                 </motion.button>
@@ -512,14 +512,14 @@ const AddInvoiceModal: FC<AddInvoiceModalProps> = ({ isOpen, onClose }) => {
                   className="bg-gradient-to-r from-purple-900 to-purple-800 text-cyan px-6 py-3 rounded-lg border border-purple-700 hover:border-cyan/30 transition-all duration-200 relative overflow-hidden shadow-lg shadow-purple-900/20 btn-glow btn-glow-cyan text-sm font-medium"
                   whileHover={{ scale: 1.02 }}
                   whileTap={{ scale: 0.98 }}
-                  data-oid="34c3x:z"
+                  data-oid="_l-6k9_"
                 >
-                  <span className="relative z-10" data-oid="sk71ceo">
+                  <span className="relative z-10" data-oid="tuusder">
                     {isCreating ? "Creating..." : "Create Invoice"}
                   </span>
                   <span
                     className="absolute inset-0 bg-gradient-to-r from-cyan/10 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300"
-                    data-oid="z5589xr"
+                    data-oid="a4jm42l"
                   ></span>
                 </motion.button>
               </div>

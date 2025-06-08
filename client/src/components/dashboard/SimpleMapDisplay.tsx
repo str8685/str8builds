@@ -159,15 +159,15 @@ const SimpleMapDisplay: FC<SimpleMapDisplayProps> = ({
       <div
         className={`relative overflow-hidden rounded-lg ${className}`}
         style={{ height }}
-        data-oid="j7yk43w"
+        data-oid="yz0wk9m"
       >
         <div
           className="absolute inset-0 bg-space-800/50 flex items-center justify-center"
-          data-oid="9haevls"
+          data-oid="h6ef1q."
         >
           <div
             className="animate-spin rounded-full h-8 w-8 border-t-2 border-b-2 border-cyan"
-            data-oid="b7gqjj."
+            data-oid="tnks2w1"
           ></div>
         </div>
       </div>
@@ -178,21 +178,21 @@ const SimpleMapDisplay: FC<SimpleMapDisplayProps> = ({
     <div
       className={`relative overflow-hidden rounded-lg ${className}`}
       style={{ height }}
-      data-oid="g.17qq1"
+      data-oid=".mmibij"
     >
       {errorMsg && (
         <div
           className="absolute inset-0 bg-space-800/80 flex items-center justify-center text-red-400 text-sm p-4 text-center z-50"
-          data-oid="3..793-"
+          data-oid="fu79aek"
         >
-          <div className="flex flex-col items-center" data-oid=".em_u4e">
-            <AlertTriangle className="h-6 w-6 mb-2" data-oid="p-9:3sm" />
-            <p data-oid="ndm9i85">{errorMsg}</p>
+          <div className="flex flex-col items-center" data-oid="dovzg:z">
+            <AlertTriangle className="h-6 w-6 mb-2" data-oid="z-y27rq" />
+            <p data-oid="e6bw0yu">{errorMsg}</p>
             <button
               className="mt-2 text-xs bg-electric/20 text-electric px-2 py-1 rounded hover:bg-electric/30"
               onClick={getUserLocation}
               disabled={isRefreshing}
-              data-oid="bzzc:zd"
+              data-oid="ar5r2cx"
             >
               {isRefreshing ? "Refreshing..." : "Try Again"}
             </button>
@@ -200,7 +200,7 @@ const SimpleMapDisplay: FC<SimpleMapDisplayProps> = ({
         </div>
       )}
 
-      <div className="absolute inset-0 bg-space-800/30" data-oid="bnl3-5n">
+      <div className="absolute inset-0 bg-space-800/30" data-oid="gyfu52x">
         {/* Map grid */}
         <div
           className="h-full w-full grid grid-cols-5 grid-rows-5"
@@ -208,13 +208,13 @@ const SimpleMapDisplay: FC<SimpleMapDisplayProps> = ({
             transform: `scale(${zoomLevel})`,
             transformOrigin: "center",
           }}
-          data-oid="81q5dq9"
+          data-oid="kou_5d5"
         >
           {Array.from({ length: 25 }).map((_, i) => (
             <div
               key={i}
               className="border-[0.5px] border-gray-700/20"
-              data-oid="fnu2m-6"
+              data-oid="tgp7e.g"
             ></div>
           ))}
         </div>
@@ -222,20 +222,20 @@ const SimpleMapDisplay: FC<SimpleMapDisplayProps> = ({
         {/* User location */}
         <div
           className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
-          data-oid="-w_rheb"
+          data-oid="t:_edl6"
         >
-          <div className="relative" data-oid="eyj.v6h">
+          <div className="relative" data-oid="viqu84m">
             <div
               className="h-4 w-4 rounded-full bg-electric animate-pulse"
-              data-oid="v-2fbor"
+              data-oid="yb79c0y"
             ></div>
             <div
               className="absolute top-0 left-0 h-4 w-4 rounded-full bg-electric animate-ping opacity-50"
-              data-oid="oaswia:"
+              data-oid="6xs5g13"
             ></div>
             <div
               className="absolute -top-8 left-1/2 transform -translate-x-1/2 bg-space-900/90 px-2 py-1 rounded text-xs text-white whitespace-nowrap"
-              data-oid="eb_pdkj"
+              data-oid="ncedwxr"
             >
               Your Location
             </div>
@@ -324,26 +324,26 @@ const SimpleMapDisplay: FC<SimpleMapDisplayProps> = ({
                 transform: "translate(-50%, -50%)",
                 zIndex: 20,
               }}
-              data-oid="0qqnamq"
+              data-oid="9n_q_f9"
             >
-              <div className="group relative" data-oid="7x6yo_3">
+              <div className="group relative" data-oid="zrkpl1k">
                 <div
                   className={`h-3 w-3 rounded-full ${colorClass} animate-pulse`}
-                  data-oid="n5j2hce"
+                  data-oid="-.cfr4x"
                 ></div>
 
                 {showLabels && (
                   <div
                     className="absolute bottom-4 left-1/2 transform -translate-x-1/2 bg-space-900/90 px-2 py-1 rounded text-xs text-white whitespace-nowrap min-w-[100px]"
                     style={{ zIndex: 30 }}
-                    data-oid="d1ep62t"
+                    data-oid="qbm_fx1"
                   >
-                    <div className="font-medium text-xs" data-oid="wivqgj9">
+                    <div className="font-medium text-xs" data-oid="__eb:tj">
                       {supplier.name.split(" ")[0]}
                     </div>
                     <div
                       className="text-[10px] text-gray-400"
-                      data-oid="uvzmoks"
+                      data-oid="j4_lqit"
                     >
                       {supplier.distance}
                     </div>
@@ -353,15 +353,15 @@ const SimpleMapDisplay: FC<SimpleMapDisplayProps> = ({
                 <div
                   className="absolute opacity-0 group-hover:opacity-100 transition-opacity duration-200 bottom-4 left-1/2 transform -translate-x-1/2 bg-space-900/90 px-2 py-1 rounded text-xs text-white whitespace-nowrap min-w-[120px]"
                   style={{ zIndex: 30 }}
-                  data-oid="momxsjg"
+                  data-oid="a35cky-"
                 >
-                  <div className="font-medium text-xs" data-oid="5p:sq6r">
+                  <div className="font-medium text-xs" data-oid="3_4zv5k">
                     {supplier.name}
                   </div>
-                  <div className="text-[10px] text-gray-400" data-oid="-3z283s">
+                  <div className="text-[10px] text-gray-400" data-oid="x9gcdmv">
                     {supplier.hours}
                   </div>
-                  <div className="text-[10px] text-gray-400" data-oid="-dqty9c">
+                  <div className="text-[10px] text-gray-400" data-oid="0_0c2:7">
                     {supplier.distance}
                   </div>
                 </div>
@@ -388,11 +388,11 @@ const SimpleMapDisplay: FC<SimpleMapDisplayProps> = ({
                   left: `calc(50% + ${offsetX}%)`,
                   transform: "translate(-50%, -50%)",
                 }}
-                data-oid="7w:dejk"
+                data-oid="e::t18:"
               >
                 <div
                   className={`h-3 w-3 rounded-full ${colors[index] === "cyan" ? "bg-cyan" : colors[index] === "teal" ? "bg-teal" : "bg-electric"} animate-pulse`}
-                  data-oid="zcmc9gu"
+                  data-oid="ntf:l9f"
                 ></div>
               </div>
             );
@@ -400,31 +400,31 @@ const SimpleMapDisplay: FC<SimpleMapDisplayProps> = ({
       </div>
 
       {/* Compass indicator and refresh button */}
-      <div className="absolute top-3 right-3 flex space-x-2" data-oid="3h_-u7n">
+      <div className="absolute top-3 right-3 flex space-x-2" data-oid="bzgk0oj">
         <button
           onClick={getUserLocation}
           disabled={isRefreshing}
           className="bg-space-900/80 rounded-full h-8 w-8 flex items-center justify-center text-gray-400 hover:text-electric transition-colors"
           title="Refresh location"
-          data-oid="x7m1:ab"
+          data-oid="ts7qjy5"
         >
           <RefreshCw
             className={`h-4 w-4 ${isRefreshing ? "animate-spin" : ""}`}
-            data-oid="51jyz:w"
+            data-oid="idswvaz"
           />
         </button>
         <div
           className="bg-space-900/80 rounded-full h-8 w-8 flex items-center justify-center text-gray-400"
-          data-oid="98j0:3o"
+          data-oid="jkx4nw_"
         >
-          <Compass className="h-4 w-4" data-oid="ykw:pss" />
+          <Compass className="h-4 w-4" data-oid="y8hy_4x" />
         </div>
       </div>
 
       {/* Map attribution */}
       <div
         className="absolute bottom-0 right-0 p-1 bg-space-900/80 text-[10px] text-gray-500"
-        data-oid="9964l.8"
+        data-oid="t.8wghe"
       >
         NZ GIS Data • Live Location{" "}
         {isMobile && `• Zoom: ${Math.round(zoomLevel * 100)}%`}
@@ -434,23 +434,23 @@ const SimpleMapDisplay: FC<SimpleMapDisplayProps> = ({
       {isMobile && (
         <div
           className="absolute bottom-6 right-3 flex flex-col space-y-2"
-          data-oid="3cuzi3r"
+          data-oid="3322yr2"
         >
           <button
             onClick={zoomIn}
             className="bg-space-900/80 rounded-full h-8 w-8 flex items-center justify-center text-gray-400 hover:text-electric"
             aria-label="Zoom in"
-            data-oid="teca0g5"
+            data-oid=".yrvrk_"
           >
-            <Plus className="h-4 w-4" data-oid="k49ref2" />
+            <Plus className="h-4 w-4" data-oid="y.6lav6" />
           </button>
           <button
             onClick={zoomOut}
             className="bg-space-900/80 rounded-full h-8 w-8 flex items-center justify-center text-gray-400 hover:text-electric"
             aria-label="Zoom out"
-            data-oid="6fym7ni"
+            data-oid="e9p10:-"
           >
-            <Minus className="h-4 w-4" data-oid="7480szy" />
+            <Minus className="h-4 w-4" data-oid="l0kqk2i" />
           </button>
         </div>
       )}

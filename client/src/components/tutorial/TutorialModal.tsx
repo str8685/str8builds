@@ -28,7 +28,7 @@ const TutorialModal: React.FC = () => {
       isLast={isLast}
       currentStepIndex={currentStep}
       totalSteps={steps.length}
-      data-oid="np7-hc."
+      data-oid="88-.7du"
     />,
 
     document.body,

@@ -31,9 +31,9 @@ function FallbackBox({
   });
 
   return (
-    <mesh ref={meshRef} position={position} scale={scale} data-oid="01.h2_y">
-      <boxGeometry args={[1, 1, 1]} data-oid="vx9_iwr" />
-      <meshStandardMaterial color={color} data-oid="xm7slqi" />
+    <mesh ref={meshRef} position={position} scale={scale} data-oid="-hqajfj">
+      <boxGeometry args={[1, 1, 1]} data-oid="k9-5.1l" />
+      <meshStandardMaterial color={color} data-oid="pj3wuwh" />
     </mesh>
   );
 }
@@ -67,7 +67,7 @@ function Model({
   });
 
   // For the demo, we'll just use a simple box instead of loading real models
-  return <FallbackBox position={position} scale={scale} data-oid="h8o5n._" />;
+  return <FallbackBox position={position} scale={scale} data-oid="08mzy5u" />;
 }
 
 // Component to load a GLTF model from a URL
@@ -120,43 +120,43 @@ export default function BasicModel({
     <div
       className={`relative ${className}`}
       style={{ backgroundColor }}
-      data-oid="9__j.86"
+      data-oid="v509b90"
     >
       {isLoading && (
         <div
           className="absolute inset-0 flex justify-center items-center bg-black/10 z-10"
-          data-oid="i:3o85y"
+          data-oid=":fygc_2"
         >
           <div
             className="animate-spin rounded-full h-16 w-16 border-t-2 border-b-2 border-cyan"
-            data-oid="mheta1q"
+            data-oid="z.rbv02"
           ></div>
         </div>
       )}
 
-      <Canvas shadows className="w-full h-full" data-oid="7.zquk.">
+      <Canvas shadows className="w-full h-full" data-oid="ei0zc_9">
         <PerspectiveCamera
           makeDefault
           position={defaultCamera.position}
           fov={defaultCamera.fov}
-          data-oid="b2yqmyk"
+          data-oid="ydol:k2"
         />
 
-        {enableEnvironment && <Environment preset="city" data-oid="3l4zyro" />}
+        {enableEnvironment && <Environment preset="city" data-oid="s69hzhm" />}
 
         <Stage
           adjustCamera
           intensity={0.5}
           shadows="contact"
           environment="city"
-          data-oid="ez..ntd"
+          data-oid="5-jllaf"
         >
           <Model
             url={modelUrl}
             position={position}
             scale={scale}
             rotation={rotation}
-            data-oid="cmf:781"
+            data-oid="ccv-8:8"
           />
         </Stage>
 
@@ -166,7 +166,7 @@ export default function BasicModel({
           enableRotate={true}
           autoRotate={enableRotation}
           autoRotateSpeed={1}
-          data-oid="d4nq4iv"
+          data-oid="lw5o_-p"
         />
       </Canvas>
     </div>

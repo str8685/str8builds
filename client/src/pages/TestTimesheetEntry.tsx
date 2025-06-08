@@ -83,55 +83,55 @@ const TestTimesheetEntry: FC = () => {
   };
 
   return (
-    <div className="container mx-auto max-w-6xl px-4 py-8" data-oid="zn7yk:l">
-      <Toaster data-oid="rx63riz" />
+    <div className="container mx-auto max-w-6xl px-4 py-8" data-oid="-:ixamo">
+      <Toaster data-oid="t3hksfx" />
 
       <PageTitle
         title="Time Entry Tester"
         subtitle="Create demo time entries for testing"
-        data-oid="b:b3w6q"
+        data-oid=".focter"
       />
 
-      <div className="mb-8" data-oid="ejvdlr4">
+      <div className="mb-8" data-oid="3mew9ts">
         <button
           onClick={createDemoEntry}
           className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg shadow-lg transition-all duration-200 flex items-center justify-center"
-          data-oid=".5q8s2z"
+          data-oid="l0f1y7h"
         >
           Create Demo Time Entry
         </button>
-        <p className="text-gray-400 mt-2 text-sm" data-oid="-f9_yrh">
+        <p className="text-gray-400 mt-2 text-sm" data-oid="1q2mjyz">
           Click the button above to create a demo time entry that will be saved
           to localStorage and dispatch the necessary events. Then go to the
           Timesheet page to see if it appears there.
         </p>
       </div>
 
-      <h2 className="text-xl font-bold text-white mb-4" data-oid="8kaummr">
+      <h2 className="text-xl font-bold text-white mb-4" data-oid="s-9nchb">
         Demo Entries Created (Current Session)
       </h2>
 
-      <div className="grid gap-4" data-oid="qvko1az">
+      <div className="grid gap-4" data-oid="l98rzv-">
         {entries.length > 0 ? (
           entries.map((entry) => (
-            <GlassCard key={entry.id} className="p-4" data-oid="f1t5-kn">
-              <div className="flex justify-between" data-oid="71mke1g">
-                <div data-oid="ef.l7v5">
-                  <h3 className="font-bold text-white" data-oid="6ap91d-">
+            <GlassCard key={entry.id} className="p-4" data-oid="jjhr_jv">
+              <div className="flex justify-between" data-oid="k7ojr0i">
+                <div data-oid="zc67ba-">
+                  <h3 className="font-bold text-white" data-oid="97reeo6">
                     Demo Entry
                   </h3>
-                  <p className="text-gray-400 text-sm" data-oid="dsr0pa5">
+                  <p className="text-gray-400 text-sm" data-oid="4uipp_g">
                     {entry.notes}
                   </p>
                 </div>
-                <div className="text-right" data-oid="clc5mp.">
+                <div className="text-right" data-oid="vrx0-gl">
                   <div
                     className="text-lg font-bold text-white"
-                    data-oid="3_:i_2u"
+                    data-oid="e4sw202"
                   >
                     {formatDuration(entry.duration)}
                   </div>
-                  <div className="text-gray-400 text-sm" data-oid="af_nlvs">
+                  <div className="text-gray-400 text-sm" data-oid="mk9w:yw">
                     {new Date(entry.startTime).toLocaleTimeString()} -{" "}
                     {new Date(entry.endTime).toLocaleTimeString()}
                   </div>
@@ -140,7 +140,7 @@ const TestTimesheetEntry: FC = () => {
             </GlassCard>
           ))
         ) : (
-          <p className="text-gray-400" data-oid="cjt13ph">
+          <p className="text-gray-400" data-oid="_o_w1ir">
             No demo entries created yet. Click the button above to create one.
           </p>
         )}
