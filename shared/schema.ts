@@ -1,38 +1,58 @@
-import { pgTable, text, serial, integer, boolean, timestamp, numeric, jsonb, PgTableWithColumns } from "drizzle-orm/pg-core";
-import { sqliteTable, text as sqliteText, integer as sqliteInteger, real, SQLiteTableWithColumns } from "drizzle-orm/sqlite-core";  
+import {
+  pgTable,
+  text,
+  serial,
+  integer,
+  boolean,
+  timestamp,
+  numeric,
+  jsonb,
+  PgTableWithColumns,
+} from "drizzle-orm/pg-core";
+import {
+  sqliteTable,
+  text as sqliteText,
+  integer as sqliteInteger,
+  real,
+  SQLiteTableWithColumns,
+} from "drizzle-orm/sqlite-core";
 import { createInsertSchema } from "drizzle-zod";
 import { z } from "zod";
 import { relations } from "drizzle-orm";
 
 // Check if we're using SQLite (development) or Postgres (production)
-const isProduction = process.env.NODE_ENV !== 'development' || !!process.env.DATABASE_URL;
+const isProduction =
+  process.env.NODE_ENV !== "development" || !!process.env.DATABASE_URL;
 
 // Helper function to create tables based on environment
-function createTable<T extends Record<string, any>>(name: string, columns: T): PgTableWithColumns<any> | SQLiteTableWithColumns<any> {
+function createTable<T extends Record<string, any>>(
+  name: string,
+  columns: T,
+): PgTableWithColumns<any> | SQLiteTableWithColumns<any> {
   if (isProduction) {
     return pgTable(name, columns);
   } else {
     // Convert pg columns to sqlite columns
     const sqliteColumns: Record<string, any> = {};
     for (const [key, value] of Object.entries(columns)) {
-      if (!value || typeof value !== 'object') continue;
-      
-      if (value.dataType === 'serial') {
-        sqliteColumns[key] = sqliteInteger(value.name).primaryKey().notNull();
-      } else if (value.dataType === 'numeric') {
-        sqliteColumns[key] = real(value.name);
-      } else if (value.dataType === 'timestamp') {
-        sqliteColumns[key] = sqliteText(value.name);
-      } else if (value.dataType === 'jsonb') {
+      if (!value || typeof value !== "object") continue;
+
+      if (value.dataType === "serial") {
+        sqliteColumns[key] = sqliteInteger(key).primaryKey().notNull();
+      } else if (value.dataType === "numeric") {
+        sqliteColumns[key] = real(key);
+      } else if (value.dataType === "timestamp") {
+        sqliteColumns[key] = sqliteText(key);
+      } else if (value.dataType === "jsonb") {
         // For SQLite, simply store JSON as TEXT - we'll handle parsing/serialization in the application code
         // This avoids issues with the SQLite adapter not supporting transform
-        sqliteColumns[key] = sqliteText(value.name);
-      } else if (value.dataType === 'integer') {
-        sqliteColumns[key] = sqliteInteger(value.name);
-      } else if (value.dataType === 'boolean') {
-        sqliteColumns[key] = sqliteInteger(value.name);
+        sqliteColumns[key] = sqliteText(key);
+      } else if (value.dataType === "integer") {
+        sqliteColumns[key] = sqliteInteger(key);
+      } else if (value.dataType === "boolean") {
+        sqliteColumns[key] = sqliteInteger(key);
       } else {
-        sqliteColumns[key] = sqliteText(value.name);
+        sqliteColumns[key] = sqliteText(key);
       }
     }
     return sqliteTable(name, sqliteColumns);
@@ -44,12 +64,15 @@ export const users = createTable("users", {
   id: serial("id").primaryKey(),
   username: text("username").notNull().unique(),
   password: text("password").notNull(),
-  companyName: text("company_name"),
-  fullName: text("full_name"),
+  companyName: text("companyName"),
+  fullName: text("fullName"),
   email: text("email"),
   phone: text("phone"),
-  defaultHourlyRate: numeric("default_hourly_rate"),
-  createdAt: timestamp("created_at").defaultNow(),
+  defaultHourlyRate: numeric("defaultHourlyRate"),
+  role: text("role"),
+  status: text("status"),
+  profileImageUrl: text("profileImageUrl"),
+  createdAt: timestamp("createdAt").defaultNow(),
 });
 
 export const insertUserSchema = createInsertSchema(users).omit({
@@ -60,7 +83,9 @@ export const insertUserSchema = createInsertSchema(users).omit({
 // Clients
 export const clients = pgTable("clients", {
   id: serial("id").primaryKey(),
-  userId: integer("user_id").notNull().references(() => users.id),
+  userId: integer("user_id")
+    .notNull()
+    .references(() => users.id),
   name: text("name").notNull(),
   contact: text("contact"),
   email: text("email"),
@@ -78,7 +103,9 @@ export const insertClientSchema = createInsertSchema(clients).omit({
 // Projects
 export const projects = pgTable("projects", {
   id: serial("id").primaryKey(),
-  userId: integer("user_id").notNull().references(() => users.id),
+  userId: integer("user_id")
+    .notNull()
+    .references(() => users.id),
   clientId: integer("client_id").references(() => clients.id),
   name: text("name").notNull(),
   description: text("description"),
@@ -100,7 +127,9 @@ export const insertProjectSchema = createInsertSchema(projects).omit({
 // Time Entries
 export const timeEntries = pgTable("time_entries", {
   id: serial("id").primaryKey(),
-  userId: integer("user_id").notNull().references(() => users.id),
+  userId: integer("user_id")
+    .notNull()
+    .references(() => users.id),
   projectId: integer("project_id").references(() => projects.id),
   startTime: timestamp("start_time").notNull(),
   endTime: timestamp("end_time"),
@@ -117,14 +146,23 @@ export const insertTimeEntrySchema = createInsertSchema(timeEntries)
   })
   .transform((data) => ({
     ...data,
-    startTime: typeof data.startTime === 'string' ? new Date(data.startTime) : data.startTime,
-    endTime: data.endTime ? (typeof data.endTime === 'string' ? new Date(data.endTime) : data.endTime) : undefined,
+    startTime:
+      typeof data.startTime === "string"
+        ? new Date(data.startTime)
+        : data.startTime,
+    endTime: data.endTime
+      ? typeof data.endTime === "string"
+        ? new Date(data.endTime)
+        : data.endTime
+      : undefined,
   }));
 
 // Invoices
 export const invoices = pgTable("invoices", {
   id: serial("id").primaryKey(),
-  userId: integer("user_id").notNull().references(() => users.id),
+  userId: integer("user_id")
+    .notNull()
+    .references(() => users.id),
   clientId: integer("client_id").references(() => clients.id),
   projectId: integer("project_id").references(() => projects.id),
   invoiceNumber: text("invoice_number").notNull(),
@@ -145,14 +183,20 @@ export const insertInvoiceSchema = createInsertSchema(invoices)
   })
   .transform((data) => ({
     ...data,
-    issueDate: typeof data.issueDate === 'string' ? new Date(data.issueDate) : data.issueDate,
-    dueDate: typeof data.dueDate === 'string' ? new Date(data.dueDate) : data.dueDate,
+    issueDate:
+      typeof data.issueDate === "string"
+        ? new Date(data.issueDate)
+        : data.issueDate,
+    dueDate:
+      typeof data.dueDate === "string" ? new Date(data.dueDate) : data.dueDate,
   }));
 
 // Invoice Items
 export const invoiceItems = pgTable("invoice_items", {
   id: serial("id").primaryKey(),
-  invoiceId: integer("invoice_id").notNull().references(() => invoices.id),
+  invoiceId: integer("invoice_id")
+    .notNull()
+    .references(() => invoices.id),
   description: text("description").notNull(),
   quantity: numeric("quantity").notNull(),
   unitPrice: numeric("unit_price").notNull(),
@@ -177,7 +221,9 @@ export const buildingResources = pgTable("building_resources", {
   createdAt: timestamp("created_at").defaultNow(),
 });
 
-export const insertBuildingResourceSchema = createInsertSchema(buildingResources).omit({
+export const insertBuildingResourceSchema = createInsertSchema(
+  buildingResources,
+).omit({
   id: true,
   createdAt: true,
   updatedAt: true,
@@ -207,7 +253,9 @@ export const insertSupplierSchema = createInsertSchema(suppliers).omit({
 // User Settings - added after all other table definitions
 export const userSettings = pgTable("user_settings", {
   id: serial("id").primaryKey(),
-  userId: integer("user_id").notNull().references(() => users.id),
+  userId: integer("user_id")
+    .notNull()
+    .references(() => users.id),
   hourlyRate: numeric("hourly_rate"),
   darkMode: boolean("dark_mode").default(true),
   notifications: boolean("notifications").default(true),
@@ -314,7 +362,9 @@ export type InvoiceItem = typeof invoiceItems.$inferSelect;
 export type InsertInvoiceItem = z.infer<typeof insertInvoiceItemSchema>;
 
 export type BuildingResource = typeof buildingResources.$inferSelect;
-export type InsertBuildingResource = z.infer<typeof insertBuildingResourceSchema>;
+export type InsertBuildingResource = z.infer<
+  typeof insertBuildingResourceSchema
+>;
 
 export type Supplier = typeof suppliers.$inferSelect;
 export type InsertSupplier = z.infer<typeof insertSupplierSchema>;
