@@ -4,7 +4,6 @@ import { TimeEntry, InsertTimeEntry } from '@shared/schema';
 import { useState, useEffect } from 'react';
 import { toast } from '@/hooks/use-toast';
 import { getTimeEntries, saveTimeEntry, clearTimeEntries } from '@/lib/timerStorage';
-import { useQuery, useMutation, useQueryClient } from '@tanstack/react-query';
 
 export function useTimeEntries() {
   const queryClient = useQueryClient();

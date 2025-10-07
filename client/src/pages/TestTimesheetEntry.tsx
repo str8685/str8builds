@@ -76,9 +76,10 @@ const TestTimesheetEntry: FC = () => {
   };
 
   // Format duration in seconds to hours and minutes
-  const formatDuration = (seconds: number) => {
-    const hours = Math.floor(seconds / 3600);
-    const minutes = Math.floor((seconds % 3600) / 60);
+  const formatDuration = (seconds: number | null) => {
+    const totalSeconds = seconds ?? 0;
+    const hours = Math.floor(totalSeconds / 3600);
+    const minutes = Math.floor((totalSeconds % 3600) / 60);
     return `${hours}h ${minutes}m`;
   };
 
@@ -132,8 +133,13 @@ const TestTimesheetEntry: FC = () => {
                     {formatDuration(entry.duration)}
                   </div>
                   <div className="text-gray-400 text-sm" data-oid="mk9w:yw">
-                    {new Date(entry.startTime).toLocaleTimeString()} -{" "}
-                    {new Date(entry.endTime).toLocaleTimeString()}
+                    {entry.startTime
+                      ? new Date(entry.startTime).toLocaleTimeString()
+                      : "N/A"}
+                    {" - "}
+                    {entry.endTime
+                      ? new Date(entry.endTime).toLocaleTimeString()
+                      : "In progress"}
                   </div>
                 </div>
               </div>

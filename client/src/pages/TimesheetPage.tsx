@@ -11,17 +11,22 @@ import {
   DirectTimeEntry,
   directTimeEntryStore,
 } from "@/components/dashboard/DirectTimeEntryLink";
+import TimeEntryDebugger from "@/components/debug/TimeEntryDebugger";
+import { useTimeEntries } from "@/hooks/useTimeEntries";
 import { useProjects } from "@/hooks/useProjects";
 import { useQueryClient } from "@tanstack/react-query";
 import { generateTimesheetPdf, savePdf } from "@/lib/pdfUtils";
+import { generateTimesheetCSV, saveCSV } from "@/lib/csvUtils";
+import { format } from "date-fns";
+import { apiRequest } from "@/lib/queryClient";
 
 // Define types locally to avoid import issues
 interface TimeEntry {
   id: string | number; // Allow both string and number to match DirectTimeEntry
   userId: number;
   projectId: number | null;
-  startTime: Date;
-  endTime: Date | null;
+  startTime: Date | string;
+  endTime: Date | null | string;
   duration: number | null;
   notes: string | null;
   hourlyRate: string | null;
@@ -42,8 +47,6 @@ interface Project {
   location: string | null;
   progress: number | null;
 }
-import { format } from "date-fns";
-import { apiRequest } from "@/lib/queryClient";
 
 const TimesheetPage: FC = () => {
   const {
@@ -84,11 +87,11 @@ const TimesheetPage: FC = () => {
   const stats = {
     totalHours:
       timeEntries.reduce(
-        (sum, entry: TimeEntry) => sum + (entry.duration || 0),
+        (sum: number, entry: TimeEntry) => sum + (entry.duration || 0),
         0,
       ) / 3600, // Convert seconds to hours
 
-    totalEarnings: timeEntries.reduce((sum, entry: TimeEntry) => {
+    totalEarnings: timeEntries.reduce((sum: number, entry: TimeEntry) => {
       const hours = (entry.duration || 0) / 3600;
       const rate = entry.hourlyRate
         ? parseFloat(entry.hourlyRate.toString())
@@ -106,7 +109,10 @@ const TimesheetPage: FC = () => {
           firstDayOfWeek.setHours(0, 0, 0, 0);
           return entryDate >= firstDayOfWeek;
         })
-        .reduce((sum, entry: TimeEntry) => sum + (entry.duration || 0), 0) /
+        .reduce(
+          (sum: number, entry: TimeEntry) => sum + (entry.duration || 0),
+          0,
+        ) /
       3600,
 
     thisMonthHours:
@@ -121,7 +127,10 @@ const TimesheetPage: FC = () => {
           );
           return entryDate >= firstDayOfMonth;
         })
-        .reduce((sum, entry: TimeEntry) => sum + (entry.duration || 0), 0) /
+        .reduce(
+          (sum: number, entry: TimeEntry) => sum + (entry.duration || 0),
+          0,
+        ) /
       3600,
   };
 
