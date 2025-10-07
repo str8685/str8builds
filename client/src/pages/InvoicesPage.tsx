@@ -72,21 +72,85 @@ const InvoicesPage: FC = () => {
   // Calculate the totals for the statistics cards
   const stats = {
     total: filteredInvoices.reduce(
-      (sum, inv: Invoice) => sum + parseFloat(inv.total.toString()),
+      (sum: number, inv: Invoice) => sum + parseFloat(inv.total.toString()),
       0,
     ),
     paid: filteredInvoices
       .filter((inv: Invoice) => inv.status === "paid")
-      .reduce((sum, inv: Invoice) => sum + parseFloat(inv.total.toString()), 0),
+      .reduce(
+        (sum: number, inv: Invoice) =>
+          sum + parseFloat(inv.total.toString()),
+        0,
+      ),
     pending: filteredInvoices
       .filter((inv: Invoice) => inv.status === "pending")
-      .reduce((sum, inv: Invoice) => sum + parseFloat(inv.total.toString()), 0),
+      .reduce(
+        (sum: number, inv: Invoice) =>
+          sum + parseFloat(inv.total.toString()),
+        0,
+      ),
     overdue: filteredInvoices
       .filter(
         (inv: Invoice) =>
           inv.status === "pending" && new Date(inv.dueDate) < new Date(),
       )
-      .reduce((sum, inv: Invoice) => sum + parseFloat(inv.total.toString()), 0),
+      .reduce(
+        (sum: number, inv: Invoice) =>
+          sum + parseFloat(inv.total.toString()),
+        0,
+      ),
+  };
+
+  const buildExportData = () => {
+    if (!selectedInvoice) {
+      toast({
+        title: "Select an invoice",
+        description: "Choose an invoice before exporting or emailing.",
+        variant: "destructive",
+      });
+      return null;
+    }
+
+    const invoiceForExport = selectedInvoice;
+
+    const fallbackClient: Client = {
+      id: invoiceForExport.clientId ?? 0,
+      userId: invoiceForExport.userId,
+      name: invoiceForExport.clientId
+        ? `Client #${invoiceForExport.clientId}`
+        : "No client assigned",
+      contact: null,
+      email: null,
+      phone: null,
+      address: null,
+      notes: null,
+      createdAt: new Date(),
+    };
+
+    const client =
+      clients.find((clientItem: Client) => clientItem.id === invoiceForExport.clientId) ??
+      fallbackClient;
+
+    const totalValue = Number(invoiceForExport.total ?? 0);
+    const serviceAmount = Number((totalValue * 0.8).toFixed(2));
+    const materialsAmount = Number((totalValue * 0.2).toFixed(2));
+
+    const items = [
+      {
+        description: "Construction Services",
+        quantity: 1,
+        rate: serviceAmount,
+        amount: serviceAmount,
+      },
+      {
+        description: "Materials",
+        quantity: 1,
+        rate: materialsAmount,
+        amount: materialsAmount,
+      },
+    ];
+
+    return { invoiceForExport, client, items };
   };
 
   // Handle export to PDF
@@ -98,44 +162,12 @@ const InvoicesPage: FC = () => {
         variant: "default",
       });
 
-      // Create a sample invoice if none is selected
-      const invoiceForExport = selectedInvoice || {
-        id: 1,
-        invoiceNumber: "INV-2023-001",
-        clientId: 1,
-        issueDate: new Date(),
-        dueDate: new Date(new Date().setDate(new Date().getDate() + 30)),
-        subtotal: 1000,
-        tax: 150,
-        total: 1150,
-        status: "pending",
-        createdAt: new Date(),
-      };
+      const exportData = buildExportData();
+      if (!exportData) {
+        return;
+      }
 
-      // Create a sample client
-      const client = {
-        id: 1,
-        name: "Sample Client",
-        email: "client@example.com",
-        phone: "021 123 4567",
-        address: "123 Main Street, Auckland",
-      };
-
-      // Mock invoice items
-      const items = [
-        {
-          description: "Construction Services",
-          quantity: 1,
-          rate: invoiceForExport.total * 0.8, // Mock calculation
-          amount: invoiceForExport.total * 0.8,
-        },
-        {
-          description: "Materials",
-          quantity: 1,
-          rate: invoiceForExport.total * 0.2, // Mock calculation
-          amount: invoiceForExport.total * 0.2,
-        },
-      ];
+      const { invoiceForExport, client, items } = exportData;
 
       const blob = await generateInvoicePdf(invoiceForExport, client, items);
 
@@ -166,44 +198,12 @@ const InvoicesPage: FC = () => {
         variant: "default",
       });
 
-      // Create a sample invoice if none is selected
-      const invoiceForExport = selectedInvoice || {
-        id: 1,
-        invoiceNumber: "INV-2023-001",
-        clientId: 1,
-        issueDate: new Date(),
-        dueDate: new Date(new Date().setDate(new Date().getDate() + 30)),
-        subtotal: 1000,
-        tax: 150,
-        total: 1150,
-        status: "pending",
-        createdAt: new Date(),
-      };
+      const exportData = buildExportData();
+      if (!exportData) {
+        return;
+      }
 
-      // Create a sample client
-      const client = {
-        id: 1,
-        name: "Sample Client",
-        email: "client@example.com",
-        phone: "021 123 4567",
-        address: "123 Main Street, Auckland",
-      };
-
-      // Mock invoice items
-      const items = [
-        {
-          description: "Construction Services",
-          quantity: 1,
-          rate: invoiceForExport.total * 0.8, // Mock calculation
-          amount: invoiceForExport.total * 0.8,
-        },
-        {
-          description: "Materials",
-          quantity: 1,
-          rate: invoiceForExport.total * 0.2, // Mock calculation
-          amount: invoiceForExport.total * 0.2,
-        },
-      ];
+      const { invoiceForExport, client, items } = exportData;
 
       const csvData = generateInvoiceCSV(invoiceForExport, client, items);
 
@@ -238,44 +238,12 @@ const InvoicesPage: FC = () => {
       const email = prompt("Enter the email address to send the invoice to:");
       if (!email) return;
 
-      // Create a sample invoice if none is selected
-      const invoiceForExport = selectedInvoice || {
-        id: 1,
-        invoiceNumber: "INV-2023-001",
-        clientId: 1,
-        issueDate: new Date(),
-        dueDate: new Date(new Date().setDate(new Date().getDate() + 30)),
-        subtotal: 1000,
-        tax: 150,
-        total: 1150,
-        status: "pending",
-        createdAt: new Date(),
-      };
+      const exportData = buildExportData();
+      if (!exportData) {
+        return;
+      }
 
-      // Create a sample client
-      const client = {
-        id: 1,
-        name: "Sample Client",
-        email: "client@example.com",
-        phone: "021 123 4567",
-        address: "123 Main Street, Auckland",
-      };
-
-      // Mock invoice items
-      const items = [
-        {
-          description: "Construction Services",
-          quantity: 1,
-          rate: invoiceForExport.total * 0.8, // Mock calculation
-          amount: invoiceForExport.total * 0.8,
-        },
-        {
-          description: "Materials",
-          quantity: 1,
-          rate: invoiceForExport.total * 0.2, // Mock calculation
-          amount: invoiceForExport.total * 0.2,
-        },
-      ];
+      const { invoiceForExport, client, items } = exportData;
 
       const blob = await generateInvoicePdf(invoiceForExport, client, items);
 

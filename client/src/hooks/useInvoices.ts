@@ -10,12 +10,13 @@ export function useInvoices() {
   const [selectedInvoice, setSelectedInvoice] = useState<Invoice | null>(null);
 
   // Get all invoices
-  const { 
-    data: invoices, 
-    isLoading, 
-    error 
-  } = useQuery({
+  const {
+    data: invoices = [],
+    isLoading,
+    error
+  } = useQuery<Invoice[]>({
     queryKey: ['/api/invoices'],
+    queryFn: () => apiRequest<Invoice[]>('/api/invoices'),
     refetchOnWindowFocus: false,
     retry: 1,
     staleTime: 60000 // 1 minute stale time to prevent duplicate requests

@@ -67,7 +67,7 @@ const users = [
 ];
 
 // Simple JWT-like token generation
-const generateToken = (userId) => {
+const generateToken = (userId: number) => {
   return crypto.randomBytes(32).toString('hex');
 };
 

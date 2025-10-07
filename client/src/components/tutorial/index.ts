@@ -1,4 +1,5 @@
-import Tutorial, { TutorialTrigger } from './Tutorial';
+import Tutorial from './Tutorial';
+import TutorialTrigger from './TutorialTrigger';
 import { useTutorial, TUTORIAL_STEPS } from './TutorialContext';
 
 export {

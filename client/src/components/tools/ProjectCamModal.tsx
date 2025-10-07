@@ -20,6 +20,7 @@ import { useToast } from "@/hooks/use-toast";
 import { motion, AnimatePresence } from "framer-motion";
 import { cn } from "@/lib/utils";
 import { useProjects } from "@/hooks/useProjects";
+import type { Project } from "@shared/schema";
 
 interface ProjectCamModalProps {
   open: boolean;
@@ -47,7 +48,7 @@ const ProjectCamModal: FC<ProjectCamModalProps> = ({ open, onOpenChange }) => {
   const [photoDescription, setPhotoDescription] = useState("");
   const [selectedProjectId, setSelectedProjectId] = useState<string>("");
 
-  const { projects, isLoading: projectsLoading } = useProjects();
+  const { projects = [], isLoading: projectsLoading } = useProjects();
   const { toast } = useToast();
 
   useEffect(() => {
@@ -185,9 +186,14 @@ const ProjectCamModal: FC<ProjectCamModalProps> = ({ open, onOpenChange }) => {
       a.click();
       document.body.removeChild(a);
 
+      const projectName =
+        projects.find(
+          (project: Project) => project.id === parseInt(selectedProjectId, 10),
+        )?.name ?? "Unknown";
+
       toast({
         title: "Project Photo Saved",
-        description: `Photo added to project ${projects.find((p) => p.id === parseInt(selectedProjectId))?.name || "Unknown"}`,
+        description: `Photo added to project ${projectName}`,
       });
 
       onOpenChange(false);
@@ -419,8 +425,8 @@ const ProjectCamModal: FC<ProjectCamModalProps> = ({ open, onOpenChange }) => {
                             >
                               Loading projects...
                             </SelectItem>
-                          ) : projects && projects.length > 0 ? (
-                            projects.map((project) => (
+                          ) : projects.length > 0 ? (
+                            projects.map((project: Project) => (
                               <SelectItem
                                 key={project.id}
                                 value={String(project.id)}
